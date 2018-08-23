@@ -1,0 +1,1787 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={BAE 587: Biogeochemical Processes for Environmental and Ecological Engineering},
+            pdfauthor={François Birgand},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{BAE 587: Biogeochemical Processes for Environmental and Ecological
+Engineering}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{François Birgand}
+  \preauthor{\centering\large\emph}
+  \postauthor{\par}
+  \predate{\centering\large\emph}
+  \postdate{\par}
+  \date{2018-08-23}
+
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\chapter*{Preface}\label{preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+This is the first attempt at a textbook for BAE587. It will be updated
+as class proceeds.
+
+\section*{Author}\label{author}
+\addcontentsline{toc}{section}{Author}
+
+\href{https://francoisbirgand.github.io}{François Birgand} is an
+Associate Professor and
+\href{https://provost.ncsu.edu/strategic-initiatives/university-faculty-scholars/}{University
+Faculty Scholar} of biogeochemistry and ecological engineering in the
+department of \href{https://www.bae.ncsu.edu/}{Biological and
+Agricultural Engineering} at North Carolina State University, in
+Raleigh, NC, USA. His research interests aim to provide solutions to
+improve the quality of water in streams and rivers. Practically, his
+research focuses on improving the treatment efficiency of streams,
+wetlands, soils or wood chip bioreactors. Much of this research is based
+upon principles this textbook is trying to provide for students of all
+ages.
+
+\chapter{Introduction}\label{intro}
+
+A query using the word `biogeochemistry' on NC State University
+libraries' website yielded 651 books on the subject in August
+2018\ldots{} So why having yet another one, or even a course on the
+subject\ldots{}?! I suppose we are never done with a subject which is
+rather amorphous, as it involves many disciplines, and has many fields
+of application.
+
+Wikipedia \citeyearpar{Wikipedia_contributors2018-fs} has some nice
+definitions of Biogeochemistry, including:
+
+\begin{quote}
+In particular, biogeochemistry is the study of the cycles of chemical
+elements, such as carbon and nitrogen, and their interactions with and
+incorporation into living things transported through earth scale
+biological systems in space through time.
+\end{quote}
+
+With the definition above, the study of ancient earth history or of
+modern acid rains \citep[e.g.,][]{0080446426} are included in
+biogeochemistry\ldots{} The unifying theme is that regardless of the
+application, the processes involved stay pretty much the same and
+involve \emph{\textbf{transfer of electrons and protons}}. The
+differences within biogeochemistry come from the fields of application.
+
+The field of application of this book is \emph{\textbf{excess nutrient
+and sediment loads generated by human activities, their consequences on
+aquatic ecosystems, and the processes involved to improve and protect
+watershed and stream water quality}}. There is a niche in disturbed,
+nutrient rich, often rural environments, where we perceived there was a
+need for an integrated and horizontal delivery of knowledge spanning
+from electron orbitals, biochemistry, microbiology, hydrological
+functioning, process kinetic modeling, and treatment system design. It
+is possible that readers with strong biological background might find
+the biological facet of this book a bit short and simple. Just as well,
+non-engineers should not be afraid of `engineering' in the title. The
+course is designed to provide the biological knowledge engineers might
+not have obtained in their curriculae, and the quantitative knowledge
+non-engineers might not have been exposed to. Regardless, I do hope that
+environemental scientists, ecologists, and engineers alike, will find
+the integration of knowlege useful in this book.
+
+The physical objects used as foundation for this class include naturally
+occurring and human-designed filters, which may reduce excess nutrient
+concentrations and loads in rural and suburban environments. Systems
+reviewed include wetlands, riparian buffers and vegetated filter strips,
+woodchip bioreactors, streams, stormwater ponds and bioretention zones.
+This book uses excess nitrogen as the core parameter where the
+principles of biogeochemical processes are well illustrated, and may
+apply to other fields of application.
+
+\chapter{Glossary}\label{glossary}
+
+This glossary is meant to assemble terms that we routinely use in
+Environmental Sciences and Engineering and which are expected to be
+mastered by students taking BAE 204 at NC State university. They are
+ordered in alphabetical list for better retrieval and look up.
+
+\section{A}\label{a}
+
+\subsection{Aerobic respiration}\label{aerobic-respiration}
+
+\subsection{Anaerobic respiration}\label{anaerobic-respiration}
+
+\subsection{Ammonia}\label{ammonia}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://en.wikipedia.org/wiki/Ammonia}{Ammonia} is a colorless
+  gas with a characteristic pungent smell
+\item
+  Formula: \(NH_3\)
+\item
+  Ammonia 3D shape:
+  \includegraphics[width=0.25000\textwidth]{pictures/Ammonia-3D-balls-A.png}
+\item
+  Lewis dot structure:
+  \includegraphics[width=0.25000\textwidth]{pictures/ammonia-lewis-structure.jpg}
+\item
+  Number of electron N has for itself following electronegativity rule:
+  eight
+\item
+  \(NH_3\) can only be an \textbf{electron donor}
+\item
+  Because N has so many electrons to be potentially donated, ammonia is
+  generally unstable in an aerobic environment. As a result, it tends to
+  trace quantities in nature
+\item
+  When dissolved in water, and depending on the pH of the solution,
+  ammonia converts to \protect\hyperlink{NH4}{ammonium} following the
+  reaction:
+\end{itemize}
+
+\[
+H_2O + NH_3 \rightleftharpoons OH^{-} + NH_4^{+}
+\]
+
+\begin{itemize}
+\tightlist
+\item
+  Production:
+
+  \begin{itemize}
+  \item
+    Because of its many uses, ammonia is one of the most highly produced
+    inorganic chemicals. Dozens of chemical plants worldwide produce
+    ammonia. Consuming more than 1\% of all man-made power, ammonia
+    production is a significant component of the world energy budget.
+  \item
+    In 2014, about 88\% of the ammonia produced was used for fertilizing
+    agricultural crops
+  \item
+    Modern ammonia-producing plants generally depend on the
+    \protect\hyperlink{haber-bosch}{Haber-Bosch process} which consists
+    into reducing dinitrogen into ammonia
+
+    \[
+    3\,H_2 + N_2 \to 2\,NH_3
+    \]
+  \end{itemize}
+\item
+  Consumption:
+
+  \begin{itemize}
+  \item
+    Ammonia is directly or indirectly the precursor to most
+    nitrogen-containing compounds. Virtually all synthetic nitrogen
+    compounds are derived from ammonia.
+  \item
+  \end{itemize}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\subsection{Ammonium}\label{ammonium}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://en.wikipedia.org/wiki/Ammonium}{Ammonium} is the most
+  reduced inorganic nitrogenous cation (positively charged).
+\item
+  Ammonium 3D shape:
+  \includegraphics[width=0.25000\textwidth]{pictures/Ammonium-3D-balls.png}
+\item
+  Lewis dot structure:
+  \includegraphics[width=0.25000\textwidth]{pictures/ammonium_lewis_structure.png}
+\item
+  Number of electron N has for itself following electronegativity rule:
+  eight
+\item
+  It is formed by the protonation of \protect\hyperlink{NH3}{ammonia}
+  following the reaction:
+\end{itemize}
+
+\begin{equation}
+H_2O + NH_3 \rightleftharpoons OH^{-} + NH_4^{+} \label{eq:NH3}
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  The relative abundance of ammonium vs ammonia depends on the pH of the
+  solution. See figure below
+\end{itemize}
+
+\includegraphics{Textbook_BAE204_files/figure-latex/NH3-NH4-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  Because in most natural aqueous environments, pH is below 8, ammonium
+  tends to be the preponderant form.
+\item
+  Production:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    In nature, ammonium is a waste product of the mineralization of
+    organic molecules
+  \item
+    It is added as fertilizer on soils as
+    \href{https://en.wikipedia.org/wiki/Ammonium_nitrate}{ammonium
+    nitrate}
+  \end{itemize}
+\item
+  Health hazard:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ammonia vapor has a sharp, irritating, pungent odor that acts as a
+    warning of potentially dangerous exposure
+  \item
+    Exposure to very high concentrations of gaseous ammonia can result
+    in lung damage and death
+  \end{itemize}
+\item
+  Drinking water standard:
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\subsection{Ammonium nitrate}\label{ammonium-nitrate}
+
+\begin{itemize}
+\item
+  \href{https://en.wikipedia.org/wiki/Ammonium_nitrate}{Ammonium
+  nitrate} is a chemical compound, the nitrate salt of the ammonium
+  cation
+\item
+  It is a white crystal solid and is highly soluble in water.
+\item
+  Formula: \(NH_4NO_3\)
+\item
+  3D shape:
+  \includegraphics[width=0.33000\textwidth]{pictures/Ammonium-nitrate-xtal-3D-balls-A.png}
+\item
+  It is predominantly used in agriculture as a high-nitrogen fertilizer
+\item
+  Its other major use is as a component of explosive mixtures used in
+  mining, quarrying, and civil construction
+\item
+  Production:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ammonium nitrate does exist naturally in mines of the
+    \href{https://en.wikipedia.org/wiki/Atacama_Desert}{Atacama desert}
+    in Chile but globally nearly all ammonium nitrate is now produced
+    synthetically
+  \item
+    Byproduct of all respiration processes. Ammonium ions are a waste
+    product of the metabolism of animals. In fish and aquatic
+    invertebrates, it is excreted directly into the water. In mammals,
+    sharks, and amphibians, it is converted in the urea cycle to urea,
+    because urea is less toxic and can be stored more efficiently. In
+    birds, reptiles, and terrestrial snails, metabolic ammonium is
+    converted into uric acid, which is solid and can therefore be
+    excreted with minimal water loss.
+  \end{itemize}
+\item
+  Consumption/utilization:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    It is used as a fertilizer, because it tends to release inorganic
+    nitrogen slowly in soil. Applied as a surface fertilizer, it
+    penetrates the soil with rainfall infiltration. Highly soluble, the
+    nitrate anion becomes readily available to plant roots, although it
+    is susceptible to leaching below the root system into the shallow
+    and deep groundwater. The ammonium cation tends to adsorb to soil
+    particles and is thus not as susceptible to leaching. Ammonium can
+    be directly uptaken by plant roots, which thermodynamically makes
+    sense, although because in most soils aerobic conditions are
+    preponderant, nitrate tends to be the ion uptaken most often. Soil
+    bacteria in the aerobic zone of the soil will oxidize adsorbed
+    ammonium into nitrate, which then becomes available for plant roots.
+    The whole chain of events slows the release of inorganic nitrogen to
+    crops and thus makes for more effective fertilizers.
+  \end{itemize}
+\item
+  Health hazard
+
+  \begin{itemize}
+  \tightlist
+  \item
+    No direct known health hazard
+  \end{itemize}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\subsection{Anoxic waters}\label{anoxic-waters}
+
+\begin{itemize}
+\tightlist
+\item
+  Anoxic waters are areas of sea water, fresh water, or groundwater that
+  are depleted of dissolved oxygen and are a more severe condition of
+  hypoxia (Wikipedia)
+\item
+  Anoxic waters result from an \emph{\textbf{IMBALANCE}} between oxygen
+  supply and demand
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{C}\label{c}
+
+\subsection{Carbon dioxide}\label{carbon-dioxide}
+
+\begin{itemize}
+\item
+  Carbon dioxide is a colorless gas which density is 50\% higher than
+  that of dry air.
+\item
+  Formula: CO\textsubscript{2}
+\item
+  Carbon dioxide 3D shape:
+  \includegraphics[width=0.25000\textwidth]{pictures/Carbon_dioxide_3D_ball.png}
+\item
+  Lewis dot structure:
+  \includegraphics{pictures/CO2_lewis_structure.png}
+\item
+  Number of electron C has for itself following electronegativity rule:
+  zero
+\item
+  CO\textsubscript{2} can only be an electron acceptor
+\item
+  Production:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    oxidation of C in all organic molecules
+  \item
+    Almost all respiratory processes on earth (some respiration does not
+    involve oxidation of C)
+  \item
+    Combustion of all Carbon-based fuel
+  \end{itemize}
+\item
+  Consumption:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Photosynthesis
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Atmospheric carbon dioxide \textbf{is the primary carbon source
+      for life} on Earth
+    \end{itemize}
+  \item
+    Calcite precipitation in the oceans
+  \end{itemize}
+\item
+  Ecological Significance:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Greenhouse Gas, which serves as reference for all other GHG
+  \item
+    Concentration in the atmosphere \textasciitilde{}380 ppm on the
+    rise, or 0.38\%, or a partial pressure of 0.38 atm
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{pictures/CO2_atm_concentrations.png}
+\caption{Carbon Dioxide variations through ancient and modern times}
+\end{figure}
+
+\href{https://https://www.epa.gov/sites/production/files/2016-08/documents/print_ghg-concentrations-2016.pdf}{concentrations
+of carbon dioxide in the atmosphere from hundreds of thousands of years
+ago through 2015, measured in parts per million (ppm). The data come
+from a variety of historical ice core studies and recent air monitoring
+sites around the world. Each line represents a different data source}
+\citep{Epa2016-yj}
+
+\begin{itemize}
+\item
+  In reality, concentrations are not stable, and vary widely in time and
+  in space at the next two videos nicely show.
+\item
+  The next one results from the model simulations
+\end{itemize}
+
+\href{https://www.youtube.com/embed/WGHkY0E4FMY}{Youtube video of
+CO\textsubscript{2} modeled seasonal variations}
+
+ - The following one is the combination of both models and observations
+
+\href{https://www.youtube.com/embed/2BWWrJr6TJw}{Youtube video of
+CO\textsubscript{2} modeled and observed seasonal variations}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\subsection{Carbonates}\label{carbonates}
+
+\begin{itemize}
+\tightlist
+\item
+  After carbon dioxide dissolves in water, it will combine with water to
+  form carbonic acid (\(H_2CO_3\)).
+\item
+  Carbonate serves as \textbf{the carbon source} for aquatic vegetation
+\item
+  Carbonic acid can then dissociate into bicarbonate (\(HCO_3^-\)) and
+  carbonate (\(CO_3^{2-}\))
+\end{itemize}
+
+\begin{quote}
+The term ``bicarbonate'' was coined in 1814 by the English chemist
+William Hyde Wollaston. The prefix ``bi'' in ``bicarbonate'' comes from
+an outdated naming system and is based on the observation that there is
+twice as much carbonate (CO\textsubscript{3}\textsuperscript{2−}) per
+sodium ion in sodium bicarbonate (NaHCO\textsubscript{3}) and other
+bicarbonates than in sodium carbonate
+(Na\textsubscript{2}CO\textsubscript{3}) and other carbonates. The name
+lives on as a \href{https://en.wikipedia.org/wiki/Trivial_name}{trivial
+name}. \citep{Wikipedia_contributors2018-lc}.
+\end{quote}
+
+\begin{align}
+H_2CO_3  & \rightleftharpoons & HCO_3^- + H^+  \label{eq:H2CO3} \\
+HCO_3^- & \rightleftharpoons & CO_3^{2-} + H^+ \label{eq:HCO3}
+\end{align}
+
+\begin{itemize}
+\tightlist
+\item
+  In an environment not open to the atmosphere (or where direct exchange
+  with the atmosphere is very limited like in stream or wetland
+  sediment), the preponderant form depends on the pH and can be
+  calculated as illustrated on the graph below.
+\end{itemize}
+
+\includegraphics{Textbook_BAE204_files/figure-latex/CO3-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  Carbon dioxide and carbonates are fully oxidized forms of inorganic
+  molecules with just one atom of C: the carbon atom has \textbf{zero
+  electrons} for itself as shown in Figure
+  \ref{fig:ElecAlloc-CO2-carbonates}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.22\linewidth]{pictures/ElecAlloc_CO2} \includegraphics[width=0.22\linewidth]{pictures/ElecAlloc_H2CO3} \includegraphics[width=0.22\linewidth]{pictures/ElecAlloc_HCO3-} \includegraphics[width=0.22\linewidth]{pictures/ElecAlloc_CO32-} 
+
+}
+
+\caption{Electron allocation on each of the fully oxidized forms of C, including from left to right CO~2~, carbonic acid, hydrogen carbonate (or bicarbonate), and carbonate, showing that the C atoms have no electrons for themselves}\label{fig:ElecAlloc-CO2-carbonates}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  In sea water, Carbonate can combine with Ca\textsuperscript{2+} to
+  form Calcium Carbonate (CaCO\textsubscript{3}), which precipitates out
+  of solution. In other words, calcium carbonate formation is a sink for
+  carbonate, and ultimately from CO\textsubscript{2} addition from the
+  atmosphere to to increased CO\textsubscript{2} concentrations in the
+  atmosphere.
+\item
+  Carbonates are thus a great pH buffer in aquatic environments
+\end{itemize}
+
+\hypertarget{catabolism}{\subsection{Catabolism}\label{catabolism}}
+
+\begin{itemize}
+\tightlist
+\item
+  Reactions involving the breaking down of organic substrates, typically
+  by oxidative breakdown, to provide chemically available energy (e.g.~A
+  TP) and/or to generate metabolic intermediates used in subsequent
+  anabolic reactions \citep{De_Bolster1997-ul}.
+\item
+  Synonyms:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Aerobic and anaerobic \emph{respirations} which use organic
+    molecules as electron donors, are synonyms of catabolism.
+  \item
+    In soil science another synonym of catabolism is
+    \emph{mineralization}, which refers to the decomposition or
+    oxidation of the chemical compounds in organic matter releasing the
+    nutrients contained in those compounds into soluble inorganic forms
+    that may be plant-accessible \citep{Wikipedia_contributors2018-ew}.
+  \end{itemize}
+\end{itemize}
+
+\section{D}\label{d}
+
+\hypertarget{denitrification}{\subsection{Denitrification}\label{denitrification}}
+
+\begin{itemize}
+\tightlist
+\item
+  The \emph{microbially mediated dissimilatory reduction of nitrate into
+  dinitrogen}
+\item
+  see \protect\hyperlink{denit}{denitrification in chapters} for more
+  details
+\end{itemize}
+
+\subsection{Dihydrogen sulfide}\label{dihydrogen-sulfide}
+
+\begin{itemize}
+\tightlist
+\item
+  see \protect\hyperlink{H2S}{hydrogen sulfide}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{E}\label{e}
+
+\hypertarget{eutrophication}{\subsection{Eutrophication}\label{eutrophication}}
+
+\begin{itemize}
+\tightlist
+\item
+  Definitions:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    `an increase in the rate of supply of organic matter to an
+    ecosystem' \citep{Nixon1995-th}
+  \item
+    `is the enrichment of a water body with nutrients, usually with an
+    excess amount of nutrients' (Wikipedia)
+  \item
+    `the enrichment of water by nutrients, especially nitrogen and/or
+    phosphorus, causing an accelerated growth of algae and higher forms
+    of plant life to produce an undesirable disturbance to the balance
+    of organisms present in the water and to the quality of water
+    concerned' \citep{Anonymous1991-ho}
+  \item
+    `the enrichment of water by nitrogen compounds causing an
+    accelerated growth of algae and higher forms of plant life to
+    produce an undesirable disturbance to the balance of organisms
+    present in the water and to the quality of water concerned'
+    \citep{Anonymous1991-xb}
+  \end{itemize}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{F}\label{f}
+
+\subsection{Fischer projection}\label{fischer-projection}
+
+\begin{itemize}
+\tightlist
+\item
+  see \protect\hyperlink{structural-formula}{Structural formula}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{G}\label{g}
+
+\subsection{\texorpdfstring{Greenhouse gases
+\emph{(GHG)}}{Greenhouse gases (GHG)}}\label{greenhouse-gases-ghg}
+
+A greenhouse gas is a gas in an atmosphere that absorbs and emits
+radiant energy within the thermal infrared range. This process is the
+fundamental cause of the greenhouse effect. The primary greenhouse gases
+in Earth's atmosphere are \textbf{water vapor},
+\textbf{\protect\hyperlink{CO2}{carbon dioxide}}, \textbf{methane},
+\textbf{\protect\hyperlink{N2O}{nitrous oxide}}, and \textbf{ozone}.
+Without greenhouse gases, the average temperature of Earth's surface
+would be about −18 °C (0 °F), rather than the present average of 15 °C
+(59 °F). In the Solar System, the atmospheres of Venus, Mars and Titan
+also contain gases that cause a greenhouse effect.
+(\href{https://en.wikipedia.org/wiki/Greenhouse_gas}{Wikipedia})
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{H}\label{h}
+
+\subsection{Haber-Bosch process}\label{haber-bosch-process}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://en.wikipedia.org/wiki/Haber_process}{Haber-Bosch
+  process}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\subsection{Haworth Projection}\label{haworth-projection}
+
+\begin{itemize}
+\tightlist
+\item
+  see \protect\hyperlink{structural-formula}{Structural formula}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\hypertarget{H2S}{\subsection{Hydrogen Sulfide}\label{H2S}}
+
+\begin{itemize}
+\tightlist
+\item
+  It is a colorless gas with the characteristic foul odor of rotten
+  eggs.
+\item
+  It is very poisonous, corrosive, flammable and acidic in nature.
+\item
+  Formula: \(H_2S\)
+\item
+  hydrogen sulfide \#D shape:
+  \includegraphics[width=0.25000\textwidth]{pictures/Hydrogen-sulfide-3D-balls.png}
+\item
+  Lewis dot structure:
+  \includegraphics[width=0.25000\textwidth]{pictures/H2S_Lewis_structure.png}
+\item
+  Number of electron S has for itself following electronegativity rule:
+  eight
+\item
+  \(H_2S\) can only be an electron donor
+\item
+  Unstable under aerobic conditions, will readily be oxidized into
+  \protect\hyperlink{SO4}{sulfate}
+\item
+  \(H_2S\) is a polyprotic acid which can lose up to 2 protons in water,
+  depending on the pH.
+\end{itemize}
+
+\begin{align}
+H_2S & \rightleftharpoons & HS^- + H^+ \label{eq:H2S} \\
+HS^- & \rightleftharpoons & S^{2-}+ H^+ \label{eq:HS} 
+\end{align}
+
+\begin{itemize}
+\tightlist
+\item
+  The figure below suggests that at pH found in most streams (4.5 to 8),
+  \(H_2S\) is either preponderant or corresponds to at least 20\% of all
+  sulfide forms. \(H_2S\) being a highly volatile product, it explains
+  why we can easily smell and detect it in most conditions in streams.
+\end{itemize}
+
+\includegraphics{Textbook_BAE204_files/figure-latex/H2S-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  Production:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Hydrogen sulfide often results from the microbial breakdown, or
+    mineralization, of organic matter in anaerobic conditions, such as
+    may exist in swamps and sewers. When happening in sediment, this is
+    referred to as sediment diagenesis
+  \end{itemize}
+\item
+  Consumption:
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{L}\label{l}
+
+\subsection{Lithotrophs}\label{lithotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  Lithotrophs are a diverse group of organisms using inorganic substrate
+  (usually of mineral origin) to obtain reducing equivalents for use in
+  biosynthesis (e.g., carbon dioxide fixation) or energy conservation
+  (i.e., ATP production) via aerobic or anaerobic respiration. Known
+  chemolithotrophs are exclusively microorganisms.
+  \citep{Wikipedia_contributors2018-na}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\subsection{Limiting factor}\label{limiting-factor}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{M}\label{m}
+
+\subsection{Methane}\label{methane}
+
+\begin{itemize}
+\tightlist
+\item
+  Under
+  \href{https://en.wikipedia.org/wiki/Standard_conditions_for_temperature_and_pressure}{normal
+  conditions for temperature and pressure}, methane is a colorless,
+  odorless gas main constituent of natural gas, and the simplest alkane
+\item
+  Formula: \(CH_4\)
+\item
+  Methane 3D shape:
+  \includegraphics[width=0.25000\textwidth]{pictures/Methane-CRC-MW-3D-balls.png}
+\item
+  Lewis dot structure of methane:
+  \includegraphics{pictures/methane_lewis_structure.png}
+\item
+  Number of electron C has for itself following electronegativity rule:
+  eight
+\item
+  \(CH_4\) can only be an electron \textbf{donor}
+\item
+  Because methane has so many electrons to give, it will easily `burn'
+  in normal atmosphere (provided that ignition T°C be reached, e.g., by
+  a spark), liberating large quantities of heat (55.5 MJ/kg). The
+  electrons are transferred from the carbon to the oxygen atoms
+  following two redox half-reactions to obtain the overall reaction:
+\end{itemize}
+
+\begin{align}
+CH_4 + 2\,H_2O & \rightleftharpoons & CO_2 + 8\,H^+ + 8\,e^-\\
+2\,O_2 + 8\,H^+ + 8\,e^- & \rightleftharpoons & 4\,H_2O\\
+& &\\
+\hline\\
+CH_4 + 2\,O_2 & \to & CO_2 + 2\,H_2O
+\end{align}
+
+\begin{itemize}
+\item
+  Production:
+\item
+  Consumption:
+\item
+  Ecological significance:
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{pictures/CH4_concentrations.png}
+\caption{}
+\end{figure}
+
+\href{https://www.epa.gov/sites/production/files/2016-08/documents/print_ghg-concentrations-2016.pdf}{Concentrations
+of methane in the atmosphere from hundreds of thousands of years ago
+through 2015, measured in parts per billion (ppb). The data come from a
+variety of historical ice core studies and recent air monitoring sites
+around the world. Each line represents a different data
+source}\citep{Epa2016-yj}
+
+\begin{itemize}
+\tightlist
+\item
+  Health effects:
+\end{itemize}
+
+\subsection{Mineralization}\label{mineralization}
+
+\begin{itemize}
+\tightlist
+\item
+  see \protect\hyperlink{catabolism}{catabolism}
+\end{itemize}
+
+\section{N}\label{n}
+
+\subsection{Nitrate}\label{nitrate}
+
+\begin{itemize}
+\item
+  Nitrate is the stable inorganic nitrogenous anion in oxidized water
+\item
+  Formula: \(NO_3^{-}\)
+\item
+  Nitrate 3D shape:
+  \includegraphics[width=0.25000\textwidth]{pictures/Nitrate-3D-balls.png}
+\item
+  Lewis dot structure of nitrate:
+  \includegraphics{pictures/nitrate_lewis_structure.png}
+\item
+  Number of electron N has for itself following electronegativity rule:
+  zero
+\item
+  \(NO_3^{-}\) can only be an electron acceptor
+\item
+  \(NO_3^{-}\) is technically the conjugate base of nitric acid
+  \(HNO_3\), but the \(pk_A\) of the reaction is at a theoretical pH of
+  -1.38. In other words, for the pH of most natural waters (4.5
+  \textless{} pH \textless{} 8), \(HNO_3\) is totally insignificant.
+\item
+  Production:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    from the complete \protect\hyperlink{oxidation}{oxidation} of
+    inorganic nitrogenous molecules which include
+    \protect\hyperlink{NH3}{ammonia}, \protect\hyperlink{NH4}{ammonium},
+    \protect\hyperlink{NO2}{nitrite}
+  \item
+    from the mineralization and complete oxidation of
+    \protect\hyperlink{amine}{amine radicals} in organic molecules
+  \end{itemize}
+\item
+  Consumption:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Uptake} from microbes, plants, and algae for their
+    \protect\hyperlink{anabolism}{anabolism}, which consists in building
+    complex organic molecules from inorganic ones.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Uptake, assimilation, anabolism, immobilization are all synonymous
+      terms to express the fact that the N atom is immobilized, at least
+      temporarily in organic molecules.
+    \item
+      Because N is assimilated in organic molecules during
+      uptake/anabolism, and because N gains electrons in the process (it
+      is thus \textbf{\emph{reduced}}), we refer to nitrate uptake as
+      \textbf{\protect\hyperlink{ANR}{assimilatory nitrate reduction}}.
+    \end{itemize}
+  \item
+    \textbf{\protect\hyperlink{denitrification}{Denitrification}}: under
+    anaerobic conditions, nitrate is used by facultative anaerobes as
+    electron acceptor to generate \protect\hyperlink{ATP}{ATP} in their
+    respiration chain. The two major end products of denitrification are
+    gases, namely \protect\hyperlink{N2}{dinitrogen (\(N_2\))} and
+    \protect\hyperlink{N2O}{nitrous oxide (\(N_2O\))}, which leave the
+    aqueous environment. As such, nitrate is not assimilated by any
+    bacteria and denitrification is therefore, as opposed to uptake,
+    referred to as **\protect\hyperlink{DNR}{dissimilatory nitrate
+    reduction} into \protect\hyperlink{N2}{dinitrogen (\(N_2\))} and
+    \protect\hyperlink{N2O}{nitrous oxide (\(N_2O\))}.
+  \end{itemize}
+\item
+  Ecological significance:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Because of assimilation and denitrification processes, the overall
+    nitrate concentrations in rivers tends to diminish from the
+    catchment headwaters to the receiving bodies such as estuaries and
+    coastal areas. As a result, inorganic nitrogen has naturally been in
+    very short supply in these coastal water bodies, and nitrate and
+    traditionally been the nutrient limiting aquatic productivity there.
+    Very much like with phosphate, algae have adapted to be able to grow
+    in very low concentrations. Anthropogenic activities, and
+    agriculture in particular, have largely increased the loads and
+    concentration of nitrate reaching estuaries, to the point where
+    nitrate is no longer the limiting factor. As a result, excess
+    nitrate is one of the reasons for the global and persistent presence
+    of algal blooms in estuaries and coastal waters.
+  \end{itemize}
+\item
+  Health hazard:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    There is a heated debate about the health hazard that nitrate might
+    pose. Some argue that if anything, there might be beneficial
+    effects, while others argue that there are evidence of cancers
+    linked to excess nitrate absorption. Unfortunately, arguments on
+    both sides might not be totally independent of militantism and
+    lobbies.
+  \item
+    The only consensus everybody seems to agree upon is the Blue Baby
+    syndrome, or methemoglobinemia. Methemoglobinemia is an unusual and
+    potentially fatal condition in which hemoglobin is oxidized to
+    methemoglobin and loses its ability to bind and transport oxygen,
+    hence the cyanosis (blue appearance) usually visible on fingers,
+    toes, and lips. Nitrate reduced to nitrite in the body of humans and
+    animals enters the body stream where it seems to directly oxidize
+    oxyhemoglobin to methemoglobin-peroxide complex.
+  \end{itemize}
+\end{itemize}
+
+\href{https://syndromespedia.com/blue-baby-syndrome.html}{\includegraphics[width=0.50000\textwidth]{pictures/BLUE-BABY-SYNDROME.jpg}}
+
+\href{https://syndromespedia.com/blue-baby-syndrome.html}{\textbf{Picture
+of a Blue Baby from syndromespedia.com/blue-baby-syndrome.html}}
+
+\begin{itemize}
+\tightlist
+\item
+  Drinking water standards
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Although there is still a heated debate whether or not nitrate does
+    have have detrimental health effects, the World Health Organization
+    has provided maximum concentration guidelines of 50 mg/L as nitrate
+    \citep{World_Health_Organization2011-hd}. These guidelines have been
+    enacted in hard laws in the US and in Europe. The 50 mg/L as nitrate
+    equates 11.2 mg \(NO_3\)-N/L and in the US, the drinking water
+    standard is \textbf{10 mg \(NO_3\)-N/L}.
+  \end{itemize}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\subsection{Nitrous Oxide}\label{nitrous-oxide}
+
+\begin{itemize}
+\item
+  Commonly known as laughing gas
+\item
+  Nitrous oxide has significant medical uses, especially in surgery and
+  dentistry, for its anesthetic and pain reducing effects.
+\item
+  Formula: \(N_2O\)
+\item
+  Nitrous Oxide 3D shape:
+  \includegraphics[width=0.25000\textwidth]{pictures/Nitrous-oxide-dimensions-3D-balls.png}
+\item
+  \includegraphics[width=0.25000\textwidth]{pictures/N2O_lewis_structure.png}
+\item
+  Number of electron N has for itself following electronegativity rule:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    the first one on the left has 5
+  \item
+    the middle N has 3
+  \end{itemize}
+\item
+  \(N_2O\) can be both an electron acceptor and an electron donor
+\item
+  Production:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(N_2O\) is produced due to bacterial processes (over 90\%) and
+    anthropogenic processes such as burning of fossil fuel
+
+    \begin{itemize}
+    \tightlist
+    \item
+      The two main bacterial processes are \emph{nitrification} and
+      \emph{denitrification}
+    \item
+      Accounting that human activities have enhanced both nitrification
+      and denitrification processes, it is estimated that overall, about
+      2/3rd of \(N_2O\) production is natural, and about 1/3rd is human
+      enhanced
+    \end{itemize}
+  \end{itemize}
+\item
+  Consumption:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Because of all the electrons stored on the two N atoms (5 + 3 = 8),
+    nitrous oxide is a potential electron donor and bacteria can use it
+    for their respiration processes
+  \end{itemize}
+\item
+  Ecological significance:
+\item
+  Powerful Greenhouse Gas, 298 times that of CO\textsubscript{2}
+  (\href{https://www.epa.gov/sites/production/files/2015-07/documents/emission-factors_2014.pdf}{EPA})
+\item
+  Concentration in the atmosphere \textasciitilde{}0.0003 ppm or
+  \textasciitilde{}325 ppb on the rise
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{pictures/N2O_concentrations.png}
+\caption{}
+\end{figure}
+
+\href{https://www.epa.gov/sites/production/files/2016-08/documents/print_ghg-concentrations-2016.pdf}{Concentrations
+of nitrous oxide in the atmosphere from hundreds of thousands of years
+ago through 2015, measured in parts per billion (ppb). The data come
+from a variety of historical ice core studies and recent air monitoring
+sites around the world. Each line represents a different data
+source})\citep{Epa2016-yj}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{O}\label{o}
+
+\subsection{Oligotrophication}\label{oligotrophication}
+
+\begin{itemize}
+\tightlist
+\item
+  `a decrease in the rate of supply of organic matter to an ecosystem'
+  \citep{Nixon2009-ft}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\hypertarget{oxidation}{\subsection{Oxidation}\label{oxidation}}
+
+\begin{itemize}
+\tightlist
+\item
+  Oxidation is the \emph{\textbf{loss of electrons}} by a molecule,
+  atom, or ion.
+\item
+  The term oxidation was first used by Antoine Lavoisier to signify
+  reaction of a substance with oxygen. Much later, it was realized that
+  the substance, upon being oxidized, loses electrons, and the meaning
+  was extended to include other reactions in which electrons are lost.
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\hypertarget{oxidation-state}{\subsection{Oxidation
+state}\label{oxidation-state}}
+
+\begin{itemize}
+\tightlist
+\item
+  The oxidation state (\emph{OS}), or sometimes referred to as the
+  oxidation number, quantifies the number of electrons that an atom has
+  gained (expressed as \emph{\textbf{negative}} charge value) or lost
+  (expressed as \emph{\textbf{positive}} charge value) compared to the
+  number of valence electrons it has in its free form. As a result, it
+  can be zero, positive or negative.
+\item
+  For metal ions, the OS corresponds to its charge
+\item
+  The \emph{change} in oxidation state is a very powerful tool to
+  understand the \protect\hyperlink{redox}{redox} processes involved in
+  the environement. But OS is less than ideal when comparing the
+  absolute number of electrons one element \emph{has for itself}
+\item
+  For example, the nitrogen atom N, has 5 valence electrons. In the
+  dinitrogen molecule N\textsubscript{2}, the Lewis dot structure
+  suggests that each atom share 3 electrons with the other but
+  essentially have 5 electrons for themselves as in Figure
+  \ref{fig:ElecAlloc-N2}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.2\linewidth]{pictures/ElecAlloc_N2} 
+
+}
+
+\caption{Electron allocation on each of the N atom for the dinitrogen molecule N~2~}\label{fig:ElecAlloc-N2}
+\end{figure}
+
+As a result, the number of electron on each atom equals the number of
+valence electrons on the free form of N, hence OS = 0. Now in the
+nitrous oxide case in Figure \ref{fig:ElecAlloc-N2O}, the nitrogen atom
+to the left OS = 0, but for the middle Nitrogen atom, OS = -2, as two
+electrons were stripped by oxygen.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.2\linewidth]{pictures/ElecAlloc_N2O} 
+
+}
+
+\caption{Electron allocation on each of the N atom for the N~2~O molecule}\label{fig:ElecAlloc-N2O}
+\end{figure}
+
+The problem with the oxidation state indicator is that it is a relative
+number, and not absolute. The electron allocation indicator that
+quantifies the number of electrons each atom has for itself is more
+abolute and thus comparable. For example, the inorganic molecule with
+one C atom stable in an oxidized environment is CO\textsubscript{2}, the
+inorganic molecule with one N atom stable in an oxidized environment is
+\(NO_3^-\), and the inorganic molecule with one S atom stable in an
+oxidized environment is \(SO_4^{2-}\). All three atoms have zero
+electrons for themselves as oxygen has `stolen' them (Figure
+\ref{fig:ElecAlloc-CO2-NO3-SO4}). So they are all potential electron
+acceptors that can accept up to 8 electrons. In a way they are very
+similar.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.2\linewidth]{pictures/ElecAlloc_CO2} \includegraphics[width=0.2\linewidth]{pictures/ElecAlloc_NO3-} \includegraphics[width=0.2\linewidth]{pictures/ElecAlloc_SO42-} 
+
+}
+
+\caption{Electron allocation on each of the C, N, and S atom for the CO~2~, nitrate and sulfate molecules}\label{fig:ElecAlloc-CO2-NO3-SO4}
+\end{figure}
+
+But if one calculates the oxidation states for each of the C, N, and S
+atoms, for these three molecules, one would find OS\textsubscript{C} =
+-4, OS\textsubscript{N} = -5, and OS\textsubscript{S} = -6\ldots{} We
+believe this can be very confusing and prefer to use the electron
+allocation concept as a more absolute indicator.
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{P}\label{p}
+
+\subsection{Phosphate}\label{phosphate}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://en.wikipedia.org/wiki/Phosphate}{Phosphate} is an
+  inorganic chemical and a salt-forming anion of phosphoric acid
+\item
+  Formula: \(PO_4^{3-}\)
+\item
+  \includegraphics{pictures/phosphate_lewis_structure.jpg}
+\item
+  Phosphate is one of the anions of the polyprotic acid (i.e., which can
+  liberate several protons \(H^{+}\))
+\item
+  The conjugate bases of phosphate are:
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.00000\textwidth]{pictures/phosphate_conjugate_bases.png}
+\caption{}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  All conjugate bases are related through the set acid-base chemical
+  equilibria:
+\end{itemize}
+
+\begin{align}
+H_3PO_4  & \rightleftharpoons & H_2PO_4^- + H^+ \tag{$pK_A$ = 2.12}\\
+H_2PO_4^- & \rightleftharpoons & HPO_4^{2-} + H^+ \tag{$pK_A$ = 7.21}\\
+HPO_4^{2-}& \rightleftharpoons & PO_4^{3-} + H^+ \tag{$pK_A$ = 12.67}
+\end{align}
+
+\begin{itemize}
+\tightlist
+\item
+  The preponderant form of phosphate in a solution also depends on the
+  pH following this relationship:
+\end{itemize}
+
+\includegraphics{Textbook_BAE204_files/figure-latex/phosphates-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  The phosphoric acid and phosphates are fully oxidized forms of
+  inorganic molecules with just one atom of P: the Phosphorus atom has
+  \textbf{zero electrons} for itself as shown in Figure
+  \ref{fig:ElecAlloc-H3PO3-to-phosphate} below:
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.22\linewidth]{pictures/ElecAlloc_H3PO4} \includegraphics[width=0.22\linewidth]{pictures/ElecAlloc_H2PO4-} \includegraphics[width=0.22\linewidth]{pictures/ElecAlloc_HPO42-} \includegraphics[width=0.22\linewidth]{pictures/ElecAlloc_PO43-} 
+
+}
+
+\caption{Electron allocation on each of the fully oxidized forms of P, including from left to right Phosphoric acid, dihydrogen Phosphate, hydrogen phosphate, and phosphate , showing that the P atoms have no electrons for themselves}\label{fig:ElecAlloc-H3PO3-to-phosphate}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  Production:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Phosphorus in general and phosphate in practice has remained one of
+    the nutrients limiting the most plant productivity on our planet
+  \item
+    Phosphates are the naturally occurring form of the element
+    phosphorus, found in many phosphate minerals
+  \item
+    Phosphate minerals are mined to obtain phosphorus for use in
+    agriculture and industry
+  \item
+    The largest global producer and exporter of phosphates is Morocco.
+  \item
+    Within North America, the largest deposits lie in the Bone Valley
+    region of central Florida, the Soda Springs region of southeastern
+    Idaho, and the coast of North Carolina (near Aurora).
+  \end{itemize}
+\item
+  Consumption:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Uptake from all primary producer including plants and algae
+  \item
+    Phosphate can also be immobilized by bacteria
+  \item
+    In food industry, phosphates help baked goods rise, they act as
+    emulsifiers in processed cheese and canned soup, they add flavor to
+    cola and color to frozen french fries. They also can be added to
+    meat, poultry and seafood to help the protein bind more water,
+    making it juicier after freezing and reheating.
+  \end{itemize}
+\item
+  Ecological significance:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Phosphorus as phosphate naturally is the most limiting factor for
+    primary productivity for land and aquatic plants. Because it tends
+    to bind to particles, phosphates have accumulated with sediment
+    particularly in coastal areas, where phosphate can become available
+    again to algae through
+    \protect\hyperlink{sediment_diagenesis}{sediment diagenetic
+    processes}. As a result, phosphate is generally not considered the
+    most limiting factor for algae in estuaries and coastal environment.
+    However, it does tend to be the limiting nutrient in freshwater
+    receiving bodies such as lakes and reservoirs.
+  \item
+    Excess phosphate in freshwater receiving bodies has been shown to be
+    the nutrient causing some major
+    \protect\hyperlink{eutrophication}{eutrophication} problems
+    throughout the planet
+  \end{itemize}
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{R}\label{r}
+
+\subsection{Reactive nitrogen}\label{reactive-nitrogen}
+
+\begin{itemize}
+\item
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\hypertarget{redox}{\subsection{Redox}\label{redox}}
+
+\begin{itemize}
+\tightlist
+\item
+  Redox (short for reduction--oxidation reaction) is a chemical reaction
+  in which the oxidation states of atoms are changed. Any such reaction
+  involves both a \protect\hyperlink{reduction}{reduction} process and a
+  complementary \protect\hyperlink{oxidation}{oxidation} process,
+  effectively allowing the electron transfer processes.
+\end{itemize}
+
+\subsection{Redox couple}\label{redox-couple}
+
+\begin{itemize}
+\tightlist
+\item
+  redox couples, commonly noted as `Ox/Red' refer to the two forms that
+  an element might take depending on its
+  \protect\hyperlink{oxidation-state}{oxidation state}
+\item
+  Ox in `Ox/Red' refers to as the \emph{oxidizer} or oxidizing agent, as
+  it has the capability to make other elements \textbf{lose} their
+  electrons.
+\item
+  Red in `Ox/Red' refers to as the \emph{reducer} or reducing agent, as
+  it has the capability to \textbf{give} electrons to other elements
+\item
+  Common redox couples which matter in environmental and ecological
+  engineering include:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    CO\textsubscript{2}/CH\textsubscript{2}O
+  \item
+    O\textsubscript{2}/H\textsubscript{2}O
+  \item
+    NO\textsubscript{3}\textsuperscript{-}/N\textsubscript{2}
+  \item
+    NO\textsubscript{3}\textsuperscript{-}/NH\textsubscript{4}\textsuperscript{+}
+  \item
+    NO\textsubscript{3}\textsuperscript{-}/NO\textsubscript{2}\textsuperscript{-}
+  \item
+    MnO\textsubscript{2}/Mn\textsuperscript{2+}
+  \item
+    Fe\textsuperscript{3+}/Fe\textsuperscript{2+}
+  \item
+    SO\textsubscript{4}\textsuperscript{2-}/H\textsubscript{2}S
+  \item
+    CO\textsubscript{2}/CH\textsubscript{4}
+  \end{itemize}
+\end{itemize}
+
+\subsection{Redox half-reactions}\label{redox-half-reactions}
+
+\begin{itemize}
+\tightlist
+\item
+  A half reaction is either the oxidation or reduction reaction
+  component of a redox reaction. A half reaction is obtained by
+  considering the change in oxidation states of individual substances
+  involved in the redox reaction \citep{Wikipedia_contributors2018-be}
+\item
+  Redox half reactions illustrate the transfer of electrons from the
+  oxidized form of an element to a reduced form of an element.
+\item
+  Half-reactions are often used as a method of balancing redox reactions
+\item
+  To derive half-reactions,
+
+  \begin{itemize}
+  \tightlist
+  \item
+    the first convention is that the oxidizer is on the left of the
+    equation, and the reducer on the right
+  \item
+    one must first equilibrate all elements other than O and H
+  \item
+    then one balances for O, by adding H\textsubscript{2}O on the
+    appropriate side of the half reaction
+  \item
+    then one adds the appropriate number of H\textsuperscript{+} to
+    balance the H
+  \item
+    Finally one adds the appropriate number of e\textsuperscript{-} to
+    balance the charge. The number of e\textsuperscript{-} must
+    correspond to the change in
+    \protect\hyperlink{oxidation-state}{oxidation state}
+  \end{itemize}
+\item
+  The half-reactions corresponding to the redox couples above are:
+\item
+  CO\textsubscript{2}/CH\textsubscript{2}O
+\end{itemize}
+
+\begin{equation}
+CO_2 + 4 H^+ + 4 e^- \rightleftharpoons CH_2O + H_2O  
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  CH\textsubscript{2}O here is a generic formula to represent the
+  electron donating capacity of OM. This equation might be misleading as
+  it corresponds to the OM donating 4 electrons in the respiration
+  schemes, but because it is written using the ox/red convention, is the
+  opposite of the intuitive direction. So a more intuitive half-reaction
+  might be, and is effectively what is used to write the full redox
+  reaction:
+\end{itemize}
+
+\begin{equation}
+CH_2O + H_2O \rightleftharpoons CO_2 + 4 H^+ + 4 e^-
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  O\textsubscript{2}/H\textsubscript{2}O
+\end{itemize}
+
+\begin{equation}
+O_2 + 4 H^+ + 4 e^- \rightleftharpoons 4H_2O  
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  NO\textsubscript{3}\textsuperscript{-}/N\textsubscript{2}
+\end{itemize}
+
+\begin{equation}
+2 NO_3^- + 10 e^- + 12 H^+ \rightleftharpoons N_2 + 6 H_2O
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  MnO\textsubscript{2}/Mn\textsuperscript{2+}
+\end{itemize}
+
+\begin{equation}
+MnO_2 + 4 e^- + 4 H^+ \rightleftharpoons Mn^{2+} + 2 H_2O
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  Fe\textsuperscript{3+}/Fe\textsuperscript{2+}
+\end{itemize}
+
+\begin{equation}
+Fe^{3+} + 1 e^- \rightleftharpoons Fe^{2+} \\
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  SO\textsubscript{4}\textsuperscript{2-}/H\textsubscript{2}S
+\end{itemize}
+
+\begin{equation}
+SO_4^{2-} + 8 e^- + 10 H^+  \rightleftharpoons H_2S + 4 H_2O
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  CO\textsubscript{2}/CH\textsubscript{4}
+\end{itemize}
+
+\begin{equation}
+CO_2 + 8 e^- + 8 H^+ \rightleftharpoons CH_4 + 2 H_2O
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  a redox reaction \textbf{always} involves two half reactions where the
+  electrons are transfered from the lowest redox potential couple to the
+  highest redox potential couple. For example, the combustion of methane
+  in oxygen involves the two O\textsubscript{2}/H\textsubscript{2}O and
+  CO\textsubscript{2}/CH\textsubscript{4} couples. The half-reaction of
+  the highest redox potential couple goes on top, and that of the lowest
+  potential at the bottom, but this time written as red/ox like in the
+  equation below:
+\end{itemize}
+
+\begin{align}
+2\,O_2 + 8\,H^+ + 8\,e^- & \rightleftharpoons & 4\,H_2O\\
+CH_4 + 2\,H_2O & \rightleftharpoons & CO_2 + 8\,H^+ + 8\,e^-\\
+& &\\
+\hline\\
+CH_4 + 2\,O_2 & \to & CO_2 + 2\,H_2O
+\end{align}
+
+The electrons cancel out, and in this case the protons as well. So the
+combustion of methane, which is very simple at first glance, really
+involves a transfer of electrons, which the half-reactions reveal.
+
+\hypertarget{reduction}{\subsection{Reduction}\label{reduction}}
+
+\begin{itemize}
+\tightlist
+\item
+  Reduction is the \emph{\textbf{gain}} of electrons by a molecule,
+  atom, or ion.
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{S}\label{s}
+
+\subsection{Skeletal formula}\label{skeletal-formula}
+
+\begin{quote}
+The skeletal formula, also called line-angle formula or shorthand
+formula, of an organic compound is a type of molecular structural
+formula that serves as a shorthand representation of a molecule's
+bonding and some details of its molecular geometry
+\citep{Wikipedia_contributors2018-sa}.
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  see \protect\hyperlink{structural-formula}{Structural formula}
+\end{itemize}
+
+\hypertarget{structural-formula}{\subsection{Structural
+formula}\label{structural-formula}}
+
+\subsection{Sulfate}\label{sulfate}
+
+\begin{itemize}
+\tightlist
+\item
+  Sulfate is the inorganic sulfur anion stable in oxidized water
+\item
+  Formula: \(SO_4^{2-}\)
+\item
+  Sulfate 3D shape:
+  \includegraphics[width=0.25000\textwidth]{pictures/Sulfate-3D-balls.png}
+\item
+  Lewis dot structure of nitrate:
+  \includegraphics{pictures/sulfate_lewis_structure.png}
+\item
+  Number of electron S has for itself following electronegativity rule:
+  zero
+\item
+  \(SO_4^{2-}\) can only be an \emph{\textbf{electron acceptor}}
+\item
+  \(SO_4^{2-}\) is the conjugate base of Hydrogen sulfate \(HSO_4^{-}\).
+  The figure below shows that for pH normally measured in surface water
+  and streams (4.5-8), \(SO_4^{2-}\) is the truly preponderant form. We
+  therefore generally omit to mention \(HSO_4^{-}\) as a chemical form
+  that plays any significant role.
+\end{itemize}
+
+\includegraphics{Textbook_BAE204_files/figure-latex/SO4-1.pdf}
+
+\begin{itemize}
+\item
+  During their anabolism, primary producers uptake sulfate, but the
+  sulfur atoms can be incorporated into amino-acids only after sulfur
+  has been reduced, or gained 8 electrons to be in a thiol (\(-SH\))
+  form.
+\item
+  Production:
+\item
+  Consumption:
+\item
+  Ecological significance:
+\item
+  Health effects:
+\end{itemize}
+
+\emph{\protect\hyperlink{top}{back to top}}
+
+\section{T}\label{t}
+
+\subsection{Trophic names}\label{trophic-names}
+
+\begin{itemize}
+\tightlist
+\item
+  Depending on the source of carbon, the source of electrons, and the
+  source of energy, organisms have been qualified and called
+  differently.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  Depending on the source of \emph{\textbf{carbon}}
+\end{itemize}
+
+\textbf{Autotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Auto}\emph{trophs} obtain their carbon needs, on their own,
+  hence \emph{Auto}.
+\item
+  In other words, they obtain their carbon from CO\textsubscript{2} and
+  carbonates
+\item
+  Just about all green plants and algae are autotrophs
+\end{itemize}
+
+\textbf{Heterotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Hetero}\emph{trophs} obtain their carbon needs, from
+  \emph{others}, hence \emph{Hetero}.
+\item
+  In other words, they obtain their carbon from organic matter, some of
+  which might also serve as a source of electrons
+\item
+  All animals are heterotrophs, and most bacteria are too.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  Depending on the source of \emph{\textbf{electrons}}
+\end{itemize}
+
+\textbf{Lithotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Litho}\emph{trophs} obtain their reducing power or their high
+  energy electrons from inorganic molecules, or \emph{mineral matter}.
+  Literally, \emph{rock eaters}.
+\item
+  In other words, they obtain their electrons from molecules or atoms
+  like NH\textsubscript{4}\textsuperscript{+} or Fe\textsuperscript{2+}.
+\item
+  ALL Lithotrophs are unicellular microorganisms
+\item
+  In the examples above, nitrifiers and iron oxidizing bacteria are
+  lithotrophs
+\end{itemize}
+
+\textbf{Organotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Organo}\emph{trophs} obtain their reducing power or their high
+  energy electrons from \emph{organic} molecules, hence the
+  \emph{organo}\\
+\item
+  In other words, they obtain their electrons from organic matter
+\item
+  All pluricellular organisms are organotrophs 
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  Depending on the source of \emph{\textbf{energy}}
+\end{itemize}
+
+\textbf{Phototrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Photo}\emph{trophs} obtain their energy primarily through
+  sunlight.
+\item
+  In reality, at night, phototrophs become chemotrophs as their cellular
+  respiration is based upon oxidizing organic matter. But they are
+  autosufficient. They capture solar energy and store it in a chemical
+  form thanks to photosynthesis, and used that stored energy later on.
+\item
+  Just about all green plants are phototrophs.
+\end{itemize}
+
+\textbf{Chemotrophs}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Chemo}\emph{trophs} obtain their energy as energy previously
+  stored in a chemical form.
+\item
+  Just about all pluricellular organisms are chemotrophs, even the
+  phototrophs, which turn into chemotrophs at night 
+\end{itemize}
+
+\bibliography{book.bib,packages.bib}
+
+
+\end{document}
