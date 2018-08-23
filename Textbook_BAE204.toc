@@ -1,0 +1,106 @@
+\contentsline {chapter}{Preface}{5}{chapter*.2}
+\contentsline {section}{Author}{5}{section*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
+\contentsline {chapter}{\numberline {2}Life's secrets for storing energy}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}The five fundamental requirements of life}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Electron allocation onto CHONSP}{10}{section.2.2}
+\contentsline {section}{\numberline {2.3}Electronegativity as a powerful tool to allocate electrons}{10}{section.2.3}
+\contentsline {section}{\numberline {2.4}Dioxygen: the `electron kleptomaniac' molecule}{11}{section.2.4}
+\contentsline {section}{\numberline {2.5}Fully Oxidized forms of CNSP}{13}{section.2.5}
+\contentsline {section}{\numberline {2.6}Oxidation versus Reduction}{14}{section.2.6}
+\contentsline {section}{\numberline {2.7}A gradient of oxidation and reduction states on inorganic and organic molecules}{15}{section.2.7}
+\contentsline {section}{\numberline {2.8}Examples of electrons stored on organic molecules}{36}{section.2.8}
+\contentsline {section}{\numberline {2.9}Summary on electron allocations}{37}{section.2.9}
+\contentsline {chapter}{\numberline {3}Life's secrets to make complex organic molecules}{39}{chapter.3}
+\contentsline {section}{\numberline {3.1}Polymers of simple monomers}{39}{section.3.1}
+\contentsline {section}{\numberline {3.2}Carbohydrates}{39}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Monosaccharides}{40}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Dissacharides}{45}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Polyssaccharides}{47}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Other carbohydrates}{47}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}Aerobic and anaerobic respiration}{49}{chapter.4}
+\contentsline {section}{\numberline {4.1}Generating energy: transfer of electrons}{49}{section.4.1}
+\contentsline {section}{\numberline {4.2}Generating energy without combustion}{50}{section.4.2}
+\contentsline {section}{\numberline {4.3}ATP or the energy currency of the cell}{50}{section.4.3}
+\contentsline {section}{\numberline {4.4}The ATP manufacture}{51}{section.4.4}
+\contentsline {section}{\numberline {4.5}Creating a proton gradient as a source of proton flow}{52}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}A compartment to accumulate protons}{53}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}A supply of protons for the intermembrane space: proton pumps}{54}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Electron transfer molecules that power the proton pumps}{54}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Transfer of electrons from the Organic Carbon to an electron acceptor}{56}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Oxygen reduction}{56}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Electron fate from organic matter to electron transfer molecules}{57}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Summary of respiration}{58}{section.4.7}
+\contentsline {section}{\numberline {4.8}Respiration electron flow schemes}{60}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Linkages between respiration and microbial processes}{60}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Respiration schemes}{60}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}Aerobic respiration schemes for organotrophs}{61}{subsection.4.8.3}
+\contentsline {chapter}{\numberline {5}The classic redox sequence of wetland soils}{67}{chapter.5}
+\contentsline {section}{\numberline {5.1}The theoretical vertical sequence of respiratory processes in wetland soils}{67}{section.5.1}
+\contentsline {section}{\numberline {5.2}An aerobic layer near the soil-water interface}{67}{section.5.2}
+\contentsline {section}{\numberline {5.3}Respiration in the anaerobic zone of the soil}{68}{section.5.3}
+\contentsline {section}{\numberline {5.4}A denitrification layer below the aerobic layer}{69}{section.5.4}
+\contentsline {section}{\numberline {5.5}Manganese and Iron oxides reductions}{71}{section.5.5}
+\contentsline {section}{\numberline {5.6}Sulfate reduction}{74}{section.5.6}
+\contentsline {section}{\numberline {5.7}The methanogenesis oddity}{75}{section.5.7}
+\contentsline {section}{\numberline {5.8}First summary on the electron acceptor chain in wetland soils}{75}{section.5.8}
+\contentsline {section}{\numberline {5.9}Supply and demand of electron acceptors and of the byproducts of Organic Matter oxidation}{76}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Demands drive downward fluxes of dioxygen, nitrate and sulfate}{76}{subsection.5.9.1}
+\contentsline {subsection}{\numberline {5.9.2}Supply of byproducts of organic matter oxidation}{77}{subsection.5.9.2}
+\contentsline {subsection}{\numberline {5.9.3}Nitrification}{77}{subsection.5.9.3}
+\contentsline {subsection}{\numberline {5.9.4}Gas bubble formation}{78}{subsection.5.9.4}
+\contentsline {subsection}{\numberline {5.9.5}Oxidation of upward moving reduced sulfur}{78}{subsection.5.9.5}
+\contentsline {subsection}{\numberline {5.9.6}Oxidation of upward moving Mn\textsuperscript {2+} and Fe\textsuperscript {2+}}{78}{subsection.5.9.6}
+\contentsline {subsection}{\numberline {5.9.7}Moving of Dissolved Organic Carbon}{79}{subsection.5.9.7}
+\contentsline {chapter}{\numberline {6}Glossary}{81}{chapter.6}
+\contentsline {section}{\numberline {6.1}A}{81}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Aerobic respiration}{81}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Anaerobic respiration}{81}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Ammonia}{81}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Ammonium}{82}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Ammonium nitrate}{83}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.6}Anoxic waters}{84}{subsection.6.1.6}
+\contentsline {section}{\numberline {6.2}C}{85}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Carbon dioxide}{85}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Carbonates}{85}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Catabolism}{87}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}D}{88}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Denitrification}{88}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Dihydrogen sulfide}{88}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}E}{88}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Eutrophication}{88}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}F}{88}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Fischer projection}{88}{subsection.6.5.1}
+\contentsline {section}{\numberline {6.6}G}{89}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Greenhouse gases \emph {(GHG)}}{89}{subsection.6.6.1}
+\contentsline {section}{\numberline {6.7}H}{89}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Haber-Bosch process}{89}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Haworth Projection}{89}{subsection.6.7.2}
+\contentsline {subsection}{\numberline {6.7.3}Hydrogen Sulfide}{89}{subsection.6.7.3}
+\contentsline {section}{\numberline {6.8}L}{90}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Lithotrophs}{90}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}Limiting factor}{90}{subsection.6.8.2}
+\contentsline {section}{\numberline {6.9}M}{91}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Methane}{91}{subsection.6.9.1}
+\contentsline {subsection}{\numberline {6.9.2}Mineralization}{91}{subsection.6.9.2}
+\contentsline {section}{\numberline {6.10}N}{92}{section.6.10}
+\contentsline {subsection}{\numberline {6.10.1}Nitrate}{92}{subsection.6.10.1}
+\contentsline {subsection}{\numberline {6.10.2}Nitrous Oxide}{94}{subsection.6.10.2}
+\contentsline {section}{\numberline {6.11}O}{95}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}Oligotrophication}{95}{subsection.6.11.1}
+\contentsline {subsection}{\numberline {6.11.2}Oxidation}{95}{subsection.6.11.2}
+\contentsline {subsection}{\numberline {6.11.3}Oxidation state}{96}{subsection.6.11.3}
+\contentsline {section}{\numberline {6.12}P}{97}{section.6.12}
+\contentsline {subsection}{\numberline {6.12.1}Phosphate}{97}{subsection.6.12.1}
+\contentsline {section}{\numberline {6.13}R}{99}{section.6.13}
+\contentsline {subsection}{\numberline {6.13.1}Reactive nitrogen}{99}{subsection.6.13.1}
+\contentsline {subsection}{\numberline {6.13.2}Redox}{99}{subsection.6.13.2}
+\contentsline {subsection}{\numberline {6.13.3}Redox couple}{99}{subsection.6.13.3}
+\contentsline {subsection}{\numberline {6.13.4}Redox half-reactions}{99}{subsection.6.13.4}
+\contentsline {subsection}{\numberline {6.13.5}Reduction}{101}{subsection.6.13.5}
+\contentsline {section}{\numberline {6.14}S}{101}{section.6.14}
+\contentsline {subsection}{\numberline {6.14.1}Skeletal formula}{101}{subsection.6.14.1}
+\contentsline {subsection}{\numberline {6.14.2}Structural formula}{101}{subsection.6.14.2}
+\contentsline {subsection}{\numberline {6.14.3}Sulfate}{101}{subsection.6.14.3}
+\contentsline {section}{\numberline {6.15}T}{102}{section.6.15}
+\contentsline {subsection}{\numberline {6.15.1}Trophic names}{102}{subsection.6.15.1}

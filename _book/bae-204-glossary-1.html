@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Introduction to Environmental and Ecological Engineering</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown 0.6.2 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Introduction to Environmental and Ecological Engineering" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Introduction to Environmental and Ecological Engineering" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="François Birgand">
+
+
+<meta name="date" content="2018-02-03">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="references-1.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html"><i class="fa fa-check"></i><b>3</b> BAE 204 Glossary</a><ul>
+<li class="chapter" data-level="3.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#a"><i class="fa fa-check"></i><b>3.1</b> A</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#aerobic-respiration"><i class="fa fa-check"></i><b>3.1.1</b> Aerobic respiration</a></li>
+<li class="chapter" data-level="3.1.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#anaerobic-respiration"><i class="fa fa-check"></i><b>3.1.2</b> Anaerobic respiration</a></li>
+<li class="chapter" data-level="3.1.3" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#ammonia"><i class="fa fa-check"></i><b>3.1.3</b> Ammonia</a></li>
+<li class="chapter" data-level="3.1.4" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#ammonium"><i class="fa fa-check"></i><b>3.1.4</b> Ammonium</a></li>
+<li class="chapter" data-level="3.1.5" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#ammonium-nitrate"><i class="fa fa-check"></i><b>3.1.5</b> Ammonium nitrate</a></li>
+<li class="chapter" data-level="3.1.6" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#anoxic-waters"><i class="fa fa-check"></i><b>3.1.6</b> Anoxic waters</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#c"><i class="fa fa-check"></i><b>3.2</b> C</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#carbon-dioxide"><i class="fa fa-check"></i><b>3.2.1</b> Carbon dioxide</a></li>
+<li class="chapter" data-level="3.2.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#carbonates"><i class="fa fa-check"></i><b>3.2.2</b> Carbonates</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#d"><i class="fa fa-check"></i><b>3.3</b> D</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#dihydrogen-sulfide"><i class="fa fa-check"></i><b>3.3.1</b> Dihydrogen sulfide</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#e"><i class="fa fa-check"></i><b>3.4</b> E</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#eutrophication"><i class="fa fa-check"></i><b>3.4.1</b> Eutrophication</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#g"><i class="fa fa-check"></i><b>3.5</b> G</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#greenhouse-gases-ghg"><i class="fa fa-check"></i><b>3.5.1</b> Greenhouse gases <em>(GHG)</em></a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#h"><i class="fa fa-check"></i><b>3.6</b> H</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#haber-bosch-process"><i class="fa fa-check"></i><b>3.6.1</b> Haber-Bosch process</a></li>
+<li class="chapter" data-level="3.6.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#hydrogen-sulfide"><i class="fa fa-check"></i><b>3.6.2</b> Hydrogen Sulfide</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#l"><i class="fa fa-check"></i><b>3.7</b> L</a><ul>
+<li class="chapter" data-level="3.7.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#limiting-factor"><i class="fa fa-check"></i><b>3.7.1</b> Limiting factor</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#m"><i class="fa fa-check"></i><b>3.8</b> M</a><ul>
+<li class="chapter" data-level="3.8.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#methane"><i class="fa fa-check"></i><b>3.8.1</b> Methane</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#n"><i class="fa fa-check"></i><b>3.9</b> N</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#nitrate"><i class="fa fa-check"></i><b>3.9.1</b> Nitrate</a></li>
+<li class="chapter" data-level="3.9.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#nitrous-oxide"><i class="fa fa-check"></i><b>3.9.2</b> Nitrous Oxide</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#o"><i class="fa fa-check"></i><b>3.10</b> O</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#oligotrophication"><i class="fa fa-check"></i><b>3.10.1</b> Oligotrophication</a></li>
+</ul></li>
+<li class="chapter" data-level="3.11" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#p"><i class="fa fa-check"></i><b>3.11</b> P</a><ul>
+<li class="chapter" data-level="3.11.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#phosphate"><i class="fa fa-check"></i><b>3.11.1</b> Phosphate</a></li>
+</ul></li>
+<li class="chapter" data-level="3.12" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#s"><i class="fa fa-check"></i><b>3.12</b> S</a><ul>
+<li class="chapter" data-level="3.12.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#sulfate"><i class="fa fa-check"></i><b>3.12.1</b> Sulfate</a></li>
+</ul></li>
+<li class="chapter" data-level="3.13" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#references"><i class="fa fa-check"></i><b>3.13</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="7" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html"><i class="fa fa-check"></i><b>7</b> BAE 204 Glossary</a><ul>
+<li class="chapter" data-level="7.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#a-1"><i class="fa fa-check"></i><b>7.1</b> A</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#aerobic-respiration-1"><i class="fa fa-check"></i><b>7.1.1</b> Aerobic respiration</a></li>
+<li class="chapter" data-level="7.1.2" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#anaerobic-respiration-1"><i class="fa fa-check"></i><b>7.1.2</b> Anaerobic respiration</a></li>
+<li class="chapter" data-level="7.1.3" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#ammonia-1"><i class="fa fa-check"></i><b>7.1.3</b> Ammonia</a></li>
+<li class="chapter" data-level="7.1.4" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#ammonium-1"><i class="fa fa-check"></i><b>7.1.4</b> Ammonium</a></li>
+<li class="chapter" data-level="7.1.5" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#ammonium-nitrate-1"><i class="fa fa-check"></i><b>7.1.5</b> Ammonium nitrate</a></li>
+<li class="chapter" data-level="7.1.6" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#anoxic-waters-1"><i class="fa fa-check"></i><b>7.1.6</b> Anoxic waters</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#c-1"><i class="fa fa-check"></i><b>7.2</b> C</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#carbon-dioxide-1"><i class="fa fa-check"></i><b>7.2.1</b> Carbon dioxide</a></li>
+<li class="chapter" data-level="7.2.2" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#carbonates-1"><i class="fa fa-check"></i><b>7.2.2</b> Carbonates</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#d-1"><i class="fa fa-check"></i><b>7.3</b> D</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#dihydrogen-sulfide-1"><i class="fa fa-check"></i><b>7.3.1</b> Dihydrogen sulfide</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#e-1"><i class="fa fa-check"></i><b>7.4</b> E</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#eutrophication-1"><i class="fa fa-check"></i><b>7.4.1</b> Eutrophication</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#g-1"><i class="fa fa-check"></i><b>7.5</b> G</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#greenhouse-gases-ghg-1"><i class="fa fa-check"></i><b>7.5.1</b> Greenhouse gases <em>(GHG)</em></a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#h-1"><i class="fa fa-check"></i><b>7.6</b> H</a><ul>
+<li class="chapter" data-level="7.6.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#haber-bosch-process-1"><i class="fa fa-check"></i><b>7.6.1</b> Haber-Bosch process</a></li>
+<li class="chapter" data-level="7.6.2" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#hydrogen-sulfide-1"><i class="fa fa-check"></i><b>7.6.2</b> Hydrogen Sulfide</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#l-1"><i class="fa fa-check"></i><b>7.7</b> L</a><ul>
+<li class="chapter" data-level="7.7.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#limiting-factor-1"><i class="fa fa-check"></i><b>7.7.1</b> Limiting factor</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#m-1"><i class="fa fa-check"></i><b>7.8</b> M</a><ul>
+<li class="chapter" data-level="7.8.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#methane-1"><i class="fa fa-check"></i><b>7.8.1</b> Methane</a></li>
+</ul></li>
+<li class="chapter" data-level="7.9" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#n-1"><i class="fa fa-check"></i><b>7.9</b> N</a><ul>
+<li class="chapter" data-level="7.9.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#nitrate-1"><i class="fa fa-check"></i><b>7.9.1</b> Nitrate</a></li>
+<li class="chapter" data-level="7.9.2" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#nitrous-oxide-1"><i class="fa fa-check"></i><b>7.9.2</b> Nitrous Oxide</a></li>
+</ul></li>
+<li class="chapter" data-level="7.10" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#o-1"><i class="fa fa-check"></i><b>7.10</b> O</a><ul>
+<li class="chapter" data-level="7.10.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#oligotrophication-1"><i class="fa fa-check"></i><b>7.10.1</b> Oligotrophication</a></li>
+</ul></li>
+<li class="chapter" data-level="7.11" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#p-1"><i class="fa fa-check"></i><b>7.11</b> P</a><ul>
+<li class="chapter" data-level="7.11.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#phosphate-1"><i class="fa fa-check"></i><b>7.11.1</b> Phosphate</a></li>
+</ul></li>
+<li class="chapter" data-level="7.12" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#s-1"><i class="fa fa-check"></i><b>7.12</b> S</a><ul>
+<li class="chapter" data-level="7.12.1" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#sulfate-1"><i class="fa fa-check"></i><b>7.12.1</b> Sulfate</a></li>
+</ul></li>
+<li class="chapter" data-level="7.13" data-path="bae-204-glossary-1.html"><a href="bae-204-glossary-1.html#references-2"><i class="fa fa-check"></i><b>7.13</b> References</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Environmental and Ecological Engineering</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="bae-204-glossary-1" class="section level1">
+<h1><span class="header-section-number">Chapter 7</span> BAE 204 Glossary</h1>
+<p><a id="top"></a></p>
+<p>This glossary is meant to assemble terms that we routinely use in Environmental Sciences and Engineering and which are expected to be mastered by students taking BAE 204 at NC State university. They are ordered in alphabetical list for better retrieval and look up.</p>
+<div id="a-1" class="section level2">
+<h2><span class="header-section-number">7.1</span> A</h2>
+<div id="aerobic-respiration-1" class="section level3">
+<h3><span class="header-section-number">7.1.1</span> Aerobic respiration</h3>
+</div>
+<div id="anaerobic-respiration-1" class="section level3">
+<h3><span class="header-section-number">7.1.2</span> Anaerobic respiration</h3>
+<p><a id="NH3"></a></p>
+</div>
+<div id="ammonia-1" class="section level3">
+<h3><span class="header-section-number">7.1.3</span> Ammonia</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Ammonia">Ammonia</a> is a colorless gas with a characteristic pungent smell</li>
+<li>Formula: <span class="math inline">\(NH_3\)</span></li>
+<li>Ammonia 3D shape: <img src="pictures/Ammonia-3D-balls-A.png" style="width:25.0%" /></li>
+<li>Lewis dot structure: <img src="pictures/ammonia-lewis-structure.jpg" alt="Lewis dot structure of NH_3" style="width:25.0%" /></li>
+<li>Number of electron N has for itself following electronegativity rule: eight</li>
+<li><span class="math inline">\(NH_3\)</span> can only be an <strong>electron donor</strong></li>
+<li>Because N has so many electrons to be potentially donated, ammonia is generally unstable in an aerobic environment. As a result, it tends to trace quantities in nature</li>
+<li>When dissolved in water, and depending on the pH of the solution, ammonia converts to <a href="bae-204-glossary-1.html#NH4">ammonium</a> following the reaction:</li>
+</ul>
+<p><span class="math display">\[
+H_2O + NH_3 \rightleftharpoons OH^{-} + NH_4^{+}
+\]</span></p>
+<ul>
+<li>Production:
+<ul>
+<li>Because of its many uses, ammonia is one of the most highly produced inorganic chemicals. Dozens of chemical plants worldwide produce ammonia. Consuming more than 1% of all man-made power, ammonia production is a significant component of the world energy budget.</li>
+<li>In 2014, about 88% of the ammonia produced was used for fertilizing agricultural crops</li>
+<li>Modern ammonia-producing plants generally depend on the <a href="#haber-bosch">Haber-Bosch process</a> which consists into reducing dinitrogen into ammonia
+<ul>
+<li><span class="math display">\[
+3\,H_2 + N_2 \to 2\,NH_3
+\]</span></li>
+</ul></li>
+</ul></li>
+<li>Consumption:
+<ul>
+<li>Ammonia is directly or indirectly the precursor to most nitrogen-containing compounds. Virtually all synthetic nitrogen compounds are derived from ammonia.</li>
+<li></li>
+</ul></li>
+</ul>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+<p><a id="NH4"></a></p>
+</div>
+<div id="ammonium-1" class="section level3">
+<h3><span class="header-section-number">7.1.4</span> Ammonium</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Ammonium">Ammonium</a> is the most reduced inorganic nitrogenous cation (positively charged).</li>
+<li>Ammonium 3D shape: <img src="pictures/Ammonium-3D-balls.png" style="width:25.0%" /></li>
+<li>Lewis dot structure: <img src="pictures/ammonium_lewis_structure.png" style="width:25.0%" /></li>
+<li>Number of electron N has for itself following electronegativity rule: eight</li>
+<li>It is formed by the protonation of <a href="bae-204-glossary-1.html#NH3">ammonia</a> following the reaction:</li>
+</ul>
+<p><span class="math display">\[
+H_2O + NH_3 \rightleftharpoons OH^{-} + NH_4^{+} \tag{$pK_A$ = 9.2}
+\]</span></p>
+<ul>
+<li>The relative abundance of ammonium vs ammonia depends on the pH of the solution. See figure below</li>
+</ul>
+<p><img src="bookdown-demo_files/figure-html/NH3-NH4-1.png" width="672" /></p>
+<ul>
+<li>Because in most natural aqueous environments, pH is below 8, ammonium tends to be the preponderant form.</li>
+<li>Production:
+<ul>
+<li>In nature, ammonium is a waste product of the mineralization of organic molecules</li>
+<li>It is added as fertilizer on soils as <a href="https://en.wikipedia.org/wiki/Ammonium_nitrate">ammonium nitrate</a></li>
+</ul></li>
+<li>Health hazard:
+<ul>
+<li>Ammonia vapor has a sharp, irritating, pungent odor that acts as a warning of potentially dangerous exposure</li>
+<li>Exposure to very high concentrations of gaseous ammonia can result in lung damage and death</li>
+</ul></li>
+<li>Drinking water standard:</li>
+</ul>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+</div>
+<div id="ammonium-nitrate-1" class="section level3">
+<h3><span class="header-section-number">7.1.5</span> Ammonium nitrate</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Ammonium_nitrate">Ammonium nitrate</a> is a chemical compound, the nitrate salt of the ammonium cation</li>
+<li>It is a white crystal solid and is highly soluble in water.</li>
+<li>Formula: <span class="math inline">\(NH_4NO_3\)</span></li>
+<li>3D shape: <img src="pictures/Ammonium-nitrate-xtal-3D-balls-A.png" style="width:33.0%" /></li>
+<li>It is predominantly used in agriculture as a high-nitrogen fertilizer</li>
+<li><p>Its other major use is as a component of explosive mixtures used in mining, quarrying, and civil construction</p></li>
+<li>Production:
+<ul>
+<li>Ammonium nitrate does exist naturally in mines of the <a href="https://en.wikipedia.org/wiki/Atacama_Desert">Atacama desert</a> in Chile but globally nearly all ammonium nitrate is now produced synthetically</li>
+<li>Byproduct of all respiration processes. Ammonium ions are a waste product of the metabolism of animals. In fish and aquatic invertebrates, it is excreted directly into the water. In mammals, sharks, and amphibians, it is converted in the urea cycle to urea, because urea is less toxic and can be stored more efficiently. In birds, reptiles, and terrestrial snails, metabolic ammonium is converted into uric acid, which is solid and can therefore be excreted with minimal water loss.</li>
+</ul></li>
+<li>Consumption/utilization:
+<ul>
+<li>It is used as a fertilizer, because it tends to release inorganic nitrogen slowly in soil. Applied as a surface fertilizer, it penetrates the soil with rainfall infiltration. Highly soluble, the nitrate anion becomes readily available to plant roots, although it is susceptible to leaching below the root system into the shallow and deep groundwater. The ammonium cation tends to adsorb to soil particles and is thus not as susceptible to leaching. Ammonium can be directly uptaken by plant roots, which thermodynamically makes sense, although because in most soils aerobic conditions are preponderant, nitrate tends to be the ion uptaken most often. Soil bacteria in the aerobic zone of the soil will oxidize adsorbed ammonium into nitrate, which then becomes available for plant roots. The whole chain of events slows the release of inorganic nitrogen to crops and thus makes for more effective fertilizers.</li>
+</ul></li>
+<li>Health hazard
+<ul>
+<li>No direct known health hazard</li>
+</ul></li>
+</ul>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+</div>
+<div id="anoxic-waters-1" class="section level3">
+<h3><span class="header-section-number">7.1.6</span> Anoxic waters</h3>
+<ul>
+<li>Anoxic waters are areas of sea water, fresh water, or groundwater that are depleted of dissolved oxygen and are a more severe condition of hypoxia (Wikipedia)</li>
+<li>Anoxic waters result from an <em><strong>IMBALANCE</strong></em> between oxygen supply and demand</li>
+</ul>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="c-1" class="section level2">
+<h2><span class="header-section-number">7.2</span> C</h2>
+<p><a id="CO2"></a></p>
+<div id="carbon-dioxide-1" class="section level3">
+<h3><span class="header-section-number">7.2.1</span> Carbon dioxide</h3>
+<ul>
+<li>Carbon dioxide is a colorless gas which density is 50% higher than that of dry air.</li>
+<li>Formula: <span class="math inline">\(CO_2\)</span></li>
+<li>Carbon dioxide 3D shape: <img src="pictures/Carbon_dioxide_3D_ball.png" style="width:25.0%" /></li>
+<li>Lewis dot structure: <img src="pictures/CO2_lewis_structure.png" /></li>
+<li>Number of electron C has for itself following electronegativity rule: zero</li>
+<li><p><span class="math inline">\(CO_2\)</span> can only be an electron acceptor</p></li>
+<li>Production:
+<ul>
+<li>oxidation of C in all organic molecules</li>
+<li>Almost all respiratory processes on earth (some respiration does not involve oxidation of C)</li>
+<li>Combustion of all Carbon-based fuel</li>
+</ul></li>
+<li>Consumption:
+<ul>
+<li>Photosynthesis
+<ul>
+<li>Atmospheric carbon dioxide <strong>is the primary carbon source for life</strong> on Earth</li>
+</ul></li>
+<li>Calcite precipitation in the oceans</li>
+</ul></li>
+<li>Ecological Significance:
+<ul>
+<li>Greenhouse Gas, which serves as reference for all other GHG</li>
+<li>Concentration in the atmosphere ~380 ppm on the rise, or 0.38%, or a partial pressure of 0.38 atm</li>
+</ul></li>
+</ul>
+<center>
+<div class="figure">
+<img src="pictures/CO2_atm_concentrations.png" alt="Carbon Dioxide variations through ancient and modern times" />
+<p class="caption">Carbon Dioxide variations through ancient and modern times</p>
+</div>
+<p><a href="https://https://www.epa.gov/sites/production/files/2016-08/documents/print_ghg-concentrations-2016.pdf">concentrations of carbon dioxide in the atmosphere from hundreds of thousands of years ago through 2015, measured in parts per million (ppm). The data come from a variety of historical ice core studies and recent air monitoring sites around the world. Each line represents a different data source</a></p>
+</center>
+<p><br/></p>
+<ul>
+<li><p>In reality, concentrations are not stable, and vary widely in time and in space at the next two videos nicely show.</p></li>
+<li><p>The next one results from the model simulations</p></li>
+</ul>
+<p><br/></p>
+<center>
+<iframe "Youtube video of $CO_2$ modeled seasonal variations" width="640" height="360" src="https://www.youtube.com/embed/WGHkY0E4FMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+</center>
+<p><br/><br/> - The following one is the combination of both models and observations</p>
+<p><br/></p>
+<center>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/2BWWrJr6TJw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+</center>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+</div>
+<div id="carbonates-1" class="section level3">
+<h3><span class="header-section-number">7.2.2</span> Carbonates</h3>
+<ul>
+<li>After carbon dioxide dissolves in water, it will combine with water to form carbonic acid (<span class="math inline">\(H_2CO_3\)</span>).</li>
+<li>Carbonate serves as <strong>the carbon source</strong> for aquatic vegetation</li>
+<li>Carbonic acid can then dissociate into bicarbonate (<span class="math inline">\(HCO_3^-\)</span>) and carbonate (<span class="math inline">\(CO_3^{2-}\)</span>)</li>
+</ul>
+<p><span class="math display">\[
+\begin{align}
+ H_2CO_3  &amp; \rightleftharpoons &amp; HCO_3^- + H^+ \tag{$pK_A$ = 3.6}\\
+ HCO_3^- &amp; \rightleftharpoons &amp; CO_3^{2-} + H^+ \tag{$pK_A$ = 6.35}
+\end{align}
+\]</span></p>
+<ul>
+<li>In an environment not open to the atmosphere (or where direct exchange with the atmosphere is very limited like in stream or wetland sediment), the preponderant form depends on the pH and can be calculated as illustrated on the graph below.</li>
+</ul>
+<p><img src="bookdown-demo_files/figure-html/CO3-1.png" width="672" /></p>
+<ul>
+<li>In sea water, Carbonate can combine with <span class="math inline">\(Ca^{2+}\)</span> to form Calcium Carbonate (<span class="math inline">\(CaCO_3\)</span>), which precipitates out of solution. In other words, calcium carbonate formation is a sink for carbonate, and ultimately from <span class="math inline">\(CO_2\)</span> addition from the atmosphere to to increased <span class="math inline">\(CO_2\)</span> concentrations in the atmosphere.</li>
+<li>Carbonates are thus a great pH buffer in aquatic environments</li>
+</ul>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="d-1" class="section level2">
+<h2><span class="header-section-number">7.3</span> D</h2>
+<p><a id="H2S"></a></p>
+<div id="dihydrogen-sulfide-1" class="section level3">
+<h3><span class="header-section-number">7.3.1</span> Dihydrogen sulfide</h3>
+<ul>
+<li>see hydrogen sulfide</li>
+</ul>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+</div>
+</div>
+<div id="e-1" class="section level2">
+<h2><span class="header-section-number">7.4</span> E</h2>
+<div id="eutrophication-1" class="section level3">
+<h3><span class="header-section-number">7.4.1</span> Eutrophication</h3>
+<ul>
+<li>Definitions:
+<ul>
+<li>‘an increase in the rate of supply of organic matter to an ecosystem’ <span class="citation">(Nixon <a href="#ref-Nixon1995-th">1995</a>)</span></li>
+<li>‘is the enrichment of a water body with nutrients, usually with an excess amount of nutrients’ (Wikipedia)</li>
+<li>‘the enrichment of water by nutrients, especially nitrogen and/or phosphorus, causing an accelerated growth of algae and higher forms of plant life to produce an undesirable disturbance to the balance of organisms present in the water and to the quality of water concerned’ <span class="citation">(Anonymous <a href="#ref-Anonymous1991-ho">1991</a><a href="#ref-Anonymous1991-ho">b</a>)</span></li>
+<li>‘the enrichment of water by nitrogen compounds causing an accelerated growth of algae and higher forms of plant life to produce an undesirable disturbance to the balance of organisms present in the water and to the quality of water concerned’ <span class="citation">(Anonymous <a href="#ref-Anonymous1991-xb">1991</a><a href="#ref-Anonymous1991-xb">a</a>)</span></li>
+</ul></li>
+</ul>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="g-1" class="section level2">
+<h2><span class="header-section-number">7.5</span> G</h2>
+<p><a id="GHG"></a></p>
+<div id="greenhouse-gases-ghg-1" class="section level3">
+<h3><span class="header-section-number">7.5.1</span> Greenhouse gases <em>(GHG)</em></h3>
+<p>A greenhouse gas is a gas in an atmosphere that absorbs and emits radiant energy within the thermal infrared range. This process is the fundamental cause of the greenhouse effect. The primary greenhouse gases in Earth’s atmosphere are <strong>water vapor</strong>, <strong><a href="bae-204-glossary-1.html#CO2">carbon dioxide</a></strong>, <strong>methane</strong>, <strong><a href="bae-204-glossary-1.html#N2O">nitrous oxide</a></strong>, and <strong>ozone</strong>. Without greenhouse gases, the average temperature of Earth’s surface would be about −18 °C (0 °F), rather than the present average of 15 °C (59 °F). In the Solar System, the atmospheres of Venus, Mars and Titan also contain gases that cause a greenhouse effect. (<a href="https://en.wikipedia.org/wiki/Greenhouse_gas">Wikipedia</a>)</p>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="h-1" class="section level2">
+<h2><span class="header-section-number">7.6</span> H</h2>
+<p><a "haber-bosch"></a></p>
+<div id="haber-bosch-process-1" class="section level3">
+<h3><span class="header-section-number">7.6.1</span> Haber-Bosch process</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Haber_process">Haber-Bosch process</a></li>
+</ul>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+<p><a id="H2S"></a></p>
+</div>
+<div id="hydrogen-sulfide-1" class="section level3">
+<h3><span class="header-section-number">7.6.2</span> Hydrogen Sulfide</h3>
+<ul>
+<li>It is a colorless gas with the characteristic foul odor of rotten eggs.</li>
+<li>It is very poisonous, corrosive, flammable and acidic in nature.</li>
+<li>Formula: <span class="math inline">\(H_2S\)</span></li>
+<li>hydrogen sulfide #D shape: <img src="pictures/Hydrogen-sulfide-3D-balls.png" style="width:25.0%" /></li>
+<li>Lewis dot structure: <img src="pictures/H2S_Lewis_structure.png" style="width:25.0%" /></li>
+<li>Number of electron S has for itself following electronegativity rule: eight</li>
+<li><span class="math inline">\(H_2S\)</span> can only be an electron donor</li>
+<li>Unstable under aerobic conditions, will readily be oxidized into <a href="#SO4">sulfate</a></li>
+<li><span class="math inline">\(H_2S\)</span> is a polyprotic acid which can lose up to 2 protons in water, depending on the pH.</li>
+</ul>
+<p><span class="math display">\[
+\begin{align}
+H_2S &amp; \rightleftharpoons &amp; HS^- + H^+ \tag{$pK_A$ = 7.02} \\
+HS^- &amp; \rightleftharpoons &amp; S^{2-}+ H^+ \tag{$pK_A$ = 12.9} \\
+\end{align}
+\]</span></p>
+<ul>
+<li>The figure below suggests that at pH found in most streams (4.5 to 8), <span class="math inline">\(H_2S\)</span> is either preponderant or corresponds to at least 20% of all sulfide forms. <span class="math inline">\(H_2S\)</span> being a highly volatile product, it explains why we can easily smell and detect it in most conditions in streams.</li>
+</ul>
+<p><img src="bookdown-demo_files/figure-html/H2S-1.png" width="672" /></p>
+<ul>
+<li>Production:
+<ul>
+<li>Hydrogen sulfide often results from the microbial breakdown, or mineralization, of organic matter in anaerobic conditions, such as may exist in swamps and sewers. When happening in sediment, this is referred to as sediment diagenesis</li>
+</ul></li>
+<li>Consumption:</li>
+</ul>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+</div>
+</div>
+<div id="l-1" class="section level2">
+<h2><span class="header-section-number">7.7</span> L</h2>
+<div id="limiting-factor-1" class="section level3">
+<h3><span class="header-section-number">7.7.1</span> Limiting factor</h3>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="m-1" class="section level2">
+<h2><span class="header-section-number">7.8</span> M</h2>
+<div id="methane-1" class="section level3">
+<h3><span class="header-section-number">7.8.1</span> Methane</h3>
+<ul>
+<li>Under <a href="https://en.wikipedia.org/wiki/Standard_conditions_for_temperature_and_pressure">normal conditions for temperature and pressure</a>, methane is a colorless, odorless gas main constituent of natural gas, and the simplest alkane</li>
+<li>Formula: <span class="math inline">\(CH_4\)</span></li>
+<li>Methane 3D shape: <img src="pictures/Methane-CRC-MW-3D-balls.png" style="width:25.0%" /></li>
+<li>Lewis dot structure of methane: <img src="pictures/Methane_lewis_structure.png" alt="Lewis dot structure of methane" /></li>
+<li>Number of electron C has for itself following electronegativity rule: eight</li>
+<li><span class="math inline">\(CH_4\)</span> can only be an electron <strong>donor</strong></li>
+<li>Because methane has so many electrons to give, it will easily ‘burn’ in normal atmosphere (provided that ignition T°C be reached, e.g., by a spark), liberating large quantities of heat (55.5 MJ/kg). The electrons are transferred from the carbon to the oxygen atoms following two redox half-reactions to obtain the overall reaction:</li>
+</ul>
+<p><span class="math display">\[
+\begin{align}
+CH_4 + 2\,H_2O &amp; \rightleftharpoons &amp; CO_2 + 8\,H^+ + 8\,e^-\\
+2\,O_2 + 8\,H^+ + 8\,e^- &amp; \rightleftharpoons &amp; 4\,H_2O\\
+&amp; &amp;\\
+\hline\\
+CH_4 + 2\,O_2 &amp; \to &amp; CO_2 + 2\,H_2O
+\end{align}
+\]</span></p>
+<ul>
+<li><p>Production:</p></li>
+<li><p>Consumption:</p></li>
+<li><p>Ecological significance:</p></li>
+</ul>
+<center>
+<div class="figure">
+<img src="pictures/CH4_concentrations.png" />
+
+</div>
+<p><a href="https://www.epa.gov/sites/production/files/2016-08/documents/print_ghg-concentrations-2016.pdf">Concentrations of methane in the atmosphere from hundreds of thousands of years ago through 2015, measured in parts per billion (ppb). The data come from a variety of historical ice core studies and recent air monitoring sites around the world. Each line represents a different data source</a></p>
+</center>
+<ul>
+<li>Health effects:</li>
+</ul>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="n-1" class="section level2">
+<h2><span class="header-section-number">7.9</span> N</h2>
+<p><a id="NO3"></a></p>
+<div id="nitrate-1" class="section level3">
+<h3><span class="header-section-number">7.9.1</span> Nitrate</h3>
+<ul>
+<li>Nitrate is the stable inorganic nitrogenous anion in oxidized water</li>
+<li>Formula: <span class="math inline">\(NO_3^{-}\)</span></li>
+<li>Nitrate 3D shape: <img src="pictures/Nitrate-3D-balls.png" style="width:25.0%" /></li>
+<li>Lewis dot structure of nitrate: <img src="pictures/nitrate_lewis_structure.png" alt="Lewis dot structure of nitrate" /></li>
+<li>Number of electron N has for itself following electronegativity rule: zero</li>
+<li><span class="math inline">\(NO_3^{-}\)</span> can only be an electron acceptor</li>
+<li><p><span class="math inline">\(NO_3^{-}\)</span> is technically the conjugate base of nitric acid <span class="math inline">\(HNO_3\)</span>, but the <span class="math inline">\(pk_A\)</span> of the reaction is at a theoretical pH of -1.38. In other words, for the pH of most natural waters (4.5 &lt; pH &lt; 8), <span class="math inline">\(HNO_3\)</span> is totally insignificant.</p></li>
+<li>Production:
+<ul>
+<li>from the complete <a href="#oxidation">oxidation</a> of inorganic nitrogenous molecules which include <a href="bae-204-glossary-1.html#NH3">ammonia</a>, <a href="bae-204-glossary-1.html#NH4">ammonium</a>, <a href="#NO2">nitrite</a></li>
+<li>from the mineralization and complete oxidation of <a href="#amine">amine radicals</a> in organic molecules</li>
+</ul></li>
+<li>Consumption:
+<ul>
+<li><strong>Uptake</strong> from microbes, plants, and algae for their <a href="#anabolism">anabolism</a>, which consists in building complex organic molecules from inorganic ones.
+<ul>
+<li>Uptake, assimilation, anabolism, immobilization are all synonymous terms to express the fact that the N atom is immobilized, at least temporarily in organic molecules.</li>
+<li>Because N is assimilated in organic molecules during uptake/anabolism, and because N gains electrons in the process (it is thus <strong><em>reduced</em></strong>), we refer to nitrate uptake as <strong><a href="#ANR">assimilatory nitrate reduction</a></strong>.</li>
+</ul></li>
+<li><strong><a href="#denitrification">Denitrification</a></strong>: under anaerobic conditions, nitrate is used by facultative anaerobes as electron acceptor to generate <a href="#ATP">ATP</a> in their respiration chain. The two major end products of denitrification are gases, namely <a href="#N2">dinitrogen (<span class="math inline">\(N_2\)</span>)</a> and <a href="bae-204-glossary-1.html#N2O">nitrous oxide (<span class="math inline">\(N_2O\)</span>)</a>, which leave the aqueous environment. As such, nitrate is not assimilated by any bacteria and denitrification is therefore, as opposed to uptake, referred to as **<a href="#DNR">dissimilatory nitrate reduction</a> into <a href="#N2">dinitrogen (<span class="math inline">\(N_2\)</span>)</a> and <a href="bae-204-glossary-1.html#N2O">nitrous oxide (<span class="math inline">\(N_2O\)</span>)</a>.</li>
+</ul></li>
+<li>Ecological significance:
+<ul>
+<li>Because of assimilation and denitrification processes, the overall nitrate concentrations in rivers tends to diminish from the catchment headwaters to the receiving bodies such as estuaries and coastal areas. As a result, inorganic nitrogen has naturally been in very short supply in these coastal water bodies, and nitrate and traditionally been the nutrient limiting aquatic productivity there. Very much like with phosphate, algae have adapted to be able to grow in very low concentrations. Anthropogenic activities, and agriculture in particular, have largely increased the loads and concentration of nitrate reaching estuaries, to the point where nitrate is no longer the limiting factor. As a result, excess nitrate is one of the reasons for the global and persistent presence of algal blooms in estuaries and coastal waters.</li>
+</ul></li>
+<li>Health hazard:
+<ul>
+<li>There is a heated debate about the health hazard that nitrate might pose. Some argue that if anything, there might be beneficial effects, while others argue that there are evidence of cancers linked to excess nitrate absorption. Unfortunately, arguments on both sides might not be totally independent of militantism and lobbies.</li>
+<li>The only consensus everybody seems to agree upon is the Blue Baby syndrome, or methemoglobinemia. Methemoglobinemia is an unusual and potentially fatal condition in which hemoglobin is oxidized to methemoglobin and loses its ability to bind and transport oxygen, hence the cyanosis (blue appearance) usually visible on fingers, toes, and lips. Nitrate reduced to nitrite in the body of humans and animals enters the body stream where it seems to directly oxidize oxyhemoglobin to methemoglobin-peroxide complex.</li>
+</ul></li>
+</ul>
+<p><br/></p>
+<center>
+<p><a href="https://syndromespedia.com/blue-baby-syndrome.html"><img src="pictures/BLUE-BABY-SYNDROME.jpg" alt="Picture of a Blue Baby from syndromespedia.com/blue-baby-syndrome.html" style="width:50.0%" /></a></p>
+<p><a href="https://syndromespedia.com/blue-baby-syndrome.html"><strong>Picture of a Blue Baby from syndromespedia.com/blue-baby-syndrome.html</strong></a></p>
+</center>
+<p><br/></p>
+<ul>
+<li>Drinking water standards
+<ul>
+<li>Although there is still a heated debate whether or not nitrate does have have detrimental health effects, the World Health Organization has provided maximum concentration guidelines of 50 mg/L as nitrate <span class="citation">(World Health Organization <a href="#ref-World_Health_Organization2011-hd">2011</a>)</span>. These guidelines have been enacted in hard laws in the US and in Europe. The 50 mg/L as nitrate equates 11.2 mg <span class="math inline">\(NO_3\)</span>-N/L and in the US, the drinking water standard is <strong>10 mg <span class="math inline">\(NO_3\)</span>-N/L</strong>.</li>
+</ul></li>
+</ul>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+<p><a id="N2O"></a></p>
+</div>
+<div id="nitrous-oxide-1" class="section level3">
+<h3><span class="header-section-number">7.9.2</span> Nitrous Oxide</h3>
+<ul>
+<li>Commonly known as laughing gas</li>
+<li>Nitrous oxide has significant medical uses, especially in surgery and dentistry, for its anesthetic and pain reducing effects.</li>
+<li>Formula: <span class="math inline">\(N_2O\)</span></li>
+<li>Nitrous Oxide 3D shape: <img src="pictures/Nitrous-oxide-dimensions-3D-balls.png" style="width:25.0%" /></li>
+<li><img src="pictures/N2O_lewis_structure.png" alt="Lewis dot structure of nitrous oxide" style="width:25.0%" /></li>
+<li>Number of electron N has for itself following electronegativity rule:
+<ul>
+<li>the first one on the left has 5</li>
+<li>the middle N has 3</li>
+</ul></li>
+<li><p><span class="math inline">\(N_2O\)</span> can be both an electron acceptor and an electron donor</p></li>
+<li>Production:
+<ul>
+<li><span class="math inline">\(N_2O\)</span> is produced due to bacterial processes (over 90%) and anthropogenic processes such as burning of fossil fuel
+<ul>
+<li>The two main bacterial processes are <em>nitrification</em> and <em>denitrification</em></li>
+<li>Accounting that human activities have enhanced both nitrification and denitrification processes, it is estimated that overall, about 2/3rd of <span class="math inline">\(N_2O\)</span> production is natural, and about 1/3rd is human enhanced</li>
+</ul></li>
+</ul></li>
+<li>Consumption:
+<ul>
+<li>Because of all the electrons stored on the two N atoms (5 + 3 = 8), nitrous oxide is a potential electron donor and bacteria can use it for their respiration processes</li>
+</ul></li>
+<li>Ecological significance:</li>
+<li>Powerful Greenhouse Gas, 298 times that of <span class="math inline">\(CO_2\)</span> (<a href="https://www.epa.gov/sites/production/files/2015-07/documents/emission-factors_2014.pdf">EPA</a>)</li>
+<li><p>Concentration in the atmosphere ~0.0003 ppm or ~325 ppb on the rise</p></li>
+</ul>
+<p><br/></p>
+<center>
+<div class="figure">
+<img src="pictures/N2O_concentrations.png" />
+
+</div>
+<p><a href="https://www.epa.gov/sites/production/files/2016-08/documents/print_ghg-concentrations-2016.pdf">Concentrations of nitrous oxide in the atmosphere from hundreds of thousands of years ago through 2015, measured in parts per billion (ppb). The data come from a variety of historical ice core studies and recent air monitoring sites around the world. Each line represents a different data source</a>)</p>
+</center>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="o-1" class="section level2">
+<h2><span class="header-section-number">7.10</span> O</h2>
+<div id="oligotrophication-1" class="section level3">
+<h3><span class="header-section-number">7.10.1</span> Oligotrophication</h3>
+<ul>
+<li>‘a decrease in the rate of supply of organic matter to an ecosystem’ <span class="citation">(Nixon <a href="#ref-Nixon2009-ft">2009</a>)</span></li>
+</ul>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="p-1" class="section level2">
+<h2><span class="header-section-number">7.11</span> P</h2>
+<div id="phosphate-1" class="section level3">
+<h3><span class="header-section-number">7.11.1</span> Phosphate</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Phosphate">Phosphate</a> is an inorganic chemical and a salt-forming anion of phosphoric acid</li>
+<li>Formula: <span class="math inline">\(PO_4^{3-}\)</span></li>
+<li><img src="pictures/phosphate_lewis_structure.jpg" alt="Lewis dot structure of phosphate" /></li>
+<li>Phosphate is one of the anions of the polyprotic acid (i.e., which can liberate several protons <span class="math inline">\(H^{+}\)</span>)</li>
+<li>The conjugate bases of phosphate are: <img src="pictures/phosphate_conjugate_bases.png" style="width:100.0%" /></li>
+<li>All conjugate bases are related through the set acid-base chemical equilibria:</li>
+</ul>
+<p><span class="math display">\[
+\begin{align}
+H_3PO_4  &amp; \rightleftharpoons &amp; H_2PO_4^- + H^+ \tag{$pK_A$ = 2.12}\\
+H_2PO_4^- &amp; \rightleftharpoons &amp; HPO_4^{2-} + H^+ \tag{$pK_A$ = 7.21}\\
+HPO_4^{2-}&amp; \rightleftharpoons &amp; PO_4^{3-} + H^+ \tag{$pK_A$ = 12.67}
+\end{align}
+\]</span></p>
+<ul>
+<li>The preponderant form of phosphate in a solution also depends on the pH following this relationship:</li>
+</ul>
+<p><img src="bookdown-demo_files/figure-html/phosphates-1.png" width="672" /></p>
+<ul>
+<li>Production:
+<ul>
+<li>Phosphorus in general and phosphate in practice has remained one of the nutrients limiting the most plant productivity on our planet</li>
+<li>Phosphates are the naturally occurring form of the element phosphorus, found in many phosphate minerals</li>
+<li>Phosphate minerals are mined to obtain phosphorus for use in agriculture and industry</li>
+<li>The largest global producer and exporter of phosphates is Morocco.</li>
+<li>Within North America, the largest deposits lie in the Bone Valley region of central Florida, the Soda Springs region of southeastern Idaho, and the coast of North Carolina (near Aurora).</li>
+</ul></li>
+<li>Consumption:
+<ul>
+<li>Uptake from all primary producer including plants and algae</li>
+<li>Phosphate can also be immobilized by bacteria</li>
+<li>In food industry, phosphates help baked goods rise, they act as emulsifiers in processed cheese and canned soup, they add flavor to cola and color to frozen french fries. They also can be added to meat, poultry and seafood to help the protein bind more water, making it juicier after freezing and reheating.</li>
+</ul></li>
+<li>Ecological significance:
+<ul>
+<li>Phosphorus as phosphate naturally is the most limiting factor for primary productivity for land and aquatic plants. Because it tends to bind to particles, phosphates have accumulated with sediment particularly in coastal areas, where phosphate can become available again to algae through <a href="#sediment_diagenesis">sediment diagenetic processes</a>. As a result, phosphate is generally not considered the most limiting factor for algae in estuaries and coastal environment. However, it does tend to be the limiting nutrient in freshwater receiving bodies such as lakes and reservoirs.</li>
+<li>Excess phosphate in freshwater receiving bodies has been shown to be the nutrient causing some major <a href="bae-204-glossary.html#eutrophication">eutrophication</a> problems throughout the planet</li>
+</ul></li>
+</ul>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="s-1" class="section level2">
+<h2><span class="header-section-number">7.12</span> S</h2>
+<div id="sulfate-1" class="section level3">
+<h3><span class="header-section-number">7.12.1</span> Sulfate</h3>
+<ul>
+<li>Sulfate is the inorganic sulfur anion stable in oxidized water</li>
+<li>Formula: <span class="math inline">\(SO_4^{2-}\)</span></li>
+<li>Sulfate 3D shape: <img src="pictures/Sulfate-3D-balls.png" style="width:25.0%" /></li>
+<li>Lewis dot structure of nitrate: <img src="pictures/Sulfate_lewis_structure.png" alt="Lewis dot structure of nitrate" /></li>
+<li>Number of electron S has for itself following electronegativity rule: zero</li>
+<li><span class="math inline">\(SO_4^{2-}\)</span> can only be an <em><strong>electron acceptor</strong></em></li>
+<li><span class="math inline">\(SO_4^{2-}\)</span> is the conjugate base of Hydrogen sulfate <span class="math inline">\(HSO_4^{-}\)</span>. The figure below shows that for pH normally measured in surface water and streams (4.5-8), <span class="math inline">\(SO_4^{2-}\)</span> is the truly preponderant form. We therefore generally omit to mention <span class="math inline">\(HSO_4^{-}\)</span> as a chemical form that plays any significant role.</li>
+</ul>
+<p><img src="bookdown-demo_files/figure-html/SO4-1.png" width="672" /></p>
+<ul>
+<li><p>During their anabolism, primary producers uptake sulfate, but the sulfur atoms can be incorporated into amino-acids only after sulfur has been reduced, or gained 8 electrons to be in a thiol (<span class="math inline">\(-SH\)</span>) form.</p></li>
+<li><p>Production:</p></li>
+<li><p>Consumption:</p></li>
+<li><p>Ecological significance:</p></li>
+<li><p>Health effects:</p></li>
+</ul>
+<p><br/><br/></p>
+<div class="row">
+<div class="col-md-9">
+
+</div>
+<div class="col-md-3" align="right">
+<em><a href="bae-204-glossary-1.html#top">back to top</a></em>
+</div>
+</div>
+<p><br/><br/><br/><br/><br/></p>
+<hr />
+</div>
+</div>
+<div id="references-2" class="section level2">
+<h2><span class="header-section-number">7.13</span> References</h2>
+
+<div id="refs" class="references">
+<div>
+<p>Anonymous. 1991a. “COUNCIL DIRECTIVE of 12 December 1991 Concerning the Protection of Waters Against Pollution Caused by Nitrates from Agricultural Sources (91 / 676 /EEC).” <em>Official Journal of the European Communities</em> 31 (12): 1–8. <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0676&amp;from=EN" class="uri">http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0676&amp;from=EN</a>.</p>
+</div>
+<div>
+<p>———. 1991b. “Council Directive of 21 May 1991 Concerning Urban Waste Water Treatment (91/271/EEC). L 135.” <em>Official Journal of the European Communities</em> 30 (5): 40–52. <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0271&amp;from=EN" class="uri">http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0271&amp;from=EN</a>.</p>
+</div>
+<div>
+<p>Nixon, Scott W. 1995. “Coastal Marine Eutrophication: A Definition, Social Causes, and Future Concerns.” <em>Ophelia</em> 41 (1). Taylor &amp; Francis: 199–219. doi:<a href="https://doi.org/10.1080/00785236.1995.10422044">10.1080/00785236.1995.10422044</a>.</p>
+</div>
+<div>
+<p>———. 2009. “Eutrophication and the Macroscope.” <em>Journal of Hydrobiologia</em> 629 (1): 5–19. doi:<a href="https://doi.org/10.1007/s1070-00-59-z">10.1007/s1070-00-59-z</a>.</p>
+</div>
+<div>
+<p>World Health Organization. 2011. “Nitrate and Nitrite in Drinking-Water Background Document for Development of WHO Guidelines for Drinking-Water Quality.” <a href="http://www.who.int/water_sanitation_health/dwq/chemicals/nitratenitrite2ndadd.pdf" class="uri">http://www.who.int/water_sanitation_health/dwq/chemicals/nitratenitrite2ndadd.pdf</a>.</p>
+</div>
+<div>
+<p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/" class="uri">http://yihui.name/knitr/</a>.</p>
+</div>
+<div>
+<p>———. 2018. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. <a href="https://github.com/rstudio/bookdown" class="uri">https://github.com/rstudio/bookdown</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Nixon1995-th">
+<p>Nixon, Scott W. 1995. “Coastal Marine Eutrophication: A Definition, Social Causes, and Future Concerns.” <em>Ophelia</em> 41 (1). Taylor &amp; Francis: 199–219. doi:<a href="https://doi.org/10.1080/00785236.1995.10422044">10.1080/00785236.1995.10422044</a>.</p>
+</div>
+<div id="ref-Anonymous1991-ho">
+<p>Anonymous. 1991b. “Council Directive of 21 May 1991 Concerning Urban Waste Water Treatment (91/271/EEC). L 135.” <em>Official Journal of the European Communities</em> 30 (5): 40–52. <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0271&amp;from=EN" class="uri">http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0271&amp;from=EN</a>.</p>
+</div>
+<div id="ref-Anonymous1991-xb">
+<p>Anonymous. 1991a. “COUNCIL DIRECTIVE of 12 December 1991 Concerning the Protection of Waters Against Pollution Caused by Nitrates from Agricultural Sources (91 / 676 /EEC).” <em>Official Journal of the European Communities</em> 31 (12): 1–8. <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0676&amp;from=EN" class="uri">http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0676&amp;from=EN</a>.</p>
+</div>
+<div id="ref-World_Health_Organization2011-hd">
+<p>World Health Organization. 2011. “Nitrate and Nitrite in Drinking-Water Background Document for Development of WHO Guidelines for Drinking-Water Quality.” <a href="http://www.who.int/water_sanitation_health/dwq/chemicals/nitratenitrite2ndadd.pdf" class="uri">http://www.who.int/water_sanitation_health/dwq/chemicals/nitratenitrite2ndadd.pdf</a>.</p>
+</div>
+<div id="ref-Nixon2009-ft">
+<p>Nixon, Scott W. 2009. “Eutrophication and the Macroscope.” <em>Journal of Hydrobiologia</em> 629 (1): 5–19. doi:<a href="https://doi.org/10.1007/s1070-00-59-z">10.1007/s1070-00-59-z</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="references-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/glossary.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

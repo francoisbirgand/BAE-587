@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Introduction to Environmental and Ecological Engineering</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown 0.6.2 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Introduction to Environmental and Ecological Engineering" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Introduction to Environmental and Ecological Engineering" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="François Birgand">
+
+
+<meta name="date" content="2018-02-07">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="bae-204-glossary.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html"><i class="fa fa-check"></i><b>2</b> Aerobic and anaerobic respiration</a><ul>
+<li class="chapter" data-level="2.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-transfer-of-electrons"><i class="fa fa-check"></i><b>2.1</b> Generating energy: transfer of electrons</a></li>
+<li class="chapter" data-level="2.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-without-combustion"><i class="fa fa-check"></i><b>2.2</b> Generating energy without combustion</a></li>
+<li class="chapter" data-level="2.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#atp-or-the-energy-currency-of-the-cell"><i class="fa fa-check"></i><b>2.3</b> ATP or the energy currency of the cell</a></li>
+<li class="chapter" data-level="2.4" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#the-atp-manufacture"><i class="fa fa-check"></i><b>2.4</b> The ATP manufacture</a></li>
+<li class="chapter" data-level="2.5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#creating-a-proton-gradient-as-a-source-of-proton-flow"><i class="fa fa-check"></i><b>2.5</b> Creating a proton gradient as a source of proton flow</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#a-compartment-to-accumulate-protons"><i class="fa fa-check"></i><b>2.5.1</b> A compartment to accumulate protons</a></li>
+<li class="chapter" data-level="2.5.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#a-supply-of-protons-for-the-intermembrane-space-proton-pumps"><i class="fa fa-check"></i><b>2.5.2</b> A supply of protons for the intermembrane space: proton pumps</a></li>
+<li class="chapter" data-level="2.5.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#electron-transfer-molecules-that-power-the-proton-pumps"><i class="fa fa-check"></i><b>2.5.3</b> Electron transfer molecules that power the proton pumps</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#transfer-of-electrons-from-the-organic-carbon-to-an-electron-acceptor"><i class="fa fa-check"></i><b>2.6</b> Transfer of electrons from the Organic Carbon to an electron acceptor</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#oxygen-reduction"><i class="fa fa-check"></i><b>2.6.1</b> Oxygen reduction</a></li>
+<li class="chapter" data-level="2.6.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#electron-fate-from-organic-matter-to-electron-transfer-molecules"><i class="fa fa-check"></i><b>2.6.2</b> Electron fate from organic matter to electron transfer molecules</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#summary-of-respiration"><i class="fa fa-check"></i><b>2.7</b> Summary of respiration</a></li>
+<li class="chapter" data-level="2.8" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#respiration-electron-flow-schemes"><i class="fa fa-check"></i><b>2.8</b> Respiration electron flow schemes</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html"><i class="fa fa-check"></i><b>3</b> BAE 204 Glossary</a><ul>
+<li class="chapter" data-level="3.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#a"><i class="fa fa-check"></i><b>3.1</b> A</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#aerobic-respiration"><i class="fa fa-check"></i><b>3.1.1</b> Aerobic respiration</a></li>
+<li class="chapter" data-level="3.1.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#anaerobic-respiration"><i class="fa fa-check"></i><b>3.1.2</b> Anaerobic respiration</a></li>
+<li class="chapter" data-level="3.1.3" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#ammonia"><i class="fa fa-check"></i><b>3.1.3</b> Ammonia</a></li>
+<li class="chapter" data-level="3.1.4" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#ammonium"><i class="fa fa-check"></i><b>3.1.4</b> Ammonium</a></li>
+<li class="chapter" data-level="3.1.5" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#ammonium-nitrate"><i class="fa fa-check"></i><b>3.1.5</b> Ammonium nitrate</a></li>
+<li class="chapter" data-level="3.1.6" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#anoxic-waters"><i class="fa fa-check"></i><b>3.1.6</b> Anoxic waters</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#c"><i class="fa fa-check"></i><b>3.2</b> C</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#carbon-dioxide"><i class="fa fa-check"></i><b>3.2.1</b> Carbon dioxide</a></li>
+<li class="chapter" data-level="3.2.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#carbonates"><i class="fa fa-check"></i><b>3.2.2</b> Carbonates</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#d"><i class="fa fa-check"></i><b>3.3</b> D</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#dihydrogen-sulfide"><i class="fa fa-check"></i><b>3.3.1</b> Dihydrogen sulfide</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#e"><i class="fa fa-check"></i><b>3.4</b> E</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#eutrophication"><i class="fa fa-check"></i><b>3.4.1</b> Eutrophication</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#g"><i class="fa fa-check"></i><b>3.5</b> G</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#greenhouse-gases-ghg"><i class="fa fa-check"></i><b>3.5.1</b> Greenhouse gases <em>(GHG)</em></a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#h"><i class="fa fa-check"></i><b>3.6</b> H</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#haber-bosch-process"><i class="fa fa-check"></i><b>3.6.1</b> Haber-Bosch process</a></li>
+<li class="chapter" data-level="3.6.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#hydrogen-sulfide"><i class="fa fa-check"></i><b>3.6.2</b> Hydrogen Sulfide</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#l"><i class="fa fa-check"></i><b>3.7</b> L</a><ul>
+<li class="chapter" data-level="3.7.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#limiting-factor"><i class="fa fa-check"></i><b>3.7.1</b> Limiting factor</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#m"><i class="fa fa-check"></i><b>3.8</b> M</a><ul>
+<li class="chapter" data-level="3.8.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#methane"><i class="fa fa-check"></i><b>3.8.1</b> Methane</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#n"><i class="fa fa-check"></i><b>3.9</b> N</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#nitrate"><i class="fa fa-check"></i><b>3.9.1</b> Nitrate</a></li>
+<li class="chapter" data-level="3.9.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#nitrous-oxide"><i class="fa fa-check"></i><b>3.9.2</b> Nitrous Oxide</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#o"><i class="fa fa-check"></i><b>3.10</b> O</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#oligotrophication"><i class="fa fa-check"></i><b>3.10.1</b> Oligotrophication</a></li>
+</ul></li>
+<li class="chapter" data-level="3.11" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#p"><i class="fa fa-check"></i><b>3.11</b> P</a><ul>
+<li class="chapter" data-level="3.11.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#phosphate"><i class="fa fa-check"></i><b>3.11.1</b> Phosphate</a></li>
+</ul></li>
+<li class="chapter" data-level="3.12" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#s"><i class="fa fa-check"></i><b>3.12</b> S</a><ul>
+<li class="chapter" data-level="3.12.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#sulfate"><i class="fa fa-check"></i><b>3.12.1</b> Sulfate</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Environmental and Ecological Engineering</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="aerobic-and-anaerobic-respiration" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Aerobic and anaerobic respiration</h1>
+<div id="generating-energy-transfer-of-electrons" class="section level2">
+<h2><span class="header-section-number">2.1</span> Generating energy: transfer of electrons</h2>
+<p>Us humans have the freedom to go about as we wish. All we need is to eat and to breath, and eliminate what we do not need. We could take our automobile cars as another example of bodies able to move about as long as they are fed some fuel. A lot of energy is realized from combustion of fuel or wood. In fact, provided that this energy be funneled into some very smart mechanical systems (e.g., combustion engines), and the energy power delivered is largely superior to any power any human could output. However, the energy consumed is also phenomenal and much of it is lost through heat. Life has found a way to be a lot more parsimonious with energy spending, which makes living organisms to be a lot more energy efficient than combustion in the long run: respiration.</p>
+<p>But in both the cases of combustion or of respiration, energy is liberated or transferred to <a href="#ATP">ATP</a>, respectively, when <em><strong>electrons are transferred</strong></em> from an <em><strong>electron donor</strong></em> to an <em><strong>electron acceptor</strong></em>. Not surprisingly, life and its diversity as we know it, has been able to develop on our planet because primary producers have been able to transfer and store solar energy into a chemical energy, where electrons are effectively stored onto organic molecules, and, because dioxygen O<sub>2</sub>, the most powerful electron acceptor, is freely floating in our atmosphere.</p>
+<p>But, then if we ourselves are nothing but a lot of organic matter, therefore a very large source of electrons, and if we leave in an oxygenated environment, how come we are not going into combustion? Obviously this applies to all living organisms. Some of you might think that it is because of the water. But then why would not a very dry piece of paper, or leaves, not automatically catch on fire? The answer lays in two words: <a href="https://en.wikipedia.org/wiki/Activation_energy">activation energy</a>.</p>
+<p>Electrons do not readily transfer from an electron donor to an electron acceptor because of the activation energy barrier which must be overcome. Activation energy is the level of energy necessary to be overcome for a reaction to carry on. On the figure below borrowed from Wikipedia, the energy difference between the peaks and the final energy level corresponds to the activation energy E<sub>a</sub></p>
+<div class="figure" style="text-align: center"><span id="fig:EnergyActivation"></span>
+<img src="pictures/Activation_energy.png" alt="Activation Energy *(E~a~)* needed for a reaction to proceed. *(E~a~)* can be lowered thanks to a catalyst, and in the case of the respiration chain of living organisms, many of them. Figure borrowed from Wikipedia, Copyrighted free use, https://commons.wikimedia.org/w/index.php?curid=779552" width="70%" />
+<p class="caption">
+Figure 2.1: Activation Energy <em>(E<sub>a</sub>)</em> needed for a reaction to proceed. <em>(E<sub>a</sub>)</em> can be lowered thanks to a catalyst, and in the case of the respiration chain of living organisms, many of them. Figure borrowed from Wikipedia, Copyrighted free use, <a href="https://commons.wikimedia.org/w/index.php?curid=779552" class="uri">https://commons.wikimedia.org/w/index.php?curid=779552</a>
+</p>
+</div>
+<p>In normal conditions, this energy is preventing a reaction to proceed. This is why wood or most organic matter do not go into combustion or decomposition on their own. Nitroglycerin is notoriously unstable and the activation energy for electrons to be transferred to O<sub>2</sub> is very small, hence its propensity to explode and its danger. However, the activation energy can be overcome with enough heat brought near an electron donor in the form of a flame or a spark. Not much heat is necessary for natural gas (CH<sub>4</sub>) for combustion to take place, i.e., for transfer of electrons from the carbon to oxygen, releasing twice the volume of gases:</p>
+<span class="math display" id="eq:CH4combustion">\[\begin{equation}
+CH_4 + O_2 \Rightarrow CO_2 + H_2O
+\tag{2.1}
+\end{equation}\]</span>
+<p>hence the explosive nature of this reaction.</p>
+</div>
+<div id="generating-energy-without-combustion" class="section level2">
+<h2><span class="header-section-number">2.2</span> Generating energy without combustion</h2>
+<p>Now because none of us and all the living organisms with us, <em>burn</em> to generate energy, there must be other systems to manage to liberate energy, and, there must be ways to have much lower activation energy. Life has found several mechanisms to optimize the transfer of energy from organic matter to the a magic molecule: <a href="#ATP">ATP</a> or Adenosine TriPhosphate.</p>
+</div>
+<div id="atp-or-the-energy-currency-of-the-cell" class="section level2">
+<h2><span class="header-section-number">2.3</span> ATP or the energy currency of the cell</h2>
+<p>There are many ways of transferring energy. To heat a house in the western world, we most often have a centralized heating (and sometimes cooling) system, where the heat is generated, e.g., in a furnace, and then transferred to the rest of the house via pipes and the like. The equivalent system might be for mammals the blood that gets re-oxygenated with the lungs, before it delivers oxygen throughout the body.</p>
+<p>At the cellular level, however, <a href="#ATP">ATP</a> or Adenosine TriPhosphate is created throughout the cell near the equivalent of the little furnaces: mitochondria. Needless to say, there is no combustion with the mitochondria, and yet transfer of electrons and energy delivered. The energy is transferred from the <a href="#OM">organic matter</a> to ATP, and ATP being a relatively small molecule, can easily reach all metabolic processes, usually operated by proteins, which need energy to proceed (to overcome the <a href="https://en.wikipedia.org/wiki/Activation_energy">activation energy</a> mentioned above).</p>
+<div class="figure" style="text-align: center"><span id="fig:ATPstructure"></span>
+<img src="pictures/atp02a.jpg" alt="ATP molecular structure containing adenosine (= adenine + ribose) and the three phosphate linked together with a pyrophosphate energy rich bond. Copyrighht Pearson Benjamin Cummings" width="70%" />
+<p class="caption">
+Figure 2.2: ATP molecular structure containing adenosine (= adenine + ribose) and the three phosphate linked together with a pyrophosphate energy rich bond. Copyrighht Pearson Benjamin Cummings
+</p>
+</div>
+<p>The key to storing energy is in the bond between the phosphate, which are often referred to as high-energy bonds. High-energy phosphate bonds are pyrophosphate bonds, acid anhydride linkages formed by taking phosphoric acid derivatives and dehydrating them. As a consequence, the hydrolysis of these bonds is exergonic under physiological conditions, releasing energy. As ATP releases its energy by the break of the pyrophosphate bond, ATP thus becomes ADP (Adenosine Diphosphate) and releases a phosphate in the meantime, like in figure <a href="aerobic-and-anaerobic-respiration.html#fig:ATPtoADP">2.3</a>. A common representation of this reaction is <span class="math inline">\(ATP \Rightarrow ADP + P_i\)</span> with the P<sub>i</sub> referring to as a phosphate.</p>
+<div class="figure" style="text-align: center"><span id="fig:ATPtoADP"></span>
+<img src="pictures/atptoadp.png" alt="Release of energy ATP hydrolyzed into ADP. http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/atp.html" width="80%" />
+<p class="caption">
+Figure 2.3: Release of energy ATP hydrolyzed into ADP. <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/atp.html" class="uri">http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/atp.html</a>
+</p>
+</div>
+<p>Now that we have allocated electrons on atoms and molecules, you easily understand that the number of electrons on the outside of the triplet <span class="math inline">\(PO_3-O-PO_2-O-PO_2\)</span> is huge. In his fantastic book, Degens <span class="citation">(<a href="#ref-Degens1989-ip">1989</a>)</span> suggests that</p>
+<ul>
+<li>because of the plethora of electrons on the triphosphate part of ATP,</li>
+<li>because the tetrahedral phosphate molecules are linked together by one of the corners of each tetrahedron (figure <a href="aerobic-and-anaerobic-respiration.html#fig:PO4tetrahedra">2.4</a>),</li>
+<li>and because of the <span class="math inline">\(\pi\)</span> electron bonds (double bond) which tends to repulse each other <span class="citation">(Degens <a href="#ref-Degens1989-ip">1989</a>)</span>,</li>
+</ul>
+<p>the triphosphate molecule can only be in constant movement, which ‘maintains the animated world’ <span class="citation">(Degens <a href="#ref-Degens1989-ip">1989</a>)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:PO4tetrahedra"></span>
+<img src="pictures/204phosphate.png" alt="Tetrahedral configuration of each of the phosphate molecule which when linked together supposedly are in constant movement" width="60%" />
+<p class="caption">
+Figure 2.4: Tetrahedral configuration of each of the phosphate molecule which when linked together supposedly are in constant movement
+</p>
+</div>
+</div>
+<div id="the-atp-manufacture" class="section level2">
+<h2><span class="header-section-number">2.4</span> The ATP manufacture</h2>
+<p>If ATP freely releases energy for a reaction to proceed in the cell, as ATP becomes ADP + Pi, there must be energy at one point to ‘manufacture’ or recharge the ATP molecule in the first place. We have seen that much of the energy in the cell is transferred thanks to the ATP molecule. So could we just make ATP from the energy liberated by ATP??? The answer is no, obviously… The energy to create ATP has to come from elsewhere, otherwise it just cannot work…!!!</p>
+<p>Life has find a wonderful way to do that thanks to proton flows. Yes, that is correct, a proton flow. ATP is literally formed from an ADP and a phosphate and assembled thanks to a protein called ATP synthase, or ATPase, which seems to be activated or powered almost mechanically, very much like a water mill, by a proton flow (Figure <a href="aerobic-and-anaerobic-respiration.html#fig:ATPase">2.5</a>). You may want to look at this very nice concise document on <a href="https://en.wikipedia.org/wiki/ATP_synthase">ATP synthase on Wikipedia</a>, which provides more detailed information and shows quite nicely how the mechanical force of the H<sup>+</sup> is thought to allow P<sub>i</sub> to be attached to an ADP. This part of the energy recovery is referred to as <em><strong>phosphorylation</strong></em>.</p>
+<div class="figure" style="text-align: center"><span id="fig:ATPase"></span>
+<img src="pictures/Atpsyntase4.jpg" alt="Artist representation of the ATP synthase powered, almost mechanically by proton flows. By The original uploader was Asw-hamburg at German Wikipedia - Transferred from de.wikipedia to Commons by Leyo using CommonsHelper., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=8993938" width="40%" />
+<p class="caption">
+Figure 2.5: Artist representation of the ATP synthase powered, almost mechanically by proton flows. By The original uploader was Asw-hamburg at German Wikipedia - Transferred from de.wikipedia to Commons by Leyo using CommonsHelper., CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=8993938" class="uri">https://commons.wikimedia.org/w/index.php?curid=8993938</a>
+</p>
+</div>
+<p>So, this mechanical force is what generates the synthesis of ATP from ADP, or again <em><strong>phosphorylation</strong></em>. So this solves that part of the ATP synthesis. Now, another mechanism must be responsible for the formation of the proton flow.</p>
+</div>
+<div id="creating-a-proton-gradient-as-a-source-of-proton-flow" class="section level2">
+<h2><span class="header-section-number">2.5</span> Creating a proton gradient as a source of proton flow</h2>
+<p>Until now, I have not even mentioned where all this takes place. We are about to see where this happens. But first, let us take an analogy to better understand the proton flow responsible for the synthesis of ATP. Flow of matter just does not happen on its own, it only happens as a result of a <em><strong>gradient</strong></em> between a compartment and another. Using the water mill analogy, the reason why there is release of energy in the form of kinetic energy of the water is because there is a drop in elevation, and therefore in potential energy between the ‘compartments’ upstream and downstream the mill. To increase the hydraulic gradient, men throughout the world have built dams to create compartments and increase the hydraulic gradient between upstream and downstream the mill. So in the water mill analogy, the hydraulic gradient is maintained thanks to the dam which creates compartments, and to the continuous arrival of new water upstream and to the leaving of water downstream. So three things are necessary for the release of kinetic energy (which in the end is going to power the rotation of a mill wheel, and in the old days would grind wheat or corn grain):</p>
+<ul>
+<li>a system to compartmentalize water,</li>
+<li>a supply of water, and,</li>
+<li>an outlet for the water so that is does not accumulate.</li>
+</ul>
+<p>By analogy, the formation of ATP corresponds to the grain grinding; the proton flow corresponds to the water flowing that activates the mill wheel, and in our case the proton flow activates the ATPase. We now need to address the three parts of the system needed to have a proton gradient and flow:</p>
+<ul>
+<li>a compartment system,</li>
+<li>a proton supply system, and,</li>
+<li>a system to use protons so the gradient is maintained.</li>
+</ul>
+<div id="a-compartment-to-accumulate-protons" class="section level3">
+<h3><span class="header-section-number">2.5.1</span> A compartment to accumulate protons</h3>
+<p>We saw earlier that the <a href="#phospholipids">double phospholipid layer</a> made the cell membrane. Well if you close a membrane on itself you will make a compartment or a balloon. It turns out that if you look at a typical prokaryotic cell and at organelles in a eukaryotic cell (Figure <a href="aerobic-and-anaerobic-respiration.html#fig:cells">2.6</a>), there are compartments formed between a cell wall and the plasma membrane for prokaryotic cells, and between two double layer phospholipid membranes for the eukaryotic cells. So in reality, it is a bit as if one were to create a space between two balloons.</p>
+<div class="figure" style="text-align: center"><span id="fig:cells"></span>
+<img src="pictures/prokaryotic-cell-diagram.jpg" alt="Artist representation of a prokaryotic cell and a mitochondrion from a eukaryotic showing the intermembrane spaces: between the cell wall and plasma membrane for the prokaryotic cell, and, between the outer and inner membranes for the mitochondrion.  https://micro.magnet.fsu.edu/cells/animals/animalmodel.html and By Kelvinsong - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=27715320" width="45%" /><img src="pictures/Mitochondrion_mini.svg.png" alt="Artist representation of a prokaryotic cell and a mitochondrion from a eukaryotic showing the intermembrane spaces: between the cell wall and plasma membrane for the prokaryotic cell, and, between the outer and inner membranes for the mitochondrion.  https://micro.magnet.fsu.edu/cells/animals/animalmodel.html and By Kelvinsong - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=27715320" width="45%" />
+<p class="caption">
+Figure 2.6: Artist representation of a prokaryotic cell and a mitochondrion from a eukaryotic showing the intermembrane spaces: between the cell wall and plasma membrane for the prokaryotic cell, and, between the outer and inner membranes for the mitochondrion. <a href="https://micro.magnet.fsu.edu/cells/animals/animalmodel.html" class="uri">https://micro.magnet.fsu.edu/cells/animals/animalmodel.html</a> and By Kelvinsong - Own work, CC0, <a href="https://commons.wikimedia.org/w/index.php?curid=27715320" class="uri">https://commons.wikimedia.org/w/index.php?curid=27715320</a>
+</p>
+</div>
+<p>At the end though, there exists for prokaryotic cells and mitochondria (and most organelles for eukaryotic cell) an inter-membrane space, which effectively creates compartments to accumulate ‘things’. The double phospholipid membrane is so strong and so tight that it is <em>proton-tight</em>. In other words, if somehow protons accumulate in this inter-membrane space, protons cannot leave through the membrane, they can only leave through designated areas. And yes, you guessed right, the designated area for protons to leave the inter-membrane space is the ATP synthase! So to take another analogy, you can imagine an inner tube full of air under pressure, air can only leave through the valve. And if you were to put a little fan in front of the valve as you are releasing air, the fan would rotate. Imagine that this is essentially what happens: the ATPase is both the valve and the fan as it <a href="https://upload.wikimedia.org/wikipedia/commons/6/62/ATPsyn.gif">literally rotates with the proton flow</a>.</p>
+</div>
+<div id="a-supply-of-protons-for-the-intermembrane-space-proton-pumps" class="section level3">
+<h3><span class="header-section-number">2.5.2</span> A supply of protons for the intermembrane space: proton pumps</h3>
+<p>Now, the next natural question is that in the case of an inner tube, somebody pumped some air into the tube to put it under pressure. Similarly, there must be a system that pumps protons into the inter-membrane space. And yes indeed, you guessed it right, there are proton pumps that do the job. But again, these pumps must be powered by some sort of energy.</p>
+<p>Let us pause for a second. We have seen in section <a href="aerobic-and-anaerobic-respiration.html#generating-energy-transfer-of-electrons">2.1</a> that generally speaking, energy is generated from the transfer of electrons. But until now, we have not even mentioned electrons: only ATP and protons…? This is where electrons come in: <strong>energetic electrons transported onto electron transfer molecules are the ones that power the proton pumps!</strong>. It is time to take a bird’s eye view again. Energy liberation exists when electrons are transferred from an electron donor to an electron acceptor. Life has found a way to capture this energy in the form of ATP, which allows transportation of energy to the needed places in the cell. So the energy transfer in the cell does not have to be totally instantaneous like combustion would be, and it can be spent exactly where it needs to be spent.</p>
+<p>Yet, the production of ATP is in fact generated by an electron transfer, but indirectly.</p>
+<ul>
+<li>No, electrons are <strong>NOT</strong> transferred from organic matter to ATP.</li>
+<li>Yes, electrons are <em>ultimately</em> transferred from organic matter to an electron acceptor, which in the case of aerobic respiration is O<sub>2</sub>.</li>
+</ul>
+<p>But just like the generation of ATP is indirectly linked to the electron transfer, the transfer of electrons from organic matter to the ultimate electron acceptor is also indirect. A set of molecules called <strong>electron transfer molecules</strong> are intermediate carrier of electrons and are the ones which power the proton pumps as represented in figure <a href="aerobic-and-anaerobic-respiration.html#fig:protonpumps">2.7</a> below.</p>
+<div class="figure" style="text-align: center"><span id="fig:protonpumps"></span>
+<img src="pictures/membrane_proton_pumps.png" alt="Artist representation of the ATP synthesis powered by a proton flow, itself powered by a proton gradient, itself produced thanks to proton pumps powered by energy rich electrons carried by electron transfer molecules. Obtained from 2006 Pearson Education" width="100%" />
+<p class="caption">
+Figure 2.7: Artist representation of the ATP synthesis powered by a proton flow, itself powered by a proton gradient, itself produced thanks to proton pumps powered by energy rich electrons carried by electron transfer molecules. Obtained from 2006 Pearson Education
+</p>
+</div>
+</div>
+<div id="electron-transfer-molecules-that-power-the-proton-pumps" class="section level3">
+<h3><span class="header-section-number">2.5.3</span> Electron transfer molecules that power the proton pumps</h3>
+<p>The two main electron transfer molecules in the respiration process are called NAD (Nicotinamide Adenine Dinucleotide; figure <a href="aerobic-and-anaerobic-respiration.html#fig:NAD">2.8</a>) and FAD (flavine adenine dinucleotide; figure <a href="aerobic-and-anaerobic-respiration.html#fig:FAD">2.9</a>). These two nucleotides have the ability to be reduced (= gain electrons) and oxidized (= lose electrons), and because they are mobile, to carry electrons from the cell (bacteria) or mitochondrion (eukaryot) cytoplasm to the proton pumps.</p>
+<div class="figure" style="text-align: center"><span id="fig:NAD"></span>
+<img src="pictures/NADreduction.png" alt="Molecular formula of Nicotinamide Adenine Dinucleotide (NAD) in both oxydized and reduced states" width="45%" /><img src="pictures/NADfull.png" alt="Molecular formula of Nicotinamide Adenine Dinucleotide (NAD) in both oxydized and reduced states" width="45%" />
+<p class="caption">
+Figure 2.8: Molecular formula of Nicotinamide Adenine Dinucleotide (NAD) in both oxydized and reduced states
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:FAD"></span>
+<img src="pictures/FAD.png" alt="Molecular formula of Flavine Adenine Dinucleotide (FAD) in both oxydized and reduced states" width="100%" />
+<p class="caption">
+Figure 2.9: Molecular formula of Flavine Adenine Dinucleotide (FAD) in both oxydized and reduced states
+</p>
+</div>
+</div>
+</div>
+<div id="transfer-of-electrons-from-the-organic-carbon-to-an-electron-acceptor" class="section level2">
+<h2><span class="header-section-number">2.6</span> Transfer of electrons from the Organic Carbon to an electron acceptor</h2>
+<p>So this answers the question of how the proton pumps are powered, but it is now time to look at the global fate of electrons: where do they come from and where do they end up? Actually, we already know the global answers to these questions: the electrons are stored unto the C, N, and S of organic molecules and they are eventually accepted by an electron acceptor; in the case of aerobic respiration, O<sub>2</sub> is the ultimate electron acceptor.</p>
+<p>Before there might be any confusion, in the aerobic respiration process that involves organic molecules as electron donors (we will see that inorganic molecules can also be electron donors), strangely enough, the only atom which donates electron is <strong>carbon</strong> while the nitrogen and sulfur atoms keep all their eight electrons. Specialized microbes, called <em><a href="#lithotrophs">lithotrophs</a></em>, literally ‘feed on stone’, which means that their source of electron is from an inorganic molecule, have the ability to use ammonium and hydrogen sulfide as electron donor (8 electrons available for ‘donation’) in their aerobic respiration chains. So all this to say that in aerobic respiration that involves organic matter, <strong>only</strong> the carbon atom donates its electrons. The organisms which use organic matter as electron donors are called <em>organotrophs</em>. We, as mamals and humans, are <em>organotrophs</em>.</p>
+<div id="oxygen-reduction" class="section level3">
+<h3><span class="header-section-number">2.6.1</span> Oxygen reduction</h3>
+<p>Let us start from the end of the process: the reduction of oxygen into H<sub>2</sub>O, as represented on figure <a href="aerobic-and-anaerobic-respiration.html#fig:protonpumps">2.7</a> above. As the NAD and FAD are powering proton pumps (which names include FMN, ubiquinone, cytochrome a, b, and c see figure <a href="aerobic-and-anaerobic-respiration.html#fig:protonpumps">2.7</a>), the electrons lose some of their energy and migrate within the phospholipid membrane from the proton pumps towards the ATPase. Because of the involvment of many different proteins involved in this transport, this is referred to as the <em><strong>electron transfer chain</strong></em>. Because the NAD and the FAD molecules are oxidized (they have given up their electrons), and because at the ATPase location, ADP gains a phosphate to become ATP, the whole process is referred to as <em><strong>oxidative phosphorylation</strong></em>. At the confluence between the ATPase and the cytochrome a<sub>3</sub>, the reaction <a href="aerobic-and-anaerobic-respiration.html#eq:O2reduction">(2.2)</a> occurs:</p>
+<span class="math display" id="eq:O2reduction">\[\begin{equation}
+O_2 + 4 e^- + 4 H^+ \Rightarrow 2 H_2O
+\tag{2.2}
+\end{equation}\]</span>
+<p>This is the place where the electrons are accepted!!! So now you know exactly where all this is happening! Is not that wonderful? So the electrons are accepted by O<sub>2</sub> (remember on a molecule of O<sub>2</sub>, each Oxygen atom only has 6 electrons for itself, so each can accept two more), and these electrons reduce oxygen into H<sub>2</sub>O. This has several consequences:</p>
+<ul>
+<li>the reduction of O<sub>2</sub> also consumes 4 H<sup>+</sup>, which solves the necessity for an outlet for protons as they flow out of the inter-membrane through the ATPase, which was the third condition to maintain a proton gradient</li>
+<li>the reduction of O<sub>2</sub> obviously consumes electrons, which also provides an outlet for the electrons. In order words, if no electron acceptors are available, then the electrons at the proton pumps have no outlet, so the proton pumps are stalled, which in turn halts the maintaining of a proton gradient, which eventually stops the production of ATP.</li>
+</ul>
+</div>
+<div id="electron-fate-from-organic-matter-to-electron-transfer-molecules" class="section level3">
+<h3><span class="header-section-number">2.6.2</span> Electron fate from organic matter to electron transfer molecules</h3>
+<p>The fate of electrons from organic matter or glucose to the electron transfer molecules involves two processes called <a href="#glycolysis">glycolysis</a> and the <a href="#krebscycle">Krebs or citric acid cycle</a>. Biology majors have to learn in details all the steps and the name of the molecules involved in these chain reactions. This is beside our point for our class. Instead I want you to understand and know that these reactions involve</p>
+<ul>
+<li>transfer of electrons from organic carbon onto <a href="aerobic-and-anaerobic-respiration.html#electron-transfer-molecules-that-power-the-proton-pumps">electron transfer molecules</a></li>
+<li>the release of carbon atoms which have lost all their electrons, therefore releasing C in the form of CO<sub>2</sub>.</li>
+<li>the hydrolysis of glucose molecules to <a href="https://en.wikipedia.org/wiki/Pyruvic_acid">pyruvate</a>, a C3 molecule (a 3 carbon organic molecule) during the glycolysis, which then loses CO<sub>2</sub> as it enters the citric cycle</li>
+<li>the acetyl-coA, a co-enzyme is key to incorporate organic carbon in the Krebs cycle.</li>
+</ul>
+<p>In figure <a href="aerobic-and-anaerobic-respiration.html#fig:respirationglobal">2.10</a> below which summarizes all the aerobic respiration pathways, you can see that most of the ATP is formed thanks to the proton flow, and that <a href="aerobic-and-anaerobic-respiration.html#electron-transfer-molecules-that-power-the-proton-pumps">electron transfer molecules</a> are involved in all steps.</p>
+<div class="figure" style="text-align: center"><span id="fig:respirationglobal"></span>
+<img src="pictures/respiration_global.jpg" alt="Summary of cellular respiration with the ATP and electron transfer budget. Obtained from https://cdn.thinglink.me/api/image/847806852426104839/1240/10/scaletowidth" width="95%" />
+<p class="caption">
+Figure 2.10: Summary of cellular respiration with the ATP and electron transfer budget. Obtained from <a href="https://cdn.thinglink.me/api/image/847806852426104839/1240/10/scaletowidth" class="uri">https://cdn.thinglink.me/api/image/847806852426104839/1240/10/scaletowidth</a>
+</p>
+</div>
+<p>This <a href="aerobic-and-anaerobic-respiration.html#fig:respirationglobal">2.10</a> diagram does not show where the CO<sub>2</sub> are produced so I invite to see, in addition to the notes given in class, that CO<sub>2</sub> is released as pyruvic acid enters in the figures <a href="aerobic-and-anaerobic-respiration.html#fig:krebs">2.12</a> and <a href="aerobic-and-anaerobic-respiration.html#fig:glycolysis">2.11</a> below.</p>
+<div class="figure" style="text-align: center"><span id="fig:glycolysis"></span>
+<img src="pictures/Glycolysis.jpg" alt="Glycolysis pathway. Image" width="95%" />
+<p class="caption">
+Figure 2.11: Glycolysis pathway. Image
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:krebs"></span>
+<img src="pictures/Krebscycle.png" alt="Krebs or citric acid cycle pathway." width="95%" />
+<p class="caption">
+Figure 2.12: Krebs or citric acid cycle pathway.
+</p>
+</div>
+</div>
+</div>
+<div id="summary-of-respiration" class="section level2">
+<h2><span class="header-section-number">2.7</span> Summary of respiration</h2>
+<p>We have purposely presented the molecular processes of respiration starting from the end and moving back to the beginning of the respiration chain. We can summarize the respiration process again in that order:</p>
+<ul>
+<li>the goal of respiration is to transfer energy initially stored as high energy electrons on organic molecules to ATP, the energy currency of the cell</li>
+<li>The production of ATP itself has to come from a different source of energy than that liberated by ATP itself</li>
+<li>ATP is synthesized by the phosphorylation of ADP by the ATP synthase, itself powered by a proton flow from the inter-membrane space to the cytoplasm space</li>
+<li>the proton flow is powered by a proton gradient between the inter-membrane space and the cytoplasm space</li>
+<li>This gradient is made possible thanks to
+<ul>
+<li>a proton-tight compartment corresponding to the inter-membrane space</li>
+<li>a supply of protons from the cytoplasm to the inter-membrane space, fed by proton pumps</li>
+<li>an outlet for the protons flowing out and powering the ATPase (‘the proton mill’), which combined with the reduction of oxygen form water molecules</li>
+</ul></li>
+<li>The proton pumps are themselves powered by the oxidation of electron transfer molecules (NAD and FAD), which carry high energy electrons from the Krebs or citric cycle to the electron transfer chain</li>
+<li>The electron transfer molecules accept the electrons, or are reduced during glycolysis, before and during the Krebs cycle as organic carbon are oxidized or lose their electrons and release CO<sub>2</sub>.</li>
+</ul>
+<p>The other way to present respiration is to say that:</p>
+<ul>
+<li>Energy rich electrons stored on organic molecules are transferred onto electron transfer molecules during glycolysis, before and during the Krebs cycle</li>
+<li>The high energy electrons thus transported power proton pumps placed in the inner membrane of the cell for unicellular organisms or of the mitochodrion for eukaryotic cells</li>
+<li>These pumps feed a supply of protons to the inter-membrane space which, because this space is proton-tight, and because protons outlets are limited to the ATP synthase, creates an accumulation of protons in this space</li>
+<li>The accumulation of protons creates a proton gradient between the inter-membrane space and the cytoplasm, which generates a proton flow at designated ‘holes’ in the membrane</li>
+<li>The protons flow out the inter-membrane through the ATP synthase which can be approximated by proton canals and almost mechanically turn the ATPase head which acts as a ‘proton mill’</li>
+<li>This proton mill catalyzes the phosphorylation of ADP into ATP</li>
+<li>The proton gradient is maintained possible because the protons flowing out of the inter-membrane space are combined with electrons reducing oxygen into water</li>
+<li>The electron flow is maintained thanks to the same oxygen reduction, which in turns allows electron transfer molecules to be oxidized so that then can take their ‘proton load’ again.</li>
+<li>Overall respiration consists in transferring high energy electrons from organic molecules to oxygen, and by doing so creating a proton gradient which in turn is the main driver for the formation of ATP in the cell.</li>
+</ul>
+<p>Both summaries present the same story but have their own logic. Other important subtleties of respiration include:</p>
+<ul>
+<li>In the case organic molecules are the source of electrons, only the carbon atom donates electrons, the amino and thiol radicals being eliminated as a by-product DO NOT donate their electrons in this respiration system. This is admitedly a bit weird as the the amino and thiol groups still have 8 electrons to donate each.</li>
+</ul>
+</div>
+<div id="respiration-electron-flow-schemes" class="section level2">
+<h2><span class="header-section-number">2.8</span> Respiration electron flow schemes</h2>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Degens1989-ip">
+<p>Degens, Egon T. 1989. <em>Perspectives on Biogeochemistry</em>. 1st ed. Springer-Verlag Berlin Heidelberg. doi:<a href="https://doi.org/10.1007/978-3-642-48879-5">10.1007/978-3-642-48879-5</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bae-204-glossary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-respirations.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

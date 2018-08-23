@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Introduction to Environmental and Ecological Engineering</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown 0.6.2 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Introduction to Environmental and Ecological Engineering" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Introduction to Environmental and Ecological Engineering" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="François Birgand">
+
+
+<meta name="date" content="2018-02-07">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="bae-204-glossary.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html"><i class="fa fa-check"></i><b>2</b> Aerobic and anaerobic respiration</a><ul>
+<li class="chapter" data-level="2.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-transfer-of-electrons"><i class="fa fa-check"></i><b>2.1</b> Generating energy: transfer of electrons</a></li>
+<li class="chapter" data-level="2.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-without-combustion"><i class="fa fa-check"></i><b>2.2</b> Generating energy without combustion</a></li>
+<li class="chapter" data-level="2.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#atp-or-the-energy-currency-of-the-cell"><i class="fa fa-check"></i><b>2.3</b> ATP or the energy currency of the cell</a></li>
+<li class="chapter" data-level="2.4" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#the-atp-manufacture"><i class="fa fa-check"></i><b>2.4</b> The ATP manufacture</a></li>
+<li class="chapter" data-level="2.5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#creating-a-proton-gradient-as-a-source-of-proton-flow"><i class="fa fa-check"></i><b>2.5</b> Creating a proton gradient as a source of proton flow</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#a-compartment-to-accumulate-protons"><i class="fa fa-check"></i><b>2.5.1</b> A compartment to accumulate protons</a></li>
+<li class="chapter" data-level="2.5.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#a-supply-of-protons-for-the-intermembrane-space-proton-pumps"><i class="fa fa-check"></i><b>2.5.2</b> A supply of protons for the intermembrane space: proton pumps</a></li>
+<li class="chapter" data-level="2.5.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#electron-transfer-molecules-that-power-the-proton-pumps"><i class="fa fa-check"></i><b>2.5.3</b> Electron transfer molecules that power the proton pumps</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#transfer-of-electrons-from-the-organic-carbon-to-an-electron-acceptor"><i class="fa fa-check"></i><b>2.6</b> Transfer of electrons from the Organic Carbon to an electron acceptor</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#oxygen-reduction"><i class="fa fa-check"></i><b>2.6.1</b> Oxygen reduction</a></li>
+<li class="chapter" data-level="2.6.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#electron-fate-from-organic-matter-to-electron-transfer-molecules"><i class="fa fa-check"></i><b>2.6.2</b> Electron fate from organic matter to electron transfer molecules</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#summary-of-respiration"><i class="fa fa-check"></i><b>2.7</b> Summary of respiration</a></li>
+<li class="chapter" data-level="2.8" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#respiration-electron-flow-schemes"><i class="fa fa-check"></i><b>2.8</b> Respiration electron flow schemes</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html"><i class="fa fa-check"></i><b>3</b> BAE 204 Glossary</a><ul>
+<li class="chapter" data-level="3.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#a"><i class="fa fa-check"></i><b>3.1</b> A</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#aerobic-respiration"><i class="fa fa-check"></i><b>3.1.1</b> Aerobic respiration</a></li>
+<li class="chapter" data-level="3.1.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#anaerobic-respiration"><i class="fa fa-check"></i><b>3.1.2</b> Anaerobic respiration</a></li>
+<li class="chapter" data-level="3.1.3" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#ammonia"><i class="fa fa-check"></i><b>3.1.3</b> Ammonia</a></li>
+<li class="chapter" data-level="3.1.4" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#ammonium"><i class="fa fa-check"></i><b>3.1.4</b> Ammonium</a></li>
+<li class="chapter" data-level="3.1.5" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#ammonium-nitrate"><i class="fa fa-check"></i><b>3.1.5</b> Ammonium nitrate</a></li>
+<li class="chapter" data-level="3.1.6" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#anoxic-waters"><i class="fa fa-check"></i><b>3.1.6</b> Anoxic waters</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#c"><i class="fa fa-check"></i><b>3.2</b> C</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#carbon-dioxide"><i class="fa fa-check"></i><b>3.2.1</b> Carbon dioxide</a></li>
+<li class="chapter" data-level="3.2.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#carbonates"><i class="fa fa-check"></i><b>3.2.2</b> Carbonates</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#d"><i class="fa fa-check"></i><b>3.3</b> D</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#dihydrogen-sulfide"><i class="fa fa-check"></i><b>3.3.1</b> Dihydrogen sulfide</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#e"><i class="fa fa-check"></i><b>3.4</b> E</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#eutrophication"><i class="fa fa-check"></i><b>3.4.1</b> Eutrophication</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#g"><i class="fa fa-check"></i><b>3.5</b> G</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#greenhouse-gases-ghg"><i class="fa fa-check"></i><b>3.5.1</b> Greenhouse gases <em>(GHG)</em></a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#h"><i class="fa fa-check"></i><b>3.6</b> H</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#haber-bosch-process"><i class="fa fa-check"></i><b>3.6.1</b> Haber-Bosch process</a></li>
+<li class="chapter" data-level="3.6.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#hydrogen-sulfide"><i class="fa fa-check"></i><b>3.6.2</b> Hydrogen Sulfide</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#l"><i class="fa fa-check"></i><b>3.7</b> L</a><ul>
+<li class="chapter" data-level="3.7.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#limiting-factor"><i class="fa fa-check"></i><b>3.7.1</b> Limiting factor</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#m"><i class="fa fa-check"></i><b>3.8</b> M</a><ul>
+<li class="chapter" data-level="3.8.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#methane"><i class="fa fa-check"></i><b>3.8.1</b> Methane</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#n"><i class="fa fa-check"></i><b>3.9</b> N</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#nitrate"><i class="fa fa-check"></i><b>3.9.1</b> Nitrate</a></li>
+<li class="chapter" data-level="3.9.2" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#nitrous-oxide"><i class="fa fa-check"></i><b>3.9.2</b> Nitrous Oxide</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#o"><i class="fa fa-check"></i><b>3.10</b> O</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#oligotrophication"><i class="fa fa-check"></i><b>3.10.1</b> Oligotrophication</a></li>
+</ul></li>
+<li class="chapter" data-level="3.11" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#p"><i class="fa fa-check"></i><b>3.11</b> P</a><ul>
+<li class="chapter" data-level="3.11.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#phosphate"><i class="fa fa-check"></i><b>3.11.1</b> Phosphate</a></li>
+</ul></li>
+<li class="chapter" data-level="3.12" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#s"><i class="fa fa-check"></i><b>3.12</b> S</a><ul>
+<li class="chapter" data-level="3.12.1" data-path="bae-204-glossary.html"><a href="bae-204-glossary.html#sulfate"><i class="fa fa-check"></i><b>3.12.1</b> Sulfate</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Environmental and Ecological Engineering</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+
+<div id="refs" class="references">
+<div>
+<p>Anonymous. 1991a. “COUNCIL DIRECTIVE of 12 December 1991 Concerning the Protection of Waters Against Pollution Caused by Nitrates from Agricultural Sources (91 / 676 /EEC).” <em>Official Journal of the European Communities</em> 31 (12): 1–8. <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0676&amp;from=EN" class="uri">http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0676&amp;from=EN</a>.</p>
+</div>
+<div>
+<p>———. 1991b. “Council Directive of 21 May 1991 Concerning Urban Waste Water Treatment (91/271/EEC). L 135.” <em>Official Journal of the European Communities</em> 30 (5): 40–52. <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0271&amp;from=EN" class="uri">http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:31991L0271&amp;from=EN</a>.</p>
+</div>
+<div>
+<p>Degens, Egon T. 1989. <em>Perspectives on Biogeochemistry</em>. 1st ed. Springer-Verlag Berlin Heidelberg. doi:<a href="https://doi.org/10.1007/978-3-642-48879-5">10.1007/978-3-642-48879-5</a>.</p>
+</div>
+<div>
+<p>Nixon, Scott W. 1995. “Coastal Marine Eutrophication: A Definition, Social Causes, and Future Concerns.” <em>Ophelia</em> 41 (1). Taylor &amp; Francis: 199–219. doi:<a href="https://doi.org/10.1080/00785236.1995.10422044">10.1080/00785236.1995.10422044</a>.</p>
+</div>
+<div>
+<p>———. 2009. “Eutrophication and the Macroscope.” <em>Journal of Hydrobiologia</em> 629 (1): 5–19. doi:<a href="https://doi.org/10.1007/s1070-00-59-z">10.1007/s1070-00-59-z</a>.</p>
+</div>
+<div>
+<p>World Health Organization. 2011. “Nitrate and Nitrite in Drinking-Water Background Document for Development of WHO Guidelines for Drinking-Water Quality.” <a href="http://www.who.int/water_sanitation_health/dwq/chemicals/nitratenitrite2ndadd.pdf" class="uri">http://www.who.int/water_sanitation_health/dwq/chemicals/nitratenitrite2ndadd.pdf</a>.</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="bae-204-glossary.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-references.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
