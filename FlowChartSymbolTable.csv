@@ -1,0 +1,8 @@
+"Illustrated Symbol shape","Symbol shape","Description"
+"![](pictures/FlowChartLabel.png)",Label shape,"list of all the Non Point Sources (NPS) and point sources (PS)"
+"![](pictures/FlowChartPollutant.png)",Rectangle,"lists all the direct pollutants resulting from the source(s)"
+"![](pictures/FlowChartVector.png)",Diamond,"vector(s) of the pollutant(s). Often several"
+"![](pictures/FlowChartReceivingBody.png)",Rounded rectangle,"receiving air or water bodies. Often several"
+"![](pictures/FlowChartMacroConsequences.png)",Disk,"macroscale consequence(s), often visible"
+"![](pictures/FlowChartHealthConsequences.png)",Heart,"lists all the health risks identified"
+"![](pictures/FlowChartEnvironmentalConsequences.png)",Pentagon,"lists all the identified environmental consequences"
