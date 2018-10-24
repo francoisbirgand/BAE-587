@@ -154,6 +154,7 @@
 <li class="chapter" data-level="8.2.1" data-path="acidbase.html"><a href="acidbase.html#ka"><i class="fa fa-check"></i><b>8.2.1</b> K<sub>A</sub></a></li>
 <li class="chapter" data-level="8.2.2" data-path="acidbase.html"><a href="acidbase.html#pka"><i class="fa fa-check"></i><b>8.2.2</b> pK<sub>A</sub></a></li>
 </ul></li>
+<li class="chapter" data-level="8.3" data-path="acidbase.html"><a href="acidbase.html#self-ionization-of-water"><i class="fa fa-check"></i><b>8.3</b> Self-ionization of water</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a><ul>
 <li class="chapter" data-level="9.1" data-path="glossary.html"><a href="glossary.html#a"><i class="fa fa-check"></i><b>9.1</b> A</a><ul>
@@ -304,69 +305,115 @@ The differences in orders of magnitude in concentrations allow to make very usef
 </div>
 <div id="the-brnstedlowry-acidbase-theory" class="section level2">
 <h2><span class="header-section-number">8.1</span> The Brønsted–Lowry acid–base theory</h2>
-<p>According to the <a href="https://en.wikipedia.org/wiki/Br%C3%B8nsted%E2%80%93Lowry_acid%E2%80%93base_theory">Brønsted-Lowry theory</a>, an acid is any species that is capable of donating a proton H<sup>+</sup>, and a base is any species capable of accepting a proton, which requires a lone pair of electrons to bond to the H<sup>+</sup> <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2018-fr">2018</a><a href="#ref-Wikipedia_contributors2018-fr">s</a>)</span>. An acid necessarily contains an atom of hydrogen. In the equilibrium <a href="acidbase.html#eq:acid-dissociation1">(8.1)</a> below, the acid is represented as HA. It can donate a proton H<sup>+</sup>. The anion A<sup>-</sup> is referred to as the conjugate base.</p>
-<span class="math display" id="eq:acid-dissociation1">\[\begin{equation}
-HA \rightleftharpoons A^- + H^+
+<p>According to the <a href="https://en.wikipedia.org/wiki/Br%C3%B8nsted%E2%80%93Lowry_acid%E2%80%93base_theory">Brønsted-Lowry theory</a>, an acid is any species that is capable of donating a proton H<sup>+</sup>, and a base is any species capable of accepting a proton, which requires a lone pair of electrons to bond to the H<sup>+</sup> <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2018-fr">2018</a><a href="#ref-Wikipedia_contributors2018-fr">s</a>)</span>. An acid necessarily contains an atom of hydrogen. The two forms exchanging a proton a referred to as <em>conjugate</em> acid and base.</p>
+<p>Technically, a proton or hydrogen ion cannot exist unhydrated in water solution. And technically, in water, a proton is hydrated to produce the hydronium ion:</p>
+<p></br></p>
+<span class="math display" id="eq:hydronium">\[\begin{equation}
+H_2O + proton \rightleftharpoons H_3O^+ \hspace{2.5cm} K_0
 \tag{8.1}
 \end{equation}\]</span>
-<p>Another example of an acid, is illustrated in equilibrium <a href="acidbase.html#eq:acid-dissociation2">(8.2)</a> where the acid is an anion (cation in the generic example below), and the conjugate base is an uncharged molecule.</p>
-<span class="math display" id="eq:acid-dissociation2">\[\begin{equation}
-HA^+ \rightleftharpoons A + H^+
+<p></br></p>
+<p>So technically, donating a proton for an acid necessarily involves the molecule of water as in the equilibrium <a href="acidbase.html#eq:HAwater">(8.2)</a></p>
+<p></br></p>
+<span class="math display" id="eq:HAwater">\[\begin{equation}
+acid + H_2O \rightleftharpoons H_3O^+ + conjugate base \hspace{2.5cm} K_1
 \tag{8.2}
 \end{equation}\]</span>
-<p>Some molecules can be both an acid and a base: they are referred to as being <em>amphoteric</em>. Water is the most famous amphoteric molecule as it can donate a proton to yield a hydroxide OH<sup>-</sup>, or gain an electron to from the hydronium cation H<sub>3</sub>O<sup>+</sup> as illustrated in equilibria <a href="acidbase.html#eq:amphotericH2O">(8.3)</a></p>
+<p></br></p>
+<p>One can dissociate, however this reaction in two elementary reactions as</p>
+<p></br></p>
+<span class="math display" id="eq:aciddissoc">\[\begin{equation}
+acid  \rightleftharpoons proton + conjugate base  \hspace{2.5cm} K_2 \\
+H_2O + proton \rightleftharpoons H_3O^+ \hspace{2.5cm} K_0
+\tag{8.3}
+\end{equation}\]</span>
+<p></br></p>
+<p>Because the activity of water essentially constant in dilute aqueous solutions, the hydration of the proton can be ignored in defining acid-base equilibria <span class="citation">(Stumm and Morgan <a href="#ref-Stumm1996-yn">1996</a>)</span>. The thermodynamic convention sets the standard free enery change ΔG° for reaction <a href="acidbase.html#eq:hydronium">(8.1)</a> equal to zero, of its rate constant K<sub>0</sub>=1. So from now on, the molecule of water is purposely omitted in acid-base reactions herein, and the hydrated proton is written as H<sup>+</sup>.</p>
+<p>In the equilibrium <a href="acidbase.html#eq:acid-dissociation1">(8.4)</a> below, the acid is represented as HA. It can donate a proton H<sup>+</sup>. The anion A<sup>-</sup> is referred to as the conjugate base.</p>
+<p></br></p>
+<span class="math display" id="eq:acid-dissociation1">\[\begin{equation}
+HA \rightleftharpoons A^- + H^+ \hspace{2.5cm} K_A
+\tag{8.4}
+\end{equation}\]</span>
+<p></br></p>
+<p>Another example of an acid, is illustrated in equilibrium <a href="acidbase.html#eq:acid-dissociation2">(8.5)</a> where the acid is an anion (cation in the generic example below), and the conjugate base is an uncharged molecule.</p>
+<p></br></p>
+<span class="math display" id="eq:acid-dissociation2">\[\begin{equation}
+HA^+ \rightleftharpoons A + H^+
+\tag{8.5}
+\end{equation}\]</span>
+<p></br></p>
+<p>Some molecules can be both an acid and a base: they are referred to as being <em>amphoteric</em>. Water is the most famous amphoteric molecule as it can donate a proton to yield a hydroxide OH<sup>-</sup>, or gain an electron to from the hydronium cation H<sub>3</sub>O<sup>+</sup> as illustrated in equilibria <a href="acidbase.html#eq:amphotericH2O">(8.6)</a></p>
+<p></br></p>
 <span class="math display" id="eq:amphotericH2O">\[\begin{equation}
 H_2O \rightleftharpoons OH^- + H^+ \\
 H_2O + H^+ \rightleftharpoons H_3O^+
-\tag{8.3}
+\tag{8.6}
 \end{equation}\]</span>
+<p></br></p>
 <p>By convention, however, the acid conjugate is always placed on the left of the equilibria, and the conjugate base and the proton H<sup>+</sup> are placed on the right side of the equilibrium.</p>
 </div>
 <div id="acid-base-equilibrium-parameters" class="section level2">
 <h2><span class="header-section-number">8.2</span> Acid-base equilibrium parameters</h2>
 <div id="ka" class="section level3">
 <h3><span class="header-section-number">8.2.1</span> K<sub>A</sub></h3>
-<p>Like for all chemical reactions, it is possible to write down the equilibrium constant as the product of the activities of the products divided by the product of the activities of the reactants as in equation <a href="acidbase.html#eq:KAactivities">(8.4)</a>:</p>
+<p>Like for all chemical reactions, it is possible to write down the equilibrium constant as the product of the activities of the products divided by the product of the activities of the reactants as in equation <a href="acidbase.html#eq:KAactivities">(8.7)</a>:</p>
+<p></br></p>
 <span class="math display" id="eq:KAactivities">\[\begin{equation}
 K_A = \frac{\{A^-\}\{H^+\}}{\{HA\}}
-\tag{8.4}
+\tag{8.7}
 \end{equation}\]</span>
+<p></br></p>
 <p>where the activity of HA is written as <span class="math inline">\(\{HA\}\)</span>.</p>
-<p>For natural waters, a very good approximation of an element chemical activities is its concentration and the expression of K<sub>A</sub> can be expression as in equation <a href="acidbase.html#eq:KA">(8.5)</a>:</p>
+<p>For natural waters, a very good approximation of an element chemical activities is its concentration and the expression of K<sub>A</sub> can be expressed as in equation <a href="acidbase.html#eq:KA">(8.8)</a>:</p>
+<p></br></p>
 <span class="math display" id="eq:KA">\[\begin{equation}
 K_A = \frac{[A^-][H^+]}{[HA]}
-\tag{8.5}
+\tag{8.8}
 \end{equation}\]</span>
+<p></br></p>
 <p>where, e.g., the concentration of HA can be written as <span class="math inline">\([HA]\)</span>.</p>
 </div>
 <div id="pka" class="section level3">
 <h3><span class="header-section-number">8.2.2</span> pK<sub>A</sub></h3>
-<p>When the concentration of both conjugate acids and bases are equal in a solution, the expression of K<sub>A</sub> in equation <a href="acidbase.html#eq:KA">(8.5)</a> is simplified into</p>
+<p>When the concentration of both conjugate acids and bases are equal in a solution, the expression of K<sub>A</sub> in equation <a href="acidbase.html#eq:KA">(8.8)</a> is simplified into</p>
+<p></br></p>
 <span class="math display" id="eq:KAHplus">\[\begin{equation}
 K_A = [H^+]
-\tag{8.6}
+\tag{8.9}
 \end{equation}\]</span>
+<p></br></p>
 <p>Taking the negative of the common logarithm (base 10) on both side yields:</p>
+<p></br></p>
 <span class="math display" id="eq:logKA">\[\begin{equation}
--log(K_A) = -log([H^+])
-\tag{8.7}
+-log(K_A) = -log \left([H^+]\right)
+\tag{8.10}
 \end{equation}\]</span>
-<p>The right side of equation <a href="acidbase.html#eq:logKA">(8.7)</a> is the definition of the pH. By analogy, one can define a new term</p>
+<p></br></p>
+<p>The right side of equation <a href="acidbase.html#eq:logKA">(8.10)</a> is the definition of the pH. By analogy, one can define a new term</p>
+<p></br></p>
 <span class="math display" id="eq:pKA">\[\begin{equation}
 pK_A = -log(K_A) 
-\tag{8.8}
+\tag{8.11}
 \end{equation}\]</span>
-<p>which corresponds to the pH value at which the concentrations of the conjugate acids and bases are equal.</p>
+<p></br></p>
+<p>which corresponds to the pH value at which the concentrations of the conjugate acid and base are equal.</p>
+</div>
+</div>
+<div id="self-ionization-of-water" class="section level2">
+<h2><span class="header-section-number">8.3</span> Self-ionization of water</h2>
 <p><strong><em>This chapter is still under construction</em></strong></p>
 <p></br></br></br></p>
 
-</div>
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-Wikipedia_contributors2018-fr">
 <p>Wikipedia contributors. 2018s. “Brønsted–Lowry Acid–base Theory.” <a href="https://en.wikipedia.org/w/index.php?title=Br%C3%B8nsted%E2%80%93Lowry_acid%E2%80%93base_theory&amp;oldid=863930607">https://en.wikipedia.org/w/index.php?title=Br%C3%B8nsted%E2%80%93Lowry_acid%E2%80%93base_theory&amp;oldid=863930607</a>. <a href="https://en.wikipedia.org/w/index.php?title=Br%C3%B8nsted%E2%80%93Lowry_acid%E2%80%93base_theory&amp;oldid=863930607">https://en.wikipedia.org/w/index.php?title=Br%C3%B8nsted%E2%80%93Lowry_acid%E2%80%93base_theory&amp;oldid=863930607</a>.</p>
+</div>
+<div id="ref-Stumm1996-yn">
+<p>Stumm, Werner, and James J Morgan. 1996. <em>Aquatic Chemistry: Chemical Equilibria and Rates in Natural Waters</em>. Wiley. <a href="https://market.android.com/details?id=book-xvZOAAAAMAAJ" class="uri">https://market.android.com/details?id=book-xvZOAAAAMAAJ</a>.</p>
 </div>
 </div>
             </section>
