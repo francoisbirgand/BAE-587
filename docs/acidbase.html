@@ -25,7 +25,7 @@
 <meta name="author" content="François Birgand">
 
 
-<meta name="date" content="2018-10-24">
+<meta name="date" content="2018-10-30">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -155,6 +155,8 @@
 <li class="chapter" data-level="8.2.2" data-path="acidbase.html"><a href="acidbase.html#pka"><i class="fa fa-check"></i><b>8.2.2</b> pK<sub>A</sub></a></li>
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="acidbase.html"><a href="acidbase.html#self-ionization-of-water"><i class="fa fa-check"></i><b>8.3</b> Self-ionization of water</a></li>
+<li class="chapter" data-level="8.4" data-path="acidbase.html"><a href="acidbase.html#strong-vs.weak-acids"><i class="fa fa-check"></i><b>8.4</b> Strong vs. weak acids</a></li>
+<li class="chapter" data-level="8.5" data-path="acidbase.html"><a href="acidbase.html#polyprotic-acids"><i class="fa fa-check"></i><b>8.5</b> Polyprotic acids</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a><ul>
 <li class="chapter" data-level="9.1" data-path="glossary.html"><a href="glossary.html#a"><i class="fa fa-check"></i><b>9.1</b> A</a><ul>
@@ -307,21 +309,21 @@ The differences in orders of magnitude in concentrations allow to make very usef
 <h2><span class="header-section-number">8.1</span> The Brønsted–Lowry acid–base theory</h2>
 <p>According to the <a href="https://en.wikipedia.org/wiki/Br%C3%B8nsted%E2%80%93Lowry_acid%E2%80%93base_theory">Brønsted-Lowry theory</a>, an acid is any species that is capable of donating a proton H<sup>+</sup>, and a base is any species capable of accepting a proton, which requires a lone pair of electrons to bond to the H<sup>+</sup> <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2018-fr">2018</a><a href="#ref-Wikipedia_contributors2018-fr">s</a>)</span>. An acid necessarily contains an atom of hydrogen. The two forms exchanging a proton a referred to as <em>conjugate</em> acid and base.</p>
 <p>Technically, a proton or hydrogen ion cannot exist unhydrated in water solution. And technically, in water, a proton is hydrated to produce the hydronium ion:</p>
-<p></br></p>
+</br>
 <span class="math display" id="eq:hydronium">\[\begin{equation}
 H_2O + proton \rightleftharpoons H_3O^+ \hspace{2.5cm} K_0
 \tag{8.1}
 \end{equation}\]</span>
 <p></br></p>
 <p>So technically, donating a proton for an acid necessarily involves the molecule of water as in the equilibrium <a href="acidbase.html#eq:HAwater">(8.2)</a></p>
-<p></br></p>
+</br>
 <span class="math display" id="eq:HAwater">\[\begin{equation}
 acid + H_2O \rightleftharpoons H_3O^+ + conjugate base \hspace{2.5cm} K_1
 \tag{8.2}
 \end{equation}\]</span>
 <p></br></p>
 <p>One can dissociate, however this reaction in two elementary reactions as</p>
-<p></br></p>
+</br>
 <span class="math display" id="eq:aciddissoc">\[\begin{equation}
 acid  \rightleftharpoons proton + conjugate base  \hspace{2.5cm} K_2 \\
 H_2O + proton \rightleftharpoons H_3O^+ \hspace{2.5cm} K_0
@@ -330,21 +332,21 @@ H_2O + proton \rightleftharpoons H_3O^+ \hspace{2.5cm} K_0
 <p></br></p>
 <p>Because the activity of water essentially constant in dilute aqueous solutions, the hydration of the proton can be ignored in defining acid-base equilibria <span class="citation">(Stumm and Morgan <a href="#ref-Stumm1996-yn">1996</a>)</span>. The thermodynamic convention sets the standard free enery change ΔG° for reaction <a href="acidbase.html#eq:hydronium">(8.1)</a> equal to zero, of its rate constant K<sub>0</sub>=1. So from now on, the molecule of water is purposely omitted in acid-base reactions herein, and the hydrated proton is written as H<sup>+</sup>.</p>
 <p>In the equilibrium <a href="acidbase.html#eq:acid-dissociation1">(8.4)</a> below, the acid is represented as HA. It can donate a proton H<sup>+</sup>. The anion A<sup>-</sup> is referred to as the conjugate base.</p>
-<p></br></p>
+</br>
 <span class="math display" id="eq:acid-dissociation1">\[\begin{equation}
 HA \rightleftharpoons A^- + H^+ \hspace{2.5cm} K_A
 \tag{8.4}
 \end{equation}\]</span>
 <p></br></p>
 <p>Another example of an acid, is illustrated in equilibrium <a href="acidbase.html#eq:acid-dissociation2">(8.5)</a> where the acid is an anion (cation in the generic example below), and the conjugate base is an uncharged molecule.</p>
-<p></br></p>
+</br>
 <span class="math display" id="eq:acid-dissociation2">\[\begin{equation}
 HA^+ \rightleftharpoons A + H^+
 \tag{8.5}
 \end{equation}\]</span>
 <p></br></p>
-<p>Some molecules can be both an acid and a base: they are referred to as being <em>amphoteric</em>. Water is the most famous amphoteric molecule as it can donate a proton to yield a hydroxide OH<sup>-</sup>, or gain an electron to from the hydronium cation H<sub>3</sub>O<sup>+</sup> as illustrated in equilibria <a href="acidbase.html#eq:amphotericH2O">(8.6)</a></p>
-<p></br></p>
+<p>Some molecules can be both an acid and a base: they are referred to as being <em>amphoteric</em>. Water is the most famous amphoteric molecule as it can donate a proton to yield a hydroxide OH<sup>-</sup>, or gain an electron to form the hydronium cation H<sub>3</sub>O<sup>+</sup> as illustrated in equilibria <a href="acidbase.html#eq:amphotericH2O">(8.6)</a></p>
+</br>
 <span class="math display" id="eq:amphotericH2O">\[\begin{equation}
 H_2O \rightleftharpoons OH^- + H^+ \\
 H_2O + H^+ \rightleftharpoons H_3O^+
@@ -358,7 +360,7 @@ H_2O + H^+ \rightleftharpoons H_3O^+
 <div id="ka" class="section level3">
 <h3><span class="header-section-number">8.2.1</span> K<sub>A</sub></h3>
 <p>Like for all chemical reactions, it is possible to write down the equilibrium constant as the product of the activities of the products divided by the product of the activities of the reactants as in equation <a href="acidbase.html#eq:KAactivities">(8.7)</a>:</p>
-<p></br></p>
+</br>
 <span class="math display" id="eq:KAactivities">\[\begin{equation}
 K_A = \frac{\{A^-\}\{H^+\}}{\{HA\}}
 \tag{8.7}
@@ -366,7 +368,7 @@ K_A = \frac{\{A^-\}\{H^+\}}{\{HA\}}
 <p></br></p>
 <p>where the activity of HA is written as <span class="math inline">\(\{HA\}\)</span>.</p>
 <p>For natural waters, a very good approximation of an element chemical activities is its concentration and the expression of K<sub>A</sub> can be expressed as in equation <a href="acidbase.html#eq:KA">(8.8)</a>:</p>
-<p></br></p>
+</br>
 <span class="math display" id="eq:KA">\[\begin{equation}
 K_A = \frac{[A^-][H^+]}{[HA]}
 \tag{8.8}
@@ -377,21 +379,21 @@ K_A = \frac{[A^-][H^+]}{[HA]}
 <div id="pka" class="section level3">
 <h3><span class="header-section-number">8.2.2</span> pK<sub>A</sub></h3>
 <p>When the concentration of both conjugate acids and bases are equal in a solution, the expression of K<sub>A</sub> in equation <a href="acidbase.html#eq:KA">(8.8)</a> is simplified into</p>
-<p></br></p>
+</br>
 <span class="math display" id="eq:KAHplus">\[\begin{equation}
 K_A = [H^+]
 \tag{8.9}
 \end{equation}\]</span>
 <p></br></p>
 <p>Taking the negative of the common logarithm (base 10) on both side yields:</p>
-<p></br></p>
+</br>
 <span class="math display" id="eq:logKA">\[\begin{equation}
 -log(K_A) = -log \left([H^+]\right)
 \tag{8.10}
 \end{equation}\]</span>
 <p></br></p>
 <p>The right side of equation <a href="acidbase.html#eq:logKA">(8.10)</a> is the definition of the pH. By analogy, one can define a new term</p>
-<p></br></p>
+</br>
 <span class="math display" id="eq:pKA">\[\begin{equation}
 pK_A = -log(K_A) 
 \tag{8.11}
@@ -402,6 +404,103 @@ pK_A = -log(K_A)
 </div>
 <div id="self-ionization-of-water" class="section level2">
 <h2><span class="header-section-number">8.3</span> Self-ionization of water</h2>
+<p>In all aqueous solutions, the following reaction <a href="acidbase.html#eq:autoprotolysis">(8.12)</a>, referred to as the <em>autoprotolysis</em> must be considered:</p>
+</br>
+<span class="math display" id="eq:autoprotolysis">\[\begin{equation}
+H_2O + H_2O \rightleftharpoons OH^- + H_3O^+
+\tag{8.12}
+\end{equation}\]</span>
+<p></br></p>
+<p>Since in dilute solution the activity of water <span class="math inline">\({ \{H_2O \} = 1}\)</span> the equilibrium constant for equilibrium <a href="acidbase.html#eq:autoprotolysis">(8.12)</a>, often referred to as the ‘ion product’ or ‘ionic product’ of water can be written as:</p>
+</br>
+<span class="math display" id="eq:Kw">\[\begin{equation}
+K_w = \{OH^-\} \{H_3O^+\} \equiv \{OH^-\} \{H^+\} 
+\tag{8.13}
+\end{equation}\]</span>
+<p></br></p>
+<p>According to Stumm and Morgan <span class="citation">(<a href="#ref-Stumm1996-yn">1996</a>)</span>,</p>
+<blockquote>
+<p>at 25°C, K<sub>w</sub> = 1.008 × 10<sup>-14</sup> and the pH = 7.00 corresponds to the exact neutrality in pure water ([H<sup>+</sup>] = [OH<sup>-</sup>])</p>
+</blockquote>
+<p>Technically, K<sub>w</sub> changes with temperature, according to equation <a href="acidbase.html#eq:KwTK">(8.14)</a> <span class="citation">(Harned and Owen <a href="#ref-Harned1958-te">1958</a>)</span></p>
+</br>
+<span class="math display" id="eq:acid-dissociation1" id="eq:KwTK">\[\begin{equation}
+log K_w = \frac{-4470.99}{T} + 6.0875 - 0.01706 T 
+\tag{8.14}
+\end{equation}\]</span>
+<p></br></p>
+<p>With temperatures T expressed in °K. One can see in Figure <a href="acidbase.html#fig:Kw-Temp">8.1</a> that the pH at exact neutrality varies with T°C reaching 7.37 at 5°C and decreasing down to about 6.84 at 35°C. So contrary to the common understanding that pH at neutrality is equal to 7, it actually changes with temperature, and not on an insignificant way. This is a reason why it is preferrable to calibrate pH probes using pH buffer solutions in the lab near 25°C. For all calculation purposes in this chapter, we will assume that the temperature is at 25°C, and we can therefore take that pH=7 at neutrality and that log K<sub>w</sub>=-14.</p>
+</br>
+<div class="figure" style="text-align: center"><span id="fig:Kw-Temp"></span>
+<img src="Textbook_BAE587_files/figure-html/Kw-Temp-1.png" alt="K~w~ and pH at exact neutrality as a function of T&amp;deg;C" width="85%" />
+<p class="caption">
+Figure 8.1: K<sub>w</sub> and pH at exact neutrality as a function of T°C
+</p>
+</div>
+<p></br></p>
+</div>
+<div id="strong-vs.weak-acids" class="section level2">
+<h2><span class="header-section-number">8.4</span> Strong vs. weak acids</h2>
+<p>The concept of ionization of water defines the limits within which water activity remains equal to one, while the hydroxyde OH<sup>-</sup> and hydronium H<sub>3</sub>O<sup>+</sup> or simpler proton H<sup>+</sup> coexist. At pH=0, all the ionization is in the form of H<sup>+</sup>, and conversely, at pH=14, all the autoprololysis of water yields only OH<sup>-</sup>. Beyond these limits, i.e., pH less than 0 and greater than 14, one cannot consider these dilute solutions in water anymore.</p>
+<p>So all acids for which the pK<sub>A</sub> (i.e., -log(K<sub>A</sub>)) is beyond the 0 to 14 values, are considered strong acids or strong bases. This means that in dilute solutions, that the acid (or the base) is entirely dissociated into its conjugate base (or acid). To better understand this, let us take nitric acid for which the pK<sub>A</sub>=-1.4. This means that there is as much HNO<sub>3</sub> as there is NO<sub>3</sub><sup>-</sup> at pH=-1.4. So for dilute solutions, we can consider that all HNO<sub>3</sub> has been dissociated into NO<sub>3</sub><sup>-</sup>, and that in fact there is no measurable HNO<sub>3</sub> in solution.</p>
+<p>Conversely, all other acids for with the pK<sub>A</sub> is within 0 and 14 are considered weak acids, because depending on the pH, they can be either be in the HA or A<sup>-</sup> forms, if we take our generic equilibrium example \tag{8.4}. It turns out that many inorganic nutrients of interest and all organic acids are weak acids. This property makes them either undergo transformations depending on the controling pH, but also makes them play a very significant role in buffereing the ambient pH. These weak acids are in large part responsible for the relative narrow range of pH in natural waters included in most cases between 4.5 and 8.5.</p>
+</div>
+<div id="polyprotic-acids" class="section level2">
+<h2><span class="header-section-number">8.5</span> Polyprotic acids</h2>
+<p>Polyprotic acids are acids that can donate more than one proton. Among the inorganic nutrients important to environmental and ecological engineering, several are polyprotic acids, namely, phosphates, carbonates, and hydrogen sulfides. Because they have the ability to donate or gain a proton, these polyprotic acids play a very special role in buffering the pH of streams, ground, lake, and sea waters, as well as that of soil pore water.</p>
+<p>Before we can fully evaluate the environmental importance of these polyprotic acids, let us consider a generic theoritical case. Let us take a generic triprotic acid able to donate up to three protons. Three equilibrium reactions coexist in solution, in addition to the autoprotolysis of water <a href="acidbase.html#eq:H3Apoly">(8.15)</a>. It becomes interesting to evaluate, depending on the pH, the relative importance of each of the forms. Before we start the calculations, let us establish some simple methodological rules that greatly help solve most of chemistry problems. Always:</p>
+<ol style="list-style-type: decimal">
+<li>Write all the reaction equilibria at play</li>
+<li>list all the ionic forms at play</li>
+<li>List all the non-ionic forms</li>
+<li>Establish the electroneutrality of the solution by balancing the positive and negative charges of the ions at play</li>
+<li>Establish the conservation of mass when possible</li>
+</ol>
+<hr />
+<ol style="list-style-type: decimal">
+<li>Equilibria at play:</li>
+</ol>
+</br>
+<span class="math display" id="eq:H3Apoly">\[\begin{equation}
+H_3A \rightleftharpoons H_2A^- + H^+ \hspace{3.5cm} K_1 \\
+H_2A^- \rightleftharpoons HA^{2-} + H^+ \hspace{3.5cm} K_2 \\
+HA^{2-} \rightleftharpoons A^{3-} + H^+ \hspace{3.5cm} K_3 \\
+H_2O \rightleftharpoons OH^- + H^+ \hspace{3.5cm} K_w
+\tag{8.15}
+\end{equation}\]</span>
+<p></br></p>
+<ol start="2" style="list-style-type: decimal">
+<li>List of the ionic forms:
+<ul>
+<li>cations: <span class="math inline">\(H^+\)</span></li>
+<li>anions: <span class="math inline">\(H_2A^-\)</span>, <span class="math inline">\(HA^{2-}\)</span>, <span class="math inline">\(A^{3-}\)</span>, <span class="math inline">\(OH^-\)</span></li>
+</ul></li>
+</ol>
+<p></br></p>
+<ol start="3" style="list-style-type: decimal">
+<li>List of all other forms:
+<ul>
+<li><span class="math inline">\(H_3A\)</span>, <span class="math inline">\(H_2O\)</span></li>
+</ul></li>
+</ol>
+<p></br></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Electroneutrality of the solution:
+<ul>
+<li><span class="math inline">\([H^+] = [H_2A^-] + 2\times[HA^{2-}] + 3\times[A^{3-}] + [OH^-]\)</span></li>
+<li>The factor 2 before <span class="math inline">\(2\times[HA^{2-}]\)</span> expresses the relative contribution of the concentration <span class="math inline">\([HA^{2-}]\)</span> to the total negative charge. The same is true for <span class="math inline">\(3\times[A^{3-}]\)</span>.</li>
+</ul></li>
+</ol>
+<p></br></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Conservation of mass:
+<ul>
+<li>The summation of all the conjugate forms is often referred to as ‘total concentration’ or <span class="math inline">\(C_T\)</span></li>
+<li><span class="math inline">\(C_T = [H_3A] + [H_2A^-] + [HA^{2-}] + [A^{3-}]\)</span></li>
+</ul></li>
+</ol>
+<hr />
+<p></br> </br></p>
 <p><strong><em>This chapter is still under construction</em></strong></p>
 <p></br></br></br></p>
 
@@ -414,6 +513,9 @@ pK_A = -log(K_A)
 </div>
 <div id="ref-Stumm1996-yn">
 <p>Stumm, Werner, and James J Morgan. 1996. <em>Aquatic Chemistry: Chemical Equilibria and Rates in Natural Waters</em>. Wiley. <a href="https://market.android.com/details?id=book-xvZOAAAAMAAJ" class="uri">https://market.android.com/details?id=book-xvZOAAAAMAAJ</a>.</p>
+</div>
+<div id="ref-Harned1958-te">
+<p>Harned, Herbert S, and Benton B Owen. 1958. <em>The Physical Chemistry of Electrolytic Solutions</em>. Reinhold Pub. Corp.</p>
 </div>
 </div>
             </section>
