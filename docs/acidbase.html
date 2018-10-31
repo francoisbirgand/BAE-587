@@ -25,7 +25,7 @@
 <meta name="author" content="François Birgand">
 
 
-<meta name="date" content="2018-10-30">
+<meta name="date" content="2018-10-31">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -155,7 +155,11 @@
 </ul></li>
 <li class="chapter" data-level="8.3" data-path="acidbase.html"><a href="acidbase.html#self-ionization-of-water"><i class="fa fa-check"></i><b>8.3</b> Self-ionization of water</a></li>
 <li class="chapter" data-level="8.4" data-path="acidbase.html"><a href="acidbase.html#strong-vs.weak-acids"><i class="fa fa-check"></i><b>8.4</b> Strong vs. weak acids</a></li>
-<li class="chapter" data-level="8.5" data-path="acidbase.html"><a href="acidbase.html#polyprotic-acids"><i class="fa fa-check"></i><b>8.5</b> Polyprotic acids</a></li>
+<li class="chapter" data-level="8.5" data-path="acidbase.html"><a href="acidbase.html#mono--and-polyprotic-acids-mole-fractions"><i class="fa fa-check"></i><b>8.5</b> Mono- and polyprotic acids mole fractions</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="acidbase.html"><a href="acidbase.html#triprotic-acid-example"><i class="fa fa-check"></i><b>8.5.1</b> Triprotic acid example</a></li>
+<li class="chapter" data-level="8.5.2" data-path="acidbase.html"><a href="acidbase.html#generalized-polyprotic-acid-mole-fractions"><i class="fa fa-check"></i><b>8.5.2</b> Generalized polyprotic acid mole fractions</a></li>
+<li class="chapter" data-level="8.5.3" data-path="acidbase.html"><a href="acidbase.html#graphical-illustration-of-mole-fractions-of-ecologically-relevant-weak-acids"><i class="fa fa-check"></i><b>8.5.3</b> Graphical illustration of mole fractions of ecologically relevant weak acids</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>9</b> Glossary</a><ul>
 <li class="chapter" data-level="9.1" data-path="glossary.html"><a href="glossary.html#a"><i class="fa fa-check"></i><b>9.1</b> A</a><ul>
@@ -422,7 +426,7 @@ K_w = \{OH^-\} \{H_3O^+\} \equiv \{OH^-\} \{H^+\}
 </blockquote>
 <p>Technically, K<sub>w</sub> changes with temperature, according to equation <a href="acidbase.html#eq:KwTK">(8.14)</a> <span class="citation">(Harned and Owen <a href="#ref-Harned1958-te">1958</a>)</span></p>
 </br>
-<span class="math display" id="eq:acid-dissociation1" id="eq:KwTK">\[\begin{equation}
+<span class="math display" id="eq:KwTK">\[\begin{equation}
 log K_w = \frac{-4470.99}{T} + 6.0875 - 0.01706 T 
 \tag{8.14}
 \end{equation}\]</span>
@@ -440,13 +444,16 @@ Figure 8.1: K<sub>w</sub> and pH at exact neutrality as a function of T°C
 <div id="strong-vs.weak-acids" class="section level2">
 <h2><span class="header-section-number">8.4</span> Strong vs. weak acids</h2>
 <p>The concept of ionization of water defines the limits within which water activity remains equal to one, while the hydroxyde OH<sup>-</sup> and hydronium H<sub>3</sub>O<sup>+</sup> or simpler proton H<sup>+</sup> coexist. At pH=0, all the ionization is in the form of H<sup>+</sup>, and conversely, at pH=14, all the autoprololysis of water yields only OH<sup>-</sup>. Beyond these limits, i.e., pH less than 0 and greater than 14, one cannot consider these dilute solutions in water anymore.</p>
-<p>So all acids for which the pK<sub>A</sub> (i.e., -log(K<sub>A</sub>)) is beyond the 0 to 14 values, are considered strong acids or strong bases. This means that in dilute solutions, that the acid (or the base) is entirely dissociated into its conjugate base (or acid). To better understand this, let us take nitric acid for which the pK<sub>A</sub>=-1.4. This means that there is as much HNO<sub>3</sub> as there is NO<sub>3</sub><sup>-</sup> at pH=-1.4. So for dilute solutions, we can consider that all HNO<sub>3</sub> has been dissociated into NO<sub>3</sub><sup>-</sup>, and that in fact there is no measurable HNO<sub>3</sub> in solution.</p>
-<p>Conversely, all other acids for with the pK<sub>A</sub> is within 0 and 14 are considered weak acids, because depending on the pH, they can be either be in the HA or A<sup>-</sup> forms, if we take our generic equilibrium example \tag{8.4}. It turns out that many inorganic nutrients of interest and all organic acids are weak acids. This property makes them either undergo transformations depending on the controling pH, but also makes them play a very significant role in buffereing the ambient pH. These weak acids are in large part responsible for the relative narrow range of pH in natural waters included in most cases between 4.5 and 8.5.</p>
+<p>So all acids for which the pK<sub>A</sub> (i.e., -log(K<sub>A</sub>)) is beyond the 0 to 14 values, are considered strong acids or strong bases. This means that in dilute solutions, the acid (or the base) is entirely dissociated into its conjugate base (or acid). To better understand this, let us take nitric acid for which the pK<sub>A</sub>=-1.4. This means that there is as much HNO<sub>3</sub> as there is NO<sub>3</sub><sup>-</sup> at pH=-1.4. So for dilute solutions, we can consider that all HNO<sub>3</sub> has been dissociated into NO<sub>3</sub><sup>-</sup>, and that in fact there is no measurable HNO<sub>3</sub> in solution.</p>
+<p>Conversely, all other acids for with the pK<sub>A</sub> is within 0 and 14 are considered weak acids, because depending on the pH, they can be either be in the HA or A<sup>-</sup> forms, if we take our generic equilibrium example <a href="acidbase.html#eq:acid-dissociation1">(8.4)</a>. It turns out that many inorganic nutrients of interest and all organic acids are weak acids. This property makes them either undergo transformations depending on the controling pH, but also makes them play a very significant role in buffering the ambient pH. These weak acids are in large part responsible for the relative narrow range of pH in natural waters included in most cases between 4.5 and 8.5.</p>
 </div>
-<div id="polyprotic-acids" class="section level2">
-<h2><span class="header-section-number">8.5</span> Polyprotic acids</h2>
-<p>Polyprotic acids are acids that can donate more than one proton. Among the inorganic nutrients important to environmental and ecological engineering, several are polyprotic acids, namely, phosphates, carbonates, and hydrogen sulfides. Because they have the ability to donate or gain a proton, these polyprotic acids play a very special role in buffering the pH of streams, ground, lake, and sea waters, as well as that of soil pore water.</p>
-<p>Before we can fully evaluate the environmental importance of these polyprotic acids, let us consider a generic theoritical case. Let us take a generic triprotic acid able to donate up to three protons. Three equilibrium reactions coexist in solution, in addition to the autoprotolysis of water <a href="acidbase.html#eq:H3Apoly">(8.15)</a>. It becomes interesting to evaluate, depending on the pH, the relative importance of each of the forms. Before we start the calculations, let us establish some simple methodological rules that greatly help solve most of chemistry problems. Always:</p>
+<div id="mono--and-polyprotic-acids-mole-fractions" class="section level2">
+<h2><span class="header-section-number">8.5</span> Mono- and polyprotic acids mole fractions</h2>
+<p>The first equilibrium <a href="acidbase.html#eq:acid-dissociation1">(8.4)</a> illustrates the case of a monoprotic acid, i.e., that can donate only one proton. For our purposes, important monoprotic acids include <span class="math inline">\(HSO_4^2-\)</span> and <span class="math inline">\(NH_4^+\)</span>. Among the inorganic nutrients important to environmental and ecological engineering, several are polyprotic acids, namely, phosphates, carbonates, and hydrogen sulfides. Polyprotic acids are acids that can donate more than one proton. Because they have the ability to donate or gain a proton, these polyprotic acids play a very special role in buffering the pH of streams, ground, lake, and sea waters, as well as that of soil pore water.</p>
+<p>The mono- and polyprotic acids mentioned above can take several forms, depending on the pH. Reversely, some of the biogeochemical processes at play, e.g., in streams or a wetland soil, will tend to add or remove some of the conjugate forms, possibly modifying the local pH over time. An important tool to understand the role played by environmentally important weak acids is to calculate the relative mole fraction of each of the conjugate forms as a function of pH. In the following, we will illustrate how to calculate the mole fraction for an example triprotic acid, as well as in the general case of an acid able to donate n protons; results of the general case will apply in particular to the monoprotic acids as well.</p>
+<div id="triprotic-acid-example" class="section level3">
+<h3><span class="header-section-number">8.5.1</span> Triprotic acid example</h3>
+<p>Let us take a generic triprotic acid able to donate up to three protons. Three equilibrium reactions coexist in solution, in addition to the autoprotolysis of water <a href="acidbase.html#eq:H3Apoly">(8.15)</a>. Before we start the calculations of the mole fractions, let us establish some simple methodological rules that greatly help solve many of chemistry problems. Always:</p>
 <ol style="list-style-type: decimal">
 <li>Write all the reaction equilibria at play</li>
 <li>list all the ionic forms at play</li>
@@ -460,10 +467,10 @@ Figure 8.1: K<sub>w</sub> and pH at exact neutrality as a function of T°C
 </ol>
 </br>
 <span class="math display" id="eq:H3Apoly">\[\begin{equation}
-H_3A \rightleftharpoons H_2A^- + H^+ \hspace{3.5cm} K_1 \\
-H_2A^- \rightleftharpoons HA^{2-} + H^+ \hspace{3.5cm} K_2 \\
-HA^{2-} \rightleftharpoons A^{3-} + H^+ \hspace{3.5cm} K_3 \\
-H_2O \rightleftharpoons OH^- + H^+ \hspace{3.5cm} K_w
+H_3A \rightleftharpoons H_2A^- + H^+ \hspace{2.5cm} K_1 = \frac{[H_2A^-][H^+]}{[H_3A]}\\
+H_2A^- \rightleftharpoons HA^{2-} + H^+ \hspace{2.5cm} K_2 = \frac{[H_2A^-][H^+]}{[HA^{2-}]}\\
+HA^{2-} \rightleftharpoons A^{3-} + H^+ \hspace{2.5cm} K_3 = \frac{[HA^{2-}][H^+]}{[A^{3-}]}\\
+H_2O \rightleftharpoons OH^- + H^+ \hspace{2.5cm} K_w = [H^+][OH^-]
 \tag{8.15}
 \end{equation}\]</span>
 <p></br></p>
@@ -498,10 +505,123 @@ H_2O \rightleftharpoons OH^- + H^+ \hspace{3.5cm} K_w
 </ul></li>
 </ol>
 <hr />
+<p>After establishing the constraint of the systems, it is possible to evaluate the relative abundance of each of the conjugate forms, i.e., the mole fraction or the ratio between concentration of each form and <span class="math inline">\(C_T\)</span>. To get there, let us first express each of the conjugate forms as a function of <span class="math inline">\([H_3A]\)</span>. Using the equations for the reaction constants, and combining the expressions of <span class="math inline">\(K_1\)</span>, <span class="math inline">\(K_2\)</span>, and <span class="math inline">\(K_3\)</span> from <a href="acidbase.html#eq:H3Apoly">(8.15)</a>, it is possible to obtain:</p>
+</br>
+<span class="math display" id="eq:HA3funcofH3A">\[\begin{equation}
+[H_2A^-] = [H_3A] \frac{K_1}{[H^+]} \\
+[HA^{2-}] = [H_3A] \frac{K_1K_2}{[H^+]^2} \\
+[A^{3-}] = [H_3A] \frac{K_1K_2K_3}{[H^+]^3} \\
+\tag{8.16}
+\end{equation}\]</span>
+<p></br></p>
+<p>Replacing the expressions of each conjugate forms in <a href="acidbase.html#eq:HA3funcofH3A">(8.16)</a> above, the equation of the conservation of mass then becomes:</p>
+</br>
+<span class="math display" id="eq:H3Aconsermass1">\[\begin{equation}
+C_T = [H_3A] \times \left( 1 + \frac{K_1}{[H^+]} + \frac{K_1K_2}{[H^+]^2} + \frac{K_1K_2K_3}{[H^+]^3}\right)
+\tag{8.17}
+\end{equation}\]</span>
+<p></br></p>
+<span class="math display" id="eq:H3Aconsermass2">\[\begin{equation}
+C_T = [H_3A] \times \left( \frac{[H^+]^3 + K_1[H^+]^2 + K_1K_2[H^+] + K_1K_2K_3}{[H^+]^3}\right)
+\tag{8.18}
+\end{equation}\]</span>
+<p></br></p>
+<p>The molar fraction <span class="math inline">\(\alpha_0\)</span> of the fully protonated acid can be expressed as:</p>
+</br>
+<span class="math display" id="eq:H3Amolarfrac0">\[\begin{equation}
+\alpha_0 = \frac{[H_3A]}{C_T}
+\tag{8.19}
+\end{equation}\]</span>
+<p></br></p>
+<span class="math display" id="eq:H3Amolarfrac1">\[\begin{equation}
+\alpha_0 = \frac{[H^+]^3}{[H^+]^3 + K_1[H^+]^2 + K_1K_2[H^+] + K_1K_2K_3} 
+\tag{8.20}
+\end{equation}\]</span>
+<p></br></p>
+<p>By analogy, and using the reaction constant equations, the other molar fractions can be expressed as:</p>
+<span class="math display" id="eq:H3Amolarfrac2">\[\begin{equation}
+\alpha_1 = \frac{[H_2A^-]}{C_T} = \frac{K_1[H^+]^2}{[H^+]^3 + K_1[H^+]^2 + K_1K_2[H^+] + K_1K_2K_3} 
+\tag{8.21}
+\end{equation}\]</span>
+<p></br></p>
+<span class="math display" id="eq:H3Amolarfrac3">\[\begin{equation}
+\alpha_2 = \frac{[HA^{2-}]}{C_T} = \frac{K_1K_2[H^+]}{[H^+]^3 + K_1[H^+]^2 + K_1K_2[H^+] + K_1K_2K_3} 
+\tag{8.22}
+\end{equation}\]</span>
+<p></br></p>
+<span class="math display" id="eq:H3Amolarfrac4">\[\begin{equation}
+\alpha_3 = \frac{[A^{3-}]}{C_T} = \frac{K_1K_2K_3}{[H^+]^3 + K_1[H^+]^2 + K_1K_2[H^+] + K_1K_2K_3} 
+\tag{8.23}
+\end{equation}\]</span>
+<p></br></p>
+<p>Notice that for all mole fractions, the denominator does not change, only the numerator does. This example can be used to draw the general case of a polyprotic acid which can donate n protons (including for n = 1).</p>
+</div>
+<div id="generalized-polyprotic-acid-mole-fractions" class="section level3">
+<h3><span class="header-section-number">8.5.2</span> Generalized polyprotic acid mole fractions</h3>
+<p>Using the same methodology as before:</p>
+<hr />
+<ol style="list-style-type: decimal">
+<li>Equilibria at play:</li>
+</ol>
+</br>
+<span class="math display" id="eq:HnApoly">\[\begin{equation}
+H_nA \rightleftharpoons H_{n-1}A^- + H^+ \hspace{0.6cm} K_{a1} = \frac{[H_{n-1}A^-][H^+]}{[H_nA]} \hspace{0.6cm} [H_{n-1}A^-] = [H_nA] \frac {K_{a1}}{[H^+]}\\
+H_{n-1}A^- \rightleftharpoons H_{n-2}A^{2-} + H^+ \hspace{0.6cm} K_{a2} = \frac{[H_{n-2}A^{2-}][H^+]}{[H_{n-1}A]} \hspace{0.6cm} [H_{n-2}A^-] = [H_nA] \frac {K_{a1}K_{a2}}{[H^+]^2}\\
+\\
+\vdots \hspace{6cm} \vdots \hspace{6cm} \vdots\\
+\\
+HA^{(n-1)-} \rightleftharpoons A^{n-} + H^+ \hspace{0.6cm} K_{an} = \frac{[A^{n-}][H^+]}{[HA^{(n-1)-}]} \hspace{0.6cm} [A^{n-}] = [H_nA] \frac {K_{a1}K_{a2} \ldots  K_{an}}{[H^+]^n}\\
+
+\tag{8.24}
+\end{equation}\]</span>
+<p></br></p>
+<ol start="2" style="list-style-type: decimal">
+<li>List of the ionic forms:
+<ul>
+<li>cations: <span class="math inline">\(H^+\)</span></li>
+<li>anions: <span class="math inline">\(H_{n-1}A^-\)</span>, <span class="math inline">\(H_{n-2}A^{2-}\)</span>, … , <span class="math inline">\(A^{n-}\)</span>, <span class="math inline">\(OH^-\)</span></li>
+</ul></li>
+</ol>
+<p></br></p>
+<ol start="3" style="list-style-type: decimal">
+<li>List of all other forms:
+<ul>
+<li><span class="math inline">\(H_nA\)</span>, <span class="math inline">\(H_2O\)</span></li>
+</ul></li>
+</ol>
+<p></br></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Electroneutrality of the solution:
+<ul>
+<li><span class="math inline">\([H^+] = [H_{n-1}A^-] + 2\times[H_{n-2}A^{2-}] \space + \space ... \space + \space n\times[A^{n-}] + [OH^-]\)</span></li>
+</ul></li>
+</ol>
+<p></br></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Conservation of mass:
+<ul>
+<li>The summation of all the conjugate forms is often referred to as ‘total concentration’ or <span class="math inline">\(C_T\)</span></li>
+<li><span class="math inline">\(C_T = [H_nA] + [H_{n-1}A^-] + ... + [A^{n-}]\)</span></li>
+</ul></li>
+</ol>
+<hr />
+<p>The generalized equation for the mole fraction <span class="math inline">\(i\)</span></p>
+</br>
+<span class="math display" id="eq:HnAmolarfraci">\[\begin{equation}
+\alpha_i = \frac{[H_{n-i}A^{(n-i)-}]}{C_T} \\
+\alpha_i = \frac{K_{a1}K_{a2} \ldots K_{ai}[H^+]^{n-i}}{[H^+]^n + K_{a1}[H^+]^{n-1} + K_1K_2[H^+]^{n-2} + \dots +  K_{a1}K_{a2}\dots K_{an}} 
+\tag{8.25}
+\end{equation}\]</span>
+<p></br></p>
+</div>
+<div id="graphical-illustration-of-mole-fractions-of-ecologically-relevant-weak-acids" class="section level3">
+<h3><span class="header-section-number">8.5.3</span> Graphical illustration of mole fractions of ecologically relevant weak acids</h3>
+<p>Using the generalized equation <a href="acidbase.html#eq:HnAmolarfraci">(8.25)</a>, we can have</p>
 <p></br> </br></p>
 <p><strong><em>This chapter is still under construction</em></strong></p>
 <p></br></br></br></p>
 
+</div>
 </div>
 </div>
 <h3>References</h3>
