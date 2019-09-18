@@ -1,0 +1,7 @@
+Number of atoms in chain, Prefix,Alkane name and condensed formula,Structural formula,Skeletal or Line structure
+**1**<br> CH~4~,*meth-*,"*meth*ane<br> CH~4~",![]("pictures/methane-SF.png"){width=28%},""
+**2**<br> C~2~H~6~,*eth-*,"*eth*ane<br> CH~3~-CH~3~",![]("pictures/ethane-SF.png"){width=40%},"![]("pictures/ethane-LS.png"){width=20%}"
+**3**<br> C~3~H~8~,*prop-*,"*prop*ane<br> CH~3~-CH~2~-CH~3~",![]("pictures/propane-SF.png"){width=55%},"![]("pictures/propane-LS.png"){width=40%}"
+**4**<br> C~4~H~10~,*but-*,"*but*ane<br> CH~3~-(CH~2~)~2~-CH~3~",![]("pictures/butane-SF.png"){width=70%},"![]("pictures/butane-LS.png"){width=60%}"
+**5**<br> C~5~H~12~,*pent-*,"*pent*ane<br> CH~3~-(CH~2~)~3~-CH~3~",![]("pictures/pentane-SF.png"){width=85%},"![]("pictures/pentane-LS.png"){width=80%}"
+**6**<br> C~6~H~14~,*hex-*,"*hex*ane<br> CH~3~-(CH~2~)~4~-CH~3~",![]("pictures/hexane-SF.png"){width=100%},"![]("pictures/hexane-LS.png"){width=100%}"

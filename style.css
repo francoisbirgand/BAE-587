@@ -57,4 +57,47 @@ pre code {
     font-style: normal;
 }
 
+.rmd-learning-objectives {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: #f6f6f1;
+  position:relative;
+  font-family: "arial";
+  font-style: normal;
+  border-style: solid;
+  border-color: gray;
+}
+
+.rmd-learning-objectives:before {
+    content: "\f19d";
+    font-family: FontAwesome;
+    left:10px;
+    position:absolute;
+    top:0px;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.rmd-etymology {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: #f6f6f1;
+  position:relative;
+  font-family: "arial";
+  font-style: normal;
+  border-style: solid;
+  border-color: #A82B0F;
+  border-radius: 10px;
+}
+
+.rmd-etymology:before {
+    content: "\f19c";
+    font-family: FontAwesome;
+    left:10px;
+    position:absolute;
+    top:0px;
+    font-size: 40px;
+    font-style: normal;
+}
+
 
