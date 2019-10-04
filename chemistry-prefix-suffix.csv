@@ -1,0 +1,13 @@
+prefix,meaning,suffix,meaning
+*alk-*,hydrocarbon,*-ane*,saturated hydrocarbon (C-C)
+*meth-*,hydrocarbon with 1 C,*-ene*, hydrocarbon with at least one double bond (C=C)
+*eth-*,hydrocarbon with 2 C,*-yne*, hydrocarbon with at least one triple bond (C&#8801;C)
+*prop-*,hydrocarbon with 3 C,*-yl*, hydrocarbon radical
+*but-*,hydrocarbon with 4 C,*-ol*, hydrocarbon with hydroxyl group (-OH)
+*pent-*,hydrocarbon with 5 C,*-al*,hydrocarbon with aldehyde group (-CHO)
+*hex-*,hydrocarbon with 6 C,*-one*,hydrocarbon with ketone group (-CO-)
+*hept-*,hydrocarbon with 7 C,*-oic*,hydrocarbon with carboxylic acid (-COOH)
+*oct-*,hydrocarbon with 8 C,*-oate*,"conjugate base of carboxyl group (-COO^-^), also used in naming esters"
+*non-*,hydrocarbon with 9 C,*-ate*,anion form in general
+*dec-*,hydrocarbon with 10 C,*-thiol*,hydrocarbon with thiol group (-SH)
+*ar-*,aromatic,*-ine*,derived substance
