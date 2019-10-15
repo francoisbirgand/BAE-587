@@ -100,4 +100,19 @@ pre code {
     font-style: normal;
 }
 
+.rmd-study {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: #f6f6f1 7px 5px no-repeat;
+  position:relative;
+  font-family: "arial";
+  font-style: normal;
+  border-style: solid;
+  border-color: #0816e5;
+  border-radius: 10px;
+}
+
+.rmd-study {
+  background-image: url("pictures/study.png");
+}
 
