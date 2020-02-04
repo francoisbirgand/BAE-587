@@ -17,3 +17,10 @@ prefix,meaning,suffix,meaning
 *eicos-*,hydrocarbon with 20 C,,
 *docos-*,hydrocarbon with 22 C,,
 *ar-*,aromatic,*-ine*,derived substance
+*hemi-*, half,,
+*mono-*, "one, single",,
+*sesqui-*, "one and a half, like in *sesqui*terpenes",,
+*di-*, two,,
+*sester-*,"two and a half, like in *sester*terpenes*",,
+*tri-*, three,,
+*sesquar-*, "three and a half, like in *sesquar*terpenes*",,
