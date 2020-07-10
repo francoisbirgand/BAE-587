@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2020-03-10" />
+<meta name="date" content="2020-07-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,6 +50,68 @@
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="stylesheet" href="toc.css" type="text/css" />
@@ -126,7 +188,7 @@
 <li class="chapter" data-level="4.2.4" data-path="molecular-families.html"><a href="molecular-families.html#other-important-carbohydrates"><i class="fa fa-check"></i><b>4.2.4</b> Other important carbohydrates</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="molecular-families.html"><a href="molecular-families.html#proteins"><i class="fa fa-check"></i><b>4.3</b> Proteins</a></li>
-<li class="chapter" data-level="4.4" data-path="molecular-families.html"><a href="molecular-families.html#nucleic-acids"><i class="fa fa-check"></i><b>4.4</b> Nucleic Acids</a></li>
+<li class="chapter" data-level="4.4" data-path="molecular-families.html"><a href="molecular-families.html#nucleotides-and-nucleic-acids"><i class="fa fa-check"></i><b>4.4</b> Nucleotides and Nucleic Acids</a></li>
 <li class="chapter" data-level="4.5" data-path="molecular-families.html"><a href="molecular-families.html#lipids"><i class="fa fa-check"></i><b>4.5</b> Lipids</a><ul>
 <li class="chapter" data-level="4.5.1" data-path="molecular-families.html"><a href="molecular-families.html#overview-of-fatty-acid--or-acyl-based-lipids"><i class="fa fa-check"></i><b>4.5.1</b> Overview of fatty acid- or acyl-based lipids</a></li>
 <li class="chapter" data-level="4.5.2" data-path="molecular-families.html"><a href="molecular-families.html#membrane-lipids"><i class="fa fa-check"></i><b>4.5.2</b> Lipids as key to cell membrane structure and function</a></li>
@@ -145,28 +207,36 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html"><i class="fa fa-check"></i><b>5</b> Energy generation and aerobic respiration</a><ul>
 <li class="chapter" data-level="5.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-transfer-of-electrons"><i class="fa fa-check"></i><b>5.1</b> Generating energy: transfer of electrons</a></li>
-<li class="chapter" data-level="5.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-without-combustion"><i class="fa fa-check"></i><b>5.2</b> Generating energy without combustion</a></li>
-<li class="chapter" data-level="5.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#ATP"><i class="fa fa-check"></i><b>5.3</b> ATP or the energy currency of the cell</a></li>
-<li class="chapter" data-level="5.4" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#the-atp-manufacture"><i class="fa fa-check"></i><b>5.4</b> The ATP manufacture</a><ul>
-<li class="chapter" data-level="5.4.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#substrate-level-versus-oxidative-phosphorylation"><i class="fa fa-check"></i><b>5.4.1</b> Substrate-level versus oxidative phosphorylation</a></li>
-<li class="chapter" data-level="5.4.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#respiration-providing-most-atp-thanks-to-exogenous-electron-acceptors-and-oxidative-phosphorylation"><i class="fa fa-check"></i><b>5.4.2</b> Respiration: providing most ATP thanks to exogenous electron acceptors and oxidative phosphorylation</a></li>
-<li class="chapter" data-level="5.4.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#creating-a-proton-gradient-as-a-source-of-proton-flow"><i class="fa fa-check"></i><b>5.4.3</b> Creating a proton gradient as a source of proton flow</a></li>
-<li class="chapter" data-level="5.4.4" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#a-compartment-to-accumulate-protons"><i class="fa fa-check"></i><b>5.4.4</b> A compartment to accumulate protons</a></li>
-<li class="chapter" data-level="5.4.5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#a-supply-of-protons-for-the-intermembrane-space-proton-pumps"><i class="fa fa-check"></i><b>5.4.5</b> A supply of protons for the intermembrane space: proton pumps</a></li>
-<li class="chapter" data-level="5.4.6" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#electron-transfer-molecules-that-power-the-proton-pumps"><i class="fa fa-check"></i><b>5.4.6</b> Electron transfer molecules that power the proton pumps</a></li>
-<li class="chapter" data-level="5.4.7" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#transfer-of-electrons-from-the-organic-carbon-to-an-electron-acceptor"><i class="fa fa-check"></i><b>5.4.7</b> Transfer of electrons from the Organic Carbon to an electron acceptor</a></li>
-<li class="chapter" data-level="5.4.8" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#oxygen-reduction"><i class="fa fa-check"></i><b>5.4.8</b> Oxygen reduction</a></li>
-<li class="chapter" data-level="5.4.9" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#electron-fate-from-organic-matter-to-electron-transfer-molecules"><i class="fa fa-check"></i><b>5.4.9</b> Electron fate from organic matter to electron transfer molecules</a></li>
-<li class="chapter" data-level="5.4.10" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#summary-of-respiration"><i class="fa fa-check"></i><b>5.4.10</b> Summary of respiration</a></li>
-<li class="chapter" data-level="5.4.11" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#respiration-electron-flow-schemes"><i class="fa fa-check"></i><b>5.4.11</b> Respiration electron flow schemes</a></li>
-<li class="chapter" data-level="5.4.12" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#aerobic-respiration-schemes-for-organotrophs"><i class="fa fa-check"></i><b>5.4.12</b> Aerobic respiration schemes for organotrophs</a></li>
+<li class="chapter" data-level="5.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#ATP"><i class="fa fa-check"></i><b>5.2</b> Generating energy without combustion: ATP or the energy currency of the cell</a></li>
+<li class="chapter" data-level="5.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#the-atp-manufacture"><i class="fa fa-check"></i><b>5.3</b> The ATP manufacture</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#substrate-level-versus-oxidative-phosphorylation"><i class="fa fa-check"></i><b>5.3.1</b> Substrate-level versus oxidative phosphorylation</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#respiration"><i class="fa fa-check"></i><b>5.4</b> Respiration: providing most ATP thanks to exogenous electron acceptors and oxidative phosphorylation</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#creating-a-proton-gradient-as-a-source-of-proton-flow"><i class="fa fa-check"></i><b>5.4.1</b> Creating a proton gradient as a source of proton flow</a></li>
+<li class="chapter" data-level="5.4.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#a-compartment-to-accumulate-protons"><i class="fa fa-check"></i><b>5.4.2</b> A compartment to accumulate protons</a></li>
+<li class="chapter" data-level="5.4.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#proton-pumping"><i class="fa fa-check"></i><b>5.4.3</b> A supply of protons for the intermembrane space: proton pumps</a></li>
+<li class="chapter" data-level="5.4.4" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#NADFAD"><i class="fa fa-check"></i><b>5.4.4</b> Electron transfer molecules that power the proton pumps</a></li>
+<li class="chapter" data-level="5.4.5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#transfer-of-electrons-from-the-organic-carbon-to-an-electron-acceptor"><i class="fa fa-check"></i><b>5.4.5</b> Transfer of electrons from the Organic Carbon to an electron acceptor</a></li>
+<li class="chapter" data-level="5.4.6" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#oxygen-reduction-and-oxidative-phosphorylation"><i class="fa fa-check"></i><b>5.4.6</b> Oxygen reduction and oxidative phosphorylation</a></li>
+<li class="chapter" data-level="5.4.7" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#respiration-electron-flow-schemes"><i class="fa fa-check"></i><b>5.4.7</b> Respiration electron flow schemes</a></li>
+<li class="chapter" data-level="5.4.8" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#aerobic-respiration-schemes-for-organotrophs"><i class="fa fa-check"></i><b>5.4.8</b> Aerobic respiration schemes for organotrophs</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#glycolysis"><i class="fa fa-check"></i><b>5.5</b> Glycolysis: an ancient way to produce ATP from glucose by substrate-level phosphorylation</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#substrate-level-phosphorylation"><i class="fa fa-check"></i><b>5.5.1</b> Substrate-level phosphorylation</a></li>
+<li class="chapter" data-level="5.5.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#energy-investment-and-energy-pay-off-phases-of-glycolysis"><i class="fa fa-check"></i><b>5.5.2</b> Energy investment and energy pay off phases of glycolysis</a></li>
+<li class="chapter" data-level="5.5.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#electrons-fate-and-electron-transfer-molecules"><i class="fa fa-check"></i><b>5.5.3</b> Electrons fate and electron transfer molecules</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#the-citric-acid-or-krebs-cycle-as-an-efficient-way-to-transfer-high-energy-electrons"><i class="fa fa-check"></i><b>5.6</b> The citric acid or Krebs cycle as an efficient way to transfer high energy electrons</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#oxidation-of-pyruvate-as-a-preliminary-step"><i class="fa fa-check"></i><b>5.6.1</b> Oxidation of pyruvate as a preliminary step</a></li>
+<li class="chapter" data-level="5.6.2" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#transfer-of-all-electrons-to-nad-and-fad"><i class="fa fa-check"></i><b>5.6.2</b> Transfer of all electrons to NAD<sup>+</sup> and FAD</a></li>
+<li class="chapter" data-level="5.6.3" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#summary-of-respiration"><i class="fa fa-check"></i><b>5.6.3</b> Summary of respiration</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="photosynthesis.html"><a href="photosynthesis.html"><i class="fa fa-check"></i><b>6</b> Capturing and storing energy: photosynthesis</a><ul>
 <li class="chapter" data-level="6.1" data-path="photosynthesis.html"><a href="photosynthesis.html#requirements-to-store-energy-on-organic-molecules"><i class="fa fa-check"></i><b>6.1</b> Requirements to store energy on organic molecules</a></li>
 <li class="chapter" data-level="6.2" data-path="photosynthesis.html"><a href="photosynthesis.html#no-need-to-reinvent-the-wheel-for-the-production-of-atp-and-the-transfer-of-electrons"><i class="fa fa-check"></i><b>6.2</b> No need to reinvent the wheel for the production of ATP and the transfer of electrons</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="redoxwetland.html"><a href="redoxwetland.html"><i class="fa fa-check"></i><b>7</b> Walk through the collection of electron donors and acceptors</a><ul>
+<li class="chapter" data-level="7" data-path="redoxwetland.html"><a href="redoxwetland.html"><i class="fa fa-check"></i><b>7</b> The classical collection of electron donors and acceptors</a><ul>
 <li class="chapter" data-level="7.1" data-path="redoxwetland.html"><a href="redoxwetland.html#the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils"><i class="fa fa-check"></i><b>7.1</b> The theoretical vertical sequence of respiratory processes in wetland soils</a></li>
 <li class="chapter" data-level="7.2" data-path="redoxwetland.html"><a href="redoxwetland.html#an-aerobic-layer-near-the-soil-water-interface"><i class="fa fa-check"></i><b>7.2</b> An aerobic layer near the soil-water interface</a></li>
 <li class="chapter" data-level="7.3" data-path="redoxwetland.html"><a href="redoxwetland.html#respiration-in-the-anaerobic-zone-of-the-soil"><i class="fa fa-check"></i><b>7.3</b> Respiration in the anaerobic zone of the soil</a></li>
@@ -186,101 +256,117 @@
 <li class="chapter" data-level="7.10.7" data-path="redoxwetland.html"><a href="redoxwetland.html#moving-of-dissolved-organic-carbon"><i class="fa fa-check"></i><b>7.10.7</b> Moving of Dissolved Organic Carbon</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="conc-levels.html"><a href="conc-levels.html"><i class="fa fa-check"></i><b>8</b> Nutrient concentration levels in rural and suburban environments</a><ul>
-<li class="chapter" data-level="8.1" data-path="conc-levels.html"><a href="conc-levels.html#level-of-dissolved-oxygen-concentrations-in-open-waters"><i class="fa fa-check"></i><b>8.1</b> Level of dissolved oxygen concentrations in open waters</a><ul>
-<li class="chapter" data-level="8.1.1" data-path="conc-levels.html"><a href="conc-levels.html#the-supply-and-demand-of-o2-in-water"><i class="fa fa-check"></i><b>8.1.1</b> The supply and demand of O<sub>2</sub> in water</a></li>
+<li class="chapter" data-level="8" data-path="unclassicalredox.html"><a href="unclassicalredox.html"><i class="fa fa-check"></i><b>8</b> The not so classical electron donors and acceptors</a><ul>
+<li class="chapter" data-level="8.1" data-path="unclassicalredox.html"><a href="unclassicalredox.html#dnra"><i class="fa fa-check"></i><b>8.1</b> DNRA</a></li>
+<li class="chapter" data-level="8.2" data-path="unclassicalredox.html"><a href="unclassicalredox.html#anammox"><i class="fa fa-check"></i><b>8.2</b> Anammox</a></li>
+<li class="chapter" data-level="8.3" data-path="unclassicalredox.html"><a href="unclassicalredox.html#nitrification-denitrification"><i class="fa fa-check"></i><b>8.3</b> Nitrification-denitrification</a></li>
+<li class="chapter" data-level="8.4" data-path="unclassicalredox.html"><a href="unclassicalredox.html#chemilithotrophic-denitrification"><i class="fa fa-check"></i><b>8.4</b> Chemilithotrophic denitrification</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="conc-levels.html"><a href="conc-levels.html#level-of-nutrient-concentrations-in-natural-undisturbed-streams"><i class="fa fa-check"></i><b>8.2</b> Level of nutrient concentrations in natural undisturbed streams</a></li>
+<li class="chapter" data-level="9" data-path="conc-levels.html"><a href="conc-levels.html"><i class="fa fa-check"></i><b>9</b> Nutrient concentration levels in rural and suburban environments</a><ul>
+<li class="chapter" data-level="9.1" data-path="conc-levels.html"><a href="conc-levels.html#level-of-dissolved-oxygen-concentrations-in-open-waters"><i class="fa fa-check"></i><b>9.1</b> Level of dissolved oxygen concentrations in open waters</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="conc-levels.html"><a href="conc-levels.html#the-supply-and-demand-of-o2-in-water"><i class="fa fa-check"></i><b>9.1.1</b> The supply and demand of O<sub>2</sub> in water</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="acidbase.html"><a href="acidbase.html"><i class="fa fa-check"></i><b>9</b> Applied thermochemistry: acid-base equilibria</a><ul>
-<li class="chapter" data-level="9.1" data-path="acidbase.html"><a href="acidbase.html#the-brnstedlowry-acidbase-theory"><i class="fa fa-check"></i><b>9.1</b> The Brønsted–Lowry acid–base theory</a></li>
-<li class="chapter" data-level="9.2" data-path="acidbase.html"><a href="acidbase.html#acid-base-equilibrium-parameters"><i class="fa fa-check"></i><b>9.2</b> Acid-base equilibrium parameters</a><ul>
-<li class="chapter" data-level="9.2.1" data-path="acidbase.html"><a href="acidbase.html#ka"><i class="fa fa-check"></i><b>9.2.1</b> K<sub>A</sub></a></li>
-<li class="chapter" data-level="9.2.2" data-path="acidbase.html"><a href="acidbase.html#pka"><i class="fa fa-check"></i><b>9.2.2</b> pK<sub>A</sub></a></li>
+<li class="chapter" data-level="9.2" data-path="conc-levels.html"><a href="conc-levels.html#level-of-nutrient-concentrations-in-natural-undisturbed-streams"><i class="fa fa-check"></i><b>9.2</b> Level of nutrient concentrations in natural undisturbed streams</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="acidbase.html"><a href="acidbase.html#self-ionization-of-water"><i class="fa fa-check"></i><b>9.3</b> Self-ionization of water</a></li>
-<li class="chapter" data-level="9.4" data-path="acidbase.html"><a href="acidbase.html#strong-vs.weak-acids"><i class="fa fa-check"></i><b>9.4</b> Strong vs. weak acids</a></li>
-<li class="chapter" data-level="9.5" data-path="acidbase.html"><a href="acidbase.html#mono--and-polyprotic-acids-mole-fractions"><i class="fa fa-check"></i><b>9.5</b> Mono- and polyprotic acids mole fractions</a><ul>
-<li class="chapter" data-level="9.5.1" data-path="acidbase.html"><a href="acidbase.html#triprotic-acid-example"><i class="fa fa-check"></i><b>9.5.1</b> Triprotic acid example</a></li>
-<li class="chapter" data-level="9.5.2" data-path="acidbase.html"><a href="acidbase.html#generalized-polyprotic-acid-mole-fractions"><i class="fa fa-check"></i><b>9.5.2</b> Generalized polyprotic acid mole fractions</a></li>
-<li class="chapter" data-level="9.5.3" data-path="acidbase.html"><a href="acidbase.html#graphical-illustration-of-mole-fractions-of-ecologically-relevant-weak-acids"><i class="fa fa-check"></i><b>9.5.3</b> Graphical illustration of mole fractions of ecologically relevant weak acids</a></li>
+<li class="chapter" data-level="10" data-path="acidbase.html"><a href="acidbase.html"><i class="fa fa-check"></i><b>10</b> Applied thermochemistry: acid-base equilibria</a><ul>
+<li class="chapter" data-level="10.1" data-path="acidbase.html"><a href="acidbase.html#the-brnstedlowry-acidbase-theory"><i class="fa fa-check"></i><b>10.1</b> The Brønsted–Lowry acid–base theory</a></li>
+<li class="chapter" data-level="10.2" data-path="acidbase.html"><a href="acidbase.html#acid-base-equilibrium-parameters"><i class="fa fa-check"></i><b>10.2</b> Acid-base equilibrium parameters</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="acidbase.html"><a href="acidbase.html#ka"><i class="fa fa-check"></i><b>10.2.1</b> K<sub>A</sub></a></li>
+<li class="chapter" data-level="10.2.2" data-path="acidbase.html"><a href="acidbase.html#pka"><i class="fa fa-check"></i><b>10.2.2</b> pK<sub>A</sub></a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="acidbase.html"><a href="acidbase.html#self-ionization-of-water"><i class="fa fa-check"></i><b>10.3</b> Self-ionization of water</a></li>
+<li class="chapter" data-level="10.4" data-path="acidbase.html"><a href="acidbase.html#strong-vs.weak-acids"><i class="fa fa-check"></i><b>10.4</b> Strong vs. weak acids</a></li>
+<li class="chapter" data-level="10.5" data-path="acidbase.html"><a href="acidbase.html#mono--and-polyprotic-acids-mole-fractions"><i class="fa fa-check"></i><b>10.5</b> Mono- and polyprotic acids mole fractions</a><ul>
+<li class="chapter" data-level="10.5.1" data-path="acidbase.html"><a href="acidbase.html#triprotic-acid-example"><i class="fa fa-check"></i><b>10.5.1</b> Triprotic acid example</a></li>
+<li class="chapter" data-level="10.5.2" data-path="acidbase.html"><a href="acidbase.html#generalized-polyprotic-acid-mole-fractions"><i class="fa fa-check"></i><b>10.5.2</b> Generalized polyprotic acid mole fractions</a></li>
+<li class="chapter" data-level="10.5.3" data-path="acidbase.html"><a href="acidbase.html#graphical-illustration-of-mole-fractions-of-ecologically-relevant-weak-acids"><i class="fa fa-check"></i><b>10.5.3</b> Graphical illustration of mole fractions of ecologically relevant weak acids</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>10</b> Glossary</a><ul>
-<li class="chapter" data-level="10.1" data-path="glossary.html"><a href="glossary.html#a"><i class="fa fa-check"></i><b>10.1</b> A</a><ul>
-<li class="chapter" data-level="10.1.1" data-path="glossary.html"><a href="glossary.html#aerobic-respiration"><i class="fa fa-check"></i><b>10.1.1</b> Aerobic respiration</a></li>
-<li class="chapter" data-level="10.1.2" data-path="glossary.html"><a href="glossary.html#anaerobic-respiration"><i class="fa fa-check"></i><b>10.1.2</b> Anaerobic respiration</a></li>
-<li class="chapter" data-level="10.1.3" data-path="glossary.html"><a href="glossary.html#ammonia"><i class="fa fa-check"></i><b>10.1.3</b> Ammonia</a></li>
-<li class="chapter" data-level="10.1.4" data-path="glossary.html"><a href="glossary.html#ammonium"><i class="fa fa-check"></i><b>10.1.4</b> Ammonium</a></li>
-<li class="chapter" data-level="10.1.5" data-path="glossary.html"><a href="glossary.html#ammonium-nitrate"><i class="fa fa-check"></i><b>10.1.5</b> Ammonium nitrate</a></li>
-<li class="chapter" data-level="10.1.6" data-path="glossary.html"><a href="glossary.html#anoxic-waters"><i class="fa fa-check"></i><b>10.1.6</b> Anoxic waters</a></li>
+<li class="chapter" data-level="11" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><i class="fa fa-check"></i><b>11</b> Introduction to hydrographs, chemographs, concentrations, and loads</a><ul>
+<li class="chapter" data-level="11.1" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#hydrographs-as-the-basic-hydrologist-tool"><i class="fa fa-check"></i><b>11.1</b> Hydrographs as the basic hydrologist tool</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#characteristics-of-a-hydrograph"><i class="fa fa-check"></i><b>11.1.1</b> Characteristics of a hydrograph</a></li>
+<li class="chapter" data-level="11.1.2" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#actual-hydrograph-over-an-entire-year"><i class="fa fa-check"></i><b>11.1.2</b> Actual hydrograph over an entire year</a></li>
+<li class="chapter" data-level="11.1.3" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#calculating-water-fluxes-or-cumulative-flow-volumes"><i class="fa fa-check"></i><b>11.1.3</b> Calculating water fluxes or cumulative flow volumes</a></li>
+<li class="chapter" data-level="11.1.4" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#evaluating-the-importance-of-rare-high-flow-events-flow-duration-curves"><i class="fa fa-check"></i><b>11.1.4</b> Evaluating the importance of rare high flow events: flow duration curves</a></li>
+<li class="chapter" data-level="11.1.5" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#flow-duration-curves-as-flow-exceedance-curves"><i class="fa fa-check"></i><b>11.1.5</b> Flow duration curves as flow exceedance curves</a></li>
 </ul></li>
-<li class="chapter" data-level="10.2" data-path="glossary.html"><a href="glossary.html#b"><i class="fa fa-check"></i><b>10.2</b> B</a><ul>
-<li class="chapter" data-level="10.2.1" data-path="glossary.html"><a href="glossary.html#benthic"><i class="fa fa-check"></i><b>10.2.1</b> Benthic</a></li>
+<li class="chapter" data-level="11.2" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#chemographs-and-concentration-levels"><i class="fa fa-check"></i><b>11.2</b> Chemographs and concentration levels</a></li>
 </ul></li>
-<li class="chapter" data-level="10.3" data-path="glossary.html"><a href="glossary.html#c"><i class="fa fa-check"></i><b>10.3</b> C</a><ul>
-<li class="chapter" data-level="10.3.1" data-path="glossary.html"><a href="glossary.html#carbon-dioxide"><i class="fa fa-check"></i><b>10.3.1</b> Carbon dioxide</a></li>
-<li class="chapter" data-level="10.3.2" data-path="glossary.html"><a href="glossary.html#carbonates"><i class="fa fa-check"></i><b>10.3.2</b> Carbonates</a></li>
-<li class="chapter" data-level="10.3.3" data-path="glossary.html"><a href="glossary.html#catabolism"><i class="fa fa-check"></i><b>10.3.3</b> Catabolism</a></li>
+<li class="chapter" data-level="12" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>12</b> Glossary</a><ul>
+<li class="chapter" data-level="12.1" data-path="glossary.html"><a href="glossary.html#a"><i class="fa fa-check"></i><b>12.1</b> A</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="glossary.html"><a href="glossary.html#aerobic-respiration"><i class="fa fa-check"></i><b>12.1.1</b> Aerobic respiration</a></li>
+<li class="chapter" data-level="12.1.2" data-path="glossary.html"><a href="glossary.html#anaerobic-respiration"><i class="fa fa-check"></i><b>12.1.2</b> Anaerobic respiration</a></li>
+<li class="chapter" data-level="12.1.3" data-path="glossary.html"><a href="glossary.html#ammonia"><i class="fa fa-check"></i><b>12.1.3</b> Ammonia</a></li>
+<li class="chapter" data-level="12.1.4" data-path="glossary.html"><a href="glossary.html#ammonium"><i class="fa fa-check"></i><b>12.1.4</b> Ammonium</a></li>
+<li class="chapter" data-level="12.1.5" data-path="glossary.html"><a href="glossary.html#ammonium-nitrate"><i class="fa fa-check"></i><b>12.1.5</b> Ammonium nitrate</a></li>
+<li class="chapter" data-level="12.1.6" data-path="glossary.html"><a href="glossary.html#anoxic-waters"><i class="fa fa-check"></i><b>12.1.6</b> Anoxic waters</a></li>
 </ul></li>
-<li class="chapter" data-level="10.4" data-path="glossary.html"><a href="glossary.html#d"><i class="fa fa-check"></i><b>10.4</b> D</a><ul>
-<li class="chapter" data-level="10.4.1" data-path="glossary.html"><a href="glossary.html#denitrification"><i class="fa fa-check"></i><b>10.4.1</b> Denitrification</a></li>
-<li class="chapter" data-level="10.4.2" data-path="glossary.html"><a href="glossary.html#dihydrogen-sulfide"><i class="fa fa-check"></i><b>10.4.2</b> Dihydrogen sulfide</a></li>
+<li class="chapter" data-level="12.2" data-path="glossary.html"><a href="glossary.html#b"><i class="fa fa-check"></i><b>12.2</b> B</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="glossary.html"><a href="glossary.html#benthic"><i class="fa fa-check"></i><b>12.2.1</b> Benthic</a></li>
 </ul></li>
-<li class="chapter" data-level="10.5" data-path="glossary.html"><a href="glossary.html#e"><i class="fa fa-check"></i><b>10.5</b> E</a><ul>
-<li class="chapter" data-level="10.5.1" data-path="glossary.html"><a href="glossary.html#eutrophication"><i class="fa fa-check"></i><b>10.5.1</b> Eutrophication</a></li>
+<li class="chapter" data-level="12.3" data-path="glossary.html"><a href="glossary.html#c"><i class="fa fa-check"></i><b>12.3</b> C</a><ul>
+<li class="chapter" data-level="12.3.1" data-path="glossary.html"><a href="glossary.html#carbon-dioxide"><i class="fa fa-check"></i><b>12.3.1</b> Carbon dioxide</a></li>
+<li class="chapter" data-level="12.3.2" data-path="glossary.html"><a href="glossary.html#carbonates"><i class="fa fa-check"></i><b>12.3.2</b> Carbonates</a></li>
+<li class="chapter" data-level="12.3.3" data-path="glossary.html"><a href="glossary.html#catabolism"><i class="fa fa-check"></i><b>12.3.3</b> Catabolism</a></li>
 </ul></li>
-<li class="chapter" data-level="10.6" data-path="glossary.html"><a href="glossary.html#f"><i class="fa fa-check"></i><b>10.6</b> F</a><ul>
-<li class="chapter" data-level="10.6.1" data-path="glossary.html"><a href="glossary.html#fischer-projection"><i class="fa fa-check"></i><b>10.6.1</b> Fischer projection</a></li>
+<li class="chapter" data-level="12.4" data-path="glossary.html"><a href="glossary.html#d"><i class="fa fa-check"></i><b>12.4</b> D</a><ul>
+<li class="chapter" data-level="12.4.1" data-path="glossary.html"><a href="glossary.html#denitrification"><i class="fa fa-check"></i><b>12.4.1</b> Denitrification</a></li>
+<li class="chapter" data-level="12.4.2" data-path="glossary.html"><a href="glossary.html#dihydrogen-sulfide"><i class="fa fa-check"></i><b>12.4.2</b> Dihydrogen sulfide</a></li>
 </ul></li>
-<li class="chapter" data-level="10.7" data-path="glossary.html"><a href="glossary.html#g"><i class="fa fa-check"></i><b>10.7</b> G</a><ul>
-<li class="chapter" data-level="10.7.1" data-path="glossary.html"><a href="glossary.html#greenhouse-gases-ghg"><i class="fa fa-check"></i><b>10.7.1</b> Greenhouse gases <em>(GHG)</em></a></li>
+<li class="chapter" data-level="12.5" data-path="glossary.html"><a href="glossary.html#e"><i class="fa fa-check"></i><b>12.5</b> E</a><ul>
+<li class="chapter" data-level="12.5.1" data-path="glossary.html"><a href="glossary.html#eutrophication"><i class="fa fa-check"></i><b>12.5.1</b> Eutrophication</a></li>
 </ul></li>
-<li class="chapter" data-level="10.8" data-path="glossary.html"><a href="glossary.html#h"><i class="fa fa-check"></i><b>10.8</b> H</a><ul>
-<li class="chapter" data-level="10.8.1" data-path="glossary.html"><a href="glossary.html#haber-bosch-process"><i class="fa fa-check"></i><b>10.8.1</b> Haber-Bosch process</a></li>
-<li class="chapter" data-level="10.8.2" data-path="glossary.html"><a href="glossary.html#haworth-projection"><i class="fa fa-check"></i><b>10.8.2</b> Haworth Projection</a></li>
-<li class="chapter" data-level="10.8.3" data-path="glossary.html"><a href="glossary.html#H2S"><i class="fa fa-check"></i><b>10.8.3</b> Hydrogen Sulfide</a></li>
+<li class="chapter" data-level="12.6" data-path="glossary.html"><a href="glossary.html#f"><i class="fa fa-check"></i><b>12.6</b> F</a><ul>
+<li class="chapter" data-level="12.6.1" data-path="glossary.html"><a href="glossary.html#fischer-projection"><i class="fa fa-check"></i><b>12.6.1</b> Fischer projection</a></li>
 </ul></li>
-<li class="chapter" data-level="10.9" data-path="glossary.html"><a href="glossary.html#l"><i class="fa fa-check"></i><b>10.9</b> L</a><ul>
-<li class="chapter" data-level="10.9.1" data-path="glossary.html"><a href="glossary.html#lithotrophs"><i class="fa fa-check"></i><b>10.9.1</b> Lithotrophs</a></li>
-<li class="chapter" data-level="10.9.2" data-path="glossary.html"><a href="glossary.html#limiting-factor"><i class="fa fa-check"></i><b>10.9.2</b> Limiting factor</a></li>
+<li class="chapter" data-level="12.7" data-path="glossary.html"><a href="glossary.html#g"><i class="fa fa-check"></i><b>12.7</b> G</a><ul>
+<li class="chapter" data-level="12.7.1" data-path="glossary.html"><a href="glossary.html#greenhouse-gases-ghg"><i class="fa fa-check"></i><b>12.7.1</b> Greenhouse gases <em>(GHG)</em></a></li>
 </ul></li>
-<li class="chapter" data-level="10.10" data-path="glossary.html"><a href="glossary.html#m"><i class="fa fa-check"></i><b>10.10</b> M</a><ul>
-<li class="chapter" data-level="10.10.1" data-path="glossary.html"><a href="glossary.html#methane"><i class="fa fa-check"></i><b>10.10.1</b> Methane</a></li>
-<li class="chapter" data-level="10.10.2" data-path="glossary.html"><a href="glossary.html#mineralization"><i class="fa fa-check"></i><b>10.10.2</b> Mineralization</a></li>
+<li class="chapter" data-level="12.8" data-path="glossary.html"><a href="glossary.html#h"><i class="fa fa-check"></i><b>12.8</b> H</a><ul>
+<li class="chapter" data-level="12.8.1" data-path="glossary.html"><a href="glossary.html#haber-bosch-process"><i class="fa fa-check"></i><b>12.8.1</b> Haber-Bosch process</a></li>
+<li class="chapter" data-level="12.8.2" data-path="glossary.html"><a href="glossary.html#haworth-projection"><i class="fa fa-check"></i><b>12.8.2</b> Haworth Projection</a></li>
+<li class="chapter" data-level="12.8.3" data-path="glossary.html"><a href="glossary.html#H2S"><i class="fa fa-check"></i><b>12.8.3</b> Hydrogen Sulfide</a></li>
 </ul></li>
-<li class="chapter" data-level="10.11" data-path="glossary.html"><a href="glossary.html#n"><i class="fa fa-check"></i><b>10.11</b> N</a><ul>
-<li class="chapter" data-level="10.11.1" data-path="glossary.html"><a href="glossary.html#nitrate"><i class="fa fa-check"></i><b>10.11.1</b> Nitrate</a></li>
-<li class="chapter" data-level="10.11.2" data-path="glossary.html"><a href="glossary.html#nitrous-oxide"><i class="fa fa-check"></i><b>10.11.2</b> Nitrous Oxide</a></li>
+<li class="chapter" data-level="12.9" data-path="glossary.html"><a href="glossary.html#l"><i class="fa fa-check"></i><b>12.9</b> L</a><ul>
+<li class="chapter" data-level="12.9.1" data-path="glossary.html"><a href="glossary.html#lithotrophs"><i class="fa fa-check"></i><b>12.9.1</b> Lithotrophs</a></li>
+<li class="chapter" data-level="12.9.2" data-path="glossary.html"><a href="glossary.html#limiting-factor"><i class="fa fa-check"></i><b>12.9.2</b> Limiting factor</a></li>
 </ul></li>
-<li class="chapter" data-level="10.12" data-path="glossary.html"><a href="glossary.html#o"><i class="fa fa-check"></i><b>10.12</b> O</a><ul>
-<li class="chapter" data-level="10.12.1" data-path="glossary.html"><a href="glossary.html#oligotrophication"><i class="fa fa-check"></i><b>10.12.1</b> Oligotrophication</a></li>
-<li class="chapter" data-level="10.12.2" data-path="glossary.html"><a href="glossary.html#oxidation"><i class="fa fa-check"></i><b>10.12.2</b> Oxidation</a></li>
-<li class="chapter" data-level="10.12.3" data-path="glossary.html"><a href="glossary.html#oxidation-state"><i class="fa fa-check"></i><b>10.12.3</b> Oxidation state</a></li>
+<li class="chapter" data-level="12.10" data-path="glossary.html"><a href="glossary.html#m"><i class="fa fa-check"></i><b>12.10</b> M</a><ul>
+<li class="chapter" data-level="12.10.1" data-path="glossary.html"><a href="glossary.html#methane"><i class="fa fa-check"></i><b>12.10.1</b> Methane</a></li>
+<li class="chapter" data-level="12.10.2" data-path="glossary.html"><a href="glossary.html#mineralization"><i class="fa fa-check"></i><b>12.10.2</b> Mineralization</a></li>
 </ul></li>
-<li class="chapter" data-level="10.13" data-path="glossary.html"><a href="glossary.html#p"><i class="fa fa-check"></i><b>10.13</b> P</a><ul>
-<li class="chapter" data-level="10.13.1" data-path="glossary.html"><a href="glossary.html#phosphate"><i class="fa fa-check"></i><b>10.13.1</b> Phosphate</a></li>
+<li class="chapter" data-level="12.11" data-path="glossary.html"><a href="glossary.html#n"><i class="fa fa-check"></i><b>12.11</b> N</a><ul>
+<li class="chapter" data-level="12.11.1" data-path="glossary.html"><a href="glossary.html#nitrate"><i class="fa fa-check"></i><b>12.11.1</b> Nitrate</a></li>
+<li class="chapter" data-level="12.11.2" data-path="glossary.html"><a href="glossary.html#nitrous-oxide"><i class="fa fa-check"></i><b>12.11.2</b> Nitrous Oxide</a></li>
 </ul></li>
-<li class="chapter" data-level="10.14" data-path="glossary.html"><a href="glossary.html#r"><i class="fa fa-check"></i><b>10.14</b> R</a><ul>
-<li class="chapter" data-level="10.14.1" data-path="glossary.html"><a href="glossary.html#reactive-nitrogen"><i class="fa fa-check"></i><b>10.14.1</b> Reactive nitrogen</a></li>
-<li class="chapter" data-level="10.14.2" data-path="glossary.html"><a href="glossary.html#redox"><i class="fa fa-check"></i><b>10.14.2</b> Redox</a></li>
-<li class="chapter" data-level="10.14.3" data-path="glossary.html"><a href="glossary.html#redox-couple"><i class="fa fa-check"></i><b>10.14.3</b> Redox couple</a></li>
-<li class="chapter" data-level="10.14.4" data-path="glossary.html"><a href="glossary.html#redox-half-reactions"><i class="fa fa-check"></i><b>10.14.4</b> Redox half-reactions</a></li>
-<li class="chapter" data-level="10.14.5" data-path="glossary.html"><a href="glossary.html#reduction"><i class="fa fa-check"></i><b>10.14.5</b> Reduction</a></li>
+<li class="chapter" data-level="12.12" data-path="glossary.html"><a href="glossary.html#o"><i class="fa fa-check"></i><b>12.12</b> O</a><ul>
+<li class="chapter" data-level="12.12.1" data-path="glossary.html"><a href="glossary.html#oligotrophication"><i class="fa fa-check"></i><b>12.12.1</b> Oligotrophication</a></li>
+<li class="chapter" data-level="12.12.2" data-path="glossary.html"><a href="glossary.html#oxidation"><i class="fa fa-check"></i><b>12.12.2</b> Oxidation</a></li>
+<li class="chapter" data-level="12.12.3" data-path="glossary.html"><a href="glossary.html#oxidation-state"><i class="fa fa-check"></i><b>12.12.3</b> Oxidation state</a></li>
 </ul></li>
-<li class="chapter" data-level="10.15" data-path="glossary.html"><a href="glossary.html#s"><i class="fa fa-check"></i><b>10.15</b> S</a><ul>
-<li class="chapter" data-level="10.15.1" data-path="glossary.html"><a href="glossary.html#skeletal-formula"><i class="fa fa-check"></i><b>10.15.1</b> Skeletal formula</a></li>
-<li class="chapter" data-level="10.15.2" data-path="glossary.html"><a href="glossary.html#structural-formula"><i class="fa fa-check"></i><b>10.15.2</b> Structural formula</a></li>
-<li class="chapter" data-level="10.15.3" data-path="glossary.html"><a href="glossary.html#sulfate"><i class="fa fa-check"></i><b>10.15.3</b> Sulfate</a></li>
+<li class="chapter" data-level="12.13" data-path="glossary.html"><a href="glossary.html#p"><i class="fa fa-check"></i><b>12.13</b> P</a><ul>
+<li class="chapter" data-level="12.13.1" data-path="glossary.html"><a href="glossary.html#phosphate"><i class="fa fa-check"></i><b>12.13.1</b> Phosphate</a></li>
 </ul></li>
-<li class="chapter" data-level="10.16" data-path="glossary.html"><a href="glossary.html#t"><i class="fa fa-check"></i><b>10.16</b> T</a><ul>
-<li class="chapter" data-level="10.16.1" data-path="glossary.html"><a href="glossary.html#trophic-names"><i class="fa fa-check"></i><b>10.16.1</b> Trophic names</a></li>
+<li class="chapter" data-level="12.14" data-path="glossary.html"><a href="glossary.html#r"><i class="fa fa-check"></i><b>12.14</b> R</a><ul>
+<li class="chapter" data-level="12.14.1" data-path="glossary.html"><a href="glossary.html#reactive-nitrogen"><i class="fa fa-check"></i><b>12.14.1</b> Reactive nitrogen</a></li>
+<li class="chapter" data-level="12.14.2" data-path="glossary.html"><a href="glossary.html#redox"><i class="fa fa-check"></i><b>12.14.2</b> Redox</a></li>
+<li class="chapter" data-level="12.14.3" data-path="glossary.html"><a href="glossary.html#redox-couple"><i class="fa fa-check"></i><b>12.14.3</b> Redox couple</a></li>
+<li class="chapter" data-level="12.14.4" data-path="glossary.html"><a href="glossary.html#redox-half-reactions"><i class="fa fa-check"></i><b>12.14.4</b> Redox half-reactions</a></li>
+<li class="chapter" data-level="12.14.5" data-path="glossary.html"><a href="glossary.html#reduction"><i class="fa fa-check"></i><b>12.14.5</b> Reduction</a></li>
+</ul></li>
+<li class="chapter" data-level="12.15" data-path="glossary.html"><a href="glossary.html#s"><i class="fa fa-check"></i><b>12.15</b> S</a><ul>
+<li class="chapter" data-level="12.15.1" data-path="glossary.html"><a href="glossary.html#skeletal-formula"><i class="fa fa-check"></i><b>12.15.1</b> Skeletal formula</a></li>
+<li class="chapter" data-level="12.15.2" data-path="glossary.html"><a href="glossary.html#structural-formula"><i class="fa fa-check"></i><b>12.15.2</b> Structural formula</a></li>
+<li class="chapter" data-level="12.15.3" data-path="glossary.html"><a href="glossary.html#sulfate"><i class="fa fa-check"></i><b>12.15.3</b> Sulfate</a></li>
+</ul></li>
+<li class="chapter" data-level="12.16" data-path="glossary.html"><a href="glossary.html#t"><i class="fa fa-check"></i><b>12.16</b> T</a><ul>
+<li class="chapter" data-level="12.16.1" data-path="glossary.html"><a href="glossary.html#trophic-names"><i class="fa fa-check"></i><b>12.16.1</b> Trophic names</a></li>
 </ul></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="appendix-a.html"><a href="appendix-a.html"><i class="fa fa-check"></i><b>A</b> Appendix A</a><ul>
 <li class="chapter" data-level="A.1" data-path="appendix-a.html"><a href="appendix-a.html#quick-guide-on-atom-orbitals-and-lewis-dot-structure"><i class="fa fa-check"></i><b>A.1</b> Quick guide on atom orbitals and Lewis dot structure</a><ul>
-<li class="chapter" data-level="A.1.1" data-path="appendix-a.html"><a href="appendix-a.html#electron-orbitals"><i class="fa fa-check"></i><b>A.1.1</b> Electron orbitals</a></li>
+<li class="chapter" data-level="A.1.1" data-path="appendix-a.html"><a href="appendix-a.html#orbitals"><i class="fa fa-check"></i><b>A.1.1</b> Electron orbitals</a></li>
 </ul></li>
 <li class="chapter" data-level="A.2" data-path="appendix-a.html"><a href="appendix-a.html#orbitals-hybridization"><i class="fa fa-check"></i><b>A.2</b> Orbitals hybridization</a></li>
 <li class="chapter" data-level="A.3" data-path="appendix-a.html"><a href="appendix-a.html#sigma-pi-bonds"><i class="fa fa-check"></i><b>A.3</b> σ and π bonds</a></li>
@@ -441,7 +527,7 @@ Figure 4.6: Cyclic structure or Haworth projection of alpha-D-glucopyranose (alp
 Figure 4.7: Cyclic structure of beta-D-Ribofuranose (beta-D-ribose) and 2-deoxyribose
 </p>
 </div>
-<p>Ribose and deoxyribose are the most important pentoses we need to know as they constitute one of the three ensembles that constitute <a href="#Nucleic-acids">nucleotides</a>, i.e., the monomers of nucleic acids. They both exist either in furanose or pyranose forms, although the furanose form dominates, but the difference between ribose and deoxyribose is the missing oxygen atom on the C2’ atom (Figure <a href="molecular-families.html#fig:riboses">4.7</a>). And yes, you guessed it right, this difference is the reason for the ‘R’ and ‘D’ in the RNA and DNA molecules. Notice that the carbon atoms are numbered in Figures <a href="molecular-families.html#fig:glucose-fructose">4.6</a> and <a href="molecular-families.html#fig:riboses">4.7</a>. The numbers are ‘primed’ for the ribose and deoxyribose (Figure <a href="molecular-families.html#fig:riboses">4.7</a>). This is a convention that geneticians have used to differentiate the carbons from the pentose to those of the base in nucleotides (see part on <a href="molecular-families.html#nucleic-acids">nucleic acids</a>). This is anecdotal information again.</p>
+<p>Ribose and deoxyribose are the most important pentoses we need to know as they constitute one of the three ensembles that constitute <a href="#Nucleic-acids">nucleotides</a>, i.e., the monomers of nucleic acids. They both exist either in furanose or pyranose forms, although the furanose form dominates, but the difference between ribose and deoxyribose is the missing oxygen atom on the C2’ atom (Figure <a href="molecular-families.html#fig:riboses">4.7</a>). And yes, you guessed it right, this difference is the reason for the ‘R’ and ‘D’ in the RNA and DNA molecules. Notice that the carbon atoms are numbered in Figures <a href="molecular-families.html#fig:glucose-fructose">4.6</a> and <a href="molecular-families.html#fig:riboses">4.7</a>. The numbers are ‘primed’ for the ribose and deoxyribose (Figure <a href="molecular-families.html#fig:riboses">4.7</a>). This is a convention that geneticians have used to differentiate the carbons from the pentose to those of the base in nucleotides (see part on <a href="#nucleic-acids">nucleic acids</a>). This is anecdotal information again.</p>
 <p>Now, as the pentoses and hexoses form rings, an interesting group appears and is referred to as the <strong>acetal</strong> group (see additional details in section <a href="functional-groups.html#hemiacetal">3.3.5</a>. Yet another term needed to understand some of the subtleties of the functions of the di- and polysaccharides… For the aldohexoses to form rings, the aldehyde on carbon #1 (Figures <a href="molecular-families.html#fig:aldoses">4.4</a>) reacts with the hydroxyl of carbon #5 to form a 6 atom ring (e.g. for glucose on Figure <a href="molecular-families.html#fig:glucose-fructose">4.6</a>). And in can easily revert to the chain structure to have a free aldehyde again and be a reducing sugar. For fructose, a ketohexose, the ketone from carbon #2, reacts with the hydroxyl of also carbon #5, to now form a 5 atom ring (Fructose on Figure <a href="molecular-families.html#fig:glucose-fructose">4.6</a>). So why is this important enough to be mentioned here…?</p>
 <p>In the ring versions of the glucose and fructose, the carbons #1 and #2 now have single bonds with two oxygen atoms. This group formed by a central carbon, and bonds in a tetrahedral as illustrated in Figure <a href="molecular-families.html#fig:acetal">4.8</a> is a rather special bond. In fact, special enough that it has some interesting consequences, with two different forms. If one of the atoms bound to oxygen is different than hydrogen (e.g., R’ and R&quot; in Figure <a href="molecular-families.html#fig:acetal">4.8</a> both <em>not</em> H), then this group is called an <strong>acetal</strong> group, and the bond is a rather stable bond. If one of the R’ or R&quot; in Figure <a href="molecular-families.html#fig:acetal">4.8</a> <em>is</em> H, while the other has some other radical, then the structure becomes asymetric, the group formed is then called <strong>hemiacetal</strong> as is not nearly as stable, which explains why the hexoses so easily switch from the linear chain to the cyclic configurations. This hemiacetal group is one of the basis of the glycosidic bond, which binds the cyclic pentoses and hexoses in di- and polysaccharides, but also with other molecules.</p>
 <div class="figure" style="text-align: center"><span id="fig:acetal"></span>
@@ -747,9 +833,28 @@ Glucose is arguably the most important monosaccharide and the only hexose molecu
 <p><em>This chapter is still under construction</em></p>
 <p></br></br></p>
 </div>
-<div id="nucleic-acids" class="section level2">
-<h2><span class="header-section-number">4.4</span> Nucleic Acids</h2>
+<div id="nucleotides-and-nucleic-acids" class="section level2">
+<h2><span class="header-section-number">4.4</span> Nucleotides and Nucleic Acids</h2>
 <p>The third molecular family we choose to present are Nucleic Acids.</p>
+<p><a href="https://www.britannica.com/science/acid" class="uri">https://www.britannica.com/science/acid</a></p>
+<blockquote>
+<p>Nucleotide, any member of a class of organic compounds in which the molecular structure comprises a nitrogen-containing unit (base) linked to a sugar and a phosphate group. The nucleotides are of great importance to living organisms, as they are the building blocks of nucleic acids, the substances that control all hereditary characteristics.</p>
+</blockquote>
+<blockquote>
+<p>In the two families of nucleic acids, ribonucleic acid (RNA) and deoxyribonucleic acid (DNA), the sequence of nucleotides in the DNA or RNA codes for the structure of proteins synthesized in the cell. The nucleotide adenosine triphosphate (ATP) supplies the driving force of many metabolic processes. Several nucleotides are coenzymes; they act with enzymes to speed up (catalyze) biochemical reactions.</p>
+</blockquote>
+<blockquote>
+<p>The nitrogen-containing bases of nearly all nucleotides are derivatives of three heterocyclic compounds: pyrimidine, purine, and pyridine. The most common nitrogen bases are the pyrimidines (cytosine, thymine, and uracil), the purines (adenine and guanine), and the pyridine nicotinamide.</p>
+</blockquote>
+<blockquote>
+<p>Nucleosides are similar to nucleotides except that they lack the phosphate group. Nucleosides themselves rarely participate in cell metabolism.</p>
+</blockquote>
+<blockquote>
+<p>Adenosine monophosphate (AMP) is one of the components of RNA and also the organic component of the energy-carrying molecule ATP. In certain vital metabolic processes, AMP combines with inorganic phosphate to form ADP (adenosine diphosphate) and then ATP. The breaking of the phosphate bonds in ATP releases great amounts of energy that are consumed in driving chemical reactions or contracting muscle fibres. Cyclic AMP, another nucleotide, is involved in regulating many aspects of cellular metabolism, such as the breakdown of glycogen.</p>
+</blockquote>
+<blockquote>
+<p>A dinucleotide, nicotinamide adenine dinucleotide (NAD), participates in many oxidation reactions as an electron carrier, along with the related compound nicotinamide adenine dinucleotide phosphate (NADP). These substances act as cofactors to certain enzymes.</p>
+</blockquote>
 <p></br></br></p>
 </div>
 <div id="lipids" class="section level2">
@@ -1215,7 +1320,7 @@ Figure 4.53: Examples of cyclopropane fatty acids found in bacterial membranes. 
 </p>
 </div>
 <p></br></p>
-<p>Anammox bacteria, of the order of Planctomycetales, have recently been recognized to possibly have a major biogeochemical role as they can oxidize ammonium under anaerobic conditions (details in section <a href="#anammox"><strong>??</strong></a>). Ladderane lipids (named after the word ladder because of their shape) were reported in 1999, as part of the membrane lipids of the anammoxosome organelle of anammox bacteria <span class="citation">(Sinninghe Damsté et al. <a href="#ref-Sinninghe_Damste2002-sp">2002</a>)</span>. These C17-C20 ladderane lipids contain three linearly concatenated cyclobutane rings and one cyclohexane or five cyclobutane rings (X and Y, respectively, in Figure <a href="molecular-families.html#fig:ladderanes">4.54</a>. Ladderane fatty acids are esterified with methanol or the glycerol backbone, and the ladderane alcohols are ether-linked with glycerol, all in different combinations (Figure <a href="molecular-families.html#fig:ladderanes">4.54</a>). First, these lipids seem not to have a phosphate or other polar moiety. Second, they readily assemble into very compact ladderane lipid sheets (right side of Figure <a href="molecular-families.html#fig:ladderanes">4.54</a>), which has been surmized to largely lower the diffusion of toxic byproducts such as hydrazine (N<sub>2</sub>H<sub>4</sub>) and hydroxylamine (NH<sub>4</sub>OH) from the anammoxosome.</p>
+<p>Anammox bacteria, of the order of Planctomycetales, have recently been recognized to possibly have a major biogeochemical role as they can oxidize ammonium under anaerobic conditions (details in section <a href="unclassicalredox.html#anammox">8.2</a>). Ladderane lipids (named after the word ladder because of their shape) were reported in 1999, as part of the membrane lipids of the anammoxosome organelle of anammox bacteria <span class="citation">(Sinninghe Damsté et al. <a href="#ref-Sinninghe_Damste2002-sp">2002</a>)</span>. These C17-C20 ladderane lipids contain three linearly concatenated cyclobutane rings and one cyclohexane or five cyclobutane rings (X and Y, respectively, in Figure <a href="molecular-families.html#fig:ladderanes">4.54</a>. Ladderane fatty acids are esterified with methanol or the glycerol backbone, and the ladderane alcohols are ether-linked with glycerol, all in different combinations (Figure <a href="molecular-families.html#fig:ladderanes">4.54</a>). First, these lipids seem not to have a phosphate or other polar moiety. Second, they readily assemble into very compact ladderane lipid sheets (right side of Figure <a href="molecular-families.html#fig:ladderanes">4.54</a>), which has been surmized to largely lower the diffusion of toxic byproducts such as hydrazine (N<sub>2</sub>H<sub>4</sub>) and hydroxylamine (NH<sub>4</sub>OH) from the anammoxosome.</p>
 </br>
 <div class="figure" style="text-align: center"><span id="fig:ladderanes"></span>
 <img src="pictures/ladderanes.png" alt="Ladderane lipids as described in 1999 account for about 50% of the membrane lipids of the anammoxisomes. They are thought to assemble into very compact lipid sheets, giving rise to an exceptionally dense membrane, thus a tight barrier against diffusion, allowing the oxidation of ammonium under anaerobic conditions to proceed. After [@Sinninghe_Damste2002-sp]" width="95%" />
@@ -1371,7 +1476,7 @@ Tetraterpenes
 <p>Isoprene and many essential oils, being very volatile, are closely involved in production of the air pollutant, ozone. In addition, when they are oxidized by atmospheric ozone, ·OH, or NO<sub>x</sub> radicals, aerosols may form that cause scattering of the sunlight; since the intensity of the scattering is proportional to <span class="math inline">\(1/ \lambda^4\)</span>, the short wavelengths λ are enhanced in the scattered light, making it look blue (Rayleigh scattering). This is the main explanation for, e.g., the appearance and the name of the Blue Ridge Mountains of North Carolina which hosts many conifer species.</p>
 <p>Some authors question whether the ‘essential oils’ and many terpenoids belong to the lipid family at all (e.g., <span class="citation">Christie (<a href="#ref-Christie_undated-hb">n.d.</a>)</span>), but we thought that it was a missed opportunity not to mention them here.</p>
 </div>
-<div id="vitamins-e-and-k" class="section level4">
+<div id="vitaminsEK" class="section level4">
 <h4><span class="header-section-number">4.5.10.2</span> Vitamins E and K</h4>
 <p>Finally, isoprenoid side chains are present in quinone based isoprenoids such as vitamin K, needed for blood coagulation (<strong><em>K</em></strong>oagulation in Danish), plastoquinone and ubiquinone involved in the electron transport chains of, respectively, the chloroplasts and mitochondria. The long isoprenoid chains of plasto- and ubiquinone allow these molecules to readily insert within the phospholipid bilayer of the membrane of these organelles.</p>
 <p></br></p>
@@ -1382,12 +1487,21 @@ Figure 4.59: Quinone based isoprenoids including vitamin K, needed for blood coa
 </p>
 </div>
 <p></br></p>
+<p>The <em>ubiquinone</em> can be an electron transport molecule thanks to the quinone moeity, which can accept two electrons and be reduced into <em>ubiquinol</em> (Figure <a href="molecular-families.html#fig:ubiquinol">4.60</a>). It can easily be oxidized back into ubiquinone thanks to the electron resonance of the quinone moeity, and therefore ‘liberate’ its electrons to be ready to transport more electrons during the <a href="aerobic-and-anaerobic-respiration.html#proton-pumping">electron transfer chain</a>. Ubiquinone is often referred to as the coenzyme Q.</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:ubiquinol"></span>
+<img src="pictures/Ubiquinol.png" alt="The reduction of ubiquinone (or coenzyme Q) to ubiquinol (QH2). The quinone functional group is represented in magenta" width="65%" />
+<p class="caption">
+Figure 4.60: The reduction of ubiquinone (or coenzyme Q) to ubiquinol (QH2). The quinone functional group is represented in magenta
+</p>
+</div>
+<p></br></p>
 <p>Tocol-based isoprenoids like tocopherols and tocotrienols, collectively known as tocochromanols <span class="citation">(Christie, <a href="#ref-Christie_undated-hb">n.d.</a>)</span> including molecules such as vitamin E, are essential for animals and humans, which must ingest enough of them for their growth. In plants, they are especially important as antioxidant molecules, limiting the damage from photosynthesis-derived reactive oxygen species during conditions of oxidative stress, including high-intensity light stress <span class="citation">(Christie, <a href="#ref-Christie_undated-hb">n.d.</a>)</span>.</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:tocochromanols"></span>
 <img src="pictures/tocochromanols.png" alt="Tocol-based isoprenoids including vitamin E, essential for animals and humans, and acting as important antioxidant molecules" width="55%" />
 <p class="caption">
-Figure 4.60: Tocol-based isoprenoids including vitamin E, essential for animals and humans, and acting as important antioxidant molecules
+Figure 4.61: Tocol-based isoprenoids including vitamin E, essential for animals and humans, and acting as important antioxidant molecules
 </p>
 </div>
 <p></br></p>
@@ -1425,16 +1539,16 @@ Vitamin A, E, and K are prenol lipids
 <h3><span class="header-section-number">4.5.11</span> Sterol lipids</h3>
 <div id="cholesterol-and-oxysterols" class="section level4">
 <h4><span class="header-section-number">4.5.11.1</span> Cholesterol and oxysterols</h4>
-<p>The most famous of the sterol lipid is cholesterol as it plays an essential role in the animal cell membrane rigidity as already described in section <a href="molecular-families.html#membrane-lipids">4.5.2</a> above. All sterol lipids are derived from the triterpene <em>squalene</em> (Table <a href="molecular-families.html#tab:terpene-tab">4.1</a> and <a href="molecular-families.html#fig:sterol-precursors">4.61</a>), eventually leading to two slightly different precursors: <strong><em>lanosterol</em></strong> for animals and fungi, and <strong><em>cycloartenol</em></strong> for plants and algae. Because of this distinction, phyto- and zoosterols are a bit different. Sterol and steroid lipids all have fused rings and a planar geometry, which gives them rigidity and strength. As a result, they play an essential role in membrane stability and particularly in lipid rafts where the membrane has less a fluidic property, and more of gel like properties (details in section <a href="molecular-families.html#membrane-lipids">4.5.2</a>).</p>
+<p>The most famous of the sterol lipid is cholesterol as it plays an essential role in the animal cell membrane rigidity as already described in section <a href="molecular-families.html#membrane-lipids">4.5.2</a> above. All sterol lipids are derived from the triterpene <em>squalene</em> (Table <a href="molecular-families.html#tab:terpene-tab">4.1</a> and <a href="molecular-families.html#fig:sterol-precursors">4.62</a>), eventually leading to two slightly different precursors: <strong><em>lanosterol</em></strong> for animals and fungi, and <strong><em>cycloartenol</em></strong> for plants and algae. Because of this distinction, phyto- and zoosterols are a bit different. Sterol and steroid lipids all have fused rings and a planar geometry, which gives them rigidity and strength. As a result, they play an essential role in membrane stability and particularly in lipid rafts where the membrane has less a fluidic property, and more of gel like properties (details in section <a href="molecular-families.html#membrane-lipids">4.5.2</a>).</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:sterol-precursors"></span>
 <img src="pictures/sterol-precursors.png" alt="Synthesis of ***lanosterol*** and ***cycloartenol***, the precursors of respectively the zoo- and phytosterols lipids from DiMethylAllyl PyroPhosphate (DMAPP) and its isomer Isopentanyl PyroPhosphate (IPP), geranyl pyrophosphate (GPP), to squalene, before it goes into cyclization to form four fused carbon rings" width="65%" />
 <p class="caption">
-Figure 4.61: Synthesis of <strong><em>lanosterol</em></strong> and <strong><em>cycloartenol</em></strong>, the precursors of respectively the zoo- and phytosterols lipids from DiMethylAllyl PyroPhosphate (DMAPP) and its isomer Isopentanyl PyroPhosphate (IPP), geranyl pyrophosphate (GPP), to squalene, before it goes into cyclization to form four fused carbon rings
+Figure 4.62: Synthesis of <strong><em>lanosterol</em></strong> and <strong><em>cycloartenol</em></strong>, the precursors of respectively the zoo- and phytosterols lipids from DiMethylAllyl PyroPhosphate (DMAPP) and its isomer Isopentanyl PyroPhosphate (IPP), geranyl pyrophosphate (GPP), to squalene, before it goes into cyclization to form four fused carbon rings
 </p>
 </div>
 <p></br></p>
-<p>Zoo- and phytosterols are consistent within their kingdoms, but in reality extremely close at the molecular scale and in their functions of stabilizing the cell membranes near nano-domains and stabilizing proteins in the membrane as cholesterol may strongly bind to them <span class="citation">(Christie, <a href="#ref-Christie_undated-hb">n.d.</a>)</span>. Zoosterols are based upon cholesterol molecule, a C27 molecule, or triterpene that has lost 3 methyl groups. The oxygenated derivatives of cholesterol are called oxysterols and correspond to the partial oxidation of cholesterol (e.g., cerebrosterol in Figure <a href="molecular-families.html#fig:zoo-phytosterols">4.62</a>).</p>
+<p>Zoo- and phytosterols are consistent within their kingdoms, but in reality extremely close at the molecular scale and in their functions of stabilizing the cell membranes near nano-domains and stabilizing proteins in the membrane as cholesterol may strongly bind to them <span class="citation">(Christie, <a href="#ref-Christie_undated-hb">n.d.</a>)</span>. Zoosterols are based upon cholesterol molecule, a C27 molecule, or triterpene that has lost 3 methyl groups. The oxygenated derivatives of cholesterol are called oxysterols and correspond to the partial oxidation of cholesterol (e.g., cerebrosterol in Figure <a href="molecular-families.html#fig:zoo-phytosterols">4.63</a>).</p>
 <p></br></p>
 <div class="rmd-etymology">
 <p>
@@ -1448,12 +1562,12 @@ The English word cholesterol, comes from the French cholestérol, itself derived
 </div>
 <div id="phytosterols-and-hopanoids" class="section level4">
 <h4><span class="header-section-number">4.5.11.2</span> Phytosterols and hopanoids</h4>
-<p>Higher plant sterols are very close to animal cell cholesterol, with the variations on the C24 (additions of methyl or ethyl groups) and double bonds between C22 and C23 (e.g., campesterol in Figure <a href="molecular-families.html#fig:zoo-phytosterols">4.62</a>). Ergosterol, the main sterol in fungi and yeasts, has an additional double bond between C7 and C8 (Figure <a href="molecular-families.html#fig:zoo-phytosterols">4.62</a>). It is remarkable to observe that there is little variation in animal sterols, cholesterol being the dominant form, other than the oxidative derivatives, while there are more than 8 plant sterols identified, with small variations among them.</p>
+<p>Higher plant sterols are very close to animal cell cholesterol, with the variations on the C24 (additions of methyl or ethyl groups) and double bonds between C22 and C23 (e.g., campesterol in Figure <a href="molecular-families.html#fig:zoo-phytosterols">4.63</a>). Ergosterol, the main sterol in fungi and yeasts, has an additional double bond between C7 and C8 (Figure <a href="molecular-families.html#fig:zoo-phytosterols">4.63</a>). It is remarkable to observe that there is little variation in animal sterols, cholesterol being the dominant form, other than the oxidative derivatives, while there are more than 8 plant sterols identified, with small variations among them.</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:zoo-phytosterols"></span>
 <img src="pictures/zoo-phytosterols.png" alt="Cholesterol is the most common zoosterol. Cerebrosterol is an oxidated derivative of cholesterols in animals. Ergosterol is the equivalent of cholesterol for fungi and yeast. Campesterol is one of the many plant sterols characterized by additional side chains on the C24. All atoms and bonds differing from the animal cell cholesterol are highlighted in red" width="65%" />
 <p class="caption">
-Figure 4.62: Cholesterol is the most common zoosterol. Cerebrosterol is an oxidated derivative of cholesterols in animals. Ergosterol is the equivalent of cholesterol for fungi and yeast. Campesterol is one of the many plant sterols characterized by additional side chains on the C24. All atoms and bonds differing from the animal cell cholesterol are highlighted in red
+Figure 4.63: Cholesterol is the most common zoosterol. Cerebrosterol is an oxidated derivative of cholesterols in animals. Ergosterol is the equivalent of cholesterol for fungi and yeast. Campesterol is one of the many plant sterols characterized by additional side chains on the C24. All atoms and bonds differing from the animal cell cholesterol are highlighted in red
 </p>
 </div>
 <p></br></p>
@@ -1464,7 +1578,7 @@ Figure 4.62: Cholesterol is the most common zoosterol. Cerebrosterol is an oxida
 <div class="figure" style="text-align: center"><span id="fig:hopanoid"></span>
 <img src="pictures/hopanoid.png" alt="Tetrahydroxybacteriohopane, the most abundant hopanoid in  bacteria and other prokaryotic organisms, has very similar functions to those of sterols in the membranes of animals and plants in that they can intercalate into phospholipid bilayers and modulate the fluidity of membranes by interacting with their complex lipid components" width="50%" />
 <p class="caption">
-Figure 4.63: Tetrahydroxybacteriohopane, the most abundant hopanoid in bacteria and other prokaryotic organisms, has very similar functions to those of sterols in the membranes of animals and plants in that they can intercalate into phospholipid bilayers and modulate the fluidity of membranes by interacting with their complex lipid components
+Figure 4.64: Tetrahydroxybacteriohopane, the most abundant hopanoid in bacteria and other prokaryotic organisms, has very similar functions to those of sterols in the membranes of animals and plants in that they can intercalate into phospholipid bilayers and modulate the fluidity of membranes by interacting with their complex lipid components
 </p>
 </div>
 <p></br></p>
@@ -1478,17 +1592,17 @@ Figure 4.63: Tetrahydroxybacteriohopane, the most abundant hopanoid in bacteria 
 <div class="figure" style="text-align: center"><span id="fig:steroid-hormones"></span>
 <img src="pictures/steroid-hormones.png" alt="Estradiol and testoterone as the major female and make sex hormones, respectively.  All differences in atoms and bonds are highlighted in orange and green. Cholecalciferol (vitamin D~3~) is a metabolite of cholesterol and necessary for the calcium and phosphate regulation in the human body" width="80%" />
 <p class="caption">
-Figure 4.64: Estradiol and testoterone as the major female and make sex hormones, respectively. All differences in atoms and bonds are highlighted in orange and green. Cholecalciferol (vitamin D<sub>3</sub>) is a metabolite of cholesterol and necessary for the calcium and phosphate regulation in the human body
+Figure 4.65: Estradiol and testoterone as the major female and make sex hormones, respectively. All differences in atoms and bonds are highlighted in orange and green. Cholecalciferol (vitamin D<sub>3</sub>) is a metabolite of cholesterol and necessary for the calcium and phosphate regulation in the human body
 </p>
 </div>
 <p></br></p>
-<p>The transport of sterol lipids through vascular animal organisms is problematic because, despite the hydroxyl group of the <em>A</em> carbon ring of cholesterol (Figure <a href="molecular-families.html#fig:zoo-phytosterols">4.62</a>) that make sterol lipids somewhat polar, cholesterol is insoluble in water, very much like all lipids and in particular triglycerides. A specialized type of pseudo-organelles called <a href="https://en.wikipedia.org/wiki/Lipoprotein">lipoproteins</a>
+<p>The transport of sterol lipids through vascular animal organisms is problematic because, despite the hydroxyl group of the <em>A</em> carbon ring of cholesterol (Figure <a href="molecular-families.html#fig:zoo-phytosterols">4.63</a>) that make sterol lipids somewhat polar, cholesterol is insoluble in water, very much like all lipids and in particular triglycerides. A specialized type of pseudo-organelles called <a href="https://en.wikipedia.org/wiki/Lipoprotein">lipoproteins</a>
 transports hydrophobic lipids through the body. This organelle is formed by a single layer of phospholipids assembled as a sphere creating a hydrophilic outer surface soluble in water, and a hydrophobic compartment inside in which cholesterol, cholesterol esters and triglycerides are stored. Inserted proteins called apolipoproteins provide structural, communication and enzymatic activities.</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:Chylomicron"></span>
 <img src="pictures/Chylomicron.png" alt="Chylomicron, or the largest of the lipoproteins which serve in transporting lipids in vascular animal organisms. T: Triglycerides; C: Cholesterol; ApoA, ApoB, ApoC, ApoE: lipoproteins  [By Xvazquez](https://commons.wikimedia.org/w/index.php?curid=4024624)" width="50%" />
 <p class="caption">
-Figure 4.65: Chylomicron, or the largest of the lipoproteins which serve in transporting lipids in vascular animal organisms. T: Triglycerides; C: Cholesterol; ApoA, ApoB, ApoC, ApoE: lipoproteins <a href="https://commons.wikimedia.org/w/index.php?curid=4024624">By Xvazquez</a>
+Figure 4.66: Chylomicron, or the largest of the lipoproteins which serve in transporting lipids in vascular animal organisms. T: Triglycerides; C: Cholesterol; ApoA, ApoB, ApoC, ApoE: lipoproteins <a href="https://commons.wikimedia.org/w/index.php?curid=4024624">By Xvazquez</a>
 </p>
 </div>
 <p></br></p>
@@ -1555,10 +1669,10 @@ The physiological rationale for cyclopropane ring formation in bacterial membran
 </p>
 <ul>
 <li>
-Lipids are fatty acids and their derivatives, and substances related biosynthetically or functionally to these compounds (Christie 1987)
+“Lipids are fatty acids and their derivatives, and substances related biosynthetically or functionally to these compounds” <span class="citation"><span class="citation">(Christie, <a href="#ref-Christie_undated-hb">n.d.</a>)</span></span>
 </li>
 <li>
-Long aliphatic chains may store many electrons and lipids are thus the energy storage molecules
+Long aliphatic chains may store many electrons and lipids are thus energy storage molecules
 </li>
 <li>
 Fatty acyl chains open the possibility for amphiphatic properties with hydrophobic tails and hydrophilic heads, which allows the formation of very tight membranes and compartmentalization of the cell
