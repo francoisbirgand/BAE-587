@@ -12,3 +12,5 @@ chemistry-prefix-suffix.csv
 terpenes.csv
 *.R
 *.r
+*.psd
+animatedGIF/

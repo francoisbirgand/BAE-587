@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2020-08-19" />
+<meta name="date" content="2020-10-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -282,6 +282,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.5.2" data-path="acidbase.html"><a href="acidbase.html#generalized-polyprotic-acid-mole-fractions"><i class="fa fa-check"></i><b>10.5.2</b> Generalized polyprotic acid mole fractions</a></li>
 <li class="chapter" data-level="10.5.3" data-path="acidbase.html"><a href="acidbase.html#graphical-illustration-of-mole-fractions-of-ecologically-relevant-weak-acids"><i class="fa fa-check"></i><b>10.5.3</b> Graphical illustration of mole fractions of ecologically relevant weak acids</a></li>
 </ul></li>
+<li class="chapter" data-level="10.6" data-path="acidbase.html"><a href="acidbase.html#equilibrium-calculations-using-a-graphical-method"><i class="fa fa-check"></i><b>10.6</b> Equilibrium calculations using a graphical method</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="acidbase.html"><a href="acidbase.html#logarithm-of-concentrations-as-a-function-of-ph"><i class="fa fa-check"></i><b>10.6.1</b> Logarithm of concentrations as a function of pH</a></li>
+<li class="chapter" data-level="10.6.2" data-path="acidbase.html"><a href="acidbase.html#graphical-approach-to-calculate-ph"><i class="fa fa-check"></i><b>10.6.2</b> Graphical approach to calculate pH</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><i class="fa fa-check"></i><b>11</b> Introduction to hydrographs, chemographs, concentrations, and loads</a><ul>
 <li class="chapter" data-level="11.1" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#hydrographs-as-the-basic-hydrologist-tool"><i class="fa fa-check"></i><b>11.1</b> Hydrographs as the basic hydrologist tool</a><ul>
@@ -393,7 +397,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="A.8.1" data-path="appendix-a.html"><a href="appendix-a.html#valence-electrons-and-octet-rule"><i class="fa fa-check"></i><b>A.8.1</b> Valence electrons and octet rule</a></li>
 <li class="chapter" data-level="A.8.2" data-path="appendix-a.html"><a href="appendix-a.html#building-lewis-dot-structures"><i class="fa fa-check"></i><b>A.8.2</b> Building Lewis dot structures</a></li>
 </ul></li>
-<li class="chapter" data-level="A.9" data-path="appendix-a.html"><a href="appendix-a.html#exercises-1"><i class="fa fa-check"></i><b>A.9</b> Exercises</a></li>
+<li class="chapter" data-level="A.9" data-path="appendix-a.html"><a href="appendix-a.html#molecular-orbitals"><i class="fa fa-check"></i><b>A.9</b> Molecular orbitals</a><ul>
+<li class="chapter" data-level="A.9.1" data-path="appendix-a.html"><a href="appendix-a.html#binding-and-antibinding-regions"><i class="fa fa-check"></i><b>A.9.1</b> Binding and antibinding regions</a></li>
+<li class="chapter" data-level="A.9.2" data-path="appendix-a.html"><a href="appendix-a.html#bonding-and-antibonding-orbitals"><i class="fa fa-check"></i><b>A.9.2</b> Bonding and antibonding orbitals</a></li>
+<li class="chapter" data-level="A.9.3" data-path="appendix-a.html"><a href="appendix-a.html#molecular-orbital-diagrams"><i class="fa fa-check"></i><b>A.9.3</b> Molecular orbital diagrams</a></li>
+</ul></li>
+<li class="chapter" data-level="A.10" data-path="appendix-a.html"><a href="appendix-a.html#exercises-1"><i class="fa fa-check"></i><b>A.10</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="B" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html"><i class="fa fa-check"></i><b>B</b> Appendix B: Equilibrium Constants at 25°C</a><ul>
 <li class="chapter" data-level="B.1" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-in-the-h2o-h2-o2-system"><i class="fa fa-check"></i><b>B.1</b> Equilibrium reactions in the H<sub>2</sub>O-H<sub>2</sub>-O<sub>2</sub> system</a></li>
@@ -724,8 +733,202 @@ In the end, the most stable/likely molecule is the molecule for which:</p>
 <p>This concludes this quick reminder on minimum knowledge applicable to electron orbitals, molecular configurations, and Lewis dot structure. There are many guides and tutorials available on the web and elsewhere to complete this guide, which should be sought to confirm and verify your understanding. Below are some exercises for training purposes.</p>
 </div>
 </div>
+<div id="molecular-orbitals" class="section level2">
+<h2><span class="header-section-number">A.9</span> Molecular orbitals</h2>
+<p>Well, after all this lengthy development, it turns out that about 10% of the observations on molecule properties cannot be explained using the simple atomic orbital (AO) theories and orbital hybridization, collectively referred to as <em>valence-bond theory</em> or as the <em>atomic orbital method</em> <span class="citation">(Mulliken <a href="#ref-Mulliken1966-qc">1966</a>)</span>… Remember, that all of these are just theories that are trying to best approximate where the electrons are in space and in time around the nuclei… So Mulliken and Hund <span class="citation">(Mulliken <a href="#ref-Mulliken1966-qc">1966</a>)</span> came up with another theory: the Molecular Orbital (MO) Theory, or the Hund-Mulliken theory, which is based on quantum physics and thanks to which electron energies can be calculated more precisely. Now, this is not nearly as simple as the previous theories, unfortunately.</p>
+<p>The new idea here is to incorporate not only the interactions between the electrons and the nucleus of one atom, but in a molecule, the electrons to electrons interactions, as well as the electrons to several nuclei intereactions. The <em>valence-bond theory</em> and the MO theory, are in fact approximate solutions to <a href="https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation">Schrödinger’s equation</a>. In essence, they do not exclude each other but are complementary to explain some of the facets of electron localization in molecules. So why introducing this here? It is because MO is the theory that can explain (among many other things) some of the behavior of O<sub>2</sub> on our planet: why afterall, does not O<sub>2</sub> readily steal all the electrons stored on any atom it is in contact? This boils down to this question: why does organic matter manage to exist at all in an aerobic environment? The <em>electron kleptomaniac</em> attitude of O<sub>2</sub> should lead to the automatic oxidation of any other atom. But this does not happen. And the MO theory helps decipher why not!</p>
+<div id="binding-and-antibinding-regions" class="section level3">
+<h3><span class="header-section-number">A.9.1</span> Binding and antibinding regions</h3>
+<p>So first, let us remind ourselves that atoms will bind together if they have any advantage to do so. We have seen that one big incentive is to fulfill the octet rule. Another incentive is when the electron energies are lower when the atoms are in a molecule compared to when they are single atoms. In the H<sub>2</sub> example in Figure <a href="appendix-a.html#fig:bond-strength-H2">A.19</a>, the nuclei will naturally distance themselves when the electrons have the lowest energy, i.e., in this case at r<sub>0</sub> = 0.074 nm, also called the bond length. The H<sub>2</sub> molecule is 458 kJ.mol<sup>-1</sup> more stable than the two isolated H atoms, i.e. the bond strength of the H<sub>2</sub> molecule is 458 kJ.mol<sup>-1</sup> or that it would take 458 kJ.mol<sup>-1</sup> to break this covalent bond.</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:bond-strength-H2"></span>
+<img src="pictures/bond-strength-H2.gif" alt="Binding and anti-binding regions where electrons might be located as two atoms get closer together to form a molecule [obtained from ](http://chemweb.ucc.ie/courses/FLalor/FJL_Lecture_10.htm) " width="65%" />
+<p class="caption">
+Figure A.19: Binding and anti-binding regions where electrons might be located as two atoms get closer together to form a molecule <a href="http://chemweb.ucc.ie/courses/FLalor/FJL_Lecture_10.htm">obtained from</a>
+</p>
+</div>
+<p></br></p>
+<blockquote>
+<p>Chemical bonding occurs when the net attractive forces between an electron and two nuclei exceeds the electrostatic repulsion between the two nuclei. For this to happen, the electron must be in a region of space which we call the binding region. Conversely, if the electron is off to one side, in an anti-binding region, it actually adds to the repulsion between the two nuclei and helps push them away <span class="citation">(Libretexts <a href="#ref-Libretexts2013-mj">2013</a>)</span>.</p>
+</blockquote>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:MO1"></span>
+<img src="pictures/MO1.png" alt="Binding and anti-binding regions where electrons might be located as two atoms get closer together to form a molecule [@Libretexts2013-mj] " width="35%" />
+<p class="caption">
+Figure A.20: Binding and anti-binding regions where electrons might be located as two atoms get closer together to form a molecule <span class="citation">(Libretexts <a href="#ref-Libretexts2013-mj">2013</a>)</span>
+</p>
+</div>
+<p></br></p>
+</div>
+<div id="bonding-and-antibonding-orbitals" class="section level3">
+<h3><span class="header-section-number">A.9.2</span> Bonding and antibonding orbitals</h3>
+<p>The big addition of the MO theory is the taking into account of the wave nature of electrons. Remember that an orbital is a space (properly in mathematical terms the square of the wave function) around the nucleus where the electrons are located 90% of the time. Now, the MO theory consists in describing the <em>standing wave</em> in which the electrons are located around the nuclei of the molecule atoms viewed as a whole. One way to look at this is to look at the space where the electrons are expected to be, and that can be viewed as a Linear Combination of Atomic Orbitals (LCAO). In other words, taking H<sub>2</sub> as an example, the final MO of the H<sub>2</sub> molecule will be a linear combination of the two <em>wave functions</em> or <em>1s</em> AO of the two atoms. The problem is that one can see that the equation (1s orbital<sub>H</sub> + 1s orbital<sub>H</sub>) = 1 Molecular orbital<sub>H2</sub> just cannot be as even in quantum mechanics, 1+1=1 does not happen…!</p>
+<p>So, the LCAO theory thus proposes that the overall MO of the H<sub>2</sub>, to continue on this example, is a <em>Linear Combination</em> of the wave functions (i.e., the AO of each atom), often written as Ψ. The <em>molecular wave function</em> or the Molecular Orbital of hydrogen atoms A and B for example, can be written as</p>
+<p></br></p>
+<p><span class="math display">\[
+\Psi_{(\sigma)} = N \times \left( a \Psi_{(1s)}(A) + b\Psi_{(1s)}(B) \right)
+\]</span></p>
+<p></br></p>
+<p>with <em>N</em> being a coefficient factor, and <em>a</em> and <em>b</em> being linear coefficients (equal to 1 in the case of homonuclear molecule) and <span class="math inline">\(\Psi_{(1s)}(A)\)</span> and <span class="math inline">\(\Psi_{(1s)}(B)\)</span> representing the atomic orbital or wave functions of the atoms A and B. This would apply when the wave functions would be in-phase, in which case there would be <em>constructive interference</em> between the wave functions of the AO.</p>
+<p>But of course, there is another possible linear combination when the electron wave functions are out-of-phase, in which case there would be a <em>destructive interference</em> between the wave functions</p>
+<p></br></p>
+<p><span class="math display">\[
+\Psi_{(\sigma^{*})} = N \times \left( a\Psi_{(1s)}(A) - b\Psi_{(1s)}(B) \right)
+\]</span></p>
+<p></br></p>
+<p>Figure `<a href="appendix-a.html#fig:H2OrbitalsAnimation">A.21</a> illustrates the wave functions (real and imaginary part in blue and red, respectively) of two hydrogen atoms (left and right), and how they may combine for <em>constructive interference</em> creating <em>bonding orbital</em> (center bottom) and for <em>destructive interference</em> creating <em>antibonding orbitals</em> (center top).</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:H2OrbitalsAnimation"></span>
+<img src="pictures/H2OrbitalsAnimation.gif" alt="Electron wavefunctions for the 1s orbital of a lone hydrogen atom (left and right) and the corresponding bonding (bottom) and antibonding (top) molecular orbitals of the H~2~ molecule. The real part of the wavefunction is the blue curve, and the imaginary part is the red curve. The red dots mark the locations of the nuclei. The electron wavefunction oscillates according to the Schrödinger wave equation, and orbitals are its standing waves. The standing wave frequency is proportional to the orbital's kinetic energy. (This plot is a one-dimensional slice through the three-dimensional system.) Caption and figure from [@Wikipedia_contributors2020-km]" width="45%" />
+<p class="caption">
+Figure A.21: Electron wavefunctions for the 1s orbital of a lone hydrogen atom (left and right) and the corresponding bonding (bottom) and antibonding (top) molecular orbitals of the H<sub>2</sub> molecule. The real part of the wavefunction is the blue curve, and the imaginary part is the red curve. The red dots mark the locations of the nuclei. The electron wavefunction oscillates according to the Schrödinger wave equation, and orbitals are its standing waves. The standing wave frequency is proportional to the orbital’s kinetic energy. (This plot is a one-dimensional slice through the three-dimensional system.) Caption and figure from <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2020-km">2020</a><a href="#ref-Wikipedia_contributors2020-km">c</a>)</span>
+</p>
+</div>
+<p></br></p>
+</div>
+<div id="molecular-orbital-diagrams" class="section level3">
+<h3><span class="header-section-number">A.9.3</span> Molecular orbital diagrams</h3>
+<div id="molecular-orbitals-for-first-period-elements" class="section level4">
+<h4><span class="header-section-number">A.9.3.1</span> Molecular orbitals for first period elements</h4>
+<p>Graphically, bonding molecular orbital of H<sub>2</sub> might be represented as the elongated ballon at the center bottom of Figure `<a href="appendix-a.html#fig:H2MOdiagram">A.22</a>, while the antibonding orbital would be represented by the two smaller balloons at the center top. This figure also represents the two <em>1s</em> atomic orbitals (AO) of each of the hydrogen atoms on each side and the MO diagram of H<sub>2</sub> in the center, with the bonding and antibonding orbitals, respectively at a lower and higher energy levels than the AO. Note that the <em>bonding</em> MO is referred to as <span class="math inline">\(\sigma_{1s}\)</span> while the <em>antibonding</em> MO is referred to as <span class="math inline">\(\sigma^*_{1s}\)</span>.</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:H2MOdiagram"></span>
+<img src="pictures/H2MOdiagram.gif" alt="Molecular Orbital Energy-Level Diagram for H~2~. The two available electrons (one from each H atom) in this diagram fill the bonding &amp;sigma;1s molecular orbital. Because the energy of the &amp;sigma;1s molecular orbital is lower than that of the two H 1s atomic orbitals, the H~2~ molecule is more stable (at a lower energy) than the two isolated H atoms. Caption from [@Libretexts2020-le] and diagram from [Sparknotes](http://img.sparknotes.com/figures/8/83ce1fb7be648ede5785ea60c96b495c/correlate.gif)" width="65%" />
+<p class="caption">
+Figure A.22: Molecular Orbital Energy-Level Diagram for H<sub>2</sub>. The two available electrons (one from each H atom) in this diagram fill the bonding σ1s molecular orbital. Because the energy of the σ1s molecular orbital is lower than that of the two H 1s atomic orbitals, the H<sub>2</sub> molecule is more stable (at a lower energy) than the two isolated H atoms. Caption from <span class="citation">(Libretexts <a href="#ref-Libretexts2020-le">2020</a>)</span> and diagram from <a href="http://img.sparknotes.com/figures/8/83ce1fb7be648ede5785ea60c96b495c/correlate.gif">Sparknotes</a>
+</p>
+</div>
+<p></br></p>
+<p>The MO are filled like any orbital, starting from the lower energy levels to the higher ones. Each atom of hydrogen has one <em>1s</em> electron to share, and thus fill the bonding orbital. Because the electrons in the bonding orbital are at a lower energy level than the two isolated H atoms, the H<sub>2</sub> molecule is more stable. The bonding orbitals are stabilizing while the antibonding orbitals are destabilizing the molecule.</p>
+<p>From such a MO diagram, it is possible to calculate the <em>bond order</em>, which is an indicator of how stable the molecule might be, and the number of bonds it might have. The <em>bond order</em> is calculated as</p>
+<p></br></p>
+<p><span class="math display">\[
+bond \space order = \frac{(nb \space of \space electrons \space in \space bonding \space orbitals) - (nb \space of \space electrons \space in \space antibonding \space orbitals)}{2}
+\]</span></p>
+<p></br></p>
+<p>So the bond order for H<sub>2</sub> is <span class="math inline">\(BO = \frac{2 - 0}{2} = 1\)</span> or 1, which is the number of covalent bonds in H<sub>2</sub>.</p>
+<p>Now if we summarize this approach to H<sub>2</sub>, He<sub>2</sub><sup>+</sup>, an He<sub>2</sub> (Figure <a href="appendix-a.html#fig:MOH2He2">A.23</a>), one can see that the bond order for He<sub>2</sub> is zero, and the bond energy is very close to 0 kJ.mol<sup>-1</sup>. This is because there are two electrons in the antibonding orbital, hence destabilizing the molecule. This He<sub>2</sub> is thus unlikely to exist and in fact there is no evidence that it does exist. However, the ionic version He<sub>2</sub><sup>+</sup> has a bond order of 0.5 and a bond enerby of 301 kJ.mol<sup>-1</sup>, and has chances to be relatively stable. And indeed, this form seems to exist in nature.</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:MOH2He2"></span>
+<img src="pictures/MOH2He2.png" alt="Molecular Orbital Diagram, bond order and bond energy for H~2~, He~2~^+^, and He~2~. Because the band order for He~2~ is zero, this molecule is unstable and does not exist, while the other two do" width="75%" />
+<p class="caption">
+Figure A.23: Molecular Orbital Diagram, bond order and bond energy for H<sub>2</sub>, He<sub>2</sub><sup>+</sup>, and He<sub>2</sub>. Because the band order for He<sub>2</sub> is zero, this molecule is unstable and does not exist, while the other two do
+</p>
+</div>
+<p></br></p>
+<p>Now, this is just for the <em>1s</em> orbitals. The same would hold true for <em>2s</em> orbitals. However, for atoms with <em>2p</em> orbitals things are a little more complicated. Indeed, <em>p</em> atomic orbitals are separated into <em>p<sub>x</sub></em>, <em>p<sub>y</sub></em>, and <em>p<sub>z</sub></em> orbitals (Figure <a href="appendix-a.html#fig:MO2pOrbitals">A.24</a>) following the three 3D axes. When two atoms with <em>p</em> orbitals from the second period get close together, their <em>p</em> orbitals may interact together. It turns out that by convention, it is thought that the <em>p<sub>z</sub></em> atomic orbitals are the ones that interact along the nuclei axes to form <em>σ<sub>2p</sub></em> and <em>σ*<sub>2p</sub></em>, respectively the bonding and antibonding <em>σ</em> molecular orbitals. The <em>p<sub>x</sub></em> and <em>p<sub>y</sub></em> atomic orbitals are perpendicular to the nuclei axis and combine to form two <em>π<sub>2p</sub></em> and <em>π*<sub>2p</sub></em> molecular orbitals (Figure <a href="appendix-a.html#fig:MO2pOrbitals">A.24</a>).</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:MO2pOrbitals"></span>
+<img src="pictures/MO2pOrbitals.png" alt="*2p* atomic orbitals (left) and *2p* molecular orbitals as atomic orbitals combine (right). Notice that the combination of *2p* orbitals generate three bonding and three antibonding molecular orbitals. The *2p~z~* orbitals combine to form a *&amp;sigma;~2p~* and *&amp;sigma;&amp;#42;~2p~* orbitals, while the *2p~x~* and the *2p~y~* combine to form two *&amp;pi;~2p~* and *&amp;pi;&amp;#42;~2p~* molecular orbitals" width="75%" />
+<p class="caption">
+Figure A.24: <em>2p</em> atomic orbitals (left) and <em>2p</em> molecular orbitals as atomic orbitals combine (right). Notice that the combination of <em>2p</em> orbitals generate three bonding and three antibonding molecular orbitals. The <em>2p<sub>z</sub></em> orbitals combine to form a <em>σ<sub>2p</sub></em> and <em>σ*<sub>2p</sub></em> orbitals, while the <em>2p<sub>x</sub></em> and the <em>2p<sub>y</sub></em> combine to form two <em>π<sub>2p</sub></em> and <em>π*<sub>2p</sub></em> molecular orbitals
+</p>
+</div>
+<p></br></p>
+</div>
+<div id="molecular-orbitals-for-second-period-elements" class="section level4">
+<h4><span class="header-section-number">A.9.3.2</span> Molecular orbitals for second period elements</h4>
+<p>The next natural step is to explore how the electrons populate these orbitals in the case of homonuclear diatomic molecules from atoms in the second period. This is particularly interesting to ecological engineering matters as atoms such C, N, and O are in this period. First, chemists have numerically shown that the energy levels of the <em>σ<sub>2p</sub></em> and the <em>π<sub>2p</sub></em> orbitals interchange from B<sub>2</sub>, C<sub>2</sub>, and N<sub>2</sub> to those of O<sub>2</sub>, F<sub>2</sub>, and Ne<sub>2</sub> (Figure <a href="appendix-a.html#fig:MOhomonuclearAtoms">A.25</a>).</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:MOhomonuclearAtoms"></span>
+<img src="pictures/MOhomonuclearAtoms.png" alt="Molecular orbital diagrams for homonuclear diatomic molecules for the second period. The bonding *&amp;sigma;~2p~* and *&amp;pi;~2p~* orbitals level of energy are a little different from B~2~, C~2~, and N~2~ to those of O~2~, F~2~, and Ne~2~" width="85%" />
+<p class="caption">
+Figure A.25: Molecular orbital diagrams for homonuclear diatomic molecules for the second period. The bonding <em>σ<sub>2p</sub></em> and <em>π<sub>2p</sub></em> orbitals level of energy are a little different from B<sub>2</sub>, C<sub>2</sub>, and N<sub>2</sub> to those of O<sub>2</sub>, F<sub>2</sub>, and Ne<sub>2</sub>
+</p>
+</div>
+<p></br></p>
+<p>To fill the newly formed molecular orbitals with electrons, three general rules apply <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2020-wu">2020</a><a href="#ref-Wikipedia_contributors2020-wu">b</a>)</span>:</p>
+<ul>
+<li>The <a href="https://en.wikipedia.org/wiki/Aufbau_principle">Aufbau principle</a> states that orbitals are filled starting with the lowest energy</li>
+<li>The <a href="https://en.wikipedia.org/wiki/Pauli_exclusion_principle">Pauli exclusion principle</a> states that the maximum number of electrons occupying an orbital is two, with opposite spins</li>
+<li><a href="https://en.wikipedia.org/wiki/Hund%27s_rule">Hund’s rule</a> states that when there are several MO’s with equal energy, the electrons occupy the MO’s one at a time before two electrons occupy the same MO.</li>
+</ul>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:MOC2N2O2"></span>
+<img src="pictures/MOC2N2O2.png" alt="Molecular orbital diagrams for homonuclear diatomic molecules for C~2~, N~2~, and O~2~, as well as the bond order and the bond energy" width="100%" />
+<p class="caption">
+Figure A.26: Molecular orbital diagrams for homonuclear diatomic molecules for C<sub>2</sub>, N<sub>2</sub>, and O<sub>2</sub>, as well as the bond order and the bond energy
+</p>
+</div>
+<p></br></p>
+<p>First thing, the diatomic molecule C<sub>2</sub> does exist but only in the gas phase as it is extremely reactive since its octet rule is not fulfilled (Figure <a href="appendix-a.html#fig:MOC2N2O2">A.26</a>). For these molecules, the bond order equation applies, but only for the valence electrons of the atoms, in other words, only for the <em>2p</em> orbitals. As such, the bond order for N<sub>2</sub> and for O<sub>2</sub> add up to 3 and 2, respectively, corresponding to the triple and double bonds. The bond energy for N<sub>2</sub> is very high at 941 kL.mol<sup>-1</sup> because all the electrons are in bonding MOs. Because two electrons are in the antibonding orbitals for O<sub>2</sub>, the bond energy of dioxygen is almost half of that of N<sub>2</sub> and about 20% lower than that of C<sub>2</sub>. Hund’s rule states that the two upaired electrons in O<sub>2</sub> should occupy each of the <em>π*<sub>2p</sub></em> orbitals.</p>
+</div>
+<div id="molecular-orbitals-of-o2-reveal-unique-behavior-of-respiration" class="section level4">
+<h4><span class="header-section-number">A.9.3.3</span> Molecular orbitals of O<sub>2</sub> reveal unique behavior of respiration</h4>
+<p>The main reason for this summary of what molecular orbitals are was to better understand why all atoms storing electrons like in organic matter do not readily lose their electrons to oxygen atoms, especially in an aerobic environment where there are a lot of oxygen atoms in the form of O<sub>2</sub>. The best chemical definition of O<sub>2</sub> I could find is:</p>
+<blockquote>
+<p>Ground-state triplet molecular oxygen is a paramagnetic biradical with two electrons occupying separate π* orbitals with parallel spins <span class="citation">(Krumova and Cosa <a href="#ref-Krumova2016-pw">2016</a>)</span></p>
+</blockquote>
+<p>Honestly, this requires a little bit of vocabulary to understand all the subtleties of this great definition…!</p>
+<ul>
+<li><em>Ground state</em>: the ground state is defined as the lowest allowed energy state of an atom, molecule, or ion. In other words, the ground state represents the most stable configuration</li>
+<li><em>triplet</em>: this refers to having two unpaired electrons (Figure <a href="appendix-a.html#fig:Spin-multiplicity-diagram">A.27</a>) in the molecular orbital. The word ‘triplet’ comes, in short, from the fact that the <a href="https://en.wikipedia.org/wiki/Electron_paramagnetic_resonance">Electron spin resonance spectrum</a> of O<sub>2</sub> emits photons with three spectral lines, hence <a href="https://en.wikipedia.org/wiki/Triplet_state">triplet</a>.</li>
+<li><em>paramagnetic</em>: this means that liquid O<sub>2</sub> is weakly attracted by an externally applied magnetic field. This is due to the two unpaired electrons in the molecular orbital that have parallel spins (upward arrows on Figure <a href="appendix-a.html#fig:MOC2N2O2">A.26</a>). Molecules with inverted spins are called <em>diamagnetic</em></li>
+<li><em>biradical</em> (also sometimes called <em>diradical</em>): a radical is an atom that has an unpaired electron. The MO having two unpaired electrons, O<sub>2</sub> is thus a <em>biradical</em> (or <em>diradical</em>)<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></li>
+</ul>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:Spin-multiplicity-diagram"></span>
+<img src="pictures/Spin_multiplicity_diagram.png" alt="Examples of atoms in singlet, doublet, and triplet states. Obtained from [Lightex](https://commons.wikimedia.org/w/index.php?curid=58888199)" width="65%" />
+<p class="caption">
+Figure A.27: Examples of atoms in singlet, doublet, and triplet states. Obtained from <a href="https://commons.wikimedia.org/w/index.php?curid=58888199">Lightex</a>
+</p>
+</div>
+<p></br></p>
+<div id="o2-is-a-very-stable-biradical" class="section level5">
+<h5><span class="header-section-number">A.9.3.3.1</span> O<sub>2</sub> is a very stable biradical</h5>
+<p>So, what is this all saying? Radicals or monoradicals are known to be particularly reactive, and in fact, most organic chemistry reactions involve radicals. Bi- or diradicals just like monoradicals are also very reactive <span class="citation">(Abe <a href="#ref-Abe2013-kg">2013</a>)</span>. So it is particularly odd that this voracious electron biradical does not want to react with organic matter… But before that, let us make sure that there is no confusion between the Lewis structure of O<sub>2</sub> and the molecular orbital of the same molecule. According to the lewis dot structure, the octet rule is fulfilled. But it is the MO theory that is able to decipher the two unpaired electrons in the molecule, which will want to be paired. At least this is the first reason why O<sub>2</sub> gets involved in redox reactions in the first place.</p>
+<p>A first reason for the difficulty for O<sub>2</sub> to readily accept electrons and thus be very reactive is explained by Krumova and Cosa <span class="citation">(<a href="#ref-Krumova2016-pw">2016</a>)</span>:</p>
+<blockquote>
+<p>Most nonradical organic molecules are diamagnetic, with pairs of electrons with opposite spins. A spin restriction applies for molecular oxygen to participate in redox reactions with other atoms or molecules as it has to accept, from the reductant, a pair of electrons that have the same spin (i.e. nondiamagnetic) so they can fit into the vacant spaces in the π* orbitals of oxygen. Oxygen is thus unable to efficiently oxidize biomolecules via e.g. addition (2-electron process) <span class="citation">(Krumova and Cosa <a href="#ref-Krumova2016-pw">2016</a>)</span></p>
+</blockquote>
+<p>A second reason why O<sub>2</sub> does not readily oxidize everything in its path is that the unpaired electrons seem to be stabilized by resonance among the available orbitals (<span class="citation">(Borden et al. <a href="#ref-Borden2017-id">2017</a>)</span>; Figure <a href="appendix-a.html#fig:O2unpaired-electrons-stabilization">A.28</a>).</p>
+<blockquote>
+<p>However, despite the resonance stabilization of the π system of triplet O<sub>2</sub>, the weakness of the O−O σ bond makes reactions of O<sub>2</sub>, which eventually lead to cleavage of this bond, very favorable thermodynamically <span class="citation">(Borden et al. <a href="#ref-Borden2017-id">2017</a>)</span></p>
+</blockquote>
+<p>To summarize, O<sub>2</sub> is considered a bi(di-)radical that can theoretically be very reactive but in the end that is not as much thanks to its resonance stabilization system of the upaired electrons, and when it does accept electrons from an electron donor, it cannot readily accept two of them at once. Rather a series of reactions seems to occur before, as is the case in the oxidative phosphorylation, O<sub>2</sub> is reduced into H<sub>2</sub>O.</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:O2unpaired-electrons-stabilization"></span>
+<img src="pictures/O2unpaired-electrons-stabilization.png" alt="Possible distributions, A−D of the two &amp;beta;-spin electrons in the two orthogonal &amp;pi; systems of triplet ^&amp;bullet;^OO^&amp;bullet;^. The four &amp;alpha;-spin electrons each occupy one of the four *2p-&amp;pi;* AOs; so, as shown in resonance structures A−D, it is only the &amp;beta;-spin electrons that are delocalized (drawing and caption from Borden et al. [-@Borden2017-id])" width="45%" />
+<p class="caption">
+Figure A.28: Possible distributions, A−D of the two β-spin electrons in the two orthogonal π systems of triplet <sup>•</sup>OO<sup>•</sup>. The four α-spin electrons each occupy one of the four <em>2p-π</em> AOs; so, as shown in resonance structures A−D, it is only the β-spin electrons that are delocalized (drawing and caption from Borden et al. <span class="citation">(<a href="#ref-Borden2017-id">2017</a>)</span>)
+</p>
+</div>
+<p></br></p>
+</div>
+<div id="reduction-of-o2-to-h2o-as-a-multistep-reaction-involving-reactive-oxygen-species-ros" class="section level5">
+<h5><span class="header-section-number">A.9.3.3.2</span> Reduction of O<sub>2</sub> to H<sub>2</sub>O as a multistep reaction involving Reactive Oxygen Species (ROS)</h5>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:O2radicalsMO"></span>
+<img src="pictures/O2radicalsMO.gif" alt="Molecular orbital diagrams for ground-state molecular oxygen (O~2~), singlet oxygen (^1^O~2~), and ROS (superoxide radical anion O~2~^&amp;bullet;2^− and peroxide ion O~2~^−2^~, deprotonated form of hydrogen peroxide H~2~O~2~ [@Krumova2016-pw])" width="90%" />
+<p class="caption">
+Figure A.29: Molecular orbital diagrams for ground-state molecular oxygen (O<sub>2</sub>), singlet oxygen (<sup>1</sup>O<sub>2</sub>), and ROS (superoxide radical anion O<sub>2</sub><sup>•2</sup>− and peroxide ion O<sub>2</sub><sup>−2</sup>~, deprotonated form of hydrogen peroxide H<sub>2</sub>O<sub>2</sub> <span class="citation">(Krumova and Cosa <a href="#ref-Krumova2016-pw">2016</a>)</span>)
+</p>
+</div>
+<p></br></p>
+<p>O2toH2O-redox-chain-with-ROS</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:O2toH2O-redox-chain-with-ROS"></span>
+<img src="pictures/O2toH2O-redox-chain-with-ROS.png" alt="Formation of ROS through energy- and electron-transfer reactions. The redox states of oxygen with standard reduction potentials are shown. The standard concentration of oxygen was regarded as 1 M [@Krumova2016-pw])" width="90%" />
+<p class="caption">
+Figure A.30: Formation of ROS through energy- and electron-transfer reactions. The redox states of oxygen with standard reduction potentials are shown. The standard concentration of oxygen was regarded as 1 M <span class="citation">(Krumova and Cosa <a href="#ref-Krumova2016-pw">2016</a>)</span>)
+</p>
+</div>
+<p></br></p>
+<p></br>
+<span class="math display" id="eq:O2toH2O">\[\begin{equation}
+O_2 + e^- \rightarrow O_2^{\bullet -} \space \space \space (+H^+ \rightleftharpoons HO_2^{\bullet})\\
+O_2^{\bullet -} + e^- \rightarrow \space (O_2^{2-} + 2 H^+) \rightarrow H_2O_2\\
+H_2O_2 + e^- \rightarrow \space ^\bullet OH + OH^-\\
+^\bullet OH + e^- \rightarrow + H^+ \rightarrow H_2O
+\tag{A.1}
+\end{equation}\]</span>
+</br></p>
+</div>
+</div>
+</div>
+</div>
 <div id="exercises-1" class="section level2">
-<h2><span class="header-section-number">A.9</span> Exercises</h2>
+<h2><span class="header-section-number">A.10</span> Exercises</h2>
 <ol style="list-style-type: decimal">
 <li>Draw the molecular configuration and the Lewis dot structure of:
 <ol style="list-style-type: lower-alpha">
@@ -744,6 +947,24 @@ In the end, the most stable/likely molecule is the molecule for which:</p>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
+<div id="ref-Abe2013-kg">
+<p>Abe, Manabu. 2013. “Diradicals.” <em>Chem. Rev.</em> 113 (9): 7011–88. <a href="https://doi.org/10.1021/cr400056a">https://doi.org/10.1021/cr400056a</a>.</p>
+</div>
+<div id="ref-Borden2017-id">
+<p>Borden, Weston Thatcher, Roald Hoffmann, Thijs Stuyver, and Bo Chen. 2017. “Dioxygen: What Makes This Triplet Diradical Kinetically Persistent?” <em>J. Am. Chem. Soc.</em> 139 (26): 9010–8. <a href="https://doi.org/10.1021/jacs.7b04232">https://doi.org/10.1021/jacs.7b04232</a>.</p>
+</div>
+<div id="ref-Krumova2016-pw">
+<p>Krumova, Katerina, and Gonzalo Cosa. 2016. “Chapter 1 Overview of Reactive Oxygen Species.” In <em>Singlet Oxygen: Applications in Biosciences and Nanosciences, Volume 1</em>, 1:1–21. Comprehensive Series in Photochemical &amp; Photobiological Sciences. The Royal Society of Chemistry. <a href="https://doi.org/10.1039/9781782622208-00001">https://doi.org/10.1039/9781782622208-00001</a>.</p>
+</div>
+<div id="ref-Libretexts2013-mj">
+<p>Libretexts. 2013. “9.8: Molecular Orbital Theory.” <a href="https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_Chem1_(Lower)/09%3A_Chemical_Bonding_and_Molecular_Structure/9.08%3A_Molecular_Orbital_Theory">https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_Chem1_(Lower)/09%3A_Chemical_Bonding_and_Molecular_Structure/9.08%3A_Molecular_Orbital_Theory</a>; Libretexts. <a href="https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_Chem1_(Lower)/09%3A_Chemical_Bonding_and_Molecular_Structure/9.08%3A_Molecular_Orbital_Theory">https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_Chem1_(Lower)/09%3A_Chemical_Bonding_and_Molecular_Structure/9.08%3A_Molecular_Orbital_Theory</a>.</p>
+</div>
+<div id="ref-Libretexts2020-le">
+<p>Libretexts. 2020. “9.5: Bonding and Antibonding Orbitals.” <a href="https://chem.libretexts.org/Courses/Pacific_Union_College/Quantum_Chemistry/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.05%3A_Bonding_and_Antibonding_Orbitals">https://chem.libretexts.org/Courses/Pacific_Union_College/Quantum_Chemistry/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.05%3A_Bonding_and_Antibonding_Orbitals</a>; Libretexts. <a href="https://chem.libretexts.org/Courses/Pacific_Union_College/Quantum_Chemistry/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.05%3A_Bonding_and_Antibonding_Orbitals">https://chem.libretexts.org/Courses/Pacific_Union_College/Quantum_Chemistry/09%3A_Chemical_Bonding_in_Diatomic_Molecules/9.05%3A_Bonding_and_Antibonding_Orbitals</a>.</p>
+</div>
+<div id="ref-Mulliken1966-qc">
+<p>Mulliken, Robert S. 1966. “Spectroscopy, Molecular Orbitals, and Chemical Bonding.” Nobel Lecture, December 12, 1966. <a href="https://www.nobelprize.org/uploads/2018/06/mulliken-lecture.pdf">https://www.nobelprize.org/uploads/2018/06/mulliken-lecture.pdf</a>.</p>
+</div>
 <div id="ref-Wikipedia_contributors2018-sr">
 <p>Wikipedia contributors. 2018h. “Pi Bond.” <a href="https://en.wikipedia.org/w/index.php?title=Pi_bond&amp;oldid=830933062">https://en.wikipedia.org/w/index.php?title=Pi_bond&amp;oldid=830933062</a>. <a href="https://en.wikipedia.org/w/index.php?title=Pi_bond&amp;oldid=830933062">https://en.wikipedia.org/w/index.php?title=Pi_bond&amp;oldid=830933062</a>.</p>
 </div>
@@ -765,6 +986,19 @@ In the end, the most stable/likely molecule is the molecule for which:</p>
 <div id="ref-Wikipedia_contributors2018-wp">
 <p>Wikipedia contributors. 2018r. “Water.” <a href="https://en.wikipedia.org/w/index.php?title=Water&amp;oldid=857931689">https://en.wikipedia.org/w/index.php?title=Water&amp;oldid=857931689</a>. <a href="https://en.wikipedia.org/w/index.php?title=Water&amp;oldid=857931689">https://en.wikipedia.org/w/index.php?title=Water&amp;oldid=857931689</a>.</p>
 </div>
+<div id="ref-Wikipedia_contributors2020-wu">
+<p>Wikipedia contributors. 2020b. “Molecular Orbital Diagram.” <a href="https://en.wikipedia.org/w/index.php?title=Molecular_orbital_diagram&amp;oldid=950745475">https://en.wikipedia.org/w/index.php?title=Molecular_orbital_diagram&amp;oldid=950745475</a>. <a href="https://en.wikipedia.org/w/index.php?title=Molecular_orbital_diagram&amp;oldid=950745475">https://en.wikipedia.org/w/index.php?title=Molecular_orbital_diagram&amp;oldid=950745475</a>.</p>
+</div>
+<div id="ref-Wikipedia_contributors2020-km">
+<p>Wikipedia contributors. 2020c. “Molecular Orbital.” <a href="https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232">https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232</a>. <a href="https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232">https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>According to the IUPAC Compendium of Chemical Terminology, the so-called Gold Book, <em>biradical</em> is a technical term for
+molecules in which the two electrons act independently or nearly independently. Thus, <em>biradicals</em> are most easily understood as two doublets in a molecule. In other words, the electron exchange interaction between the two unpaired electrons is negligible or nearly negligible for <em>biradicals</em> because of the long distance between the two electrons. When the magnitude of the dipole−dipole interaction in a molecule is large enough to produce two spin states, namely, singlet and triplet, the molecular species with the two unpaired electrons is referred to as a <em>diradical.</em> <span class="citation">(Abe <a href="#ref-Abe2013-kg">2013</a>)</span><a href="appendix-a.html#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
 </div>
             </section>
 
