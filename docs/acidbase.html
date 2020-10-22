@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2020-10-19" />
+<meta name="date" content="2020-10-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -284,7 +284,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="10.6" data-path="acidbase.html"><a href="acidbase.html#equilibrium-calculations-using-a-graphical-method"><i class="fa fa-check"></i><b>10.6</b> Equilibrium calculations using a graphical method</a><ul>
 <li class="chapter" data-level="10.6.1" data-path="acidbase.html"><a href="acidbase.html#logarithm-of-concentrations-as-a-function-of-ph"><i class="fa fa-check"></i><b>10.6.1</b> Logarithm of concentrations as a function of pH</a></li>
-<li class="chapter" data-level="10.6.2" data-path="acidbase.html"><a href="acidbase.html#graphical-approach-to-calculate-ph"><i class="fa fa-check"></i><b>10.6.2</b> Graphical approach to calculate pH</a></li>
+<li class="chapter" data-level="10.6.2" data-path="acidbase.html"><a href="acidbase.html#logConcMonoAcid"><i class="fa fa-check"></i><b>10.6.2</b> Graphical approach to calculate pH for a monoprotic acid</a></li>
+<li class="chapter" data-level="10.6.3" data-path="acidbase.html"><a href="acidbase.html#logConcTriAcid"><i class="fa fa-check"></i><b>10.6.3</b> Graphical approach to calculate pH for a triprotic acid</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><i class="fa fa-check"></i><b>11</b> Introduction to hydrographs, chemographs, concentrations, and loads</a><ul>
@@ -975,12 +976,12 @@ pH = pK_A
 \tag{10.37}
 \end{equation}\]</span></p>
 <hr />
-<p></br></br>
-Let us now summarize these findings and calculate the <span class="math inline">\(log(conc) = f(pH)\)</span> in table <a href="acidbase.html#tab:AHAsumtable">10.1</a>. The expressions of <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> have been purposely left as <span class="math inline">\(C^{te} - pH\)</span> and <span class="math inline">\(C^{te} + pH\)</span>, respectively, with <span class="math inline">\(C^{te}\)</span> standing for a <em>constante</em> value. This is to emphasize that one does not need to numerically calculate the value of the constantes, as one has all needed information to make a robust graphical representation of <span class="math inline">\(log(conc) = f(pH)\)</span>.
-</br></br></p>
+<p></br></br></p>
+<p>Let us now summarize these findings and calculate the <span class="math inline">\(log(conc) = f(pH)\)</span> in table <a href="acidbase.html#tab:AHAsumtable">10.1</a>. The expressions of <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> have been purposely left as <span class="math inline">\(C^{te} - pH\)</span> and <span class="math inline">\(C^{te} + pH\)</span>, respectively, with <span class="math inline">\(C^{te}\)</span> standing for a <em>constante</em> value. This is to emphasize that one does not need to numerically calculate the value of the constantes, as one has all needed information to make a robust graphical representation of <span class="math inline">\(log(conc) = f(pH)\)</span>.</p>
+<p></br></br></p>
 <table>
 <caption>
-<span id="tab:AHAsumtable">Table 10.1: </span>Summary of the expressions and approximated expressions of <span class="math inline">\(conc\)</span>, and <span class="math inline">\(log(conc)\)</span> as a function of pH for <span class="math inline">\(H^+\)</span>, <span class="math inline">\(OH^-\)</span>, <span class="math inline">\(AH^+\)</span>, and <span class="math inline">\(A\)</span>
+<span id="tab:AHAsumtable">Table 10.1: </span>Summary of the expressions and approximated expressions of <span class="math inline">\(conc\)</span>, and <span class="math inline">\(log(conc)\)</span> for a monoprotic acid as a function of pH for <span class="math inline">\(H^+\)</span>, <span class="math inline">\(OH^-\)</span>, <span class="math inline">\(AH^+\)</span>, and <span class="math inline">\(A\)</span>
 </caption>
 <thead>
 <tr>
@@ -1140,7 +1141,7 @@ pH &gt; pK<sub>A</sub> + 1
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;">
-<span class="math inline">\(C^{te} - pH\)</span>
+<span class="math inline">\(C^{st} - pH\)</span>
 </td>
 </tr>
 <tr>
@@ -1148,7 +1149,7 @@ pH &gt; pK<sub>A</sub> + 1
 <span class="math inline">\(log[A]\)</span>
 </td>
 <td style="text-align:center;">
-<span class="math inline">\(C^{te} + pH\)</span>
+<span class="math inline">\(C^{st} + pH\)</span>
 </td>
 <td style="text-align:center;">
 </td>
@@ -1165,7 +1166,7 @@ pH &gt; pK<sub>A</sub> + 1
 </table>
 <p></br></br></p>
 <p>The expressions show that for <span class="math inline">\(pH&lt;pK_A-1\)</span> and <span class="math inline">\(pH&gt;pK_A+1\)</span>, <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> follow straight lines of slope -1, 0, or +1 as a function of pH. It is thus possible to draw linear guide lines, litterally, which the <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> lines should follow for <span class="math inline">\(pH&lt;pK_A-1\)</span> and <span class="math inline">\(pH&gt;pK_A+1\)</span>. The actual <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> lines would then deviate from the guidelines for <span class="math inline">\(pK_A-1&lt;pH&lt;pK_A+1\)</span> and crossing at <span class="math inline">\(logC_T - 0.3\)</span> at <span class="math inline">\(pH=pK_A\)</span>.</p>
-<p>An example graph of <span class="math inline">\(log(conc) = f(pH)\)</span> is provided in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>. The lines <span class="math inline">\(log[H^+] = -pH\)</span> and <span class="math inline">\(log[OH^-] = -14+pH\)</span> are first plotted (in grey in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>). The next step is to draw the guidelines (dotted lines in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>). These appear as straight lines as a function of pH as their equations indicate (Table <a href="acidbase.html#tab:AHAsumtable">10.1</a>). In reality, it is possible to extend these lines up to pH=pK<sub>A</sub>. Indeed guidelines both intersect at <span class="math inline">\(log[AH^+]=C_T\)</span> and <span class="math inline">\(log[A]=C_T\)</span> at <span class="math inline">\(pH=pK_A\)</span> (Figure <a href="acidbase.html#fig:AH-pH">10.13</a>). To draw these guidelines, one needs to find this intersection and then draw either horizontal lines or lines with slopes of -1 or +1 as applicable. This is the reason why one does not need to know the numerical values of the <span class="math inline">\(C^{te}\)</span> in the equations in Table <a href="acidbase.html#tab:AHAsumtable">10.1</a>. In reality, drawing the <span class="math inline">\(log[H^+]\)</span> and <span class="math inline">\(log[OH^-]\)</span> curves follows the same procedure. These two lines must meet at <span class="math inline">\(log(conc)=-7\)</span> at <span class="math inline">\(pH=7\)</span>, and have slopes of -1 and +1, respectively.</p>
+<p>An example graph of <span class="math inline">\(log(conc) = f(pH)\)</span> is provided in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>. The lines <span class="math inline">\(log[H^+] = -pH\)</span> and <span class="math inline">\(log[OH^-] = -14+pH\)</span> are first plotted (in grey in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>). The next step is to draw the guidelines (dotted lines in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>). These appear as straight lines as a function of pH as their equations indicate (Table <a href="acidbase.html#tab:AHAsumtable">10.1</a>). In reality, it is possible to extend these lines up to pH=pK<sub>A</sub>. Indeed guidelines both intersect at <span class="math inline">\(log[AH^+]=C_T\)</span> and <span class="math inline">\(log[A]=C_T\)</span> at <span class="math inline">\(pH=pK_A\)</span> (Figure <a href="acidbase.html#fig:AH-pH">10.13</a>). To draw these guidelines, one needs to find this intersection and then draw either horizontal lines or lines with slopes of -1 or +1 as applicable. This is the reason why one does not need to know the numerical values of the <span class="math inline">\(C^{st}\)</span> (constant) in the equations in Table <a href="acidbase.html#tab:AHAsumtable">10.1</a>. In reality, drawing the <span class="math inline">\(log[H^+]\)</span> and <span class="math inline">\(log[OH^-]\)</span> curves follows the same procedure. These two lines must meet at <span class="math inline">\(log(conc)=-7\)</span> at <span class="math inline">\(pH=7\)</span>, and have slopes of -1 and +1, respectively.</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:AH-pH"></span>
 <img src="Textbook_BAE587_files/figure-html/AH-pH-1.png" alt="Forms of a hypothetical monoprotic acid for total concentration of 10^{-3.2}^M as a function of pH at 25°C" width="85%" />
@@ -1176,8 +1177,8 @@ Figure 10.13: Forms of a hypothetical monoprotic acid for total concentration of
 <p></br></p>
 <p>The next step consists in superimposing the <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> curves on the guidelines outside of the <span class="math inline">\(pK_A \pm 1\)</span> area. The next step consists in drawing the point where the two curves <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> meet at <span class="math inline">\(pH=pK_A\)</span>, i.e., at <span class="math inline">\(log(C_T)-0.3\)</span>. Then one would manually connect the <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> curves through the <span class="math inline">\(log(C_T)-0.3\)</span> at <span class="math inline">\(pH=pK_A\)</span> point, such as the tangent of the curves at <span class="math inline">\(pH=pK_A-1\)</span> and <span class="math inline">\(pH=pK_A+1\)</span> match the linear portions outside of the <span class="math inline">\(pK_A \pm 1\)</span> area. Obviously for this book, the manual drawing of this curve cannot be achieved and the actual <span class="math inline">\(log(conc) = f(pH)\)</span> have been plotted for <span class="math inline">\([AH^+]\)</span> and <span class="math inline">\([A]\)</span>. One can observe that the actual curve apparently deviates from the guideline curves not at <span class="math inline">\(pK_A \pm 1\)</span> but rather at <span class="math inline">\(pK_A \pm 1.4\)</span>.</p>
 </div>
-<div id="graphical-approach-to-calculate-ph" class="section level3">
-<h3><span class="header-section-number">10.6.2</span> Graphical approach to calculate pH</h3>
+<div id="logConcMonoAcid" class="section level3">
+<h3><span class="header-section-number">10.6.2</span> Graphical approach to calculate pH for a monoprotic acid</h3>
 <p>The graphical approach illustrated in Figure <a href="acidbase.html#fig:AH-pH">10.13</a> gives a nice way to quickly see whether some ion concentrations are much smaller than other, and whether one can assume some forms to be negligible compared to others.</p>
 <p>So in the example above, combining the electroneutrality equation to that of the conversion of mass, and realizing that <span class="math inline">\([Cl^-]=C_T\)</span> yields:</p>
 <p></br></p>
@@ -1188,30 +1189,432 @@ Figure 10.13: Forms of a hypothetical monoprotic acid for total concentration of
 \tag{10.38}
 \end{equation}\]</span></p>
 <p></br></p>
-<p>So now, this is where it is important to be able to assess the physical reality of the <span class="math inline">\([A] + [OH^-]\)</span> summation. It is easy to visualize on Figure <a href="acidbase.html#fig:AH-pH">10.13</a> the relative importance of <span class="math inline">\([A]\)</span> vs <span class="math inline">\([OH^-]\)</span>. In the figure, and for <span class="math inline">\(pH&lt;pK_A\)</span>, <span class="math inline">\([OH^-] \leq 10^{-5} [A]\)</span>. One can safely assume that <span class="math inline">\([A] + [OH^-] \approx [A]\)</span>. Hence, in these cases, <span class="math inline">\([H^+] \approx [A]\)</span>, which means that pH can be graphically determined at the intersection between the <span class="math inline">\(log[H^+]\)</span> and <span class="math inline">\(log[A]\)</span> lines (Figure <a href="acidbase.html#fig:AH-pH-gif">10.14</a>). The conditions for this graphical determination are that the <span class="math inline">\(log[A]\)</span> curve be in its linear portion and that at the intersection, <span class="math inline">\([A]&gt;10.[OH^-]\)</span>. An <a href="https://francoisbirgand.shinyapps.io/AHClvspH/">interactive graph to test the graphical determinataion is available at this link</a>.</p>
+<p>So now, this is where it is important to be able to assess the physical reality of the <span class="math inline">\([A] + [OH^-]\)</span> summation. It is easy to visualize on Figure <a href="acidbase.html#fig:AH-pH">10.13</a> the relative importance of <span class="math inline">\([A]\)</span> vs <span class="math inline">\([OH^-]\)</span>. In the figure, and for <span class="math inline">\(pH&lt;pK_A\)</span>, <span class="math inline">\([OH^-] \leq 10^{-5} [A]\)</span>. One can safely assume that <span class="math inline">\([A] + [OH^-] \approx [A]\)</span>. Hence, in these cases, <span class="math inline">\([H^+] \approx [A]\)</span>, which means that pH can be graphically determined at the intersection between the <span class="math inline">\(log[H^+]\)</span> and <span class="math inline">\(log[A]\)</span> lines (Figure <a href="acidbase.html#fig:AH-pH-gif">10.14</a>). The conditions for this graphical determination are that the <span class="math inline">\(log[A]\)</span> curve be in its linear portion and that at the intersection, <span class="math inline">\([A]&gt;10[OH^-]\)</span>. An <a href="https://francoisbirgand.shinyapps.io/AHClvspH/">interactive graph to test the graphical determinataion is available at this link</a>.</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:AH-pH-gif"></span>
-<img src="pictures/animated_AHClvspH_large.gif" alt="Graphical determination of pH as a function of variable pK~A~ and C~T~ for a hypothetical AHCl salt added into solution. A fully [interactive graph to test the graphical determinataion is available at this link](https://francoisbirgand.shinyapps.io/AHClvspH/)" width="85%" />
+<img src="pictures/animated_AHClvspH_large.gif" alt="Graphical determination of pH as a function of variable pK~A~ and C~T~ for a hypothetical AHCl weak acid salt added into solution. A fully [interactive graph to test the graphical determinataion is available at this link](https://francoisbirgand.shinyapps.io/AHClvspH/)" width="85%" />
 <p class="caption">
-Figure 10.14: Graphical determination of pH as a function of variable pK<sub>A</sub> and C<sub>T</sub> for a hypothetical AHCl salt added into solution. A fully <a href="https://francoisbirgand.shinyapps.io/AHClvspH/">interactive graph to test the graphical determinataion is available at this link</a>
+Figure 10.14: Graphical determination of pH as a function of variable pK<sub>A</sub> and C<sub>T</sub> for a hypothetical AHCl weak acid salt added into solution. A fully <a href="https://francoisbirgand.shinyapps.io/AHClvspH/">interactive graph to test the graphical determinataion is available at this link</a>
 </p>
 </div>
 <p></br></p>
-<p>Now, the graphs in Figures <a href="acidbase.html#fig:AH-pH">10.13</a> and <a href="acidbase.html#fig:AH-pH-gif">10.14</a> were derived for an <span class="math inline">\(AHCl\)</span> hypothetical salt fully dissociating into <span class="math inline">\(AH^+\)</span>, <span class="math inline">\(A\)</span> and <span class="math inline">\(Cl^-\)</span>. An analogous analysis can be derived for a weak acid salt of formula <span class="math inline">\(ANa\)</span> which would fully dissociate into <span class="math inline">\(HA\)</span>, <span class="math inline">\(A^-\)</span> and <span class="math inline">\(Na^+\)</span>. In this case, the combination of the electroneutrality and conservation of mass would yield <span class="math inline">\([H^+] + [HA] = [OH^-]\)</span>. Using the same reasoning as before, pH can be graphically determined at the intersection between the <span class="math inline">\(log[OH^-]\)</span> and <span class="math inline">\(log[HA]\)</span> lines, and provided that the <span class="math inline">\(log[HA]\)</span> curve be in its linear portion and that at the intersection <span class="math inline">\([HA]&gt;10.[H^+]\)</span>.</p>
+<p>Now, the graphs in Figures <a href="acidbase.html#fig:AH-pH">10.13</a> and <a href="acidbase.html#fig:AH-pH-gif">10.14</a> were derived for an <span class="math inline">\(AHCl\)</span> hypothetical salt fully dissociating into <span class="math inline">\(AH^+\)</span>, <span class="math inline">\(A\)</span> and <span class="math inline">\(Cl^-\)</span>. An analogous analysis can be derived for a weak base salt of formula <span class="math inline">\(ANa\)</span> which would fully dissociate into <span class="math inline">\(HA\)</span>, <span class="math inline">\(A^-\)</span> and <span class="math inline">\(Na^+\)</span>. In this case, the combination of the electroneutrality and conservation of mass would yield <span class="math inline">\([H^+] + [HA] = [OH^-]\)</span>. Using the same reasoning as before, pH can be graphically determined at the intersection between the <span class="math inline">\(log[OH^-]\)</span> and <span class="math inline">\(log[HA]\)</span> lines, and provided that the <span class="math inline">\(log[HA]\)</span> curve be in its linear portion and that at the intersection <span class="math inline">\([HA]&gt;10[H^+]\)</span>.</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:HA-pH-gif"></span>
-<img src="pictures/animated_ANavspH_large.gif" alt="Graphical determination of pH as a function of variable pK~A~ and C~T~ for a hypothetical ANa weak acid salt added into solution" width="85%" />
+<img src="pictures/animated_ANavspH_large.gif" alt="Graphical determination of pH as a function of variable pK~A~ and C~T~ for a hypothetical ANa weak base salt added into solution" width="85%" />
 <p class="caption">
-Figure 10.15: Graphical determination of pH as a function of variable pK<sub>A</sub> and C<sub>T</sub> for a hypothetical ANa weak acid salt added into solution
+Figure 10.15: Graphical determination of pH as a function of variable pK<sub>A</sub> and C<sub>T</sub> for a hypothetical ANa weak base salt added into solution
 </p>
 </div>
 <p></br></p>
 <p>Notice that when a hypothetical <span class="math inline">\(AHCl\)</span> salt is added to solution, the pH tends to be acidic, and reversely, when a <span class="math inline">\(ANa\)</span> salt is added, the pH tends to be basic. This is expected as the salts fully dissociate into, <span class="math inline">\(AH^+\)</span> and <span class="math inline">\(Cl^-\)</span>, and <span class="math inline">\(A^-\)</span> and <span class="math inline">\(Na^+\)</span>, in the first and second cases, respectively. In the first case, the initial form is thus the acid conjugate form <span class="math inline">\(AH^+\)</span> which is first in solution, and that later dissociates into its conjugate base, thus releasing <span class="math inline">\(H^+\)</span> and hence lowering the pH. In the second case, the conjugate base <span class="math inline">\(A^-\)</span> is released in water first and consumes <span class="math inline">\(H^+\)</span> to form its conjugate acid <span class="math inline">\(HA\)</span>, hence increasing the pH.</p>
-</br>
+</div>
+<div id="logConcTriAcid" class="section level3">
+<h3><span class="header-section-number">10.6.3</span> Graphical approach to calculate pH for a triprotic acid</h3>
+<p>Following the same procedure as that presented for a monoprotic acid, there are interesting points to highlight when plotting <span class="math inline">\(log(conc)=f(pH)\)</span> for a triprotic acid. It turns out that phosphate triprotic base has a particular relevance for ecological engineering, so it is interesting to use phosphate as an illustration on how to derive <span class="math inline">\(log(conc) = f(pH)\)</span> and graphically calculate pH for polyprotic acid/bases. Equation <a href="acidbase.html#eq:H3Aconsermass1">(10.17)</a> derived above for a triprotic acid is:</p>
+<p></br>
+<span class="math display" id="eq:H3Aconsermass1">\[\begin{equation}
+C_T = [H_3A] \times \left( 1 + \frac{K_1}{[H^+]} + \frac{K_1K_2}{[H^+]^2} + \frac{K_1K_2K_3}{[H^+]^3}\right)
+\tag{10.17}
+\end{equation}\]</span>
+</br></p>
+<p>For a monoprotic acid, the last two terms to the right did not exist, and it was relatively easy to express <span class="math inline">\([AH^+]\)</span> and <span class="math inline">\([A]\)</span> as in equation <a href="acidbase.html#eq:AHconc1">(10.29)</a>:</p>
+<p></br>
+<span class="math display" id="eq:AHconc1">\[\begin{equation}
+[AH^+] = \frac{C_T. [H^+]}{K_A + [H^+]} \\
+[A] = \frac{C_T. K_A}{K_A + [H^+]} 
+\tag{10.29}
+\end{equation}\]</span>
+</br></p>
+<p>and then find the conditions for which the denominator could be simplified when <span class="math inline">\(K_A \gg [H^+]\)</span> or <span class="math inline">\([H^+] \gg K_A\)</span>. But with the two extra terms in <a href="acidbase.html#eq:H3Aconsermass1">(10.17)</a>, this cannot be done as easily. The solution to this problem is, again, to realize the relative importance of the different terms in <a href="acidbase.html#eq:H3Aconsermass1">(10.17)</a> and make simplifications and approximations that are amply sufficient to obtain robust graphical representations of the <span class="math inline">\(log(conc)=f(pH)\)</span>. Indeed, one can make the hypothesis that for pH near pK<sub>1</sub>, <span class="math inline">\([H_3A]\)</span> and <span class="math inline">\([H_2A^-]\)</span> are by far the most prepoderant forms, such that the conservation of mass equation:</p>
+<p></br>
+<span class="math display" id="eq:H3Aconcmass">\[\begin{equation}
+C_T = [H_3A] + [H_2A^-] + [HA^{2-}] + [A^{3-}]
+\tag{10.39}
+\end{equation}\]</span>
+</br></p>
+<p>can be approximated into</p>
+<p></br>
+<span class="math display" id="eq:H3Aconcmassapprox">\[\begin{equation}
+C_T \approx [H_3A] + [H_2A^-]
+\tag{10.40}
+\end{equation}\]</span>
+</br></p>
+<p>This is now a familiar problem which has already been solved for a monoprotic acid, for <span class="math inline">\(pH &lt; pK_1 - 1\)</span> and for <span class="math inline">\(pH &gt; pK_1 + 1\)</span> (Table <a href="acidbase.html#tab:AHAsumtable">10.1</a>). For example, for <span class="math inline">\(pH &lt; pK_1 - 1\)</span> and by analogy to results summarized in Table <a href="acidbase.html#tab:AHAsumtable">10.1</a>, all concentrations can be approximated by:</p>
+<p></br>
+<span class="math display" id="eq:H3Aformsapprox">\[\begin{equation}
+[H_3A] \approx C_T \\
+[H_2A^-] \approx \frac{C_T.K_1}{[H^+]}  \\
+[HA^{2-}] \approx \frac{C_T.K_1.K_2}{[H^+]^2}  \\
+[A^{3-}] \approx \frac{C_T.K_1.K_2.K_3}{[H^+]^3} 
+\tag{10.41}
+\end{equation}\]</span>
+</br></p>
+<p>Obviously, the conservation of mass equation can be simplified the same way for pH near pK<sub>2</sub>, where <span class="math inline">\([H_2A^-]\)</span> and <span class="math inline">\([HA^{2-}]\)</span> can be hypothesized to be largely preponderant, and similarly for pH near pK<sub>3</sub>, where <span class="math inline">\([HA^{2-}]\)</span> and <span class="math inline">\([A^{3-}]\)</span> can be hypothesized to be preponderant. In the end, it is possible, for given pH ranges outside of the <span class="math inline">\(pK_x \pm 1\)</span> to simplify the equations of each of the conjugate acid forms, and the expression of <span class="math inline">\(log(conc)=f(pH)\)</span>. For a triprotic acid, this is summarized in Table <a href="acidbase.html#tab:H3Asumtable">10.2</a> below.</p>
+<p></br></br></p>
+<table>
+<caption>
+<span id="tab:H3Asumtable">Table 10.2: </span>Summary of the expressions and approximated expressions of <span class="math inline">\(conc\)</span>, and <span class="math inline">\(log(conc)\)</span> for a triprotic acid as a function of pH for <span class="math inline">\(H^+\)</span>, <span class="math inline">\(OH^-\)</span>, <span class="math inline">\([H_3A]\)</span>, <span class="math inline">\([H_2A^-]\)</span>, <span class="math inline">\([HA^{2-}]\)</span>, and <span class="math inline">\([A^{3-}]\)</span>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+</th>
+<th style="text-align:center;">
+pH &lt; pK<sub>1</sub>-1
+</th>
+<th style="text-align:center;">
+</th>
+<th style="text-align:center;">
+pK<sub>1</sub>+1&lt; pH &lt; pK<sub>2</sub>-1
+</th>
+<th style="text-align:center;">
+</th>
+<th style="text-align:center;">
+pK<sub>2</sub>+1&lt; pH &lt; pK<sub>3</sub>-1
+</th>
+<th style="text-align:center;">
+</th>
+<th style="text-align:center;">
+pH &gt; pK<sub>3</sub>+1
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\([H^+]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(10^{-pH}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(10^{-pH}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(10^{-pH}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(10^{-pH}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\([OH^-]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(10^{-14+pH}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(10^{-14+pH}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(10^{-14+pH}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(10^{-14+pH}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\([H_3A]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C_T\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.[H^+]}{K_1}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.[H^+]^2}{K_1.K_2}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.[H^+]^3}{K_1.K_2.K_3}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\([H_2A^-]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.K_1}{[H^+]}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C_T\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.[H^+]}{K_2}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.[H^+]^2}{K_2.K_3}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\([HA^{2-}]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.K_1.K_2}{[H^+]^2}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.K_2}{[H^+]}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C_T\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.[H^+]}{K_3}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\([A^{3-}]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.K_1.K_2.K_3}{[H^+]^3}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.K_2.K_3}{[H^+]^2}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(\frac{C_T.K_3}{[H^+]}\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C_T\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\(log[H^+]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(-pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(-pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(-pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(-pH\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\(log[OH^-]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(-14+pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(-14+pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(-14+pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(-14+pH\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\(log[H_3A]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(log(C_T)\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} - pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} - 2pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} - 3pH\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\(log[H_2A^-]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} + pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(log(C_T)\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} - pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} - 2pH\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\(log[HA^{2-}]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} + 2pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} + pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(log(C_T)\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} - pH\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<span class="math inline">\(log[A^{3-}]\)</span>
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} + 3pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} + 2pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(C^{st} + pH\)</span>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+<span class="math inline">\(log(C_T)\)</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p></br></br></p>
+<p>Similarly to the case for monoprotic acids, the equations for the <span class="math inline">\(log(conc)=f(pH)\)</span> in Table <a href="acidbase.html#tab:H3Asumtable">10.2</a> are sometimes truncated into, e.g., <span class="math inline">\(C^{st} + pH\)</span>, <span class="math inline">\(C^{st}\)</span> meaning ‘constant’. The reason for this is that these equations correspond to the equations of the straight lines that serve as guidelines for the actual <span class="math inline">\(log(conc)\)</span> curves, and this straight lines intersect at <span class="math inline">\(pK_x\)</span>. It is thus possible to draw all these guidelines as illustrated in Figure <a href="acidbase.html#fig:H3PO4-pH">10.16</a> below for the conjugate acids of phosphate <span class="math inline">\(PO_4^{3-}\)</span>. Following the principles described in section <a href="acidbase.html#logConcMonoAcid">10.6.2</a> above, the <span class="math inline">\(log(conc)\)</span> curves follow the guidelines outside the <span class="math inline">\(pH=pK_x \pm 1\)</span>. The actual curves illustrated in Figure <a href="acidbase.html#fig:H3PO4-pH">10.16</a> actually deviate from the guidelines for <span class="math inline">\(pH=pK_x \pm 1.4\)</span> as already observed in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>. Again, this is of minor importance to graphically determine the pH of a solution.</p>
+<p>One can also verify that for pH near pK<sub>x</sub>, there are two preponderant forms, and that other forms are at least 10<sup>-5</sup> times lower, which justifies the approach used to simplify the equation of conservation of mass (equation <a href="acidbase.html#eq:H3Aconcmass">(10.39)</a>) to only two terms (e.g., equation <a href="acidbase.html#eq:H3Aconcmassapprox">(10.40)</a>). Notice that the curves for the equations <span class="math inline">\(C^{st} \pm 3pH\)</span> are ‘too low’ to appear on Figure <a href="acidbase.html#fig:H3PO4-pH">10.16</a>.</p>
+<p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:H3PO4-pH"></span>
-<img src="Textbook_BAE587_files/figure-html/H3PO4-pH-1.png" alt="Forms of polyprotic phosphoric acid for total concentration of 10^-3.5^M as a function of pH at 25°C" width="85%" />
+<img src="Textbook_BAE587_files/figure-html/H3PO4-pH-1.png" alt="Forms of polyprotic phosphoric acid for total concentration of 10^-3.2^M as a function of pH at 25°C. pK~1~=2.12; pK~2~=7.21; pK~3~=12.67" width="85%" />
 <p class="caption">
-Figure 10.16: Forms of polyprotic phosphoric acid for total concentration of 10<sup>-3.5</sup>M as a function of pH at 25°C
+Figure 10.16: Forms of polyprotic phosphoric acid for total concentration of 10<sup>-3.2</sup>M as a function of pH at 25°C. pK<sub>1</sub>=2.12; pK<sub>2</sub>=7.21; pK<sub>3</sub>=12.67
+</p>
+</div>
+<p></br></p>
+<p>With this graph in hand, and for <span class="math inline">\(C_T = 10^{-3.2}M\)</span> as illustrated in Figure <a href="acidbase.html#fig:H3PO4-pH">10.16</a>, it becomes possible to graphically evaluate the pH of a solution in which a weak acid salt, e.g., <span class="math inline">\(NaH_2PO_4\)</span>, or a weak base salt, e.g., <span class="math inline">\(CaHPO_4\)</span> would be added in solution for a final <span class="math inline">\(C_T = 10^{-3.2}M\)</span>.</p>
+<hr />
+<p>In the case of the <span class="math inline">\(NaH_2PO_4\)</span> salt added, combining the electroneutrality and conservation of mass equations would yield:</p>
+<p></br>
+<span class="math display" id="eq:NaH2PO4comb">\[\begin{equation}
+[H_3PO_4] + [H^+] = [HPO_4^{2-}] + 2 [PO_4^{3-}] + [OH^-]
+\tag{10.42}
+\end{equation}\]</span>
+</br></p>
+<p>One can seen on Figure <a href="acidbase.html#fig:H3PO4-pH">10.16</a> that for this <span class="math inline">\(C_T\)</span>, <span class="math inline">\([H_3PO_4] &lt; 10[H^+]\)</span>, and <span class="math inline">\(2 [PO_4^{3-}] + [OH^-] \ll [HPO_4^{2-}]\)</span>, such that equation `<a href="acidbase.html#eq:NaH2PO4comb">(10.42)</a> can be approximated as <span class="math inline">\([H^+] \approx [HPO_4^{2-}]\)</span>. This means that the pH would correspond to that of the intersection between the <span class="math inline">\(log[H^+]\)</span> and <span class="math inline">\(log[HPO_4^{2-}]\)</span> lines.</p>
+<hr />
+<p>In the case of <span class="math inline">\(CaHPO_4\)</span> salt added, combining the electroneutrality and conservation of mass equations would yield:</p>
+<p></br>
+<span class="math display" id="eq:CaHPO4comb">\[\begin{equation}
+2[H_3PO_4] + [H_2PO_4^-] + [H^+] = [PO_4^{3-}] + [OH^-]
+\tag{10.43}
+\end{equation}\]</span>
+</br></p>
+<p>One can seen on Figure <a href="acidbase.html#fig:H3PO4-pH">10.16</a> that for this <span class="math inline">\(C_T\)</span>, <span class="math inline">\(2[H_3PO_4] + [H^+] \ll [H_2PO_4^-]\)</span>, and that <span class="math inline">\([PO_4^{3-}] \ll [OH^-]\)</span>, such that equation <a href="acidbase.html#eq:CaHPO4comb">(10.43)</a> can be approximated as <span class="math inline">\([H_2PO_4^-] \approx [OH^-]\)</span>. This means that in this case the pH would correspond to that of the intersection between the <span class="math inline">\(log[H_2PO_4^-]\)</span> and <span class="math inline">\(log[OH^-]\)</span> lines.</p>
+<hr />
+<p>Such pH determinations can be done for a variety of <span class="math inline">\(C_T\)</span> values corresponding to the addition of the weak acid <span class="math inline">\(NaH_2PO_4\)</span> salt, and to the addition of the weak base salt <span class="math inline">\(CaHPO_4\)</span>. Several conditions must be met, including that the simplifications described above apply, and that the curves cross on their linear portions. An illustration of the possibilities, or not, of graphically determining the pH is provided in Figure <a href="acidbase.html#fig:PO4-pH-gif">10.17</a>.</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:PO4-pH-gif"></span>
+<img src="pictures/animated_PO4vspH_large.gif" alt="Graphical determination of pH as a function of variable C~T~ when the weak acid salt $NaH_2PO_4$, and when the weak base salt $CaHPO_4$ are added into solution" width="75%" />
+<p class="caption">
+Figure 10.17: Graphical determination of pH as a function of variable C<sub>T</sub> when the weak acid salt <span class="math inline">\(NaH_2PO_4\)</span>, and when the weak base salt <span class="math inline">\(CaHPO_4\)</span> are added into solution
 </p>
 </div>
 <p></br></p>
@@ -1219,7 +1622,7 @@ Figure 10.16: Forms of polyprotic phosphoric acid for total concentration of 10<
 <div class="figure" style="text-align: center"><span id="fig:H2CO3-pH"></span>
 <img src="Textbook_BAE587_files/figure-html/H2CO3-pH-1.png" alt="Carbonates and conjugate acids in *__a closed system__* for total concentration of 10^-3.4^M as a function of pH at 25°C" width="85%" />
 <p class="caption">
-Figure 10.17: Carbonates and conjugate acids in <em><strong>a closed system</strong></em> for total concentration of 10<sup>-3.4</sup>M as a function of pH at 25°C
+Figure 10.18: Carbonates and conjugate acids in <em><strong>a closed system</strong></em> for total concentration of 10<sup>-3.4</sup>M as a function of pH at 25°C
 </p>
 </div>
 <p></br></p>
@@ -1227,7 +1630,7 @@ Figure 10.17: Carbonates and conjugate acids in <em><strong>a closed system</str
 <div class="figure" style="text-align: center"><span id="fig:pH-seawater"></span>
 <img src="Textbook_BAE587_files/figure-html/pH-seawater-1.png" alt="Concentrations of carbonates and conjugate acids in *__an open system__* in equilibrium with atmospheric CO~2~ as a function of pH at 25°C. Graphical method to calculate theoretical pH of rainwater" width="85%" />
 <p class="caption">
-Figure 10.18: Concentrations of carbonates and conjugate acids in <em><strong>an open system</strong></em> in equilibrium with atmospheric CO<sub>2</sub> as a function of pH at 25°C. Graphical method to calculate theoretical pH of rainwater
+Figure 10.19: Concentrations of carbonates and conjugate acids in <em><strong>an open system</strong></em> in equilibrium with atmospheric CO<sub>2</sub> as a function of pH at 25°C. Graphical method to calculate theoretical pH of rainwater
 </p>
 </div>
 <p></br></p>
@@ -1235,27 +1638,27 @@ Figure 10.18: Concentrations of carbonates and conjugate acids in <em><strong>an
 <div class="figure" style="text-align: center"><span id="fig:pH-rainwater"></span>
 <img src="Textbook_BAE587_files/figure-html/pH-rainwater-1.png" alt="Concentrations of carbonates and conjugate acids in *__an open system__* in equilibrium with atmospheric CO~2~ as a function of pH at 25°C. Graphical method to calculate theoretical pH of rainwater" width="85%" />
 <p class="caption">
-Figure 10.19: Concentrations of carbonates and conjugate acids in <em><strong>an open system</strong></em> in equilibrium with atmospheric CO<sub>2</sub> as a function of pH at 25°C. Graphical method to calculate theoretical pH of rainwater
+Figure 10.20: Concentrations of carbonates and conjugate acids in <em><strong>an open system</strong></em> in equilibrium with atmospheric CO<sub>2</sub> as a function of pH at 25°C. Graphical method to calculate theoretical pH of rainwater
 </p>
 </div>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:SO4-HS-pe"></span>
 <img src="Textbook_BAE587_files/figure-html/SO4-HS-pe-1.png" alt="Concentrations of Sulfate and hydrogen sulfide as a function of p&amp;epsilon;" width="100%" />
 <p class="caption">
-Figure 10.20: Concentrations of Sulfate and hydrogen sulfide as a function of pε
+Figure 10.21: Concentrations of Sulfate and hydrogen sulfide as a function of pε
 </p>
 </div>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:CO2-CH2O-pe"></span>
 <img src="Textbook_BAE587_files/figure-html/CO2-CH2O-pe-1.png" alt="Concentrations of a generic carbohydrate CH~2~O and CO~2~ that would be in equilibrium with the atmosphere as a function of p&amp;epsilon; and for a given pH" width="100%" />
 <p class="caption">
-Figure 10.21: Concentrations of a generic carbohydrate CH<sub>2</sub>O and CO<sub>2</sub> that would be in equilibrium with the atmosphere as a function of pε and for a given pH
+Figure 10.22: Concentrations of a generic carbohydrate CH<sub>2</sub>O and CO<sub>2</sub> that would be in equilibrium with the atmosphere as a function of pε and for a given pH
 </p>
 </div>
 <div class="figure" style="text-align: center"><span id="fig:NH4-NO2-NO3-pe"></span>
 <img src="Textbook_BAE587_files/figure-html/NH4-NO2-NO3-pe-1.png" alt="Concentrations ammonium, nitrite, and nitrate as a function of p&amp;epsilon; and for a given pH" width="100%" />
 <p class="caption">
-Figure 10.22: Concentrations ammonium, nitrite, and nitrate as a function of pε and for a given pH
+Figure 10.23: Concentrations ammonium, nitrite, and nitrate as a function of pε and for a given pH
 </p>
 </div>
 <p><strong><em>This chapter is still under construction</em></strong></p>

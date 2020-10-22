@@ -6,5 +6,5 @@ $[A]$,$\frac{C_T . K_A}{[H^+]}$,,$\frac{C_T}{2}$,,$C_T$
 \n," "," "," "," "," "
 $log[H^+]$,$-pH$,,$-pH$,,$-pH$
 $log[OH^-]$,$-14+pH$,,$-14+pH$,,$-14+pH$
-$log[AH^+]$,$log(C_T)$,,$log(C_T) - log(2)$,,$C^{te} - pH$
-$log[A]$,$C^{te} + pH$,,$log(C_T) - log(2)$,,$log(C_T)$
+$log[AH^+]$,$log(C_T)$,,$log(C_T) - log(2)$,,$C^{st} - pH$
+$log[A]$,$C^{st} + pH$,,$log(C_T) - log(2)$,,$log(C_T)$
