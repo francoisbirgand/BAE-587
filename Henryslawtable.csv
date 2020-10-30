@@ -1,0 +1,13 @@
+gas,vantoffCoef,Kh0mol_m3_Pa,expression,equilibrium
+"He",230,3.8e-6,"He",$He_{(g)} \rightleftharpoons He_{(aq)}$
+"Ne",490,4.45e-6,"Ne",$Ne_{(g)} \rightleftharpoons Ne_{(aq)}$
+"Ar",1600,1.4e-5,"Ar",$Ar_{(g)} \rightleftharpoons Ar_{(aq)}$
+"H2",500,7.75e-6,H[2],$H_{2(g)} \rightleftharpoons H_{2(aq)}$
+"O2",1700,1.25e-5,O[2],$O_{2(g)} \rightleftharpoons O_{2(aq)}$
+"CO",1300,9.7e-6,"CO",$CO_{(g)} \rightleftharpoons CO_{(aq)}$
+"CO2",2400,3.35e-4,CO[2],$CO_{2(g)} \rightleftharpoons CO_{2(aq)}$
+"CH4",1600,1.4e-5,CH[4],$CH_{4(g)} \rightleftharpoons CH_{4(aq)}$
+"H2S",2100,1e-3,"paste(H["2"],"S")",$H_{2}S_{(g)} \rightleftharpoons H_{2}S_{(aq)}$
+"N2",1300,6.4e-6,N[2],$N_{2(g)} \rightleftharpoons N_{2(aq)}$
+"N2O",2600,2.4e-4,"paste(N["2"],"O")",$N_2O{(g)} \rightleftharpoons N_2O{(aq)}$
+"NH3",4200,5.9e-1,NH[3],$NH_{3(g)} \rightleftharpoons NH_{3(aq)}$
