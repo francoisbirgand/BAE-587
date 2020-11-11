@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2020-10-29" />
+<meta name="date" content="2020-11-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -239,7 +239,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7" data-path="redoxwetland.html"><a href="redoxwetland.html"><i class="fa fa-check"></i><b>7</b> The classical collection of electron donors and acceptors</a><ul>
 <li class="chapter" data-level="7.1" data-path="redoxwetland.html"><a href="redoxwetland.html#the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils"><i class="fa fa-check"></i><b>7.1</b> The theoretical vertical sequence of respiratory processes in wetland soils</a></li>
-<li class="chapter" data-level="7.2" data-path="redoxwetland.html"><a href="redoxwetland.html#an-aerobic-layer-near-the-soil-water-interface"><i class="fa fa-check"></i><b>7.2</b> An aerobic layer near the soil-water interface</a></li>
+<li class="chapter" data-level="7.2" data-path="redoxwetland.html"><a href="redoxwetland.html#aerobiczone"><i class="fa fa-check"></i><b>7.2</b> An aerobic layer near the soil-water interface</a></li>
 <li class="chapter" data-level="7.3" data-path="redoxwetland.html"><a href="redoxwetland.html#respiration-in-the-anaerobic-zone-of-the-soil"><i class="fa fa-check"></i><b>7.3</b> Respiration in the anaerobic zone of the soil</a></li>
 <li class="chapter" data-level="7.4" data-path="redoxwetland.html"><a href="redoxwetland.html#denit"><i class="fa fa-check"></i><b>7.4</b> A denitrification layer below the aerobic layer</a></li>
 <li class="chapter" data-level="7.5" data-path="redoxwetland.html"><a href="redoxwetland.html#manganese-and-iron-oxides-reductions"><i class="fa fa-check"></i><b>7.5</b> Manganese and Iron oxides reductions</a></li>
@@ -288,9 +288,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.6.3" data-path="acidbase.html"><a href="acidbase.html#logConcTriAcid"><i class="fa fa-check"></i><b>10.6.3</b> Graphical approach to calculate pH for a triprotic acid</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="solubility.html"><a href="solubility.html"><i class="fa fa-check"></i><b>11</b> Dissolved gases in water</a><ul>
-<li class="chapter" data-level="11.1" data-path="solubility.html"><a href="solubility.html#henrys-law-and-the-dissolution-of-gases-in-water"><i class="fa fa-check"></i><b>11.1</b> Henry’s law and the dissolution of gases in water</a></li>
-<li class="chapter" data-level="11.2" data-path="solubility.html"><a href="solubility.html#solubility-for-relevant-gases-in-ecological-engineering"><i class="fa fa-check"></i><b>11.2</b> Solubility for relevant gases in ecological engineering</a></li>
+<li class="chapter" data-level="11" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html"><i class="fa fa-check"></i><b>11</b> Dissolved gases in water</a><ul>
+<li class="chapter" data-level="11.1" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html#henrys-law-and-the-dissolution-of-gases-in-water"><i class="fa fa-check"></i><b>11.1</b> Henry’s law and the dissolution of gases in water</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html#equivalence-between-gas-partial-pressures-and-dissolved-concentration"><i class="fa fa-check"></i><b>11.1.1</b> Equivalence between gas partial pressures and dissolved concentration</a></li>
+<li class="chapter" data-level="11.1.2" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html#solubility-of-gases-as-a-function-of-temperature"><i class="fa fa-check"></i><b>11.1.2</b> Solubility of gases as a function of temperature</a></li>
+<li class="chapter" data-level="11.1.3" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html#actual-solubility-values-of-water-in-equilibrium-with-the-atmosphere"><i class="fa fa-check"></i><b>11.1.3</b> Actual solubility values of water in equilibrium with the atmosphere</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><i class="fa fa-check"></i><b>12</b> Introduction to hydrographs, chemographs, concentrations, and loads</a><ul>
 <li class="chapter" data-level="12.1" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#hydrographs-as-the-basic-hydrologist-tool"><i class="fa fa-check"></i><b>12.1</b> Hydrographs as the basic hydrologist tool</a><ul>
@@ -786,7 +789,7 @@ Figure A.20: Binding and anti-binding regions where electrons might be located a
 <div class="figure" style="text-align: center"><span id="fig:H2OrbitalsAnimation"></span>
 <img src="pictures/H2OrbitalsAnimation.gif" alt="Electron wavefunctions for the 1s orbital of a lone hydrogen atom (left and right) and the corresponding bonding (bottom) and antibonding (top) molecular orbitals of the H~2~ molecule. The real part of the wavefunction is the blue curve, and the imaginary part is the red curve. The red dots mark the locations of the nuclei. The electron wavefunction oscillates according to the Schrödinger wave equation, and orbitals are its standing waves. The standing wave frequency is proportional to the orbital's kinetic energy. (This plot is a one-dimensional slice through the three-dimensional system.) Caption and figure from [@Wikipedia_contributors2020-km]" width="45%" />
 <p class="caption">
-Figure A.21: Electron wavefunctions for the 1s orbital of a lone hydrogen atom (left and right) and the corresponding bonding (bottom) and antibonding (top) molecular orbitals of the H<sub>2</sub> molecule. The real part of the wavefunction is the blue curve, and the imaginary part is the red curve. The red dots mark the locations of the nuclei. The electron wavefunction oscillates according to the Schrödinger wave equation, and orbitals are its standing waves. The standing wave frequency is proportional to the orbital’s kinetic energy. (This plot is a one-dimensional slice through the three-dimensional system.) Caption and figure from <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2020-km">2020</a><a href="#ref-Wikipedia_contributors2020-km">c</a>)</span>
+Figure A.21: Electron wavefunctions for the 1s orbital of a lone hydrogen atom (left and right) and the corresponding bonding (bottom) and antibonding (top) molecular orbitals of the H<sub>2</sub> molecule. The real part of the wavefunction is the blue curve, and the imaginary part is the red curve. The red dots mark the locations of the nuclei. The electron wavefunction oscillates according to the Schrödinger wave equation, and orbitals are its standing waves. The standing wave frequency is proportional to the orbital’s kinetic energy. (This plot is a one-dimensional slice through the three-dimensional system.) Caption and figure from <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2020-km">2020</a><a href="#ref-Wikipedia_contributors2020-km">d</a>)</span>
 </p>
 </div>
 <p></br></p>
@@ -869,7 +872,7 @@ Figure A.26: Molecular orbital diagrams for homonuclear diatomic molecules for C
 <li><em>Ground state</em>: the ground state is defined as the lowest allowed energy state of an atom, molecule, or ion. In other words, the ground state represents the most stable configuration</li>
 <li><em>triplet</em>: this refers to having two unpaired electrons (Figure <a href="appendix-a.html#fig:Spin-multiplicity-diagram">A.27</a>) in the molecular orbital. The word ‘triplet’ comes, in short, from the fact that the <a href="https://en.wikipedia.org/wiki/Electron_paramagnetic_resonance">Electron spin resonance spectrum</a> of O<sub>2</sub> emits photons with three spectral lines, hence <a href="https://en.wikipedia.org/wiki/Triplet_state">triplet</a>.</li>
 <li><em>paramagnetic</em>: this means that liquid O<sub>2</sub> is weakly attracted by an externally applied magnetic field. This is due to the two unpaired electrons in the molecular orbital that have parallel spins (upward arrows on Figure <a href="appendix-a.html#fig:MOC2N2O2">A.26</a>). Molecules with inverted spins are called <em>diamagnetic</em></li>
-<li><em>biradical</em> (also sometimes called <em>diradical</em>): a radical is an atom that has an unpaired electron. The MO having two unpaired electrons, O<sub>2</sub> is thus a <em>biradical</em> (or <em>diradical</em>)<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></li>
+<li><em>biradical</em> (also sometimes called <em>diradical</em>): a radical is an atom that has an unpaired electron. The MO having two unpaired electrons, O<sub>2</sub> is thus a <em>biradical</em> (or <em>diradical</em>)<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></li>
 </ul>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:Spin-multiplicity-diagram"></span>
@@ -995,14 +998,14 @@ H_2O_2 + e^- \rightarrow \space ^\bullet OH + OH^-\\
 <p>Wikipedia contributors. 2020b. “Molecular Orbital Diagram.” <a href="https://en.wikipedia.org/w/index.php?title=Molecular_orbital_diagram&amp;oldid=950745475">https://en.wikipedia.org/w/index.php?title=Molecular_orbital_diagram&amp;oldid=950745475</a>. <a href="https://en.wikipedia.org/w/index.php?title=Molecular_orbital_diagram&amp;oldid=950745475">https://en.wikipedia.org/w/index.php?title=Molecular_orbital_diagram&amp;oldid=950745475</a>.</p>
 </div>
 <div id="ref-Wikipedia_contributors2020-km">
-<p>Wikipedia contributors. 2020c. “Molecular Orbital.” <a href="https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232">https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232</a>. <a href="https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232">https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232</a>.</p>
+<p>Wikipedia contributors. 2020d. “Molecular Orbital.” <a href="https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232">https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232</a>. <a href="https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232">https://en.wikipedia.org/w/index.php?title=Molecular_orbital&amp;oldid=978346232</a>.</p>
 </div>
 </div>
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>According to the IUPAC Compendium of Chemical Terminology, the so-called Gold Book, <em>biradical</em> is a technical term for
-molecules in which the two electrons act independently or nearly independently. Thus, <em>biradicals</em> are most easily understood as two doublets in a molecule. In other words, the electron exchange interaction between the two unpaired electrons is negligible or nearly negligible for <em>biradicals</em> because of the long distance between the two electrons. When the magnitude of the dipole−dipole interaction in a molecule is large enough to produce two spin states, namely, singlet and triplet, the molecular species with the two unpaired electrons is referred to as a <em>diradical.</em> <span class="citation">(Abe <a href="#ref-Abe2013-kg">2013</a>)</span><a href="appendix-a.html#fnref1" class="footnote-back">↩</a></p></li>
+<ol start="2">
+<li id="fn2"><p>According to the IUPAC Compendium of Chemical Terminology, the so-called Gold Book, <em>biradical</em> is a technical term for
+molecules in which the two electrons act independently or nearly independently. Thus, <em>biradicals</em> are most easily understood as two doublets in a molecule. In other words, the electron exchange interaction between the two unpaired electrons is negligible or nearly negligible for <em>biradicals</em> because of the long distance between the two electrons. When the magnitude of the dipole−dipole interaction in a molecule is large enough to produce two spin states, namely, singlet and triplet, the molecular species with the two unpaired electrons is referred to as a <em>diradical.</em> <span class="citation">(Abe <a href="#ref-Abe2013-kg">2013</a>)</span><a href="appendix-a.html#fnref2" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>

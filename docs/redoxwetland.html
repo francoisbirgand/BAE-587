@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2020-10-29" />
+<meta name="date" content="2020-11-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -239,7 +239,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7" data-path="redoxwetland.html"><a href="redoxwetland.html"><i class="fa fa-check"></i><b>7</b> The classical collection of electron donors and acceptors</a><ul>
 <li class="chapter" data-level="7.1" data-path="redoxwetland.html"><a href="redoxwetland.html#the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils"><i class="fa fa-check"></i><b>7.1</b> The theoretical vertical sequence of respiratory processes in wetland soils</a></li>
-<li class="chapter" data-level="7.2" data-path="redoxwetland.html"><a href="redoxwetland.html#an-aerobic-layer-near-the-soil-water-interface"><i class="fa fa-check"></i><b>7.2</b> An aerobic layer near the soil-water interface</a></li>
+<li class="chapter" data-level="7.2" data-path="redoxwetland.html"><a href="redoxwetland.html#aerobiczone"><i class="fa fa-check"></i><b>7.2</b> An aerobic layer near the soil-water interface</a></li>
 <li class="chapter" data-level="7.3" data-path="redoxwetland.html"><a href="redoxwetland.html#respiration-in-the-anaerobic-zone-of-the-soil"><i class="fa fa-check"></i><b>7.3</b> Respiration in the anaerobic zone of the soil</a></li>
 <li class="chapter" data-level="7.4" data-path="redoxwetland.html"><a href="redoxwetland.html#denit"><i class="fa fa-check"></i><b>7.4</b> A denitrification layer below the aerobic layer</a></li>
 <li class="chapter" data-level="7.5" data-path="redoxwetland.html"><a href="redoxwetland.html#manganese-and-iron-oxides-reductions"><i class="fa fa-check"></i><b>7.5</b> Manganese and Iron oxides reductions</a></li>
@@ -288,9 +288,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.6.3" data-path="acidbase.html"><a href="acidbase.html#logConcTriAcid"><i class="fa fa-check"></i><b>10.6.3</b> Graphical approach to calculate pH for a triprotic acid</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="solubility.html"><a href="solubility.html"><i class="fa fa-check"></i><b>11</b> Dissolved gases in water</a><ul>
-<li class="chapter" data-level="11.1" data-path="solubility.html"><a href="solubility.html#henrys-law-and-the-dissolution-of-gases-in-water"><i class="fa fa-check"></i><b>11.1</b> Henry’s law and the dissolution of gases in water</a></li>
-<li class="chapter" data-level="11.2" data-path="solubility.html"><a href="solubility.html#solubility-for-relevant-gases-in-ecological-engineering"><i class="fa fa-check"></i><b>11.2</b> Solubility for relevant gases in ecological engineering</a></li>
+<li class="chapter" data-level="11" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html"><i class="fa fa-check"></i><b>11</b> Dissolved gases in water</a><ul>
+<li class="chapter" data-level="11.1" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html#henrys-law-and-the-dissolution-of-gases-in-water"><i class="fa fa-check"></i><b>11.1</b> Henry’s law and the dissolution of gases in water</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html#equivalence-between-gas-partial-pressures-and-dissolved-concentration"><i class="fa fa-check"></i><b>11.1.1</b> Equivalence between gas partial pressures and dissolved concentration</a></li>
+<li class="chapter" data-level="11.1.2" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html#solubility-of-gases-as-a-function-of-temperature"><i class="fa fa-check"></i><b>11.1.2</b> Solubility of gases as a function of temperature</a></li>
+<li class="chapter" data-level="11.1.3" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html#actual-solubility-values-of-water-in-equilibrium-with-the-atmosphere"><i class="fa fa-check"></i><b>11.1.3</b> Actual solubility values of water in equilibrium with the atmosphere</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><i class="fa fa-check"></i><b>12</b> Introduction to hydrographs, chemographs, concentrations, and loads</a><ul>
 <li class="chapter" data-level="12.1" data-path="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#hydrographs-as-the-basic-hydrologist-tool"><i class="fa fa-check"></i><b>12.1</b> Hydrographs as the basic hydrologist tool</a><ul>
@@ -467,11 +470,11 @@ Beyond wetlands, there are other respiratory processes relevant to biogeochemica
 <h2><span class="header-section-number">7.1</span> The theoretical vertical sequence of respiratory processes in wetland soils</h2>
 <p>For this we will use a theoretical wetland soil to illustrate our point. Such theoretical soil has ‘enough’ organic matter content for microbial respiration to take place throughout its profile, ‘enough’ of other sand, silt, and clay and all the minerals that accompany them, including iron and manganese oxides. Let us assume that this theoretical soil, is sufficiently moist and aerated for microbial aerobic respiration to take place throughout the soil profile. Let us then assume that this soil is suddenly flooded, and let us explore the consequences of this. Respiratory processes are going to occur on a temporal sequence, which in fact will be mirrored by a vertical sequence of processes in the wetland sediment.</p>
 </div>
-<div id="an-aerobic-layer-near-the-soil-water-interface" class="section level2">
+<div id="aerobiczone" class="section level2">
 <h2><span class="header-section-number">7.2</span> An aerobic layer near the soil-water interface</h2>
 <p>At first, all micro-organisms are going to use all the oxygen that might be present in the pore space. But because pore space is now getting filled with water, it is possible that the amount of oxygen available for microorganisms might change. And yes, indeed, water does not have nearly the capacity to provide oxygen as air does for several reasons:</p>
 <ul>
-<li>at 15°C in water there are about 10 mg of O<sub>2</sub> in one liter of water. Comparatively, in one liter of air, there is about 300 mg of O<sub>2</sub>, or <strong>30 times</strong> more. How does one calculate this? At standard conditions, 1 liter of air at 21% oxygen possesses 0.21 L of oxygen. Since for these conditions, 1 mole of gas occupies 22.4 L, simply divide 0.21/22.4, to arrive at 0.0094 moles of oxygen. Then the mass of oxygen in 1 liter of air is 0.0094×32 g/mole = 300 mg.</li>
+<li>at 15°C in water there are about 10 mg of O<sub>2</sub> in one liter of water. Comparatively, in one liter of air, there is about 300 mg of O<sub>2</sub>, or <strong>30 times</strong> more. How does one calculate this? At standard conditions, 1 liter of air at 21% oxygen possesses 0.21 L of oxygen. Since for these conditions, 1 mole of gas occupies 22.4 L, simply divide 0.21/22.4, to arrive at 0.0094 moles of oxygen. Then the mass of oxygen in 1 liter of air is 0.0094×32 g/mole = 300 mg. A lot more details are available in Chapter <a href="gassolubilitychapter.html#gassolubilitychapter">11</a> on dissolution of gases in water.</li>
 <li>the diffusivity (which quantifies the ability of elements to move about) of O<sub>2</sub> in air is 0.176 cm²/s while that of O<sub>2</sub> in water is 2.10×10<sup>−5</sup> cm²/s, or more than <strong>8,000 times smaller</strong> <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2017-id">2017</a>)</span></li>
 </ul>
 <p>In other words, it is good to remember that <strong>the amount of oxygen available in water compared to air is about 30 less, and that oxygen in water moves more than 8,000 slower in water than in air</strong>.</p>
@@ -674,7 +677,7 @@ Figure 7.14: Diffusion fluxes of electron acceptors and all other soil diagenesi
 </p>
 </div>
 <p>The demands for dioxygen, nitrate, and sulfate in their respective layers, lower their concentrations compared to the overlying water and layers, hence the formation of concentration gradients, which then drive downward diffusive fluxes of these electron acceptors to their respective layers. These fluxes are represented as downward arrows in Figure <a href="redoxwetland.html#fig:diagenesis-diffusion-directions">7.14</a>.</p>
-<p>Now, it is the imbalance between the supply from above and the demand from below, that explain why the downward diffusion does not go beyond the bottom of the respective layers 1, 2, and 5 in Figure <a href="redoxwetland.html#fig:diagenesis-diffusion-directions">7.14</a>. The limitation of supply has been described for dioxygen in section <a href="redoxwetland.html#an-aerobic-layer-near-the-soil-water-interface">7.2</a>. The diffusivity, distance, and tortuosity of the soil pores also apply for nitrate and sulfate, and explain why the demand is generally not met by the supply.</p>
+<p>Now, it is the imbalance between the supply from above and the demand from below, that explain why the downward diffusion does not go beyond the bottom of the respective layers 1, 2, and 5 in Figure <a href="redoxwetland.html#fig:diagenesis-diffusion-directions">7.14</a>. The limitation of supply has been described for dioxygen in section <a href="#an-aerobic-layer-near-the-soil-water-interface"><strong>??</strong></a>. The diffusivity, distance, and tortuosity of the soil pores also apply for nitrate and sulfate, and explain why the demand is generally not met by the supply.</p>
 </div>
 <div id="supply-of-byproducts-of-organic-matter-oxidation" class="section level3">
 <h3><span class="header-section-number">7.10.2</span> Supply of byproducts of organic matter oxidation</h3>

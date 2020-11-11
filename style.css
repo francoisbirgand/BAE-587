@@ -57,6 +57,28 @@ pre code {
     font-style: normal;
 }
 
+.rmd-problem {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: #f6f6f1;
+  position:relative;
+  font-family: "arial";
+  font-style: normal;
+  border-style: solid;
+  border-color: gray;
+}
+
+.rmd-problem:before {
+    content: "\f0c3";
+    font-family: FontAwesome;
+    left:10px;
+    position:absolute;
+    top:0px;
+    font-size: 40px;
+    font-style: normal;
+}
+
+
 .rmd-learning-objectives {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
