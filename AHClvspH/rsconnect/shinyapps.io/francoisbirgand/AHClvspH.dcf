@@ -5,8 +5,9 @@ account: francoisbirgand
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3038326
-bundleId: 3758643
+bundleId: 3849687
 url: https://francoisbirgand.shinyapps.io/AHClvspH/
-when: 1603118657.78171
+when: 1605142967.00674
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: app_ini.R

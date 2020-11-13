@@ -57,28 +57,6 @@ pre code {
     font-style: normal;
 }
 
-.rmd-problem {
-  padding: 1em 1em 1em 4em;
-  margin-bottom: 10px;
-  background: #f6f6f1;
-  position:relative;
-  font-family: "arial";
-  font-style: normal;
-  border-style: solid;
-  border-color: gray;
-}
-
-.rmd-problem:before {
-    content: "\f0c3";
-    font-family: FontAwesome;
-    left:10px;
-    position:absolute;
-    top:0px;
-    font-size: 40px;
-    font-style: normal;
-}
-
-
 .rmd-learning-objectives {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
@@ -138,3 +116,37 @@ pre code {
   background-image: url("pictures/study.png");
 }
 
+.exercise {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  position:relative;
+  font-family: "arial";
+  font-style: normal;
+  padding-left: 80px;
+  border-top: 2px solid #317EAC;
+  background: rgba(49, 126, 172, 0.1);
+}
+
+.theorem {
+  display: block;
+  font-style: italic;
+  font-size: 24px;
+  font-family: "Times New Roman";
+  color: black;
+  border-radius: 10px;
+  background-color: rgb(222,222,231);
+  box-shadow: 5px 10px 8px #888888;
+}
+.theorem::before {
+  font-weight: bold;
+  font-style: normal;
+  display: inline-block;
+  width: -webkit-fill-available;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 5px 5px 15px;
+  background-color: rgb(38, 38, 134);
+}
+.theorem p {
+  padding: 15px 15px 15px 15px;
+}
