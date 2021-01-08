@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 11 Dissolved gases in water | Biogeochemical Processes for Environmental and Ecological Engineering</title>
-  <meta name="description" content="Chapter 11 Dissolved gases in water | Biogeochemical Processes for Environmental and Ecological Engineering" />
-  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+  <title>Chapter 11 Dissolved gases in water | Biogeochemistry for Environmental and Ecological Engineering</title>
+  <meta name="description" content="Chapter 11 Dissolved gases in water | Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 11 Dissolved gases in water | Biogeochemical Processes for Environmental and Ecological Engineering" />
+  <meta property="og:title" content="Chapter 11 Dissolved gases in water | Biogeochemistry for Environmental and Ecological Engineering" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 11 Dissolved gases in water | Biogeochemical Processes for Environmental and Ecological Engineering" />
+  <meta name="twitter:title" content="Chapter 11 Dissolved gases in water | Biogeochemistry for Environmental and Ecological Engineering" />
   
   
   
@@ -24,15 +24,15 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2020-11-12" />
+<meta name="date" content="2021-01-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="acidbase.html">
-<link rel="next" href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html">
+<link rel="prev" href="acidbase.html"/>
+<link rel="next" href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -40,6 +40,7 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -47,6 +48,10 @@
 
 
 
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
@@ -270,7 +275,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.2" data-path="conc-levels.html"><a href="conc-levels.html#level-of-nutrient-concentrations-in-natural-undisturbed-streams"><i class="fa fa-check"></i><b>9.2</b> Level of nutrient concentrations in natural undisturbed streams</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="acidbase.html"><a href="acidbase.html"><i class="fa fa-check"></i><b>10</b> Applied thermochemistry: acid-base equilibria</a><ul>
-<li class="chapter" data-level="10.1" data-path="acidbase.html"><a href="acidbase.html#the-brnstedlowry-acidbase-theory"><i class="fa fa-check"></i><b>10.1</b> The Brønsted–Lowry acid–base theory</a></li>
+<li class="chapter" data-level="10.1" data-path="acidbase.html"><a href="acidbase.html#the-brønstedlowry-acidbase-theory"><i class="fa fa-check"></i><b>10.1</b> The Brønsted–Lowry acid–base theory</a></li>
 <li class="chapter" data-level="10.2" data-path="acidbase.html"><a href="acidbase.html#acid-base-equilibrium-parameters"><i class="fa fa-check"></i><b>10.2</b> Acid-base equilibrium parameters</a><ul>
 <li class="chapter" data-level="10.2.1" data-path="acidbase.html"><a href="acidbase.html#ka"><i class="fa fa-check"></i><b>10.2.1</b> K<sub>A</sub></a></li>
 <li class="chapter" data-level="10.2.2" data-path="acidbase.html"><a href="acidbase.html#pka"><i class="fa fa-check"></i><b>10.2.2</b> pK<sub>A</sub></a></li>
@@ -432,7 +437,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Biogeochemical Processes for Environmental and Ecological Engineering</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Biogeochemistry for Environmental and Ecological Engineering</a>
           </h1>
         </div>
 
@@ -451,13 +456,50 @@ Chapter summary:
 </li>
 </ul>
 </div>
+<p></br></br></p>
+<p>Let us admit it: dissolved gases have been a bit of a mystery for all of us at one point. When one sees sparkling water, it is obvious that there is gas dissolved in it as bubbles form on their own and one can see them form and escape. They also apparently seem to form more when the water temperature is warm than when a sparkling water bottle just comes out of the fridge (Figure <a href="gassolubilitychapter.html#fig:SparklingGasRelease">11.1</a>).</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:SparklingGasRelease"></span>
+<iframe src="https://www.youtube.com/embed/zglZ8cIBTFM" width="95%" height="400px">
+</iframe>
+<p class="caption">
+Figure 11.1: Dissolved gas bubble formation from a sparkling water bottle at 4°C and 25°C
+</p>
+</div>
+<p></br></p>
+<p>Figure <a href="gassolubilitychapter.html#fig:SparklingGasRelease">11.1</a> shows that temperature has to do something with how gases may dissolve in water. At warm temperature, the opening of the sparkling water bottle is accompanied by the release of gas under pressure in the bottle headspace and the sudden formation of many bubbles. At low temperature, the gas release upon opening is not nearly as high, and the number of bubbles forming and bubbling up is much lower.</p>
+<p>Another observation is that before the opening of the bottle, there are few bubbles apparent on the bottle sides, so under some pressure in the headspace, the gases appear to stay dissolved, and it is only after the bottle has been opened and that the bottle headspace is at atmospheric pressure that gas bubbles appear ‘from no where’ in a process called <em>ebullition</em>. This simple experience thus shows several things:</p>
+<ul>
+<li>at low and high temperatures, the pressure in the bottle headspace is respectively lower and higher, suggesting that there is more gas in the head space at higher temperature, and thus more dissolved gases at lower temperatures</li>
+<li>as the headspace pressure is released, gases are released suggesting that more gas can be dissolved in water when water is <em>under pressure</em>. We shall see what this really means later in this chapter</li>
+</ul>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:BiofilmGasBubbles"></span>
+<img src="pictures/BiofilmGasBubbles.png" alt="Formation of gas bubbles attached to a biofilm (periphyton) scraped from an organic sediment in a tidal marsh" width="75%" />
+<p class="caption">
+Figure 11.2: Formation of gas bubbles attached to a biofilm (periphyton) scraped from an organic sediment in a tidal marsh
+</p>
+</div>
+<p></br></p>
+<p>There are other interesting observations to consider. You might have already observed bubble formation in a stream during Spring or Summer a bit like in the picture in Figure <a href="gassolubilitychapter.html#fig:BiofilmGasBubbles">11.2</a>. These bubbles are attached to a biofilm scraped from a stream bottom in North Carolina. Obviously, the presence of bubbles is not necessarily very informative about dissolved gases, but the sparkling water experience above suggests that in reality, if there are bubbles, there must necessarily be dissolved gases associated.</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span id="fig:GasBubblingSediment"></span>
+<iframe src="https://www.youtube.com/embed/CzWBpVw9Iao" width="95%" height="400px">
+</iframe>
+<p class="caption">
+Figure 11.3: Gas bubbling from the sediment of a low gradient stream when disturbed
+</p>
+</div>
+<p></br></p>
+<p>One last introductory experience you might have had, is the release of gas bubbles when you might have disturbed the sediment of a wetland or a stream * from a wetland or stream sediment when you stepped on it a bit like in the above video (Figure <a href="gassolubilitychapter.html#fig:GasBubblingSediment">11.3</a>). Obviously, gases must have accumulated in the sediment and it took some disturbance to release it. This suggests that there are gas formation processes in treatment systems, but that we already knew (see Chapter on <a href="redoxwetland.html#redoxwetland">sediment redox processes</a>). The additional information is how gases dissolve or form bubbles.</p>
+<p>So this chapter explores the conditions for which gases dissolve or form bubbles, the driving factors behind, and the consequences for biogeochemical processes.</p>
 <div id="henrys-law-and-the-dissolution-of-gases-in-water" class="section level2">
 <h2><span class="header-section-number">11.1</span> Henry’s law and the dissolution of gases in water</h2>
 <p>English chemist William Henry published his results from his experiments on the dissolution of gases in 1803 <span class="citation">(Henry and Banks <a href="#ref-Henry1803-mz">1803</a>)</span>, and reported in page 42 of the January 1803 issue of the <em>Philosophical Transactions of the Royal Society of London</em> that</p>
 <blockquote>
 <p>[…] it follows, that water takes up, of gas condensed by one, two, or more additional atmospheres, a quantity which, ordinarily compressed, would be equal to twice, thrice, <em>&amp;c.</em> the volume absorbed under the common pressure of the atmosphere <span class="citation">(Henry and Banks <a href="#ref-Henry1803-mz">1803</a>)</span>.</p>
 </blockquote>
-<p>In other words, Henry’s law states that the amount of dissolved gas in a liquid is proportional to its partial pressure above the liquid. The winner of <a href="https://www.nobelprize.org/prizes/chemistry/1901/hoff/biographical/">first Nobel price in Chemistry (1901)</a>, Dutch chemist <a href="https://en.wikipedia.org/wiki/Jacobus_Henricus_van_%27t_Hoff">Jacobus Henricus van ’t Hoff</a> later formulated in 1884 how the dissolution of the gases depends on the temperature, in what is now referred to as the <em>van’t Hoff equation</em> (equation <a href="gassolubilitychapter.html#eq:KhvsT">(11.2)</a>; <span class="citation">van’t Hoff (<a href="#ref-Vant_Hoff1884-gt">1884</a>)</span>). Henry’s law has several important consequences for ecological engineering:</p>
+<p>In other words, Henry’s law states that the amount of dissolved gas in a liquid is proportional to its partial pressure above the liquid. The winner of <a href="https://www.nobelprize.org/prizes/chemistry/1901/hoff/biographical/">first Nobel price in Chemistry (1901)</a>, Dutch chemist <a href="https://en.wikipedia.org/wiki/Jacobus_Henricus_van_%27t_Hoff">Jacobus Henricus van’t Hoff</a> later formulated in 1884 how the dissolution of the gases depends on the temperature, in what is now referred to as the <em>van’t Hoff equation</em> (equation <a href="gassolubilitychapter.html#eq:KhvsT">(11.2)</a>; <span class="citation">van’t Hoff (<a href="#ref-Vant_Hoff1884-gt">1884</a>)</span>). Henry’s law has several important consequences for ecological engineering:</p>
 <ol style="list-style-type: decimal">
 <li>knowing the partial pressure of a gas in the atmosphere, it is possible to calculate the concentration of that gas in water, at least at equilibrium.</li>
 <li>it is possible to then compare the concentrations of gases in one liter of atmosphere versus those of one liter of water</li>
@@ -474,18 +516,18 @@ Chapter summary:
 \end{equation}\]</span>
 </br></p>
 <p>where <span class="math inline">\([A_{(aq)}]\)</span> is the concentration of dissolved gas <em>A</em> in moles.L<sup>-1</sup> in water (<span class="math inline">\(aq\)</span> standing for <em>aqueous</em>), <span class="math inline">\(K_H\)</span> is the Henry’s constant for gas A and at a given temperature, and <span class="math inline">\(P_A\)</span> is the partial pressure of gas <em>A</em> in the head space above water.</p>
-<p>Visualizing the proportions of moles in the gaseous and liquid phases might help understand concepts a little better. Let us imagine two containers that would be 2 liters in volume each, and containing 1 liter of water and 1 liter of gas head space above Figure <a href="gassolubilitychapter.html#fig:dissolvedgasconcept">11.1</a>. The gaseous phase of the containers would be at 1 atm and filled with one gas only. Now to visualize the ratio of the number of moles in both phases, Henry’s law gives the number of moles per liter of water. But this corresponds to 1 atm of gas. One needs to first find the equivalent of 1 atm into a number of moles.</p>
+<p>Visualizing the proportions of moles in the gaseous and liquid phases might help understand concepts a little better. Let us imagine two containers that would be 2 liters in volume each, and containing 1 liter of water and 1 liter of gas head space above (Figure <a href="gassolubilitychapter.html#fig:dissolvedgasconcept">11.4</a>). The gaseous phase of the containers would be at 1 atm and filled with one gas only. Now to visualize the ratio of the number of moles in both phases, Henry’s law gives the number of moles per liter of water. But this corresponds to 1 atm of gas. One needs to first find the equivalent of 1 atm into a number of moles.</p>
 <p>For that, the ideal gas equation <span class="math inline">\(PV = nRT\)</span> can be used to derive the volume. Using the conditions where <span class="math inline">\(P = 1 atm = 101325 Pa\)</span>, <span class="math inline">\(n = 1 mol\)</span>, <span class="math inline">\(R = 8.314 \space m^3⋅Pa⋅K^{−1}⋅mol^{−1}\)</span><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, and <span class="math inline">\(T = 25°C = 298.15°K\)</span>, one mole of gas would occupy 24.46 L. In other words, in one liter of gas at 1 atm, there are <span class="math inline">\(1/24.46 = 4.09.10^{-2}\)</span> moles of gas.</p>
 <p>Using pure <span class="math inline">\(O_2\)</span>, <span class="math inline">\(N_2O\)</span>, and <span class="math inline">\(CO_2\)</span> gases at 1 atm and Henry’s constants from Table <a href="gassolubilitychapter.html#tab:DissolvedGasesTable">11.1</a>, the dissolved gas concentrations at equilibrium at 25°C would be <span class="math inline">\([O_{2(aq)}] = 1.27 \space mmol.L^{-1}\)</span>, <span class="math inline">\([N_2O{(aq)}] = 24.2 \space mmol.L^{-1}\)</span> and <span class="math inline">\([CO_{2(aq)}] = 33.9 \space mmol.L^{-1}\)</span>, assuming that that all the <span class="math inline">\(CO_{2(aq)}\)</span> does not dissociate into bicarbonates and carbonates (details in chapter <a href="acidbase.html#acidbase">10</a>).</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:dissolvedgasconcept"></span>
 <img src="Textbook_BAE587_files/figure-html/dissolvedgasconcept-1.png" alt="Visual and liquid:gas proportions of the number of moles in the gaseous phase of one liter of gas at 1 atm overlying one liter of water, for O~2~, N~2~O, and CO~2~ gases, using Henry's constants at 25°C. Blue rectangles represent one liter of water in equilibrium with one liter of pure gas (overlying white rectangle). There are 100 circles in the white rectangle representing the 40.9 mmol.L^-1^ of gases present in 1L at 1 atm at 25°C. The number of circles in the blue rectangles represent the corresponding number of moles per liter of water" width="95%" />
 <p class="caption">
-Figure 11.1: Visual and liquid:gas proportions of the number of moles in the gaseous phase of one liter of gas at 1 atm overlying one liter of water, for O<sub>2</sub>, N<sub>2</sub>O, and CO<sub>2</sub> gases, using Henry’s constants at 25°C. Blue rectangles represent one liter of water in equilibrium with one liter of pure gas (overlying white rectangle). There are 100 circles in the white rectangle representing the 40.9 mmol.L<sup>-1</sup> of gases present in 1L at 1 atm at 25°C. The number of circles in the blue rectangles represent the corresponding number of moles per liter of water
+Figure 11.4: Visual and liquid:gas proportions of the number of moles in the gaseous phase of one liter of gas at 1 atm overlying one liter of water, for O<sub>2</sub>, N<sub>2</sub>O, and CO<sub>2</sub> gases, using Henry’s constants at 25°C. Blue rectangles represent one liter of water in equilibrium with one liter of pure gas (overlying white rectangle). There are 100 circles in the white rectangle representing the 40.9 mmol.L<sup>-1</sup> of gases present in 1L at 1 atm at 25°C. The number of circles in the blue rectangles represent the corresponding number of moles per liter of water
 </p>
 </div>
 <p></br></p>
-<p>The proportion of the number of moles in the gaseous and aqueous phases for <span class="math inline">\(O_2\)</span>, <span class="math inline">\(N_2O\)</span>, and <span class="math inline">\(CO_2\)</span> gases is illustrated in Figure <a href="gassolubilitychapter.html#fig:dissolvedgasconcept">11.1</a>A, B, and C, respectively, with 100 random points in the gaseous phase representing the 40.9 mmol.L<sup>-1</sup> of gases present in 1L at 1atm, and, the corresponding 3, 59, and 83 points representing the same proportion of moles in the aqueous phase. It is striking to observe that there be such a discrepancy between <span class="math inline">\(O_2\)</span> and <span class="math inline">\(CO_2\)</span>! This applies for pure gases that would be at 1 atm of pressure above water, and at 25°C. The concentration at equilibrium thus corresponds to the theoretical maximum capacity of a gas to dissolve into water and is referred to as <em>solubility</em>. In reality the concept of solubility extends beyond gases in liquid, and “is the property of a solid, liquid or gaseous chemical substance called solute to dissolve in a solid, liquid or gaseous solvent” <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2020-ot">2020</a><a href="#ref-Wikipedia_contributors2020-ot">c</a>)</span>. In most cases the solvent is a liquid. As the activity of solute and solvents vary with temperature, the solubility of gases in water varies with temperature, and the van’t Hoff equation is the formulation of this relationship.</p>
+<p>The proportion of the number of moles in the gaseous and aqueous phases for <span class="math inline">\(O_2\)</span>, <span class="math inline">\(N_2O\)</span>, and <span class="math inline">\(CO_2\)</span> gases is illustrated in Figure <a href="gassolubilitychapter.html#fig:dissolvedgasconcept">11.4</a>A, B, and C, respectively, with 100 random points in the gaseous phase representing the 40.9 mmol.L<sup>-1</sup> of gases present in 1L at 1atm, and, the corresponding 3, 59, and 83 points representing the same proportion of moles in the aqueous phase. It is striking to observe that there be such a discrepancy between <span class="math inline">\(O_2\)</span> and <span class="math inline">\(CO_2\)</span>! This applies for pure gases that would be at 1 atm of pressure above water, and at 25°C. The concentration at equilibrium thus corresponds to the theoretical maximum capacity of a gas to dissolve into water and is referred to as <em>solubility</em>. In reality the concept of solubility extends beyond gases in liquid, and “is the property of a solid, liquid or gaseous chemical substance called solute to dissolve in a solid, liquid or gaseous solvent” <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2020-ot">2020</a><a href="#ref-Wikipedia_contributors2020-ot">c</a>)</span>. In most cases the solvent is a liquid. As the activity of solute and solvents vary with temperature, the solubility of gases in water varies with temperature, and the van’t Hoff equation is the formulation of this relationship.</p>
 </div>
 <div id="solubility-of-gases-as-a-function-of-temperature" class="section level3">
 <h3><span class="header-section-number">11.1.2</span> Solubility of gases as a function of temperature</h3>
@@ -498,7 +540,7 @@ K_H(T) = K_H(T_0).exp \left[ \left( \frac {-\Delta_{sol}H}{R} \right) \left( \fr
 \end{equation}\]</span>
 </br></p>
 <p>where <span class="math inline">\(K_H(T)\)</span> and <span class="math inline">\(K_H(T_0)\)</span> represent the Henry’s law constants, respectively for <span class="math inline">\(T\)</span> and the <span class="math inline">\(T_0\)</span> (in °K), the latter being the reference temperature (usually at 25°C or 298.15°K), <span class="math inline">\(\Delta_{sol}H\)</span> represents the enthalpy of dissolution, <span class="math inline">\(R\)</span> is the perfect gas constant (8.314 J.mol<sup>−1</sup>.K<sup>−1</sup>). The values for the term <span class="math inline">\(\frac {-\Delta_{sol}H}{R}\)</span> in equation <a href="gassolubilitychapter.html#eq:KhvsT">(11.2)</a> represent a temperature constant in Kelvin and depend on the gases. In the form above, the van’t Hoff equation is only valid for a limited temperature range in which <span class="math inline">\(\Delta_{sol}H\)</span> does not change much with temperature, which is the case for natural waters <span class="citation">(Sander <a href="#ref-Sander2015-px">2015</a>)</span>.</p>
-<p>The temperature constant values are summarized in Table <a href="gassolubilitychapter.html#tab:DissolvedGasesTable">11.1</a> under the column heading <em>TempConst</em>. The values of the Henry’s law constant at reference temperature <span class="math inline">\(K_H(T_0)\)</span> are summarized using the SI (SI, abbreviated from the French <em>Système international (d’unités)</em>) units (<span class="math inline">\(mol.m^{-3}.Pa^{-1}\)</span>) and practical units (<span class="math inline">\(M.atm^{-1}\)</span>, i.e., <span class="math inline">\(mol.L^{-1}.atm^{-1}\)</span>) in Table <a href="gassolubilitychapter.html#tab:DissolvedGasesTable">11.1</a>. All values have been obtained from from <span class="citation">Sander (<a href="#ref-Sander2015-px">2015</a>)</span>, which are regularly updated on <a href="www.henrys-law.org">www.henrys-law.org</a>.</p>
+<p>Again, the term <span class="math inline">\(\frac {-\Delta_{sol}H}{R}\)</span> represents a temperature constant, which values are summarized in Table <a href="gassolubilitychapter.html#tab:DissolvedGasesTable">11.1</a> under the column heading <em>TempConst</em>. The values of the Henry’s law constant at reference temperature <span class="math inline">\(K_H(T_0)\)</span> are summarized using the SI (SI, abbreviated from the French <em>Système international (d’unités)</em>) units (<span class="math inline">\(mol.m^{-3}.Pa^{-1}\)</span>) and practical units (<span class="math inline">\(M.atm^{-1}\)</span>, i.e., <span class="math inline">\(mol.L^{-1}.atm^{-1}\)</span>) in Table <a href="gassolubilitychapter.html#tab:DissolvedGasesTable">11.1</a>. All values have been obtained from from <span class="citation">Sander (<a href="#ref-Sander2015-px">2015</a>)</span>, which are regularly updated on <a href="www.henrys-law.org">www.henrys-law.org</a>.</p>
 <p></br></p>
 <table>
 <caption>
@@ -692,13 +734,13 @@ Reactions
 </tbody>
 </table>
 <p></br></p>
-<p>Using the van’t Hoff equation to predict Henry’s constants for any given temperature, it is possible to plot the solubility (in mol.L<sup>-1</sup> in water) of common gases relevant to ecological engineering between 0 and 40°C (Figure <a href="gassolubilitychapter.html#fig:Solubility">11.2</a>A). These solubility values are calculated for pure gases at 1 atm of pressure and are thus comparable from one to another (the actual solubilities for normal air at 1 atm are illustrated in Figure <a href="gassolubilitychapter.html#fig:DissolvedConc">11.3</a>). Notice that the solubility values for <span class="math inline">\(CO_2\)</span>, <span class="math inline">\(H_2S\)</span> and <span class="math inline">\(N_2O\)</span> are plotted in dotted lines and are read on the secondary Y-axis. Solubility values for these gases are 10 to 50 times larger than the ones for <span class="math inline">\(O_2\)</span>, <span class="math inline">\(H_2\)</span>, <span class="math inline">\(N_2\)</span>, <span class="math inline">\(CO\)</span>, and <span class="math inline">\(CH_4\)</span>, which are plotted as solid lines.</p>
-<p>In Figure <a href="gassolubilitychapter.html#fig:Solubility">11.2</a>B, the ratio of the number of moles in water and those in the overlying gas are calculated by dividing the solubility in mol.L<sup>-1</sup> displayed in Figure <a href="gassolubilitychapter.html#fig:Solubility">11.2</a>B, by the number of moles in the overlying gaseous phase. This number varies with temperature, and is calculated using the ideal gas equation as <span class="math inline">\(n = \frac{PV}{RT}\)</span> where all letters and values are defined above.</p>
+<p>Using the van’t Hoff equation to predict Henry’s constants for any given temperature, it is possible to plot the solubility (in mol.L<sup>-1</sup> in water) of common gases relevant to ecological engineering between 0 and 40°C (Figure <a href="gassolubilitychapter.html#fig:Solubility">11.5</a>A). These solubility values are calculated for pure gases at 1 atm of pressure and are thus comparable from one to another (the actual solubilities for normal air at 1 atm are illustrated in Figure <a href="gassolubilitychapter.html#fig:DissolvedConc">11.6</a>). Notice that the solubility values for <span class="math inline">\(CO_2\)</span>, <span class="math inline">\(H_2S\)</span> and <span class="math inline">\(N_2O\)</span> are plotted in dotted lines and are read on the secondary Y-axis. Solubility values for these gases are 10 to 50 times larger than the ones for <span class="math inline">\(O_2\)</span>, <span class="math inline">\(H_2\)</span>, <span class="math inline">\(N_2\)</span>, <span class="math inline">\(CO\)</span>, and <span class="math inline">\(CH_4\)</span>, which are plotted as solid lines.</p>
+<p>In Figure <a href="gassolubilitychapter.html#fig:Solubility">11.5</a>B, the ratio of the number of moles in water and those in the overlying gas are calculated by dividing the solubility in mol.L<sup>-1</sup> displayed in Figure <a href="gassolubilitychapter.html#fig:Solubility">11.5</a>B, by the number of moles in the overlying gaseous phase. This number varies with temperature, and is calculated using the ideal gas equation as <span class="math inline">\(n = \frac{PV}{RT}\)</span> where all letters and values are defined above.</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:Solubility"></span>
 <img src="Textbook_BAE587_files/figure-html/Solubility-1.png" alt="Solubility graph for common gases relevant to ecological engineering. Each gas is assumed to be at 1 atm of pressure. Notice that the value for $CO_2$, $H_2S$ and $N_2O$ are read on the secondary Y-axis" width="100%" />
 <p class="caption">
-Figure 11.2: Solubility graph for common gases relevant to ecological engineering. Each gas is assumed to be at 1 atm of pressure. Notice that the value for <span class="math inline">\(CO_2\)</span>, <span class="math inline">\(H_2S\)</span> and <span class="math inline">\(N_2O\)</span> are read on the secondary Y-axis
+Figure 11.5: Solubility graph for common gases relevant to ecological engineering. Each gas is assumed to be at 1 atm of pressure. Notice that the value for <span class="math inline">\(CO_2\)</span>, <span class="math inline">\(H_2S\)</span> and <span class="math inline">\(N_2O\)</span> are read on the secondary Y-axis
 </p>
 </div>
 <p></br></p>
@@ -708,13 +750,311 @@ Figure 11.2: Solubility graph for common gases relevant to ecological engineerin
 </div>
 <div id="actual-solubility-values-of-water-in-equilibrium-with-the-atmosphere" class="section level3">
 <h3><span class="header-section-number">11.1.3</span> Actual solubility values of water in equilibrium with the atmosphere</h3>
+<p>Now, it is interesting to look at the actual solubilities and concentrations of three of the most abundant dissolved gases: dioxygen, dinitrogen and carbon dioxide. Dinitrogen is among the least soluble gases (Figure <a href="gassolubilitychapter.html#fig:Solubility">11.5</a>), but because it comprises the vast majority of the atmosphere (78%), its overall actual solubility expressed in mmol.L<sup>-1</sup> is the highest and about 1.5 times that of dioxygen (Figure <a href="gassolubilitychapter.html#fig:DissolvedConc">11.6</a>). The second most dissolved gas is O<sub>2</sub>, and the third is CO<sub>2</sub> (Figure <a href="gassolubilitychapter.html#fig:DissolvedConc">11.6</a>). Solubility of CO<sub>2</sub> at 1 atm is about 30 times higher than that of O<sub>2</sub>, but in year 2020 the atmospheric concentration was about 410 ppm or 0.041% or about 500 times less than the 21% of O<sub>2</sub>. In the end, the theoretical solubility of CO<sub>2</sub> in water is about 17 times lower than that of O<sub>2</sub>, which is remarkable for a gas that is 500 times less present in the atmosphere! Do not forget, however, that some of the CO<sub>2</sub> becomes hydrated into carbonic acid and dissociates into carbonates. But as we saw in the chapter dedicated to dissolved carbon dioxide, the dissociation into carbonates does not influence, in an open system, the concentration of dissolved CO<sub>2</sub>.</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span id="fig:DissolvedConc"></span>
 <img src="Textbook_BAE587_files/figure-html/DissolvedConc-1.png" alt="Solubility graph for $N_2$, $O_2$, and $CO_2$ at equilibrium with the atmosphere, assuming $P_{N_2} = 0.78 atm$, $P_{O_2} = 0.21 atm$, and $P_{CO_2} = 410 ppm$. Dissolved $O_2$ concentration, i.e., where the partial pressure of $O_2$ is equal to 0.21 atm. The corresponding concentrations in mg O~2~.L^-1^ are read on the secondary axis" width="85%" />
 <p class="caption">
-Figure 11.3: Solubility graph for <span class="math inline">\(N_2\)</span>, <span class="math inline">\(O_2\)</span>, and <span class="math inline">\(CO_2\)</span> at equilibrium with the atmosphere, assuming <span class="math inline">\(P_{N_2} = 0.78 atm\)</span>, <span class="math inline">\(P_{O_2} = 0.21 atm\)</span>, and <span class="math inline">\(P_{CO_2} = 410 ppm\)</span>. Dissolved <span class="math inline">\(O_2\)</span> concentration, i.e., where the partial pressure of <span class="math inline">\(O_2\)</span> is equal to 0.21 atm. The corresponding concentrations in mg O<sub>2</sub>.L<sup>-1</sup> are read on the secondary axis
+Figure 11.6: Solubility graph for <span class="math inline">\(N_2\)</span>, <span class="math inline">\(O_2\)</span>, and <span class="math inline">\(CO_2\)</span> at equilibrium with the atmosphere, assuming <span class="math inline">\(P_{N_2} = 0.78 atm\)</span>, <span class="math inline">\(P_{O_2} = 0.21 atm\)</span>, and <span class="math inline">\(P_{CO_2} = 410 ppm\)</span>. Dissolved <span class="math inline">\(O_2\)</span> concentration, i.e., where the partial pressure of <span class="math inline">\(O_2\)</span> is equal to 0.21 atm. The corresponding concentrations in mg O<sub>2</sub>.L<sup>-1</sup> are read on the secondary axis
 </p>
 </div>
+<p></br></p>
+<p>Obviously, the solubility of dioxygen is very relevant to aquatic life in general and to biogeochemical processes in the aqueous environment! Again, the van’t Hoff equation tells us that the concentrations of dissolved gases under atmospheric pressure decreases with increasing temperature. Life for pluricellular organisms, which exclusively use dioxygen as their electron acceptor, becomes very limited:</p>
+<ul>
+<li>when <span class="math inline">\([O_{2(aq)}]&lt;2 \space mg \space O_2.L^{-1}\)</span>, and the general condition is referred to as <strong><em>hypoxia</em></strong> or <em>hypoxic waters</em> (Greek <em>hypo-</em> = under, <em>oxy-</em>,<em>oxi-</em> = concerns oxygen).</li>
+<li>Below the <span class="math inline">\([O_{2(aq)}]&lt;0.5 \space mg \space O_2.L^{-1}\)</span> threshold, the general condition is referred to as <strong><em>anoxia</em></strong>, or the absence or near absence of oxygen.</li>
+</ul>
+<p>Table <a href="gassolubilitychapter.html#tab:DOtable">11.2</a> consigns the DO concentrations for the range of temperature general found in natural waters. It shows that even in very hot waters (&gt;30°C), there should be plenty enough oxygen in a water in equilibrium with the atmosphere to support life (DO &gt; 6 mg O<sub>2</sub>.L<sup>-1</sup>; Table <a href="gassolubilitychapter.html#tab:DOtable">11.2</a>). In reality, for this type of temperatures, it is not rare to observe DO concentrations to be much lower than that in streams overlying organic substrate… This suggests that that there are mechanisms at play lowering the DO concentrations, and that the apparent DO concentrations are the results of oxygen depleting (= oxygen demands) and oxygen replenishing (= oxygen supplies) processes.</p>
+<p></br></p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:DOtable">Table 11.2: </span>Theoretical Dissolved Oxygen concentration (DO) in water at equilibrium with the atmosphere for temperatures varying between 2 and 40°C
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+T°C
+</th>
+<th style="text-align:center;">
+DO (mg O<sub>2</sub>/L)
+</th>
+<th style="text-align:center;">
+T°C
+</th>
+<th style="text-align:center;">
+DO (mg O<sub>2</sub>/L)
+</th>
+<th style="text-align:center;">
+T°C
+</th>
+<th style="text-align:center;">
+DO (mg O<sub>2</sub>/L)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+2
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+13.7
+</td>
+<td style="text-align:center;width: 10em; ">
+15
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+10.40
+</td>
+<td style="text-align:center;width: 10em; ">
+28
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+8.04
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+3
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+13.4
+</td>
+<td style="text-align:center;width: 10em; ">
+16
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+10.20
+</td>
+<td style="text-align:center;width: 10em; ">
+29
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+7.89
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+4
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+13.1
+</td>
+<td style="text-align:center;width: 10em; ">
+17
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+9.96
+</td>
+<td style="text-align:center;width: 10em; ">
+30
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+7.75
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+5
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+12.8
+</td>
+<td style="text-align:center;width: 10em; ">
+18
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+9.76
+</td>
+<td style="text-align:center;width: 10em; ">
+31
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+7.61
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+6
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+12.5
+</td>
+<td style="text-align:center;width: 10em; ">
+19
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+9.57
+</td>
+<td style="text-align:center;width: 10em; ">
+32
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+7.47
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+7
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+12.3
+</td>
+<td style="text-align:center;width: 10em; ">
+20
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+9.38
+</td>
+<td style="text-align:center;width: 10em; ">
+33
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+7.33
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+8
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+12.0
+</td>
+<td style="text-align:center;width: 10em; ">
+21
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+9.20
+</td>
+<td style="text-align:center;width: 10em; ">
+34
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+7.20
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+9
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+11.8
+</td>
+<td style="text-align:center;width: 10em; ">
+22
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+9.02
+</td>
+<td style="text-align:center;width: 10em; ">
+35
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+7.07
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+10
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+11.5
+</td>
+<td style="text-align:center;width: 10em; ">
+23
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+8.85
+</td>
+<td style="text-align:center;width: 10em; ">
+36
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+6.95
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+11
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+11.3
+</td>
+<td style="text-align:center;width: 10em; ">
+24
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+8.68
+</td>
+<td style="text-align:center;width: 10em; ">
+37
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+6.83
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+12
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+11.0
+</td>
+<td style="text-align:center;width: 10em; ">
+25
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+8.51
+</td>
+<td style="text-align:center;width: 10em; ">
+38
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+6.71
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+13
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+10.8
+</td>
+<td style="text-align:center;width: 10em; ">
+26
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+8.35
+</td>
+<td style="text-align:center;width: 10em; ">
+39
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+6.59
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 10em; border-left:1px solid;">
+14
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+10.6
+</td>
+<td style="text-align:center;width: 10em; ">
+27
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+8.19
+</td>
+<td style="text-align:center;width: 10em; ">
+40
+</td>
+<td style="text-align:center;width: 10em; font-weight: bold;border-right:1px solid;">
+6.48
+</td>
+</tr>
+</tbody>
+</table>
 <p><strong><em>This chapter is still under construction</em></strong></p>
 <p></br></br></br></p>
 
@@ -753,11 +1093,13 @@ Figure 11.3: Solubility graph for <span class="math inline">\(N_2\)</span>, <spa
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -765,12 +1107,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -782,6 +1123,10 @@ gitbook.start({
 "text": "Edit"
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
@@ -800,8 +1145,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
