@@ -117,14 +117,15 @@ pre code {
 }
 
 .exercise {
-  padding: 1em 1em 1em 4em;
+  padding: 1em 2em 1em 4em;
   margin-bottom: 10px;
   position:relative;
   font-family: "arial";
   font-style: normal;
-  padding-left: 80px;
-  border-top: 2px solid #317EAC;
-  background: rgba(49, 126, 172, 0.1);
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top: 2px solid #3CB87A;
+  background: #E6FAF0;
 }
 
 .theorem {
