@@ -1,6 +1,8 @@
 tab:FlowChartSymbols
 fig:AlgalBloomFC
 fig:AlgalBloomFCEcolEng
+exr:flowchart2
+exr:flowchart1
 fig:periodic-table
 fig:periodic-table-electroneg
 eq:electroneg
@@ -253,6 +255,7 @@ exr:solubility1atm
 eq:KhvsT
 exr:DissolvedGasFormula
 fig:Solubility
+exr:CO2Champagne
 fig:DissolvedConc
 exr:DOconcentration
 tab:DOtable

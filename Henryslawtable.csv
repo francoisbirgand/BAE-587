@@ -1,7 +1,7 @@
 gas,vantoffCoef,Kh0mol_m3_Pa,expression,equilibrium
 "He",230,3.8e-6,"He",$He_{(g)} \rightleftharpoons He_{(aq)}$
 "Ne",490,4.45e-6,"Ne",$Ne_{(g)} \rightleftharpoons Ne_{(aq)}$
-"Ar",1600,1.4e-5,"Ar",$Ar_{(g)} \rightleftharpoons Ar_{(aq)}$
+"Ar",1300,1.4e-5,"Ar",$Ar_{(g)} \rightleftharpoons Ar_{(aq)}$
 "H2",500,7.75e-6,H[2],$H_{2(g)} \rightleftharpoons H_{2(aq)}$
 "O2",1700,1.25e-5,O[2],$O_{2(g)} \rightleftharpoons O_{2(aq)}$
 "CO",1300,9.7e-6,"CO",$CO_{(g)} \rightleftharpoons CO_{(aq)}$
