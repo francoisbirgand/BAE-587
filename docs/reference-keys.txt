@@ -27,6 +27,7 @@ fig:butene-isomers
 fig:aromaticity
 fig:benzene-orbitals
 fig:heteroarenes
+exr:drawmolec1
 fig:FGsynthesis
 fig:amines
 fig:alcohols
@@ -36,6 +37,7 @@ fig:ketone
 fig:carboxyl
 fig:amides
 fig:amide-resonance
+exr:drawmolec2
 fig:complexFG
 fig:esterification
 fig:propylethanoate2
@@ -47,6 +49,7 @@ fig:hemiacetal-glucose
 fig:hemiketal-fructose
 fig:anhydridation
 fig:phosphoanhydridation
+exr:drawmolec3
 fig:commonmolecules
 tab:FGtab
 fig:brickwall
