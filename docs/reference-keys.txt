@@ -58,6 +58,7 @@ fig:elecalloc-CH2O
 fig:carbohydrates-in-food
 fig:aldoses
 fig:ketoses
+fig:AldoseKetose
 fig:D-glyceraldehyde
 fig:hemiketal-fructose-2
 fig:hemiacetal-glucose-2
@@ -86,6 +87,13 @@ fig:glucosamine-derivatives
 fig:chitin-monomer
 fig:chitin-lobster
 fig:quinovose
+fig:BasicNucleotide
+fig:Nucleobases
+fig:SynthesisNucleoside
+fig:SynthesisNucleotide
+fig:SynthesisNA
+fig:NApentoses
+fig:RNA-DNA
 fig:fat-and-oil
 fig:elecalloc-CH2n
 fig:lipid-acyl-buildingblock
@@ -325,7 +333,7 @@ functional-groups
 hydrocarbon-chains
 alkanes
 unsaturated-hydrocarbons
-aromatic-hydrocarbons
+aromatics
 functional-groups-from-alkane-chain-oxidation
 hydroxyl-and-sulfanyl-functional-groups
 amine-functional-group
@@ -357,7 +365,8 @@ hemicelluloses
 lignins
 other-important-carbohydrates
 proteins
-nucleotides-and-nucleic-acids
+nucleic-acids
+nucleotides-as-monomers-of-nucleic-acids
 lipids
 overview-of-fatty-acid--or-acyl-based-lipids
 membrane-lipids
