@@ -65,11 +65,13 @@ fig:hemiacetal-glucose-2
 fig:acetal
 fig:glucose-fructose
 fig:riboses
+exr:DrawGlucose
 fig:glucose-skeletal
 fig:O-N-glycosidic-bond
 fig:O-maltose-glycosidic-bond
 fig:lactose-maltose
 fig:sucrose
+exr:DrawSucrose
 fig:polysaccharides
 fig:starch-et-al
 fig:cellulose-hemi-lignin
@@ -87,6 +89,7 @@ fig:glucosamine-derivatives
 fig:chitin-monomer
 fig:chitin-lobster
 fig:quinovose
+exr:DrawAA
 fig:BasicNucleotide
 fig:Nucleobases
 fig:SynthesisNucleoside
