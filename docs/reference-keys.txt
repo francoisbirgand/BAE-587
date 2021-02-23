@@ -37,6 +37,7 @@ fig:ketone
 fig:carboxyl
 fig:amides
 fig:amide-resonance
+fig:amide-spin
 exr:drawmolec2
 fig:complexFG
 fig:esterification
@@ -95,8 +96,11 @@ fig:Nucleobases
 fig:SynthesisNucleoside
 fig:SynthesisNucleotide
 fig:SynthesisNA
+fig:DNAspin
 fig:NApentoses
 fig:RNA-DNA
+fig:DNA
+exr:DrawNucleotide
 fig:fat-and-oil
 fig:elecalloc-CH2n
 fig:lipid-acyl-buildingblock
@@ -370,6 +374,8 @@ other-important-carbohydrates
 proteins
 nucleic-acids
 nucleotides-as-monomers-of-nucleic-acids
+dna-and-rna
+quick-recall-on-dna-replication
 lipids
 overview-of-fatty-acid--or-acyl-based-lipids
 membrane-lipids
