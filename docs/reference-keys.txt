@@ -143,7 +143,7 @@ eq:CH4combustion
 fig:combustion-CH4
 fig:ATPstructure
 fig:ATPtoADP
-fig:PO4tetrahedra
+fig:ATP-spin
 fig:respiration-vs-fermentation
 fig:respirationglobal2
 fig:ATPase
@@ -363,7 +363,7 @@ commonmolecules
 molecular-families
 polymers-of-simple-monomers
 carbohydrates
-monosaccharides
+Monosaccharides
 dissacharides
 polyssaccharides-or-glycans
 homopolysaccharides-or-homoglycans
@@ -408,9 +408,9 @@ cyclic-FA
 aerobic-and-anaerobic-respiration
 generating-energy-transfer-of-electrons
 ATP
-the-atp-manufacture
-substrate-level-versus-oxidative-phosphorylation
+the-atp-manufacture-substrate-level-versus-oxidative-phosphorylation
 respiration
+oxidative-phosphorylation-through-molecular-mechanical-forces
 creating-a-proton-gradient-as-a-source-of-proton-flow
 a-compartment-to-accumulate-protons
 proton-pumping
