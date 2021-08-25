@@ -81,10 +81,6 @@ fig:Pry-Secry-cell-walls
 fig:glucose-galacturonic-acid
 fig:pectins
 fig:hemicelluloses
-fig:monolignols
-fig:lignins-mono-poly
-fig:lignin-structure
-fig:lignans
 fig:ri-deoxy-ribose
 fig:glucosamine-derivatives
 fig:chitin-monomer
@@ -138,6 +134,15 @@ fig:zoo-phytosterols
 fig:hopanoid
 fig:steroid-hormones
 fig:Chylomicron
+fig:phenolicspic
+fig:phenol
+fig:phenolsC6C1
+fig:enzymatic-browning
+fig:hydrobenzoquinone
+fig:monolignols
+fig:lignins-mono-poly
+fig:lignin-structure
+fig:lignans
 fig:EnergyActivation
 eq:CH4combustion
 fig:combustion-CH4
@@ -369,7 +374,6 @@ polyssaccharides-or-glycans
 homopolysaccharides-or-homoglycans
 pectins
 hemicelluloses
-lignins
 other-important-carbohydrates
 proteins
 nucleic-acids
@@ -405,6 +409,11 @@ other-notable-lipids
 waxes-as-fatty-acid-esters
 polyketides
 cyclic-FA
+phenolics-and-polyphenols
+the-impermeable-world-of-phenolics
+unavailable-energy-onto-phenolic-molecules
+phenols-and-phenolic-acids-c6-and-c6-c1-molecules
+lignins
 aerobic-and-anaerobic-respiration
 generating-energy-transfer-of-electrons
 ATP
@@ -416,7 +425,7 @@ a-compartment-to-accumulate-protons
 proton-pumping
 NADFAD
 transfer-of-electrons-from-the-organic-carbon-to-an-electron-acceptor
-oxygen-reduction-and-oxidative-phosphorylation
+oxidativephosphorylation
 respiration-electron-flow-schemes
 aerobic-respiration-schemes-for-organotrophs
 glycolysis
@@ -588,4 +597,3 @@ equilibrium-reactions-in-the-co2-h2o-system
 equilibrium-reactions-for-nitrogen-species
 equilibrium-reactions-for-phosphorus-species
 equilibrium-reactions-for-sulfur-species
-oxidativephosphorylation

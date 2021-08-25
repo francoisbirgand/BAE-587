@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2021-03-14" />
+<meta name="date" content="2021-08-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,8 +50,74 @@
 
 
 
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="stylesheet" href="toc.css" type="text/css" />
@@ -125,8 +191,7 @@
 <li class="chapter" data-level="4.2.1" data-path="molecular-families.html"><a href="molecular-families.html#Monosaccharides"><i class="fa fa-check"></i><b>4.2.1</b> Monosaccharides</a></li>
 <li class="chapter" data-level="4.2.2" data-path="molecular-families.html"><a href="molecular-families.html#dissacharides"><i class="fa fa-check"></i><b>4.2.2</b> Dissacharides</a></li>
 <li class="chapter" data-level="4.2.3" data-path="molecular-families.html"><a href="molecular-families.html#polyssaccharides-or-glycans"><i class="fa fa-check"></i><b>4.2.3</b> Polyssaccharides or glycans</a></li>
-<li class="chapter" data-level="4.2.4" data-path="molecular-families.html"><a href="molecular-families.html#lignins"><i class="fa fa-check"></i><b>4.2.4</b> Lignins</a></li>
-<li class="chapter" data-level="4.2.5" data-path="molecular-families.html"><a href="molecular-families.html#other-important-carbohydrates"><i class="fa fa-check"></i><b>4.2.5</b> Other important carbohydrates</a></li>
+<li class="chapter" data-level="4.2.4" data-path="molecular-families.html"><a href="molecular-families.html#other-important-carbohydrates"><i class="fa fa-check"></i><b>4.2.4</b> Other important carbohydrates</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="molecular-families.html"><a href="molecular-families.html#proteins"><i class="fa fa-check"></i><b>4.3</b> Proteins</a></li>
 <li class="chapter" data-level="4.4" data-path="molecular-families.html"><a href="molecular-families.html#nucleic-acids"><i class="fa fa-check"></i><b>4.4</b> Nucleic Acids and Nucleotides</a><ul>
@@ -147,6 +212,12 @@
 <li class="chapter" data-level="4.5.11" data-path="molecular-families.html"><a href="molecular-families.html#sterols"><i class="fa fa-check"></i><b>4.5.11</b> Sterol lipids</a></li>
 <li class="chapter" data-level="4.5.12" data-path="molecular-families.html"><a href="molecular-families.html#summary-about-the-isoprene-based-lipids"><i class="fa fa-check"></i><b>4.5.12</b> Summary about the isoprene-based lipids</a></li>
 <li class="chapter" data-level="4.5.13" data-path="molecular-families.html"><a href="molecular-families.html#other-notable-lipids"><i class="fa fa-check"></i><b>4.5.13</b> Other notable lipids</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="molecular-families.html"><a href="molecular-families.html#phenolics-and-polyphenols"><i class="fa fa-check"></i><b>4.6</b> Phenolics and polyphenols</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="molecular-families.html"><a href="molecular-families.html#the-impermeable-world-of-phenolics"><i class="fa fa-check"></i><b>4.6.1</b> The impermeable world of phenolics</a></li>
+<li class="chapter" data-level="4.6.2" data-path="molecular-families.html"><a href="molecular-families.html#unavailable-energy-onto-phenolic-molecules"><i class="fa fa-check"></i><b>4.6.2</b> Unavailable energy onto phenolic molecules</a></li>
+<li class="chapter" data-level="4.6.3" data-path="molecular-families.html"><a href="molecular-families.html#phenols-and-phenolic-acids-c6-and-c6-c1-molecules"><i class="fa fa-check"></i><b>4.6.3</b> Phenols and phenolic acids: C6 and C6-C1 molecules</a></li>
+<li class="chapter" data-level="4.6.4" data-path="molecular-families.html"><a href="molecular-families.html#lignins"><i class="fa fa-check"></i><b>4.6.4</b> Lignins</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html"><i class="fa fa-check"></i><b>5</b> Energy generation and aerobic respiration</a><ul>
@@ -324,47 +395,48 @@
 <li class="chapter" data-level="13.16.1" data-path="glossary.html"><a href="glossary.html#trophic-names"><i class="fa fa-check"></i><b>13.16.1</b> Trophic names</a></li>
 </ul></li>
 </ul></li>
-<li class="appendix"><span><b>Appendix</b></span><ul>
-<li class="chapter" data-level="17" data-path="glossary.html"><a href="glossary.html#quick-guide-on-atom-orbitals-and-lewis-dot-structure"><i class="fa fa-check"></i><b>17</b> Quick guide on atom orbitals and Lewis dot structure</a><ul>
-<li class="chapter" data-level="17.1" data-path="glossary.html"><a href="glossary.html#orbitals"><i class="fa fa-check"></i><b>17.1</b> Electron orbitals</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="appendix-a.html"><a href="appendix-a.html"><i class="fa fa-check"></i><b>A</b> Appendix A</a><ul>
+<li class="chapter" data-level="A.1" data-path="appendix-a.html"><a href="appendix-a.html#quick-guide-on-atom-orbitals-and-lewis-dot-structure"><i class="fa fa-check"></i><b>A.1</b> Quick guide on atom orbitals and Lewis dot structure</a><ul>
+<li class="chapter" data-level="A.1.1" data-path="appendix-a.html"><a href="appendix-a.html#orbitals"><i class="fa fa-check"></i><b>A.1.1</b> Electron orbitals</a></li>
 </ul></li>
-<li class="chapter" data-level="18" data-path="glossary.html"><a href="glossary.html#orbitals-hybridization"><i class="fa fa-check"></i><b>18</b> Orbitals hybridization</a></li>
-<li class="chapter" data-level="19" data-path="glossary.html"><a href="glossary.html#sigma-pi-bonds"><i class="fa fa-check"></i><b>19</b> σ and π bonds</a></li>
-<li class="chapter" data-level="20" data-path="glossary.html"><a href="glossary.html#sp3"><i class="fa fa-check"></i><b>20</b> <em>sp<sup>3</sup></em> hybridization examples</a><ul>
-<li class="chapter" data-level="20.1" data-path="glossary.html"><a href="glossary.html#methane-1"><i class="fa fa-check"></i><b>20.1</b> Methane</a></li>
-<li class="chapter" data-level="20.2" data-path="glossary.html"><a href="glossary.html#the-water-molecule"><i class="fa fa-check"></i><b>20.2</b> The water molecule</a></li>
-<li class="chapter" data-level="20.3" data-path="glossary.html"><a href="glossary.html#ammonia-and-ammonium"><i class="fa fa-check"></i><b>20.3</b> Ammonia and Ammonium</a></li>
-<li class="chapter" data-level="20.4" data-path="glossary.html"><a href="glossary.html#sulfate-1"><i class="fa fa-check"></i><b>20.4</b> Sulfate</a></li>
-<li class="chapter" data-level="20.5" data-path="glossary.html"><a href="glossary.html#PO4"><i class="fa fa-check"></i><b>20.5</b> Phosphate</a></li>
+<li class="chapter" data-level="A.2" data-path="appendix-a.html"><a href="appendix-a.html#orbitals-hybridization"><i class="fa fa-check"></i><b>A.2</b> Orbitals hybridization</a></li>
+<li class="chapter" data-level="A.3" data-path="appendix-a.html"><a href="appendix-a.html#sigma-pi-bonds"><i class="fa fa-check"></i><b>A.3</b> σ and π bonds</a></li>
+<li class="chapter" data-level="A.4" data-path="appendix-a.html"><a href="appendix-a.html#sp3"><i class="fa fa-check"></i><b>A.4</b> <em>sp<sup>3</sup></em> hybridization examples</a><ul>
+<li class="chapter" data-level="A.4.1" data-path="appendix-a.html"><a href="appendix-a.html#methane-1"><i class="fa fa-check"></i><b>A.4.1</b> Methane</a></li>
+<li class="chapter" data-level="A.4.2" data-path="appendix-a.html"><a href="appendix-a.html#the-water-molecule"><i class="fa fa-check"></i><b>A.4.2</b> The water molecule</a></li>
+<li class="chapter" data-level="A.4.3" data-path="appendix-a.html"><a href="appendix-a.html#ammonia-and-ammonium"><i class="fa fa-check"></i><b>A.4.3</b> Ammonia and Ammonium</a></li>
+<li class="chapter" data-level="A.4.4" data-path="appendix-a.html"><a href="appendix-a.html#sulfate-1"><i class="fa fa-check"></i><b>A.4.4</b> Sulfate</a></li>
+<li class="chapter" data-level="A.4.5" data-path="appendix-a.html"><a href="appendix-a.html#PO4"><i class="fa fa-check"></i><b>A.4.5</b> Phosphate</a></li>
 </ul></li>
-<li class="chapter" data-level="21" data-path="glossary.html"><a href="glossary.html#sp2-hybridization-examples"><i class="fa fa-check"></i><b>21</b> <em>sp<sup>2</sup></em> hybridization examples</a><ul>
-<li class="chapter" data-level="21.1" data-path="glossary.html"><a href="glossary.html#nitrate-1"><i class="fa fa-check"></i><b>21.1</b> Nitrate</a></li>
-<li class="chapter" data-level="21.2" data-path="glossary.html"><a href="glossary.html#nitrite"><i class="fa fa-check"></i><b>21.2</b> Nitrite</a></li>
+<li class="chapter" data-level="A.5" data-path="appendix-a.html"><a href="appendix-a.html#sp2-hybridization-examples"><i class="fa fa-check"></i><b>A.5</b> <em>sp<sup>2</sup></em> hybridization examples</a><ul>
+<li class="chapter" data-level="A.5.1" data-path="appendix-a.html"><a href="appendix-a.html#nitrate-1"><i class="fa fa-check"></i><b>A.5.1</b> Nitrate</a></li>
+<li class="chapter" data-level="A.5.2" data-path="appendix-a.html"><a href="appendix-a.html#nitrite"><i class="fa fa-check"></i><b>A.5.2</b> Nitrite</a></li>
 </ul></li>
-<li class="chapter" data-level="22" data-path="glossary.html"><a href="glossary.html#sp-hybridization-examples"><i class="fa fa-check"></i><b>22</b> <em>sp</em> hybridization examples</a><ul>
-<li class="chapter" data-level="22.1" data-path="glossary.html"><a href="glossary.html#carbon-dioxide-1"><i class="fa fa-check"></i><b>22.1</b> Carbon dioxide</a></li>
-<li class="chapter" data-level="22.2" data-path="glossary.html"><a href="glossary.html#dinitrogen"><i class="fa fa-check"></i><b>22.2</b> Dinitrogen</a></li>
+<li class="chapter" data-level="A.6" data-path="appendix-a.html"><a href="appendix-a.html#sp-hybridization-examples"><i class="fa fa-check"></i><b>A.6</b> <em>sp</em> hybridization examples</a><ul>
+<li class="chapter" data-level="A.6.1" data-path="appendix-a.html"><a href="appendix-a.html#carbon-dioxide-1"><i class="fa fa-check"></i><b>A.6.1</b> Carbon dioxide</a></li>
+<li class="chapter" data-level="A.6.2" data-path="appendix-a.html"><a href="appendix-a.html#dinitrogen"><i class="fa fa-check"></i><b>A.6.2</b> Dinitrogen</a></li>
 </ul></li>
-<li class="chapter" data-level="23" data-path="glossary.html"><a href="glossary.html#example-of-no-hybridization"><i class="fa fa-check"></i><b>23</b> Example of no hybridization</a><ul>
-<li class="chapter" data-level="23.1" data-path="glossary.html"><a href="glossary.html#dihydrogen-sulfide-1"><i class="fa fa-check"></i><b>23.1</b> Dihydrogen sulfide</a></li>
+<li class="chapter" data-level="A.7" data-path="appendix-a.html"><a href="appendix-a.html#example-of-no-hybridization"><i class="fa fa-check"></i><b>A.7</b> Example of no hybridization</a><ul>
+<li class="chapter" data-level="A.7.1" data-path="appendix-a.html"><a href="appendix-a.html#dihydrogen-sulfide-1"><i class="fa fa-check"></i><b>A.7.1</b> Dihydrogen sulfide</a></li>
 </ul></li>
-<li class="chapter" data-level="24" data-path="glossary.html"><a href="glossary.html#lewis-dot-structures"><i class="fa fa-check"></i><b>24</b> Lewis dot structures</a><ul>
-<li class="chapter" data-level="24.1" data-path="glossary.html"><a href="glossary.html#valence-electrons-and-octet-rule"><i class="fa fa-check"></i><b>24.1</b> Valence electrons and octet rule</a></li>
-<li class="chapter" data-level="24.2" data-path="glossary.html"><a href="glossary.html#building-lewis-dot-structures"><i class="fa fa-check"></i><b>24.2</b> Building Lewis dot structures</a></li>
+<li class="chapter" data-level="A.8" data-path="appendix-a.html"><a href="appendix-a.html#lewis-dot-structures"><i class="fa fa-check"></i><b>A.8</b> Lewis dot structures</a><ul>
+<li class="chapter" data-level="A.8.1" data-path="appendix-a.html"><a href="appendix-a.html#valence-electrons-and-octet-rule"><i class="fa fa-check"></i><b>A.8.1</b> Valence electrons and octet rule</a></li>
+<li class="chapter" data-level="A.8.2" data-path="appendix-a.html"><a href="appendix-a.html#building-lewis-dot-structures"><i class="fa fa-check"></i><b>A.8.2</b> Building Lewis dot structures</a></li>
 </ul></li>
-<li class="chapter" data-level="25" data-path="glossary.html"><a href="glossary.html#molecular-orbitals"><i class="fa fa-check"></i><b>25</b> Molecular orbitals</a><ul>
-<li class="chapter" data-level="25.1" data-path="glossary.html"><a href="glossary.html#binding-and-antibinding-regions"><i class="fa fa-check"></i><b>25.1</b> Binding and antibinding regions</a></li>
-<li class="chapter" data-level="25.2" data-path="glossary.html"><a href="glossary.html#bonding-and-antibonding-orbitals"><i class="fa fa-check"></i><b>25.2</b> Bonding and antibonding orbitals</a></li>
-<li class="chapter" data-level="25.3" data-path="glossary.html"><a href="glossary.html#molecular-orbital-diagrams"><i class="fa fa-check"></i><b>25.3</b> Molecular orbital diagrams</a></li>
+<li class="chapter" data-level="A.9" data-path="appendix-a.html"><a href="appendix-a.html#molecular-orbitals"><i class="fa fa-check"></i><b>A.9</b> Molecular orbitals</a><ul>
+<li class="chapter" data-level="A.9.1" data-path="appendix-a.html"><a href="appendix-a.html#binding-and-antibinding-regions"><i class="fa fa-check"></i><b>A.9.1</b> Binding and antibinding regions</a></li>
+<li class="chapter" data-level="A.9.2" data-path="appendix-a.html"><a href="appendix-a.html#bonding-and-antibonding-orbitals"><i class="fa fa-check"></i><b>A.9.2</b> Bonding and antibonding orbitals</a></li>
+<li class="chapter" data-level="A.9.3" data-path="appendix-a.html"><a href="appendix-a.html#molecular-orbital-diagrams"><i class="fa fa-check"></i><b>A.9.3</b> Molecular orbital diagrams</a></li>
 </ul></li>
-<li class="chapter" data-level="26" data-path="glossary.html"><a href="glossary.html#exercises-1"><i class="fa fa-check"></i><b>26</b> Exercises</a></li>
+<li class="chapter" data-level="A.10" data-path="appendix-a.html"><a href="appendix-a.html#exercises-1"><i class="fa fa-check"></i><b>A.10</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="A" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html"><i class="fa fa-check"></i><b>A</b> Appendix B: Equilibrium Constants at 25°C</a><ul>
-<li class="chapter" data-level="A.1" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-in-the-h2o-h2-o2-system"><i class="fa fa-check"></i><b>A.1</b> Equilibrium reactions in the H<sub>2</sub>O-H<sub>2</sub>-O<sub>2</sub> system</a></li>
-<li class="chapter" data-level="A.2" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-in-the-co2-h2o-system"><i class="fa fa-check"></i><b>A.2</b> Equilibrium reactions in the CO<sub>2</sub>-H<sub>2</sub>O system</a></li>
-<li class="chapter" data-level="A.3" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-for-nitrogen-species"><i class="fa fa-check"></i><b>A.3</b> Equilibrium reactions for nitrogen species</a></li>
-<li class="chapter" data-level="A.4" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-for-phosphorus-species"><i class="fa fa-check"></i><b>A.4</b> Equilibrium reactions for phosphorus species</a></li>
-<li class="chapter" data-level="A.5" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-for-sulfur-species"><i class="fa fa-check"></i><b>A.5</b> Equilibrium reactions for sulfur species</a></li>
+<li class="chapter" data-level="B" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html"><i class="fa fa-check"></i><b>B</b> Appendix B: Equilibrium Constants at 25°C</a><ul>
+<li class="chapter" data-level="B.1" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-in-the-h2o-h2-o2-system"><i class="fa fa-check"></i><b>B.1</b> Equilibrium reactions in the H<sub>2</sub>O-H<sub>2</sub>-O<sub>2</sub> system</a></li>
+<li class="chapter" data-level="B.2" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-in-the-co2-h2o-system"><i class="fa fa-check"></i><b>B.2</b> Equilibrium reactions in the CO<sub>2</sub>-H<sub>2</sub>O system</a></li>
+<li class="chapter" data-level="B.3" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-for-nitrogen-species"><i class="fa fa-check"></i><b>B.3</b> Equilibrium reactions for nitrogen species</a></li>
+<li class="chapter" data-level="B.4" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-for-phosphorus-species"><i class="fa fa-check"></i><b>B.4</b> Equilibrium reactions for phosphorus species</a></li>
+<li class="chapter" data-level="B.5" data-path="appendix-b-equilibrium-constants-at-25c.html"><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-for-sulfur-species"><i class="fa fa-check"></i><b>B.5</b> Equilibrium reactions for sulfur species</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -412,7 +484,7 @@ Beyond wetlands, there are other respiratory processes relevant to biogeochemica
 </ul>
 </div>
 <p></br></br></p>
-<p>In the previous chapters, we introduced quite a few details on the molecular functioning of respiratory and photosynthetic processes. We took aerobic respiration as our model to determine that most of the ATP produced in the cell is principally due to a proton flow from the inter-membrane space to the cytoplasm, for microbial cells and within the mitochondria for eukaryotic cells (Figure <a href="#fig:respirationglobal"><strong>??</strong></a>). The respiration schemes provide a very handy method to summarize the important drivers and consequences of respiration: the electron donors, the electron acceptors, and the byproducts of both oxidation and reduction. In this chapter we are going to explore the diversity of electron donors and acceptors present in nature, many of which represent important processes for ecological engineering. As a first step, we will use a theoretical wetland soil to explore some of the variety of respiration schemes. We will take advantage of these processes at play in wetland soils to explore the consequences on concentration gradients and movement of molecules of importance in environmental and ecological engineering. We will then introduce additional ways microbes have found to obtain their energy, and summarize the whole using the different prefixes for the word ‘<em>trophs</em>’.</p>
+<p>In the previous chapters, we introduced quite a few details on the molecular functioning of respiratory and photosynthetic processes. We took aerobic respiration as our model to determine that most of the ATP produced in the cell is principally due to a proton flow from the inter-membrane space to the cytoplasm, for microbial cells and within the mitochondria for eukaryotic cells (Figure <a href="aerobic-and-anaerobic-respiration.html#fig:respirationglobal">5.27</a>). The respiration schemes provide a very handy method to summarize the important drivers and consequences of respiration: the electron donors, the electron acceptors, and the byproducts of both oxidation and reduction. In this chapter we are going to explore the diversity of electron donors and acceptors present in nature, many of which represent important processes for ecological engineering. As a first step, we will use a theoretical wetland soil to explore some of the variety of respiration schemes. We will take advantage of these processes at play in wetland soils to explore the consequences on concentration gradients and movement of molecules of importance in environmental and ecological engineering. We will then introduce additional ways microbes have found to obtain their energy, and summarize the whole using the different prefixes for the word ‘<em>trophs</em>’.</p>
 <div id="the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils" class="section level2">
 <h2><span class="header-section-number">7.1</span> The theoretical vertical sequence of respiratory processes in wetland soils</h2>
 <p>For this we will use a theoretical wetland soil to illustrate our point. Such theoretical soil has ‘enough’ organic matter content for microbial respiration to take place throughout its profile, ‘enough’ of other sand, silt, and clay and all the minerals that accompany them, including iron and manganese oxides. Let us assume that this theoretical soil, is sufficiently moist and aerated for microbial aerobic respiration to take place throughout the soil profile. Let us then assume that this soil is suddenly flooded, and let us explore the consequences of this. Respiratory processes are going to occur on a temporal sequence, which in fact will be mirrored by a vertical sequence of processes in the wetland sediment.</p>
@@ -468,7 +540,7 @@ Figure 7.2: Theoretical spatial layering of wetland soils corresponding to the e
 <div id="denit" class="section level2">
 <h2><span class="header-section-number">7.4</span> A denitrification layer below the aerobic layer</h2>
 <p>The next most powerful or oxidizing electron acceptor after O<sub>2</sub> is NO<sub>3</sub><sup>-</sup>. We have seen in the previous chapters that the N atom in nitrate has zero electron for itself, hence its ability to accept electrons. Just like for aerobic respiration, nitrate reduction just does not happen on its own. Facultative anaerobic bacteria called <em>denitrifiers</em> take advantage of the electrons available on organic matter and of nitrate to accept them to generate their energy. The denitrification of this theoretical wetland soil is referred to as <a href="glossary.html#trophic-names">heterotrophic denitrification</a> because the source of carbon for these denitrifiers is also the source of electron, as OM is the source of both. The <a href="glossary.html#trophic-names">autolithotrophic denitrifiers</a>, which use <a href="https://en.wikipedia.org/wiki/Pyrite">pyrite</a> FeS<sub>2</sub> as their source of electrons, are presented later in this chapter.</p>
-<p>There are two possible byproducts of nitrate reduction: N<sub>2</sub>, which is the inert gas that makes 78% of our atmosphere, and <a href="glossary.html#nitrous-oxide">N<sub>2</sub>O</a>, which is a potent <a href="#GHG">greenhouse gas</a>. The byproduct of the oxidation of OM are the same as the ones in aerobic heterotrophic respiration, i.e., CO<sub>2</sub>, NH<sub>4</sub><sup>+</sup>, HS<sup>-</sup>, and PO<sub>4</sub><sup>3-</sup>.</p>
+<p>There are two possible byproducts of nitrate reduction: N<sub>2</sub>, which is the inert gas that makes 78% of our atmosphere, and <a href="glossary.html#nitrous-oxide">N<sub>2</sub>O</a>, which is a potent <a href="glossary.html#GHG">greenhouse gas</a>. The byproduct of the oxidation of OM are the same as the ones in aerobic heterotrophic respiration, i.e., CO<sub>2</sub>, NH<sub>4</sub><sup>+</sup>, HS<sup>-</sup>, and PO<sub>4</sub><sup>3-</sup>.</p>
 <div class="figure" style="text-align: center"><span id="fig:denit-resp"></span>
 <img src="pictures/respiration-OM-NO3.png" alt="Respiration scheme for heterotrophic denitrification" width="75%" />
 <p class="caption">
@@ -608,7 +680,7 @@ Figure 7.13: Summary of the Electron Transfer Chain for the methanogen bacterium
 <ul>
 <li>except for methanogenesis, organic matter always serves, for <a href="glossary.html#trophic-names">organotrophs</a>, as the electron donor. Moreover, it is <em><strong>exclusively</strong></em> the Carbon of the OM which provides the electrons.</li>
 <li>as a result, the byproducts of the oxidation of the OM when the organic carbons lose their electrons are always the same: CO<sub>2</sub>, NH<sub>4</sub><sup>+</sup>, H<sub>2</sub>S/HS<sup>-</sup>, and PO<sub>4</sub><sup>3-</sup> (but for methanogenesis). This means that at one point, all of these four (five if one counts both H<sub>2</sub>S and HS<sup>-</sup>, their exact proportion depends on pH, see <a href="#hydrogen-sulfide">details in the glossary</a>) molecules will accumulate where they are produced unless they are used by another process</li>
-<li>To the contrary, the byproducts of the reduction of the electron acceptors are variable and depend on the electron acceptor. In the case of incomplete denitrification, and in the case of methanogenesis, N<sub>2</sub>O and CH<sub>4</sub> are significant <a href="#GHG">greenhouse gases</a>.</li>
+<li>To the contrary, the byproducts of the reduction of the electron acceptors are variable and depend on the electron acceptor. In the case of incomplete denitrification, and in the case of methanogenesis, N<sub>2</sub>O and CH<sub>4</sub> are significant <a href="glossary.html#GHG">greenhouse gases</a>.</li>
 </ul>
 </div>
 <div id="supply-and-demand-of-electron-acceptors-and-of-the-byproducts-of-organic-matter-oxidation" class="section level2">
