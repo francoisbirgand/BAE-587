@@ -139,6 +139,8 @@ fig:phenol
 fig:phenolsC6C1
 fig:enzymatic-browning
 fig:hydrobenzoquinone
+fig:bombardier
+fig:phlorotannins
 fig:monolignols
 fig:lignins-mono-poly
 fig:lignin-structure
