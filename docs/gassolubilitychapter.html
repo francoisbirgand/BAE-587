@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 11 Dissolved gases in water | Fundamental Biogeochemistry for Environmental and Ecological Engineering</title>
-  <meta name="description" content="Chapter 11 Dissolved gases in water | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>Chapter 11 Dissolved gases in water | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</title>
+  <meta name="description" content="Chapter 11 Dissolved gases in water | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 11 Dissolved gases in water | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta property="og:title" content="Chapter 11 Dissolved gases in water | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 11 Dissolved gases in water | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta name="twitter:title" content="Chapter 11 Dissolved gases in water | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   
   
   
@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2021-08-27" />
+<meta name="date" content="2021-10-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,8 @@
   
 <link rel="prev" href="acidbase.html"/>
 <link rel="next" href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,7 +50,8 @@
 
 
 
-
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
@@ -119,6 +121,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="stylesheet" href="toc.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome.min.css" type="text/css" />
@@ -174,6 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2.8" data-path="functional-groups.html"><a href="functional-groups.html#ketone"><i class="fa fa-check"></i><b>3.2.8</b> Ketone functional group</a></li>
 <li class="chapter" data-level="3.2.9" data-path="functional-groups.html"><a href="functional-groups.html#carboxyl-functional-group"><i class="fa fa-check"></i><b>3.2.9</b> Carboxyl functional group</a></li>
 <li class="chapter" data-level="3.2.10" data-path="functional-groups.html"><a href="functional-groups.html#amides"><i class="fa fa-check"></i><b>3.2.10</b> Amide functional group</a></li>
+<li class="chapter" data-level="3.2.11" data-path="functional-groups.html"><a href="functional-groups.html#amides"><i class="fa fa-check"></i><b>3.2.11</b> Methoxyl functional group</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="functional-groups.html"><a href="functional-groups.html#functional-groups-from-bonding-of-functionalized-organic-molecules"><i class="fa fa-check"></i><b>3.3</b> Functional groups from bonding of functionalized organic molecules</a><ul>
 <li class="chapter" data-level="3.3.1" data-path="functional-groups.html"><a href="functional-groups.html#ester-functional-group"><i class="fa fa-check"></i><b>3.3.1</b> Ester functional group</a></li>
@@ -213,12 +217,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.5.12" data-path="molecular-families.html"><a href="molecular-families.html#summary-about-the-isoprene-based-lipids"><i class="fa fa-check"></i><b>4.5.12</b> Summary about the isoprene-based lipids</a></li>
 <li class="chapter" data-level="4.5.13" data-path="molecular-families.html"><a href="molecular-families.html#other-notable-lipids"><i class="fa fa-check"></i><b>4.5.13</b> Other notable lipids</a></li>
 </ul></li>
-<li class="chapter" data-level="4.6" data-path="molecular-families.html"><a href="molecular-families.html#phenolics-and-polyphenols"><i class="fa fa-check"></i><b>4.6</b> Phenolics and polyphenols</a><ul>
+<li class="chapter" data-level="4.6" data-path="molecular-families.html"><a href="molecular-families.html#phenolics"><i class="fa fa-check"></i><b>4.6</b> Phenolics and polyphenols</a><ul>
 <li class="chapter" data-level="4.6.1" data-path="molecular-families.html"><a href="molecular-families.html#the-impermeable-world-of-phenolics"><i class="fa fa-check"></i><b>4.6.1</b> The impermeable world of phenolics</a></li>
 <li class="chapter" data-level="4.6.2" data-path="molecular-families.html"><a href="molecular-families.html#unavailable-energy-onto-phenolic-molecules"><i class="fa fa-check"></i><b>4.6.2</b> Unavailable energy onto phenolic molecules</a></li>
-<li class="chapter" data-level="4.6.3" data-path="molecular-families.html"><a href="molecular-families.html#phenols-and-phenolic-acids-c6-and-c6-c1-molecules"><i class="fa fa-check"></i><b>4.6.3</b> Phenols and phenolic acids: C6 and C6-C1 molecules</a></li>
+<li class="chapter" data-level="4.6.3" data-path="molecular-families.html"><a href="molecular-families.html#monomeric-phenols"><i class="fa fa-check"></i><b>4.6.3</b> Monomeric phenols</a></li>
 <li class="chapter" data-level="4.6.4" data-path="molecular-families.html"><a href="molecular-families.html#lignins"><i class="fa fa-check"></i><b>4.6.4</b> Lignins</a></li>
 </ul></li>
+<li class="chapter" data-level="4.7" data-path="molecular-families.html"><a href="molecular-families.html#alkaloids"><i class="fa fa-check"></i><b>4.7</b> Alkaloids</a></li>
+<li class="chapter" data-level="4.8" data-path="molecular-families.html"><a href="molecular-families.html#glucosinolates"><i class="fa fa-check"></i><b>4.8</b> Glucosinolates</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html"><i class="fa fa-check"></i><b>5</b> Energy generation and aerobic respiration</a><ul>
 <li class="chapter" data-level="5.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-transfer-of-electrons"><i class="fa fa-check"></i><b>5.1</b> Generating energy: transfer of electrons</a></li>
@@ -451,7 +457,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fundamental Biogeochemistry for Environmental and Ecological Engineering</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</a>
           </h1>
         </div>
 
@@ -474,8 +480,8 @@ Chapter summary:
 <p>Let us admit it: dissolved gases have been a bit of a mystery for all of us at one point. There have been many articles written and a book has recently been published <span class="citation">(Colt <a href="#ref-Colt2012-jy">2012</a>)</span> on the subject giving all the numbers and constants one could dream of…! So the subject is both relatively simple in principle but far from simple in the details. This chapter presents the principles and enough, and hopefully not too much, of the details.</p>
 <p>When one sees sparkling water, it is obvious that there is gas dissolved in it as bubbles form on their own and one can see them form and escape. They also apparently seem to form more when the water temperature is warm than when a sparkling water bottle just comes out of the fridge (Figure <a href="gassolubilitychapter.html#fig:SparklingGasRelease">11.1</a>).</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:SparklingGasRelease"></span>
-<iframe src="https://www.youtube.com/embed/zglZ8cIBTFM" width="95%" height="400px">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SparklingGasRelease"></span>
+<iframe src="https://www.youtube.com/embed/zglZ8cIBTFM" width="95%" height="400px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 11.1: Dissolved gas bubble formation from a sparkling water bottle at 4°C and 25°C
@@ -489,7 +495,7 @@ Figure 11.1: Dissolved gas bubble formation from a sparkling water bottle at 4°
 <li>as the headspace pressure is released, gases are released suggesting that more gas can be dissolved in water when water is <em>under pressure</em>. We shall see what this really means later in this chapter</li>
 </ul>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:BiofilmGasBubbles"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:BiofilmGasBubbles"></span>
 <img src="pictures/BiofilmGasBubbles.png" alt="Formation of gas bubbles attached to a biofilm (periphyton) scraped from an organic sediment in a tidal marsh" width="75%" />
 <p class="caption">
 Figure 11.2: Formation of gas bubbles attached to a biofilm (periphyton) scraped from an organic sediment in a tidal marsh
@@ -498,8 +504,8 @@ Figure 11.2: Formation of gas bubbles attached to a biofilm (periphyton) scraped
 <p></br></p>
 <p>There are other interesting observations to consider. You might have already observed bubble formation in a stream during Spring or Summer a bit like in the picture in Figure <a href="gassolubilitychapter.html#fig:BiofilmGasBubbles">11.2</a>. These bubbles are attached to a biofilm scraped from a stream bottom in North Carolina. Obviously, the presence of bubbles is not necessarily very informative about dissolved gases, but the sparkling water experience above suggests that in reality, if there are bubbles, there must necessarily be dissolved gases associated.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:GasBubblingSediment"></span>
-<iframe src="https://www.youtube.com/embed/CzWBpVw9Iao" width="95%" height="400px">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:GasBubblingSediment"></span>
+<iframe src="https://www.youtube.com/embed/CzWBpVw9Iao" width="95%" height="400px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 11.3: Gas bubbling from the sediment of a low gradient stream when disturbed
@@ -772,7 +778,7 @@ Reactions
 <p>Before discussing the values, visualizing the <span class="math inline">\(c_a\)</span> and <span class="math inline">\(c_g\)</span> concentrations aqueous and gaseous phases might help. Let us imagine containers that would be 2 liters in volume each, and containing 1 liter of water and 1 liter of gas head space above (Figure <a href="gassolubilitychapter.html#fig:dissolvedgasconcept">11.4</a>). The gaseous phase of the containers would be at 1 atm and filled with one pure gas only. Now to visualize the ratio of the number of moles in both phases, Henry’s law solubility constants in the first and second columns of Table <a href="gassolubilitychapter.html#tab:DissolvedGasesTable">11.1</a> give the number of moles of gas dissolved per liter of water, assuming that the overlying gas is pure and at one atmosphere. The concentration in the gaseous phase can be calculated using the perfect gas law, which yields that at 25°C, one mole of gas takes about 24.47 liters, so the concentration in one liter of gas is <span class="math inline">\(1/24.47 = 40.87 mmol.L^{-1}\)</span>. More calculation details are provided in Exercise <a href="gassolubilitychapter.html#exr:solubility1atm">11.1</a> below.</p>
 <p>The <span class="math inline">\(\frac{c_a}{c_g}\)</span> or <span class="math inline">\(\frac{liquid}{gas}\)</span> ratio for <span class="math inline">\(O_2\)</span>, <span class="math inline">\(N_2O\)</span>, and <span class="math inline">\(CO_2\)</span> gases is illustrated in Figure <a href="gassolubilitychapter.html#fig:dissolvedgasconcept">11.4</a>A, B, and C, respectively, with 100 random points in the gaseous phase representing the 40.9 mmol.L<sup>-1</sup> of gases present in 1L at 1atm, and, the corresponding 3, 59, and 83 points representing the respective gaseous concentrations <span class="math inline">\(c_g\)</span>. The ratios disolayed at the bottom of the figure apply for water temperature at 25°C.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:dissolvedgasconcept"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:dissolvedgasconcept"></span>
 <img src="Textbook_BAE587_files/figure-html/dissolvedgasconcept-1.png" alt="Visual and liquid:gas proportions of the number of moles in the gaseous phase of one liter of gas at 1 atm overlying one liter of water, for O~2~, N~2~O, and CO~2~ gases, using the respective Henry's solubility constants at 25°C. Blue rectangles represent one liter of water in equilibrium with one liter of pure gas (overlying white rectangle). There are 100 circles in the white rectangle representing the 40.9 mmol.L^-1^ of gases present in 1L at 1 atm at 25°C. The number of circles in the blue rectangles represent the respective and corresponding number of moles per liter of water" width="95%" />
 <p class="caption">
 Figure 11.4: Visual and liquid:gas proportions of the number of moles in the gaseous phase of one liter of gas at 1 atm overlying one liter of water, for O<sub>2</sub>, N<sub>2</sub>O, and CO<sub>2</sub> gases, using the respective Henry’s solubility constants at 25°C. Blue rectangles represent one liter of water in equilibrium with one liter of pure gas (overlying white rectangle). There are 100 circles in the white rectangle representing the 40.9 mmol.L<sup>-1</sup> of gases present in 1L at 1 atm at 25°C. The number of circles in the blue rectangles represent the respective and corresponding number of moles per liter of water
@@ -885,7 +891,7 @@ K^{cp}_H(T) = K^{cp}_H(T_0).exp \left[ \left( \frac {-\Delta_{sol}H}{R} \right) 
 <p></br></p>
 <p>In Figure <a href="gassolubilitychapter.html#fig:Solubility">11.5</a>B, the ratio of the number of moles in water and those in the overlying gas are calculated by dividing the solubility in mol.L<sup>-1</sup> displayed in Figure <a href="gassolubilitychapter.html#fig:Solubility">11.5</a>B, by the number of moles in the overlying gaseous phase. This number varies with temperature, and is calculated using the ideal gas equation as <span class="math inline">\(n = \frac{PV}{RT}\)</span> where all letters and values are defined in Exercise <a href="gassolubilitychapter.html#exr:solubility1atm">11.1</a>.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:Solubility"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Solubility"></span>
 <img src="Textbook_BAE587_files/figure-html/Solubility-1.png" alt="Solubility plots for common gases relevant to ecological engineering expressed in mol.L^-1^ (A) and unitless % as the ratio of $c_a/c_g$ (B). Each gas is assumed to be at 1 atm of pressure in the gaseous phase. Notice that the value for $CO_2$, $H_2S$ and $N_2O$ are read on the secondary Y-axis" width="100%" />
 <p class="caption">
 Figure 11.5: Solubility plots for common gases relevant to ecological engineering expressed in mol.L<sup>-1</sup> (A) and unitless % as the ratio of <span class="math inline">\(c_a/c_g\)</span> (B). Each gas is assumed to be at 1 atm of pressure in the gaseous phase. Notice that the value for <span class="math inline">\(CO_2\)</span>, <span class="math inline">\(H_2S\)</span> and <span class="math inline">\(N_2O\)</span> are read on the secondary Y-axis
@@ -935,7 +941,7 @@ V_{CO_2} = 3.39 \space 10^{-2}.exp \left[ 2400 \left( \frac{1}{283.15} - \frac{1
 <p>Now, it is time to look at the actual solubilities and concentrations of four of the most abundant gases in the atmosphere (excluding water vapor, considered to be at 1% at sea level and 0.4% overall in the atmospher): dinitrogen (78%), dioxygen (21%), argon (9,340 ppm or 0.934%), and carbon dioxide (415 ppm in 2020). Dinitrogen is among the least soluble gases (Figure <a href="gassolubilitychapter.html#fig:Solubility">11.5</a>), but because it comprises the vast majority of the atmosphere (78%), its overall actual solubility expressed in mmol.L<sup>-1</sup> is the highest and about 1.5 times that of dioxygen (Figure <a href="gassolubilitychapter.html#fig:DissolvedConc">11.6</a>). The second most dissolved gas is O<sub>2</sub>, the third is CO<sub>2</sub>, and the fourth is argon (Figure <a href="gassolubilitychapter.html#fig:DissolvedConc">11.6</a>).</p>
 <p>Solubility of argon at 1 atm is about 1.14 times that of oxygen, but its actual solubility is lower than CO<sub>2</sub>, despite the fact that its partial pressure in the atmosphere is about 23 times that of CO<sub>2</sub> in 2020. Solubility of CO<sub>2</sub> at 1 atm is about 30 times higher than that of O<sub>2</sub>, but in year 2020 the atmospheric concentration was about 415 ppm or 0.0415% or about 500 times less than the 21% of O<sub>2</sub>. In the end, the theoretical solubility of CO<sub>2</sub> in water is about 17 times lower than that of O<sub>2</sub>, which is remarkable for a gas that is 500 times less present in the atmosphere! Do not forget, however, that some of the CO<sub>2</sub> becomes hydrated into carbonic acid and dissociates into carbonates. But as we saw in the chapter dedicated to dissolved carbon dioxide, the dissociation into carbonates does not influence, in an open system, the concentration of dissolved CO<sub>2</sub>.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:DissolvedConc"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:DissolvedConc"></span>
 <img src="Textbook_BAE587_files/figure-html/DissolvedConc-1.png" alt="Solubility graph for $N_2$, $O_2$, and $CO_2$ at equilibrium with the atmosphere, assuming $P_{N_2} = 0.78 atm$, $P_{O_2} = 0.21 atm$, and $P_{CO_2} = 410 ppm$. Dissolved $O_2$ concentration, i.e., where the partial pressure of $O_2$ is equal to 0.21 atm. The corresponding concentrations in mg O~2~.L^-1^ are read on the secondary axis" width="85%" />
 <p class="caption">
 Figure 11.6: Solubility graph for <span class="math inline">\(N_2\)</span>, <span class="math inline">\(O_2\)</span>, and <span class="math inline">\(CO_2\)</span> at equilibrium with the atmosphere, assuming <span class="math inline">\(P_{N_2} = 0.78 atm\)</span>, <span class="math inline">\(P_{O_2} = 0.21 atm\)</span>, and <span class="math inline">\(P_{CO_2} = 410 ppm\)</span>. Dissolved <span class="math inline">\(O_2\)</span> concentration, i.e., where the partial pressure of <span class="math inline">\(O_2\)</span> is equal to 0.21 atm. The corresponding concentrations in mg O<sub>2</sub>.L<sup>-1</sup> are read on the secondary axis
@@ -1344,7 +1350,6 @@ p_{total}  \approx 0.780840 + 0.209460 + 0.00934 + 0.000415  \approx 1 \space at
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1363,6 +1368,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -1383,6 +1389,10 @@ gitbook.start({
 "text": null
 },
 "download": ["Textbook_BAE587.pdf", "Textbook_BAE587.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

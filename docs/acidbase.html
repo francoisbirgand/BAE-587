@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 10 Applied thermochemistry: acid-base equilibria | Fundamental Biogeochemistry for Environmental and Ecological Engineering</title>
-  <meta name="description" content="Chapter 10 Applied thermochemistry: acid-base equilibria | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>Chapter 10 Applied thermochemistry: acid-base equilibria | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</title>
+  <meta name="description" content="Chapter 10 Applied thermochemistry: acid-base equilibria | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 10 Applied thermochemistry: acid-base equilibria | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta property="og:title" content="Chapter 10 Applied thermochemistry: acid-base equilibria | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 10 Applied thermochemistry: acid-base equilibria | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta name="twitter:title" content="Chapter 10 Applied thermochemistry: acid-base equilibria | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   
   
   
@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2021-08-27" />
+<meta name="date" content="2021-10-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,8 @@
   
 <link rel="prev" href="conc-levels.html"/>
 <link rel="next" href="gassolubilitychapter.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,7 +50,8 @@
 
 
 
-
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
@@ -119,6 +121,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="stylesheet" href="toc.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome.min.css" type="text/css" />
@@ -174,6 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2.8" data-path="functional-groups.html"><a href="functional-groups.html#ketone"><i class="fa fa-check"></i><b>3.2.8</b> Ketone functional group</a></li>
 <li class="chapter" data-level="3.2.9" data-path="functional-groups.html"><a href="functional-groups.html#carboxyl-functional-group"><i class="fa fa-check"></i><b>3.2.9</b> Carboxyl functional group</a></li>
 <li class="chapter" data-level="3.2.10" data-path="functional-groups.html"><a href="functional-groups.html#amides"><i class="fa fa-check"></i><b>3.2.10</b> Amide functional group</a></li>
+<li class="chapter" data-level="3.2.11" data-path="functional-groups.html"><a href="functional-groups.html#amides"><i class="fa fa-check"></i><b>3.2.11</b> Methoxyl functional group</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="functional-groups.html"><a href="functional-groups.html#functional-groups-from-bonding-of-functionalized-organic-molecules"><i class="fa fa-check"></i><b>3.3</b> Functional groups from bonding of functionalized organic molecules</a><ul>
 <li class="chapter" data-level="3.3.1" data-path="functional-groups.html"><a href="functional-groups.html#ester-functional-group"><i class="fa fa-check"></i><b>3.3.1</b> Ester functional group</a></li>
@@ -213,12 +217,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.5.12" data-path="molecular-families.html"><a href="molecular-families.html#summary-about-the-isoprene-based-lipids"><i class="fa fa-check"></i><b>4.5.12</b> Summary about the isoprene-based lipids</a></li>
 <li class="chapter" data-level="4.5.13" data-path="molecular-families.html"><a href="molecular-families.html#other-notable-lipids"><i class="fa fa-check"></i><b>4.5.13</b> Other notable lipids</a></li>
 </ul></li>
-<li class="chapter" data-level="4.6" data-path="molecular-families.html"><a href="molecular-families.html#phenolics-and-polyphenols"><i class="fa fa-check"></i><b>4.6</b> Phenolics and polyphenols</a><ul>
+<li class="chapter" data-level="4.6" data-path="molecular-families.html"><a href="molecular-families.html#phenolics"><i class="fa fa-check"></i><b>4.6</b> Phenolics and polyphenols</a><ul>
 <li class="chapter" data-level="4.6.1" data-path="molecular-families.html"><a href="molecular-families.html#the-impermeable-world-of-phenolics"><i class="fa fa-check"></i><b>4.6.1</b> The impermeable world of phenolics</a></li>
 <li class="chapter" data-level="4.6.2" data-path="molecular-families.html"><a href="molecular-families.html#unavailable-energy-onto-phenolic-molecules"><i class="fa fa-check"></i><b>4.6.2</b> Unavailable energy onto phenolic molecules</a></li>
-<li class="chapter" data-level="4.6.3" data-path="molecular-families.html"><a href="molecular-families.html#phenols-and-phenolic-acids-c6-and-c6-c1-molecules"><i class="fa fa-check"></i><b>4.6.3</b> Phenols and phenolic acids: C6 and C6-C1 molecules</a></li>
+<li class="chapter" data-level="4.6.3" data-path="molecular-families.html"><a href="molecular-families.html#monomeric-phenols"><i class="fa fa-check"></i><b>4.6.3</b> Monomeric phenols</a></li>
 <li class="chapter" data-level="4.6.4" data-path="molecular-families.html"><a href="molecular-families.html#lignins"><i class="fa fa-check"></i><b>4.6.4</b> Lignins</a></li>
 </ul></li>
+<li class="chapter" data-level="4.7" data-path="molecular-families.html"><a href="molecular-families.html#alkaloids"><i class="fa fa-check"></i><b>4.7</b> Alkaloids</a></li>
+<li class="chapter" data-level="4.8" data-path="molecular-families.html"><a href="molecular-families.html#glucosinolates"><i class="fa fa-check"></i><b>4.8</b> Glucosinolates</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html"><i class="fa fa-check"></i><b>5</b> Energy generation and aerobic respiration</a><ul>
 <li class="chapter" data-level="5.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-transfer-of-electrons"><i class="fa fa-check"></i><b>5.1</b> Generating energy: transfer of electrons</a></li>
@@ -451,7 +457,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fundamental Biogeochemistry for Environmental and Ecological Engineering</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</a>
           </h1>
         </div>
 
@@ -609,7 +615,7 @@ log K_w = \frac{-4470.99}{T} + 6.0875 - 0.01706 T
 </br></p>
 <p>With temperatures T expressed in °K. One can see in Figure <a href="acidbase.html#fig:Kw-Temp">10.1</a> that the pH at exact neutrality varies with T°C reaching 7.37 at 5°C and decreasing down to about 6.84 at 35°C. So contrary to the common understanding that pH at neutrality is equal to 7, it actually changes with temperature, and not on an insignificant way. This is a reason why it is preferrable to calibrate pH probes using pH buffer solutions in the lab near 25°C. For all calculation purposes in this chapter, we will assume that the temperature is at 25°C, and we can therefore take that pH=7 at neutrality and that log K<sub>w</sub>=-14.</p>
 </br>
-<div class="figure" style="text-align: center"><span id="fig:Kw-Temp"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Kw-Temp"></span>
 <img src="Textbook_BAE587_files/figure-html/Kw-Temp-1.png" alt="K~w~ and pH at exact neutrality as a function of T&amp;deg;C" width="85%" />
 <p class="caption">
 Figure 10.1: K<sub>w</sub> and pH at exact neutrality as a function of T°C
@@ -787,7 +793,7 @@ HA^{(n-1)-} \rightleftharpoons A^{n-} + H^+ \hspace{0.6cm} K_{an} = \frac{[A^{n-
 <div id="mole-fraction-for-ammoniumammonia" class="section level4">
 <h4><span class="header-section-number">10.5.3.1</span> Mole fraction for ammonium/ammonia</h4>
 <p>Now that we have defined the expressions for the molar fraction of weak acids, it is time to apply the generalized equation <a href="acidbase.html#eq:HnAmolarfraci">(10.25)</a> to ecologically relevant weak acids. Let us start with ammonium <span class="math inline">\(NH_4^+\)</span> and its conjugate base <span class="math inline">\(NH_3\)</span>. At 25°C, the pK<sub>A</sub> is 9.28, or at pH = 9.28, <span class="math inline">\([NH_4^+] = [NH_3]\)</span>. At pH less than pK<sub>A</sub>, <span class="math inline">\(NH_4^+\)</span> is the preponderant form, and at pH greater than pK<sub>A</sub>, <span class="math inline">\(NH_3\)</span> becomes the preponderant form. One can see in Figure <a href="acidbase.html#fig:molarfracNH4">10.2</a>, that at pH less than 8, the molar fraction of ammonia is less than 5% of the total <span class="math inline">\([NH_4^+] + [NH_3]\)</span> (sometimes referred to as Total Amoniacal Nitrogen, or TAN). For this reason, in most natural waters, <span class="math inline">\([NH_4^+]\)</span> is by far the most preponderant form. Because in most natural waters, the concentrations of <span class="math inline">\(NH_4^+\)</span> is relatively low (~&lt; 0.2 mg N/L), there is very little loss of ammonia through volatilization. However, in animal waste water such as hog lagoons as they exist in North Carolina, ammonia volatilization is important. The pH of these lagoons range from 6.5 to 8.5 for an average of 7.8 <span class="citation">(Barker, Zublena, and Walls <a href="#ref-Barker1994-by">1994</a>)</span>, yielding 3% of the TAN as ammonia. However, the total TAN concentration can easily reach 1000 to 2000 mg N/L, resulting in <span class="math inline">\([NH_3]\)</span> between 30 and 60 mg N/L. The potential for ammonia volatilization is thus very high and occurs despite low molar fractions.</p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracNH4"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracNH4"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracNH4-1.png" alt="Molar fraction for ammonium and ammonia in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.2: Molar fraction for ammonium and ammonia in dilute solutions at 25°C
@@ -799,7 +805,7 @@ Figure 10.2: Molar fraction for ammonium and ammonia in dilute solutions at 25°
 <h4><span class="header-section-number">10.5.3.2</span> Mole fraction for phosphate and its conjugated acids</h4>
 <p>The phosphate anion (<span class="math inline">\(PO_4^{3-}\)</span>) has three conjugate acids, and is the deprotonated form of the triprotic phosphoric acid. The pK<sub>A</sub> of the conjugate forms are at 25°C 2.12, 7.21, and 12.67. The preponderant forms present at pH between 4.5 and 8.5 are thus dihydrogen (<span class="math inline">\(H_2PO_4^-\)</span>) and hydrogen (<span class="math inline">\(HPO_4^{2-}\)</span>) phosphates (Figure <a href="acidbase.html#fig:molarfracPO4">10.3</a>).
 The byproduct of microbial respiration that finds its way into natural waters is thus rarely if ever <span class="math inline">\(PO_4^{3-}\)</span> unlike presented in Chapter <a href="redoxwetland.html#redoxwetland">7</a>… The <span class="math inline">\(PO_4^{3-}\)</span> form is still commonly used as a generic ‘phosphate’ molecule, regardless of pH considerations.</p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracPO4"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracPO4"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracPO4-1.png" alt="Molar fraction for the conjugate acid forms of the triprotic phosphoric acid in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.3: Molar fraction for the conjugate acid forms of the triprotic phosphoric acid in dilute solutions at 25°C
@@ -809,7 +815,7 @@ Figure 10.3: Molar fraction for the conjugate acid forms of the triprotic phosph
 <div id="mole-fraction-for-sulfate-and-hydrogen-sulfate" class="section level4">
 <h4><span class="header-section-number">10.5.3.3</span> Mole fraction for sulfate and hydrogen sulfate</h4>
 <p>In most natural waters with pH between 4.5 and 8.5, sulfate is the preponderant form, and in the vast majority of cases, there is very little <span class="math inline">\(HSO_4^-\)</span> (Figure <a href="acidbase.html#fig:molarfracSO4">10.4</a>). This figure also suggests that sulfuric acid (<span class="math inline">\(H_2SO_4^{2-}\)</span>) does not exist in dilute waters in this form.</p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracSO4"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracSO4"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracSO4-1.png" alt="Molar fraction for the conjugate acid forms of the hydrogen sulfate and sulfate in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.4: Molar fraction for the conjugate acid forms of the hydrogen sulfate and sulfate in dilute solutions at 25°C
@@ -820,7 +826,7 @@ Figure 10.4: Molar fraction for the conjugate acid forms of the hydrogen sulfate
 <h4><span class="header-section-number">10.5.3.4</span> Mole fraction of dissolved dihydrogen sulfide and conjugate bases</h4>
 <p>Now, for dihydrogen sulfide and carbon dioxide/carbonic acid, the volatile forms are present in very significant amounts for pH of natural waters. Because the molar fraction equation <a href="acidbase.html#eq:HnAmolarfraci">(10.25)</a> only applies in closed systems, one might suggest that natural systems are in fact open systems, such that equation <a href="acidbase.html#eq:HnAmolarfraci">(10.25)</a> just should not be used. True for open waters. However, there are lots of other ‘captive’ waters such as groundwater or sediment porewater, that are not directly open to the atmosphere and for which it is possible to use the molar fraction equation <a href="acidbase.html#eq:HnAmolarfraci">(10.25)</a>.</p>
 <p>The pKa of the dihydrogen sulfide/hydrogen sulfide is 7.02 at 25°C, and there is still about 10% of <span class="math inline">\(H_2S_(aq)\)</span> at pH=8 (Figure <a href="acidbase.html#fig:molarfracH2S">10.5</a>). The sulfide ion <span class="math inline">\(S^{2-}\)</span>, for most natural waters is not present and for the normal range of pH of natural waters, the two significant forms are <span class="math inline">\(H_2S_(aq)\)</span> and <span class="math inline">\(HS^-\)</span>. There are consequences on bubble formation or gas ebullition in aquatic sediments as we shall see herein.</p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracH2S"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracH2S"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracH2S-1.png" alt="Molar fraction for the conjugate acid forms of the hydrogen sulfide in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.5: Molar fraction for the conjugate acid forms of the hydrogen sulfide in dilute solutions at 25°C
@@ -836,7 +842,7 @@ Figure 10.5: Molar fraction for the conjugate acid forms of the hydrogen sulfide
 \tag{10.26}
 \end{equation}\]</span></p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracCO2"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracCO2"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracCO2-1.png" alt="Molar fraction for the conjugate acid forms of the hydrated carbon dioxide, bicarbonate, and carbonate in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.6: Molar fraction for the conjugate acid forms of the hydrated carbon dioxide, bicarbonate, and carbonate in dilute solutions at 25°C
@@ -872,7 +878,7 @@ CO_{2(aq)} + H_2O \hspace{0.5cm} \underset{fast}{\stackrel{slow}{\rightleftharpo
 <h4><span class="header-section-number">10.5.3.6</span> Mole fraction of common polyprotic organic acids</h4>
 <p>Many weak acids are involved at the cellular level and participate in buffering the solution into which the organelles “bathe” in cells. These include di- and triprotic acids. Oxalic (Figure <a href="acidbase.html#fig:molarfracOxalicAcid">10.7</a>), malonic, succinic, and fumaric acids are C2, C3, and C4 diprotic acids with carboxyl groups located on the outer carbons.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracOxalicAcid"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracOxalicAcid"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracOxalicAcid-1.png" alt="Molar fraction for the conjugate acid forms of the diprotic oxalic acid in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.7: Molar fraction for the conjugate acid forms of the diprotic oxalic acid in dilute solutions at 25°C
@@ -881,21 +887,21 @@ Figure 10.7: Molar fraction for the conjugate acid forms of the diprotic oxalic 
 <p></br></p>
 <p>Base conjugates are usually the preponderant forms at intracellular pH (7-7.4), so malonic (Figure <a href="acidbase.html#fig:molarfracMalonicAcid">10.8</a>), succinic (Figure <a href="acidbase.html#fig:molarfracSuccinicAcid">10.9</a>), and fumaric (Figure <a href="acidbase.html#fig:molarfracFumaricAcid">10.10</a>) acids are thus usually referred to as malate, succinate, and fumarate, which are all involved in the citric acid cycle.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracMalonicAcid"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracMalonicAcid"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracMalonicAcid-1.png" alt="Molar fraction for the conjugate acid forms of the triprotic citric acid in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.8: Molar fraction for the conjugate acid forms of the triprotic citric acid in dilute solutions at 25°C
 </p>
 </div>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracSuccinicAcid"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracSuccinicAcid"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracSuccinicAcid-1.png" alt="Molar fraction for the conjugate acid forms of the triprotic citric acid in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.9: Molar fraction for the conjugate acid forms of the triprotic citric acid in dilute solutions at 25°C
 </p>
 </div>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracFumaricAcid"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracFumaricAcid"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracFumaricAcid-1.png" alt="Molar fraction for the conjugate acid forms of the triprotic citric acid in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.10: Molar fraction for the conjugate acid forms of the triprotic citric acid in dilute solutions at 25°C
@@ -904,7 +910,7 @@ Figure 10.10: Molar fraction for the conjugate acid forms of the triprotic citri
 <p></br></p>
 <p>In the last step of the citric acid, the oxalo-acetate (Figure <a href="aerobic-and-anaerobic-respiration.html#fig:krebs">5.26</a>) incorporates and acetate to form the triprotic citric acid (Figure <a href="acidbase.html#fig:molarfracCitricAcid">10.11</a>), the molecule at the center of the citric acid cycle. All these acids do not seem to be able to provide that much buffering capacity for intracellular pH as they are all in their most basic conjugate form. However at pH 7, 20% of the citrate is in the AH<sup>2-</sup> form.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracCitricAcid"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracCitricAcid"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracCitricAcid-1.png" alt="Molar fraction for the conjugate acid forms of the triprotic citric acid in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.11: Molar fraction for the conjugate acid forms of the triprotic citric acid in dilute solutions at 25°C
@@ -913,7 +919,7 @@ Figure 10.11: Molar fraction for the conjugate acid forms of the triprotic citri
 <p></br></p>
 <p>Another interesting example of a potential triprotic acid is uric acid (Figure <a href="acidbase.html#fig:molarfracUricAcid">10.12</a>). Actually, it is somewhat surprising that it would behave as an acid at all, as it does not contain any carboxylic acid. However, the hydroxyl of the imidazol moeity does lose a proton, but the other hydroxyl groups do not. In reality, uric acid does not behave like a polyprotic acid, but as a monoprotic acid…</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:molarfracUricAcid"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:molarfracUricAcid"></span>
 <img src="Textbook_BAE587_files/figure-html/molarfracUricAcid-1.png" alt="Molar fraction for the conjugate acid forms of the diprotic uric acid in dilute solutions at 25°C" width="85%" />
 <p class="caption">
 Figure 10.12: Molar fraction for the conjugate acid forms of the diprotic uric acid in dilute solutions at 25°C
@@ -1242,7 +1248,7 @@ pH &gt; pK<sub>A</sub> + 1
 <p>The expressions show that for <span class="math inline">\(pH&lt;pK_A-1\)</span> and <span class="math inline">\(pH&gt;pK_A+1\)</span>, <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> follow straight lines of slope -1, 0, or +1 as a function of pH. It is thus possible to draw linear asymptotic lines, litterally, which the <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> lines should follow for <span class="math inline">\(pH&lt;pK_A-1\)</span> and <span class="math inline">\(pH&gt;pK_A+1\)</span>. The actual <span class="math inline">\(log[AH^+]\)</span> and <span class="math inline">\(log[A]\)</span> lines would then deviate from the asymptotic lines for <span class="math inline">\(pK_A-1&lt;pH&lt;pK_A+1\)</span> and crossing at <span class="math inline">\(logC_T - 0.3\)</span> at <span class="math inline">\(pH=pK_A\)</span>.</p>
 <p>An example graph of <span class="math inline">\(log(conc) = f(pH)\)</span> is provided in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>. The lines <span class="math inline">\(log[H^+] = -pH\)</span> and <span class="math inline">\(log[OH^-] = -14+pH\)</span> are first plotted (in grey in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>). The next step is to draw the asymptotic lines (dotted lines in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>). These appear as straight lines as a function of pH as their equations indicate (Table <a href="acidbase.html#tab:AHAsumtable">10.1</a>). In reality, it is possible to extend these lines up to pH=pK<sub>A</sub>. Indeed asymptotic lines both intersect at <span class="math inline">\(log[AH^+]=C_T\)</span> and <span class="math inline">\(log[A]=C_T\)</span> at <span class="math inline">\(pH=pK_A\)</span> (Figure <a href="acidbase.html#fig:AH-pH">10.13</a>). To draw these asymptotic lines, one needs to find this intersection and then draw either horizontal lines or lines with slopes of -1 or +1 as applicable. This is the reason why one does not need to know the numerical values of the <span class="math inline">\(C^{st}\)</span> (constant) in the equations in Table <a href="acidbase.html#tab:AHAsumtable">10.1</a>. In reality, drawing the <span class="math inline">\(log[H^+]\)</span> and <span class="math inline">\(log[OH^-]\)</span> curves follows the same procedure. These two lines must meet at <span class="math inline">\(log(conc)=-7\)</span> at <span class="math inline">\(pH=7\)</span>, and have slopes of -1 and +1, respectively.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:AH-pH"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:AH-pH"></span>
 <img src="Textbook_BAE587_files/figure-html/AH-pH-1.png" alt="Forms of a hypothetical monoprotic acid for total concentration of 10^{-3.2}^M as a function of pH at 25°C" width="85%" />
 <p class="caption">
 Figure 10.13: Forms of a hypothetical monoprotic acid for total concentration of 10<sup>{-3.2}</sup>M as a function of pH at 25°C
@@ -1265,8 +1271,8 @@ Figure 10.13: Forms of a hypothetical monoprotic acid for total concentration of
 <p></br></p>
 <p>So now, this is where it is important to be able to assess the physical reality of the <span class="math inline">\([A] + [OH^-]\)</span> summation. It is easy to visualize on Figure <a href="acidbase.html#fig:AH-pH">10.13</a> the relative importance of <span class="math inline">\([A]\)</span> vs <span class="math inline">\([OH^-]\)</span>. In the figure, and for <span class="math inline">\(pH&lt;pK_A\)</span>, <span class="math inline">\([OH^-] \leq 10^{-5} [A]\)</span>. One can safely assume that <span class="math inline">\([A] + [OH^-] \approx [A]\)</span>. Hence, in these cases, <span class="math inline">\([H^+] \approx [A]\)</span>, which means that pH can be graphically determined at the intersection between the <span class="math inline">\(log[H^+]\)</span> and <span class="math inline">\(log[A]\)</span> lines (Figure <a href="acidbase.html#fig:AH-pH-shiny">10.14</a>). The conditions for this graphical determination are that the <span class="math inline">\(log[A]\)</span> curve be in its linear portion and that at the intersection, <span class="math inline">\([A]&gt;10[OH^-]\)</span>. Figure <a href="acidbase.html#fig:AH-pH-shiny">10.14</a> is an interactive graph where one can rapidly graphically determine pH as a function of variable <span class="math inline">\(pK_A\)</span> and <span class="math inline">\(C_T\)</span>.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:AH-pH-shiny"></span>
-<iframe src="https://francoisbirgand.shinyapps.io/AHClvspH/?showcase=0" width="85%" height="780px">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:AH-pH-shiny"></span>
+<iframe src="https://francoisbirgand.shinyapps.io/AHClvspH/?showcase=0" width="85%" height="780px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 10.14: Graphical determination of pH as a function of variable pK<sub>A</sub> and C<sub>T</sub> for a hypothetical AHCl weak acid salt added into solution. Also available <a href="https://francoisbirgand.shinyapps.io/AHClvspH/">at this link</a>
@@ -1275,7 +1281,7 @@ Figure 10.14: Graphical determination of pH as a function of variable pK<sub>A</
 <p></br></p>
 <p>Now, the graphs in Figures <a href="acidbase.html#fig:AH-pH">10.13</a> and <a href="acidbase.html#fig:AH-pH-shiny">10.14</a> were derived for an <span class="math inline">\(AHCl\)</span> hypothetical salt fully dissociating into <span class="math inline">\(AH^+\)</span>, <span class="math inline">\(A\)</span> and <span class="math inline">\(Cl^-\)</span>. An analogous analysis can be derived for a weak base salt of formula <span class="math inline">\(ANa\)</span> which would fully dissociate into <span class="math inline">\(HA\)</span>, <span class="math inline">\(A^-\)</span> and <span class="math inline">\(Na^+\)</span>. In this case, the combination of the electroneutrality and conservation of mass would yield <span class="math inline">\([H^+] + [HA] = [OH^-]\)</span>. Using the same reasoning as before, pH can be graphically determined at the intersection between the <span class="math inline">\(log[OH^-]\)</span> and <span class="math inline">\(log[HA]\)</span> lines, and provided that the <span class="math inline">\(log[HA]\)</span> curve be in its linear portion and that at the intersection <span class="math inline">\([HA]&gt;10[H^+]\)</span>.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:HA-pH-gif"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:HA-pH-gif"></span>
 <img src="pictures/animated_ANavspH_large.gif" alt="Graphical determination of pH as a function of variable pK~A~ and C~T~ for a hypothetical ANa weak base salt added into solution" width="85%" />
 <p class="caption">
 Figure 10.15: Graphical determination of pH as a function of variable pK<sub>A</sub> and C<sub>T</sub> for a hypothetical ANa weak base salt added into solution
@@ -1662,7 +1668,7 @@ pH &gt; pK<sub>3</sub>+1
 <p>It is thus possible to draw all these asymptotic lines as illustrated in Figure <a href="acidbase.html#fig:H3PO4-pH">10.16</a> below for the conjugate acids of phosphate <span class="math inline">\(PO_4^{3-}\)</span>. Following the principles described in section <a href="acidbase.html#logConcMonoAcid">10.6.2</a> above, the <span class="math inline">\(log(conc)\)</span> curves follow the asymptotic lines outside the <span class="math inline">\(pH=pK_x \pm 1\)</span>. The actual curves illustrated in Figure <a href="acidbase.html#fig:H3PO4-pH">10.16</a> actually deviate from the asymptotic lines for <span class="math inline">\(pH=pK_x \pm 1.4\)</span> as already observed in Figure <a href="acidbase.html#fig:AH-pH">10.13</a>. Again, this is of minor importance to graphically determine the pH of a solution.</p>
 <p>One can also verify that for pH near pK<sub>x</sub>, there are two preponderant forms, and that other forms are at least 10<sup>5</sup> times lower, which justifies the approach used to simplify the equation of conservation of mass (equation <a href="acidbase.html#eq:H3Aconcmass">(10.43)</a>) to only two terms (e.g., equation <a href="acidbase.html#eq:H3Aconcmassapprox">(10.44)</a>). Notice that the curves for the equations <span class="math inline">\(C^{st} \pm 3pH\)</span> are off the chart and do not appear on Figure <a href="acidbase.html#fig:H3PO4-pH">10.16</a>.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:H3PO4-pH"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:H3PO4-pH"></span>
 <img src="Textbook_BAE587_files/figure-html/H3PO4-pH-1.png" alt="Forms of polyprotic phosphoric acid for total concentration of 10^-3.2^M as a function of pH at 25°C. pK~1~=2.12; pK~2~=7.21; pK~3~=12.67" width="85%" />
 <p class="caption">
 Figure 10.16: Forms of polyprotic phosphoric acid for total concentration of 10<sup>-3.2</sup>M as a function of pH at 25°C. pK<sub>1</sub>=2.12; pK<sub>2</sub>=7.21; pK<sub>3</sub>=12.67
@@ -1691,7 +1697,7 @@ Figure 10.16: Forms of polyprotic phosphoric acid for total concentration of 10<
 <hr />
 <p>Such pH determinations can be done for a variety of <span class="math inline">\(C_T\)</span> values corresponding to the addition of the weak acid <span class="math inline">\(NaH_2PO_4\)</span> salt, and to the addition of the weak base salt <span class="math inline">\(CaHPO_4\)</span>. Several conditions must be met, including that the simplifications described above apply, and that the curves cross on their linear portions. An illustration of the possibilities, or not, of graphically determining the pH is provided in Figure <a href="acidbase.html#fig:PO4-pH-gif">10.17</a>.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:PO4-pH-gif"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:PO4-pH-gif"></span>
 <img src="pictures/animated_PO4vspH_large.gif" alt="Graphical determination of pH as a function of variable C~T~ when the weak acid salt $NaH_2PO_4$, and when the weak base salt $CaHPO_4$ are added into solution" width="75%" />
 <p class="caption">
 Figure 10.17: Graphical determination of pH as a function of variable C<sub>T</sub> when the weak acid salt <span class="math inline">\(NaH_2PO_4\)</span>, and when the weak base salt <span class="math inline">\(CaHPO_4\)</span> are added into solution
@@ -1699,7 +1705,7 @@ Figure 10.17: Graphical determination of pH as a function of variable C<sub>T</s
 </div>
 <p></br></p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:H2CO3-pH"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:H2CO3-pH"></span>
 <img src="Textbook_BAE587_files/figure-html/H2CO3-pH-1.png" alt="Carbonates and conjugate acids in *__a closed system__* for total concentration of 10^-3.4^M as a function of pH at 25°C" width="85%" />
 <p class="caption">
 Figure 10.18: Carbonates and conjugate acids in <em><strong>a closed system</strong></em> for total concentration of 10<sup>-3.4</sup>M as a function of pH at 25°C
@@ -1708,7 +1714,7 @@ Figure 10.18: Carbonates and conjugate acids in <em><strong>a closed system</str
 <p></br></p>
 <p><a href="https://en.wikipedia.org/wiki/Bjerrum_plot">Bjerrum plot</a></p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:pH-seawater"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pH-seawater"></span>
 <img src="Textbook_BAE587_files/figure-html/pH-seawater-1.png" alt="Concentrations of carbonates and conjugate acids in *__an open system__* in equilibrium with atmospheric CO~2~ as a function of pH at 25°C. Graphical method to calculate theoretical pH of rainwater" width="85%" />
 <p class="caption">
 Figure 10.19: Concentrations of carbonates and conjugate acids in <em><strong>an open system</strong></em> in equilibrium with atmospheric CO<sub>2</sub> as a function of pH at 25°C. Graphical method to calculate theoretical pH of rainwater
@@ -1716,27 +1722,27 @@ Figure 10.19: Concentrations of carbonates and conjugate acids in <em><strong>an
 </div>
 <p></br></p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:pH-rainwater"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pH-rainwater"></span>
 <img src="Textbook_BAE587_files/figure-html/pH-rainwater-1.png" alt="Concentrations of carbonates and conjugate acids in *__an open system__* in equilibrium with atmospheric CO~2~ as a function of pH at 25°C. Graphical method to calculate theoretical pH of rainwater" width="85%" />
 <p class="caption">
 Figure 10.20: Concentrations of carbonates and conjugate acids in <em><strong>an open system</strong></em> in equilibrium with atmospheric CO<sub>2</sub> as a function of pH at 25°C. Graphical method to calculate theoretical pH of rainwater
 </p>
 </div>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:SO4-HS-pe"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SO4-HS-pe"></span>
 <img src="Textbook_BAE587_files/figure-html/SO4-HS-pe-1.png" alt="Concentrations of Sulfate and hydrogen sulfide as a function of p&amp;epsilon;" width="100%" />
 <p class="caption">
 Figure 10.21: Concentrations of Sulfate and hydrogen sulfide as a function of pε
 </p>
 </div>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:CO2-CH2O-pe"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:CO2-CH2O-pe"></span>
 <img src="Textbook_BAE587_files/figure-html/CO2-CH2O-pe-1.png" alt="Concentrations of a generic carbohydrate CH~2~O and CO~2~ that would be in equilibrium with the atmosphere as a function of p&amp;epsilon; and for a given pH" width="100%" />
 <p class="caption">
 Figure 10.22: Concentrations of a generic carbohydrate CH<sub>2</sub>O and CO<sub>2</sub> that would be in equilibrium with the atmosphere as a function of pε and for a given pH
 </p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:NH4-NO2-NO3-pe"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:NH4-NO2-NO3-pe"></span>
 <img src="Textbook_BAE587_files/figure-html/NH4-NO2-NO3-pe-1.png" alt="Concentrations ammonium, nitrite, and nitrate as a function of p&amp;epsilon; and for a given pH" width="100%" />
 <p class="caption">
 Figure 10.23: Concentrations ammonium, nitrite, and nitrate as a function of pε and for a given pH
@@ -1776,7 +1782,6 @@ Figure 10.23: Concentrations ammonium, nitrite, and nitrate as a function of pε
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1795,6 +1800,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -1815,6 +1821,10 @@ gitbook.start({
 "text": null
 },
 "download": ["Textbook_BAE587.pdf", "Textbook_BAE587.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A Appendix A | Fundamental Biogeochemistry for Environmental and Ecological Engineering</title>
-  <meta name="description" content="A Appendix A | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>A Appendix A | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</title>
+  <meta name="description" content="A Appendix A | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A Appendix A | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta property="og:title" content="A Appendix A | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A Appendix A | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta name="twitter:title" content="A Appendix A | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   
   
   
@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2021-08-27" />
+<meta name="date" content="2021-10-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,8 @@
   
 <link rel="prev" href="glossary.html"/>
 <link rel="next" href="appendix-b-equilibrium-constants-at-25c.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,7 +50,8 @@
 
 
 
-
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
@@ -119,6 +121,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="stylesheet" href="toc.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome.min.css" type="text/css" />
@@ -174,6 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2.8" data-path="functional-groups.html"><a href="functional-groups.html#ketone"><i class="fa fa-check"></i><b>3.2.8</b> Ketone functional group</a></li>
 <li class="chapter" data-level="3.2.9" data-path="functional-groups.html"><a href="functional-groups.html#carboxyl-functional-group"><i class="fa fa-check"></i><b>3.2.9</b> Carboxyl functional group</a></li>
 <li class="chapter" data-level="3.2.10" data-path="functional-groups.html"><a href="functional-groups.html#amides"><i class="fa fa-check"></i><b>3.2.10</b> Amide functional group</a></li>
+<li class="chapter" data-level="3.2.11" data-path="functional-groups.html"><a href="functional-groups.html#amides"><i class="fa fa-check"></i><b>3.2.11</b> Methoxyl functional group</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="functional-groups.html"><a href="functional-groups.html#functional-groups-from-bonding-of-functionalized-organic-molecules"><i class="fa fa-check"></i><b>3.3</b> Functional groups from bonding of functionalized organic molecules</a><ul>
 <li class="chapter" data-level="3.3.1" data-path="functional-groups.html"><a href="functional-groups.html#ester-functional-group"><i class="fa fa-check"></i><b>3.3.1</b> Ester functional group</a></li>
@@ -213,12 +217,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.5.12" data-path="molecular-families.html"><a href="molecular-families.html#summary-about-the-isoprene-based-lipids"><i class="fa fa-check"></i><b>4.5.12</b> Summary about the isoprene-based lipids</a></li>
 <li class="chapter" data-level="4.5.13" data-path="molecular-families.html"><a href="molecular-families.html#other-notable-lipids"><i class="fa fa-check"></i><b>4.5.13</b> Other notable lipids</a></li>
 </ul></li>
-<li class="chapter" data-level="4.6" data-path="molecular-families.html"><a href="molecular-families.html#phenolics-and-polyphenols"><i class="fa fa-check"></i><b>4.6</b> Phenolics and polyphenols</a><ul>
+<li class="chapter" data-level="4.6" data-path="molecular-families.html"><a href="molecular-families.html#phenolics"><i class="fa fa-check"></i><b>4.6</b> Phenolics and polyphenols</a><ul>
 <li class="chapter" data-level="4.6.1" data-path="molecular-families.html"><a href="molecular-families.html#the-impermeable-world-of-phenolics"><i class="fa fa-check"></i><b>4.6.1</b> The impermeable world of phenolics</a></li>
 <li class="chapter" data-level="4.6.2" data-path="molecular-families.html"><a href="molecular-families.html#unavailable-energy-onto-phenolic-molecules"><i class="fa fa-check"></i><b>4.6.2</b> Unavailable energy onto phenolic molecules</a></li>
-<li class="chapter" data-level="4.6.3" data-path="molecular-families.html"><a href="molecular-families.html#phenols-and-phenolic-acids-c6-and-c6-c1-molecules"><i class="fa fa-check"></i><b>4.6.3</b> Phenols and phenolic acids: C6 and C6-C1 molecules</a></li>
+<li class="chapter" data-level="4.6.3" data-path="molecular-families.html"><a href="molecular-families.html#monomeric-phenols"><i class="fa fa-check"></i><b>4.6.3</b> Monomeric phenols</a></li>
 <li class="chapter" data-level="4.6.4" data-path="molecular-families.html"><a href="molecular-families.html#lignins"><i class="fa fa-check"></i><b>4.6.4</b> Lignins</a></li>
 </ul></li>
+<li class="chapter" data-level="4.7" data-path="molecular-families.html"><a href="molecular-families.html#alkaloids"><i class="fa fa-check"></i><b>4.7</b> Alkaloids</a></li>
+<li class="chapter" data-level="4.8" data-path="molecular-families.html"><a href="molecular-families.html#glucosinolates"><i class="fa fa-check"></i><b>4.8</b> Glucosinolates</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html"><i class="fa fa-check"></i><b>5</b> Energy generation and aerobic respiration</a><ul>
 <li class="chapter" data-level="5.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-transfer-of-electrons"><i class="fa fa-check"></i><b>5.1</b> Generating energy: transfer of electrons</a></li>
@@ -451,7 +457,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fundamental Biogeochemistry for Environmental and Ecological Engineering</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</a>
           </h1>
         </div>
 
@@ -470,7 +476,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <blockquote>
 <p>The atomic number or proton number of a chemical element is the number of protons found in the nucleus of an atom. It is identical to the charge number of the nucleus. The atomic number uniquely identifies a chemical element. In an uncharged atom, the atomic number is also equal to the number of electrons <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2018-at">2018</a><a href="#ref-Wikipedia_contributors2018-at">l</a>)</span>.</p>
 </blockquote>
-<div class="figure" style="text-align: center"><span id="fig:PeriodicTableSimple"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:PeriodicTableSimple"></span>
 <img src="pictures/PeriodicTableSimplified.png" alt="simplified periodic table that show the s and p orbitals for the first 18 atomic numbers (number of protons = number of electrons in each atom)" width="90%" />
 <p class="caption">
 Figure A.1: simplified periodic table that show the s and p orbitals for the first 18 atomic numbers (number of protons = number of electrons in each atom)
@@ -483,21 +489,21 @@ Figure A.1: simplified periodic table that show the s and p orbitals for the fir
 </blockquote>
 <p>So now, for the low energy level 1, the orbital <strong>s</strong> appears to be a sphere. In other words the one or two atoms in this orbital will have a very high probability of being in that sphere. The one electron of hydrogen will thus be somewhere in that orbital. For helium, its two electrons will be in this sphere as well and be extremely stable. With only one electron in its orbital, hydrogen is just not very stable, and it ‘tries’ to bond with other atoms such that they can ‘share’ electrons so that the H 1s orbital is ‘visited’ by 2 electrons, which makes hydrogen ‘happy’ and stable.</p>
 <p>Now, for lithium and Beryllium, which have 3 and 4 electrons (Figure <a href="appendix-a.html#fig:PeriodicTableSimple">A.1</a>), respectively, their electrons fill a new <strong>s</strong> orbital, which also is a <strong>s</strong> orbital with a spherical shape as well, just bigger as the electrons have more energy. Boron and Carbon have 5 and 6 electrons, and their orbitals are not spheres any more. The theory tells that the high probability for these electrons is to be in a space that looks like two ‘eggs’ opposed to each other (Figure <a href="appendix-a.html#fig:ElectronOrbitals">A.2</a>). These are called <strong>p</strong> orbitals. There can be 3 <strong>p</strong> orbitals which are located along three x,y,z axes with the exact same level of energy.</p>
-<div class="figure" style="text-align: center"><span id="fig:ElectronOrbitals"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ElectronOrbitals"></span>
 <img src="pictures/ElectronOrbitals.jpg" alt="Shape of the electron orbitals s, p, d, and f. Obtained from https://chem.libretexts.org/" width="90%" />
 <p class="caption">
 Figure A.2: Shape of the electron orbitals s, p, d, and f. Obtained from <a href="https://chem.libretexts.org/" class="uri">https://chem.libretexts.org/</a>
 </p>
 </div>
 <p>Electron orbitals that have the same energy levels are called degenerate orbitals. The lower energy orbitals are filled before higher energy orbitals. Hund’s rule states that degenerate orbitals are filled evenly before moving to higher energy orbitals. For <strong>p</strong> orbitals, which consist of three degenerate orbitals that all have exactly the same energy level, we put a single electron in each orbital first then put a second electron (of opposite spin, we have not mentioned spins yet, and will not here) in each orbital to fill them with a total of six electrons.</p>
-<div class="figure" style="text-align: center"><span id="fig:FillingOrbitalsHund"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FillingOrbitalsHund"></span>
 <img src="pictures/FillingOrbitalsHund.png" alt="Hund's rule to correctly fill in orbitals for the Carbon and Nitrogen atoms. Up and down arrows represent the electron spins. Electrons have to have opposite spins to be located in the same orbital. This has little impact for our purpose" width="90%" />
 <p class="caption">
 Figure A.3: Hund’s rule to correctly fill in orbitals for the Carbon and Nitrogen atoms. Up and down arrows represent the electron spins. Electrons have to have opposite spins to be located in the same orbital. This has little impact for our purpose
 </p>
 </div>
 <p>The electrons for Carbon, Nitrogen, Oxygen, Phosphorus, and Sulfur in their orbitals are represented in Figure <a href="appendix-a.html#fig:OrbitalsCNOPS">A.4</a> below. you can see that, N and P, and O and S <strong>2p</strong> and <strong>3p</strong> orbitals, respectively, follow the same ‘filling’ patterns.</p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsCNOPS"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsCNOPS"></span>
 <img src="pictures/OrbitalsCNOPS.png" alt="Hund's rule to correctly fill in orbitals for the Carbon, Nitrogen, Oxygen, Phosphorus, and Sufur atoms" width="90%" />
 <p class="caption">
 Figure A.4: Hund’s rule to correctly fill in orbitals for the Carbon, Nitrogen, Oxygen, Phosphorus, and Sufur atoms
@@ -509,7 +515,7 @@ Figure A.4: Hund’s rule to correctly fill in orbitals for the Carbon, Nitrogen
 <div id="orbitals-hybridization" class="section level2">
 <h2><span class="header-section-number">A.2</span> Orbitals hybridization</h2>
 <p>This is what the theory tells us. In practice, it seems that the interactions of electrons among orbitals, and with bond atoms, make things a little different and new hybrid orbitals actually form. This is the basis of geometrical configuration of molecules and explains the shape of molecules and angles between atoms in a molecule. Does it really matter in biogeochemical processes? Actually quite a bit. Starting with the shape of the water molecule. But before then, let us explain orbital hybridization using the illustration in Figure <a href="appendix-a.html#fig:OrbitalHybridization">A.5</a>.</p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalHybridization"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalHybridization"></span>
 <img src="pictures/OrbitalHybridization.png" alt="**sp**, **sp^2^**, and **sp^3^** orbital hybridization and illustration for the carbon atom" width="100%" />
 <p class="caption">
 Figure A.5: <strong>sp</strong>, <strong>sp<sup>2</sup></strong>, and <strong>sp<sup>3</sup></strong> orbital hybridization and illustration for the carbon atom
@@ -528,7 +534,7 @@ Figure A.5: <strong>sp</strong>, <strong>sp<sup>2</sup></strong>, and <strong>sp
 <p>A covalent bond, also called a molecular bond, is a chemical bond that involves the sharing of electron pairs between atoms. For many molecules, the sharing of electrons allows each atom to attain the equivalent of a full outer shell, corresponding to a stable electronic configuration. <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2018-mx">2018</a><a href="#ref-Wikipedia_contributors2018-mx">k</a>)</span></p>
 </blockquote>
 <p>For the CHONSP atoms, σ bonds can be formed between <strong>s</strong>, <strong>p</strong>, and <strong>sp<sup>n</sup></strong> orbitals (Figure <a href="appendix-a.html#fig:SigmaBonds">A.6</a>).</p>
-<div class="figure" style="text-align: center"><span id="fig:SigmaBonds"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SigmaBonds"></span>
 <img src="pictures/SigmaBonds.png" alt="Examples of &amp;sigma; bonds with different types of overlap, from **s**, **p**, and **sp^n^** orbitals. Obtained freely and modified under the Creative Commons [Attribution-Share Alike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/deed.en)" width="70%" />
 <p class="caption">
 Figure A.6: Examples of σ bonds with different types of overlap, from <strong>s</strong>, <strong>p</strong>, and <strong>sp<sup>n</sup></strong> orbitals. Obtained freely and modified under the Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Attribution-Share Alike 4.0 International license</a>
@@ -538,7 +544,7 @@ Figure A.6: Examples of σ bonds with different types of overlap, from <strong>s
 <p>pi bonds (π bonds) are covalent chemical bonds where two lobes of an orbital on one atom overlap two lobes of an orbital on another atom. The Greek letter π in their name refers to p orbitals, since the orbital symmetry of the pi bond is the same as that of the p orbital when seen down the bond axis. One common form of this sort of bonding involves p orbitals themselves. […] Pi bonds are usually weaker than sigma bonds. <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2018-sr">2018</a><a href="#ref-Wikipedia_contributors2018-sr">h</a>)</span></p>
 </blockquote>
 <p>Typically, a single bond is a sigma bond while a multiple bond is composed of one sigma bond together with pi or other bonds. A double bond has one sigma plus one pi bond, and a triple bond has one sigma plus two pi bonds.</p>
-<div class="figure" style="text-align: center"><span id="fig:PiBonds"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:PiBonds"></span>
 <img src="pictures/PiBond.png" alt="Examples in the ethylene molecule of &amp;sigma; and &amp;pi; bonds. The full overlap of **sp^2** orbitals between the C and H and C and C atoms leads to &amp;sigma; bonds and the overlap between the **p** orbitals leads to a &amp;pi; bond shown as an elongated blue lobe that extends both above and below the plane of the molecule. Obtained freely from https://chem.libretexts.org/ under the Creative Commons [Attribution-Share Alike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/deed.en)" width="60%" />
 <p class="caption">
 Figure A.7: Examples in the ethylene molecule of σ and π bonds. The full overlap of <strong>sp^2</strong> orbitals between the C and H and C and C atoms leads to σ bonds and the overlap between the <strong>p</strong> orbitals leads to a π bond shown as an elongated blue lobe that extends both above and below the plane of the molecule. Obtained freely from <a href="https://chem.libretexts.org/" class="uri">https://chem.libretexts.org/</a> under the Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Attribution-Share Alike 4.0 International license</a>
@@ -557,7 +563,7 @@ Figure A.7: Examples in the ethylene molecule of σ and π bonds. The full overl
 <div id="methane-1" class="section level3">
 <h3><span class="header-section-number">A.4.1</span> Methane</h3>
 <p>Methane (SN=4+0=4) is the quintessential example of the hybridization of the Carbon 2s<sup>2</sup>2p<sup>2</sup> orbitals into 4 <strong>sp<sup>3</sup></strong> orbitals. The overlap of the <strong>sp<sup>3</sup></strong> orbitals of carbon with the <strong>1s</strong> orbital of the hydrogen atoms form σ bonds, and create a symmetrical tetrahedral molecular shape. In <a href="https://en.wikipedia.org/wiki/Aliphatic_compound">aliphatic chains</a>, the -[CH<sub>2</sub>]- are not straight but have angles between consecutive C-C bonds because of the <strong>sp<sup>3</sup></strong> orbitals. This is one of the reasons for the <a href="glossary.html#skeletal-formula">skeletal formula</a> in organic chemistry (Figure <a href="appendix-a.html#fig:OrbitalsCH4">A.8</a>).</p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsCH4"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsCH4"></span>
 <img src="pictures/OrbitalsCH4-2.png" alt="The **sp^3^** hybrid orbitals in CH~4~, Modified from https://www.slideshare.net/pedagogics/2012-orbital-hybrization-sigma-and-pi-bonds" width="30%" />
 <p class="caption">
 Figure A.8: The <strong>sp<sup>3</sup></strong> hybrid orbitals in CH<sub>4</sub>, Modified from <a href="https://www.slideshare.net/pedagogics/2012-orbital-hybrization-sigma-and-pi-bonds" class="uri">https://www.slideshare.net/pedagogics/2012-orbital-hybrization-sigma-and-pi-bonds</a>
@@ -567,7 +573,7 @@ Figure A.8: The <strong>sp<sup>3</sup></strong> hybrid orbitals in CH<sub>4</sub
 <div id="the-water-molecule" class="section level3">
 <h3><span class="header-section-number">A.4.2</span> The water molecule</h3>
 <p>In the molecule of water, the oxygen (SN=2+2=4) orbitals are hybrid <strong>sp<sup>3</sup></strong> and two of them from two σ covalent bonds with hydrogen, leaving two <strong>sp<sup>3</sup></strong> orbitals as two lone pairs or electrons (Figure <a href="appendix-a.html#fig:OrbitalsH2O">A.9</a>).</p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsH2O"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsH2O"></span>
 <img src="pictures/OrbitalsH2O.png" alt="The **sp^3^** hybrid orbitals in H~2~O, leaving two lone pairs of electrons in two of the orbitals. Obtained freely under the Creative Commons [Attribution-Share Alike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/deed.en)" width="60%" />
 <p class="caption">
 Figure A.9: The <strong>sp<sup>3</sup></strong> hybrid orbitals in H<sub>2</sub>O, leaving two lone pairs of electrons in two of the orbitals. Obtained freely under the Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Attribution-Share Alike 4.0 International license</a>
@@ -580,7 +586,7 @@ Figure A.9: The <strong>sp<sup>3</sup></strong> hybrid orbitals in H<sub>2</sub>
 <li>“Because of its polarity, a molecule of water in the liquid or solid state can form up to four hydrogen bonds with neighboring molecules. These bonds are the cause of water’s high surface tension and capillary forces” <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2018-wp">2018</a><a href="#ref-Wikipedia_contributors2018-wp">r</a>)</span>. It is thanks to these capillary forces that, among other things, soils can store very significant amount of water which plants can use for their growth even during drought times.</li>
 <li>“The hydrogen bonds are also the reason why the melting and boiling points of water are much higher than those of other analogous compounds like hydrogen sulfide (H<sub>2</sub>S). They also explain its exceptionally high specific heat capacity (about 4.2 J/g/K), heat of fusion (about 333 J/g), heat of vaporization (2257 J/g), and thermal conductivity (between 0.561 and 0.679 W/m/K). These properties make water more effective at moderating Earth’s climate, by storing heat and transporting it between the oceans and the atmosphere.” <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2018-wp">2018</a><a href="#ref-Wikipedia_contributors2018-wp">r</a>)</span></li>
 </ul>
-<div class="figure" style="text-align: center"><span id="fig:WaterPolarHBonds"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:WaterPolarHBonds"></span>
 <img src="pictures/WaterPolarHBonds.png" alt="Illustration of the electric dipole of the water molecule due slight electronegativities and positivies on the O and H atoms, respectively; Hydrogen bonds are one the consequence the polar nature of water. Sources: By User Qwerter at Czech wikipedia: Qwerter. Transferred from cs.wikipedia to Commons by sevela.p. Translated to english by by Michal Maňas (User:snek01). Vectorized by Magasjukur2 - File:3D model hydrogen bonds in water.jpg, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=14929959 ; and By Riccardo Rovinetti - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=31556358" width="55%" />
 <p class="caption">
 Figure A.10: Illustration of the electric dipole of the water molecule due slight electronegativities and positivies on the O and H atoms, respectively; Hydrogen bonds are one the consequence the polar nature of water. Sources: By User Qwerter at Czech wikipedia: Qwerter. Transferred from cs.wikipedia to Commons by sevela.p. Translated to english by by Michal Maňas (User:snek01). Vectorized by Magasjukur2 - <a href="File:3D" class="uri">File:3D</a> model hydrogen bonds in water.jpg, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=14929959" class="uri">https://commons.wikimedia.org/w/index.php?curid=14929959</a> ; and By Riccardo Rovinetti - Own work, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=31556358" class="uri">https://commons.wikimedia.org/w/index.php?curid=31556358</a>
@@ -591,7 +597,7 @@ Figure A.10: Illustration of the electric dipole of the water molecule due sligh
 <div id="ammonia-and-ammonium" class="section level3">
 <h3><span class="header-section-number">A.4.3</span> Ammonia and Ammonium</h3>
 <p>Similar to water, the electron orbitals for the Nitrogen atom in NH<sub>3</sub> (SN=3+1=4) and NH<sub>4</sub><sup>+</sup> (SN=4+0=4) are hybridized into <strong>sp<sup>3</sup></strong> orbitals. As a result the ammonia molecule has a pyramidal shape (Figure <a href="appendix-a.html#fig:OrbitalsNH3">A.11</a>), leaving a lone pair of electrons in the <strong>sp<sup>3</sup></strong> orbital opposite to the plan made by the H atoms. This lone pair makes ammonia a base, that is a proton acceptor to form ammonium. Similarly to water, and because of the lone pair or electron, ammonia is a polar molecule and thus has the ability to make hydrogen bonds and is thus highly miscible in water. Ammonium, the protonated form of ammonia, uses the lone pair of electrons of ammonia to create a new bond with a proton to eventually form a positively charged tetrahedral molecule, where all N-H bonds are equivalent, and polar covalent bonds. More details on the protonation of ammonia into ammonium and the equilibria is provided in the <a href="glossary.html#ammonia">glossary</a>.</p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsNH3"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsNH3"></span>
 <img src="pictures/OrbitalsNH3.png" alt="Orbital configuration for ammonia, NH~3~. Each N–H σ-bonding orbital, containing 2 electrons, is formed from a N **sp^3^** hybrid orbital and a H **1s** orbital. The remaining lone pair of electrons occupies the fourth tetrahedral position producing a pyramidal structure. Obtained freely under the Creative Commons [Attribution-Share Alike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/deed.en)" width="80%" />
 <p class="caption">
 Figure A.11: Orbital configuration for ammonia, NH<sub>3</sub>. Each N–H σ-bonding orbital, containing 2 electrons, is formed from a N <strong>sp<sup>3</sup></strong> hybrid orbital and a H <strong>1s</strong> orbital. The remaining lone pair of electrons occupies the fourth tetrahedral position producing a pyramidal structure. Obtained freely under the Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Attribution-Share Alike 4.0 International license</a>
@@ -601,7 +607,7 @@ Figure A.11: Orbital configuration for ammonia, NH<sub>3</sub>. Each N–H σ-bo
 <div id="sulfate-1" class="section level3">
 <h3><span class="header-section-number">A.4.4</span> Sulfate</h3>
 <p>The Lewis dot structure tells us (see below) that there is 2 single bond and 2 double bonds. This makes for a total of 10 shared electrons for sulfur…?! This is possible because sulfur belongs to the third period and has <strong>d</strong> orbitals open (Figure <a href="appendix-a.html#fig:OrbitalsSO4">A.12</a>). The steric number for sulfur in the sulfate molecule (SO<sub>4</sub><sup>2-</sup>) is thus SN=4+0=4, suggesting a <strong>sp<sup>3</sup></strong> orbital hybridization and a tetrahedral geometrical configuration. As a result the sulfate molecule has a pyramidal shape (Figure <a href="appendix-a.html#fig:OrbitalsSO4">A.12</a>). Two of the electrons on the filled orbitals <strong>3s</strong> and <strong>3p</strong> move into 2 of the <strong>d</strong> orbitals. The π bonds form between the <strong>d</strong> orbitals and one <strong>p</strong> orbital of the uncharged oxygen atoms. The σ bonds from from the 4 <strong>sp<sup>3</sup></strong> orbitals and one <strong>p</strong> orbital of the negatively charged oxygen atoms (Figure <a href="appendix-a.html#fig:OrbitalsSO4">A.12</a>).</p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsSO4"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsSO4"></span>
 <img src="pictures/OrbitalsSO4.png" alt="Orbital configuration for ammonia, SO~4~^2-^. Each S–O &amp;sigma;-bonding orbital, containing 2 electrons, is formed from a S **sp^3^** hybrid orbital and a O **2p** orbital. The two &amp;pi; bonds are formed from the **3d** orbitals and the **2p** orbitals of the uncharged oxygen atoms" width="80%" />
 <p class="caption">
 Figure A.12: Orbital configuration for ammonia, SO<sub>4</sub><sup>2-</sup>. Each S–O σ-bonding orbital, containing 2 electrons, is formed from a S <strong>sp<sup>3</sup></strong> hybrid orbital and a O <strong>2p</strong> orbital. The two π bonds are formed from the <strong>3d</strong> orbitals and the <strong>2p</strong> orbitals of the uncharged oxygen atoms
@@ -611,7 +617,7 @@ Figure A.12: Orbital configuration for ammonia, SO<sub>4</sub><sup>2-</sup>. Eac
 <div id="PO4" class="section level3">
 <h3><span class="header-section-number">A.4.5</span> Phosphate</h3>
 <p>Phosphate (PO<sub>4</sub><sup>3-</sup>, SN=4+0=4) is probably one of the most fascinating molecule in the living world. Because phosphorus is in the third period of the periodic table, just as sulfur is (Figure <a href="appendix-a.html#fig:PeriodicTableSimple">A.1</a>), it does not have to follow the octet rules and can accept extra electrons in the <strong>d</strong> orbitals. Theoretically, the phosphorus orbitals can be hybridized such that the 3s orbital filled with two electrons, and the 3d orbitals filled with one electron each hybridize into 5 <strong>sp<sup>3</sup></strong> orbitals in the molecule of phosphate. However, in the phosphate molecule, this does not happen. Instead, the hybridization generates 4 <strong>sp<sup>3</sup></strong> orbitals and one <strong>3d</strong> orbitals (Figure <a href="appendix-a.html#fig:OrbitalsCNOPS">A.4</a>). As a result, the phosphate molecule has a tetrahedral steric configuration. Three of the Oxygen atoms gain electrons to become negative and they theoretically do not need to hybridize to from σ bonds using their <strong>p</strong> orbitals with the <strong>sp<sup>3</sup></strong> orbitals of the phosphorus. The π bond forms with the <strong>3d</strong> orbital left of the phosphorus and the second open <strong>2p</strong> orbital of the uncharged O atom. The ‘3-’ charge of the deprotonated phosphate is actually spread evenly on the four oxygen, and each phosphorus-oxygen bond can be considered have some double bond character (Figure <a href="appendix-a.html#fig:OrbitalsPO4">A.13</a>). It is the plethora of electrons on the phosphate molecule that is the basis of the storage and release of energy in the <a href="aerobic-and-anaerobic-respiration.html#ATP">ATP</a> molecule.</p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsPO4"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsPO4"></span>
 <img src="pictures/OrbitalsPO4.png" alt="Orbital hybridization of Phosphorus for the phosphate molecule, and below the even spread of the &amp;pi; bond. Obtained with permission from https://chem.libretexts.org/  " width="80%" />
 <p class="caption">
 Figure A.13: Orbital hybridization of Phosphorus for the phosphate molecule, and below the even spread of the π bond. Obtained with permission from <a href="https://chem.libretexts.org/" class="uri">https://chem.libretexts.org/</a>
@@ -625,7 +631,7 @@ Figure A.13: Orbital hybridization of Phosphorus for the phosphate molecule, and
 <h3><span class="header-section-number">A.5.1</span> Nitrate</h3>
 <p>In the nitrate molecule, the nitrogen atom (SN=3+0=3) loses an electron and becomes N<sup>+</sup> and reconfigures its orbitals to have three <strong>sp<sup>2</sup></strong> and one <strong>2p</strong> orbitals, each filled with one electron only. The nitrate molecule is thus a planar molecule. Two of the oxygen atoms gain an electron and effectively become O<sup>-</sup>. It is unclear at this point whether or not the oxygen atoms themselves reconfigure their orbitals or not… There seems to be conflicting descriptions. Most text books tend to agree that the π bond is not particularly located on one oxygen atom, but rather that each of the σ bond has an additional π like bond. The model proposed in Figure <a href="appendix-a.html#fig:OrbitalsNO3">A.14</a> works, although the resonance among all oxygen atoms is not that straight forward in my opinion. Each of the <strong>sp<sup>2</sup></strong> orbital of N makes a covalent σ bond with one of the <strong>2p</strong> orbitals of each of the oxygen. The two <strong>2p</strong> orbitals left on both of N and O atoms form a π bond. Similar to Phosphate, the electrons of the π bond spread evenly on the three oxygen, and each nitrogen-oxygen bond can be considered to have some double bond character π bond (Figure <a href="appendix-a.html#fig:OrbitalsNO3">A.14</a>).</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsNO3"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsNO3"></span>
 <img src="pictures/OrbitalsNO3.png" alt="Orbital hybridization of nitrogen for the nitrate molecule, and the even spread of the &amp;pi; bond" width="90%" />
 <p class="caption">
 Figure A.14: Orbital hybridization of nitrogen for the nitrate molecule, and the even spread of the π bond
@@ -637,7 +643,7 @@ Figure A.14: Orbital hybridization of nitrogen for the nitrate molecule, and the
 <h3><span class="header-section-number">A.5.2</span> Nitrite</h3>
 <p>In the nitrite molecule, the nitrogen atom (SN=2+1=3) does not need to lose an electron and reconfigures its orbitals to have three <strong>sp<sup>2</sup></strong> and one <strong>2p</strong> orbitals, with one <strong>sp<sup>2</sup></strong> orbital filled with 2 electrons and all other orbitals filled with one electron only. One of the oxygen atoms gains an electron and effectively become O<sup>-</sup>. The model proposed in Figure <a href="appendix-a.html#fig:OrbitalsNO2">A.15</a> works. Two of the <strong>sp<sup>2</sup></strong> orbital of N makes a covalent σ bond with one of the <strong>2p</strong> orbitals of each of the oxygen. The two <strong>2p</strong> orbitals left on both of N and O atoms form a π bond. Similar to nitrate, the electrons of the π bond spread evenly on the two oxygen, and each nitrogen-oxygen bond can be considered have some double bond character π bond (Figure <a href="appendix-a.html#fig:OrbitalsNO2">A.15</a>).</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsNO2"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsNO2"></span>
 <img src="pictures/OrbitalsNO2.png" alt="Orbital hybridization of nitrogen for the nitrite molecule, and the even spread of the &amp;pi; bond" width="90%" />
 <p class="caption">
 Figure A.15: Orbital hybridization of nitrogen for the nitrite molecule, and the even spread of the π bond
@@ -652,7 +658,7 @@ Figure A.15: Orbital hybridization of nitrogen for the nitrite molecule, and the
 <h3><span class="header-section-number">A.6.1</span> Carbon dioxide</h3>
 <p>Carbon dioxide (CO<sub>2</sub>) is the quintessential molecule to illustrate <strong>sp</strong> hybridization. Carbon dioxide has two double bonds with oxygen, making its steric number to be SN=2+0=2. This suggests that the Carbon orbitals rearrange into 2 <strong>sp</strong> orbitals. In carbon dioxide, the oxygen atoms also rearrange into <strong>sp<sup>2</sup></strong> hybrids (Figure <a href="appendix-a.html#fig:OrbitalsCO2">A.16</a>), such that the two <strong>sp</strong> orbitals of the carbon form a σ bond with one of <strong>sp<sup>2</sup></strong> orbitals available of the oxygen atoms. Then the <strong>2p</strong> orbitals left form π bonds together. Because of the configuration of the 2sp2p orbitals, the double bonds are at 90° of each other (Figure <a href="appendix-a.html#fig:OrbitalsCO2">A.16</a>).</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsCO2"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsCO2"></span>
 <img src="pictures/OrbitalsCO2.png" alt="**sp** orbital hybridization of carbon for the carbon dioxide molecule, and **sp^2^** orbital hybridization of the oxygen atoms" width="90%" />
 <p class="caption">
 Figure A.16: <strong>sp</strong> orbital hybridization of carbon for the carbon dioxide molecule, and <strong>sp<sup>2</sup></strong> orbital hybridization of the oxygen atoms
@@ -664,7 +670,7 @@ Figure A.16: <strong>sp</strong> orbital hybridization of carbon for the carbon 
 <h3><span class="header-section-number">A.6.2</span> Dinitrogen</h3>
 <p>Dinitrogen (N<sub>2</sub>) steric number is SN=1+1=2. This suggests that the Nitrogen orbitals rearrange into 2 <strong>sp</strong> orbitals. The two <strong>sp</strong> orbitals of the nitrogen form a σ bond together. Two π bonds form as the electrons in the <strong>2p</strong> orbitals are shared among the two atoms. This is the reason for the formation of the triple bond in dinitrogen (Figure <a href="appendix-a.html#fig:OrbitalsN2">A.17</a>). This bond is so strong that although there are two lone pairs left on each of the nitrogen atoms, which would make dinitrogen suceptible to lose these electrons, the dinitrogen molecule is mostly inert and unreactive for most metabolic pathways. This is why dinitrogen is referred to as <em>unreactive nitrogen</em>. The triple bond can be broken physically by lightnings, or biologically in very specialized cells such as heterocysts of cyanobacteria, or by symbiotic bacteria living in legumes or (<em>Alnus sp.</em>) root nodules.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsN2"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsN2"></span>
 <img src="pictures/OrbitalsN2.png" alt="**sp** orbital hybridization of nitrogen for the dinitrogen molecule and formation of the triple bond with two lone pairs left per N atom. The &amp;sigma; bond is formed by direct overlap of the **sp** orbitals and the the two &amp;pi; bonds by sideways overlap among the **2p** orbitals (*p~x~* and *p~y~*)" width="80%" />
 <p class="caption">
 Figure A.17: <strong>sp</strong> orbital hybridization of nitrogen for the dinitrogen molecule and formation of the triple bond with two lone pairs left per N atom. The σ bond is formed by direct overlap of the <strong>sp</strong> orbitals and the the two π bonds by sideways overlap among the <strong>2p</strong> orbitals (<em>p<sub>x</sub></em> and <em>p<sub>y</sub></em>)
@@ -679,7 +685,7 @@ Figure A.17: <strong>sp</strong> orbital hybridization of nitrogen for the dinit
 <h3><span class="header-section-number">A.7.1</span> Dihydrogen sulfide</h3>
 <p>Interestingly, dihydrogen sulfide (H<sub>2</sub>S) orbitals do not seem to follow the normal hybridization scheme described above. The steric number for the sulfur is SN=2+2=4, so it would expected that sulfur orbitals would hybridize into <strong>sp<sup>3</sup></strong> forms. This would then suggest that the angle between the H-S bonds would be around 109° as is the case for the very similar H<sub>2</sub>O molecule. But measurements suggest that the angle is more like 92°, closer to the 90° angle between the <strong>p</strong> orbitals (Figure <a href="appendix-a.html#fig:OrbitalsH2S">A.18</a>).</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:OrbitalsH2S"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:OrbitalsH2S"></span>
 <img src="pictures/OrbitalsH2S-2.png" alt="Direct overlap of **1s** orbitals of hydrogen atoms with the **3p** orbitals (e.g., *p~y~* and *p~z~*) of the S atom, for a final 92&amp;deg; angle between the H-S &amp;sigma; bonds. Modified from https://www.periodni.com/gallery/formation_of_h2s.png" width="95%" />
 <p class="caption">
 Figure A.18: Direct overlap of <strong>1s</strong> orbitals of hydrogen atoms with the <strong>3p</strong> orbitals (e.g., <em>p<sub>y</sub></em> and <em>p<sub>z</sub></em>) of the S atom, for a final 92° angle between the H-S σ bonds. Modified from <a href="https://www.periodni.com/gallery/formation_of_h2s.png" class="uri">https://www.periodni.com/gallery/formation_of_h2s.png</a>
@@ -768,7 +774,7 @@ In the end, the most stable/likely molecule is the molecule for which:</p>
 <h3><span class="header-section-number">A.9.1</span> Binding and antibinding regions</h3>
 <p>So first, let us remind ourselves that atoms will bind together if they have any advantage to do so. We have seen that one big incentive is to fulfill the octet rule. Another incentive is when the electron energies are lower when the atoms are in a molecule compared to when they are single atoms. In the H<sub>2</sub> example in Figure <a href="appendix-a.html#fig:bond-strength-H2">A.19</a>, the nuclei will naturally distance themselves when the electrons have the lowest energy, i.e., in this case at r<sub>0</sub> = 0.074 nm, also called the bond length. The H<sub>2</sub> molecule is 458 kJ.mol<sup>-1</sup> more stable than the two isolated H atoms, i.e. the bond strength of the H<sub>2</sub> molecule is 458 kJ.mol<sup>-1</sup> or that it would take 458 kJ.mol<sup>-1</sup> to break this covalent bond.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:bond-strength-H2"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:bond-strength-H2"></span>
 <img src="pictures/bond-strength-H2.gif" alt="Binding and anti-binding regions where electrons might be located as two atoms get closer together to form a molecule [obtained from ](http://chemweb.ucc.ie/courses/FLalor/FJL_Lecture_10.htm) " width="65%" />
 <p class="caption">
 Figure A.19: Binding and anti-binding regions where electrons might be located as two atoms get closer together to form a molecule <a href="http://chemweb.ucc.ie/courses/FLalor/FJL_Lecture_10.htm">obtained from</a>
@@ -779,7 +785,7 @@ Figure A.19: Binding and anti-binding regions where electrons might be located a
 <p>Chemical bonding occurs when the net attractive forces between an electron and two nuclei exceeds the electrostatic repulsion between the two nuclei. For this to happen, the electron must be in a region of space which we call the binding region. Conversely, if the electron is off to one side, in an anti-binding region, it actually adds to the repulsion between the two nuclei and helps push them away <span class="citation">(Libretexts <a href="#ref-Libretexts2013-mj">2013</a>)</span>.</p>
 </blockquote>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:MO1"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:MO1"></span>
 <img src="pictures/MO1.png" alt="Binding and anti-binding regions where electrons might be located as two atoms get closer together to form a molecule [@Libretexts2013-mj] " width="35%" />
 <p class="caption">
 Figure A.20: Binding and anti-binding regions where electrons might be located as two atoms get closer together to form a molecule <span class="citation">(Libretexts <a href="#ref-Libretexts2013-mj">2013</a>)</span>
@@ -803,9 +809,9 @@ Figure A.20: Binding and anti-binding regions where electrons might be located a
 \Psi_{(\sigma^{*})} = N \times \left( a\Psi_{(1s)}(A) - b\Psi_{(1s)}(B) \right)
 \]</span></p>
 <p></br></p>
-<p>Figure `<a href="appendix-a.html#fig:H2OrbitalsAnimation">A.21</a> illustrates the wave functions (real and imaginary part in blue and red, respectively) of two hydrogen atoms (left and right), and how they may combine for <em>constructive interference</em> creating <em>bonding orbital</em> (center bottom) and for <em>destructive interference</em> creating <em>antibonding orbitals</em> (center top).</p>
+<p>Figure <a href="appendix-a.html#fig:H2OrbitalsAnimation">A.21</a> illustrates the wave functions (real and imaginary part in blue and red, respectively) of two hydrogen atoms (left and right), and how they may combine for <em>constructive interference</em> creating <em>bonding orbital</em> (center bottom) and for <em>destructive interference</em> creating <em>antibonding orbitals</em> (center top).</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:H2OrbitalsAnimation"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:H2OrbitalsAnimation"></span>
 <img src="pictures/H2OrbitalsAnimation.gif" alt="Electron wavefunctions for the 1s orbital of a lone hydrogen atom (left and right) and the corresponding bonding (bottom) and antibonding (top) molecular orbitals of the H~2~ molecule. The real part of the wavefunction is the blue curve, and the imaginary part is the red curve. The red dots mark the locations of the nuclei. The electron wavefunction oscillates according to the Schrödinger wave equation, and orbitals are its standing waves. The standing wave frequency is proportional to the orbital's kinetic energy. (This plot is a one-dimensional slice through the three-dimensional system.) Caption and figure from [@Wikipedia_contributors2020-km]" width="45%" />
 <p class="caption">
 Figure A.21: Electron wavefunctions for the 1s orbital of a lone hydrogen atom (left and right) and the corresponding bonding (bottom) and antibonding (top) molecular orbitals of the H<sub>2</sub> molecule. The real part of the wavefunction is the blue curve, and the imaginary part is the red curve. The red dots mark the locations of the nuclei. The electron wavefunction oscillates according to the Schrödinger wave equation, and orbitals are its standing waves. The standing wave frequency is proportional to the orbital’s kinetic energy. (This plot is a one-dimensional slice through the three-dimensional system.) Caption and figure from <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2020-km">2020</a><a href="#ref-Wikipedia_contributors2020-km">d</a>)</span>
@@ -817,9 +823,9 @@ Figure A.21: Electron wavefunctions for the 1s orbital of a lone hydrogen atom (
 <h3><span class="header-section-number">A.9.3</span> Molecular orbital diagrams</h3>
 <div id="molecular-orbitals-for-first-period-elements" class="section level4">
 <h4><span class="header-section-number">A.9.3.1</span> Molecular orbitals for first period elements</h4>
-<p>Graphically, bonding molecular orbital of H<sub>2</sub> might be represented as the elongated ballon at the center bottom of Figure `<a href="appendix-a.html#fig:H2MOdiagram">A.22</a>, while the antibonding orbital would be represented by the two smaller balloons at the center top. This figure also represents the two <em>1s</em> atomic orbitals (AO) of each of the hydrogen atoms on each side and the MO diagram of H<sub>2</sub> in the center, with the bonding and antibonding orbitals, respectively at a lower and higher energy levels than the AO. Note that the <em>bonding</em> MO is referred to as <span class="math inline">\(\sigma_{1s}\)</span> while the <em>antibonding</em> MO is referred to as <span class="math inline">\(\sigma^*_{1s}\)</span>.</p>
+<p>Graphically, bonding molecular orbital of H<sub>2</sub> might be represented as the elongated ballon at the center bottom of Figure <a href="appendix-a.html#fig:H2MOdiagram">A.22</a>, while the antibonding orbital would be represented by the two smaller balloons at the center top. This figure also represents the two <em>1s</em> atomic orbitals (AO) of each of the hydrogen atoms on each side and the MO diagram of H<sub>2</sub> in the center, with the bonding and antibonding orbitals, respectively at a lower and higher energy levels than the AO. Note that the <em>bonding</em> MO is referred to as <span class="math inline">\(\sigma_{1s}\)</span> while the <em>antibonding</em> MO is referred to as <span class="math inline">\(\sigma^*_{1s}\)</span>.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:H2MOdiagram"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:H2MOdiagram"></span>
 <img src="pictures/H2MOdiagram.gif" alt="Molecular Orbital Energy-Level Diagram for H~2~. The two available electrons (one from each H atom) in this diagram fill the bonding &amp;sigma;1s molecular orbital. Because the energy of the &amp;sigma;1s molecular orbital is lower than that of the two H 1s atomic orbitals, the H~2~ molecule is more stable (at a lower energy) than the two isolated H atoms. Caption from [@Libretexts2020-le] and diagram from [Sparknotes](http://img.sparknotes.com/figures/8/83ce1fb7be648ede5785ea60c96b495c/correlate.gif)" width="65%" />
 <p class="caption">
 Figure A.22: Molecular Orbital Energy-Level Diagram for H<sub>2</sub>. The two available electrons (one from each H atom) in this diagram fill the bonding σ1s molecular orbital. Because the energy of the σ1s molecular orbital is lower than that of the two H 1s atomic orbitals, the H<sub>2</sub> molecule is more stable (at a lower energy) than the two isolated H atoms. Caption from <span class="citation">(Libretexts <a href="#ref-Libretexts2020-le">2020</a>)</span> and diagram from <a href="http://img.sparknotes.com/figures/8/83ce1fb7be648ede5785ea60c96b495c/correlate.gif">Sparknotes</a>
@@ -836,7 +842,7 @@ bond \space order = \frac{(nb \space of \space electrons \space in \space bondin
 <p>So the bond order for H<sub>2</sub> is <span class="math inline">\(BO = \frac{2 - 0}{2} = 1\)</span> or 1, which is the number of covalent bonds in H<sub>2</sub>.</p>
 <p>Now if we summarize this approach to H<sub>2</sub>, He<sub>2</sub><sup>+</sup>, an He<sub>2</sub> (Figure <a href="appendix-a.html#fig:MOH2He2">A.23</a>), one can see that the bond order for He<sub>2</sub> is zero, and the bond energy is very close to 0 kJ.mol<sup>-1</sup>. This is because there are two electrons in the antibonding orbital, hence destabilizing the molecule. This He<sub>2</sub> is thus unlikely to exist and in fact there is no evidence that it does exist. However, the ionic version He<sub>2</sub><sup>+</sup> has a bond order of 0.5 and a bond enerby of 301 kJ.mol<sup>-1</sup>, and has chances to be relatively stable. And indeed, this form seems to exist in nature.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:MOH2He2"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:MOH2He2"></span>
 <img src="pictures/MOH2He2.png" alt="Molecular Orbital Diagram, bond order and bond energy for H~2~, He~2~^+^, and He~2~. Because the band order for He~2~ is zero, this molecule is unstable and does not exist, while the other two do" width="75%" />
 <p class="caption">
 Figure A.23: Molecular Orbital Diagram, bond order and bond energy for H<sub>2</sub>, He<sub>2</sub><sup>+</sup>, and He<sub>2</sub>. Because the band order for He<sub>2</sub> is zero, this molecule is unstable and does not exist, while the other two do
@@ -845,7 +851,7 @@ Figure A.23: Molecular Orbital Diagram, bond order and bond energy for H<sub>2</
 <p></br></p>
 <p>Now, this is just for the <em>1s</em> orbitals. The same would hold true for <em>2s</em> orbitals. However, for atoms with <em>2p</em> orbitals things are a little more complicated. Indeed, <em>p</em> atomic orbitals are separated into <em>p<sub>x</sub></em>, <em>p<sub>y</sub></em>, and <em>p<sub>z</sub></em> orbitals (Figure <a href="appendix-a.html#fig:MO2pOrbitals">A.24</a>) following the three 3D axes. When two atoms with <em>p</em> orbitals from the second period get close together, their <em>p</em> orbitals may interact together. It turns out that by convention, it is thought that the <em>p<sub>z</sub></em> atomic orbitals are the ones that interact along the nuclei axes to form <em>σ<sub>2p</sub></em> and <em>σ*<sub>2p</sub></em>, respectively the bonding and antibonding <em>σ</em> molecular orbitals. The <em>p<sub>x</sub></em> and <em>p<sub>y</sub></em> atomic orbitals are perpendicular to the nuclei axis and combine to form two <em>π<sub>2p</sub></em> and <em>π*<sub>2p</sub></em> molecular orbitals (Figure <a href="appendix-a.html#fig:MO2pOrbitals">A.24</a>).</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:MO2pOrbitals"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:MO2pOrbitals"></span>
 <img src="pictures/MO2pOrbitals.png" alt="*2p* atomic orbitals (left) and *2p* molecular orbitals as atomic orbitals combine (right). Notice that the combination of *2p* orbitals generate three bonding and three antibonding molecular orbitals. The *2p~z~* orbitals combine to form a *&amp;sigma;~2p~* and *&amp;sigma;&amp;#42;~2p~* orbitals, while the *2p~x~* and the *2p~y~* combine to form two *&amp;pi;~2p~* and *&amp;pi;&amp;#42;~2p~* molecular orbitals" width="75%" />
 <p class="caption">
 Figure A.24: <em>2p</em> atomic orbitals (left) and <em>2p</em> molecular orbitals as atomic orbitals combine (right). Notice that the combination of <em>2p</em> orbitals generate three bonding and three antibonding molecular orbitals. The <em>2p<sub>z</sub></em> orbitals combine to form a <em>σ<sub>2p</sub></em> and <em>σ*<sub>2p</sub></em> orbitals, while the <em>2p<sub>x</sub></em> and the <em>2p<sub>y</sub></em> combine to form two <em>π<sub>2p</sub></em> and <em>π*<sub>2p</sub></em> molecular orbitals
@@ -857,7 +863,7 @@ Figure A.24: <em>2p</em> atomic orbitals (left) and <em>2p</em> molecular orbita
 <h4><span class="header-section-number">A.9.3.2</span> Molecular orbitals for second period elements</h4>
 <p>The next natural step is to explore how the electrons populate these orbitals in the case of homonuclear diatomic molecules from atoms in the second period. This is particularly interesting to ecological engineering matters as atoms such C, N, and O are in this period. First, chemists have numerically shown that the energy levels of the <em>σ<sub>2p</sub></em> and the <em>π<sub>2p</sub></em> orbitals interchange from B<sub>2</sub>, C<sub>2</sub>, and N<sub>2</sub> to those of O<sub>2</sub>, F<sub>2</sub>, and Ne<sub>2</sub> (Figure <a href="appendix-a.html#fig:MOhomonuclearAtoms">A.25</a>).</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:MOhomonuclearAtoms"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:MOhomonuclearAtoms"></span>
 <img src="pictures/MOhomonuclearAtoms.png" alt="Molecular orbital diagrams for homonuclear diatomic molecules for the second period. The bonding *&amp;sigma;~2p~* and *&amp;pi;~2p~* orbitals level of energy are a little different from B~2~, C~2~, and N~2~ to those of O~2~, F~2~, and Ne~2~" width="85%" />
 <p class="caption">
 Figure A.25: Molecular orbital diagrams for homonuclear diatomic molecules for the second period. The bonding <em>σ<sub>2p</sub></em> and <em>π<sub>2p</sub></em> orbitals level of energy are a little different from B<sub>2</sub>, C<sub>2</sub>, and N<sub>2</sub> to those of O<sub>2</sub>, F<sub>2</sub>, and Ne<sub>2</sub>
@@ -871,7 +877,7 @@ Figure A.25: Molecular orbital diagrams for homonuclear diatomic molecules for t
 <li><a href="https://en.wikipedia.org/wiki/Hund%27s_rule">Hund’s rule</a> states that when there are several MO’s with equal energy, the electrons occupy the MO’s one at a time before two electrons occupy the same MO.</li>
 </ul>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:MOC2N2O2"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:MOC2N2O2"></span>
 <img src="pictures/MOC2N2O2.png" alt="Molecular orbital diagrams for homonuclear diatomic molecules for C~2~, N~2~, and O~2~, as well as the bond order and the bond energy" width="100%" />
 <p class="caption">
 Figure A.26: Molecular orbital diagrams for homonuclear diatomic molecules for C<sub>2</sub>, N<sub>2</sub>, and O<sub>2</sub>, as well as the bond order and the bond energy
@@ -894,7 +900,7 @@ Figure A.26: Molecular orbital diagrams for homonuclear diatomic molecules for C
 <li><em>biradical</em> (also sometimes called <em>diradical</em>): a radical is an atom that has an unpaired electron. The MO having two unpaired electrons, O<sub>2</sub> is thus a <em>biradical</em> (or <em>diradical</em>)<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></li>
 </ul>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:Spin-multiplicity-diagram"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Spin-multiplicity-diagram"></span>
 <img src="pictures/Spin_multiplicity_diagram.png" alt="Examples of atoms in singlet, doublet, and triplet states. Obtained from [Lightex](https://commons.wikimedia.org/w/index.php?curid=58888199)" width="65%" />
 <p class="caption">
 Figure A.27: Examples of atoms in singlet, doublet, and triplet states. Obtained from <a href="https://commons.wikimedia.org/w/index.php?curid=58888199">Lightex</a>
@@ -914,7 +920,7 @@ Figure A.27: Examples of atoms in singlet, doublet, and triplet states. Obtained
 </blockquote>
 <p>To summarize, O<sub>2</sub> is considered a bi(di-)radical that can theoretically be very reactive but in the end that is not as much thanks to its resonance stabilization system of the upaired electrons, and when it does accept electrons from an electron donor, it cannot readily accept two of them at once. Rather a series of reactions seems to occur before, as is the case in the oxidative phosphorylation, O<sub>2</sub> is reduced into H<sub>2</sub>O.</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:O2unpaired-electrons-stabilization"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:O2unpaired-electrons-stabilization"></span>
 <img src="pictures/O2unpaired-electrons-stabilization.png" alt="Possible distributions, A−D of the two &amp;beta;-spin electrons in the two orthogonal &amp;pi; systems of triplet ^&amp;bullet;^OO^&amp;bullet;^. The four &amp;alpha;-spin electrons each occupy one of the four *2p-&amp;pi;* AOs; so, as shown in resonance structures A−D, it is only the &amp;beta;-spin electrons that are delocalized (drawing and caption from Borden et al. [-@Borden2017-id])" width="45%" />
 <p class="caption">
 Figure A.28: Possible distributions, A−D of the two β-spin electrons in the two orthogonal π systems of triplet <sup>•</sup>OO<sup>•</sup>. The four α-spin electrons each occupy one of the four <em>2p-π</em> AOs; so, as shown in resonance structures A−D, it is only the β-spin electrons that are delocalized (drawing and caption from Borden et al. <span class="citation">(<a href="#ref-Borden2017-id">2017</a>)</span>)
@@ -925,7 +931,7 @@ Figure A.28: Possible distributions, A−D of the two β-spin electrons in the t
 <div id="reduction-of-o2-to-h2o-as-a-multistep-reaction-involving-reactive-oxygen-species-ros" class="section level5">
 <h5><span class="header-section-number">A.9.3.3.2</span> Reduction of O<sub>2</sub> to H<sub>2</sub>O as a multistep reaction involving Reactive Oxygen Species (ROS)</h5>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:O2radicalsMO"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:O2radicalsMO"></span>
 <img src="pictures/O2radicalsMO.gif" alt="Molecular orbital diagrams for ground-state molecular oxygen (O~2~), singlet oxygen (^1^O~2~), and ROS (superoxide radical anion O~2~^&amp;bullet;2^− and peroxide ion O~2~^−2^~, deprotonated form of hydrogen peroxide H~2~O~2~ [@Krumova2016-pw])" width="90%" />
 <p class="caption">
 Figure A.29: Molecular orbital diagrams for ground-state molecular oxygen (O<sub>2</sub>), singlet oxygen (<sup>1</sup>O<sub>2</sub>), and ROS (superoxide radical anion O<sub>2</sub><sup>•2</sup>− and peroxide ion O<sub>2</sub><sup>−2</sup>~, deprotonated form of hydrogen peroxide H<sub>2</sub>O<sub>2</sub> <span class="citation">(Krumova and Cosa <a href="#ref-Krumova2016-pw">2016</a>)</span>)
@@ -934,7 +940,7 @@ Figure A.29: Molecular orbital diagrams for ground-state molecular oxygen (O<sub
 <p></br></p>
 <p>O2toH2O-redox-chain-with-ROS</p>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:O2toH2O-redox-chain-with-ROS"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:O2toH2O-redox-chain-with-ROS"></span>
 <img src="pictures/O2toH2O-redox-chain-with-ROS.png" alt="Formation of ROS through energy- and electron-transfer reactions. The redox states of oxygen with standard reduction potentials are shown. The standard concentration of oxygen was regarded as 1 M [@Krumova2016-pw])" width="90%" />
 <p class="caption">
 Figure A.30: Formation of ROS through energy- and electron-transfer reactions. The redox states of oxygen with standard reduction potentials are shown. The standard concentration of oxygen was regarded as 1 M <span class="citation">(Krumova and Cosa <a href="#ref-Krumova2016-pw">2016</a>)</span>)
@@ -1037,7 +1043,6 @@ molecules in which the two electrons act independently or nearly independently. 
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1056,6 +1061,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -1076,6 +1082,10 @@ gitbook.start({
 "text": null
 },
 "download": ["Textbook_BAE587.pdf", "Textbook_BAE587.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

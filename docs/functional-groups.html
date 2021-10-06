@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Functional groups of biochemical importance | Fundamental Biogeochemistry for Environmental and Ecological Engineering</title>
-  <meta name="description" content="Chapter 3 Functional groups of biochemical importance | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>Chapter 3 Functional groups of biochemical importance | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</title>
+  <meta name="description" content="Chapter 3 Functional groups of biochemical importance | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Functional groups of biochemical importance | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta property="og:title" content="Chapter 3 Functional groups of biochemical importance | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Functional groups of biochemical importance | Fundamental Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta name="twitter:title" content="Chapter 3 Functional groups of biochemical importance | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   
   
   
@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2021-08-27" />
+<meta name="date" content="2021-10-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,8 @@
   
 <link rel="prev" href="electron-allocation.html"/>
 <link rel="next" href="molecular-families.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,7 +50,8 @@
 
 
 
-
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
@@ -119,6 +121,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="stylesheet" href="toc.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome.min.css" type="text/css" />
@@ -174,6 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2.8" data-path="functional-groups.html"><a href="functional-groups.html#ketone"><i class="fa fa-check"></i><b>3.2.8</b> Ketone functional group</a></li>
 <li class="chapter" data-level="3.2.9" data-path="functional-groups.html"><a href="functional-groups.html#carboxyl-functional-group"><i class="fa fa-check"></i><b>3.2.9</b> Carboxyl functional group</a></li>
 <li class="chapter" data-level="3.2.10" data-path="functional-groups.html"><a href="functional-groups.html#amides"><i class="fa fa-check"></i><b>3.2.10</b> Amide functional group</a></li>
+<li class="chapter" data-level="3.2.11" data-path="functional-groups.html"><a href="functional-groups.html#amides"><i class="fa fa-check"></i><b>3.2.11</b> Methoxyl functional group</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="functional-groups.html"><a href="functional-groups.html#functional-groups-from-bonding-of-functionalized-organic-molecules"><i class="fa fa-check"></i><b>3.3</b> Functional groups from bonding of functionalized organic molecules</a><ul>
 <li class="chapter" data-level="3.3.1" data-path="functional-groups.html"><a href="functional-groups.html#ester-functional-group"><i class="fa fa-check"></i><b>3.3.1</b> Ester functional group</a></li>
@@ -213,12 +217,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.5.12" data-path="molecular-families.html"><a href="molecular-families.html#summary-about-the-isoprene-based-lipids"><i class="fa fa-check"></i><b>4.5.12</b> Summary about the isoprene-based lipids</a></li>
 <li class="chapter" data-level="4.5.13" data-path="molecular-families.html"><a href="molecular-families.html#other-notable-lipids"><i class="fa fa-check"></i><b>4.5.13</b> Other notable lipids</a></li>
 </ul></li>
-<li class="chapter" data-level="4.6" data-path="molecular-families.html"><a href="molecular-families.html#phenolics-and-polyphenols"><i class="fa fa-check"></i><b>4.6</b> Phenolics and polyphenols</a><ul>
+<li class="chapter" data-level="4.6" data-path="molecular-families.html"><a href="molecular-families.html#phenolics"><i class="fa fa-check"></i><b>4.6</b> Phenolics and polyphenols</a><ul>
 <li class="chapter" data-level="4.6.1" data-path="molecular-families.html"><a href="molecular-families.html#the-impermeable-world-of-phenolics"><i class="fa fa-check"></i><b>4.6.1</b> The impermeable world of phenolics</a></li>
 <li class="chapter" data-level="4.6.2" data-path="molecular-families.html"><a href="molecular-families.html#unavailable-energy-onto-phenolic-molecules"><i class="fa fa-check"></i><b>4.6.2</b> Unavailable energy onto phenolic molecules</a></li>
-<li class="chapter" data-level="4.6.3" data-path="molecular-families.html"><a href="molecular-families.html#phenols-and-phenolic-acids-c6-and-c6-c1-molecules"><i class="fa fa-check"></i><b>4.6.3</b> Phenols and phenolic acids: C6 and C6-C1 molecules</a></li>
+<li class="chapter" data-level="4.6.3" data-path="molecular-families.html"><a href="molecular-families.html#monomeric-phenols"><i class="fa fa-check"></i><b>4.6.3</b> Monomeric phenols</a></li>
 <li class="chapter" data-level="4.6.4" data-path="molecular-families.html"><a href="molecular-families.html#lignins"><i class="fa fa-check"></i><b>4.6.4</b> Lignins</a></li>
 </ul></li>
+<li class="chapter" data-level="4.7" data-path="molecular-families.html"><a href="molecular-families.html#alkaloids"><i class="fa fa-check"></i><b>4.7</b> Alkaloids</a></li>
+<li class="chapter" data-level="4.8" data-path="molecular-families.html"><a href="molecular-families.html#glucosinolates"><i class="fa fa-check"></i><b>4.8</b> Glucosinolates</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html"><i class="fa fa-check"></i><b>5</b> Energy generation and aerobic respiration</a><ul>
 <li class="chapter" data-level="5.1" data-path="aerobic-and-anaerobic-respiration.html"><a href="aerobic-and-anaerobic-respiration.html#generating-energy-transfer-of-electrons"><i class="fa fa-check"></i><b>5.1</b> Generating energy: transfer of electrons</a></li>
@@ -451,7 +457,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fundamental Biogeochemistry for Environmental and Ecological Engineering</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</a>
           </h1>
         </div>
 
@@ -525,14 +531,14 @@ Explain the role of the hemiacetal and hemiketal group in carbohydrates
 <p>Alkanes nomenclature is at the basis of all the naming of organic molecules. Just about all functional groups are essentially variations from the alkane skeleton. They are classified depending on the number of carbons constituting their atom chain, and their chain is always <em>saturated</em> with hydrogen.</p>
 <p><em>Saturated</em> with hydrogen? What does this mean? It first means that all bonds are single σ bonds, and second, that valence electrons of the carbon not used for C-C bonds, are shared with the one valence electron of hydrogen atoms to make C-H bonds. This also means that when a carbon chain is saturated with hydrogen, the carbon atoms have all the electrons for themselves. In other words, alkanes or alkane like hydrocarbon chains are the molecules that store the most electrons.</p>
 <p>Some hydrocarbon chains are called <em>unsaturated</em> when between two carbons, two valence electrons are shared between carbon atoms to form a double or even triple π bond. Each of the two carbons involved are thus called <em>unsaturated</em> with hydrogen. Many commercials in the western world are advertising food with <em>unsaturated fat</em> (Figure <a href="functional-groups.html#fig:Unsaturated-fats">3.1</a>): it just means that some carbons of the hydrocarbon chains of the lipids in the food are <em>unsaturated</em>! But we will discover this a little later.</p>
-<div class="figure" style="text-align: center"><span id="fig:Unsaturated-fats"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Unsaturated-fats"></span>
 <img src="pictures/Unsaturated-fats.jpg" alt="Food containing *unsaturated fats*, reputed to be healthier. obtained at [https://healthbeat.spectrumhealth.org/healthy-fats-for-healthy-blood-lipids/](https://healthbeat.spectrumhealth.org/healthy-fats-for-healthy-blood-lipids/)" width="50%" />
 <p class="caption">
 Figure 3.1: Food containing <em>unsaturated fats</em>, reputed to be healthier. obtained at <a href="https://healthbeat.spectrumhealth.org/healthy-fats-for-healthy-blood-lipids/">https://healthbeat.spectrumhealth.org/healthy-fats-for-healthy-blood-lipids/</a>
 </p>
 </div>
 <p>Back to our alkanes. The simplest alkane is <em>methane</em>, made of one carbon atom. Four hydrogen are necessary to fulfill its octet rule and to <em>saturate</em> its carbon (Figure <a href="functional-groups.html#fig:methane-LDS">3.2</a>).</p>
-<div class="figure" style="text-align: center"><span id="fig:methane-LDS"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:methane-LDS"></span>
 <img src="pictures/methane-LDS.png" alt="Lewis dot structure for methane" width="17%" />
 <p class="caption">
 Figure 3.2: Lewis dot structure for methane
@@ -540,14 +546,14 @@ Figure 3.2: Lewis dot structure for methane
 </div>
 <p>The final formula for methane is thus CH<sub>4</sub>.</p>
 <p>The second simplest alkane is <em>ethane</em>, made of two carbon atoms bonded together using two of their valence electrons to make a covalent bond. Hydrogen atoms form bonds with the three valence electrons left on each of the carbon atoms, for a final formula of C<sub>2</sub>H<sub>6</sub>, or a <strong>condensed formula</strong> of CH<sub>3</sub>-CH<sub>3</sub> (Figure <a href="functional-groups.html#fig:ethane-LDS">3.3</a>).</p>
-<div class="figure" style="text-align: center"><span id="fig:ethane-LDS"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ethane-LDS"></span>
 <img src="pictures/ethane-LDS.png" alt="Lewis dot structure for ethane" width="25%" />
 <p class="caption">
 Figure 3.3: Lewis dot structure for ethane
 </p>
 </div>
 <p>The third simple alkane is <em>propane</em>, made of three carbon atoms in an open chain. The central carbon is bonded to the outer carbons and only has two valence electrons available to bond with H, or for the central carbon to be <em>saturated</em> with hydrogen (Figure <a href="functional-groups.html#fig:propane-LDS">3.4</a>). The final formula of propane is C<sub>3</sub>H<sub>8</sub>, or its <strong>condensed formula</strong> is CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>3</sub>.</p>
-<div class="figure" style="text-align: center"><span id="fig:propane-LDS"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:propane-LDS"></span>
 <img src="pictures/propane-LDS.png" alt="Lewis dot structure for propane" width="30%" />
 <p class="caption">
 Figure 3.4: Lewis dot structure for propane
@@ -686,7 +692,7 @@ Skeletal or Line structure
 <p></br></br></p>
 <p>Looking inside Table <a href="functional-groups.html#tab:AlkaneTab">3.1</a>, it now appears that the same molecule can be represented in several ways. First the <strong>formula</strong>, in the first column where the number of atoms are compiled and added as a subscript near each atom. It is concise, but gives no information on how the atoms are structured together. In the third column, the <strong>condensed formula</strong> gives more information on how the hydrogen atoms are assembled relative to the carbon atoms. In the propane example, CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>3</sub> suggests that three hydrogen atoms are bonded to the end carbons, and two H are bonded to the central carbon. By convention, since the hydrogen can only make one bond, it is implied that in CH<sub>3</sub>-CH<sub>2</sub>, the hyphen ‘-’ represents the bond between carbons.</p>
 <p>The <strong>structural formula</strong> provides a comprehensive illustration of all the bonds and all the atoms. But in organic chemistry, there are so many C and H atoms, that the structural formula becomes too crowded and not easily readable. Chemists have thus decided to simplify the formula representations as much as possible. One very common simplification is the <strong>Skeletal structure</strong> or <strong>line structure</strong> representation, illustrated in the fifth column of Table <a href="functional-groups.html#tab:AlkaneTab">3.1</a>. As its names suggest, only the <em>carbon skeleton</em> is kept and the rest is implied. Butane for example in Table <a href="functional-groups.html#tab:AlkaneTab">3.1</a> and Figure <a href="functional-groups.html#fig:line-to-structural-formula">3.5</a> is represented as three angled line segments. It is implied that at the end of each segment, there is a carbon atom, and that each carbon is saturated with hydrogen. The zigzagging of the skeletal structure is also supposed to represent a little bit better how the atoms are thought to actually be intricate together. Actually, if you refer to the <a href="appendix-a.html#orbitals">summary on electron orbitals</a>, you will see that in alkyl chains, the carbons orbitals are in the <a href="appendix-a.html#sp3">sp<sup>3</sup> hybridization</a> form, which involves tetraedral shapes, hence the zigzaging. Additionally, because of the sp<sup>3</sup> hybridization, the electrons are at their highest energy level! This should ring a bell and confirm that the secret of life to store energy is to store high energy electrons onto organic matter, and precisely onto C, N, and S atoms! All this might appear confusing at the beginning, but this is extremely logical, and helps tremendously when writing or reading molecules important to life and ecological engineering.</p>
-<div class="figure" style="text-align: center"><span id="fig:line-to-structural-formula"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:line-to-structural-formula"></span>
 <img src="pictures/line-to-structural-formula.png" alt="Illustration of the assumptions associated with the correspondence between skeletal structure and structural formula for butane" width="100%" />
 <p class="caption">
 Figure 3.5: Illustration of the assumptions associated with the correspondence between skeletal structure and structural formula for butane
@@ -697,14 +703,14 @@ Figure 3.5: Illustration of the assumptions associated with the correspondence b
 <div id="unsaturated-hydrocarbons" class="section level3">
 <h3><span class="header-section-number">3.1.2</span> Unsaturated hydrocarbons</h3>
 <p>So what about unsaturated hydrocarbons? As stated before, <em>unsaturated</em> implies that between two carbons, two valence electrons are shared between carbon atoms to form a double or triple π bond. For the majority of the cases of interest for this book, there is only one double bond in the unsaturated hydrocarbon open chains. In this case, the suffix for the molecule name is changed. Instead of <strong><em>-ane</em></strong> for the alk<strong><em>anes</em></strong>, it becomes <strong><em>-ene</em></strong> for what is referred to as the alk<strong><em>enes</em></strong>. In the example of Figure <a href="functional-groups.html#fig:butane-butene">3.6</a>, the dehydrogenation of carbons 1 and 2 leads to the formation of but-1-ene or α butylene.</p>
-<div class="figure" style="text-align: center"><span id="fig:butane-butene"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:butane-butene"></span>
 <img src="pictures/butane-butene.png" alt="Butene corresponds to the dehydrogenation of butane" width="80%" />
 <p class="caption">
 Figure 3.6: Butene corresponds to the dehydrogenation of butane
 </p>
 </div>
 <p>If you read correctly, you just saw yet another nomenclature for the name. It turns out that 1) where the double bond is located matters very much for the molecule property, and 2) the steric configuration (where the atoms are in space relative to each other) can change dramatically as the double bond is rather rigid, and the atoms are not nearly as free to rotate around the π bond as they are with a σ bond (details in <a href="#Appendix-A">Appendix A</a>). As a result, there are really three possible forms of butene (Figure <a href="functional-groups.html#fig:butene-isomers">3.7</a>).</p>
-<div class="figure" style="text-align: center"><span id="fig:butene-isomers"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:butene-isomers"></span>
 <img src="pictures/butene-isomers.png" alt="The three butene isomers, respectively A: but-1-ene or &amp;alpha; butylene,; B:  (Z)-but-2-ene or cis-&amp;beta;-butylene; C: (E)-but-2-ene or trans-&amp;beta;-butylene" width="80%" />
 <p class="caption">
 Figure 3.7: The three butene isomers, respectively A: but-1-ene or α butylene,; B: (Z)-but-2-ene or cis-β-butylene; C: (E)-but-2-ene or trans-β-butylene
@@ -719,7 +725,7 @@ Figure 3.7: The three butene isomers, respectively A: but-1-ene or α butylene,;
 <p>Aromatic hydrocarbons or <em><strong>ar</strong>enes</em> are cyclic hydrocarbon chains that, as the suffix <em>-ene</em> implies, have at least one double bond between two carbons, but in reality have two or three double bonds. And a hydrocarbon chain with generally alternate single and double bonds that is <strong>ar</strong>omatic is thus called an <strong>ar</strong><em>ene</em>. Aromatic hydrocarbons are ring-shaped, have planar or flat structures, and are considered to be structurally strong molecules and difficult to hydrolyze. Many of these molecules have an <em>aroma</em> or specific odors, hence the name <em>aromatic</em>.</p>
 <p>The strength and stability of these molecules is at the center of the stiffness of wood thanks to the <a href="molecular-families.html#lignins">lignin molecules</a>, which contain lots of aromatic radicals. The following describes in details what at the electron orbital scale causes the aromatic hydrocarbons to have such structural stability. The quintessential model of the aromatic hydrocarbons of concern in biochemistry of life is the <em>benzene</em> ring. It has 6 carbons, with three double bonds, which implies that each carbon is bonded to two other carbons and is <em>unsaturated</em> with hydrogen and thus only has one hydrogen (Figure <a href="functional-groups.html#fig:aromaticity">3.8</a>).</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:aromaticity"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:aromaticity"></span>
 <img src="pictures/aromaticity.png" alt="Two different resonance forms of benzene (top) combine to produce an average structure (bottom). By Edgar181 - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=2962329" width="50%" />
 <p class="caption">
 Figure 3.8: Two different resonance forms of benzene (top) combine to produce an average structure (bottom). By Edgar181 - Own work, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=2962329" class="uri">https://commons.wikimedia.org/w/index.php?curid=2962329</a>
@@ -728,7 +734,7 @@ Figure 3.8: Two different resonance forms of benzene (top) combine to produce an
 <p></br></br></p>
 <p>Applying the Steric Number (SN) rule described <a href="appendix-a.html#sigma-pi-bonds">here</a>, SN for each carbon can be calculated as SN = (2 Carbon atoms + 1 hydrogen atom), or SN = 3. This suggests that the electron orbitals for each of the carbon atom are likely hybridized into <a href="appendix-a.html#orbitals-hybridization"><strong>sp<sup>2</sup></strong></a>. This means that each carbon makes a σ bond with the two neighbor carbons, and with the hydrogen atom. This leaves essentially 6 <strong>p</strong> orbitals that can form double bonds as illustrated in Figure <a href="functional-groups.html#fig:aromaticity">3.8</a>, or more likely a delocalisation of these electrons into a ring as represented in Figure <a href="functional-groups.html#fig:aromaticity">3.8</a>. The <a href="https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Map%3A_Organic_Chemistry_(Wade)/02%3A_Structure_and_Properties_of_Organic_Molecules/2.04%3A_Conjugated_Pi_Bonding">molecular orbital</a> theory suggests that alternating single and double bonds creates what is referred to as a <strong>conjugated pi bond</strong> system across multiple atoms, lowers the energy and stabilizes the molecule.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:benzene-orbitals"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:benzene-orbitals"></span>
 <img src="pictures/benzene-orbitals2.png" alt="Benzene **sp^2^** and **p** orbitals delocalization. Orbital drawning after Vladsinger, https://commons.wikimedia.org/w/index.php?curid=7531044" width="90%" />
 <p class="caption">
 Figure 3.9: Benzene <strong>sp<sup>2</sup></strong> and <strong>p</strong> orbitals delocalization. Orbital drawning after Vladsinger, <a href="https://commons.wikimedia.org/w/index.php?curid=7531044" class="uri">https://commons.wikimedia.org/w/index.php?curid=7531044</a>
@@ -742,13 +748,13 @@ Figure 3.9: Benzene <strong>sp<sup>2</sup></strong> and <strong>p</strong> orbit
 <strong>Etymology Corner</strong>
 </p>
 <p>
-The prefix <em>benz-</em> in benzene is associated with the <em>benzoin resin</em>, which is a dried exudation from pierced bark of trees of the genus <em>Styrax</em> (Styracaceae) mostly native from East and Southeast Asia (Sumatra, Java, Thailand), and used in perfumes, some kinds of incense, as a flavoring, and medicine <span class="citation"><span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2019-hx">2019</a><a href="#ref-Wikipedia_contributors2019-hx">b</a>)</span></span>. <em>Benzoin resin</em> is known from European pharmacists and perfumers since the 15<sup>th</sup> century. The word <em>benzoin</em> seems to be an oral transcription into German of the Arabic <em>Lubān jāwī</em> (لبان جاوي), which translates into Javan Frankincense <span class="citation"><span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2019-hx">2019</a><a href="#ref-Wikipedia_contributors2019-hx">b</a>)</span></span>, suggesting that the Arabs have known and traded this resin for a long time, along with many other types of Frankincense. To make things more complete and possibly confusing, the French chemist <a href="https://fr.wikipedia.org/wiki/Auguste_Laurent">Auguste Laurent</a>, named the same benzene substance <em>phène</em> in reference to the Greek word <em>φαινω</em> which means ‘I light’ as this substance was obtained from gases used for street lighting <span class="citation"><span class="citation">(Laurent <a href="#ref-Laurent1836-xu">1836</a>)</span></span>. This is the reason for the word <em>phenol</em> otherwise referred to as hydroxy-benzene and for the radical <em>-phenyl</em> described below. Historically, it seems that the naming in French was a bit of a political stence against the naming in German. Indeed the frictions between the French and the Germans were mounting at that time. Politics always play a role…!
+The word <em>benzene</em> comes from the German word <em>benzin</em> coined by Mitscherlich in 1833 <span class="citation"><span class="citation">(Mitscherlich <a href="#ref-Mitscherlich1833-om">1833</a>)</span></span> from the <em>benzoin resin</em>. This is a dried exudation from pierced bark of trees of the genus <em>Styrax</em> (Styracaceae) mostly native from East and Southeast Asia (Sumatra, Java, Thailand), and used in perfumes, some kinds of incense, as a flavoring, and medicine <span class="citation"><span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2019-hx">2019</a><a href="#ref-Wikipedia_contributors2019-hx">b</a>)</span></span>. <em>Benzoin resin</em> is known from European pharmacists and perfumers since the 15<sup>th</sup> century. The word <em>benzoin</em> seems to be an oral transcription into German of the Arabic <em>Lubān jāwī</em> (لبان جاوي), which translates into Javan Frankincense <span class="citation"><span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2019-hx">2019</a><a href="#ref-Wikipedia_contributors2019-hx">b</a>)</span></span>, suggesting that the Arabs have known and traded this resin for a long time, along with many other types of Frankincense. To make things more complete and possibly confusing, the French chemist <a href="https://fr.wikipedia.org/wiki/Auguste_Laurent">Auguste Laurent</a>, named the same benzene substance <em>phène</em> in reference to the Greek word <em>φαινω</em> which means ‘I light’ as this substance was obtained from gases used for street lighting <span class="citation"><span class="citation">(Laurent <a href="#ref-Laurent1836-xu">1836</a>)</span></span>. This is the reason for the word <em>phenol</em> otherwise referred to as hydroxy-benzene and for the radical <em>-phenyl</em>, <em>phenols</em>, and <em>phenolics</em> described in this book. Historically, it seems that the naming in French was a bit of a political stence against the naming in German. Indeed the frictions between the French and the Germans were mounting at that time. Politics always play a role…!
 </p>
 </div>
 <p></br></br></p>
 <p>It turns out that in addition to purely hydrocarbon arenes, there are aromatic compounds with other atoms than just C and H, that are derived from benzene, and are non-benzene based. They are referred to as <strong>heteroarenes</strong> or heterocyclic compounds. In simple rings, there tend to be 5 to 6 atom rings where most of the atoms are carbons. It is not possible to avoid these because they play a crucial role in the chemistry of life, particularly for RNA and DNA. The rules for aromaticity are described in details by <a href="https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Arenes/Properties_of_Arenes/Aromaticity/H%C3%BCckel&#39;s_Rule">Hückel’s rules</a>, but for this book, one should remember that aromatic compounds are cyclic, planar, and have delocalized π orbitals which gives them strength and stability.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:heteroarenes"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:heteroarenes"></span>
 <img src="pictures/heteroarenes.png" alt="Homoarene benzene and three heteroarenes or heterocyclic hydrocarbons, including pyrimidine, imidazole, the combination of both forming purine. (with the H added, top, and without the H, bottom)" width="100%" />
 <p class="caption">
 Figure 3.10: Homoarene benzene and three heteroarenes or heterocyclic hydrocarbons, including pyrimidine, imidazole, the combination of both forming purine. (with the H added, top, and without the H, bottom)
@@ -831,7 +837,7 @@ Your browser does not support iframes
 <h2><span class="header-section-number">3.2</span> Functional groups from alkane chain oxidation</h2>
 <p>The first set of principal functional groups relevant to biochemistry are summarized in Figure <a href="functional-groups.html#fig:FGsynthesis">3.11</a>. The functional groups can be classified depending on the number of electrons that the carbon on the original alkane molecule (or more precisely the alkyl radical) may have lost to oxidation: 2, 4, or 6 (Figure <a href="functional-groups.html#fig:FGsynthesis">3.11</a>).</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:FGsynthesis"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FGsynthesis"></span>
 <img src="pictures/FGsynthesis.png" alt="Functional groups resulting from the differential oxidation (loss of 2, 4, and 6 electrons to O, S, and N) of an original alkyl carbon atom. Notice that the number of electrons stored on the carbon atom are illustrated in dark blue" width="100%" />
 <p class="caption">
 Figure 3.11: Functional groups resulting from the differential oxidation (loss of 2, 4, and 6 electrons to O, S, and N) of an original alkyl carbon atom. Notice that the number of electrons stored on the carbon atom are illustrated in dark blue
@@ -853,7 +859,7 @@ Figure 3.11: Functional groups resulting from the differential oxidation (loss o
 </blockquote>
 <p>Amines, very much like alcohols, are classified into primary, secondary, and tertiary amines, depending on the number of alkyl groups bonded to the nitrogen atom. The substituent -NH2 is called an amino group, hence the name amino-acids described in <a href="molecular-families.html#proteins">the next chapter</a> (Figure <a href="functional-groups.html#fig:amines">3.12</a>). The nitrogen of amines almost always has 8 electrons for itself in organic molecules. For primary producers, amines are formed and incorporated into organic molecules directly from the uptake of ammonium, or, after the reduction of nitrate uptaken. Notice the tetrahedral shape of ammonia and amines</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:amines"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:amines"></span>
 <img src="pictures/amines.png" alt="Ammonia and conjugate acid ammonium, and identified primary, secondary, and tertiary amines" width="65%" />
 <p class="caption">
 Figure 3.12: Ammonia and conjugate acid ammonium, and identified primary, secondary, and tertiary amines
@@ -879,7 +885,7 @@ The suffix of am<em>ine</em> comes from the French suffix <em>-ine</em>, used to
 <p>In chemistry, an alcohol is any organic compound in which the hydroxy functional group (–OH) is bound to a carbon. Most of alcohol groups in organic chemistry are secondary alcohols, which means that the alcohol functional groups -CHOH- are usually embedded in longer carbon chains. Chemists make differences between the number of hydrogens that are bonded to the -COH radical (Figure <a href="functional-groups.html#fig:alcohols">3.13</a>). As presented in Figure <a href="functional-groups.html#fig:FGsynthesis">3.11</a>, the carbon of alcohol functional groups still have 4 electrons for themselves, which corresponds to the number of valence electrons on C at the natural state. The glucose molecule, out of 6 carbon atoms, has 5 alcohol functional groups! On the nomenclature side, the condensed formula for the primary structure is -CH<sub>2</sub>OH, and for the secondary structure is -CHOH-. In the condensed formula, the hydroxyl radical OH is purposely separated from the rest to point out that this is an alcohol functional group.</p>
 <p>The naming convention is to use the alkane prefix with the suffix <strong><em>-ol</em></strong> at the end. An alcohol of propane would be called propan<strong><em>ol</em></strong>. A propane with two or three alcohol functional groups would be called propan-di-<strong><em>ol</em></strong> or propan-tri-<strong><em>ol</em></strong>, respectively.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:alcohols"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:alcohols"></span>
 <img src="pictures/alcohols.png" alt="Generic alcohol functional group and the identified primary, secondary, and tertiary alcohols" width="70%" />
 <p class="caption">
 Figure 3.13: Generic alcohol functional group and the identified primary, secondary, and tertiary alcohols
@@ -902,7 +908,7 @@ The etymology of <em>alcohol</em> seems to be rather obscure. It certainly comes
 <p>Thiols are the sulfur analogue of alcohols (that is, sulfur takes the place of oxygen in the hydroxyl group of an alcohol), and the word is [the combination] of “thio-” + “alcohol”, with the first word deriving from Greek θεῖον (theion) meaning “sulfur” <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2019-ie">2019</a><a href="#ref-Wikipedia_contributors2019-ie">g</a>)</span>.</p>
 </blockquote>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:thiols"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:thiols"></span>
 <img src="pictures/thiol-alcohol.png" alt="Thiol group (left) is the analogue of the hydroxyl group of an alcohol (right)" width="45%" />
 <p class="caption">
 Figure 3.14: Thiol group (left) is the analogue of the hydroxyl group of an alcohol (right)
@@ -924,7 +930,7 @@ Figure 3.14: Thiol group (left) is the analogue of the hydroxyl group of an alco
 <p>Aldehyde functional group consists in a carbonyl group with the carbon atom also bonded to hydrogen. This implies that aldehyde groups are necessarily at the end of an hydrocarbon chain. To differentiate between alcohol and aldehyde groups, the condensed formula for an aldehyde is -CHO. The carbon of an aldehyde functional group has lost 4 electrons to oxygen, and only has 3 for itself (Figure <a href="functional-groups.html#fig:aldehyde">3.15</a>). Because of the electronegativity of the carbonyl group, aldehyde group are rather polarized, which makes them rather soluble in polar solvent such as water.</p>
 <p>The general naming convention is to replace the <em>-e</em> of the alkane name with the suffix <strong><em>-al</em></strong> at the end. An aldehyde of propane would be called propan<strong><em>al</em></strong>. Many fragrances (odors, aroma) are aldehyde molecules. The word aldehyde was coined by <a href="https://en.wikipedia.org/wiki/Justus_von_Liebig">Justus von Liebig</a> as a contraction of the Latin <strong><em>al</em></strong>cohol <em><strong>dehyd</strong>rogenatus</em> (dehydrogenated alcohol).</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:aldehyde"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:aldehyde"></span>
 <img src="pictures/aldehyde.png" alt="Generic aldehyde functional group with the allocation of the electrons to oxygen and carbon atoms" width="15%" />
 <p class="caption">
 Figure 3.15: Generic aldehyde functional group with the allocation of the electrons to oxygen and carbon atoms
@@ -935,7 +941,7 @@ Figure 3.15: Generic aldehyde functional group with the allocation of the electr
 <h3><span class="header-section-number">3.2.8</span> Ketone functional group</h3>
 <p>Ketone functional group consists in a carbonyl group included in the middle of a hydrocarbon chain. The condensed formula for a ketone is -CO-, or sometimes written as -(C=O)-. The carbon of a ketone functional group has lost 4 electrons to oxygen, and only has 2 for itself (Figure <a href="functional-groups.html#fig:ketone">3.16</a>).</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:ketone"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ketone"></span>
 <img src="pictures/ketone.png" alt="Generic ketone functional group with the allocation of the electrons to oxygen and carbon atoms" width="15%" />
 <p class="caption">
 Figure 3.16: Generic ketone functional group with the allocation of the electrons to oxygen and carbon atoms
@@ -957,7 +963,7 @@ The English word ketone comes from the German Aketon, itself derived from the Fr
 <h3><span class="header-section-number">3.2.9</span> Carboxyl functional group</h3>
 <p>The carboxyl group (properly called carboxy group by the <a href="https://iupac.org/what-we-do/nomenclature/">IUPAC</a>, but every text book uses interchangeably carboxyl radical and carboxyl group), is an aldehyde group that would have lost two additional electrons to oxygen via an hydroxyl group (Figure <a href="functional-groups.html#fig:carboxyl">3.17</a>). The condensed formula for a carboxyl group is -COOH. The carboxyl group is always at the end of a hydrocarbon chain, in which case the group is referred to as a <em>carboxylic acid</em>. Yes, you read correctly, with the carboxyl group, we are entering the world of acid and base, pH, etc. But why so?</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:carboxyl"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:carboxyl"></span>
 <img src="pictures/carboxyl.png" alt="Generic carboxyl functional group with the allocation of the electrons to oxygen and carbon atoms" width="65%" />
 <p class="caption">
 Figure 3.17: Generic carboxyl functional group with the allocation of the electrons to oxygen and carbon atoms
@@ -972,7 +978,7 @@ Figure 3.17: Generic carboxyl functional group with the allocation of the electr
 <h3><span class="header-section-number">3.2.10</span> Amide functional group</h3>
 <p>The amide functional group can be seen as a derivative of carboxylic acid where the hydroxyl group is replaced by the amine functional group. In that case, it can be seen as an oxidation of a single carbon of an alkyl radical. In reality, for most amide groups, at least one of the hydrogen of the amine group is replaced by another hydrocarbon chain, as illustrated in Figure <a href="functional-groups.html#fig:amides">3.18</a> below. In that case, amides can be seen as assemblages of functionalized molecules described in the next section.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:amides"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:amides"></span>
 <img src="pictures/amides.png" alt="Generic amide functional groups, with the allocation of the electrons to oxygen, nitrogen, and carbon atoms. " width="50%" />
 <p class="caption">
 Figure 3.18: Generic amide functional groups, with the allocation of the electrons to oxygen, nitrogen, and carbon atoms.
@@ -981,7 +987,7 @@ Figure 3.18: Generic amide functional groups, with the allocation of the electro
 <p></br></br></p>
 <p>Because oxygen is more electronegative than nitrogen, and because of the double π bond of the carbonyl (C=O) group, the lone pair available on the nitrogen tends to be delocalized into the carbonyl group, forming a partial double bond between nitrogen and the carbonyl group (Figure <a href="functional-groups.html#fig:amide-resonance">3.19</a>).</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:amide-resonance"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:amide-resonance"></span>
 <img src="pictures/amide-resonance.png" alt="Generic amide functional groups, with the allocation of the electrons to oxygen, nitrogen, and carbon atoms. " width="50%" />
 <p class="caption">
 Figure 3.19: Generic amide functional groups, with the allocation of the electrons to oxygen, nitrogen, and carbon atoms.
@@ -990,7 +996,7 @@ Figure 3.19: Generic amide functional groups, with the allocation of the electro
 <p></br></br></p>
 <p>This forms an electron resonance system that is rather stable. In fact, experience shows that the amide functional group is planar without free rotation about the C-N bond, which fits well with the resonance structure and the partial double bond between C and N (Figure <a href="functional-groups.html#fig:amide-spin">3.20</a>).
 </br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:amide-spin"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:amide-spin"></span>
 <img src="pictures/amide-spin.gif" alt="Amide functional group, with the R groups as methyls. The colors follow for C, H, O, N, respectively grey, white, red, and blue. Notice that the amide group is planar" width="40%" />
 <p class="caption">
 Figure 3.20: Amide functional group, with the R groups as methyls. The colors follow for C, H, O, N, respectively grey, white, red, and blue. Notice that the amide group is planar
@@ -998,6 +1004,10 @@ Figure 3.20: Amide functional group, with the R groups as methyls. The colors fo
 </div>
 <p></br></br></p>
 <p>This property actually has some fantastic consequences in the chemistry of life. The amide functional group corresponds to the peptidic bond existing between consecutive amino acids in a protein (details in section <a href="molecular-families.html#proteins">4.3</a> dedicated to proteins). In other words, because of the resonance structure and the partial double bond of the amide functional group, hence its strong and planar structure, proteins can take a specific and rigid structure in three dimensions. The amide functional group is present in <a href="molecular-families.html#sphingolipids">sphingolipids</a> and make these molecules a lot more rigid than the other membrane lipids, and thus play a role in the insertion of proteins in lipid rafts of membranes (details in section <a href="molecular-families.html#sphingolipids">4.5.6</a>).</p>
+</div>
+<div id="amides" class="section level3">
+<h3><span class="header-section-number">3.2.11</span> Methoxyl functional group</h3>
+<p>The methoxyl functional group is not nearly as well known as the ones presented above. However, the methoxyl functional group is very common among <a href="molecular-families.html#phenolics">phenolics</a>, which are a group of secondary metabolites introduced in chapter <a href="molecular-families.html#molecular-families">4</a>. Because of lignin, phenolics are the</p>
 <p>This paragraph completes the list of principal functional groups of major importance for biochemistry. This list is not exhaustive but sufficient for the goals of this book.</p>
 <p></br></br></p>
 <div class="rmd-study">
@@ -1054,7 +1064,7 @@ Your browser does not support iframes
 <h2><span class="header-section-number">3.3</span> Functional groups from bonding of functionalized organic molecules</h2>
 <p>The second set of principal functional groups relevant to biochemistry results from the binding of simpler functional groups described above. Figure <a href="functional-groups.html#fig:complexFG">3.21</a> below summarizes the principal complex functional groups resulting from the binding of two simple functional groups. It becomes very apparent that the alcohol and carboxyl functional groups play, with phosphate, a preponder role in the formation of complex functional groups, and in the binding of simple molecules together to form more complex ones. Each of the groups are presented in more details below.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:complexFG"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:complexFG"></span>
 <img src="pictures/complexFG.png" alt="Complex functional groups resulting from the combination of simple functional groups illustrating the preponderant role of alcohol, carboxylic acid and phosphate" width="100%" />
 <p class="caption">
 Figure 3.21: Complex functional groups resulting from the combination of simple functional groups illustrating the preponderant role of alcohol, carboxylic acid and phosphate
@@ -1065,7 +1075,7 @@ Figure 3.21: Complex functional groups resulting from the combination of simple 
 <h3><span class="header-section-number">3.3.1</span> Ester functional group</h3>
 <p>Esters are common in organic chemistry and biological materials, and often have a pleasant characteristic, fruity odor. Ester functional groups are formed from the condensation reaction between a carboxylic acid and an alcohol group (Figure <a href="functional-groups.html#fig:esterification">3.22</a>). Because of the electronegativity of the oxygen and the double π bond of the carbonyl, the hydroxyl group in the carboxyl group reacts with the hydrogen of the alcohol group to form the ester bond. The ester bond is essential in biochemistry particularly for lipids.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:esterification"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:esterification"></span>
 <img src="pictures/esterification.png" alt="Esterification: condensation reaction between a carboxylic acid with an alcohol" width="80%" />
 <p class="caption">
 Figure 3.22: Esterification: condensation reaction between a carboxylic acid with an alcohol
@@ -1074,7 +1084,7 @@ Figure 3.22: Esterification: condensation reaction between a carboxylic acid wit
 <p></br></br></p>
 <p>Esters are named as if the alkyl chain from the alcohol is a substituent. This is followed by the name of the parent chain from the carboxylic acid part of the ester with an –e remove and replaced with the ending –oate. There are more subtil naming conventions from esters, particularly when the carbon bonded to the ester bond in the substituent chain is not an end carbon, but this is unimportant for our goal here. Additional naming nomenclature details can be found <a href="https://en.wikipedia.org/wiki/IUPAC_nomenclature_of_organic_chemistry#Esters">here</a>.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:propylethanoate2"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:propylethanoate2"></span>
 <img src="pictures/propylethanoate2.png" alt="The substituent alkyl chain from the alcohol is a propyl. The parent chain name with a carboxyl group is ethanoic acid, which in the ester bond, becomes ethanoate. In the end the name of the molecule is **propylethanoate**" width="40%" />
 <p class="caption">
 Figure 3.23: The substituent alkyl chain from the alcohol is a propyl. The parent chain name with a carboxyl group is ethanoic acid, which in the ester bond, becomes ethanoate. In the end the name of the molecule is <strong>propylethanoate</strong>
@@ -1086,7 +1096,7 @@ Figure 3.23: The substituent alkyl chain from the alcohol is a propyl. The paren
 <h3><span class="header-section-number">3.3.2</span> Thioesters</h3>
 <p>Following the analogy between alcohol and thiol functional groups, thioesters are the analogue of esters. Thioester functional groups are formed from the condensation reaction between a carboxylic acid and a thiol group (Figure <a href="functional-groups.html#fig:thioesterification">3.24</a>).</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:thioesterification"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:thioesterification"></span>
 <img src="pictures/thioesterification.png" alt="Thioesterification: condensation reaction between a carboxylic acid with a thiol. Notice the skwiggly blue line illustrating an energy bond." width="80%" />
 <p class="caption">
 Figure 3.24: Thioesterification: condensation reaction between a carboxylic acid with a thiol. Notice the skwiggly blue line illustrating an energy bond.
@@ -1099,7 +1109,7 @@ Figure 3.24: Thioesterification: condensation reaction between a carboxylic acid
 <h3><span class="header-section-number">3.3.3</span> Phosphoesters</h3>
 <p>The second analogue to esters are the phosphoesters. This time, the carboxylic acid is replaced by a phosphoric acid H<sub>3</sub>PO<sub>4</sub>. In reality, depending on the pH, the actual form of the acid might be H<sub>2</sub>PO<sub>4</sub><sup>-</sup>, HPO<sub>4</sub><sup>2-</sup>, or PO<sub>4</sub><sup>3-</sup> (Figure <a href="electron-allocation.html#fig:ElecAlloc-H3PO3-to-PO43-">2.7</a>), all of which are loosely referred to as ‘phosphates’ (details in section <a href="acidbase.html#acidbase">10</a> dedicated to acid-base reactions). So phosphates can react with alcohol functional groups to form phosphoester bonds (Figure <a href="functional-groups.html#fig:phosphoesterification">3.25</a>).</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:phosphoesterification"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:phosphoesterification"></span>
 <img src="pictures/Phosphoesterification.png" alt="Phosphoesterification: condensation reaction between a phosphate with an alcohol" width="80%" />
 <p class="caption">
 Figure 3.25: Phosphoesterification: condensation reaction between a phosphate with an alcohol
@@ -1125,7 +1135,7 @@ The word <em>ether</em> was first introduced by the German-born chemist <a href=
 <h3><span class="header-section-number">3.3.4</span> Ether functional group</h3>
 <p>Ether functional group result from the condensation reaction between two alcohol groups (Figure <a href="functional-groups.html#fig:etherification">3.26</a>). Ethers are very volatile compounds. Diethyl ether (CH<sub>3</sub>-CH<sub>2</sub>-O-CH<sub>2</sub>-CH<sub>3</sub>) is commonly refer to as ether by itself. It is a volatile flammable liquid and has been used as anesthetic for a long time. Its side effects of post-anesthetic nausea and vomiting have made it seldom used in the XXI<sup>st</sup> century.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:etherification"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:etherification"></span>
 <img src="pictures/etherification.png" alt="Etherification: condensation reaction between two alcohols" width="80%" />
 <p class="caption">
 Figure 3.26: Etherification: condensation reaction between two alcohols
@@ -1138,7 +1148,7 @@ Figure 3.26: Etherification: condensation reaction between two alcohols
 <h3><span class="header-section-number">3.3.5</span> Hemiacetal and hemiketal functional groups</h3>
 <p>A hemiacetal or a hemiketal is a compound that results from the addition of an alcohol to an aldehyde or a ketone, respectively. Hemiacetal and hemiketal groups are extremely important in biology as they are responsible for the cycling of carbohydrate monomers! The prefix <em>hemi-</em> which means half in Greek, suggests that this is only half a reaction. An <a href="https://chem.libretexts.org/Under_Construction/Purgatory/Book%3A_Organic_Chemistry_with_a_Biological_Emphasis_(Soderberg)/11%3A_Nucleophilic_carbonyl_addition_reactions/11.3%3A_Hemiacetals%2C_hemiketals%2C_and_hydrates">acetal</a> or ketal would be the full reaction, but this is besides the point because the hemiacetal and hemiketal are the important groups in biochemistry.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:FGhemiacetal-hemiketal"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FGhemiacetal-hemiketal"></span>
 <img src="pictures/FGhemiacetal-hemiketal.png" alt="Addition of an alcohol nucleophile to a ketone or aldehyde forms an hemiketal and hemiactal functional group, respectively" width="55%" />
 <p class="caption">
 Figure 3.27: Addition of an alcohol nucleophile to a ketone or aldehyde forms an hemiketal and hemiactal functional group, respectively
@@ -1147,14 +1157,14 @@ Figure 3.27: Addition of an alcohol nucleophile to a ketone or aldehyde forms an
 <p></br></br></p>
 <p>As illustrated in Figure <a href="functional-groups.html#fig:FGhemiacetal-hemiketal">3.27</a>, there is an asymetry in these two functional groups, with a hydroxyde group above and an alkyl ether group at the bottom. This asymetry is one of the reasons why these functional groups are not very stable theoretically. However in cyclic molecules like glucose (Figure <a href="functional-groups.html#fig:hemiacetal-glucose">3.28</a>) or fructose (Figure <a href="functional-groups.html#fig:hemiketal-fructose">3.29</a>), these functional groups are stable, yet easily reversible.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:hemiacetal-glucose"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:hemiacetal-glucose"></span>
 <img src="pictures/hemiacetal-glucose.png" alt="Intramolecular cyclic hemiacetal formation in glucose and more generally for pyranose hexoses" width="90%" />
 <p class="caption">
 Figure 3.28: Intramolecular cyclic hemiacetal formation in glucose and more generally for pyranose hexoses
 </p>
 </div>
 <p></br></p>
-<div class="figure" style="text-align: center"><span id="fig:hemiketal-fructose"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:hemiketal-fructose"></span>
 <img src="pictures/hemiketal-fructose.png" alt="Intramolecular cyclic hemiketal formation in fructose and more generally for furanose hexoses" width="90%" />
 <p class="caption">
 Figure 3.29: Intramolecular cyclic hemiketal formation in fructose and more generally for furanose hexoses
@@ -1168,7 +1178,7 @@ Figure 3.29: Intramolecular cyclic hemiketal formation in fructose and more gene
 <h3><span class="header-section-number">3.3.6</span> Anhydride and phosphoanhydride functional groups</h3>
 <p>The condensation reaction between two carboxylic acids leads to the formation of the anhydride functional group (Figure <a href="functional-groups.html#fig:anhydridation">3.30</a>). Honestly, this functional group is not particularly common in biochemistry.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:anhydridation"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:anhydridation"></span>
 <img src="pictures/anhydridation.png" alt="Condensation reaction between two carboxylic acids results in the formation of an anhydride functional group" width="80%" />
 <p class="caption">
 Figure 3.30: Condensation reaction between two carboxylic acids results in the formation of an anhydride functional group
@@ -1177,7 +1187,7 @@ Figure 3.30: Condensation reaction between two carboxylic acids results in the f
 <p></br></br></p>
 <p>However, its phosphorus analogue has a major role in the biochemistry of life. The condensation of a phosphate and a carboxylic acid yields a phosphoanhydride bond (see Table <a href="functional-groups.html#tab:FGtab">3.2</a>). The condensation of two phosphates yields a diphospho anhydride bond (Figure <a href="functional-groups.html#fig:phosphoanhydridation">3.31</a>).</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:phosphoanhydridation"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:phosphoanhydridation"></span>
 <img src="pictures/phosphoanhydridation.png" alt="Condensation reaction between two phosphates results in the formation of a phosphoanhydride functional group. The resulting two phosphate molecule is called a pyrophosphate. The skwiggly blue line has been added to show that the hydrolysis of the anhydride bond releases energy" width="80%" />
 <p class="caption">
 Figure 3.31: Condensation reaction between two phosphates results in the formation of a phosphoanhydride functional group. The resulting two phosphate molecule is called a pyrophosphate. The skwiggly blue line has been added to show that the hydrolysis of the anhydride bond releases energy
@@ -1235,7 +1245,7 @@ Your browser does not support iframes
 <p>The list provided above is not exhaustive, but enough to identify most functional groups in organic molecules associated with the biochemistry of life. The names of these functional groups are used throughout this book and this chapter has been designed to serve as a reference when in doubt.</p>
 <p>In addition to functional groups, there are several molecules or radicals, which are very common and must be known. They are illustrated in Figure <a href="functional-groups.html#fig:commonmolecules">3.32</a>. The phenyl radical is a benzene ring. The reason for the name is explain in an etymology corner before. Phenol is an hydroxy benzene. Acetic acid is the acid in vinegar and is also named ethanoic acid. The base conjugate is called acetate or ethanoate. Glycerol is a propane-triol and serves as a skeleton to lipids where it forms ester bonds with fatty acids. Glyceraldehyde is a glycerol for which one carbon has been oxidized into an aldehyde. The phosphated version of glyceraldehyde, i.e., glyceraldehyde 3-phosphate (3 because the phosphoester bond is on the third carbon of the glyceraldehyde) or more commonly referred to as G3P, is generally considered the prime end-product of photosynthesis. Glucose is then assembled from two G3P. Pyruvate, the base conjugate of pyruvic acid, is the end-product of the glycolysis, i.e., the first step in the oxidation of glucose requiring no exogenous electron acceptor. A list of for acid and acyl radicals commonly found in biochemistry can also be found <a href="https://www.acdlabs.com/iupac/nomenclature/79/r79_328.htm">at this site</a>, and more generally the nomenclature of organic chemistry can be found <a href="https://www.acdlabs.com/iupac/nomenclature/">on the IUPAC nomenclature website</a>.</p>
 <p></br></br></p>
-<div class="figure" style="text-align: center"><span id="fig:commonmolecules"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:commonmolecules"></span>
 <img src="pictures/commonmolecules.png" alt="Very common molecules and radicals that have special names in addition to the IUPAC ones" width="90%" />
 <p class="caption">
 Figure 3.32: Very common molecules and radicals that have special names in addition to the IUPAC ones
@@ -1610,6 +1620,9 @@ Explain the role of the hemiacetal group in carbohydrates
 <div id="ref-Lipmann1941-jl">
 <p>Lipmann, Fritz. 1941. “Metabolic Generation and Utilization of Phosphate Bond Energy: Nord/Advances.” In <em>Advances in Enzymology and Related Areas of Molecular Biology</em>, edited by F F Nord and C H Werkman, 273:99–162. Advances in Enzymology - and Related Areas of Molecular Biology. Hoboken, NJ, USA: John Wiley &amp; Sons, Inc. <a href="https://doi.org/10.1002/9780470122464.ch4">https://doi.org/10.1002/9780470122464.ch4</a>.</p>
 </div>
+<div id="ref-Mitscherlich1833-om">
+<p>Mitscherlich, E. 1833. “Ueber Das Benzin Und Die Säuren Der Oel- Und Talgarten.” <em>Ann. Phys.</em> 105 (=Ser. 2,29): 231–37. <a href="https://gallica.bnf.fr/ark:/12148/bpt6k15114b/f245.image">https://gallica.bnf.fr/ark:/12148/bpt6k15114b/f245.image</a>.</p>
+</div>
 <div id="ref-moran2012principles">
 <p>Moran, Laurence. 2012. <em>Principles of Biochemistry</em>. Boston: Pearson.</p>
 </div>
@@ -1633,7 +1646,6 @@ Explain the role of the hemiacetal group in carbohydrates
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1652,6 +1664,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -1672,6 +1685,10 @@ gitbook.start({
 "text": null
 },
 "download": ["Textbook_BAE587.pdf", "Textbook_BAE587.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
