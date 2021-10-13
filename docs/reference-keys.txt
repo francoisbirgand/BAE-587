@@ -38,6 +38,7 @@ fig:carboxyl
 fig:amides
 fig:amide-resonance
 fig:amide-spin
+fig:Methoxyl
 exr:drawmolec2
 fig:complexFG
 fig:esterification
@@ -300,6 +301,7 @@ eq:NH3
 eq:H2CO3
 eq:HCO3
 fig:ElecAlloc-CO2-carbonates
+fig:EDGEWG
 eq:H2S
 eq:HS
 fig:ElecAlloc-N2
@@ -368,11 +370,12 @@ aldehyde
 ketone
 carboxyl-functional-group
 amides
+methoxyl
 functional-groups-from-bonding-of-functionalized-organic-molecules
 ester-functional-group
 thioesters
 phosphoesters
-ether-functional-group
+ether
 hemiacetal
 anyhydride
 commonmolecules
@@ -427,7 +430,7 @@ monomeric-phenols
 c6-phenols
 c6-c1-phenolics-benzoic-acid-and-benzaldehyde-derivatives
 c6-c2-phenolics-phenylethanoids-and-derivatives
-conjugated-bonds-as-a-basic-structural-pattern
+conjugation-phenolics
 c6-c3-phenolics-phenylpropanoids-and-derivatives
 anthraquinones
 lignins
@@ -542,6 +545,7 @@ d
 denitrification
 dihydrogen-sulfide
 e
+EDG-EWG
 eutrophication
 f
 fischer-projection
