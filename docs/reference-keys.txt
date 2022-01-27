@@ -347,6 +347,7 @@ fig:O2toH2O-redox-chain-with-ROS
 eq:O2toH2O
 intro
 biogeochemistry-applied-to-excess-nutrients-in-rural-aquatic-environments
+ecologically-engineered-systems-treated-as-black-boxes
 biogeochemical-processes-in-pollution-flows
 scope-of-this-book
 exercises
