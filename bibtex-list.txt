@@ -1,0 +1,241 @@
+@ARTICLE{Weber2006-qq,
+  title    = "Microorganisms pumping iron: anaerobic microbial iron oxidation
+              and reduction",
+  author   = "Weber, Karrie A and Achenbach, Laurie A and Coates, John D",
+  journal  = "Nat. Rev. Microbiol.",
+  volume   =  4,
+  number   =  10,
+  pages    = "752--764",
+  month    =  oct,
+  year     =  2006,
+  url      = "http://dx.doi.org/10.1038/nrmicro1490",
+  file     = "All Papers/W/Weber et al. 2006 - Microorganisms pumping iron - anaerobic microbial iron oxidation and reduction.pdf",
+  language = "en",
+  issn     = "1740-1526, 1740-1534",
+  pmid     = "16980937",
+  doi      = "10.1038/nrmicro1490"
+}
+
+@ARTICLE{Straub2004-ug,
+  title     = "Diversity of Ferrous {Iron-Oxidizing}, {Nitrate-Reducing}
+               Bacteria and their Involvement in {Oxygen-Independent} Iron
+               Cycling",
+  author    = "Straub, Kristina L and Sch{\"o}nhuber, Wilhelm A and
+               Buchholz-Cleven, Berit E E and Schink, Bernhard",
+  journal   = "Geomicrobiol. J.",
+  publisher = "Taylor \& Francis",
+  volume    =  21,
+  number    =  6,
+  pages     = "371--378",
+  month     =  sep,
+  year      =  2004,
+  url       = "https://doi.org/10.1080/01490450490485854",
+  file      = "All Papers/S/Straub et al. 2004 - Diversity of Ferrous Iron-Oxidizing, Nitrate-Reducing Bacteria and their Involvement in Oxygen-Independent Iron Cycling.pdf",
+  issn      = "0149-0451",
+  doi       = "10.1080/01490450490485854"
+}
+
+@ARTICLE{Straub1998-hq,
+  title    = "Enumeration and detection of anaerobic ferrous iron-oxidizing,
+              nitrate-reducing bacteria from diverse European sediments",
+  author   = "Straub, K L and Buchholz-Cleven, B E",
+  journal  = "Appl. Environ. Microbiol.",
+  volume   =  64,
+  number   =  12,
+  pages    = "4846--4856",
+  month    =  dec,
+  year     =  1998,
+  url      = "http://dx.doi.org/10.1128/AEM.64.12.4846-4856.1998",
+  file     = "All Papers/S/Straub and Buchholz-Cleven 1998 - Enumeration and detection of anaerobic ... -oxidizing, nitrate-reducing bacteria from diverse European sediments.pdf",
+  language = "en",
+  issn     = "0099-2240",
+  pmid     = "9835573",
+  doi      = "10.1128/AEM.64.12.4846-4856.1998",
+  pmc      = "PMC90933"
+}
+
+@ARTICLE{Muehe2009-ko,
+  title    = "Ecophysiology and the energetic benefit of mixotrophic {Fe(II})
+              oxidation by various strains of nitrate-reducing bacteria",
+  author   = "Muehe, Eva Marie and Gerhardt, Simone and Schink, Bernhard and
+              Kappler, Andreas",
+  journal  = "FEMS Microbiol. Ecol.",
+  volume   =  70,
+  number   =  3,
+  pages    = "335--343",
+  month    =  dec,
+  year     =  2009,
+  url      = "http://dx.doi.org/10.1111/j.1574-6941.2009.00755.x",
+  file     = "All Papers/M/Muehe et al. 2009 - Ecophysiology and the energetic benefit of mixotrophic Fe(II) oxidation by various strains of nitrate-reducing bacteria.pdf",
+  language = "en",
+  issn     = "0168-6496, 1574-6941",
+  pmid     = "19732145",
+  doi      = "10.1111/j.1574-6941.2009.00755.x"
+}
+
+@ARTICLE{Lack2002-ut,
+  title    = "Anaerobic biooxidation of {Fe(II}) by Dechlorosoma suillum",
+  author   = "Lack, J G and Chaudhuri, S K and Chakraborty, R and Achenbach, L
+              A and Coates, J D",
+  journal  = "Microb. Ecol.",
+  volume   =  43,
+  number   =  4,
+  pages    = "424--431",
+  month    =  may,
+  year     =  2002,
+  url      = "http://dx.doi.org/10.1007/s00248-001-1061-1",
+  file     = "All Papers/L/Lack et al. 2002 - Anaerobic biooxidation of Fe(II) by Dechlorosoma suillum.pdf",
+  language = "en",
+  issn     = "0095-3628",
+  pmid     = "11953812",
+  doi      = "10.1007/s00248-001-1061-1"
+}
+
+@ARTICLE{Blothe2009-eg,
+  title     = "Composition and activity of an autotrophic {Fe(II)-oxidizing},
+               nitrate-reducing enrichment culture",
+  author    = "Bl{\"o}the, Marco and Roden, Eric E",
+  journal   = "Appl. Environ. Microbiol.",
+  publisher = "American Society for Microbiology",
+  volume    =  75,
+  number    =  21,
+  pages     = "6937--6940",
+  month     =  nov,
+  year      =  2009,
+  url       = "https://journals.asm.org/doi/10.1128/AEM.01742-09",
+  file      = "All Papers/B/Blöthe and Roden 2009 - Composition and activity of an autotrophic Fe(II)-oxidizing, nitrate-reducing enrichment culture.pdf",
+  language  = "en",
+  issn      = "0099-2240, 1098-5336",
+  pmid      = "19749073",
+  doi       = "10.1128/AEM.01742-09",
+  pmc       = "PMC2772415"
+}
+
+@ARTICLE{Kappler2005-wk,
+  title     = "Geomicrobiological cycling of iron",
+  author    = "Kappler, A and Straub, K L",
+  journal   = "Rev. Mineral. Geochem.",
+  publisher = "Mineralogical Society of America",
+  volume    =  59,
+  number    =  1,
+  pages     = "85--108",
+  month     =  jan,
+  year      =  2005,
+  url       = "https://pubs.geoscienceworld.org/rimg/article/59/1/85-108/140760",
+  file      = "All Papers/K/Kappler and Straub 2005 - Geomicrobiological cycling of iron.pdf",
+  issn      = "1529-6466, 1943-2666",
+  doi       = "10.2138/rmg.2005.59.5"
+}
+
+@ARTICLE{Kappler2005-wt,
+  title     = "{Fe(III}) mineral formation and cell encrustation by the
+               nitrate-dependent {Fe(II)-oxidizer} strain {BoFeN1}",
+  author    = "Kappler, A and Schink, B and Newman, D K",
+  journal   = "Geobiology",
+  publisher = "Wiley",
+  volume    =  3,
+  number    =  4,
+  pages     = "235--245",
+  month     =  oct,
+  year      =  2005,
+  url       = "https://onlinelibrary.wiley.com/doi/10.1111/j.1472-4669.2006.00056.x",
+  file      = "All Papers/K/Kappler et al. 2005 - Fe(III) mineral formation and cell encrustation by the nitrate-dependent Fe(II)-oxidizer strain BoFeN1.pdf",
+  language  = "en",
+  issn      = "1472-4677, 1472-4669",
+  doi       = "10.1111/j.1472-4669.2006.00056.x"
+}
+
+@ARTICLE{Chakraborty2011-dw,
+  title    = "Enhanced growth of Acidovorax sp. strain {2AN} during
+              nitrate-dependent {Fe(II}) oxidation in batch and continuous-flow
+              systems",
+  author   = "Chakraborty, Anirban and Roden, Eric E and Schieber, J{\"u}rgen
+              and Picardal, Flynn",
+  journal  = "Appl. Environ. Microbiol.",
+  volume   =  77,
+  number   =  24,
+  pages    = "8548--8556",
+  month    =  dec,
+  year     =  2011,
+  url      = "http://dx.doi.org/10.1128/AEM.06214-11",
+  file     = "All Papers/C/Chakraborty et al. 2011 - Enhanced growth of Acidovorax sp. strain 2AN d ... trate-dependent Fe(II) oxidation in batch and continuous-flow systems.pdf",
+  language = "en",
+  issn     = "0099-2240, 1098-5336",
+  pmid     = "22003007",
+  doi      = "10.1128/AEM.06214-11",
+  pmc      = "PMC3233087"
+}
+
+@ARTICLE{Chakraborty2013-ia,
+  title    = "Induction of nitrate-dependent {Fe(II}) oxidation by {Fe(II}) in
+              Dechloromonas sp. strain {UWNR4} and Acidovorax sp. strain {2AN}",
+  author   = "Chakraborty, Anirban and Picardal, Flynn",
+  journal  = "Appl. Environ. Microbiol.",
+  volume   =  79,
+  number   =  2,
+  pages    = "748--752",
+  month    =  jan,
+  year     =  2013,
+  url      = "http://dx.doi.org/10.1128/AEM.02709-12",
+  file     = "All Papers/C/Chakraborty and Picardal 2013 - Induction of nitrate-dependent Fe(II) ox ... e(II) in Dechloromonas sp. strain UWNR4 and Acidovorax sp. strain 2AN.pdf",
+  language = "en",
+  issn     = "0099-2240, 1098-5336",
+  pmid     = "23144134",
+  doi      = "10.1128/AEM.02709-12",
+  pmc      = "PMC3553780"
+}
+
+@ARTICLE{Straub1996-dh,
+  title    = "Anaerobic, nitrate-dependent microbial oxidation of ferrous iron",
+  author   = "Straub, K L and Benz, M and Schink, B and Widdel, F",
+  journal  = "Appl. Environ. Microbiol.",
+  volume   =  62,
+  number   =  4,
+  pages    = "1458--1460",
+  month    =  apr,
+  year     =  1996,
+  url      = "http://dx.doi.org/10.1128/aem.62.4.1458-1460.1996",
+  file     = "All Papers/S/Straub et al. 1996 - Anaerobic, nitrate-dependent microbial oxidation of ferrous iron.pdf",
+  language = "en",
+  issn     = "0099-2240",
+  pmid     = "16535298",
+  doi      = "10.1128/aem.62.4.1458-1460.1996",
+  pmc      = "PMC1388836"
+}
+
+@ARTICLE{Melton2014-rf,
+  title     = "Influence of Nutrient Concentrations on {MPN} Quantification and
+               Enrichment of {Nitrate-Reducing} {Fe(II)-Oxidizing} and
+               {Fe(III)-Reducing} Bacteria from Littoral Freshwater Lake
+               Sediments",
+  author    = "Melton, E D and Rudolph, A and Behrens, S and Schmidt, C and
+               Kappler, A",
+  journal   = "Geomicrobiol. J.",
+  publisher = "Taylor \& Francis",
+  volume    =  31,
+  number    =  9,
+  pages     = "788--801",
+  month     =  oct,
+  year      =  2014,
+  url       = "https://doi.org/10.1080/01490451.2014.892765",
+  file      = "All Papers/M/Melton et al. 2014 - Influence of Nutrient Concentrations on MPN Quantif ... and Fe(III)-Reducing Bacteria from Littoral Freshwater Lake Sediments.pdf",
+  issn      = "0149-0451",
+  doi       = "10.1080/01490451.2014.892765"
+}
+
+@ARTICLE{Liu2019-pt,
+  title    = "Microbially mediated coupling of nitrate reduction and {Fe(II})
+              oxidation under anoxic conditions",
+  author   = "Liu, Tongxu and Chen, Dandan and Li, Xiaomin and Li, Fangbai",
+  journal  = "FEMS Microbiol. Ecol.",
+  volume   =  95,
+  number   =  4,
+  month    =  apr,
+  year     =  2019,
+  url      = "http://dx.doi.org/10.1093/femsec/fiz030",
+  file     = "All Papers/L/Liu et al. 2019 - Microbially mediated coupling of nitrate reduction and Fe(II) oxidation under anoxic conditions.pdf",
+  language = "en",
+  issn     = "0168-6496, 1574-6941",
+  pmid     = "30844067",
+  doi      = "10.1093/femsec/fiz030"
+}

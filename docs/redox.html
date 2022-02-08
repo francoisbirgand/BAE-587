@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</title>
-  <meta name="description" content="Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
+  <title>Chapter 11 Applied thermochemistry: Oxido-Reduction equilibria | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</title>
+  <meta name="description" content="Chapter 11 Applied thermochemistry: Oxido-Reduction equilibria | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta property="og:title" content="Chapter 11 Applied thermochemistry: Oxido-Reduction equilibria | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
+  <meta name="twitter:title" content="Chapter 11 Applied thermochemistry: Oxido-Reduction equilibria | Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="intro.html"/>
+<link rel="prev" href="acidbase.html"/>
+<link rel="next" href="gassolubilitychapter.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -476,19 +476,255 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Fundamental Hydro-Biogeochemistry for Environmental and Ecological Engineering</h1>
-<p class="author"><em>François Birgand</em></p>
-<p class="date"><em>2022-02-08</em></p>
+<div id="redox" class="section level1">
+<h1><span class="header-section-number">Chapter 11</span> Applied thermochemistry: Oxido-Reduction equilibria</h1>
+<p><strong><em>This chapter is still under construction</em></strong></p>
+<div class="rmd-chapter-summary">
+<p>
+Chapter summary:
+</p>
+<ul>
+<li>
+A <strong>reducing agent</strong>, or <strong>reductant</strong>, is a molecule which can donate an electron e<sup>-</sup> and an <strong>oxidizing agent</strong>, or <strong>oxidant</strong>, base is an element that can accept an e<sup>-</sup>
+</li>
+<li>
+</li>
+</ul>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>This is the first attempt at a textbook for BAE204 and BAE587. It will be updated as class proceeds.</p>
-<div id="author" class="section level2 unnumbered">
-<h2>Author</h2>
-<p><a href="https://francoisbirgand.github.io">François Birgand</a> is Professor and <a href="https://provost.ncsu.edu/strategic-initiatives/university-faculty-scholars/">University Faculty Scholar</a> of biogeochemistry and ecological engineering in the department of <a href="https://www.bae.ncsu.edu/">Biological and Agricultural Engineering</a> at North Carolina State University, in Raleigh, NC, USA. His research interests aim to provide solutions to improve the quality of water in streams and rivers. Practically, his research focuses on improving the treatment efficiency of streams, wetlands, soils or wood chip bioreactors. Much of this research is based upon principles this textbook is attempting to provide for students of all ages.</p>
-<p><strong><em>THIS BOOK IS STILL UNDER CONSTRUCTION</em></strong></p>
+<div id="some-outside-the-box-redox-reactions" class="section level3">
+<h3><span class="header-section-number">11.0.1</span> Some outside the box redox reactions</h3>
+<div id="guanidinium-nitrate-reaction-to-inflate-air-bags" class="section level4">
+<h4><span class="header-section-number">11.0.1.1</span> Guanidinium nitrate reaction to inflate air bags</h4>
+<p>Guanidinium nitrate <img src="pictures/guanidinium_nitrate.png" style="width:22.0%" />, commonly called guanidine nitrate, is a crystal that contains together potential electron donors in the form of fully reduced nitrogen on the guanidinium cation and fully oxidized nitrogen on the nitrate anion side. This crystal is used in air bags of vehicles as it is rather stable, only needs a spark to explode, and has a relatively low temperature of reaction. Let us explore this reaction. First, the hint that it is used to rapidly blow air bags tells us that gas(es) must be produced. Because the nitrogen atoms of the guanidinium side have 8 electrons to give, and nitrate ions have none and can gain some, the end gas product that contains nitrogen must have a number of electrons somewhat between the two. The first guess is <span class="math inline">\(N_2\)</span> as each atom has 5 electrons for itself. So the two redox couples at play must be <span class="math inline">\(NO_3^-/N_2\)</span> and <span class="math inline">\(N_2/C(NH_2)_3^+\)</span>.</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:airbag-guanidine-nitrate"></span>
+<img src="pictures/airbag.png" alt="Ball and stick structure of guanidinium nitrate sometimes used as a fuel for airbag inflation" width="70%" />
+<p class="caption">
+Figure 11.1: Ball and stick structure of guanidinium nitrate sometimes used as a fuel for airbag inflation
+</p>
+</div>
+<p></br></p>
+<p>However, on one guanidinium, there are three nitrogen atoms fully reduced for a combined 24 electrons to give (8 e<sup>-</sup> on each of the N atom), although when oxidized into <span class="math inline">\(N_2\)</span> (5 e<sup>-</sup> on each of the N atom), each atom would lose 3 electrons for a combined 9 electrons lost. Nitrate reduction into <span class="math inline">\(N_2\)</span> involves accepting 5 electrons. So there is an imbalance of 4 electrons in the electron transfer from nitrogens of guanidinium to the one nitrogen of nitrate… The only solution is for the carbon of guanidinium, which has no electron for itself, to accept these 4 electrons. But then, how can carbon atoms be floating around on their own…? The octet rule must be fulfilled in all cases… Carbon atoms can actually form direct bonds with themselves as solid carbon, written as <span class="math inline">\(C_{(s)}\)</span>, and therefore accept 4 electrons. If dioxygen is present, then the formation of solid carbon usually does not happen as dioxygen steals these electrons first. But in the case of an airbag cartridge, there is very little space for dioxygen, the formation of <span class="math inline">\(C_{(s)}\)</span> can occur.</p>
+<p>Now, one can balance the two half reactions involved. Nitrate being the most oxidizing agent, the first redox couple is considered. Its first reaction can be written as:</p>
+<p></br></p>
+<p><span class="math display" id="eq:NO3-N2-halfreaction">\[\begin{equation}
+2NO_3^- + 12 H^+ + 10 e^- \rightleftharpoons N_2 + 6H_2O  
+\tag{11.1}
+\end{equation}\]</span></p>
+<p></br></p>
+<p>The dinitrogen/guanidinium redox couple is quite interesting as it involves another redox reactive atom: carbon. In these cases, the general approach is to leave the atoms as they are, provided that there is a possibility for the octet rule of the reactants/products to be fulfilled. Here, the solution is solid carbon <span class="math inline">\(C_{(s)}\)</span>. Hence the half redox equation for this couple:</p>
+<p></br></p>
+<p><span class="math display" id="eq:guanidinium-eacceptor">\[\begin{equation}
+3N_2 + 2C_{(s)} + 12 H^+ + 10 e^- \rightleftharpoons 2C(NH_2)_3^+ 
+\tag{11.2}
+\end{equation}\]</span></p>
+<p></br></p>
+<p>On both half-reactions <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> and <a href="redox.html#eq:guanidinium-eacceptor">(11.2)</a>, the same number of electrons (10) are transferred and can be directly combined to obtain the final reaction <a href="redox.html#eq:guanidinium-nitrate-explosion">(11.3)</a>.</p>
+<p></br>
+<span class="math display" id="eq:guanidinium-nitrate-explosion">\[\begin{gather*}
+2NO_3^- + 12 H^+ + 10 e^- \rightleftharpoons N_2 + 6H_2O   \\
+3N_2 + 2C_{(s)} + 12 H^+ + 10 e^- \rightleftharpoons 2C(NH_2)_3^+   \\
+\hline
+C(NH_2)_3^+ \space NO_3^- \rightleftharpoons 2N_2 + 3H_2O + C_{(s)}
+\tag{11.3}
+\end{gather*}\]</span>
+</br></p>
+<p>The decomposition of one mole of solid guanidinium nitrate, upon an activation energy provided by a spark, produces into 5 moles of gas (2 moles of dinitrogen and 3 moles of water), and one mole of solid carbon. Because the electron donors and acceptors are closely packed together, the reaction is not limited by the transport of an electron acceptor near the donor (as is the case for burning wood for example), this reaction is fast. An instantaneous reaction that produce 5 moles of gas from a mole of solid compound has an explosive effect, hence its use in air bag deployment.</p>
+<hr />
+<p>Now, one might ask: why is it that the only hypothetical gas produced should be <span class="math inline">\(N_2\)</span> and not <span class="math inline">\(N_2O\)</span> for example? Afterall, in nitrous oxide <span class="math inline">\(N\equiv N-O\)</span>, the middle oxygen has 3 electrons for itself and the other one 5, for an average of 4, which is closer to the midpoint between the amine groups (each N contains 8) and the nitrate (0 electrons on N). Let us thus explore the <span class="math inline">\(NO_3^-/N_2O\)</span> and <span class="math inline">\(N_2O/C(NH_2)_3^+\)</span> redox couples and the resulting reaction.</p>
+<p>The half-reaction of the most oxidizing redox couple <span class="math inline">\(NO_3^-/N_2O\)</span> can be written as:</p>
+<p></br></p>
+<p><span class="math display" id="eq:NO3-N2O">\[\begin{equation}
+2NO_3^- + 10 H^+ + 8 e^- \rightleftharpoons N_2O + 5H_2O  
+\tag{11.4}
+\end{equation}\]</span></p>
+<p></br></p>
+<p>And the half-reaction of the more reducing <span class="math inline">\(N_2O/C(NH_2)_3^+\)</span> can be written as:</p>
+<p></br></p>
+<p><span class="math display" id="eq:N2O-guanidinium">\[\begin{equation}
+3N_2O + 2C_{(s)} + 18 H^+ + 16 e^- \rightleftharpoons 2C(NH_2)_3^+ + 3H_2O
+\tag{11.5}
+\end{equation}\]</span></p>
+<p></br></p>
+<p>Half-reaction <a href="redox.html#eq:NO3-N2O">(11.4)</a> needs to be multiplied by a factor of 2 to have the same number of electrons transferred (16). The resulting oxidation of guanidinium nitrate leading to the formation of nitrous oxide can be written as in <a href="redox.html#eq:guanidinium-nitrate-N2O">(11.6)</a>.</p>
+<p></br>
+<span class="math display" id="eq:guanidinium-nitrate-N2O">\[\begin{gather*}
+4NO_3^- + 20 H^+ + 16 e^- \rightleftharpoons N_2O + 10H_2O   \\
+3N_2O + 2C_{(s)} + 18 H^+ + 16 e^- \rightleftharpoons 2C(NH_2)_3^+ + 3H_2O  \\
+\hline
+2C(NH_2)_3^+ +  4NO_3^- +2H^+ \rightleftharpoons 5N_2O + 2C_{(s)} + 7H_2O 
+\tag{11.6}
+\end{gather*}\]</span>
+</br></p>
+<p>Clearly this reaction is possible in theory. However, in practice it probably does not happen because 1) it requires the presence of protons, which would not be there in the guanidinium nitrate crystals, and 2) it would require twice as many nitrate as many guanidinium, and here too, this stochiometry is not that of the guanidinium nitrate salt. So this reaction is probably not happening when airbags are set on.</p>
+</div>
+<div id="chemolithotrophic-denitrification-on-pyrite" class="section level4">
+<h4><span class="header-section-number">11.0.1.2</span> Chemolithotrophic denitrification on pyrite</h4>
+<p>Pyrite (<span class="math inline">\(FeS_2\)</span>) is an interesting mineral and illustrates quite well the difference between covalent bonds and an ionic bond. In the case of covalent bonds, electrons are shared between non-metal ions, in ionic bonds, one metal and a non-metal atom exchange electrons. In ionic bonds, we cannot use the electronegativity concept any longer to alocate electrons. So, although Sulfur atom is more electronegative (2.58) than iron (1.83), Sulfur does not steal electrons from iron. So the ions involved in pyrite are <span class="math inline">\(Fe^{2+}(S^-)_2\)</span>. Iron is thus in its most reduced form, for an oxidation state (OS) of (+II) corresponding to its charge referred to as <strong>ferrous iron</strong> or <strong>iron (II)</strong>, and sulfur is also reduced in the form of <span class="math inline">\(S^-\)</span>, having 7 electrons for itself for an oxidation state of (-I). The summation of the OS is +II -I -I = 0, corresponding to the zero charge of the overall crystal.</p>
+<p>Because the sulfur has 7 electron for itself, it can be oxidized, obviously by dioxygen, but interestingly for biogeochemical purposes, by nitrate as well. The full oxidation of sulfur, i.e., the loss of all 7 electrons, leads to the formation of sulfate. The reduction of nitrate generally leads to the formation of dinitrogen although the reduction all the way to ammonium is possible in the reaction called Dissimilatory Reduction of Nitrate into Ammonium (DNRA). In nature, it seems that the reduction of nitrate stops at the <span class="math inline">\(N_2\)</span> stage.</p>
+<p>From all this information, it is possible to draw the two redox couple involved. The more oxidative couple is <span class="math inline">\(NO_3^-/N_2\)</span> and the one that involves pyrite oxidation into sulfate is <span class="math inline">\(SO_4^{2-}/FeS_2\)</span>.</p>
+<p>The nitrate reduction into dinitrogen is half-reaction <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a>,</p>
+<p></br></p>
+<p><span class="math display" id="eq:NO3-N2-halfreaction">\[\begin{equation}
+2NO_3^- + 12 H^+ + 10 e^- \rightleftharpoons N_2 + 6H_2O  
+\tag{11.1}
+\end{equation}\]</span></p>
+<p></br></p>
+<p>and the pyrite oxidation:</p>
+<p></br></p>
+<p><span class="math display" id="eq:sulfate-pyrite">\[\begin{equation}
+2SO_4^{2-} + Fe^{2+} + 16 H^+ + 14 e^- \rightleftharpoons FeS_2 + 8 H_2O 
+\tag{11.7}
+\end{equation}\]</span></p>
+<p></br></p>
+<p>The overall reduction of nitrate by pyrite is summarized in reaction <a href="redox.html#eq:denitrification-pyrite">(11.8)</a> by multiplying the first half-reaction <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> by a factor of 7 and the second <a href="redox.html#eq:sulfate-pyrite">(11.7)</a> by a factor of 5 to balance the electrons transferred.</p>
+<p></br>
+<span class="math display" id="eq:denitrification-pyrite">\[\begin{gather*}
+2NO_3^- + 12 H^+ + 10 e^- \rightleftharpoons N_2 + 6H_2O   \\
+2SO_4^{2-} + Fe^{2+} + 16 H^+ + 14 e^- \rightleftharpoons FeS_2 + 8 H_2O \\
+\hline
+5FeS_2 + 14NO_3^- + 4H^+ \rightleftharpoons 10SO_4^{2-} + 5Fe^{2+} + 7N_2 + 2H_2O
+\tag{11.8}
+\end{gather*}\]</span>
+</br></p>
+<p>Now, there is another twist to chemolithotrophic denitrification using pyrite as the primary electron acceptor. Several studies surmized that nitrate could be further denitrified by the produced <span class="math inline">\(Fe^{2+}\)</span> of pyrite oxidation <span class="citation">(Kölle, Strebel, and Böttcher <a href="#ref-Kolle1983-mo">1983</a>, <a href="#ref-Kolle1985-mn">1985</a>, <a href="#ref-Kolle1990-zo">1990</a>; Pauwels <a href="#ref-Pauwels1994-aj">1994</a>, <a href="#ref-Pauwels1994-aj">1994</a>; Somlette <a href="#ref-Somlette1999-ky">1999</a>)</span>. But it was not until 1996, that actual evidence of Nitrate-Dependent Fe-Oxidation (NDFO) or Nitrate Reducing Fe Oxidation (NRFeOx, <span class="citation">Straub et al. (<a href="#ref-Straub1996-dh">1996</a>)</span>) microbial activity was brought forth. In other words, people have found that there were bacteria able to use ferrous Fe (II) as an electron donor, and nitrate as the electron acceptor. This has later been confirmed in many different environments including lake sediments, in pyrite containing schists, sandy and gravelly sediments, etc. <span class="citation">(Straub et al. <a href="#ref-Straub1996-dh">1996</a>, <a href="#ref-Straub2004-ug">2004</a>; Straub and Buchholz-Cleven <a href="#ref-Straub1998-hq">1998</a>; Lack et al. <a href="#ref-Lack2002-ut">2002</a>; A. Kappler and Straub <a href="#ref-Kappler2005-wk">2005</a>; A. Kappler, Schink, and Newman <a href="#ref-Kappler2005-wt">2005</a>; Weber, Achenbach, and Coates <a href="#ref-Weber2006-qq">2006</a>; Muehe et al. <a href="#ref-Muehe2009-ko">2009</a>; Blöthe and Roden <a href="#ref-Blothe2009-eg">2009</a>; Chakraborty et al. <a href="#ref-Chakraborty2011-dw">2011</a>; Chakraborty and Picardal <a href="#ref-Chakraborty2013-ia">2013</a>; Melton et al. <a href="#ref-Melton2014-rf">2014</a>; Liu et al. <a href="#ref-Liu2019-pt">2019</a>; reviewed by Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span> (Figure <a href="redox.html#fig:pyrite-NRFeOx">11.2</a>).</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pyrite-NRFeOx"></span>
+<img src="pictures/pyrite-NRFeOx.png" alt="I. Chemolithotrophic bacteria *Thiobacillus denitrificans* used pyrite (FeS~2~) as electron donor, and nitrate as electron acceptor, reducing them to N~2~ and N~2~O. II. The ferrous iron Fe^2+^ produced is then used by other microorganisms that use Fe^2+^ as electron donors and nitrate, again as electron acceptor. These are called Nitrate Reducing Fe Oxidazing organisms. Some are autotrophs, mixotrophs (need both organic carbon and Fe^2+^ to live), or chemodenitrifiers (require organic carbon and have no enzymatic component of Fe(II) oxidation). After [@Bryce2018-cb]" width="100%" />
+<p class="caption">
+Figure 11.2: I. Chemolithotrophic bacteria <em>Thiobacillus denitrificans</em> used pyrite (FeS<sub>2</sub>) as electron donor, and nitrate as electron acceptor, reducing them to N<sub>2</sub> and N<sub>2</sub>O. II. The ferrous iron Fe<sup>2+</sup> produced is then used by other microorganisms that use Fe<sup>2+</sup> as electron donors and nitrate, again as electron acceptor. These are called Nitrate Reducing Fe Oxidazing organisms. Some are autotrophs, mixotrophs (need both organic carbon and Fe<sup>2+</sup> to live), or chemodenitrifiers (require organic carbon and have no enzymatic component of Fe(II) oxidation). After <span class="citation">(Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span>
+</p>
+</div>
+<p></br></p>
+<p>As a result, reaction <a href="redox.html#eq:denitrification-pyrite">(11.8)</a> actually continus as the produced ferrous Fe (II) can be further oxidized by nitrate. The most oxidizing couple is still <span class="math inline">\(NO_3^-/N_2\)</span>, and the most reducing is now <span class="math inline">\(Fe(OH)_3/Fe^{2+}\)</span>. One could choose <span class="math inline">\(Fe^{3+}\)</span> instead of <span class="math inline">\(Fe(OH)_3\)</span>, but at groundwater pH and reduced conditions when nitrate is still present, Fe (III) is more stable as iron hydroxydes <span class="citation">(Hem <a href="#ref-Hem1985-vl">1985</a>; Stumm and Morgan <a href="#ref-Stumm1996-yn">1996</a>; Fetter <a href="#ref-Fetter2008-hh">2008</a>; Torrentó et al. <a href="#ref-Torrento2010-dp">2010</a>; reviewed by Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span>. Other authors proposed that the goethite mineral (<span class="math inline">\(FeOOH\)</span>) would be formed instead of <span class="math inline">\(Fe(OH)_3\)</span> iron hydroxydes <span class="citation">(Kölle, Strebel, and Böttcher <a href="#ref-Kolle1985-mn">1985</a>, <a href="#ref-Kolle1990-zo">1990</a>; Cheng et al. <a href="#ref-Cheng2020-ex">2020</a>)</span>. Ottley et al. <span class="citation">(<a href="#ref-Otlley1997-ib">1997</a>)</span> actually listed 12 other possible <span class="math inline">\(Fe^{2+}\)</span> oxidation reactions by nitrate. The one described below appears to be considered as prevalent <span class="citation">(reviewed by Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span>.</p>
+<p>The half reaction for the <span class="math inline">\(Fe(OH)_3/Fe^{2+}\)</span> can be written as:</p>
+<p></br></p>
+<p><span class="math display" id="eq:FeOH3-Fe2-halfreaction">\[\begin{equation}
+Fe(OH)_3 + 3 H^+ + 1 e^- \rightleftharpoons Fe_2^+ + 3H_2O  
+\tag{11.9}
+\end{equation}\]</span></p>
+<p></br></p>
+<p>Combining both half-reactions <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> and <a href="redox.html#eq:FeOH3-Fe2-halfreaction">(11.9)</a> and multiplying each by the proper factor to exchange the same number of electrons yields:</p>
+<p></br>
+<span class="math display" id="eq:denitrification-FeII">\[\begin{gather*}
+2NO_3^- + 12 H^+ + 10 e^- \rightleftharpoons N_2 + 6H_2O   \\
+10Fe(OH)_3 + 30 H^+ + 10 e^- \rightleftharpoons 10Fe_2^+ + 30H_2O   \\
+\hline
+5Fe^{2+} + NO_3^- + 12H_2O \rightleftharpoons 5Fe(OH)_3 + 9H^ + \frac{1}{2}N_2
+\tag{11.10}
+\end{gather*}\]</span>
+</br></p>
+<p>Now, literally adding reactions <a href="redox.html#eq:denitrification-pyrite">(11.8)</a> and <a href="redox.html#eq:denitrification-FeII">(11.10)</a> yields:</p>
+<p></br>
+<span class="math display" id="eq:denitrification-pyrite-FeII">\[\begin{gather*}
+5FeS_2 + 14NO_3^- + 4H^+ \rightleftharpoons 10SO_4^{2-} + 5Fe^{2+} + 7N_2 + 2H_2O   \\
+5Fe^{2+} + NO_3^- + 12H_2O \rightleftharpoons 5Fe(OH)_3 + 9H^+ + \frac{1}{2}N_2   \\
+\hline
+5FeS_2 + 15NO_3^- + 10H_2O \rightleftharpoons 5Fe(OH)_3 + \frac{15}{2}N_2 + 10SO_4^{2-} + 5H^+ 
+\tag{11.11}
+\end{gather*}\]</span>
+</br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SO4-HS-pe"></span>
+<img src="Textbook_BAE587_files/figure-html/SO4-HS-pe-1.png" alt="Concentrations of Sulfate and hydrogen sulfide as a function of p&amp;epsilon;" width="100%" />
+<p class="caption">
+Figure 11.3: Concentrations of Sulfate and hydrogen sulfide as a function of pε
+</p>
+</div>
+<p></br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:CO2-CH2O-pe"></span>
+<img src="Textbook_BAE587_files/figure-html/CO2-CH2O-pe-1.png" alt="Concentrations of a generic carbohydrate CH~2~O and CO~2~ that would be in equilibrium with the atmosphere as a function of p&amp;epsilon; and for a given pH" width="100%" />
+<p class="caption">
+Figure 11.4: Concentrations of a generic carbohydrate CH<sub>2</sub>O and CO<sub>2</sub> that would be in equilibrium with the atmosphere as a function of pε and for a given pH
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:NH4-NO2-NO3-pe"></span>
+<img src="Textbook_BAE587_files/figure-html/NH4-NO2-NO3-pe-1.png" alt="Concentrations ammonium, nitrite, and nitrate as a function of p&amp;epsilon; and for a given pH" width="100%" />
+<p class="caption">
+Figure 11.5: Concentrations ammonium, nitrite, and nitrate as a function of pε and for a given pH
+</p>
+</div>
+<p><strong><em>This chapter is still under construction</em></strong></p>
+<p></br></br></br></p>
 
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Blothe2009-eg">
+<p>Blöthe, Marco, and Eric E Roden. 2009. “Composition and Activity of an Autotrophic Fe(II)-oxidizing, Nitrate-Reducing Enrichment Culture.” <em>Appl. Environ. Microbiol.</em> 75 (21). American Society for Microbiology: 6937–40. <a href="https://doi.org/10.1128/AEM.01742-09">https://doi.org/10.1128/AEM.01742-09</a>.</p>
+</div>
+<div id="ref-Bryce2018-cb">
+<p>Bryce, Casey, Nia Blackwell, Caroline Schmidt, Julia Otte, Yu-Ming Huang, Sara Kleindienst, Elizabeth Tomaszewski, et al. 2018. “Microbial Anaerobic Fe(II) Oxidation - Ecology, Mechanisms and Environmental Implications.” <em>Environ. Microbiol.</em> 20 (10): 3462–83. <a href="https://doi.org/10.1111/1462-2920.14328">https://doi.org/10.1111/1462-2920.14328</a>.</p>
+</div>
+<div id="ref-Chakraborty2013-ia">
+<p>Chakraborty, Anirban, and Flynn Picardal. 2013. “Induction of Nitrate-Dependent Fe(II) Oxidation by Fe(II) in Dechloromonas Sp. Strain UWNR4 and Acidovorax Sp. Strain 2AN.” <em>Appl. Environ. Microbiol.</em> 79 (2): 748–52. <a href="https://doi.org/10.1128/AEM.02709-12">https://doi.org/10.1128/AEM.02709-12</a>.</p>
+</div>
+<div id="ref-Chakraborty2011-dw">
+<p>Chakraborty, Anirban, Eric E Roden, Jürgen Schieber, and Flynn Picardal. 2011. “Enhanced Growth of Acidovorax Sp. Strain 2AN During Nitrate-Dependent Fe(II) Oxidation in Batch and Continuous-Flow Systems.” <em>Appl. Environ. Microbiol.</em> 77 (24): 8548–56. <a href="https://doi.org/10.1128/AEM.06214-11">https://doi.org/10.1128/AEM.06214-11</a>.</p>
+</div>
+<div id="ref-Cheng2020-ex">
+<p>Cheng, Boyi, Yi Wang, Yumei Hua, and Kate V Heal. 2020. “The Performance of Nitrate-Reducing Fe(II) Oxidation Processes Under Variable Initial Fe/N Ratios: The Fate of Nitrogen and Iron Species.” <em>Front. Environ. Sci. Eng. China</em> 15 (4): 73. <a href="https://doi.org/10.1007/s11783-020-1366-2">https://doi.org/10.1007/s11783-020-1366-2</a>.</p>
+</div>
+<div id="ref-Fetter2008-hh">
+<p>Fetter, Charles Willard. 2008. <em>Contaminant Hydrogeology</em>. Waveland Press, Incorporated. <a href="https://play.google.com/store/books/details?id=7YxaPgAACAAJ">https://play.google.com/store/books/details?id=7YxaPgAACAAJ</a>.</p>
+</div>
+<div id="ref-Hem1985-vl">
+<p>Hem, J D. 1985. “Study and Interpretation of the Chemical Characteristics of Natural Water.” 2254. U.S. Geological Survey Water Supply Paper. USGS. <a href="https://pubs.usgs.gov/wsp/wsp2254/pdf/wsp2254a.pdf">https://pubs.usgs.gov/wsp/wsp2254/pdf/wsp2254a.pdf</a>.</p>
+</div>
+<div id="ref-Kappler2005-wt">
+<p>Kappler, A, B Schink, and D K Newman. 2005. “Fe(III) Mineral Formation and Cell Encrustation by the Nitrate-Dependent Fe(II)-oxidizer Strain BoFeN1.” <em>Geobiology</em> 3 (4). Wiley: 235–45. <a href="https://doi.org/10.1111/j.1472-4669.2006.00056.x">https://doi.org/10.1111/j.1472-4669.2006.00056.x</a>.</p>
+</div>
+<div id="ref-Kappler2005-wk">
+<p>Kappler, A, and K L Straub. 2005. “Geomicrobiological Cycling of Iron.” <em>Rev. Mineral. Geochem.</em> 59 (1). Mineralogical Society of America: 85–108. <a href="https://doi.org/10.2138/rmg.2005.59.5">https://doi.org/10.2138/rmg.2005.59.5</a>.</p>
+</div>
+<div id="ref-Kolle1983-mo">
+<p>Kölle, W, O Strebel, and J Böttcher. 1983. “Denitrifikation in Einem Reduzierenden Grundwasserleiter.” <em>Vom Wasser</em> 61: 125–47.</p>
+</div>
+<div id="ref-Kolle1985-mn">
+<p>Kölle, W, O Strebel, and J Böttcher. 1985. “Formation of Sulfate by Microbial Denitrification in a Reducing Aquifer.” <em>Water Supply</em> 3: 35–40.</p>
+</div>
+<div id="ref-Kolle1990-zo">
+<p>Kölle, W, O Strebel, and J Böttcher. 1990. “Reduced Sulphur Compounds in Sandy Aquifers and Their Interactions with Groundwater.” <em>IAHS</em> 173: 23–30. <a href="https://iahs.info/uploads/dms/7306.23-30-173-Kolle.pdf">https://iahs.info/uploads/dms/7306.23-30-173-Kolle.pdf</a>.</p>
+</div>
+<div id="ref-Lack2002-ut">
+<p>Lack, J G, S K Chaudhuri, R Chakraborty, L A Achenbach, and J D Coates. 2002. “Anaerobic Biooxidation of Fe(II) by Dechlorosoma Suillum.” <em>Microb. Ecol.</em> 43 (4): 424–31. <a href="https://doi.org/10.1007/s00248-001-1061-1">https://doi.org/10.1007/s00248-001-1061-1</a>.</p>
+</div>
+<div id="ref-Liu2019-pt">
+<p>Liu, Tongxu, Dandan Chen, Xiaomin Li, and Fangbai Li. 2019. “Microbially Mediated Coupling of Nitrate Reduction and Fe(II) Oxidation Under Anoxic Conditions.” <em>FEMS Microbiol. Ecol.</em> 95 (4). <a href="https://doi.org/10.1093/femsec/fiz030">https://doi.org/10.1093/femsec/fiz030</a>.</p>
+</div>
+<div id="ref-Melton2014-rf">
+<p>Melton, E D, A Rudolph, S Behrens, C Schmidt, and A Kappler. 2014. “Influence of Nutrient Concentrations on MPN Quantification and Enrichment of Nitrate-Reducing Fe(II)-Oxidizing and Fe(III)-Reducing Bacteria from Littoral Freshwater Lake Sediments.” <em>Geomicrobiol. J.</em> 31 (9). Taylor &amp; Francis: 788–801. <a href="https://doi.org/10.1080/01490451.2014.892765">https://doi.org/10.1080/01490451.2014.892765</a>.</p>
+</div>
+<div id="ref-Muehe2009-ko">
+<p>Muehe, Eva Marie, Simone Gerhardt, Bernhard Schink, and Andreas Kappler. 2009. “Ecophysiology and the Energetic Benefit of Mixotrophic Fe(II) Oxidation by Various Strains of Nitrate-Reducing Bacteria.” <em>FEMS Microbiol. Ecol.</em> 70 (3): 335–43. <a href="https://doi.org/10.1111/j.1574-6941.2009.00755.x">https://doi.org/10.1111/j.1574-6941.2009.00755.x</a>.</p>
+</div>
+<div id="ref-Otlley1997-ib">
+<p>Otlley, C J, W Davison, and W M Edmunds. 1997. “Chemical Catalysis of Nitrate Reduction by iron(II).” <em>Geochim. Cosmochim. Acta</em> 61 (9): 1819–28.</p>
+</div>
+<div id="ref-Pauwels1994-aj">
+<p>Pauwels, H. 1994. “Natural Denitrification in Groundwater in the Presence of Pyrite: Preliminary Results Obtained at Naizin (Brittany, France).” <em>Mineralogical Magazine A</em> 58: 696–97. <a href="https://eurekamag.com/research/019/496/019496851.php">https://eurekamag.com/research/019/496/019496851.php</a>.</p>
+</div>
+<div id="ref-Somlette1999-ky">
+<p>Somlette, Luc. 1999. “Contribution à L’étude Hydrogéologique de La Distribution et Du Devenir Des Nitrates Dans Les Nappes de Fissures, de L’échelle Du Périmétre Expérimental à Celle Du Bassin Versant côtier. Conséquences Sur Les Ressources En Eaux et La Protection Du Littoral En Bretagne.” PhD thesis, Université de Bretagne Occidentale, France.</p>
+</div>
+<div id="ref-Straub1996-dh">
+<p>Straub, K L, M Benz, B Schink, and F Widdel. 1996. “Anaerobic, Nitrate-Dependent Microbial Oxidation of Ferrous Iron.” <em>Appl. Environ. Microbiol.</em> 62 (4): 1458–60. <a href="https://doi.org/10.1128/aem.62.4.1458-1460.1996">https://doi.org/10.1128/aem.62.4.1458-1460.1996</a>.</p>
+</div>
+<div id="ref-Straub1998-hq">
+<p>Straub, K L, and B E Buchholz-Cleven. 1998. “Enumeration and Detection of Anaerobic Ferrous Iron-Oxidizing, Nitrate-Reducing Bacteria from Diverse European Sediments.” <em>Appl. Environ. Microbiol.</em> 64 (12): 4846–56. <a href="https://doi.org/10.1128/AEM.64.12.4846-4856.1998">https://doi.org/10.1128/AEM.64.12.4846-4856.1998</a>.</p>
+</div>
+<div id="ref-Straub2004-ug">
+<p>Straub, Kristina L, Wilhelm A Schönhuber, Berit E E Buchholz-Cleven, and Bernhard Schink. 2004. “Diversity of Ferrous Iron-Oxidizing, Nitrate-Reducing Bacteria and Their Involvement in Oxygen-Independent Iron Cycling.” <em>Geomicrobiol. J.</em> 21 (6). Taylor &amp; Francis: 371–78. <a href="https://doi.org/10.1080/01490450490485854">https://doi.org/10.1080/01490450490485854</a>.</p>
+</div>
+<div id="ref-Stumm1996-yn">
+<p>Stumm, Werner, and James J Morgan. 1996. <em>Aquatic Chemistry: Chemical Equilibria and Rates in Natural Waters</em>. Wiley. <a href="https://market.android.com/details?id=book-xvZOAAAAMAAJ">https://market.android.com/details?id=book-xvZOAAAAMAAJ</a>.</p>
+</div>
+<div id="ref-Torrento2010-dp">
+<p>Torrentó, Clara, Jordi Cama, Jordi Urmeneta, Neus Otero, and Albert Soler. 2010. “Denitrification of Groundwater with Pyrite and Thiobacillus Denitrificans.” <em>Chem. Geol.</em> 278 (1): 80–91. <a href="https://doi.org/10.1016/j.chemgeo.2010.09.003">https://doi.org/10.1016/j.chemgeo.2010.09.003</a>.</p>
+</div>
+<div id="ref-Weber2006-qq">
+<p>Weber, Karrie A, Laurie A Achenbach, and John D Coates. 2006. “Microorganisms Pumping Iron: Anaerobic Microbial Iron Oxidation and Reduction.” <em>Nat. Rev. Microbiol.</em> 4 (10): 752–64. <a href="https://doi.org/10.1038/nrmicro1490">https://doi.org/10.1038/nrmicro1490</a>.</p>
 </div>
 </div>
             </section>
@@ -496,8 +732,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="acidbase.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gassolubilitychapter.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -528,7 +764,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/13-redox-chem.Rmd",
 "text": "Edit"
 },
 "history": {
