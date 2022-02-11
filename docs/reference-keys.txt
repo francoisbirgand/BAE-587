@@ -290,7 +290,7 @@ eq:guanidinium-nitrate-explosion
 eq:NO3-N2O
 eq:N2O-guanidinium
 eq:guanidinium-nitrate-N2O
-eq:sulfate-pyrite
+eq:sulfate-pyrite-halfreaction
 eq:denitrification-pyrite
 fig:pyrite-NRFeOx
 eq:FeOH3-Fe2-halfreaction
