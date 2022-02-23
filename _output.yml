@@ -3,7 +3,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Textbook for BAE 587</a></li>
+        <li><a href="./">Fundamental Hydro-Biogeochemistry for Ecological Engineering and Environmental Sciences</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
