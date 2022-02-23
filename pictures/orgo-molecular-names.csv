@@ -1,0 +1,13 @@
+﻿# of C,Alkane name,Condensed formula,Radical name and formula,,Alcohol (-OH),,Carboxylic acid (-COOH),,Ionized version
+,,,Yl,,,,,,
+1,Methane,CH4,Methyl,0,Methanol,CH3OH,Methanoic acid,COOH,Methanoate or formate
+,,,,,,,or,,
+,,,,,,,Formic acid,,
+2,Ethane,CH3-CH3,Ethyl,0,Ethanol,CH2-CH2OH,Ethanoic acid,CH2-COOH,Ethanoate or acetate
+,,,,,,,or,,
+,,,,,,,Acetic acid,,
+3,Propane,CH3-CH2-CH3,Propyl,0,Propanol,CH3-CH2-CH2OH,Propanoic acid,CH3-CH2-COOH,Propanoate
+,,,,,,,,,
+4,Butane,CH3-(CH2)2-CH3,Butyl,-(CH2)3-CH3,Butanol,CH3-(CH2)2-CH2OH,Butanoic acid,CH3-(CH2)2-COOH,Butanoate
+,,,,,,,,,
+5,Pentane,CH3-(CH2)3-CH3,Pentyl,-(CH2)4-CH3,Pentanol,CH3-(CH2)3-CH2OH,Pentanoic acid,CH3-(CH2)3-COOH,

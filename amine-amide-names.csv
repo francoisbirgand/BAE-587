@@ -1,0 +1,6 @@
+Nb of C,Amine name and formula, Amine Skeletal structure, Amide name and formula, Amide skeletal structure
+1,"Methan*amine*<br> CH~3NH~2~",![]("pictures/methanamine.png"){width=38%},"Methan*amide*<br> HCONH~2~",![]("pictures/methanamide.png"){width=38%}
+2,"Ethan*amine*<br> CH~2~-CH~2~NH~2~",![]("pictures/ethanamine2.png"){width=55%},"Ethan*amide*<br> CH~2~-CONH~2~",![]("pictures/ethanamide2.png"){width=55%}
+3,"Propan-1-*amine*<br> CH~3~-CH~2~-CH~2~NH~2~"<br> *propylamine*,![]("pictures/propylamine.png"){width=70%},"Propan*amide*<br> CH~3~-CH~2~-CONH~2~",![]("pictures/propanamide2.png"){width=70%}
+4,"Butan-1-*amine*<br> CH~3~-(CH~2~)~2~-CH~2~NH~2~",![]("pictures/butanamine.png"){width=87%},"Butan*amide*<br> CH~3~-(CH~2~)~2~-CONH~2~",![]("pictures/butanamide.png"){width=87%}
+5,"Pentan-1-*amine*<br> CH~3~-(CH~2~)~3~-CH~2~NH~2~",![]("pictures/pentanamine.png"){width=100%},"Pentan*amide*<br> CH~3~-(CH~2~)~3~-CONH~2~",![]("pictures/pentanamide.png"){width=100%}

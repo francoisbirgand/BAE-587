@@ -1,0 +1,6 @@
+Nb of C,Alcohol name and formula, Alcohol Skeletal, Thiol name and formula, Thiol skeletal
+1,"Methan*ol*<br> CH~3~OH",![]("pictures/methanol.png"){width=35%},"Methane*thiol*<br> CH~3~SH",![]("pictures/methanethiol.png"){width=35%}
+2,"Ethan*ol*<br> CH~2~-CH~2~OH",![]("pictures/ethanol2.png"){width=55%},"Ethane*thiol*<br> CH~2~-CH~2~SH",![]("pictures/ethanethiol2.png"){width=55%}
+3,"Propan-1-*ol*<br> CH~3~-CH~2~-CH~2~OH",![]("pictures/propanol.png"){width=70%},"Propane*thiol*<br> CH~3~-CH~2~-CH~2~SH",![]("pictures/propanethiol.png"){width=70%}
+4,"Butan-1-*ol*<br> CH~3~-(CH~2~)~2~-CH~2~OH",![]("pictures/butanol.png"){width=87%},"Butane*thiol*<br> CH~3~-(CH~2~)~2~-CH~2~SH",![]("pictures/butanethiol.png"){width=87%}
+5,"Pentan-1-*ol*<br> CH~3~-(CH~2~)~3~-CH~2~OH",![]("pictures/pentanol.png"){width=100%},"Pentane*thiol*<br> CH~3~-(CH~2~)~3~-CH~2~SH",![]("pictures/pentanethiol.png"){width=100%}

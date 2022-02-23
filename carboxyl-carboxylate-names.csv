@@ -1,0 +1,6 @@
+Nb of C atoms,Carboxylic Acid name and formula, Alcohol Skeletal structure, Carobxylate name and formula, Carobxylate skeletal structure
+1,"Methan*oic acid*<br> CHOOH",![]("pictures/methanoic-acid.png"){width=35%},"Methan*oate*<br> CHOO^-^",![]("pictures/methanoate.png"){width=32%}
+2,"Ethan*oic acid*<br> CH~2~-COOH"<br>*acetic acid*,![]("pictures/ethanoic-acid2.png"){width=47%},"Ethan*oate*<br> CH~2~-COO^-^",![]("pictures/ethanoate2.png"){width=47%}
+3,"Propan*oic acid*<br> CH~3~-CH~2~-COOH",![]("pictures/propanoic-acid.png"){width=55%},"Propan*oate*<br> CH~3~-CH~2~-COO^-^",![]("pictures/propanoate.png"){width=55%}
+4,"Butan*oic acid*<br> CH~3~-(CH~2~)~2~-COOH",![]("pictures/butanoic-acid.png"){width=70%},"Butan*oate*<br> CH~3~-(CH~2~)~2~-COO^-^",![]("pictures/butanoate.png"){width=70%}
+5,"Pentan*oic acid*<br> CH~3~-(CH~2~)~3~-COOH",![]("pictures/pentanoic-acid.png"){width=85%},"Pentan*oate*<br> CH~3~-(CH~2~)~3~-COO^-^",![]("pictures/pentanoate.png"){width=85%}

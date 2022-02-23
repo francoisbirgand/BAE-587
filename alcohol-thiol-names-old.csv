@@ -1,0 +1,6 @@
+Nb of C,Alkane name,Condensed formula,Radical name, Radical formula,Alcohol name, Alcohol Skeletal, Alcohol formula, Thiol name, Thiol formula, Thiol skeletal
+1,Methane,CH~4~,Methyl,-CH~3~,Methanol,CH~3~OH,,Methanethiol,CH~3~OH,
+2,Ethane,CH~3~-CH~3~,Ethyl,-CH~2~-CH~3~,Ethanol,CH~2~-CH~2~OH,![]("pictures/ethanol2.png"){width=28%},Ethanethiol,CH~2~-CH~2~SH,![]("pictures/ethanethiol2.png"){width=28%}
+3,Propane,CH~3~-CH~2~-CH~3~,Propyl,-(CH~2~)~2~-CH~3~,Propan-1-ol,CH~3~-CH~2~-CH~2~OH,![]("pictures/propanol.png"){width=28%},Propanethiol,CH~3~-CH~2~-CH~2~SH,![]("pictures/propanethiol.png"){width=28%}
+4,Butane,CH~3~-(CH~2~)~2~-CH~3~,Butyl,-(CH~2~)~3~-CH~3~,Butan-1-ol,CH~3~-(CH~2~)~2~-CH~2~OH,![]("pictures/butanol.png"){width=28%},Butanethiol,CH~3~-(CH~2~)~2~-CH~2~SH,![]("pictures/butanethiol.png"){width=28%}
+5,Pentane,CH~3~-(CH~2~)~3~-CH~3~,Pentyl,-(CH~2~)~4~-CH~3~,Pentan-1-ol,CH~3~-(CH~2~)~3~-CH~2~OH,![]("pictures/pentanol.png"){width=28%},Pentanethiol,CH~3~-(CH~2~)~3~-CH~2~SH,![]("pictures/butanethiol.png"){width=28%}
