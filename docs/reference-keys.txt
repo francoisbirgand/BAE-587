@@ -30,10 +30,10 @@ fig:heteroarenes
 exr:drawmolec1
 fig:FGsynthesis
 fig:amines
-tab:AmineAmideTab
 fig:alcohols
 tab:AlcoholThiolTab
 fig:thiols
+tab:AmineAmideTab
 fig:aldehyde
 fig:ketone
 tab:AldehydeKetoneTab
