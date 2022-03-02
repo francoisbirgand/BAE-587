@@ -24,7 +24,7 @@
 <meta name="author" content="François Birgand" />
 
 
-<meta name="date" content="2022-02-24" />
+<meta name="date" content="2022-03-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -317,7 +317,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="redox.html"><a href="redox.html"><i class="fa fa-check"></i><b>11</b> Applied thermochemistry: Oxido-Reduction equilibria</a><ul>
-<li class="chapter" data-level="11.0.1" data-path="redox.html"><a href="redox.html#some-outside-the-box-redox-reactions"><i class="fa fa-check"></i><b>11.0.1</b> Some outside the box redox reactions</a></li>
+<li class="chapter" data-level="11.0.1" data-path="redox.html"><a href="redox.html#denit-redox"><i class="fa fa-check"></i><b>11.0.1</b> The transfer of electrons in organotrophic denitrification</a></li>
+<li class="chapter" data-level="11.0.2" data-path="redox.html"><a href="redox.html#some-outside-the-box-redox-reactions"><i class="fa fa-check"></i><b>11.0.2</b> Some outside the box redox reactions</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html"><i class="fa fa-check"></i><b>12</b> Dissolved gases in water</a><ul>
 <li class="chapter" data-level="12.1" data-path="gassolubilitychapter.html"><a href="gassolubilitychapter.html#henrys-law-and-the-dissolution-of-gases-in-water"><i class="fa fa-check"></i><b>12.1</b> Henry’s law and the dissolution of gases in water</a><ul>
@@ -491,16 +492,65 @@ A <strong>reducing agent</strong>, or <strong>reductant</strong>, is a molecule 
 </li>
 </ul>
 </div>
+<div id="denit-redox" class="section level3">
+<h3><span class="header-section-number">11.0.1</span> The transfer of electrons in organotrophic denitrification</h3>
+<p>Much of the original intent of this book was started to clarify what happens during denitrification. We have seen in section <a href="redoxwetland.html#denit">7.4</a> the general concept of denitrification. In organotrophic denitrification (denitrication can be <a href="chemolithotrophic-denit">lithothophic</a>), it is the <strong>nitrogen atom</strong> of nitrate that accepts electrons from the carbon atoms of organic matter. In other words, the nitrate, under anaerobic conditions, oxidizes organic matter into <span class="math inline">\(CO_2\)</span> and <span class="math inline">\(H_2O\)</span>, while the nitrogen atom is reduced into <span class="math inline">\(N_2\)</span> and <span class="math inline">\(N_2O\)</span>, both of which are gases. Let us make sure all this is clear. Again, let us use our favorite electron allocation tool to visualize where the electrons are, what atom can accept or donate electrons, and where electrons are transferred. In organotrophic respiration, the electrons are originally stored onto organic matter. Traditionally <span class="citation">(e.g., Stumm and Morgan <a href="#ref-Stumm1996-yn">1996</a>)</span> organic matter is simplified as <span class="math inline">\(CH_2O\)</span> because only the carbon atoms participate in electron transfer, while the nitrogen and the sulfur atoms do not and stay reduced with 8 electrons for themselves. The electron allocation clearly shows that the carbon atom has 4 electrons for itself (Figure <a href="redox.html#fig:elecalloc-organo-denit">11.1</a> the oxygen atom has 8, but again, this energy is unavailalble because once oxygen has its 8 electrons, it will not donate them; details in Chapter <a href="electron-allocation.html#electron-allocation">2</a>). So in other words, available electrons are the ones stored on the carbon atom of <span class="math inline">\(CH_2O\)</span> in Figure <a href="redox.html#fig:elecalloc-organo-denit">11.1</a>.</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:elecalloc-organo-denit"></span>
+<img src="pictures/ElecAlloc_organotrophic-denitrification.png" alt="Electrons allocation on the carbon atoms showing 4 electrons stored on $CH_2O$, surrogate for organic matter, and showing zero electrons on $CO_2$; on the nitrogen atoms showing 0 electrons on $NO_3^-$ and 5 electrons on $N_2$; in all the molecules, including water, the oxygen always has 8 electrons for itself, and, being the most electronegative atom, does not participate in any electron transfer" width="85%" />
+<p class="caption">
+Figure 11.1: Electrons allocation on the carbon atoms showing 4 electrons stored on <span class="math inline">\(CH_2O\)</span>, surrogate for organic matter, and showing zero electrons on <span class="math inline">\(CO_2\)</span>; on the nitrogen atoms showing 0 electrons on <span class="math inline">\(NO_3^-\)</span> and 5 electrons on <span class="math inline">\(N_2\)</span>; in all the molecules, including water, the oxygen always has 8 electrons for itself, and, being the most electronegative atom, does not participate in any electron transfer
+</p>
+</div>
+<p></br></p>
+<p>So why, can nitrate accept electrons from organic matter? On the nitrate molecule, the oxygen atoms have stripped all the electrons from the nitrogen atom, and as a result, the nitrogen atom has zero electrons for itself (Figure <a href="redox.html#fig:elecalloc-organo-denit">11.1</a>). It can accept electrons, and only be an electron acceptor, and not a donor because it has nothing to give. Because the oxygen atoms on the nitrate molecules have all 8 electrons for themselves, and cannot donate them, the <strong>oxygen atoms on nitrate have NOTHING to do with the transfer of electrons during denitrification</strong>.</p>
+<p>On a redox reaction side, the reduction of nitrate into dinitrogen involves the <span class="math inline">\(NO_3^-/N_2\)</span> redox couple and can be written as:</p>
+<p></br></p>
+<p><span class="math display" id="eq:NO3-N2-halfreaction">\[\begin{equation}
+2NO_3^- + 12 H^+ + 10 e^- \rightleftharpoons N_2 + 6H_2O  
+\tag{11.1}
+\end{equation}\]</span></p>
+<p></br></p>
+<p>You can see in reaction <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> that the oxygen atoms that were on the nitrate are just moved to water. The oxygen atoms on the nitrate molecules have 8 electrons for themselves and they have 8 electrons for themselves on the water molecule (Figure <a href="redox.html#fig:elecalloc-organo-denit">11.1</a>). So, there has been no electron transfer to or from the oxygen atoms, regardless of the reactants or products of this reaction. It is important to emphasize again that <strong>oxygen atoms on nitrate have NOTHING to do with the transfer of electrons in denitrification, and also in all anaerobic respiratory processes</strong>. But, where did the electrons go? They went on the nitrogen atom. And one can see that on the dinitrogen molecule (Figure <a href="redox.html#fig:elecalloc-organo-denit">11.1</a>), each nitrogen atom now has 5 electrons for itself. This is why in reaction <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a>, there are two molecules of nitrate as reactants, yielding one molecule of <span class="math inline">\(N_2\)</span> for a total of 2×5 = 10 electrons transferred. Because the nitrogen atom has accepted electrons, we say that it has be <em>reduced</em>. Because the byproduct of this reduction is a gas which escapes to the environment, and is <em>not assimilated</em> by the denitrifier microbes that do the reduction, we say that <strong>denitrification is a <em>dissimilatory reduction</em> </strong>.</p>
+<p>There is no such thing as ‘floating electrons’ in solution. So the <strong>reduction of the nitrogen</strong> atom of nitrate has to be associated with an oxidation, in the case of the organotrophic denitrification, to the <strong>oxidation of organic matter</strong>. This involves the redox couple <span class="math inline">\(CO_2/CH_2O\)</span>. The oxidation of organic matter (<span class="math inline">\(CH_2O\)</span> for us in this example as detailed above) results in the loss of four electrons originally stored on the carbon of <span class="math inline">\(CH_2O\)</span>, resulting in <span class="math inline">\(CO_2\)</span> where the carbon atom has lost all its electrons (Figure <a href="redox.html#fig:elecalloc-organo-denit">11.1</a>).</p>
+<p>Redox half-reactions are always written with the oxidant on the left and the reductant on the right. As a result, instead of expressing the oxidation of <span class="math inline">\(CH_2O\)</span> into <span class="math inline">\(CO_2\)</span>, it is the opposite reaction that is written by convention in <a href="redox.html#eq:CO2-CH2O-halfreaction">(11.2)</a>, i.e., the reduction of <span class="math inline">\(CO_2\)</span> into <span class="math inline">\(CH_2O\)</span> (which incidentally corresponds to what happens during photosynthesis):</p>
+<p></br></p>
+<p><span class="math display" id="eq:CO2-CH2O-halfreaction">\[\begin{equation}
+CO_2 + 4 H^+ + 4 e^- \rightleftharpoons CH_2O + H_2O  
+\tag{11.2}
+\end{equation}\]</span></p>
+<p></br></p>
+<p>The overall organotrophic denitrification is summarized in reaction <a href="redox.html#eq:organotrophic-denitrification">(11.3)</a> by multiplying the first half-reaction <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> by a factor of 2 and the second <a href="redox.html#eq:CO2-CH2O-halfreaction">(11.2)</a> by a factor of 5 to balance the number of electrons transferred.</p>
+<p></br>
+<span class="math display" id="eq:organotrophic-denitrification">\[\begin{gather*}
+4NO_3^- + 24 H^+ + 20 e^- \rightleftharpoons 2N_2 + 12H_2O   \\
+5CO_2 + 20 H^+ + 20 e^- \rightleftharpoons 5CH_2O + 5H_2O     \\
+\hline
+5CH_2O + 4NO_3^- + 4 H^+ \rightleftharpoons 5CO_2  + 2N_2 + 7H_2O
+\tag{11.3}
+\end{gather*}\]</span>
+</br></p>
+<p>Using reaction <a href="redox.html#eq:organotrophic-denitrification">(11.3)</a> and the electron allocation of the reactants and products as illustrated in Figure <a href="redox.html#fig:elecalloc-organo-denit">11.1</a>, one might see that <strong>oxygen is not involved in any step of the transfer of electrons in denitrification</strong>. This might be somewhat surprising to the reader, and it is not impossible that one might have read the contrary in some publications and books. It is tempting to treat oxygen atoms the same, whether they be in the form of <span class="math inline">\(O_2\)</span> or <span class="math inline">\(NO_3^-\)</span>. But we have said times and again in this book that is a big trap not to fall into! Oxygen is the most electronegative atom, and as a result, it tends to ‘steal’ electrons for itself from atoms to which it is bonded. Consequently, oxygen atoms bonded to CHNSP atoms <strong>always</strong> have 8 electrons for themselves. The only times when oxygen atoms do not have 8 electrons for themselves is when oxygen is bonded to itself, at least partly. This corresponds to dioxygen <img src="pictures/ElecAlloc_O2.png" style="width:9.0%" /> where each atom has 6 electrons for itself, and hydrogen peroxide <img src="pictures/ElecAlloc_HOOH.png" style="width:15.0%" /> where each oxygen atom has 7 electrons for itself. The fact that the most electronegative atom, i.e., oxygen, existing in the form of <span class="math inline">\(O_2\)</span> on our planet, drives most of the electron transfers! Indeed, oxygen ‘badly wants’ 8 electrons for itself. And in aerobic respirations, it manages just that.</p>
+<p>In Figure <a href="redox.html#fig:denitrification-CH20-reactions">11.2</a> the electron transfer scheme introduced in Chapter <a href="aerobic-and-anaerobic-respiration.html#aerobic-and-anaerobic-respiration">5</a> is combined with the half-reactions <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> and <a href="redox.html#eq:CO2-CH2O-halfreaction">(11.2)</a>, and with the electron allocation diagrams. The additional piece of information in Figure <a href="redox.html#fig:denitrification-CH20-reactions">11.2</a> is the fate of the N, S, and P atoms originally part of the organic matter during its oxidation. In organotrophic respirations, the byproducts of the oxidation of organic matter are <span class="math inline">\(CO_2\)</span>, <span class="math inline">\(NH_4^+\)</span>, <span class="math inline">\(H_2S\)</span>, and <span class="math inline">\(PO_4^{3-}\)</span>, because, again, only the carbon atoms participate in the transfer of electrons.</p>
+<p></br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:denitrification-CH20-reactions"></span>
+<img src="pictures/denitrification-CH20-reactions.png" alt="Combined electron transfer scheme with the electron allocation, the transfer of electrons, and the corresponding half redox reactions for organotrophic denitrification" width="90%" />
+<p class="caption">
+Figure 11.2: Combined electron transfer scheme with the electron allocation, the transfer of electrons, and the corresponding half redox reactions for organotrophic denitrification
+</p>
+</div>
+<p></br></p>
+</div>
 <div id="some-outside-the-box-redox-reactions" class="section level3">
-<h3><span class="header-section-number">11.0.1</span> Some outside the box redox reactions</h3>
+<h3><span class="header-section-number">11.0.2</span> Some outside the box redox reactions</h3>
 <div id="guanidinium-nitrate-reaction-to-inflate-air-bags" class="section level4">
-<h4><span class="header-section-number">11.0.1.1</span> Guanidinium nitrate reaction to inflate air bags</h4>
+<h4><span class="header-section-number">11.0.2.1</span> Guanidinium nitrate reaction to inflate air bags</h4>
 <p>Guanidinium nitrate <img src="pictures/guanidinium_nitrate.png" style="width:22.0%" />, commonly called guanidine nitrate, is a crystal that contains together potential electron donors in the form of fully reduced nitrogen on the guanidinium cation and fully oxidized nitrogen on the nitrate anion side. This crystal is used in air bags of vehicles as it is rather stable, only needs a spark to explode, and has a relatively low temperature of reaction. Let us explore this reaction. First, the hint that it is used to rapidly blow air bags tells us that gas(es) must be produced. Because the nitrogen atoms of the guanidinium side have 8 electrons to give, and nitrate ions have none and can gain some, the end gas product that contains nitrogen must have a number of electrons somewhat between the two. The first guess is <span class="math inline">\(N_2\)</span> as each atom has 5 electrons for itself. So the two redox couples at play must be <span class="math inline">\(NO_3^-/N_2\)</span> and <span class="math inline">\(N_2/C(NH_2)_3^+\)</span>.</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:airbag-guanidine-nitrate"></span>
 <img src="pictures/airbag.png" alt="Ball and stick structure of guanidinium nitrate sometimes used as a fuel for airbag inflation" width="85%" />
 <p class="caption">
-Figure 11.1: Ball and stick structure of guanidinium nitrate sometimes used as a fuel for airbag inflation
+Figure 11.3: Ball and stick structure of guanidinium nitrate sometimes used as a fuel for airbag inflation
 </p>
 </div>
 <p></br></p>
@@ -516,17 +566,17 @@ Figure 11.1: Ball and stick structure of guanidinium nitrate sometimes used as a
 <p></br></p>
 <p><span class="math display" id="eq:guanidinium-eacceptor">\[\begin{equation}
 3N_2 + 2C_{(s)} + 12 H^+ + 10 e^- \rightleftharpoons 2C(NH_2)_3^+ 
-\tag{11.2}
+\tag{11.4}
 \end{equation}\]</span></p>
 <p></br></p>
-<p>On both half-reactions <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> and <a href="redox.html#eq:guanidinium-eacceptor">(11.2)</a>, the same number of electrons (10) are transferred and can be directly combined to obtain the final reaction <a href="redox.html#eq:guanidinium-nitrate-explosion">(11.3)</a>.</p>
+<p>On both half-reactions <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> and <a href="redox.html#eq:guanidinium-eacceptor">(11.4)</a>, the same number of electrons (10) are transferred and can be directly combined to obtain the final reaction <a href="redox.html#eq:guanidinium-nitrate-explosion">(11.5)</a>.</p>
 <p></br>
 <span class="math display" id="eq:guanidinium-nitrate-explosion">\[\begin{gather*}
 2NO_3^- + 12 H^+ + 10 e^- \rightleftharpoons N_2 + 6H_2O   \\
 3N_2 + 2C_{(s)} + 12 H^+ + 10 e^- \rightleftharpoons 2C(NH_2)_3^+   \\
 \hline
 C(NH_2)_3^+ \space NO_3^- \rightleftharpoons 2N_2 + 3H_2O + C_{(s)}
-\tag{11.3}
+\tag{11.5}
 \end{gather*}\]</span>
 </br></p>
 <p>The decomposition of one mole of solid guanidinium nitrate, upon an activation energy provided by a spark, produces into 5 moles of gas (2 moles of dinitrogen and 3 moles of water), and one mole of solid carbon. Because the electron donors and acceptors are closely packed together, the reaction is not limited by the transport of an electron acceptor near the donor (as is the case for burning wood for example), this reaction is fast. An instantaneous reaction that produce 5 moles of gas from a mole of solid compound has an explosive effect, hence its use in air bag deployment.</p>
@@ -536,30 +586,30 @@ C(NH_2)_3^+ \space NO_3^- \rightleftharpoons 2N_2 + 3H_2O + C_{(s)}
 <p></br></p>
 <p><span class="math display" id="eq:NO3-N2O">\[\begin{equation}
 2NO_3^- + 10 H^+ + 8 e^- \rightleftharpoons N_2O + 5H_2O  
-\tag{11.4}
+\tag{11.6}
 \end{equation}\]</span></p>
 <p></br></p>
 <p>And the half-reaction of the more reducing <span class="math inline">\(N_2O/C(NH_2)_3^+\)</span> can be written as:</p>
 <p></br></p>
 <p><span class="math display" id="eq:N2O-guanidinium">\[\begin{equation}
 3N_2O + 2C_{(s)} + 18 H^+ + 16 e^- \rightleftharpoons 2C(NH_2)_3^+ + 3H_2O
-\tag{11.5}
+\tag{11.7}
 \end{equation}\]</span></p>
 <p></br></p>
-<p>Half-reaction <a href="redox.html#eq:NO3-N2O">(11.4)</a> needs to be multiplied by a factor of 2 to have the same number of electrons transferred (16). The resulting oxidation of guanidinium nitrate leading to the formation of nitrous oxide can be written as in <a href="redox.html#eq:guanidinium-nitrate-N2O">(11.6)</a>.</p>
+<p>Half-reaction <a href="redox.html#eq:NO3-N2O">(11.6)</a> needs to be multiplied by a factor of 2 to have the same number of electrons transferred (16). The resulting oxidation of guanidinium nitrate leading to the formation of nitrous oxide can be written as in <a href="redox.html#eq:guanidinium-nitrate-N2O">(11.8)</a>.</p>
 <p></br>
 <span class="math display" id="eq:guanidinium-nitrate-N2O">\[\begin{gather*}
 4NO_3^- + 20 H^+ + 16 e^- \rightleftharpoons N_2O + 10H_2O   \\
 3N_2O + 2C_{(s)} + 18 H^+ + 16 e^- \rightleftharpoons 2C(NH_2)_3^+ + 3H_2O  \\
 \hline
 2C(NH_2)_3^+ +  4NO_3^- +2H^+ \rightleftharpoons 5N_2O + 2C_{(s)} + 7H_2O 
-\tag{11.6}
+\tag{11.8}
 \end{gather*}\]</span>
 </br></p>
 <p>Clearly this reaction is possible in theory. However, in practice it probably does not happen because 1) it requires the presence of protons, which would not be there in the guanidinium nitrate crystals, and 2) it would require twice as many nitrate as many guanidinium, and here too, this stochiometry is not that of the guanidinium nitrate salt. So this reaction is probably not happening when airbags are set on.</p>
 </div>
-<div id="chemolithotrophic-denitrification-on-pyrite" class="section level4">
-<h4><span class="header-section-number">11.0.1.2</span> Chemolithotrophic denitrification on pyrite</h4>
+<div id="chemolithotrophic-denit" class="section level4">
+<h4><span class="header-section-number">11.0.2.2</span> Chemolithotrophic denitrification on pyrite</h4>
 <p>Pyrite (<span class="math inline">\(FeS_2\)</span>) is an interesting mineral and illustrates quite well the difference between covalent bonds and an ionic bond. In the case of covalent bonds, electrons are shared between non-metal ions, in ionic bonds, one metal and a non-metal atom exchange electrons. In ionic bonds, we cannot use the electronegativity concept any longer to allocate electrons. So, although Sulfur atom is more electronegative (2.58) than iron (1.83), Sulfur does not steal electrons from iron. So the ions involved in pyrite are <span class="math inline">\(Fe^{2+}(S^-)_2\)</span>. Iron is thus in its most reduced form, for an oxidation state (OS) of (+II) corresponding to its charge referred to as <strong>ferrous iron</strong> or <strong>iron (II)</strong>, and sulfur is also reduced in the form of <span class="math inline">\(S^-\)</span>, having 7 electrons for itself for an oxidation state of (-I). The summation of the OS is +II -I -I = 0, corresponding to the zero charge of the overall crystal.</p>
 <p>Because the sulfur has 7 electron for itself, it can be oxidized, obviously by dioxygen, but interestingly for biogeochemical purposes, by nitrate as well. The full oxidation of sulfur, i.e., the loss of all 7 electrons, leads to the formation of sulfate. The reduction of nitrate generally leads to the formation of dinitrogen although the reduction all the way to ammonium is possible in the reaction called Dissimilatory Reduction of Nitrate into Ammonium (DNRA). In nature, it seems that the reduction of nitrate stops at the <span class="math inline">\(N_2\)</span> stage.</p>
 <p>From all this information, it is possible to draw the two redox couple involved. The more oxidative couple is <span class="math inline">\(NO_3^-/N_2\)</span> and the one that involves pyrite oxidation into sulfate is <span class="math inline">\(SO_4^{2-}/FeS_2\)</span>.</p>
@@ -574,73 +624,73 @@ C(NH_2)_3^+ \space NO_3^- \rightleftharpoons 2N_2 + 3H_2O + C_{(s)}
 <p></br></p>
 <p><span class="math display" id="eq:sulfate-pyrite-halfreaction">\[\begin{equation}
 2SO_4^{2-} + Fe^{2+} + 16 H^+ + 14 e^- \rightleftharpoons FeS_2 + 8 H_2O 
-\tag{11.7}
+\tag{11.9}
 \end{equation}\]</span></p>
 <p></br></p>
-<p>The overall reduction of nitrate by pyrite is summarized in reaction <a href="redox.html#eq:denitrification-pyrite">(11.8)</a> by multiplying the first half-reaction <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> by a factor of 7 and the second <a href="redox.html#eq:sulfate-pyrite-halfreaction">(11.7)</a> by a factor of 5 to balance the electrons transferred.</p>
+<p>The overall reduction of nitrate by pyrite is summarized in reaction <a href="redox.html#eq:denitrification-pyrite">(11.10)</a> by multiplying the first half-reaction <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> by a factor of 7 and the second <a href="redox.html#eq:sulfate-pyrite-halfreaction">(11.9)</a> by a factor of 5 to balance the electrons transferred.</p>
 <p></br>
 <span class="math display" id="eq:denitrification-pyrite">\[\begin{gather*}
 14NO_3^- + 84 H^+ + 70 e^- \rightleftharpoons 7N_2 + 42H_2O   \\
 10SO_4^{2-} + 5Fe^{2+} + 80 H^+ + 70 e^- \rightleftharpoons 5FeS_2 + 40 H_2O \\
 \hline
 5FeS_2 + 14NO_3^- + 4H^+ \rightleftharpoons 10SO_4^{2-} + 5Fe^{2+} + 7N_2 + 2H_2O
-\tag{11.8}
+\tag{11.10}
 \end{gather*}\]</span>
 </br></p>
-<p>Now, there is another twist to chemolithotrophic denitrification using pyrite as the primary electron acceptor. Several studies surmised that nitrate could be further denitrified by the produced <span class="math inline">\(Fe^{2+}\)</span> of pyrite oxidation <span class="citation">(Kölle, Strebel, and Böttcher <a href="#ref-Kolle1983-mo">1983</a>, <a href="#ref-Kolle1985-mn">1985</a>, <a href="#ref-Kolle1990-zo">1990</a>; Pauwels <a href="#ref-Pauwels1994-aj">1994</a>, <a href="#ref-Pauwels1994-aj">1994</a>; Somlette <a href="#ref-Somlette1999-ky">1999</a>)</span>. But it was not until 1996, that actual evidence of Nitrate-Dependent Fe-Oxidation (NDFO) or Nitrate Reducing Fe Oxidation (NRFeOx, <span class="citation">Straub et al. (<a href="#ref-Straub1996-dh">1996</a>)</span>) microbial activity was brought forth. In other words, people have found that there were bacteria able to use ferrous Fe (II) as an electron donor, and nitrate as the electron acceptor. This has later been confirmed in many different environments including lake sediments, in pyrite containing schist, sandy and gravelly sediments, etc. <span class="citation">(Straub et al. <a href="#ref-Straub1996-dh">1996</a>, <a href="#ref-Straub2004-ug">2004</a>; Straub and Buchholz-Cleven <a href="#ref-Straub1998-hq">1998</a>; Lack et al. <a href="#ref-Lack2002-ut">2002</a>; A. Kappler and Straub <a href="#ref-Kappler2005-wk">2005</a>; A. Kappler, Schink, and Newman <a href="#ref-Kappler2005-wt">2005</a>; Weber, Achenbach, and Coates <a href="#ref-Weber2006-qq">2006</a>; Muehe et al. <a href="#ref-Muehe2009-ko">2009</a>; Blöthe and Roden <a href="#ref-Blothe2009-eg">2009</a>; Chakraborty et al. <a href="#ref-Chakraborty2011-dw">2011</a>; Chakraborty and Picardal <a href="#ref-Chakraborty2013-ia">2013</a>; Melton et al. <a href="#ref-Melton2014-rf">2014</a>; Liu et al. <a href="#ref-Liu2019-pt">2019</a>; reviewed by Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span> (Figure <a href="redox.html#fig:pyrite-NRFeOx">11.2</a>).</p>
+<p>Now, there is another twist to chemolithotrophic denitrification using pyrite as the primary electron acceptor. Several studies surmised that nitrate could be further denitrified by the produced <span class="math inline">\(Fe^{2+}\)</span> of pyrite oxidation <span class="citation">(Kölle, Strebel, and Böttcher <a href="#ref-Kolle1983-mo">1983</a>, <a href="#ref-Kolle1985-mn">1985</a>, <a href="#ref-Kolle1990-zo">1990</a>; Pauwels <a href="#ref-Pauwels1994-aj">1994</a>, <a href="#ref-Pauwels1994-aj">1994</a>; Somlette <a href="#ref-Somlette1999-ky">1999</a>)</span>. But it was not until 1996, that actual evidence of Nitrate-Dependent Fe-Oxidation (NDFO) or Nitrate Reducing Fe Oxidation (NRFeOx, <span class="citation">Straub et al. (<a href="#ref-Straub1996-dh">1996</a>)</span>) microbial activity was brought forth. In other words, people have found that there were bacteria able to use ferrous Fe (II) as an electron donor, and nitrate as the electron acceptor. This has later been confirmed in many different environments including lake sediments, in pyrite containing schist, sandy and gravelly sediments, etc. <span class="citation">(Straub et al. <a href="#ref-Straub1996-dh">1996</a>, <a href="#ref-Straub2004-ug">2004</a>; Straub and Buchholz-Cleven <a href="#ref-Straub1998-hq">1998</a>; Lack et al. <a href="#ref-Lack2002-ut">2002</a>; A. Kappler and Straub <a href="#ref-Kappler2005-wk">2005</a>; A. Kappler, Schink, and Newman <a href="#ref-Kappler2005-wt">2005</a>; Weber, Achenbach, and Coates <a href="#ref-Weber2006-qq">2006</a>; Muehe et al. <a href="#ref-Muehe2009-ko">2009</a>; Blöthe and Roden <a href="#ref-Blothe2009-eg">2009</a>; Chakraborty et al. <a href="#ref-Chakraborty2011-dw">2011</a>; Chakraborty and Picardal <a href="#ref-Chakraborty2013-ia">2013</a>; Melton et al. <a href="#ref-Melton2014-rf">2014</a>; Liu et al. <a href="#ref-Liu2019-pt">2019</a>; reviewed by Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span> (Figure <a href="redox.html#fig:pyrite-NRFeOx">11.4</a>).</p>
 <p></br></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:pyrite-NRFeOx"></span>
 <img src="pictures/pyrite-NRFeOx.png" alt="I. Chemolithotrophic bacteria *Thiobacillus denitrificans* used pyrite (FeS~2~) as electron donor, and nitrate as electron acceptor, reducing them to N~2~ and N~2~O. II. The ferrous iron Fe^2+^ produced is then used by other microorganisms that use Fe^2+^ as electron donors and nitrate, again as electron acceptor. These are called Nitrate Reducing Fe Oxidazing organisms. Some are autotrophs, mixotrophs (need both organic carbon and Fe^2+^ to live), or chemodenitrifiers (require organic carbon and have no enzymatic component of Fe(II) oxidation). After [@Bryce2018-cb]" width="100%" />
 <p class="caption">
-Figure 11.2: I. Chemolithotrophic bacteria <em>Thiobacillus denitrificans</em> used pyrite (FeS<sub>2</sub>) as electron donor, and nitrate as electron acceptor, reducing them to N<sub>2</sub> and N<sub>2</sub>O. II. The ferrous iron Fe<sup>2+</sup> produced is then used by other microorganisms that use Fe<sup>2+</sup> as electron donors and nitrate, again as electron acceptor. These are called Nitrate Reducing Fe Oxidazing organisms. Some are autotrophs, mixotrophs (need both organic carbon and Fe<sup>2+</sup> to live), or chemodenitrifiers (require organic carbon and have no enzymatic component of Fe(II) oxidation). After <span class="citation">(Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span>
+Figure 11.4: I. Chemolithotrophic bacteria <em>Thiobacillus denitrificans</em> used pyrite (FeS<sub>2</sub>) as electron donor, and nitrate as electron acceptor, reducing them to N<sub>2</sub> and N<sub>2</sub>O. II. The ferrous iron Fe<sup>2+</sup> produced is then used by other microorganisms that use Fe<sup>2+</sup> as electron donors and nitrate, again as electron acceptor. These are called Nitrate Reducing Fe Oxidazing organisms. Some are autotrophs, mixotrophs (need both organic carbon and Fe<sup>2+</sup> to live), or chemodenitrifiers (require organic carbon and have no enzymatic component of Fe(II) oxidation). After <span class="citation">(Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span>
 </p>
 </div>
 <p></br></p>
-<p>As a result, reaction <a href="redox.html#eq:denitrification-pyrite">(11.8)</a> actually continues as the produced ferrous Fe (II) can be further oxidized by nitrate. The most oxidizing couple is still <span class="math inline">\(NO_3^-/N_2\)</span>, and the most reducing is now <span class="math inline">\(Fe(OH)_3/Fe^{2+}\)</span>. One could choose <span class="math inline">\(Fe^{3+}\)</span> instead of <span class="math inline">\(Fe(OH)_3\)</span>, but at groundwater pH and reduced conditions when nitrate is still present, Fe (III) is more stable as iron hydroxides <span class="citation">(Hem <a href="#ref-Hem1985-vl">1985</a>; Stumm and Morgan <a href="#ref-Stumm1996-yn">1996</a>; Fetter <a href="#ref-Fetter2008-hh">2008</a>; Torrentó et al. <a href="#ref-Torrento2010-dp">2010</a>; reviewed by Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span>. Other authors proposed that the goethite mineral (<span class="math inline">\(FeOOH\)</span>) would be formed instead of <span class="math inline">\(Fe(OH)_3\)</span> iron hydroxides <span class="citation">(Kölle, Strebel, and Böttcher <a href="#ref-Kolle1985-mn">1985</a>, <a href="#ref-Kolle1990-zo">1990</a>; Cheng et al. <a href="#ref-Cheng2020-ex">2020</a>)</span>. Ottley et al. <span class="citation">(<a href="#ref-Otlley1997-ib">1997</a>)</span> actually listed 12 other possible <span class="math inline">\(Fe^{2+}\)</span> oxidation reactions by nitrate. The one described below appears to be considered as prevalent <span class="citation">(reviewed by Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span>.</p>
+<p>As a result, reaction <a href="redox.html#eq:denitrification-pyrite">(11.10)</a> actually continues as the produced ferrous Fe (II) can be further oxidized by nitrate. The most oxidizing couple is still <span class="math inline">\(NO_3^-/N_2\)</span>, and the most reducing is now <span class="math inline">\(Fe(OH)_3/Fe^{2+}\)</span>. One could choose <span class="math inline">\(Fe^{3+}\)</span> instead of <span class="math inline">\(Fe(OH)_3\)</span>, but at groundwater pH and reduced conditions when nitrate is still present, Fe (III) is more stable as iron hydroxides <span class="citation">(Hem <a href="#ref-Hem1985-vl">1985</a>; Stumm and Morgan <a href="#ref-Stumm1996-yn">1996</a>; Fetter <a href="#ref-Fetter2008-hh">2008</a>; Torrentó et al. <a href="#ref-Torrento2010-dp">2010</a>; reviewed by Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span>. Other authors proposed that the goethite mineral (<span class="math inline">\(FeOOH\)</span>) would be formed instead of <span class="math inline">\(Fe(OH)_3\)</span> iron hydroxides <span class="citation">(Kölle, Strebel, and Böttcher <a href="#ref-Kolle1985-mn">1985</a>, <a href="#ref-Kolle1990-zo">1990</a>; Cheng et al. <a href="#ref-Cheng2020-ex">2020</a>)</span>. Ottley et al. <span class="citation">(<a href="#ref-Otlley1997-ib">1997</a>)</span> actually listed 12 other possible <span class="math inline">\(Fe^{2+}\)</span> oxidation reactions by nitrate. The one described below appears to be considered as prevalent <span class="citation">(reviewed by Bryce et al. <a href="#ref-Bryce2018-cb">2018</a>)</span>.</p>
 <p>The half reaction for the <span class="math inline">\(Fe(OH)_3/Fe^{2+}\)</span> can be written as:</p>
 <p></br></p>
 <p><span class="math display" id="eq:FeOH3-Fe2-halfreaction">\[\begin{equation}
 Fe(OH)_3 + 3 H^+ + 1 e^- \rightleftharpoons Fe_2^+ + 3H_2O  
-\tag{11.9}
+\tag{11.11}
 \end{equation}\]</span></p>
 <p></br></p>
-<p>Combining both half-reactions <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> and <a href="redox.html#eq:FeOH3-Fe2-halfreaction">(11.9)</a> and multiplying each by the proper factor to exchange the same number of electrons yields:</p>
+<p>Combining both half-reactions <a href="redox.html#eq:NO3-N2-halfreaction">(11.1)</a> and <a href="redox.html#eq:FeOH3-Fe2-halfreaction">(11.11)</a> and multiplying each by the proper factor to exchange the same number of electrons yields:</p>
 <p></br>
 <span class="math display" id="eq:denitrification-FeII">\[\begin{gather*}
 2NO_3^- + 12 H^+ + 10 e^- \rightleftharpoons N_2 + 6H_2O   \\
 10Fe(OH)_3 + 30 H^+ + 10 e^- \rightleftharpoons 10Fe_2^+ + 30H_2O   \\
 \hline
 5Fe^{2+} + NO_3^- + 12H_2O \rightleftharpoons 5Fe(OH)_3 + 9H^ + \frac{1}{2}N_2
-\tag{11.10}
+\tag{11.12}
 \end{gather*}\]</span>
 </br></p>
-<p>Now, literally adding reactions <a href="redox.html#eq:denitrification-pyrite">(11.8)</a> and <a href="redox.html#eq:denitrification-FeII">(11.10)</a> yields:</p>
+<p>Now, literally adding reactions <a href="redox.html#eq:denitrification-pyrite">(11.10)</a> and <a href="redox.html#eq:denitrification-FeII">(11.12)</a> yields:</p>
 <p></br>
 <span class="math display" id="eq:denitrification-pyrite-FeII">\[\begin{gather*}
 5FeS_2 + 14NO_3^- + 4H^+ \rightleftharpoons 10SO_4^{2-} + 5Fe^{2+} + 7N_2 + 2H_2O   \\
 5Fe^{2+} + NO_3^- + 12H_2O \rightleftharpoons 5Fe(OH)_3 + 9H^+ + \frac{1}{2}N_2   \\
 \hline
 5FeS_2 + 15NO_3^- + 10H_2O \rightleftharpoons 5Fe(OH)_3 + \frac{15}{2}N_2 + 10SO_4^{2-} + 5H^+ 
-\tag{11.11}
+\tag{11.13}
 \end{gather*}\]</span>
 </br></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:SO4-HS-pe"></span>
 <img src="Textbook_BAE587_files/figure-html/SO4-HS-pe-1.png" alt="Concentrations of Sulfate and hydrogen sulfide as a function of p&amp;epsilon;" width="100%" />
 <p class="caption">
-Figure 11.3: Concentrations of Sulfate and hydrogen sulfide as a function of pε
+Figure 11.5: Concentrations of Sulfate and hydrogen sulfide as a function of pε
 </p>
 </div>
 <p></br></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:CO2-CH2O-pe"></span>
 <img src="Textbook_BAE587_files/figure-html/CO2-CH2O-pe-1.png" alt="Concentrations of a generic carbohydrate CH~2~O and CO~2~ that would be in equilibrium with the atmosphere as a function of p&amp;epsilon; and for a given pH" width="100%" />
 <p class="caption">
-Figure 11.4: Concentrations of a generic carbohydrate CH<sub>2</sub>O and CO<sub>2</sub> that would be in equilibrium with the atmosphere as a function of pε and for a given pH
+Figure 11.6: Concentrations of a generic carbohydrate CH<sub>2</sub>O and CO<sub>2</sub> that would be in equilibrium with the atmosphere as a function of pε and for a given pH
 </p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:NH4-NO2-NO3-pe"></span>
 <img src="Textbook_BAE587_files/figure-html/NH4-NO2-NO3-pe-1.png" alt="Concentrations ammonium, nitrite, and nitrate as a function of p&amp;epsilon; and for a given pH" width="100%" />
 <p class="caption">
-Figure 11.5: Concentrations ammonium, nitrite, and nitrate as a function of pε and for a given pH
+Figure 11.7: Concentrations ammonium, nitrite, and nitrate as a function of pε and for a given pH
 </p>
 </div>
 <p><strong><em>This chapter is still under construction</em></strong></p>

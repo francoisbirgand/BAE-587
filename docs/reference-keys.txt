@@ -287,8 +287,12 @@ fig:PO4-pH-gif
 fig:H2CO3-pH
 fig:pH-seawater
 fig:pH-rainwater
-fig:airbag-guanidine-nitrate
+fig:elecalloc-organo-denit
 eq:NO3-N2-halfreaction
+eq:CO2-CH2O-halfreaction
+eq:organotrophic-denitrification
+fig:denitrification-CH20-reactions
+fig:airbag-guanidine-nitrate
 eq:guanidinium-eacceptor
 eq:guanidinium-nitrate-explosion
 eq:NO3-N2O
@@ -540,9 +544,10 @@ logarithm-of-concentrations-as-a-function-of-ph
 logConcMonoAcid
 logConcTriAcid
 redox
+denit-redox
 some-outside-the-box-redox-reactions
 guanidinium-nitrate-reaction-to-inflate-air-bags
-chemolithotrophic-denitrification-on-pyrite
+chemolithotrophic-denit
 gassolubilitychapter
 henrys-law-and-the-dissolution-of-gases-in-water
 equivalence-between-gas-partial-pressures-and-dissolved-concentration
