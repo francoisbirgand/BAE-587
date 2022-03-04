@@ -658,3 +658,5 @@ equilibrium-reactions-in-the-co2-h2o-system
 equilibrium-reactions-for-nitrogen-species
 equilibrium-reactions-for-phosphorus-species
 equilibrium-reactions-for-sulfur-species
+eq:CO2-CHOH-halfreaction
+fig:CO2-CHOH-pe
