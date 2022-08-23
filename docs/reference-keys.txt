@@ -305,7 +305,6 @@ eq:FeOH3-Fe2-halfreaction
 eq:denitrification-FeII
 eq:denitrification-pyrite-FeII
 fig:SO4-HS-pe
-fig:CO2-CH2O-pe
 fig:NH4-NO2-NO3-pe
 fig:SparklingGasRelease
 fig:BiofilmGasBubbles
@@ -493,6 +492,9 @@ fermentation-or-staying-alive-without-exogenous-electron-acceptor
 photosynthesis
 requirements-to-store-energy-on-organic-molecules
 no-need-to-reinvent-the-wheel-for-the-production-of-atp-and-the-transfer-of-electrons
+anabolism
+requirements-to-store-energy-on-organic-molecules-1
+no-need-to-reinvent-the-wheel-for-the-production-of-atp-and-the-transfer-of-electrons-1
 redoxwetland
 the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils
 aerobiczone
@@ -528,7 +530,7 @@ acid-base-equilibrium-parameters
 ka
 pka
 self-ionization-of-water
-strong-vs.weak-acids
+strong-vs.-weak-acids
 mono--and-polyprotic-acids-mole-fractions
 triprotic-acid-example
 generalized-polyprotic-acid-mole-fractions
@@ -658,5 +660,3 @@ equilibrium-reactions-in-the-co2-h2o-system
 equilibrium-reactions-for-nitrogen-species
 equilibrium-reactions-for-phosphorus-species
 equilibrium-reactions-for-sulfur-species
-eq:CO2-CHOH-halfreaction
-fig:CO2-CHOH-pe
