@@ -287,6 +287,7 @@ fig:PO4-pH-gif
 fig:H2CO3-pH
 fig:pH-seawater
 fig:pH-rainwater
+fig:animated-seawater-pH
 fig:elecalloc-organo-denit
 eq:NO3-N2-halfreaction
 eq:CO2-CH2O-halfreaction
