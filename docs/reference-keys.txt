@@ -546,6 +546,7 @@ equilibrium-calculations-using-a-graphical-method
 logarithm-of-concentrations-as-a-function-of-ph
 logConcMonoAcid
 logConcTriAcid
+logConcCO3Acid
 redox
 denit-redox
 some-outside-the-box-redox-reactions
