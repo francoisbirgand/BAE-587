@@ -2,7 +2,7 @@ bookdown::gitbook:
   css: [style.css, toc.css, font-awesome.min.css]
   config:
     toc:
-      collapse: subsection
+      collapse: section
       scroll_highlight: true
       before: |
         <li><a href="./">Fundamental Hydro-Biogeochemistry</a></li>

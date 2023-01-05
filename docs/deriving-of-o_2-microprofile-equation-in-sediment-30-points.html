@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 15 Deriving of \(O_2\) microprofile equation in sediment (30 points) | Fundamental Hydro-Biogeochemistry for Ecological Engineering and Environmental Sciences</title>
+  <meta name="description" content="Chapter 15 Deriving of \(O_2\) microprofile equation in sediment (30 points) | Fundamental Hydro-Biogeochemistry for Ecological Engineering and Environmental Sciences" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 15 Deriving of \(O_2\) microprofile equation in sediment (30 points) | Fundamental Hydro-Biogeochemistry for Ecological Engineering and Environmental Sciences" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 15 Deriving of \(O_2\) microprofile equation in sediment (30 points) | Fundamental Hydro-Biogeochemistry for Ecological Engineering and Environmental Sciences" />
+  
+  
+  
+
+<meta name="author" content="François Birgand" />
+
+
+<meta name="date" content="2022-12-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="SedWatInterface.html"/>
+<link rel="next" href="equation-of-the-downward-flux-at-the-sediment-water-interface-10-points.html"/>
+<script src="libs/header-attrs-2.15/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="toc.css" type="text/css" />
+<link rel="stylesheet" href="font-awesome.min.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Fundamental Hydro-Biogeochemistry</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#preface" id="toc-preface">Preface</a>
+<ul>
+<li><a href="index.html#author" id="toc-author">Author</a></li>
+</ul></li>
+<li><a href="intro.html#intro" id="toc-intro"><span class="toc-section-number">1</span> Introduction</a>
+<ul>
+<li><a href="intro.html#biogeochemistry-applied-to-excess-nutrients-in-rural-aquatic-environments" id="toc-biogeochemistry-applied-to-excess-nutrients-in-rural-aquatic-environments"><span class="toc-section-number">1.1</span> Biogeochemistry applied to excess nutrients in rural aquatic environments</a></li>
+<li><a href="intro.html#ecologically-engineered-systems-treated-as-black-boxes" id="toc-ecologically-engineered-systems-treated-as-black-boxes"><span class="toc-section-number">1.2</span> Ecologically engineered systems treated as black boxes</a></li>
+<li><a href="intro.html#biogeochemical-processes-in-pollution-flows" id="toc-biogeochemical-processes-in-pollution-flows"><span class="toc-section-number">1.3</span> Biogeochemical processes in pollution flows</a></li>
+<li><a href="intro.html#scope-of-this-book" id="toc-scope-of-this-book"><span class="toc-section-number">1.4</span> Scope of this book</a></li>
+<li><a href="intro.html#exercises" id="toc-exercises"><span class="toc-section-number">1.5</span> Exercises</a></li>
+</ul></li>
+<li><a href="electron-allocation.html#electron-allocation" id="toc-electron-allocation"><span class="toc-section-number">2</span> Life’s secrets for storing energy</a>
+<ul>
+<li><a href="electron-allocation.html#the-five-fundamental-requirements-of-life" id="toc-the-five-fundamental-requirements-of-life"><span class="toc-section-number">2.1</span> The five fundamental requirements of life</a></li>
+<li><a href="electron-allocation.html#electron-allocation-onto-chonsp" id="toc-electron-allocation-onto-chonsp"><span class="toc-section-number">2.2</span> Electron allocation onto CHONSP</a></li>
+<li><a href="electron-allocation.html#electronegativity-as-a-powerful-tool-to-allocate-electrons" id="toc-electronegativity-as-a-powerful-tool-to-allocate-electrons"><span class="toc-section-number">2.3</span> Electronegativity as a powerful tool to allocate electrons</a></li>
+<li><a href="electron-allocation.html#dioxygen-the-electron-kleptomaniac-molecule" id="toc-dioxygen-the-electron-kleptomaniac-molecule"><span class="toc-section-number">2.4</span> Dioxygen: the ‘electron kleptomaniac’ molecule</a></li>
+<li><a href="electron-allocation.html#fully-oxidized-forms-of-cnsp" id="toc-fully-oxidized-forms-of-cnsp"><span class="toc-section-number">2.5</span> Fully Oxidized forms of CNSP</a></li>
+<li><a href="electron-allocation.html#oxidation-versus-reduction" id="toc-oxidation-versus-reduction"><span class="toc-section-number">2.6</span> Oxidation versus Reduction</a></li>
+<li><a href="electron-allocation.html#a-gradient-of-oxidation-and-reduction-states-on-inorganic-and-organic-molecules" id="toc-a-gradient-of-oxidation-and-reduction-states-on-inorganic-and-organic-molecules"><span class="toc-section-number">2.7</span> A gradient of oxidation and reduction states on inorganic and organic molecules</a></li>
+<li><a href="electron-allocation.html#examples-of-electrons-stored-on-organic-molecules" id="toc-examples-of-electrons-stored-on-organic-molecules"><span class="toc-section-number">2.8</span> Examples of electrons stored on organic molecules</a></li>
+<li><a href="electron-allocation.html#summary-on-electron-allocations" id="toc-summary-on-electron-allocations"><span class="toc-section-number">2.9</span> Summary on electron allocations</a></li>
+</ul></li>
+<li><a href="functional-groups.html#functional-groups" id="toc-functional-groups"><span class="toc-section-number">3</span> Functional groups of biochemical importance</a>
+<ul>
+<li><a href="functional-groups.html#hydrocarbon-chains" id="toc-hydrocarbon-chains"><span class="toc-section-number">3.1</span> Hydrocarbon chains</a>
+<ul>
+<li><a href="functional-groups.html#alkanes" id="toc-alkanes"><span class="toc-section-number">3.1.1</span> Alkanes</a></li>
+<li><a href="functional-groups.html#unsaturated-hydrocarbons" id="toc-unsaturated-hydrocarbons"><span class="toc-section-number">3.1.2</span> Unsaturated hydrocarbons</a></li>
+<li><a href="functional-groups.html#aromatics" id="toc-aromatics"><span class="toc-section-number">3.1.3</span> Aromatic hydrocarbons</a></li>
+</ul></li>
+<li><a href="functional-groups.html#functional-groups-from-alkane-chain-oxidation" id="toc-functional-groups-from-alkane-chain-oxidation"><span class="toc-section-number">3.2</span> Functional groups from alkane chain oxidation</a>
+<ul>
+<li><a href="functional-groups.html#hydroxyl-and-sulfanyl-functional-groups" id="toc-hydroxyl-and-sulfanyl-functional-groups"><span class="toc-section-number">3.2.1</span> Hydroxyl and sulfanyl functional groups</a></li>
+<li><a href="functional-groups.html#amines" id="toc-amines"><span class="toc-section-number">3.2.2</span> Amine functional group</a></li>
+<li><a href="functional-groups.html#carbonyl-and-acyl-functional-groups" id="toc-carbonyl-and-acyl-functional-groups"><span class="toc-section-number">3.2.3</span> Carbonyl and acyl functional groups</a></li>
+<li><a href="functional-groups.html#alcohols" id="toc-alcohols"><span class="toc-section-number">3.2.4</span> Alcohol functional group</a></li>
+<li><a href="functional-groups.html#thiols" id="toc-thiols"><span class="toc-section-number">3.2.5</span> Thiol functional group</a></li>
+<li><a href="functional-groups.html#alkyl-amines" id="toc-alkyl-amines"><span class="toc-section-number">3.2.6</span> Alkyl amines</a></li>
+<li><a href="functional-groups.html#aldehyde" id="toc-aldehyde"><span class="toc-section-number">3.2.7</span> Aldehyde functional group</a></li>
+<li><a href="functional-groups.html#ketone" id="toc-ketone"><span class="toc-section-number">3.2.8</span> Ketone functional group</a></li>
+<li><a href="functional-groups.html#carboxyl-functional-group" id="toc-carboxyl-functional-group"><span class="toc-section-number">3.2.9</span> Carboxyl functional group</a></li>
+<li><a href="functional-groups.html#amides" id="toc-amides"><span class="toc-section-number">3.2.10</span> Amide functional group</a></li>
+<li><a href="functional-groups.html#methoxy" id="toc-methoxy"><span class="toc-section-number">3.2.11</span> Methoxy functional group</a></li>
+</ul></li>
+<li><a href="functional-groups.html#functional-groups-from-bonding-of-functionalized-organic-molecules" id="toc-functional-groups-from-bonding-of-functionalized-organic-molecules"><span class="toc-section-number">3.3</span> Functional groups from bonding of functionalized organic molecules</a>
+<ul>
+<li><a href="functional-groups.html#ester-functional-group" id="toc-ester-functional-group"><span class="toc-section-number">3.3.1</span> Ester functional group</a></li>
+<li><a href="functional-groups.html#thioesters" id="toc-thioesters"><span class="toc-section-number">3.3.2</span> Thioesters</a></li>
+<li><a href="functional-groups.html#phosphoesters" id="toc-phosphoesters"><span class="toc-section-number">3.3.3</span> Phosphoesters</a></li>
+<li><a href="functional-groups.html#ether" id="toc-ether"><span class="toc-section-number">3.3.4</span> Ether functional group</a></li>
+<li><a href="functional-groups.html#disulfide" id="toc-disulfide"><span class="toc-section-number">3.3.5</span> Disulfide functional groups</a></li>
+<li><a href="functional-groups.html#hemiacetal" id="toc-hemiacetal"><span class="toc-section-number">3.3.6</span> Hemiacetal and hemiketal functional groups</a></li>
+<li><a href="functional-groups.html#anyhydride" id="toc-anyhydride"><span class="toc-section-number">3.3.7</span> Anhydride and phosphoanhydride functional groups</a></li>
+</ul></li>
+<li><a href="functional-groups.html#commonmolecules" id="toc-commonmolecules"><span class="toc-section-number">3.4</span> Summary on functional groups and important radicals</a></li>
+</ul></li>
+<li><a href="molecular-families.html#molecular-families" id="toc-molecular-families"><span class="toc-section-number">4</span> Life’s secrets to make complex organic molecules</a>
+<ul>
+<li><a href="molecular-families.html#polymers-of-simple-monomers" id="toc-polymers-of-simple-monomers"><span class="toc-section-number">4.1</span> Polymers of simple monomers</a></li>
+<li><a href="molecular-families.html#carbohydrates" id="toc-carbohydrates"><span class="toc-section-number">4.2</span> Carbohydrates</a>
+<ul>
+<li><a href="molecular-families.html#Monosaccharides" id="toc-Monosaccharides"><span class="toc-section-number">4.2.1</span> Monosaccharides</a></li>
+<li><a href="molecular-families.html#dissacharides" id="toc-dissacharides"><span class="toc-section-number">4.2.2</span> Dissacharides</a></li>
+<li><a href="molecular-families.html#polyssaccharides-or-glycans" id="toc-polyssaccharides-or-glycans"><span class="toc-section-number">4.2.3</span> Polyssaccharides or glycans</a></li>
+<li><a href="molecular-families.html#other-important-carbohydrates" id="toc-other-important-carbohydrates"><span class="toc-section-number">4.2.4</span> Other important carbohydrates</a></li>
+</ul></li>
+<li><a href="molecular-families.html#proteins" id="toc-proteins"><span class="toc-section-number">4.3</span> Proteins</a></li>
+<li><a href="molecular-families.html#nucleic-acids" id="toc-nucleic-acids"><span class="toc-section-number">4.4</span> Nucleic Acids and Nucleotides</a>
+<ul>
+<li><a href="molecular-families.html#nucleotides-as-monomers-of-nucleic-acids" id="toc-nucleotides-as-monomers-of-nucleic-acids"><span class="toc-section-number">4.4.1</span> Nucleotides as monomers of nucleic acids</a></li>
+<li><a href="molecular-families.html#dna-and-rna" id="toc-dna-and-rna"><span class="toc-section-number">4.4.2</span> DNA and RNA</a></li>
+</ul></li>
+<li><a href="molecular-families.html#lipids" id="toc-lipids"><span class="toc-section-number">4.5</span> Lipids</a>
+<ul>
+<li><a href="molecular-families.html#overview-of-fatty-acid--or-acyl-based-lipids" id="toc-overview-of-fatty-acid--or-acyl-based-lipids"><span class="toc-section-number">4.5.1</span> Overview of fatty acid- or acyl-based lipids</a></li>
+<li><a href="molecular-families.html#membrane-lipids" id="toc-membrane-lipids"><span class="toc-section-number">4.5.2</span> Lipids as key to cell membrane structure and function</a></li>
+<li><a href="molecular-families.html#fatty-acids" id="toc-fatty-acids"><span class="toc-section-number">4.5.3</span> Fatty acids: lipids of their own and primary common building blocks</a></li>
+<li><a href="molecular-families.html#glycerolipids-for-energy-storage" id="toc-glycerolipids-for-energy-storage"><span class="toc-section-number">4.5.4</span> Glycerolipids for energy storage</a></li>
+<li><a href="molecular-families.html#glycerophospholipids-or-phospholipids-for-cell-membranes" id="toc-glycerophospholipids-or-phospholipids-for-cell-membranes"><span class="toc-section-number">4.5.5</span> Glycerophospholipids or phospholipids for cell membranes</a></li>
+<li><a href="molecular-families.html#sphingolipids" id="toc-sphingolipids"><span class="toc-section-number">4.5.6</span> Sphingolipids use sphingosine as backbone/fatty acid</a></li>
+<li><a href="molecular-families.html#saccharolipids-in-bacterial-membranes" id="toc-saccharolipids-in-bacterial-membranes"><span class="toc-section-number">4.5.7</span> Saccharolipids in bacterial membranes</a></li>
+<li><a href="molecular-families.html#summary-about-the-acyl-based-lipids" id="toc-summary-about-the-acyl-based-lipids"><span class="toc-section-number">4.5.8</span> Summary about the acyl-based-lipids</a></li>
+<li><a href="molecular-families.html#overview-of-the-isoprene-based-lipids" id="toc-overview-of-the-isoprene-based-lipids"><span class="toc-section-number">4.5.9</span> Overview of the isoprene-based lipids</a></li>
+<li><a href="molecular-families.html#isoprenoids" id="toc-isoprenoids"><span class="toc-section-number">4.5.10</span> Prenol or isoprenoid lipids</a></li>
+<li><a href="molecular-families.html#sterols" id="toc-sterols"><span class="toc-section-number">4.5.11</span> Sterol lipids</a></li>
+<li><a href="molecular-families.html#summary-about-the-isoprene-based-lipids" id="toc-summary-about-the-isoprene-based-lipids"><span class="toc-section-number">4.5.12</span> Summary about the isoprene-based lipids</a></li>
+<li><a href="molecular-families.html#other-notable-lipids" id="toc-other-notable-lipids"><span class="toc-section-number">4.5.13</span> Other notable lipids</a></li>
+</ul></li>
+<li><a href="molecular-families.html#phenolics" id="toc-phenolics"><span class="toc-section-number">4.6</span> Phenolics and polyphenols</a>
+<ul>
+<li><a href="molecular-families.html#the-impermeable-world-of-phenolics" id="toc-the-impermeable-world-of-phenolics"><span class="toc-section-number">4.6.1</span> The impermeable world of phenolics</a></li>
+<li><a href="molecular-families.html#unavailable-energy-onto-phenolic-molecules" id="toc-unavailable-energy-onto-phenolic-molecules"><span class="toc-section-number">4.6.2</span> Unavailable energy onto phenolic molecules</a></li>
+<li><a href="molecular-families.html#monomeric-phenols" id="toc-monomeric-phenols"><span class="toc-section-number">4.6.3</span> Monomeric phenols</a></li>
+<li><a href="molecular-families.html#lignins" id="toc-lignins"><span class="toc-section-number">4.6.4</span> Lignins</a></li>
+</ul></li>
+<li><a href="molecular-families.html#alkaloids" id="toc-alkaloids"><span class="toc-section-number">4.7</span> Alkaloids</a></li>
+<li><a href="molecular-families.html#glucosinolates" id="toc-glucosinolates"><span class="toc-section-number">4.8</span> Glucosinolates</a></li>
+</ul></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#aerobic-and-anaerobic-respiration" id="toc-aerobic-and-anaerobic-respiration"><span class="toc-section-number">5</span> Energy generation and aerobic respiration</a>
+<ul>
+<li><a href="aerobic-and-anaerobic-respiration.html#generating-energy-transfer-of-electrons" id="toc-generating-energy-transfer-of-electrons"><span class="toc-section-number">5.1</span> Generating energy: transfer of electrons</a>
+<ul>
+<li><a href="aerobic-and-anaerobic-respiration.html#activation-energy-barrier" id="toc-activation-energy-barrier"><span class="toc-section-number">5.1.1</span> Activation energy barrier</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#methane-combustion" id="toc-methane-combustion"><span class="toc-section-number">5.1.2</span> Electron transfer during methane combustion</a></li>
+</ul></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#ATP" id="toc-ATP"><span class="toc-section-number">5.2</span> Generating energy without combustion: ATP or the energy currency of the cell</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#the-atp-manufacture-substrate-level-versus-oxidative-phosphorylation" id="toc-the-atp-manufacture-substrate-level-versus-oxidative-phosphorylation"><span class="toc-section-number">5.3</span> The ATP manufacture: substrate-level versus oxidative phosphorylation</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#respiration" id="toc-respiration"><span class="toc-section-number">5.4</span> Respiration: providing most ATP thanks to exogenous electron acceptors and oxidative phosphorylation</a>
+<ul>
+<li><a href="aerobic-and-anaerobic-respiration.html#oxidative-phosphorylation-through-molecular-mechanical-forces" id="toc-oxidative-phosphorylation-through-molecular-mechanical-forces"><span class="toc-section-number">5.4.1</span> Oxidative phosphorylation through molecular mechanical forces</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#creating-a-proton-gradient-as-a-source-of-proton-flow" id="toc-creating-a-proton-gradient-as-a-source-of-proton-flow"><span class="toc-section-number">5.4.2</span> Creating a proton gradient as a source of proton flow</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#a-compartment-to-accumulate-protons" id="toc-a-compartment-to-accumulate-protons"><span class="toc-section-number">5.4.3</span> A compartment to accumulate protons</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#proton-pumping" id="toc-proton-pumping"><span class="toc-section-number">5.4.4</span> A supply of protons for the intermembrane space: proton pumps</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#NADFAD" id="toc-NADFAD"><span class="toc-section-number">5.4.5</span> Electron transfer molecules that power the proton pumps</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#transfer-of-electrons-from-the-organic-carbon-to-an-electron-acceptor" id="toc-transfer-of-electrons-from-the-organic-carbon-to-an-electron-acceptor"><span class="toc-section-number">5.4.6</span> Transfer of electrons from the Organic Carbon to an electron acceptor</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#oxidativephosphorylation" id="toc-oxidativephosphorylation"><span class="toc-section-number">5.4.7</span> Oxygen reduction and oxidative phosphorylation</a></li>
+</ul></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#respiration-electron-flow-schemes" id="toc-respiration-electron-flow-schemes"><span class="toc-section-number">5.5</span> Respiration electron flow schemes</a>
+<ul>
+<li><a href="aerobic-and-anaerobic-respiration.html#organotrophic-aerobic-respiration" id="toc-organotrophic-aerobic-respiration"><span class="toc-section-number">5.5.1</span> Aerobic respiration schemes for organotrophs</a></li>
+</ul></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#glycolysis" id="toc-glycolysis"><span class="toc-section-number">5.6</span> Glycolysis: an ancient way to produce ATP from glucose by substrate-level phosphorylation</a>
+<ul>
+<li><a href="aerobic-and-anaerobic-respiration.html#substrate-level-phosphorylation" id="toc-substrate-level-phosphorylation"><span class="toc-section-number">5.6.1</span> Substrate-level phosphorylation</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#energy-investment-and-energy-pay-off-phases-of-glycolysis" id="toc-energy-investment-and-energy-pay-off-phases-of-glycolysis"><span class="toc-section-number">5.6.2</span> Energy investment and energy pay off phases of glycolysis</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#electrons-fate-and-electron-transfer-molecules" id="toc-electrons-fate-and-electron-transfer-molecules"><span class="toc-section-number">5.6.3</span> Electrons fate and electron transfer molecules</a></li>
+</ul></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#the-citric-acid-or-krebs-cycle-as-an-efficient-way-to-transfer-high-energy-electrons" id="toc-the-citric-acid-or-krebs-cycle-as-an-efficient-way-to-transfer-high-energy-electrons"><span class="toc-section-number">5.7</span> The citric acid or Krebs cycle as an efficient way to transfer high energy electrons</a>
+<ul>
+<li><a href="aerobic-and-anaerobic-respiration.html#oxidation-of-pyruvate-as-a-preliminary-step" id="toc-oxidation-of-pyruvate-as-a-preliminary-step"><span class="toc-section-number">5.7.1</span> Oxidation of pyruvate as a preliminary step</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#transfer-of-all-electrons-to-nad-and-fad" id="toc-transfer-of-all-electrons-to-nad-and-fad"><span class="toc-section-number">5.7.2</span> Transfer of all electrons to NAD<sup>+</sup> and FAD</a></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#summary-of-respiration" id="toc-summary-of-respiration"><span class="toc-section-number">5.7.3</span> Summary of respiration</a></li>
+</ul></li>
+<li><a href="aerobic-and-anaerobic-respiration.html#fermentation-or-staying-alive-without-exogenous-electron-acceptor" id="toc-fermentation-or-staying-alive-without-exogenous-electron-acceptor"><span class="toc-section-number">5.8</span> Fermentation or staying alive without exogenous electron acceptor</a></li>
+</ul></li>
+<li><a href="photosynthesis.html#photosynthesis" id="toc-photosynthesis"><span class="toc-section-number">6</span> Capturing and storing energy: photosynthesis</a>
+<ul>
+<li><a href="photosynthesis.html#requirements-to-store-energy-on-organic-molecules" id="toc-requirements-to-store-energy-on-organic-molecules"><span class="toc-section-number">6.1</span> Requirements to store energy on organic molecules</a></li>
+<li><a href="photosynthesis.html#no-need-to-reinvent-the-wheel-for-the-production-of-atp-and-the-transfer-of-electrons" id="toc-no-need-to-reinvent-the-wheel-for-the-production-of-atp-and-the-transfer-of-electrons"><span class="toc-section-number">6.2</span> No need to reinvent the wheel for the production of ATP and the transfer of electrons</a></li>
+</ul></li>
+<li><a href="anabolism.html#anabolism" id="toc-anabolism"><span class="toc-section-number">7</span> Anabolism and the sources of nutrients for organisms</a>
+<ul>
+<li><a href="anabolism.html#requirements-to-store-energy-on-organic-molecules-1" id="toc-requirements-to-store-energy-on-organic-molecules-1"><span class="toc-section-number">7.1</span> Requirements to store energy on organic molecules</a></li>
+<li><a href="anabolism.html#no-need-to-reinvent-the-wheel-for-the-production-of-atp-and-the-transfer-of-electrons-1" id="toc-no-need-to-reinvent-the-wheel-for-the-production-of-atp-and-the-transfer-of-electrons-1"><span class="toc-section-number">7.2</span> No need to reinvent the wheel for the production of ATP and the transfer of electrons</a></li>
+</ul></li>
+<li><a href="redoxwetland.html#redoxwetland" id="toc-redoxwetland"><span class="toc-section-number">8</span> The classical collection of electron donors and acceptors</a>
+<ul>
+<li><a href="redoxwetland.html#the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils" id="toc-the-theoretical-vertical-sequence-of-respiratory-processes-in-wetland-soils"><span class="toc-section-number">8.1</span> The theoretical vertical sequence of respiratory processes in wetland soils</a></li>
+<li><a href="redoxwetland.html#aerobiczone" id="toc-aerobiczone"><span class="toc-section-number">8.2</span> An aerobic layer near the soil-water interface</a>
+<ul>
+<li><a href="redoxwetland.html#oxygen-supply-and-demand-at-the-sediment-water-interface" id="toc-oxygen-supply-and-demand-at-the-sediment-water-interface"><span class="toc-section-number">8.2.1</span> Oxygen supply and demand at the sediment water interface</a></li>
+</ul></li>
+<li><a href="redoxwetland.html#respiration-in-the-anaerobic-zone-of-the-soil" id="toc-respiration-in-the-anaerobic-zone-of-the-soil"><span class="toc-section-number">8.3</span> Respiration in the anaerobic zone of the soil</a></li>
+<li><a href="redoxwetland.html#denit" id="toc-denit"><span class="toc-section-number">8.4</span> A denitrification layer below the aerobic layer</a></li>
+<li><a href="redoxwetland.html#manganese-and-iron-oxides-reductions" id="toc-manganese-and-iron-oxides-reductions"><span class="toc-section-number">8.5</span> Manganese and Iron oxides reductions</a></li>
+<li><a href="redoxwetland.html#sulfate-reduction" id="toc-sulfate-reduction"><span class="toc-section-number">8.6</span> Sulfate reduction</a></li>
+<li><a href="redoxwetland.html#the-methanogenesis-oddity" id="toc-the-methanogenesis-oddity"><span class="toc-section-number">8.7</span> The methanogenesis oddity</a></li>
+<li><a href="redoxwetland.html#fermentation-in-wetland-and-stream-sediment" id="toc-fermentation-in-wetland-and-stream-sediment"><span class="toc-section-number">8.8</span> Fermentation in wetland and stream sediment</a></li>
+<li><a href="redoxwetland.html#first-summary-on-the-electron-acceptor-chain-in-wetland-soils" id="toc-first-summary-on-the-electron-acceptor-chain-in-wetland-soils"><span class="toc-section-number">8.9</span> First summary on the electron acceptor chain in wetland soils</a></li>
+<li><a href="redoxwetland.html#supply-and-demand-of-electron-acceptors-and-of-the-byproducts-of-organic-matter-oxidation" id="toc-supply-and-demand-of-electron-acceptors-and-of-the-byproducts-of-organic-matter-oxidation"><span class="toc-section-number">8.10</span> Supply and demand of electron acceptors and of the byproducts of Organic Matter oxidation</a>
+<ul>
+<li><a href="redoxwetland.html#demands-drive-downward-fluxes-of-dioxygen-nitrate-and-sulfate" id="toc-demands-drive-downward-fluxes-of-dioxygen-nitrate-and-sulfate"><span class="toc-section-number">8.10.1</span> Demands drive downward fluxes of dioxygen, nitrate and sulfate</a></li>
+<li><a href="redoxwetland.html#supply-of-byproducts-of-organic-matter-oxidation" id="toc-supply-of-byproducts-of-organic-matter-oxidation"><span class="toc-section-number">8.10.2</span> Supply of byproducts of organic matter oxidation</a></li>
+<li><a href="redoxwetland.html#nitrification" id="toc-nitrification"><span class="toc-section-number">8.10.3</span> Nitrification</a></li>
+<li><a href="redoxwetland.html#gas-bubble-formation" id="toc-gas-bubble-formation"><span class="toc-section-number">8.10.4</span> Gas bubble formation</a></li>
+<li><a href="redoxwetland.html#oxidation-of-upward-moving-reduced-sulfur" id="toc-oxidation-of-upward-moving-reduced-sulfur"><span class="toc-section-number">8.10.5</span> Oxidation of upward moving reduced sulfur</a></li>
+<li><a href="redoxwetland.html#oxidation-of-upward-moving-mn2-and-fe2" id="toc-oxidation-of-upward-moving-mn2-and-fe2"><span class="toc-section-number">8.10.6</span> Oxidation of upward moving <span class="math inline">\(Mn^{2+}\)</span> and <span class="math inline">\(Fe^{2+}\)</span></a></li>
+<li><a href="redoxwetland.html#moving-of-dissolved-organic-carbon" id="toc-moving-of-dissolved-organic-carbon"><span class="toc-section-number">8.10.7</span> Moving of Dissolved Organic Carbon</a></li>
+</ul></li>
+</ul></li>
+<li><a href="unclassicalredox.html#unclassicalredox" id="toc-unclassicalredox"><span class="toc-section-number">9</span> The not so classical electron donors and acceptors</a>
+<ul>
+<li><a href="unclassicalredox.html#dnra" id="toc-dnra"><span class="toc-section-number">9.1</span> DNRA</a></li>
+<li><a href="unclassicalredox.html#anammox" id="toc-anammox"><span class="toc-section-number">9.2</span> Anammox</a></li>
+<li><a href="unclassicalredox.html#nitrification-denitrification" id="toc-nitrification-denitrification"><span class="toc-section-number">9.3</span> Nitrification-denitrification</a></li>
+<li><a href="unclassicalredox.html#chemilithotrophic-denitrification" id="toc-chemilithotrophic-denitrification"><span class="toc-section-number">9.4</span> Chemilithotrophic denitrification</a></li>
+</ul></li>
+<li><a href="conc-levels.html#conc-levels" id="toc-conc-levels"><span class="toc-section-number">10</span> Nutrient concentration levels in rural and suburban environments</a>
+<ul>
+<li><a href="conc-levels.html#level-of-dissolved-oxygen-concentrations-in-open-waters" id="toc-level-of-dissolved-oxygen-concentrations-in-open-waters"><span class="toc-section-number">10.1</span> Level of dissolved oxygen concentrations in open waters</a>
+<ul>
+<li><a href="conc-levels.html#the-supply-and-demand-of-o2-in-water" id="toc-the-supply-and-demand-of-o2-in-water"><span class="toc-section-number">10.1.1</span> The supply and demand of O<sub>2</sub> in water</a></li>
+</ul></li>
+<li><a href="conc-levels.html#level-of-nutrient-concentrations-in-natural-undisturbed-streams" id="toc-level-of-nutrient-concentrations-in-natural-undisturbed-streams"><span class="toc-section-number">10.2</span> Level of nutrient concentrations in natural undisturbed streams</a></li>
+</ul></li>
+<li><a href="acidbase.html#acidbase" id="toc-acidbase"><span class="toc-section-number">11</span> Applied thermochemistry: acid-base equilibria</a>
+<ul>
+<li><a href="acidbase.html#the-brønstedlowry-acidbase-theory" id="toc-the-brønstedlowry-acidbase-theory"><span class="toc-section-number">11.1</span> The Brønsted–Lowry acid–base theory</a></li>
+<li><a href="acidbase.html#acid-base-equilibrium-parameters" id="toc-acid-base-equilibrium-parameters"><span class="toc-section-number">11.2</span> Acid-base equilibrium parameters</a>
+<ul>
+<li><a href="acidbase.html#ka" id="toc-ka"><span class="toc-section-number">11.2.1</span> K<sub>A</sub></a></li>
+<li><a href="acidbase.html#pka" id="toc-pka"><span class="toc-section-number">11.2.2</span> pK<sub>A</sub></a></li>
+</ul></li>
+<li><a href="acidbase.html#self-ionization-of-water" id="toc-self-ionization-of-water"><span class="toc-section-number">11.3</span> Self-ionization of water</a></li>
+<li><a href="acidbase.html#strong-vs.-weak-acids" id="toc-strong-vs.-weak-acids"><span class="toc-section-number">11.4</span> Strong vs. weak acids</a></li>
+<li><a href="acidbase.html#mono--and-polyprotic-acids-mole-fractions" id="toc-mono--and-polyprotic-acids-mole-fractions"><span class="toc-section-number">11.5</span> Mono- and polyprotic acids mole fractions</a>
+<ul>
+<li><a href="acidbase.html#triprotic-acid-example" id="toc-triprotic-acid-example"><span class="toc-section-number">11.5.1</span> Triprotic acid example</a></li>
+<li><a href="acidbase.html#generalized-polyprotic-acid-mole-fractions" id="toc-generalized-polyprotic-acid-mole-fractions"><span class="toc-section-number">11.5.2</span> Generalized polyprotic acid mole fractions</a></li>
+<li><a href="acidbase.html#graphical-illustration-of-mole-fractions-of-ecologically-relevant-weak-acids" id="toc-graphical-illustration-of-mole-fractions-of-ecologically-relevant-weak-acids"><span class="toc-section-number">11.5.3</span> Graphical illustration of mole fractions of ecologically relevant weak acids</a></li>
+</ul></li>
+<li><a href="acidbase.html#equilibrium-calculations-using-a-graphical-method" id="toc-equilibrium-calculations-using-a-graphical-method"><span class="toc-section-number">11.6</span> Equilibrium calculations using a graphical method</a>
+<ul>
+<li><a href="acidbase.html#logarithm-of-concentrations-as-a-function-of-ph" id="toc-logarithm-of-concentrations-as-a-function-of-ph"><span class="toc-section-number">11.6.1</span> Logarithm of concentrations as a function of pH</a></li>
+<li><a href="acidbase.html#logConcMonoAcid" id="toc-logConcMonoAcid"><span class="toc-section-number">11.6.2</span> Graphical approach to calculate pH for a monoprotic acid</a></li>
+<li><a href="acidbase.html#logConcTriAcid" id="toc-logConcTriAcid"><span class="toc-section-number">11.6.3</span> Graphical approach to calculate pH for a triprotic acid</a></li>
+<li><a href="acidbase.html#logConcCO3Acid" id="toc-logConcCO3Acid"><span class="toc-section-number">11.6.4</span> Dissolved CO<sub>2</sub> and carbonates in a closed system</a></li>
+</ul></li>
+</ul></li>
+<li><a href="redox.html#redox" id="toc-redox"><span class="toc-section-number">12</span> Applied thermochemistry: Oxido-Reduction equilibria</a>
+<ul>
+<li><a href="redox.html#denit-redox" id="toc-denit-redox"><span class="toc-section-number">12.0.1</span> The transfer of electrons in organotrophic denitrification</a></li>
+<li><a href="redox.html#some-outside-the-box-redox-reactions" id="toc-some-outside-the-box-redox-reactions"><span class="toc-section-number">12.0.2</span> Some outside the box redox reactions</a></li>
+</ul></li>
+<li><a href="gassolubilitychapter.html#gassolubilitychapter" id="toc-gassolubilitychapter"><span class="toc-section-number">13</span> Dissolved gases in water</a>
+<ul>
+<li><a href="gassolubilitychapter.html#henrys-law-and-the-dissolution-of-gases-in-water" id="toc-henrys-law-and-the-dissolution-of-gases-in-water"><span class="toc-section-number">13.1</span> Henry’s law and the dissolution of gases in water</a>
+<ul>
+<li><a href="gassolubilitychapter.html#equivalence-between-gas-partial-pressures-and-dissolved-concentration" id="toc-equivalence-between-gas-partial-pressures-and-dissolved-concentration"><span class="toc-section-number">13.1.1</span> Equivalence between gas partial pressures and dissolved concentration</a></li>
+<li><a href="gassolubilitychapter.html#many-different-units-to-express-gas-solubility" id="toc-many-different-units-to-express-gas-solubility"><span class="toc-section-number">13.1.2</span> Many different units to express gas solubility</a></li>
+</ul></li>
+<li><a href="gassolubilitychapter.html#solubility-of-gases-as-a-function-of-temperature-sol-f-temp" id="toc-solubility-of-gases-as-a-function-of-temperature-sol-f-temp"><span class="toc-section-number">13.2</span> Solubility of gases as a function of temperature {#sol-f-temp)}</a></li>
+<li><a href="gassolubilitychapter.html#actual-solubility-values-of-water-in-equilibrium-with-the-atmosphere" id="toc-actual-solubility-values-of-water-in-equilibrium-with-the-atmosphere"><span class="toc-section-number">13.3</span> Actual solubility values of water in equilibrium with the atmosphere</a></li>
+<li><a href="gassolubilitychapter.html#solubility-of-gases-as-a-function-of-pressure" id="toc-solubility-of-gases-as-a-function-of-pressure"><span class="toc-section-number">13.4</span> Solubility of gases as a function of pressure</a>
+<ul>
+<li><a href="gassolubilitychapter.html#daltons-law-of-partial-pressures" id="toc-daltons-law-of-partial-pressures"><span class="toc-section-number">13.4.1</span> Dalton’s law of partial pressures</a></li>
+</ul></li>
+</ul></li>
+<li><a href="SedWatInterface.html#SedWatInterface" id="toc-SedWatInterface"><span class="toc-section-number">14</span> Respiration kinetics at the sediment-water interface</a></li>
+<li><a href="deriving-of-o_2-microprofile-equation-in-sediment-30-points.html#deriving-of-o_2-microprofile-equation-in-sediment-30-points" id="toc-deriving-of-o_2-microprofile-equation-in-sediment-30-points"><span class="toc-section-number">15</span> Deriving of <span class="math inline">\(O_2\)</span> microprofile equation in sediment (30 points)</a></li>
+<li><a href="equation-of-the-downward-flux-at-the-sediment-water-interface-10-points.html#equation-of-the-downward-flux-at-the-sediment-water-interface-10-points" id="toc-equation-of-the-downward-flux-at-the-sediment-water-interface-10-points"><span class="toc-section-number">16</span> Equation of the downward flux at the sediment-water interface (10 points)</a></li>
+<li><a href="references.html#references" id="toc-references"><span class="toc-section-number">17</span> References</a></li>
+<li><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#introduction-to-hydrographs-chemographs-concentrations-and-loads" id="toc-introduction-to-hydrographs-chemographs-concentrations-and-loads"><span class="toc-section-number">18</span> Introduction to hydrographs, chemographs, concentrations, and loads</a>
+<ul>
+<li><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#hydrographs-as-the-basic-hydrologist-tool" id="toc-hydrographs-as-the-basic-hydrologist-tool"><span class="toc-section-number">18.1</span> Hydrographs as the basic hydrologist tool</a>
+<ul>
+<li><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#characteristics-of-a-hydrograph" id="toc-characteristics-of-a-hydrograph"><span class="toc-section-number">18.1.1</span> Characteristics of a hydrograph</a></li>
+<li><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#actual-hydrograph-over-an-entire-year" id="toc-actual-hydrograph-over-an-entire-year"><span class="toc-section-number">18.1.2</span> Actual hydrograph over an entire year</a></li>
+<li><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#calculating-water-fluxes-or-cumulative-flow-volumes" id="toc-calculating-water-fluxes-or-cumulative-flow-volumes"><span class="toc-section-number">18.1.3</span> Calculating water fluxes or cumulative flow volumes</a></li>
+<li><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#evaluating-the-importance-of-rare-high-flow-events-flow-duration-curves" id="toc-evaluating-the-importance-of-rare-high-flow-events-flow-duration-curves"><span class="toc-section-number">18.1.4</span> Evaluating the importance of rare high flow events: flow duration curves</a></li>
+<li><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#flow-duration-curves-as-flow-exceedance-curves" id="toc-flow-duration-curves-as-flow-exceedance-curves"><span class="toc-section-number">18.1.5</span> Flow duration curves as flow exceedance curves</a></li>
+</ul></li>
+<li><a href="introduction-to-hydrographs-chemographs-concentrations-and-loads.html#chemographs-and-concentration-levels" id="toc-chemographs-and-concentration-levels"><span class="toc-section-number">18.2</span> Chemographs and concentration levels</a></li>
+</ul></li>
+<li><a href="glossary.html#glossary" id="toc-glossary"><span class="toc-section-number">19</span> Glossary</a>
+<ul>
+<li><a href="glossary.html#a" id="toc-a"><span class="toc-section-number">19.1</span> A</a>
+<ul>
+<li><a href="glossary.html#aerobic-respiration" id="toc-aerobic-respiration"><span class="toc-section-number">19.1.1</span> Aerobic respiration</a></li>
+<li><a href="glossary.html#anaerobic-respiration" id="toc-anaerobic-respiration"><span class="toc-section-number">19.1.2</span> Anaerobic respiration</a></li>
+<li><a href="glossary.html#ammonia" id="toc-ammonia"><span class="toc-section-number">19.1.3</span> Ammonia</a></li>
+<li><a href="glossary.html#ammonium" id="toc-ammonium"><span class="toc-section-number">19.1.4</span> Ammonium</a></li>
+<li><a href="glossary.html#ammonium-nitrate" id="toc-ammonium-nitrate"><span class="toc-section-number">19.1.5</span> Ammonium nitrate</a></li>
+<li><a href="glossary.html#anoxic-waters" id="toc-anoxic-waters"><span class="toc-section-number">19.1.6</span> Anoxic waters</a></li>
+</ul></li>
+<li><a href="glossary.html#b" id="toc-b"><span class="toc-section-number">19.2</span> B</a>
+<ul>
+<li><a href="glossary.html#benthic" id="toc-benthic"><span class="toc-section-number">19.2.1</span> Benthic</a></li>
+</ul></li>
+<li><a href="glossary.html#c" id="toc-c"><span class="toc-section-number">19.3</span> C</a>
+<ul>
+<li><a href="glossary.html#carbon-dioxide" id="toc-carbon-dioxide"><span class="toc-section-number">19.3.1</span> Carbon dioxide</a></li>
+<li><a href="glossary.html#carbonates" id="toc-carbonates"><span class="toc-section-number">19.3.2</span> Carbonates</a></li>
+<li><a href="glossary.html#catabolism" id="toc-catabolism"><span class="toc-section-number">19.3.3</span> Catabolism</a></li>
+</ul></li>
+<li><a href="glossary.html#d" id="toc-d"><span class="toc-section-number">19.4</span> D</a>
+<ul>
+<li><a href="glossary.html#denitrification" id="toc-denitrification"><span class="toc-section-number">19.4.1</span> Denitrification</a></li>
+<li><a href="glossary.html#dihydrogen-sulfide" id="toc-dihydrogen-sulfide"><span class="toc-section-number">19.4.2</span> Dihydrogen sulfide</a></li>
+</ul></li>
+<li><a href="glossary.html#e" id="toc-e"><span class="toc-section-number">19.5</span> E</a>
+<ul>
+<li><a href="glossary.html#EDG-EWG" id="toc-EDG-EWG"><span class="toc-section-number">19.5.1</span> Electron Donating Group (EDG) and Electron Withdrawing Group (EWG)</a></li>
+<li><a href="glossary.html#eutrophication" id="toc-eutrophication"><span class="toc-section-number">19.5.2</span> Eutrophication</a></li>
+</ul></li>
+<li><a href="glossary.html#f" id="toc-f"><span class="toc-section-number">19.6</span> F</a>
+<ul>
+<li><a href="glossary.html#fischer-projection" id="toc-fischer-projection"><span class="toc-section-number">19.6.1</span> Fischer projection</a></li>
+</ul></li>
+<li><a href="glossary.html#g" id="toc-g"><span class="toc-section-number">19.7</span> G</a>
+<ul>
+<li><a href="glossary.html#greenhouse-gases-ghg" id="toc-greenhouse-gases-ghg"><span class="toc-section-number">19.7.1</span> Greenhouse gases <em>(GHG)</em></a></li>
+</ul></li>
+<li><a href="glossary.html#h" id="toc-h"><span class="toc-section-number">19.8</span> H</a>
+<ul>
+<li><a href="glossary.html#haber-bosch-process" id="toc-haber-bosch-process"><span class="toc-section-number">19.8.1</span> Haber-Bosch process</a></li>
+<li><a href="glossary.html#haworth-projection" id="toc-haworth-projection"><span class="toc-section-number">19.8.2</span> Haworth Projection</a></li>
+<li><a href="glossary.html#H2S" id="toc-H2S"><span class="toc-section-number">19.8.3</span> Hydrogen Sulfide</a></li>
+</ul></li>
+<li><a href="glossary.html#l" id="toc-l"><span class="toc-section-number">19.9</span> L</a>
+<ul>
+<li><a href="glossary.html#lithotrophs" id="toc-lithotrophs"><span class="toc-section-number">19.9.1</span> Lithotrophs</a></li>
+<li><a href="glossary.html#limiting-factor" id="toc-limiting-factor"><span class="toc-section-number">19.9.2</span> Limiting factor</a></li>
+</ul></li>
+<li><a href="glossary.html#m" id="toc-m"><span class="toc-section-number">19.10</span> M</a>
+<ul>
+<li><a href="glossary.html#methane" id="toc-methane"><span class="toc-section-number">19.10.1</span> Methane</a></li>
+<li><a href="glossary.html#mineralization" id="toc-mineralization"><span class="toc-section-number">19.10.2</span> Mineralization</a></li>
+</ul></li>
+<li><a href="glossary.html#n" id="toc-n"><span class="toc-section-number">19.11</span> N</a>
+<ul>
+<li><a href="glossary.html#nitrate" id="toc-nitrate"><span class="toc-section-number">19.11.1</span> Nitrate</a></li>
+<li><a href="glossary.html#nitrous-oxide" id="toc-nitrous-oxide"><span class="toc-section-number">19.11.2</span> Nitrous Oxide</a></li>
+</ul></li>
+<li><a href="glossary.html#o" id="toc-o"><span class="toc-section-number">19.12</span> O</a>
+<ul>
+<li><a href="glossary.html#oligotrophication" id="toc-oligotrophication"><span class="toc-section-number">19.12.1</span> Oligotrophication</a></li>
+<li><a href="glossary.html#oxidation" id="toc-oxidation"><span class="toc-section-number">19.12.2</span> Oxidation</a></li>
+<li><a href="glossary.html#oxidation-state" id="toc-oxidation-state"><span class="toc-section-number">19.12.3</span> Oxidation state</a></li>
+</ul></li>
+<li><a href="glossary.html#p" id="toc-p"><span class="toc-section-number">19.13</span> P</a>
+<ul>
+<li><a href="glossary.html#phosphate" id="toc-phosphate"><span class="toc-section-number">19.13.1</span> Phosphate</a></li>
+</ul></li>
+<li><a href="glossary.html#r" id="toc-r"><span class="toc-section-number">19.14</span> R</a>
+<ul>
+<li><a href="glossary.html#reactive-nitrogen" id="toc-reactive-nitrogen"><span class="toc-section-number">19.14.1</span> Reactive nitrogen</a></li>
+<li><a href="glossary.html#redox-glossary" id="toc-redox-glossary"><span class="toc-section-number">19.14.2</span> Redox</a></li>
+<li><a href="glossary.html#redox-couple" id="toc-redox-couple"><span class="toc-section-number">19.14.3</span> Redox couple</a></li>
+<li><a href="glossary.html#half-reactions-glossary" id="toc-half-reactions-glossary"><span class="toc-section-number">19.14.4</span> Redox half-reactions</a></li>
+<li><a href="glossary.html#reduction" id="toc-reduction"><span class="toc-section-number">19.14.5</span> Reduction</a></li>
+</ul></li>
+<li><a href="glossary.html#s" id="toc-s"><span class="toc-section-number">19.15</span> S</a>
+<ul>
+<li><a href="glossary.html#skeletal-formula" id="toc-skeletal-formula"><span class="toc-section-number">19.15.1</span> Skeletal formula</a></li>
+<li><a href="glossary.html#structural-formula" id="toc-structural-formula"><span class="toc-section-number">19.15.2</span> Structural formula</a></li>
+<li><a href="glossary.html#sulfate" id="toc-sulfate"><span class="toc-section-number">19.15.3</span> Sulfate</a></li>
+</ul></li>
+<li><a href="glossary.html#t" id="toc-t"><span class="toc-section-number">19.16</span> T</a>
+<ul>
+<li><a href="glossary.html#trophs" id="toc-trophs"><span class="toc-section-number">19.16.1</span> Trophic names</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#appendix-appendix" id="toc-appendix-appendix">(APPENDIX) Appendix</a>
+<ul>
+<li><a href="glossary.html#quick-guide-on-atom-orbitals-and-lewis-dot-structure" id="toc-quick-guide-on-atom-orbitals-and-lewis-dot-structure"><span class="toc-section-number">19.17</span> Quick guide on atom orbitals and Lewis dot structure</a>
+<ul>
+<li><a href="glossary.html#orbitals" id="toc-orbitals"><span class="toc-section-number">19.17.1</span> Electron orbitals</a></li>
+</ul></li>
+<li><a href="glossary.html#orbitals-hybridization" id="toc-orbitals-hybridization"><span class="toc-section-number">19.18</span> Orbitals hybridization</a></li>
+<li><a href="glossary.html#sigma-pi-bonds" id="toc-sigma-pi-bonds"><span class="toc-section-number">19.19</span> σ and π bonds</a></li>
+<li><a href="glossary.html#sp3" id="toc-sp3"><span class="toc-section-number">19.20</span> <em>sp<sup>3</sup></em> hybridization examples</a>
+<ul>
+<li><a href="glossary.html#methane-1" id="toc-methane-1"><span class="toc-section-number">19.20.1</span> Methane</a></li>
+<li><a href="glossary.html#the-water-molecule" id="toc-the-water-molecule"><span class="toc-section-number">19.20.2</span> The water molecule</a></li>
+<li><a href="glossary.html#ammonia-and-ammonium" id="toc-ammonia-and-ammonium"><span class="toc-section-number">19.20.3</span> Ammonia and Ammonium</a></li>
+<li><a href="glossary.html#sulfate-1" id="toc-sulfate-1"><span class="toc-section-number">19.20.4</span> Sulfate</a></li>
+<li><a href="glossary.html#PO4" id="toc-PO4"><span class="toc-section-number">19.20.5</span> Phosphate</a></li>
+</ul></li>
+<li><a href="glossary.html#sp2-hybridization-examples" id="toc-sp2-hybridization-examples"><span class="toc-section-number">19.21</span> <em>sp<sup>2</sup></em> hybridization examples</a>
+<ul>
+<li><a href="glossary.html#nitrate-1" id="toc-nitrate-1"><span class="toc-section-number">19.21.1</span> Nitrate</a></li>
+<li><a href="glossary.html#nitrite" id="toc-nitrite"><span class="toc-section-number">19.21.2</span> Nitrite</a></li>
+</ul></li>
+<li><a href="glossary.html#sp-hybridization-examples" id="toc-sp-hybridization-examples"><span class="toc-section-number">19.22</span> <em>sp</em> hybridization examples</a>
+<ul>
+<li><a href="glossary.html#carbon-dioxide-1" id="toc-carbon-dioxide-1"><span class="toc-section-number">19.22.1</span> Carbon dioxide</a></li>
+<li><a href="glossary.html#dinitrogen" id="toc-dinitrogen"><span class="toc-section-number">19.22.2</span> Dinitrogen</a></li>
+</ul></li>
+<li><a href="glossary.html#example-of-no-hybridization" id="toc-example-of-no-hybridization"><span class="toc-section-number">19.23</span> Example of no hybridization</a>
+<ul>
+<li><a href="glossary.html#dihydrogen-sulfide-1" id="toc-dihydrogen-sulfide-1"><span class="toc-section-number">19.23.1</span> Dihydrogen sulfide</a></li>
+</ul></li>
+<li><a href="glossary.html#lewis-dot-structures" id="toc-lewis-dot-structures"><span class="toc-section-number">19.24</span> Lewis dot structures</a>
+<ul>
+<li><a href="glossary.html#valence-electrons-and-octet-rule" id="toc-valence-electrons-and-octet-rule"><span class="toc-section-number">19.24.1</span> Valence electrons and octet rule</a></li>
+<li><a href="glossary.html#building-lewis-dot-structures" id="toc-building-lewis-dot-structures"><span class="toc-section-number">19.24.2</span> Building Lewis dot structures</a></li>
+</ul></li>
+<li><a href="glossary.html#molecular-orbitals" id="toc-molecular-orbitals"><span class="toc-section-number">19.25</span> Molecular orbitals</a>
+<ul>
+<li><a href="glossary.html#binding-and-antibinding-regions" id="toc-binding-and-antibinding-regions"><span class="toc-section-number">19.25.1</span> Binding and antibinding regions</a></li>
+<li><a href="glossary.html#bonding-and-antibonding-orbitals" id="toc-bonding-and-antibonding-orbitals"><span class="toc-section-number">19.25.2</span> Bonding and antibonding orbitals</a></li>
+<li><a href="glossary.html#molecular-orbital-diagrams" id="toc-molecular-orbital-diagrams"><span class="toc-section-number">19.25.3</span> Molecular orbital diagrams</a></li>
+</ul></li>
+<li><a href="glossary.html#exercises-1" id="toc-exercises-1"><span class="toc-section-number">19.26</span> Exercises</a></li>
+</ul></li>
+<li><a href="appendix-b-equilibrium-constants-at-25c.html#appendix-b-equilibrium-constants-at-25c" id="toc-appendix-b-equilibrium-constants-at-25c"><span class="toc-section-number">20</span> Appendix B: Equilibrium Constants at 25°C</a>
+<ul>
+<li><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-in-the-h2o-h2-o2-system" id="toc-equilibrium-reactions-in-the-h2o-h2-o2-system"><span class="toc-section-number">20.1</span> Equilibrium reactions in the H<sub>2</sub>O-H<sub>2</sub>-O<sub>2</sub> system</a></li>
+<li><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-in-the-co2-h2o-system" id="toc-equilibrium-reactions-in-the-co2-h2o-system"><span class="toc-section-number">20.2</span> Equilibrium reactions in the CO<sub>2</sub>-H<sub>2</sub>O system</a></li>
+<li><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-for-nitrogen-species" id="toc-equilibrium-reactions-for-nitrogen-species"><span class="toc-section-number">20.3</span> Equilibrium reactions for nitrogen species</a></li>
+<li><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-for-phosphorus-species" id="toc-equilibrium-reactions-for-phosphorus-species"><span class="toc-section-number">20.4</span> Equilibrium reactions for phosphorus species</a></li>
+<li><a href="appendix-b-equilibrium-constants-at-25c.html#equilibrium-reactions-for-sulfur-species" id="toc-equilibrium-reactions-for-sulfur-species"><span class="toc-section-number">20.5</span> Equilibrium reactions for sulfur species</a></li>
+</ul></li>
+<li><a href="references-1.html#references-1" id="toc-references-1">References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fundamental Hydro-Biogeochemistry for Ecological Engineering and Environmental Sciences</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="deriving-of-o_2-microprofile-equation-in-sediment-30-points" class="section level1 hasAnchor" number="15">
+<h1><span class="header-section-number">Chapter 15</span> Deriving of <span class="math inline">\(O_2\)</span> microprofile equation in sediment (30 points)<a href="deriving-of-o_2-microprofile-equation-in-sediment-30-points.html#deriving-of-o_2-microprofile-equation-in-sediment-30-points" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The hypothesis given is that the volumetric respiration rates are <em>constant</em>, which means that the volumetric respiration rates are of zero order rates with respect to dioxygen in the water column. The dimensions of this rate are <span class="math inline">\([M.L^{-3}.T^{-1}]\)</span>. The instructions given are that the x axis is tilted upward, contrary to what was done in class. The method to derive this equation is to calculate a mass balance for an elementary volume of sediment. Let us take this elementary volume as being a straight parallelepiped of height <span class="math inline">\(dx\)</span> and of flux surface area <span class="math inline">\(A\)</span>.</p>
+<p></br>
+<img src="Textbook_BAE587_files/figure-html/unnamed-chunk-5-1.png" width="75%" style="display: block; margin: auto;" />
+</br></p>
+<p>This mass balance can be calculated two different ways. The mass <span class="math inline">\(\Delta M\)</span> of oxygen removed during <span class="math inline">\(\Delta t\)</span> is equal to the absolute difference in the downward flux of oxygen <span class="math inline">\(J(x+dx)\)</span> at <span class="math inline">\(x+dx\)</span> minus that <span class="math inline">\(J(x)\)</span> at <span class="math inline">\(x\)</span>. The difference between what was done in class is that both <span class="math inline">\(J(x+dx)\)</span> and <span class="math inline">\(J(x)\)</span> are negative this time and the absolute value of <span class="math inline">\(J(x+dx)\)</span> is greater than that <span class="math inline">\(J(x)\)</span>. So <span class="math inline">\(\Delta M\)</span>, which must be positive, can be calculated as:</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+\Delta M = \left[ J(x) - J(x+dx) \right].A. \Delta t
+\end{equation}\]</span>
+</br></p>
+<p>This is opposite from what was done in class, where the axis was pointing downward.</p>
+<p>The mass of oxygen removed <span class="math inline">\(\Delta M\)</span> can also be calculated from the volumetric removal rate <span class="math inline">\(R_0\)</span> during <span class="math inline">\(\Delta t\)</span> such that</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+\Delta M = R_0 . A . dx . \Delta t
+\end{equation}\]</span>
+</br></p>
+<p>Combining these two equations yields</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+\left[J(x) - J(x+dx)\right].A. \Delta t =  R_0 . A . dx . \Delta t
+\end{equation}\]</span>
+</br></p>
+<p>Rearranging the equation yields:</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+\frac{J(x+dx) - J(x)}{dx}  = -R_0
+\end{equation}\]</span>
+</br></p>
+<p>Interestingly, this expression is the same one as that seen in class. Taking the limit of this equation when <span class="math inline">\(dx \to 0\)</span></p>
+<p></br>
+<span class="math display">\[\begin{equation}
+\lim_{dx\to 0} \frac{J(x+dx) - J(x)}{dx}  = -R_0
+\end{equation}\]</span>
+</br></p>
+<p>yields the derivative of the flux such that</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+\frac{dJ}{dx}  = -R_0
+\end{equation}\]</span>
+</br></p>
+<p>For the expression of the flux down, we use Fick’s law</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+J(x)  = -D\frac{dc}{dx}
+\end{equation}\]</span>
+</br></p>
+<p>where <span class="math inline">\(\frac{dc}{dx}\)</span> is the <span class="math inline">\(O_2\)</span> concentration (<span class="math inline">\(c\)</span>) concentration gradient with respect to <span class="math inline">\(x\)</span>, and <span class="math inline">\(D\)</span> is the diffusivity coefficient. The sign of this equation does not change regardless of the direction of <span class="math inline">\(x\)</span>. Indeed, for a positive <span class="math inline">\(dx\)</span>, the oxygen concentration increases, so <span class="math inline">\(dc&gt;0\)</span>. As a result, <span class="math inline">\(\frac{dc}{dx}&gt;0\)</span>. As result, <span class="math inline">\(-D\frac{dc}{dx}&lt;0\)</span>, i.e., <span class="math inline">\(J(x)&lt;0\)</span>, which is correct using this direction for the axis. The derivative of the flux can thus be written as:</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+\frac{dJ}{dx}  = -D\frac{d^2c}{dx^2}
+\end{equation}\]</span>
+</br></p>
+<p>Putting everything back together yields:</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+\frac{d^2c}{dx^2} = \frac{R_0}{D} \\[7pt]
+\end{equation}\]</span>
+</br></p>
+<p>Taking the integral a first time yields:</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+\int_{}^{} \frac{d^2c}{dx^2}  = \frac{dc}{dx} =  \frac{R_0}{D}x + a \\[7pt]
+\end{equation}\]</span>
+</br></p>
+<p>and finally</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+c(x) =  \frac{R_0}{2D}x^2 + ax +b \\[7pt]
+\end{equation}\]</span>
+</br></p>
+<p>where <span class="math inline">\(a,b,c\)</span> are variables to be determined.</p>
+<p>To do so, one looks at the conditions at the boundaries. At <span class="math inline">\(x=0\)</span>, <span class="math inline">\(c(0) = c_0\)</span>, hence <span class="math inline">\(b = c_0\)</span>. At depth <span class="math inline">\(x = L\)</span> (<span class="math inline">\(L\)</span> is negative here because the x axis is reversed), both <span class="math inline">\(c(L) = 0\)</span>, and, <span class="math inline">\(\frac{dc}{dx}(L) = 0\)</span> because the profile is a parabola. One can thus write, using the derivative <span class="math inline">\(\frac{dc}{dx}(L) = 0\)</span> at the boundary:</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+0 =  \frac{R_0}{D}L + a \\[7pt]
+or \\[7pt]
+a =  -\frac{R_0}{D}L
+\end{equation}\]</span>
+</br></p>
+<p>Using <span class="math inline">\(c(L) = 0\)</span> boundary condition:</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+0 =  \frac{R_0}{2D}L^2 - \frac{R_0}{D}L^2 + c_0 \\[7pt]
+or \\[7pt]
+0 =  -\frac{R_0}{2D}L^2 + c_0\\[7pt]
+and \\[7pt]
+\frac{R_0}{2D}L^2 = c_0
+\end{equation}\]</span>
+</br></p>
+<p></br>
+<span class="math display">\[\begin{equation}
+L^2 = \frac{2c_0D}{R_0}\\[7pt]
+and \\[7pt]
+L = -\sqrt{\frac{2c_0D}{R_0}}
+\end{equation}\]</span>
+</br></p>
+<p>Because <span class="math inline">\(L\)</span> is negative. Thus</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+a =  -\frac{R_0}{D} \times -\sqrt{\frac{2c_0D}{R_0}}\\[7pt]
+a = \sqrt{\frac{2c_0R_0}{D}}\\[7pt]
+\end{equation}\]</span>
+</br></p>
+<p>Hence the final equation</p>
+<p></br>
+<span class="math display">\[\begin{equation}
+\boxed{
+c(x) =  \frac{R_0}{2D}x^2 +\sqrt{\frac{2c_0R_0}{D}}x +c_0 \\[7pt]
+}
+\end{equation}\]</span>
+</br></p>
+<p>It is possible to verify the answer by replacing <span class="math inline">\(x\)</span> in the equation derived in class by <span class="math inline">\(-x\)</span>.</p>
+<p></br></br></p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="SedWatInterface.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="equation-of-the-downward-flux-at-the-sediment-water-interface-10-points.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/16-removal-kinetics.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Textbook_BAE587.pdf", "Textbook_BAE587.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

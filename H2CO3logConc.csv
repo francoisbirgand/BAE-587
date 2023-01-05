@@ -1,0 +1,14 @@
+"","pH < pK~a1~ - 1"," ","pK~a1~ + 1< pH < pK~a2~ -1","  ","pH > pK~a2~ +1"
+$[H^+]$,$10^{-pH}$,,$10^{-pH}$,,$10^{-pH}$
+$[OH^-]$,$10^{-14+pH}$,,$10^{-14+pH}$,,$10^{-14+pH}$
+$[H_2CO_3^o]$,$DIC$,,$\frac{DIC.[H^+]}{K_{a1}}$,,$\frac{DIC.[H^+]^2}{K_{a1}.K_{a2}}$
+$[HCO_3^-]$,$\frac{DIC.K_{a1}}{[H^+]}$,,$DIC$,,$\frac{DIC.[H^+]}{K_{a2}}$
+$[CO_3^{2-}]$,$\frac{DIC.K_{a1}.K_{a2}}{[H^+]^2}$,,$\frac{DIC.K_{a2}}{[H^+]}$,,$DIC$
+
+\n," "," "," "," "," ",
+$log[H^+]$,$-pH$,,$-pH$,,$-pH$
+$log[OH^-]$,$-14+pH$,,$-14+pH$,,$-14+pH$
+$log[H_2CO_3^o]$,$log(DIC)$,,$C^{st} - pH$,,$C^{st} - 2pH$
+$log[HCO_3^-]$,$C^{st} + pH$,,$log(DIC)$,,$C^{st} - pH$
+$log[CO_3^{2-}]$,$C^{st} + 2pH$,,$C^{st} + pH$,,$log(DIC)$
+
