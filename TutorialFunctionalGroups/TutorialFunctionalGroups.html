@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+<meta name="progressive" content="false" />
+<meta name="allow-skip" content="false" />
+<meta name="learnr-version-prerender" content="0.11.2" />
+
+<title>Tutorial for basic organic chemistry</title>
+
+<!-- header-includes START -->
+<!-- HEAD_CONTENT -->
+<!-- header-includes END -->
+<!-- HEAD_CONTENT -->
+
+<!-- highlightjs -->
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+<!-- taken from https://github.com/rstudio/rmarkdown/blob/de8a9c38618903627ca509f5401d50a0876079f7/inst/rmd/h/default.html#L293-L343 -->
+<!-- tabsets -->
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+<!-- end tabsets -->
+
+
+</head>
+
+<body>
+<a class='sr-only sr-only-focusable visually-hidden-focusable' href='#learnr-tutorial-content'>Skip to Tutorial Content</a>
+
+
+
+<div class="pageContent band">
+<main class="bandContent page">
+
+<article class="topics" id="learnr-tutorial-content">
+
+<div id="section-simple-functional-groups" class="section level2">
+<h2>Simple functional groups</h2>
+<div id="section-quiz" class="section level3">
+<h3>Quiz</h3>
+<p>In the questions below, identify the basic functional groups. Use
+this as a way to learn the alphabet of life.</p>
+<p><div class="panel-heading tutorial-quiz-title">Basic functional groups in organic chemistry</div></p>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-basic-orgo-1" class="tutorial-question panel-body">
+<div id="quiz-basic-orgo-1-answer_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-1-message_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-1-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-basic-orgo-2" class="tutorial-question panel-body">
+<div id="quiz-basic-orgo-2-answer_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-2-message_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-2-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-basic-orgo-3" class="tutorial-question panel-body">
+<div id="quiz-basic-orgo-3-answer_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-3-message_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-3-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-basic-orgo-4" class="tutorial-question panel-body">
+<div id="quiz-basic-orgo-4-answer_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-4-message_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-4-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-basic-orgo-5" class="tutorial-question panel-body">
+<div id="quiz-basic-orgo-5-answer_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-5-message_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-5-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-basic-orgo-6" class="tutorial-question panel-body">
+<div id="quiz-basic-orgo-6-answer_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-6-message_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-6-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-basic-orgo-7" class="tutorial-question panel-body">
+<div id="quiz-basic-orgo-7-answer_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-7-message_container" class="shiny-html-output"></div>
+<div id="quiz-basic-orgo-7-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+</div>
+</div>
+<div id="section-complex-functional-groups" class="section level2">
+<h2>Complex functional groups</h2>
+<p>. <a href="">details here</a></p>
+<div id="section-quiz-1" class="section level3">
+<h3>Quiz</h3>
+<p>In the questions below, identify the basic functional groups. Use
+this as a way to learn the alphabet of life.</p>
+<p><div class="panel-heading tutorial-quiz-title">Basic functional groups in organic chemistry</div></p>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-compositeFG-orgo-1" class="tutorial-question panel-body">
+<div id="quiz-compositeFG-orgo-1-answer_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-1-message_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-1-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-compositeFG-orgo-2" class="tutorial-question panel-body">
+<div id="quiz-compositeFG-orgo-2-answer_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-2-message_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-2-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-compositeFG-orgo-3" class="tutorial-question panel-body">
+<div id="quiz-compositeFG-orgo-3-answer_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-3-message_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-3-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-compositeFG-orgo-4" class="tutorial-question panel-body">
+<div id="quiz-compositeFG-orgo-4-answer_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-4-message_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-4-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-compositeFG-orgo-5" class="tutorial-question panel-body">
+<div id="quiz-compositeFG-orgo-5-answer_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-5-message_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-5-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-compositeFG-orgo-6" class="tutorial-question panel-body">
+<div id="quiz-compositeFG-orgo-6-answer_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-6-message_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-6-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz-compositeFG-orgo-7" class="tutorial-question panel-body">
+<div id="quiz-compositeFG-orgo-7-answer_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-7-message_container" class="shiny-html-output"></div>
+<div id="quiz-compositeFG-orgo-7-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+<p>
+<script type="application/shiny-prerendered" data-context="server-start">
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::register_http_handlers(session, metadata = NULL)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::prepare_tutorial_state(session)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::i18n_observe_tutorial_language(input, session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+session$onSessionEnded(function() {
+        learnr:::event_trigger(session, "session_stop")
+      })
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-basic-orgo-1", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_b59bf2f", 
+        option = "carbonyl", value = "carbonyl", label = structure("carbonyl", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("Close but carbonyl represents the C=O part, not -CHO. <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#fig:FGsynthesis\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_724f8e5", 
+        option = "alcohol", value = "alcohol", label = structure("alcohol", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("alcohol must have an hydroxyl group -OH. <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#alcohols\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_909f72a", 
+        option = "aldehyde", value = "aldehyde", label = structure("aldehyde", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c8a28fa", 
+        option = "ketone", value = "ketone", label = structure("ketone", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("in ketones, the carbonyl group C=O is bounded to two C atoms, or an acyl group bonded to an O atom. <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#fig:FGsynthesis\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-basic-orgo-1-answer", question = "quiz-basic-orgo-1"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 272320083.373191, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-basic-orgo-2", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_89c3a8a", 
+        option = "carbonyl", value = "carbonyl", label = structure("carbonyl", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("carbonyl only represents C=O; Notice that O is in a hydroxyl group -OH. <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#fig:FGsynthesis\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_8e9a188", 
+        option = "alcohol", value = "alcohol", label = structure("alcohol", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("because this alcohol is bonded to  one C and two H, it is a primary alcohol. <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#alcohols\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_fe5d245", 
+        option = "aldehyde", value = "aldehyde", label = structure("aldehyde", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("there is an acyl -C=O group in aldehyde, and no hydroxyl group -OH. <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#aldehyde\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_6d02bd9", 
+        option = "ketone", value = "ketone", label = structure("ketone", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("there is a carbonyl C=O group in ketone, and no hydroxyl group -OH. <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#ketone\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-basic-orgo-2-answer", question = "quiz-basic-orgo-2"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 218869555.898081, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-basic-orgo-3", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_9962970", 
+        option = "alcohol", value = "alcohol", label = structure("alcohol", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("alcohol have a hydroxyl group -OH, which is replaced here with a -SH", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_9d6c5d9", 
+        option = "thiol", value = "thiol", label = structure("thiol", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("the word thiol is a contraction of the Greek thion = sulfur, and of ‘-ol’ for alcohol.\nThiol is a ‘sulfur alcohol’. <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#thiols\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_9be5216", 
+        option = "sulfate", value = "sulfate", label = structure("sulfate", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("sufate is an inorganic molecule of formula \\(SO_4^{2-}\\)", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_2c6308e", 
+        option = "ketone", value = "ketone", label = structure("ketone", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("there is a carbonyl C=O group in ketone, and no hydroxyl group -OH", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-basic-orgo-3-answer", question = "quiz-basic-orgo-3"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 58857153.4725925, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-basic-orgo-4", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_5f0e39c", 
+        option = "alcohol", value = "alcohol", label = structure("alcohol", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("alcohol have a hydroxyl group -OH, which is replaced here with a -SH", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_9e2a45d", 
+        option = "thiol", value = "thiol", label = structure("thiol", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("the word thiol suggests that there be a S atom", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_aa37621", 
+        option = "carbonyl", value = "carbonyl", label = structure("carbonyl", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("a carbonyl group is just the C=O part, regardless of what the C are bonded to", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_49917f", 
+        option = "ketone", value = "ketone", label = structure("ketone", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("the carbonyl C=O group in ketone is bonded to two C atoms", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-basic-orgo-4-answer", question = "quiz-basic-orgo-4"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 1180915096.95009, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-basic-orgo-5", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_ff23d85", 
+        option = "carboxyl", value = "carboxyl", label = structure("carboxyl", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("carboxylic acids do have a carbonyl C=O group, but also have a hydroxyl group -OH. <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#carboxyl-functional-group\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_b514244", 
+        option = "amide", value = "amide", label = structure("amide", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("Amide functional group has a carbonyl and an amine groups bounded together", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_54f4d27", 
+        option = "amine", value = "amine", label = structure("amine", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("amine is one of the two parts needed to form an amide<a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#amides\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_56bd651", 
+        option = "nitrogen ester", value = "nitrogen ester", 
+        label = structure("nitrogen ester", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("this naming almost makes sense but does not really exist. An ester is formed by the condensation of a carboxylic acid and an alcohol", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-basic-orgo-5-answer", question = "quiz-basic-orgo-5"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 166410681.422509, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-basic-orgo-6", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_d328094", 
+        option = "ketone", value = "ketone", label = structure("ketone", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("ketones do have a carbonyl C=O group, which is bonded to C atoms on both sides", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_561ca79", 
+        option = "carboxyl", value = "carboxyl", label = structure("carboxyl", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("Carboxyl functional group is also called carboxyic acid because of its tendency to donate a proton from the hydroxyl group -OH. It is made of carbonyl and a hydroxyl group bounded together. Always at the end of a hydrocarbon chain", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_7d94819", 
+        option = "hydroxy acyl", value = "hydroxy acyl", label = structure("hydroxy acyl", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("this naming describes the functional group but is not the accepted one", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_3bfcf0e", 
+        option = "aldehyde", value = "aldehyde", label = structure("aldehyde", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("aldehyde functional group has an H bonded to the carbonyl group C=O", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-basic-orgo-6-answer", question = "quiz-basic-orgo-6"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 1454818680.32255, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-basic-orgo-7", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_b41b3f", 
+        option = "amonia", value = "amonia", label = structure("amonia", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("ammonia is NH<sub>3<\u002fsub>, here the -NH<sub>2<\u002fsub> suggests that it is bonded to a C atom", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_2397571", 
+        option = "amine", value = "amine", label = structure("amine", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("there is only one <em>m<\u002fem> in amine because <em>am<\u002fem> is a prefix from the word <em>ammonium<\u002fem>. <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#alkyl-amines\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_5259d32", 
+        option = "ammonium", value = "ammonium", label = structure("ammonium", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("ammonium is a cation ion of formula \\(NH_4^+\\). <a href=\"\">details here<\u002fa>", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_b525e49", 
+        option = "amide", value = "amide", label = structure("amide", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("amide does contain the illustrated functional group attached to a carbonyl group", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-basic-orgo-7-answer", question = "quiz-basic-orgo-7"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 1551216794.27766, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-compositeFG-orgo-1", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_7f3cdca", 
+        option = "carboxyl", value = "carboxyl", label = structure("carboxyl", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("in a <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#carboxyl-functional-group\">carboxyl group<\u002fa> the -O is bonded to an H, not a C", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_394d1da", 
+        option = "amide", value = "amide", label = structure("amide", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("amide functional group is formed by the condensation of a <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#carboxyl-functional-group\">carboxyl<\u002fa> and an <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#amines\">amine<\u002fa> groups, and there is no amine group here", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_e04ce9", 
+        option = "ester", value = "ester", label = structure("ester", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("the ester functional group is formed by the <a href=\"https://francoisbirgand.github.io/BAE-587/pictures/esterification.png\">condensation of a carboxyl and an hydroxyl<\u002fa> group", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_8e93375", 
+        option = "oxy-carbonyl", value = "oxy-carbonyl", label = structure("oxy-carbonyl", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("this naming does not exist", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-compositeFG-orgo-1-answer", question = "quiz-compositeFG-orgo-1"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 1344042615.37413, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-compositeFG-orgo-2", 
+    question = structure("In <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAAbCAYAAADoFcRvAAAAAXNSR0IArs4c6QAAAAlwSFlzAAAXEgAAFxIBZ5/SUgAABQBJREFUeAHtmn+IFVUUx8+8zHal8kcI0VaEb1eLjCxLhCyCikiCggIjygwKaikj+sNII6IilEL8J4r+aYXAiLDsj+iPECMKpSJDbEm3VbLMlGDX1V133b19zuyd2dnduW8evvXte/PuWb7v3jnnvJl7v/udO/feeSLePAOeAc+AZ8Az4BnwDHgGPAPVZSBwXG4O/mZHzOA/DoYdce9uDAaqohGXQHfD8bISPJ8i9hN4D3xSIq9hQqYoV0lBbhUjSykLdLyT+l45IPsheTCHRFRFIzMyiOsnfmxCzmyO54I7LK6h3Aga0qwwd0ggS0ICkre81hfKSWPkyeCAfJZTgqZFI3p36KN8vYPUq/HvsjknKbOE7jhNfbsR51KzUP4GJkSbHKbcblqlw7TJz9SHErFNEHpBffd4XOunVSNZF9eWXg9UxIpS0wHC+TNzpcxDhD1WmAOI8kWISI6fQmwZ+CMh0jU5YqIqGtG50rnaX4kvVnKexGnqqNokzyPHS8MWj8gTwUHZjDr1Zo0t+F32sJRcjrfHOteTkKdRNO6ro1KxRioR1n22UX2UPzoamEs3ItNl0Frbue+DLvdCkdi/5L0V5gbSKm1yWy5JSe9UxRrJmjsu4rorE9fWR1gruBPcC9S2gLNhrYwPHoXt/HNvKiO1dlKMDLHIaY8bVJQW6vPs8Uex31UZkW2Mm5tsuEj5bZRq5svFLDk3R8c1Ww7Kq8Eh+SelfVOukeQ1sgT6OMkKl31BYIMrmOovyD34H0yN1a5zgKaNCTSQBXFTh6UrrrsqXXKEkbOfKUEzKWPf1fzZoe8p11dryP8ubUkT6NRrJNHpLIH+Ru6eRL6OoJcDXSDpKPIAWAc2gvJsWDoYQX8oL7lGssyEJ4QJORhtnEF8GaZzUxOI7h2rQJvGpQ9IH17lsLbtbDhVSWtjJRrR+fhM0J924lK+3QR1wu/aZrqQ2Fc2Zy9lmr2C83RaoN59ZoGsiFfmxew5pblCZsX5rfJsvffftr8SjdzIOb4DetOOgG6wGkyywiRPeY4h0j60qTdQ6l0Q2Swq94OXIkfuSsP7ocgCuTaqOssmuTmOBXIwrue74tJIC93eCa4D7wCdm6t+OsBKMM7OVaB6ksP2TPrYb7Z1fbukq/ovQbSIsKH8FEF3+Hbtv7BHBXkms2cz5Lkwx8gZnku/ZObnJyFNI3fRvbngUfAaeBk8AtSeHi3GPisRqL5Bikxff6rtA7oA0rmpPgLyayZeed/CzsRjro7yaL+d2EM2/j77pfpDm0axNI0sp/NnwK4ECb/a+vyEL6xWItCexMl0TqGmo8oOi6PqyK31IlBjf6cQyFbeKr0RbhnZDiPai3gVuoqcr3HpYrSPpdbbueUjvWNpGmknVReKA4mvvGDrkxbPLoHqxFWt1P7mCeLR6uvNMLuBPoJjTPCH5WEEeITtI/3bIHOklxGzG3SyU9HL3uc2u7V0CGpWBKNTg7ywNBUauQwytoLXwX5QVR1t54K5XMXTr9jsO/lPEeUgGP3RSFS2yWl8n5sW0X+Et/EMrOFQn7g6CG4Bl4CqWkMINGKUPbmZPOaXIMjVIYqyGF8jvXePqCin1BETeuQboKv5abGGEui0MFyfF9XVu4rzAxBkdUEn7948A9Vk4G57Md3NWDfhwn9y/PEE33k79CPoeaO2rk/cSet1BE3DzrrumW+8Z8Az4BmoKQb+B9qMVvgLh9YmAAAAAElFTkSuQmCC\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_2ae571", 
+        option = "carboxyl", value = "carboxyl", label = structure("carboxyl", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("a <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#carboxyl-functional-group\">carboxyl group<\u002fa> has carbonyl C=O and an hydroxyl -OH", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_7a407c", 
+        option = "glycosidic bond", value = "glycosidic bond", 
+        label = structure("glycosidic bond", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("a <a href=\"https://francoisbirgand.github.io/BAE-587/molecular-families.html#fig:O-N-glycosidic-bond\">glycosidic bond<\u002fa> is indeed an ether bond between a carbohydrate and something else. So if R1 or R2 is a carbohydrate, then the answer would be correct. Without any specification on R1 or R2, the answer is incorrect", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_bf60baa", 
+        option = "ether", value = "ether", label = structure("ether", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("the <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#ether\">ether group<\u002fa> binds two hydrocarbon chains together", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c63ba98", 
+        option = "anhydride", value = "anhydride", label = structure("anhydride", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("the <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#anyhydride\">anhydride bond<\u002fa> does bond two carbonyl with an ether bond in between.  Without any specification on R1 or R2, the answer is incorrect", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-compositeFG-orgo-2-answer", question = "quiz-compositeFG-orgo-2"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 1918554511.6066, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-compositeFG-orgo-3", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_bb3fa7", 
+        option = "ester", value = "ester", label = structure("ester", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("<a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#ester-functional-group\">esters<\u002fa> do not have an S atom", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c6ae375", 
+        option = "methoxy", value = "methoxy", label = structure("methoxy", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("<a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#methoxy\">methoxy<\u002fa> must have a <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#fig:FGsynthesis\">methyl<\u002fa> moiety involved", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_5c04998", 
+        option = "thioester", value = "thioester", label = structure("thioester", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("<a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#thioesters\">thioesters<\u002fa> are involved in glycolysis", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_abaec7f", 
+        option = "thiol", value = "thiol", label = structure("thiol", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("in <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#thiols\">thiols<\u002fa>, the C atom bonded to the S does not have a double bond", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-compositeFG-orgo-3-answer", question = "quiz-compositeFG-orgo-3"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 1862841885.13255, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-compositeFG-orgo-4", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_a0c1f49", 
+        option = "anhydride", value = "anhydride", label = structure("anhydride", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("there are no P in <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#anyhydride\">anhydride<\u002fa> functional group", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_fcb1d9a", 
+        option = "phosphoester", value = "phosphoester", label = structure("phosphoester", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("<a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#phosphoesters\">phosphoester<\u002fa> is only part of the molecule illustrated. The carbonyl is missing", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_2250b79", 
+        option = "phosphoanhydride", value = "phosphoanhydride", 
+        label = structure("phosphoanhydride", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_adcbdb", 
+        option = "diphospho anhydride", value = "diphospho anhydride", 
+        label = structure("diphospho anhydride", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("in the molecule illustrated, there is only one atom of phosphorus", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-compositeFG-orgo-4-answer", question = "quiz-compositeFG-orgo-4"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 1608969890.75077, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-compositeFG-orgo-5", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_2a8575c", 
+        option = "anhydride", value = "anhydride", label = structure("anhydride", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("there are no P in <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#anyhydride\">anhydride<\u002fa> functional group", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_5a66a35", 
+        option = "phosphoester", value = "phosphoester", label = structure("phosphoester", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("<a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#phosphoesters\">phosphoester<\u002fa> is only part of the molecule illustrated. The carbonyl is missing", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_38d3aeb", 
+        option = "methoxy", value = "methoxy", label = structure("methoxy", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("<a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#methoxy\">methoxy<\u002fa> groups are very common in phenolics", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_27e0ddb", 
+        option = "ether", value = "ether", label = structure("ether", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("<a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#methoxy\">methoxy<\u002fa> is indeed an ether bond between a hydrocarbon radical and a <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#fig:FGsynthesis\">methyl<\u002fa> group", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-compositeFG-orgo-5-answer", question = "quiz-compositeFG-orgo-5"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 1376548100.85899, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-compositeFG-orgo-6", 
+    question = structure("In <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS4AAACWCAYAAABgrmXvAAAAAXNSR0IArs4c6QAAAAlwSFlzAAAXEgAAFxIBZ5/SUgAAFHZJREFUeAHtnHuMHVUdx3+z2wWKPBoaKNCFPthbaUtbaG0VabAxDQR5KIiKf1gpEBSCICGYABoT5KUgEDCSGIQSgT94igQwBiRRHjHSxxIoZXfbbi3lXdpubWtp947f38yZe2enM/fO7t6ze8+939P89pz5nd+cOedzzvzmzJlzK8JAAiRAAiRAAiRAAiRAAiRAAiRAAiRAAiRAAiRAAiRAAiQwogS8Eb1ak1zMF2mTDpklnsxHk+cibpWirIZ0ym5Z5W2SzU2CotmaeTgarH3+JUgr5C1IJ6QHUoSkhROg1PuwF7Idkhb2h3IaRMt4O82AOhIYFgG/INP9abIe4qdKQXbB5sJhXYQn1xsBdVj/gOCZlSofQv81SFrYA6Wed3ZaptGpc4vKbq9g1zRZY5qmpSPQUL9DFuEyT0PGmct1YrgtR3o7nqmzkT4Z8QE4fhDOa4F0y5V41O41tozcJPBFVPt5yFRT/RWIwz4X9LnIVyETIC9Cfga5C8JAAvVBwJ8iE+CMdppZVh/iJcma+VNlFmxWl2ZiBVmatOGxUwQORG0/gOhs6DPIdyDJoK94KyHRjOm0hAFnXAkgPBxBAnBGt8Yc0plZl/Ynyng4ry2BbUG6MZp1LYTBTQI/QbUjh3RqhSYcjDx9XVTbVxJ2dFwJIDwcIQLqfOCMthnHpa8EFQNsry05uQ68PjK4SmA9Kq7O6KkcDfiRsVV7nYVFgY4rIjGIuGUQtjTNIjBF2rF2dUiQ7csjWWYlvSdPltLltZGYikkHCGh/Tzb1fDRHfePOrSPFXr8sVpKUU5pXRcdVi75vKS3M6vN3XdUiu2QDbPRJq0M1WtQNDvnHGQLHxWpavc9FPoH9NnNOWp8/g7xihrxpzmNkCNBx1WIotAZfjcKSfNlUrUg8Vvths9vYtVWzZ35dEjgyVquNsXSlZJ/J1C/LDMMgQMc1DHilU/slPnD103fF4LfLYTA4yBjleVpXLI+Zo0Ig/oDSfVzVgm49OtoYpfX5uchTmzQ50ZzHyBCg46rNUOguFePJ8aV0VmKszCtl9Qe7qkuHTDhDoAc11YV2DYUwqvh3JnKjL8hrUyx1Fl5JUk5pXhUdVw363lsrH6OYzUFRLXJZjiKvMDY7sKqhPwthcI/ATlRZ1yo1XBxGFf9G4+IzWHVVtGRmVQJ0XFUR5TTwSzui52Grw5Kss5C3GHlnmfx7vV7ZmmVLfd0TuNPU8GzECyvUdjryfmDy70C8q4Its0hg5Aj4E+QL2J/1YbA/qyBFpG/CT4D0k3kQsK41Vh0aZLex2WLWuiITxu4R2A9VjvZy6QzswpQmnALdpxB9rdRNqAdB4oH7uOI0mB55AvhJz0I4rI2BYyr/yLoXui7o9pT0umO+Q2aMfA15RQsE9H+C0MV2dUwqOoP+J+SvkPchkV6XBDogyUDHlSTC45EnoLMoOKonBjiqyIkVZEeQN7n0I+yRryCvaIOAzqwfhugWl8hRRbH+VzWPQJIzLaiC8Dn+qu0Z4WHq3xOMjdq1p1o0mVJ36jJYIIAZlf4fSjOwwXQOpIh/y/H9cI3Zw2XhiiyyDgjonjydSc+GFCErIO+aNCIGEiABEiABEiABEiABEiABEiABEiABEnCDANa2ZmIB/nEszv82rcbIu9HkL0jLp64hCFyEVjwO+W5DtKYOG8ENqLXuFF+OwGL8+fhOdFpG0YtMPr8OZQBqAPVJaMP5EP2ZD4MFAnRcFqCySBIgAbsE6Ljs8mXpJEACFgjQcVmAyiJJgATsEqDjssuXpZMACVggQMdlASqLJAESsEuAjssuX5ZOAiRggQAdlwWoLJIESMAuATouu3xZOgmQgAUCdFwWoLJIEiABuwTouOzyZekkQAIWCNBxWYDKIkmABOwSoOOyy5elkwAJWCBAx2UBKoskARKwS4COyy5flk4CJGCBAB2XBagskgRIwC4BOi67fFk6CZCABQJ0XBagskgSIAG7BOi47PJl6SRAAhYI0HFZgMoiSYAE7BKg47LLl6WTAAlYIEDHZQEqiyQBErBLgI7LLl+WTgIkYIEAHZcFqCySBEjALgE6Lrt8WToJkIAFAnRcFqCySBIgAbsE6Ljs8mXpJEACFgjQcVmAyiJJgATsEqDjssuXpZMACVggQMdlASqLJAESsEuAjssuX5ZOAiRggQAdlwWoLJIESMAuATouu3xZOgmQgAUCdFwWoLJIEiABuwTouOzyZekkQAIWCNBxWYDKIkmABOwSoOOyy5elkwAJWCAwxkKZzV1ki2wBgJch6zNArIB+r3jySUY+1e4T6EITKo0B91vIFpAACZAACZAACZAACZAACZAACZBAfRHw6qs67tfG75BFaMX+qS3xZbvsljXee/JZan4DKH2RNumQWVjDm4/mzEXcKkVZDelE21d5m2RzAzRzQBOavc8HwBihgyzHdQKur3m9kO2QtKA35zRIEfJ2mgF0uvg/E6KDWG03QjqNbEPccMEvyHsgN7FKw/4s/XKltzbgUcXUnWy0fTra/jxqPDm11r78D/rLvG5ZlprvqLKZ+9x02VDu88Nx7pGQXZAeU05adCyUh0I+gHwaGWR9VVwJA807B/JsZJyICzh+0+iOQfxeIn8pjn8HOTChjw4fQuLHEB3MjRjeF18+jDVsHNKTcWPrFpRv4e9kzE4WeCJ7YjbOJs2s42k0QNupoRPtX454O9o8G+mTER+A4wdxoy+Qbjhu/braWKGp+tx03VLEQ7nPL8V5N0H0K/s8SFa4ExnfhvwRckmWUaTXmwn3lZwdKVJinZWpjUp7LB/jUX5l9JqnrwZ/gfwa8ifIu5DoPB3YkyANE/Tp608TH3JdslH+0XIg8n9v8n3/OPle0sbFY3+KTEC7dpp29SFekmyHP1VmwWZ1qe0F0QHfEKEZ+xwdN9z7/AaUoX5AfUCl8AQy1e7+SkZR3nAc19XmQnoxfQKPjwo1sTZYb+roGq8l8p0+rDSItWGAMgY2O4IbuENudrqxpvJoy60xh3RmVpv8iTIebd8S2BakGyxas2xd0jdjn6N/hnufD8tx1XrnvK57XWsG3d8RnwvRGVc8qEO7FXK9UZ6MeLFJN3wEr62vR/8NGurJQa43OHA+vlxu2vES1q+ey2qTWZi/xbS9A4v4C7JsG0nfaH2Ovhn1+7zWjusCNOooiC7YXwOpFO5B5gZjcFElw0bKw1rQV9AeXZjU6deaIHb5zxQsE3hySNAEXx6p2hRPnozZTI2lGzbZcH0uMur3+Zgqo0Vf61TSQpp+jjF8B/GqtJNiut1I69NZn9YdMX2U1FcOF2Ziv0Q9+6JKl2Jf5uKVqLzW4wdfUL6O/FNB1IPT6oPEb2LBK8eXkX8VcluRpw+VFqRbSunkcTwvXPQPbfV8tdUy4vq08yO7eF78/Lhe0yKfY1Z1KOIwtEjZ+fiyLlJnxl14WE0LlgnaULfyuTgBa2WTsJmiG/XWB18/8osmXQzS+kDUvFDfD5uB+ug46/xQP/zzu2UpBv/n+7RxCH2OMvRBVu9rnY+ijv+OtbeW97kWm+ZLosul5lVzXM9EZ+eMjzN21QdwaNht7AcMYKNbiPinJl3P0W9QuX0dlyfnQ68Shjh+X3bilrsU2yE+jrJNrLOX7wfpuH08rZnx43i6Ul7cLp4e7Dn+gKvrKtUELSIIvmyKklkxLt2P10t9aLUZKZu2BQ5XHVo5xNOqjY6jOLKMHw82HS83T3qyXCy90YVj8dD6fBZKqPdx3ok6xh1XLe/zuShbH1SDCtUc16AKg/GR5oSNOU+Mbnj9TJ4ML0Mx6AYlCxmB43C9KnkhH5suPdEf25ZDMXBwuhnzKW8dZhbJ4AezVJ1xFYN/npl16JHqIn00s4jr0/P6MUcqopTy+fG05u2FaKzn75sOz99jbEJ7XaMrh37sRdP5XRjUifVEB2mx3y6HQR+t7Q18wOls7BjsgdsPJYa1aoF706uGs8cxJu5HfpTWPE1HNjrLbEG+xiqtJg71oc4PtGFaZ5H6L7IP0+H5cX0089S4N2W2pY0dSp+LrMSZ4bqfllGf4c1EtWp5nyeKzndYzXHp4vqzGUXpdojk62D0xA3XcDJOjKknmfTAARwq/4ZIxc3gycNeV/ARInf9vR5ZC+N7cp9QH4ZlB+zJ8ajSqxWrNTa2Z6d/oJPDREnd4PsVz6/nzCH0OZrzhpF6blmybrW8z9Vxz09eIHb8GNLnxY6DpK5ZVAq6jlBJkudGg7iQzMg4nm30esMyOEjAC193wy/HLXJZjiZcYWx2YJb0Vg57mtQfgVre51g5qOhjNH+fUM1x7XNCFcVqk38i4nlVbNuRf5axeb2KLbPrmYAvd5nqzRvwQSJRZ+Tpx5aoz+/1emVrwoSHbhAY9fu81o5Lp3XRNPJmpMurHwM7RJdPb4Toq6o+re+DMLhKoE/uxvrOR0H1fVmGr6M3YQtAuEUCSqxrjTUO7Tmspel60lZ8nrjd1eay3jLq93mtHdcudKo6JA2nQ16ElL86qVaC36s9gHhpcCRyG+LtJs3IQQLeR7IDk/3z4ZD0B+b67wa4p21wVr1wYl34tWofmvUQZD/Y9EBOaeT/IcPBLhxslUf9Pq+2OD/YBqm9OqXpkKsgiyC62KprWPperE5M17XaIEXILyB3QBoneMHOeG2dfvJvmuCtk1cws5ojY+UPcFzfRMN1bE1COgy6BUTkBezguqThXhGbs8/r8j7XzXW6KHZGOOpS/55gbNRO16uSQTeQ/gei+UlRJ6b5DA1IAK+J+0NOwmzrQn1FRHomBkDWskEDEmiqJg31Pr8elNQv/KsKrSeM3f1xu+h5GNfVOq2zrDmQiZANkBUQLsoCAgMJNBAB3ucN1JlsCgmQAAmQAAmQAAmQwEgQOAIX2QL5dCQuxmuMPAGs5Z0F2QLR/zRgn4B1vleD/KmycJ9MKoZEwMZXxSFVpIFP0i0n4yD6CwSGxiSwH76ejsNS88GpzfOxp03zveBreqoJlYMjoDcVAwmQAAk4RYCOy6nuYmVJgASUAB0XxwEJkIBzBOi4nOsyVpgESICOi2OABEjAOQJ0XM51GStMAiRAx8UxQAIk4BwBOi7nuowVJgESoOPiGCABEnCOAB2Xc13GCpMACdBxcQyQAAk4R4COy7kuY4VJgATouDgGSIAEnCNAx+Vcl7HCJEACdFwcAyRAAs4RoONyrstYYRIgAToujgESIAHnCNBxOddlrDAJkAAdF8cACZCAcwTouJzrMlaYBEiAjotjgARIwDkCdFzOdRkrTAIkQMfFMUACJOAcATou57qMFSYBEqDj4hggARJwjgAdl3NdxgqTAAnQcXEMkAAJOEeAjsu5LmOFSYAE6Lg4BkiABJwjQMflXJexwiRAAnRcHAMkQALOEaDjcq7LWGESIAE6Lo4BEiAB5wjQcTnXZawwCZAAHRfHAAmQgHME6Lic6zJWmARIgI6LY4AESMA5AmOcq7F7Ff4YVT4G4rtXddY4F4Fd8oIcEPTx7lT7vbJYWqVNPPkkNZ9KEiABEiABEiABEiABEiABEiABEiCB4RLwhlsAz88koOuHMyHzIdMgGyGdRrYhTguHQ3kkZBekJ83A6I5FfCjkA8inRsdoFAlgAbNNOmQW1rG0v+cibpWirIZ0ym5Z5W2SzaNYPV6aBHIRWAqrHRBdkE+TZdAfAEmGG6BQ++XJjMTxE8bu/oSeh6NAwC/IdH+arIf4qVKQXbC5cBSq1rCX5FfF2natzmBvhPzcFPsZ4lch70COhiyA6Ozrh5BZkPMgGyAMjhLwO2QRqv40ZJxpQicePfrg2Y5Z12ykT0asD6kH4bwWSLdciUGy19gyIoG6IHA1ahHNsHQwj0/USh3bdZA9ELV7DRIPnHHFadR52p8iE+CMdppZVh/iJckq+1NlFmxWl2ZiBVmatOExCYwmgf1x8fch6pBeqlKRa42d2i6O2dJxxWDUexLO6NaYQzozq77+RBkP57UlsC1INzq9NcuW+nwEuHM+H6c8VhfA6ChIEXJNlRPuQX70inhRFVtm1yGBwPn4crmp2ktetzyXVU2zMH9LkO9hCb8jWDLIMqc+BwE6rhyQcprMMXa6nrWqyjm6wzoa6B0ZtvpaWUkyTqN6RAhMkXb0ziHBtXx5pOo1PXkyZjM1lmZyCAS4OD8EaBmnHGf06zLyk+puo0gbxHORpzM3hnol0CLlfvOlep93YYY9LVjb1J/+lM+t1/bVeb1a6rx+LlVP919p0P1aeUKfMUrbFpHnfNqMJoFWmVC6vC+bSumMBKbO/ciKfsvYlmFGdU4CdFw5QeUwiwbv4Tls1WSSsUt7Wq9Ens6Gs+Qpcy6j0SLQP+ABVXZiGfXx2+UwZB1kstP6PONMqtMI0HGlURmaLnr1K+Q8fbaxW5tir18b9QmdJZrPMLoEov7Wlcjjq1ZlrMwr2fRX/FVEyYyJbAJ0XNlsBpuz2pxwIuLyIE0vpR3qs0zW6+km1NYzAW+t6H9XtDmoY4tclqOuVxibHVi9fCuHPU0qEKDjqgBnkFmPwT56XbwZ6ay9Ovql8EaIvgbqwL8PwuAiAV/uMtWehz1aS7KagLzFyIseVPd6vbI1y5b6fATouPJxymO1C0bqkDScDnkRklz70IX4ByBLIRpug2wPUvzjHoE+uRvbjT8KKu7LMmwyvQk/AQq3SECJda2xxqE9h9fJFthulZ1yu3sNZY0bnYDOovQpXIRE61RdSOuerTcgn8f01yOdDNw5nyRS58f4Sc9COKyNwa748o+se6Hrgm5PSa875jtkRp03x5nqccZV267SH8/q7xXPhui2COWri/XfgOi6VxukB3IOJNxJjUQsRIvuWg6DAwS8dfIK/hOiOXhM6QbTqN8mYYal/T4G+p1B3h6Z7/Xgv7lhqAkBXW9hsEdAXxV1R/1EyAbICgjXNwChEQNmVPp71RlwWnMgRfxbjsfUGtxk+nWYgQRIgARIgARIgARIgARIgARIgARIwB6B/wNd50dVmBDMUwAAAABJRU5ErkJggg==\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_22d4296", 
+        option = "anhydride", value = "anhydride", label = structure("anhydride", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("there are no P in <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#anyhydride\">anhydride<\u002fa> functional group", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_aff753d", 
+        option = "phosphoester", value = "phosphoester", label = structure("phosphoester", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("<a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#phosphoesters\">phosphoester<\u002fa> is only part of the molecule illustrated. Another phosphoryl is missing", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_9134f3", 
+        option = "diphosphoanhydride", value = "diphosphoanhydride", 
+        label = structure("diphosphoanhydride", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("this group is also called <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#anyhydride\">pyrophosphate.<\u002fa> this group is the key to energy storage and dissipation in ATP, which does not rely on a transfer of electrons", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f50ed15", 
+        option = "ether", value = "ether", label = structure("ether", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("the molecule illustrated is indeed two phosphoryl groups bonded by an ether bond. But an <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#ether\">ether<\u002fa> group is really between two C atoms", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-compositeFG-orgo-6-answer", question = "quiz-compositeFG-orgo-6"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 1738572815.19041, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz-compositeFG-orgo-7", 
+    question = structure("In <img src=\"data:image/png;base64,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\" alt=\"\" />, the functional group is:", html = TRUE, class = c("html", 
+    "character")), answers = list(structure(list(id = "lnr_ans_d38187c", 
+        option = "anhydride", value = "anhydride", label = structure("anhydride", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("there are no P in <a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#anyhydride\">anhydride<\u002fa> functional group", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_d20e4c0", 
+        option = "phosphoester", value = "phosphoester", label = structure("phosphoester", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("<a href=\"https://francoisbirgand.github.io/BAE-587/functional-groups.html#phosphoesters\">phosphoester<\u002fa> is only part of the molecule illustrated. Another phosphoryl is missing", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_cfae3aa", 
+        option = "diphosphoanhydride", value = "diphosphoanhydride", 
+        label = structure("diphosphoanhydride", html = TRUE, class = c("html", 
+        "character")), correct = TRUE, message = structure("this group is also called pyrophosphate. this group is the key to energy storage and dissipation in ATP, which does not rely on a transfer of electrons", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f452fe0", 
+        option = "ether", value = "ether", label = structure("ether", html = TRUE, class = c("html", 
+        "character")), correct = FALSE, message = structure("the molecule illustrated is indeed two phosphoryl groups bonded by an ether bond. But an ether group is really between two C atoms", html = TRUE, class = c("html", 
+        "character")), type = "literal"), class = c("tutorial_question_answer", 
+    "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
+    "character")), try_again = structure("<span data-i18n=\"button.questiontryagain\">Try Again<\u002fspan>", html = TRUE, class = c("html", 
+    "character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
+    "character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+    "character")), message = NULL, post_message = NULL), ids = list(
+        answer = "quiz-compositeFG-orgo-7-answer", question = "quiz-compositeFG-orgo-7"), 
+    loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
+    seed = 21079360.4901842, options = list()), class = c("learnr_radio", 
+"tutorial_question")), session = session)
+</script>
+</p>
+<!--html_preserve-->
+<script type="application/shiny-prerendered" data-context="dependencies">
+{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["header-attrs"]},{"type":"character","attributes":{},"value":["2.19"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/pandoc"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["header-attrs.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["2.19"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["jquery"]},{"type":"character","attributes":{},"value":["3.6.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/3.6.0"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["jquery-3.6.0.min.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["jquerylib"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.1.4"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["bootstrap"]},{"type":"character","attributes":{},"value":["3.3.5"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/bootstrap"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["viewport"]}},"value":[{"type":"character","attributes":{},"value":["width=device-width, initial-scale=1"]}]},{"type":"character","attributes":{},"value":["js/bootstrap.min.js","shim/html5shiv.min.js","shim/respond.min.js"]},{"type":"character","attributes":{},"value":["css/cerulean.min.css"]},{"type":"character","attributes":{},"value":["<style>h1 {font-size: 34px;}\n       h1.title {font-size: 38px;}\n       h2 {font-size: 30px;}\n       h3 {font-size: 24px;}\n       h4 {font-size: 18px;}\n       h5 {font-size: 16px;}\n       h6 {font-size: 12px;}\n       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}\n       pre:not([class]) { background-color: white }<\/style>"]},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["2.19"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["pagedtable"]},{"type":"character","attributes":{},"value":["1.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/pagedtable-1.1"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/pagedtable.js"]},{"type":"character","attributes":{},"value":["css/pagedtable.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["2.19"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["highlightjs"]},{"type":"character","attributes":{},"value":["9.12.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/highlightjs"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["highlight.js"]},{"type":"character","attributes":{},"value":["textmate.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["2.19"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["tutorial"]},{"type":"character","attributes":{},"value":["0.11.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/tutorial"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["tutorial.js"]},{"type":"character","attributes":{},"value":["tutorial.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["learnr"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.11.2"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["i18n"]},{"type":"character","attributes":{},"value":["21.6.10"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/i18n"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["i18next.min.js","tutorial-i18n-init.js"]},{"type":"NULL"},{"type":"character","attributes":{},"value":["<script id=\"i18n-cstm-trns\" type=\"application/json\">{\"language\":\"en\",\"resources\":{\"en\":{\"translation\":{\"button\":{\"runcode\":\"Run Code\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"Hint\",\"hint_plural\":\"Hints\",\"hinttitle\":\"$t(button.hint)\",\"hintnext\":\"Next Hint\",\"hintprev\":\"Previous Hint\",\"solution\":\"Solution\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"Copy to Clipboard\",\"startover\":\"Start Over\",\"startovertitle\":\"$t(button.startover)\",\"continue\":\"Continue\",\"submitanswer\":\"Submit Answer\",\"submitanswertitle\":\"$t(button.submitanswer)\",\"previoustopic\":\"Previous Topic\",\"nexttopic\":\"Next Topic\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"Try Again\"},\"text\":{\"startover\":\"Start Over\",\"areyousure\":\"Are you sure you want to start over? (all exercise progress will be reset)\",\"youmustcomplete\":\"You must complete the\",\"exercise\":\"exercise\",\"exercise_plural\":\"exercises\",\"inthissection\":\"in this section before continuing.\",\"code\":\"Code\",\"enginecap\":\"{{engine}} $t(text.code)\",\"quiz\":\"Quiz\",\"blank\":\"blank\",\"blank_plural\":\"blanks\",\"exercisecontainsblank\":\"This exercise contains {{count}} $t(text.blank).\",\"pleasereplaceblank\":\"Please replace {{blank}} with valid code.\",\"unparsable\":\"It looks like this might not be valid R code. R cannot determine how to turn your text into a complete command. You may have forgotten to fill in a blank, to remove an underscore, to include a comma between arguments, or to close an opening <code>&quot;<\\/code>, <code>'<\\/code>, <code>(<\\/code> or <code>{<\\/code> with a matching <code>&quot;<\\/code>, <code>'<\\/code>, <code>)<\\/code> or <code>}<\\/code>.\\n\",\"unparsablequotes\":\"<p>It looks like your R code contains specially formatted quotation marks or &quot;curly&quot; quotes (<code>{{character}}<\\/code>) around character strings, making your code invalid. R requires character values to be contained in straight quotation marks (<code>&quot;<\\/code> or <code>'<\\/code>).<\\/p> {{code}} <p>Don't worry, this is a common source of errors when you copy code from another app that applies its own formatting to text. You can try replacing the code on that line with the following. There may be other places that need to be fixed, too.<\\/p> {{suggestion}}\\n\",\"unparsableunicode\":\"<p>It looks like your R code contains an unexpected special character (<code>{{character}}<\\/code>) that makes your code invalid.<\\/p> {{code}} <p>Sometimes your code may contain a special character that looks like a regular character, especially if you copy and paste the code from another app. Try deleting the special character from your code and retyping it manually.<\\/p>\\n\",\"unparsableunicodesuggestion\":\"<p>It looks like your R code contains an unexpected special character (<code>{{character}}<\\/code>) that makes your code invalid.<\\/p> {{code}} <p>Sometimes your code may contain a special character that looks like a regular character, especially if you copy and paste the code from another app. You can try replacing the code on that line with the following. There may be other places that need to be fixed, too.<\\/p> {{suggestion}}\\n\",\"and\":\"and\",\"or\":\"or\",\"listcomma\":\", \",\"oxfordcomma\":\",\"}}},\"fr\":{\"translation\":{\"button\":{\"runcode\":\"Lancer le Code\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"Indication\",\"hint_plural\":\"Indications\",\"hinttitle\":\"$t(button.hint)\",\"hintnext\":\"Indication Suivante\",\"hintprev\":\"Indication Précédente\",\"solution\":\"Solution\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"Copier dans le Presse-papier\",\"startover\":\"Recommencer\",\"startovertitle\":\"$t(button.startover)\",\"continue\":\"Continuer\",\"submitanswer\":\"Soumettre\",\"submitanswertitle\":\"$t(button.submitanswer)\",\"previoustopic\":\"Chapitre Précédent\",\"nexttopic\":\"Chapitre Suivant\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"Réessayer\"},\"text\":{\"startover\":\"Recommencer\",\"areyousure\":\"Êtes-vous certains de vouloir recommencer? (La progression sera remise à zéro)\",\"youmustcomplete\":\"Vous devez d'abord compléter\",\"exercise\":\"l'exercice\",\"exercise_plural\":\"des exercices\",\"inthissection\":\"de cette section avec de continuer.\",\"code\":\"Code\",\"enginecap\":\"$t(text.code) {{engine}}\",\"quiz\":\"Quiz\",\"and\":\"et\",\"or\":\"ou\",\"oxfordcomma\":\"\"}}},\"es\":{\"translation\":{\"button\":{\"runcode\":\"Ejecutar código\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"Pista\",\"hint_plural\":\"Pistas\",\"hinttitle\":\"$t(button.hint)\",\"hintnext\":\"Siguiente pista\",\"hintprev\":\"Pista anterior\",\"solution\":\"Solución\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"Copiar al portapapeles\",\"startover\":\"Reiniciar\",\"startovertitle\":\"$t(button.startover)\",\"continue\":\"Continuar\",\"submitanswer\":\"Enviar respuesta\",\"submitanswertitle\":\"$t(button.submitanswer)\",\"previoustopic\":\"Tema anterior\",\"nexttopic\":\"Tema siguiente\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"Volver a intentar\"},\"text\":{\"startover\":\"Reiniciar\",\"areyousure\":\"¿De verdad quieres empezar de nuevo? (todo el progreso del ejercicio se perderá)\",\"youmustcomplete\":\"Debes completar\",\"exercise\":\"el ejercicio\",\"exercise_plural\":\"los ejercicios\",\"inthissection\":\"en esta sección antes de continuar.\",\"code\":\"Código\",\"enginecap\":\"$t(text.code) {{engine}}\",\"quiz\":\"Cuestionario\",\"and\":\"y\",\"or\":\"o\",\"oxfordcomma\":\"\"}}},\"pt\":{\"translation\":{\"button\":{\"runcode\":\"Executar código\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"Dica\",\"hint_plural\":\"Dicas\",\"hinttitle\":\"$t(button.hint)\",\"hintnext\":\"Próxima dica\",\"hintprev\":\"Dica anterior\",\"solution\":\"Solução\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"Copiar para a área de transferência\",\"startover\":\"Reiniciar\",\"startovertitle\":\"$t(button.startover)\",\"continue\":\"Continuar\",\"submitanswer\":\"Enviar resposta\",\"submitanswertitle\":\"$t(button.submitanswer)\",\"previoustopic\":\"Tópico anterior\",\"nexttopic\":\"Próximo tópico\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"Tentar novamente\"},\"text\":{\"startover\":\"Reiniciar\",\"areyousure\":\"Tem certeza que deseja começar novamente? (todo o progresso feito será perdido)\",\"youmustcomplete\":\"Você deve completar\",\"exercise\":\"o exercício\",\"exercise_plural\":\"os exercícios\",\"inthissection\":\"nesta seção antes de continuar.\",\"code\":\"Código\",\"enginecap\":\"$t(text.code) {{engine}}\",\"quiz\":\"Quiz\",\"and\":\"e\",\"or\":\"ou\",\"oxfordcomma\":\"\"}}},\"tr\":{\"translation\":{\"button\":{\"runcode\":\"Çalıştırma Kodu\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"Ipucu\",\"hint_plural\":\"İpuçları\",\"hinttitle\":\"$t(button.hint)\",\"hintnext\":\"Sonraki İpucu\",\"hintprev\":\"Önceki İpucu\",\"solution\":\"Çözüm\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"Pano'ya Kopyala\",\"startover\":\"Baştan Başlamak\",\"startovertitle\":\"$t(button.startover)\",\"continue\":\"Devam et\",\"submitanswer\":\"Cevabı onayla\",\"submitanswertitle\":\"$t(button.submitanswer)\",\"previoustopic\":\"Önceki Konu\",\"nexttopic\":\"Sonraki Konu\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"Tekrar Deneyin\"},\"text\":{\"startover\":\"Baştan Başlamak\",\"areyousure\":\"Baştan başlamak istediğinizden emin misiniz? (tüm egzersiz ilerlemesi kaybolacak)\",\"youmustcomplete\":\"Tamamlamalısın\",\"exercise\":\"egzersiz\",\"exercise_plural\":\"egzersizler\",\"inthissection\":\"devam etmeden önce bu bölümde\",\"code\":\"Kod\",\"enginecap\":\"$t(text.code) {{engine}}\",\"quiz\":\"Sınav\",\"oxfordcomma\":\"\"}}},\"emo\":{\"translation\":{\"button\":{\"runcode\":\"🏃\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"💡\",\"hint_plural\":\"$t(button.hint)\",\"hinttitle\":\"$t(button.hint)\",\"solution\":\"🎯\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"📋\",\"startover\":\"⏮\",\"startovertitle\":\"Start Over\",\"continue\":\"✅\",\"submitanswer\":\"🆗\",\"submitanswertitle\":\"Submit Answer\",\"previoustopic\":\"⬅\",\"nexttopic\":\"➡\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"🔁\"},\"text\":{\"startover\":\"⏮\",\"areyousure\":\"🤔\",\"youmustcomplete\":\"⚠️ 👉 🧑‍💻\",\"exercise\":\"\",\"exercise_plural\":\"\",\"inthissection\":\"\",\"code\":\"💻\",\"enginecap\":\"$t(text.code) {{engine}}\",\"oxfordcomma\":\"\"}}},\"eu\":{\"translation\":{\"button\":{\"runcode\":\"Kodea egikaritu\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"Laguntza\",\"hint_plural\":\"Laguntza\",\"hinttitle\":\"$t(button.hint)\",\"hintnext\":\"Aurreko laguntza\",\"hintprev\":\"Hurrengo laguntza\",\"solution\":\"Ebazpena\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"Arbelean kopiatu\",\"startover\":\"Berrabiarazi\",\"startovertitle\":\"$t(button.startover)\",\"continue\":\"Jarraitu\",\"submitanswer\":\"Erantzuna bidali\",\"submitanswertitle\":\"$t(button.submitanswer)\",\"previoustopic\":\"Aurreko atala\",\"nexttopic\":\"Hurrengo atala\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"Berriro saiatu\"},\"text\":{\"startover\":\"Berrabiarazi\",\"areyousure\":\"Berriro hasi nahi duzu? (egindako lana galdu egingo da)\",\"youmustcomplete\":\"Aurrera egin baino lehen atal honetako\",\"exercise\":\"ariketa egin behar duzu.\",\"exercise_plural\":\"ariketak egin behar dituzu.\",\"inthissection\":\"\",\"code\":\"Kodea\",\"enginecap\":\"$t(text.code) {{engine}}\",\"quiz\":\"Galdetegia\",\"oxfordcomma\":\"\"}}},\"de\":{\"translation\":{\"button\":{\"runcode\":\"Code ausführen\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"Tipp\",\"hint_plural\":\"Tipps\",\"hinttitle\":\"$t(button.hint)\",\"hintnext\":\"Nächster Tipp\",\"hintprev\":\"Vorheriger Tipp\",\"solution\":\"Lösung\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"In die Zwischenablage kopieren\",\"startover\":\"Neustart\",\"startovertitle\":\"$t(button.startover)\",\"continue\":\"Weiter\",\"submitanswer\":\"Antwort einreichen\",\"submitanswertitle\":\"$t(button.submitanswer)\",\"previoustopic\":\"Vorheriges Kapitel\",\"nexttopic\":\"Nächstes Kapitel\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"Nochmal versuchen\"},\"text\":{\"startover\":\"Neustart\",\"areyousure\":\"Bist du sicher, dass du neustarten willst? (der gesamte Lernfortschritt wird gelöscht)\",\"youmustcomplete\":\"Vervollstädinge\",\"exercise\":\"die Übung\",\"exercise_plural\":\"die Übungen\",\"inthissection\":\"in diesem Kapitel, bevor du fortfährst.\",\"code\":\"Code\",\"enginecap\":\"$t(text.code) {{engine}}\",\"quiz\":\"Quiz\",\"blank\":\"Lücke\",\"blank_plural\":\"Lücken\",\"pleasereplaceblank\":\"Bitte ersetze {{blank}} mit gültigem Code.\",\"unparsable\":\"Dies scheint kein gültiger R Code zu sein. R kann deinen Text nicht in einen gültigen Befehl übersetzen. Du hast vielleicht vergessen, die Lücke zu füllen, einen Unterstrich zu entfernen, ein Komma zwischen Argumente zu setzen oder ein eröffnendes <code>&quot;<\\/code>, <code>'<\\/code>, <code>(<\\/code> oder <code>{<\\/code> mit einem zugehörigen <code>&quot;<\\/code>, <code>'<\\/code>, <code>)<\\/code> oder <code>}<\\/code> zu schließen.\\n\",\"and\":\"und\",\"or\":\"oder\",\"listcomma\":\", \",\"oxfordcomma\":\",\"}}},\"ko\":{\"translation\":{\"button\":{\"runcode\":\"코드 실행\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"힌트\",\"hint_plural\":\"힌트들\",\"hinttitle\":\"$t(button.hint)\",\"hintnext\":\"다음 힌트\",\"hintprev\":\"이전 힌트\",\"solution\":\"솔루션\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"클립보드에 복사\",\"startover\":\"재학습\",\"startovertitle\":\"$t(button.startover)\",\"continue\":\"다음 학습으로\",\"submitanswer\":\"정답 제출\",\"submitanswertitle\":\"$t(button.submitanswer)\",\"previoustopic\":\"이전 토픽\",\"nexttopic\":\"다음 토픽\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"재시도\"},\"text\":{\"startover\":\"재학습\",\"areyousure\":\"다시 시작 하시겠습니까? (모든 예제의 진행 정보가 재설정됩니다)\",\"youmustcomplete\":\"당신은 완료해야 합니다\",\"exercise\":\"연습문제\",\"exercise_plural\":\"연습문제들\",\"inthissection\":\"이 섹션을 실행하기 전에\",\"code\":\"코드\",\"enginecap\":\"$t(text.code) {{engine}}\",\"quiz\":\"퀴즈\",\"blank\":\"공백\",\"blank_plural\":\"공백들\",\"exercisecontainsblank\":\"이 연습문제에는 {{count}}개의 $t(text.blank)이 포함되어 있습니다.\",\"pleasereplaceblank\":\"{{blank}}를 유효한 코드로 바꾸십시오.\",\"unparsable\":\"이것은 유효한 R 코드가 아닐 수 있습니다. R은 텍스트를 완전한 명령으로 변환하는 방법을 결정할 수 없습니다. 당신은 공백이나 밑줄을 대체하여 채우기, 인수를 컴마로 구분하기, 또는 <code>&quot;<\\/code>, <code>'<\\/code>, <code>(<\\/code> , <code>{<\\/code>로 시작하는 구문을 닫는 <code>&quot;<\\/code>, <code>'<\\/code>, <code>)<\\/code>, <code>}<\\/code>을 잊었을 수도 있습니다.\\n\",\"and\":\"그리고\",\"or\":\"혹은\",\"listcomma\":\", \",\"oxfordcomma\":\"\"}}},\"zh\":{\"translation\":{\"button\":{\"runcode\":\"运行代码\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"提示\",\"hint_plural\":\"提示\",\"hinttitle\":\"$t(button.hint)\",\"hintnext\":\"下一个提示\",\"hintprev\":\"上一个提示\",\"solution\":\"答案\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"复制到剪切板\",\"startover\":\"重新开始\",\"startovertitle\":\"$t(button.startover)\",\"continue\":\"继续\",\"submitanswer\":\"提交答案\",\"submitanswertitle\":\"$t(button.submitanswer)\",\"previoustopic\":\"上一专题\",\"nexttopic\":\"下一专题\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"再试一次\"},\"text\":{\"startover\":\"重置\",\"areyousure\":\"你确定要重新开始吗? (所有当前进度将被重置)\",\"youmustcomplete\":\"你必须完成\",\"exercise\":\"练习\",\"exercise_plural\":\"练习\",\"inthissection\":\"在进行本节之前\",\"code\":\"代码\",\"enginecap\":\"$t(text.code) {{engine}}\",\"quiz\":\"测试\",\"blank\":\"空\",\"blank_plural\":\"空\",\"exercisecontainsblank\":\"本练习包含{{count}}个$t(text.blank)\",\"pleasereplaceblank\":\"请在{{blank}}内填写恰当的代码\",\"unparsable\":\"这似乎不是有效的R代码。 R不知道如何将您的文本转换为完整的命令。 您是否忘了填空，忘了删除下划线，忘了在参数之间包含逗号，或者是忘了用<code>&quot;<\\/code>, <code>'<\\/code>, <code>)<\\/code>,<code>}<\\/code>来封闭<code>&quot;<\\/code>, <code>'<\\/code>, <code>(<\\/code>。 or <code>{<\\/code>。\\n\",\"unparsablequotes\":\"<p>您的R代码中似乎含有特殊格式的引号，或者弯引号(<code>{{character}}<\\/code>) 在字符串前后，在R中字符串应该被直引号(<code>&quot;<\\/code> 或者 <code>'<\\/code>)包裹。<\\/p> {{code}} <p>别担心，该错误经常在复制粘贴包含格式的代码时遇到， 您可以尝试将该行中的代码替换为以下代码，也许还有其他地方需要修改。<\\/p> {{suggestion}}\\n\",\"unparsableunicode\":\"<p>您的代码中似乎包含有异常字符(<code>{{character}}<\\/code>),导致代码无效。<\\/p> {{code}} <p>有时候你的代码可能含有看似正常字符的特殊字符，特别是当你复制粘贴其他来源代码的时候。 请试着删除这些特殊字符,重新输入<\\/p>\\n\",\"unparsableunicodesuggestion\":\"<p>您的代码中似乎包含有异常字符(<code>{{character}}<\\/code>),导致代码无效。<\\/p> {{code}} <p>有时候你的代码可能含有看似正常字符的特殊字符，特别是当你复制粘贴其他来源代码的时候。 请试着删除这些特殊字符,重新输入<\\/p>\\n\",\"and\":\"且\",\"or\":\"或\",\"listcomma\":\",\",\"oxfordcomma\":\",\"}}},\"pl\":{\"translation\":{\"button\":{\"runcode\":\"Uruchom kod\",\"runcodetitle\":\"$t(button.runcode) ({{kbd}})\",\"hint\":\"Podpowiedź\",\"hint_plural\":\"Podpowiedzi\",\"hinttitle\":\"$t(button.hint)\",\"hintnext\":\"Następna podpowiedź\",\"hintprev\":\"Poprzednia podpowiedź\",\"solution\":\"Rozwiązanie\",\"solutiontitle\":\"$t(button.solution)\",\"copyclipboard\":\"Kopiuj do schowka\",\"startover\":\"Zacznij od początku\",\"startovertitle\":\"$t(button.startover)\",\"continue\":\"Kontynuuj\",\"submitanswer\":\"Wyślij\",\"submitanswertitle\":\"$t(button.submitanswer)\",\"previoustopic\":\"Poprzednia sekcja\",\"nexttopic\":\"Następna sekcja\",\"questionsubmit\":\"$t(button.submitanswer)\",\"questiontryagain\":\"Spróbuj ponownie\"},\"text\":{\"startover\":\"Zacznij od początku\",\"areyousure\":\"Czy na pewno chcesz zacząć od początku? (cały postęp w zadaniu zostanie utracony)\",\"youmustcomplete\":\"Musisz ukończyć\",\"exercise\":\"ćwiczenie\",\"exercise_plural\":\"ćwiczenia\",\"inthissection\":\"w tej sekcji przed kontynuowaniem\",\"code\":\"Kod\",\"enginecap\":\"$t(text.code) {{engine}}\",\"quiz\":\"Quiz\",\"blank\":\"luka\",\"blank_plural\":\"luk(i)\",\"exercisecontainsblank\":\"To ćwiczenie zawiera {{count}} $t(text.blank).\",\"pleasereplaceblank\":\"Proszę uzupełnić {{blank}} prawidłowym kodem.\",\"unparsable\":\"Wygląda na to, że może to nie być prawidłowy kod R. R nie jest w stanie przetworzyć Twojego tekstu na polecenie. Mogłeś(-aś) zapomnieć wypełnić luki, usunąć podkreślnik, umieścić przecinka między argumentami, lub zamknąć znak <code>&quot;<\\/code>, <code>'<\\/code>, <code>(<\\/code> lub <code>{<\\/code> odpowiadającym <code>&quot;<\\/code>, <code>'<\\/code>, <code>)<\\/code> lub <code>}<\\/code>.\\n\",\"unparsablequotes\":\"<p>Wygląda na to, że Twój kod zawiera szczególnie sformatowane cudzysłowy lub cudzysłowy typograficzne (<code>{{character}}<\\/code>) przy ciągach znaków, co sprawia, że kod jest niepoprawny. R wymaga cudzysłowów prostych (<code>&quot;<\\/code> albo <code>'<\\/code>).<\\/p> {{code}} <p>Nie martw się, to powszechne źródło błędów, gdy kopiuje się kod z innego programu, który sam formatuje teskt. Możesz spróbować zastąpić swój kod następującym kodem. Mogą być też inne miejsca, które wymagają poprawienia.<\\/p> {{suggestion}}\\n\",\"unparsableunicode\":\"<p>Wygląda na to, że Twój kod zawiera niespodziewany znak specjalny (<code>{{character}}<\\/code>), co sprawia, że kod jest niepoprawny.<\\/p> {{code}} <p>Czasami Twój kod może zawierać znak specjalny, który wygląda jak zwykły znak, zwłaszcza jeśli kopiujesz kod z innego programu. Spróbuj usunąć znak specjalny i wpisać do ponownie ręcznie.<\\/p>\\n\",\"unparsableunicodesuggestion\":\"<p>Wygląda na to, że Twój kod zawiera niespodziewany znak specjalny (<code>{{character}}<\\/code>), co sprawia, że kod jest niepoprawny.<\\/p> {{code}} <p>Czasami Twój kod może zawierać znak specjalny, który wygląda jak zwykły znak, zwłaszcza jeśli kopiujesz kod z innego programu. Możesz spróbować zastąpić swój kod następującym kodem. Mogą być też inne miejsca, które wymagają poprawienia.<\\/p> {{suggestion}}\\n\",\"and\":\"i\",\"or\":\"lub\",\"listcomma\":\", \",\"oxfordcomma\":\"\"}}}}}<\/script>"]},{"type":"NULL"},{"type":"character","attributes":{},"value":["learnr"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.11.2"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["tutorial-format"]},{"type":"character","attributes":{},"value":["0.11.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmarkdown/templates/tutorial/resources"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["tutorial-format.js"]},{"type":"character","attributes":{},"value":["tutorial-format.css","rstudio-theme.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["learnr"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.11.2"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["jquery"]},{"type":"character","attributes":{},"value":["3.6.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/3.6.0"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["jquery-3.6.0.min.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["jquerylib"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.1.4"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["navigation"]},{"type":"character","attributes":{},"value":["1.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/navigation-1.1"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["tabsets.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["2.19"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["highlightjs"]},{"type":"character","attributes":{},"value":["9.12.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/highlightjs"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["highlight.js"]},{"type":"character","attributes":{},"value":["default.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["2.19"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["jquery"]},{"type":"character","attributes":{},"value":["3.6.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/3.6.0"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["jquery-3.6.0.min.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["jquerylib"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.1.4"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["font-awesome"]},{"type":"character","attributes":{},"value":["5.1.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/fontawesome"]}]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["css/all.css","css/v4-shims.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["2.19"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["bootbox"]},{"type":"character","attributes":{},"value":["5.5.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/bootbox"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["bootbox.min.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["learnr"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.11.2"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["idb-keyvalue"]},{"type":"character","attributes":{},"value":["3.2.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/idb-keyval"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["idb-keyval-iife-compat.min.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["learnr"]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["0.11.2"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["tutorial"]},{"type":"character","attributes":{},"value":["0.11.2"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/tutorial"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["tutorial.js"]},{"type":"character","attributes":{},"value":["tutorial.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["learnr"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.11.2"]}]}]}
+</script>
+<!--/html_preserve-->
+<!--html_preserve-->
+<script type="application/shiny-prerendered" data-context="execution_dependencies">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]}},"value":[{"type":"character","attributes":{},"value":["backports","base","bslib","checkmate","commonmark","compiler","curl","datasets","digest","ellipsis","evaluate","fastmap","graphics","grDevices","htmltools","htmlwidgets","httpuv","jquerylib","jsonlite","knitr","later","learnr","lifecycle","magrittr","markdown","methods","mime","promises","R6","Rcpp","rlang","rmarkdown","rprojroot","sass","shiny","stats","stringi","stringr","tools","utils","withr","xfun","xtable","yaml"]},{"type":"character","attributes":{},"value":["1.1.4","3.6.0","0.3.1","2.0.0","1.7","3.6.0","4.3","3.6.0","0.6.29","0.3.2","0.15","1.1.0","3.6.0","3.6.0","0.5.2","1.5.3","1.5.2","0.1.4","1.7.2","1.41","1.2.0","0.11.2","1.0.1","2.0.1","1.4","3.6.0","0.9","1.2.0.1","2.5.0","1.0.1","0.4.10","2.19","1.3-2","0.4.0","1.7.1","3.6.0","1.5.3","1.4.0","3.6.0","3.6.0","2.5.0","0.36","1.8-4","2.2.1"]}]}]}
+</script>
+<!--/html_preserve-->
+</div>
+</div>
+
+</article> <!-- topics -->
+
+<div class="topicsContainer">
+<div class="topicsPositioner">
+<div class="band">
+<div class="bandContent topicsListContainer">
+
+<!-- begin doc-metadata -->
+<div id="doc-metadata">
+<h1 class="title toc-ignore" style="display:none;">Tutorial for basic
+organic chemistry</h1>
+</div>
+<!-- end doc-metadata -->
+
+</div> <!-- bandContent.topicsListContainer -->
+</div> <!-- band -->
+</div> <!-- topicsPositioner -->
+</div> <!-- topicsContainer -->
+
+
+</main> <!-- bandContent page -->
+</div> <!-- pageContent band -->
+
+
+
+<!-- Build Tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("section-TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<script>
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+
+</body>
+
+</html>

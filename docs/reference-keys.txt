@@ -29,6 +29,8 @@ fig:benzene-orbitals
 fig:heteroarenes
 exr:drawmolec1
 fig:FGsynthesis
+fig:methyl
+fig:methylene-ethyl
 fig:amines
 fig:alcohols
 tab:AlcoholThiolTab
@@ -370,8 +372,9 @@ unsaturated-hydrocarbons
 aromatics
 functional-groups-from-alkane-chain-oxidation
 hydroxyl-and-sulfanyl-functional-groups
+methyl
 amines
-carbonyl-and-acyl-functional-groups
+carbonyl
 alcohols
 thiols
 alkyl-amines
