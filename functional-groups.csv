@@ -1,0 +1,23 @@
+Functional group,structure,example,ex-structure
+saturated alk**ane** bond,![]("pictures/FGalkane.png"){width=100%},![]("pictures/ethane.png"){width=80%} <br> eth**ane**,![]("pictures/SKethane.png"){width=40%} <br> CH~3~-CH~3~
+alk**ene** double bond,![]("pictures/FGalkene.png"){width=90%},![]("pictures/ethene.png"){width=80%} <br> eth**ene**,![]("pictures/SKethene.png"){width=40%} <br> CH~2~=CH~2~
+alk**yne** triple bond,![]("pictures/FGalkyne.png"){width=100%},![]("pictures/acetylene.png"){width=90%} <br> eth**yne** or <br> acetylene, ![]("pictures/SKethyne.png"){width=40%} <br> CH&equiv;CH
+hydroxyl,![]("pictures/FGhydroxyl.png"){width=38%},,
+sulfanyl,![]("pictures/FGsulfanyl.png"){width=38%},,
+methyl,![]("pictures/FGmethyl.png"){width=60%}  <br> ![]("pictures/FGmethylMe.png"){width=45%},![]("pictures/methylacetate.png"){width=100%} <br> methyl acetate,![]("pictures/SKmethylacetate.png"){width=65%} <br> CH~3~-COO-CH~3~
+amine,![]("pictures/FGamine.png"){width=65%},![]("pictures/ethylamine.png"){width=100%} <br> ethyl **amine**,![]("pictures/SKethylamine.png"){width=50%} <br> CH~3~-CH~2~NH~2~
+alcohol,![]("pictures/FGalcohol.png"){width=80%},![]("pictures/ethanol.png"){width=95%} <br> ethan**ol**,![]("pictures/SKethanol.png"){width=50%} <br> CH~3~-CH~2~OH
+thiol,![]("pictures/FGthiol.png"){width=70%},![]("pictures/ethanethiol.png"){width=100%} <br> ethane**thiol**,![]("pictures/SKethanethiol.png"){width=50%} <br> CH~3~-CH~2~SH
+amide,![]("pictures/FGamide.png"){width=80%},![]("pictures/ethanamide.png"){width=100%} <br> ethan**amide**,![]("pictures/SKethanamide.png"){width=50%} <br> CH~3~-CO-NH~2~
+carbonyl,![]("pictures/FGcarbonyl.png"){width=75%},,
+acyl,![]("pictures/FGacyl.png"){width=70%},![]("pictures/SKacyl_fattyacid.png"){width=100%} <br> acyl of fatty acid,
+ketone,![]("pictures/FGketone.png"){width=65%},![]("pictures/acetone.png"){width=100%} <br> propan**one** or <br> acet**one**,![]("pictures/SKacetone.png"){width=60%} <br> CH~3~-CO-CH~3~
+aldehyde,![]("pictures/FGaldehyde.png"){width=65%},![]("pictures/ethanal.png"){width=80%} <br> ethan**al**,![]("pictures/SKethanal.png"){width=50%} <br> CH~3~-CHO
+carboxylic acid,![]("pictures/FGcarboxylic.png"){width=70%},![]("pictures/ethanoic-acid.png"){width=80%} <br> ethan**oic** acid or <br> acetic acid,![]("pictures/SKethanoicacid.png"){width=50%} <br> CH~3~-COOH
+methoxy,![]("pictures/FGmethoxy.png"){width=70%} <br> ![]("pictures/FGmethoxyMe.png"){width=65%} ,,![]("pictures/SKanisole.png"){width=80%} <br> anisole
+ester,![]("pictures/FGester.png"){width=70%},![]("pictures/propylethanoate.png"){width=100%} <br> propyl ethan**oate**,![]("pictures/SKpropylethanoate.png"){width=80%} <br> CH~3~CO-O-CH~2~-CH~2~-CH~3~
+thioester,![]("pictures/FGthioester.png"){width=100%},![]("pictures/Sethylethanethioate.png"){width=100%} <br> S-ethyl ethane**thioate**,![]("pictures/SKethanethioate.png"){width=80%} <br> CH~3~-CO-S-CH~2~-CH~3~
+phosphoester,![]("pictures/FGphosphoester.png"){width=70%},![]("pictures/methylphosphate.png"){width=100%} <br> methyl phosphate,
+ether,![]("pictures/FGether.png"){width=90%},![]("pictures/diethylether.png"){width=100%} <br> diethyl **ether**,![]("pictures/SKdiethylether.png"){width=80%} <br> CH~3~-CH~2~-O-CH~2~-CH~3~
+anhydride,![]("pictures/FGanhydride.png"){width=100%},,
+phosphoanydride,![]("pictures/FGphosphoanhydride.png"){width=100%},![]("pictures/FGpyrophosphate.png"){width=100%} <br> diphospho anhydride or <br> pyrophosphate,

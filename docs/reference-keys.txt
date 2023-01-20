@@ -31,6 +31,7 @@ exr:drawmolec1
 fig:FGsynthesis
 fig:methyl
 fig:methylene-ethyl
+fig:FGphosphoryl
 fig:amines
 fig:alcohols
 tab:AlcoholThiolTab
@@ -395,6 +396,7 @@ aromatics
 functional-groups-from-alkane-chain-oxidation
 hydroxyl-and-sulfanyl-functional-groups
 methyl
+phosphoryl
 amines
 carbonyl
 alcohols
@@ -412,7 +414,7 @@ phosphoesters
 ether
 disulfide
 hemiacetal
-anyhydride
+anhydride
 commonmolecules
 molecular-families
 polymers-of-simple-monomers
