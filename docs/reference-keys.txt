@@ -46,6 +46,8 @@ fig:amides
 fig:amide-resonance
 fig:amide-spin
 fig:methoxy
+exr:tutfunctionalgroup1
+fig:embed-tutfunctionalgroup1
 exr:drawmolec2
 fig:complexFG
 fig:esterification
