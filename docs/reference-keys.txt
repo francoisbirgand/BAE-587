@@ -59,6 +59,7 @@ fig:hemiacetal-glucose
 fig:hemiketal-fructose
 fig:anhydridation
 fig:phosphoanhydridation
+exr:tutfunctionalgroup2
 exr:drawmolec3
 fig:commonmolecules
 tab:FGtab
